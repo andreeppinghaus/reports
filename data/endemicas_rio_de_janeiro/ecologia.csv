@@ -1,8 +1,8 @@
-"Familia";"Especie";"Habito";"Fenologia";"Luminosidade";"Substrato";"Longevidade";"Rebroto"
-Monimiaceae;Grazielanthus arkeocarpus;bush;perenifolia;esciophytic;terrestrial;perennial;unkown;
-BORAGINACEAE;Varronia leucomalla;bush;;;terrestrial;;;
-LAURACEAE;Aniba pedicellata;tree;;;terrestrial;;;
-LAURACEAE;Beilschmiedia stricta;;;;;;;
-VOCHYSIACEAE;Callisthene dryadum;tree;;;terrestrial;;;
-VOCHYSIACEAE;Callisthene dryadum;tree;;;terrestrial;;;
-SALICACEAE;Abatia microphylla;bush;;;terrestrial;unkown;unkown;
+"family","scientificName","habit","fenology","luminosity","substratum","longevity","resprout"
+Monimiaceae,Grazielanthus arkeocarpus,bush,perenifolia,esciophytic,terrestrial,perennial,unkown,
+BORAGINACEAE,Varronia leucomalla,bush,,,terrestrial,,,
+LAURACEAE,Aniba pedicellata,tree,,,terrestrial,,,
+LAURACEAE,Beilschmiedia stricta,,,,,,,
+VOCHYSIACEAE,Callisthene dryadum,tree,,,terrestrial,,,
+VOCHYSIACEAE,Callisthene dryadum,tree,,,terrestrial,,,
+SALICACEAE,Abatia microphylla,bush,,,terrestrial,unkown,unkown,

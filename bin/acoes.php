@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-echo "\"family\";\"scientificName\";\"action\";\"situation\"\n";
+echo "\"family\",\"scientificName\",\"action\",\"situation\"\n";
 
 foreach($all->rows as $row) {
   $d = $row->doc;
@@ -10,12 +10,12 @@ foreach($all->rows as $row) {
     if(isset($d->actions) && is_array($d->actions)) {
       foreach($d->actions as $t) {
         if(isset($t->action)) {
-          echo $d->taxon->family.";".$d->taxon->scientificNameWithoutAuthorship.";";
-          echo $t->action.";";
+          echo $d->taxon->family.",".$d->taxon->scientificNameWithoutAuthorship.",";
+          echo $t->action.",";
           if(isset($t->situation)) {
-            echo $t->situation.";";
+            echo $t->situation.",";
           } else {
-            echo ";";
+            echo ",";
           }
           echo "\n";
         }

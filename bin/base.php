@@ -6,7 +6,9 @@ if(php_sapi_name() !== 'cli' || !isset($argv) || count($argv) < 2 ) {
 }
 
 $base = $argv[1];
-$script = $argv[0];
+
+preg_match('/([a-z]+)\.php$/',$argv[0],$reg);
+$script = $reg[1];
 
 echo "Start $script",PHP_EOL;
 
@@ -29,7 +31,7 @@ ob_start();
 
 register_shutdown_function(function() use ($pwd,$base,$script) {
   chdir($pwd);
-  file_put_contents(__DIR__."/../data/".$base."/".str_replace("bin/", str_replace(".php","",$script),"").".csv",ob_get_clean());
+  file_put_contents(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",ob_get_clean());
   echo "Done $base",PHP_EOL;
 });
 

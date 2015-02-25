@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-echo "\"family\";\"scientificName\";\"use\";\"resource\"\n";
+echo "\"family\",\"scientificName\",\"use\",\"resource\"\n";
 
 foreach($all->rows as $row) {
   $d = $row->doc;
@@ -10,9 +10,9 @@ foreach($all->rows as $row) {
     if(isset($d->uses) && is_array($d->uses)) {
       foreach($d->uses as $t) {
         if(isset($t->use)) {
-          echo $d->taxon->family.";".$d->taxon->scientificNameWithoutAuthorship.";";
-          echo $t->use.";";
-          echo $t->resource.";";
+          echo $d->taxon->family.",".$d->taxon->scientificNameWithoutAuthorship.",";
+          echo $t->use.",";
+          echo $t->resource.",";
           echo "\n";
         }
       }

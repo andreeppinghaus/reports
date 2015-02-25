@@ -1,7 +1,7 @@
-"Familia";"Especie";"Habito";"Fenologia";"Luminosidade";"Substrato";"Longevidade";"Rebroto"
-BROMELIACEAE;Encholirium fragae;herb;;;rupicolous;;;
-BROMELIACEAE;Encholirium kranzianum;herb;;;rupicolous;;;
-BROMELIACEAE;Encholirum splendidum;herb;;;rupicolous;;;
-BROMELIACEAE;Encholirium splendidum;herb;;;rupicolous;;;
-Asteraceae;Eremanthus inopinatus;small tree;perenifolia;heliophytic;terrestrial;perennial;unkown;
-Asteraceae;Eremanthus ovatifolius;small tree;perenifolia;heliophytic;terrestrial;perennial;unkown;
+"family","scientificName","habit","fenology","luminosity","substratum","longevity","resprout"
+BROMELIACEAE,Encholirium fragae,herb,,,rupicolous,,,
+BROMELIACEAE,Encholirium kranzianum,herb,,,rupicolous,,,
+BROMELIACEAE,Encholirum splendidum,herb,,,rupicolous,,,
+BROMELIACEAE,Encholirium splendidum,herb,,,rupicolous,,,
+Asteraceae,Eremanthus inopinatus,small tree,perenifolia,heliophytic,terrestrial,perennial,unkown,
+Asteraceae,Eremanthus ovatifolius,small tree,perenifolia,heliophytic,terrestrial,perennial,unkown,

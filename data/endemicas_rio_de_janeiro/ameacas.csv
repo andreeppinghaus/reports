@@ -1,7 +1,7 @@
-"Familia";"Especie";"Ameaça";"Incidencia";"Periodo";"Declínio"
-Monimiaceae;Grazielanthus arkeocarpus;7.1 Fire & fire suppression;local;past,present;locality,habitat,occupancy,occurrence;
-BORAGINACEAE;Varronia leucomalla;4.1 Roads & railroads;local;past,present;habitat;
-SALICACEAE;Abatia microphylla;1.1 Housing & urban areas;;;;
-SALICACEAE;Abatia microphylla;7.1 Fire & fire suppression;;;;
-SALICACEAE;Abatia microphylla;8.1.2 Named species;;;;
-SALICACEAE;Abatia microphylla;1.3 Tourism & recreation areas;;;;
+"family","scientificName","threat","incidence","timing","decline"
+Monimiaceae,Grazielanthus arkeocarpus,7.1 Fire & fire suppression,local,past;present,locality;habitat;occupancy;occurrence,
+BORAGINACEAE,Varronia leucomalla,4.1 Roads & railroads,local,past;present,habitat,
+SALICACEAE,Abatia microphylla,1.1 Housing & urban areas,,,,
+SALICACEAE,Abatia microphylla,7.1 Fire & fire suppression,,,,
+SALICACEAE,Abatia microphylla,8.1.2 Named species,,,,
+SALICACEAE,Abatia microphylla,1.3 Tourism & recreation areas,,,,

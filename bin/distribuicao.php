@@ -3,7 +3,7 @@
 include 'base.php';
 
 return;
-echo "\"Familia\";\"Especie\";\"Endemica\";\"Altitude\";\"EOO\";\"AOO\";\"Válidos\";\"Inválidos\";\"Não validados\";\"Total registros\"\n";
+echo "\"Familia\",\"Especie\",\"Endemica\",\"Altitude\",\"EOO\",\"AOO\",\"Válidos\",\"Inválidos\",\"Não validados\",\"Total registros\"\n";
 
 foreach($all->rows as $row) {
   $d = $row->doc;

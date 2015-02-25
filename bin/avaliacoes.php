@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-echo "\"family\";\"scientificName\";\"analysis\";\"assessment\";\"category\";\"criteria\"\n";
+echo "\"family\",\"scientificName\",\"analysis\",\"assessment\",\"category\",\"criteria\"\n";
 
 $taxons = [];
 foreach($all->rows as $row) {
@@ -37,6 +37,6 @@ foreach($all->rows as $row) {
 }
 
 foreach($taxons as $taxon) {
-    echo "\"".$taxon["family"]."\";\"".$taxon["name"]."\";\"".$taxon["analysis"]."\";\"".$taxon["assessment"]."\";\"".$taxon["category"]."\";\"".$taxon["criteria"]."\"\n";
+    echo "\"".$taxon["family"]."\",\"".$taxon["name"]."\",\"".$taxon["analysis"]."\",\"".$taxon["assessment"]."\",\"".$taxon["category"]."\",\"".$taxon["criteria"]."\"\n";
 }
 
