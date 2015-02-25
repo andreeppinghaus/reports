@@ -1,0 +1,7 @@
+family,scientificName,threat,incidence,timing,decline
+"Monimiaceae,Grazielanthus arkeocarpus","7.1 Fire & fire suppression",local,past;present,locality;habitat;occupancy;occurrence
+"BORAGINACEAE,Varronia leucomalla","4.1 Roads & railroads",local,past;present,habitat
+"SALICACEAE,Abatia microphylla","1.1 Housing & urban areas",local,present;past,habitat;locality;occupancy;occurrence
+"SALICACEAE,Abatia microphylla","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
+"SALICACEAE,Abatia microphylla","8.1.2 Named species",local,past;present;future,locality;habitat;occupancy;occurrence
+"SALICACEAE,Abatia microphylla","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat;occupancy;occurrence

@@ -1,6 +1,7 @@
-"family","scientificName","habitat"
-Monimiaceae,Grazielanthus arkeocarpus,1.6 Subtropical/Tropical Moist Lowland Forest
-BORAGINACEAE,Varronia leucomalla,1.6 Subtropical/Tropical Moist Lowland Forest
-LAURACEAE,Aniba pedicellata,1.9 Subtropical/Tropical Moist Montane Forest
-VOCHYSIACEAE,Callisthene dryadum,
-SALICACEAE,Abatia microphylla,1.9 Subtropical/Tropical Moist Montane Forest
+family,scientificName,habitat
+Monimiaceae,"Grazielanthus arkeocarpus","1.6 Subtropical/Tropical Moist Lowland Forest"
+BORAGINACEAE,"Varronia leucomalla","1.6 Subtropical/Tropical Moist Lowland Forest"
+LAURACEAE,"Aniba pedicellata","1.9 Subtropical/Tropical Moist Montane Forest"
+LAURACEAE,"Beilschmiedia stricta","1.6 Subtropical/Tropical Moist Lowland Forest"
+VOCHYSIACEAE,"Callisthene dryadum",
+SALICACEAE,"Abatia microphylla","1.9 Subtropical/Tropical Moist Montane Forest"

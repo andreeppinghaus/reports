@@ -2,16 +2,16 @@
 
 include 'base.php';
 
-echo "\"family\",\"scientificName\",\"bioma\"\n";
+$fields = ["family","scientificName","bioma"];
+fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
   $d = $row->doc;
   if($d->metadata->type=='profile') {
     if(isset($d->ecology) && isset($d->ecology->biomas) && is_array($d->ecology->biomas)) {
       foreach($d->ecology->biomas as $t) {
-        echo $d->taxon->family.",".$d->taxon->scientificNameWithoutAuthorship.",";
-        echo $t;
-        echo "\n";
+        $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,$t];
+        fputcsv($csv,$data);
       }
     }
   }
