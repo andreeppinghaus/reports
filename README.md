@@ -1,6 +1,6 @@
 # CNCFlora Reports
 
-Just access each folder in this repository as it contains the data exported in CSV.
+Access data exported from CNCFlora in the "data" folder. 
 
 ## License
 

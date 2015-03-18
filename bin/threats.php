@@ -12,7 +12,8 @@ foreach($all->rows as $row) {
       foreach($d->threats as $t) {
         if(isset($t->threat)) {
           $data = [
-             $d->taxon->family.",".$d->taxon->scientificNameWithoutAuthorship
+             $d->taxon->family
+            ,$d->taxon->scientificNameWithoutAuthorship
             ,$t->threat
             ,$t->incidence
             ,implode(";",$t->timing)

@@ -2879,6 +2879,10 @@ CAMPANULACEAE,"Siphocampylus lycioides","4.4.3 Management",
 CAMPANULACEAE,"Siphocampylus verticillatus","1.2.1.3 Sub-national level",
 CAMPANULACEAE,"Siphocampylus verticillatus","4.4.3 Management",
 CANNABACEAE,"Celtis ehrenbergiana","1.2.1.3 Sub-national level",
+CAPPARACEAE,"Crateva tapia","4.4.3 Management",
+CAPPARACEAE,"Crateva tapia","1.2.1.3 Sub-national level",
+CAPPARACEAE,"Hemiscola diffusa","1.2.1.3 Sub-national level",
+CAPPARACEAE,"Hemiscola diffusa","4.4.3 Management",
 CARICACEAE,"Jacaratia spinosa","4.4.3 Management",
 CARICACEAE,"Jacaratia spinosa","1.2.1.3 Sub-national level",
 CARICACEAE,"Jacaratia spinosa","1.2.1.3 Sub-national level",
@@ -3059,6 +3063,14 @@ CONVOLVULACEAE,"Merremia aturensis","1.2.2.3 Sub-national level","on going"
 CONVOLVULACEAE,"Merremia repens","1.2.1.2 National level","on going"
 CONVOLVULACEAE,"Operculina alata","1.2.2.3 Sub-national level","on going"
 CONVOLVULACEAE,"Operculina macrocarpa","1.2.2.3 Sub-national level","on going"
+COSTACEAE,"Chamaecostus subsessilis","1.2.1.3 Sub-national level",
+COSTACEAE,"Chamaecostus subsessilis","4.4.3 Management",
+COSTACEAE,"Chamaecostus cuspidatus","4.4.3 Management",
+COSTACEAE,"Chamaecostus cuspidatus","1.2.1.2 National level",
+COSTACEAE,"Chamaecostus fragilis","1.2.1.2 National level",
+COSTACEAE,"Chamaecostus fusiformis","1.2.1.2 National level",
+COSTACEAE,"Costus scaber","4.4.3 Management",
+COSTACEAE,"Costus scaber","1.2.1.3 Sub-national level",
 CRASSULACEAE,"Crassula peduncularis","1.2.1.3 Sub-national level","on going"
 CUCURBITACEAE,"Cayaponia bonariensis","1.2.1.3 Sub-national level","on going"
 CUCURBITACEAE,"Cayaponia espelina","1.2.1.3 Sub-national level","on going"
@@ -3236,6 +3248,11 @@ ELAEOCARPACEAE,"Sloanea hirsuta","1.2.1.3 Sub-national level",
 ELAEOCARPACEAE,"Sloanea hirsuta","4.4.3 Management",
 ELAEOCARPACEAE,"Sloanea obtusifolia","1.2.1.3 Sub-national level",
 ELAEOCARPACEAE,"Sloanea obtusifolia","4.4.3 Management",
+ELATINACEAE,"Elatine lindbergii","1.2.1.3 Sub-national level","on going"
+ELATINACEAE,"Elatine lindbergii","1.2.1.3 Sub-national level","on going"
+EPHEDRACEAE,"Ephedra tweediana","1.2.1.3 Sub-national level","on going"
+EPHEDRACEAE,"Ephedra tweediana","1.2.1.2 National level","on going"
+EPHEDRACEAE,"Ephedra tweediana","4.4 Protected areas","on going"
 ERICACEAE,"Agarista chlorantha","1.2.1.3 Sub-national level","on going"
 ERICACEAE,"Agarista niederleinii","1.2.1.3 Sub-national level","on going"
 ERICACEAE,"Agarista nummularia","1.2.1.3 Sub-national level","on going"
@@ -4097,6 +4114,9 @@ KRAMERIACEAE,"Krameria grandiflora","4.4 Protected areas","on going"
 LACISTEMATACEAE,"Lacistema lucidum","1.2.1.1 International level","on going"
 LACISTEMATACEAE,"Lacistema robustum","4.4 Protected areas","on going"
 LACISTEMATACEAE,"Lacistema robustum","1.2.1.1 International level","on going"
+LAMIACEAE,"Aegiphila australis","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Cunila fasciculata","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Cunila incana","1.2.1.3 Sub-national level","on going"
 LAMIACEAE,"Eriope anamariae","1.2.1.2 National level","on going"
 LAMIACEAE,"Eriope blanchetii","4.4 Protected areas","on going"
 LAMIACEAE,"Eriope blanchetii","1.2.1.2 National level","on going"
@@ -4109,6 +4129,12 @@ LAMIACEAE,"Eriope macrostachya","1.2.1.3 Sub-national level","on going"
 LAMIACEAE,"Eriope macrostachya","4.4.2 Establishment","on going"
 LAMIACEAE,"Eriope obovata var. gracilis","1.2.1.2 National level","on going"
 LAMIACEAE,"Eriope simplex","1.2.1.2 National level","on going"
+LAMIACEAE,"Glechon ciliata","4.4 Protected areas","on going"
+LAMIACEAE,"Glechon ciliata","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Glechon discolor","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Hesperozygis nitida","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Hesperozygis ringens","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Hesperozygis ringens","1.2.1.2 National level","on going"
 LAMIACEAE,"Hypenia aristulata","1.2.1.2 National level","on going"
 LAMIACEAE,"Hypenia crispata","1.2.1.2 National level","on going"
 LAMIACEAE,"Hypenia micrantha","1.2.1.2 National level","on going"
@@ -4159,6 +4185,11 @@ LAMIACEAE,"Hyptis viatica","1.2.1.2 National level","on going"
 LAMIACEAE,"Ocimum nudicaule","1.2.1.3 Sub-national level","on going"
 LAMIACEAE,"Ocimum ovatum","1.2.1.3 Sub-national level","on going"
 LAMIACEAE,"Salvia congestiflora","1.2.1.3 Sub-national level","on going"
+LAMIACEAE,"Salvia espirito-santensis","1.2.1.3 Sub-national level",
+LAMIACEAE,"Salvia fruticetorum","1.2.1.3 Sub-national level",
+LAMIACEAE,"Salvia neovidensis","1.2.1.3 Sub-national level",
+LAMIACEAE,"Salvia uliginosa","1.2.1.3 Sub-national level",
+LAMIACEAE,"Vitex panshiniana","1.2.1.3 Sub-national level",
 LAURACEAE,"Aiouea acarodomatifera","1.2.1.1 International level","on going"
 LAURACEAE,"Aiouea acarodomatifera","1.2.1.3 Sub-national level","on going"
 LAURACEAE,"Aiouea acarodomatifera","4.4 Protected areas","on going"
@@ -4937,6 +4968,9 @@ MARSILEACEAE,"Pilularia americana","1.2.1.3 Sub-national level","on going"
 MARSILEACEAE,"Regnellidium diphyllum","1.2.1.3 Sub-national level","on going"
 MARSILEACEAE,"Regnellidium diphyllum","1.2.1.2 National level","on going"
 MARSILEACEAE,"Regnellidium diphyllum","4.4 Protected areas","on going"
+MARTYNIACEAE,"Ibicella lutea","4.4 Protected areas","on going"
+MARTYNIACEAE,"Ibicella lutea","1.2.1.3 Sub-national level","on going"
+MARTYNIACEAE,"Craniolaria integrifolia","1.2.1.3 Sub-national level","on going"
 MELASTOMATACEAE,"Bertolonia angustifolia","1.2.1.3 Sub-national level","on going"
 MELASTOMATACEAE,"Bertolonia formosa","1.2.1.3 Sub-national level","on going"
 MELASTOMATACEAE,"Bertolonia foveolata","1.2.1.3 Sub-national level","on going"
@@ -5742,6 +5776,10 @@ NYCTAGINACEAE,"Guapira hirsuta","4.4 Protected areas","on going"
 NYCTAGINACEAE,"Guapira nitida","4.4 Protected areas","on going"
 NYCTAGINACEAE,"Guapira obtusata","4.4 Protected areas","on going"
 NYCTAGINACEAE,"Neea verticillata","4.4 Protected areas","on going"
+NYMPHAEACEAE,"Nymphaea amazonum","1.2.1.3 Sub-national level",
+NYMPHAEACEAE,"Nymphaea amazonum","4.4.3 Management",
+NYMPHAEACEAE,"Nymphaea prolifera","1.2.1.3 Sub-national level",
+NYMPHAEACEAE,"Nymphaea prolifera","4.4.3 Management",
 OCHNACEAE,"Luxemburgia angustifolia","1.2.1.3 Sub-national level","on going"
 OCHNACEAE,"Luxemburgia corymbosa","4.4 Protected areas","on going"
 OCHNACEAE,"Luxemburgia corymbosa","1.2.2.2 National level","on going"
@@ -5752,6 +5790,15 @@ OCHNACEAE,"Ouratea hatschbachii","4.4 Protected areas","on going"
 OCHNACEAE,"Ouratea spectabilis","1.2.2.3 Sub-national level","on going"
 OCHNACEAE,"Sauvagesia nitida","1.2.2.2 National level","on going"
 OCHNACEAE,"Sauvagesia nitida","4.4 Protected areas","on going"
+OLACACEAE,"Heisteria maguirei","1.2.2.1 International level","on going"
+OLACACEAE,"Heisteria perianthomega","4.4 Protected areas","on going"
+OLACACEAE,"Heisteria perianthomega","1.2.1.3 Sub-national level","on going"
+OLACACEAE,"Heisteria silvianii","1.2.1.3 Sub-national level","on going"
+OLACACEAE,"Heisteria silvianii","4.4 Protected areas","on going"
+OLACACEAE,"Minquartia guianensis","1.2.2.1 International level","on going"
+OLACACEAE,"Minquartia guianensis","4.4 Protected areas","on going"
+OLACACEAE,"Ptychopetalum olacoides","1.2.2.3 Sub-national level","on going"
+OLACACEAE,"Ptychopetalum olacoides","4.4 Protected areas","on going"
 OLEACEAE,"Chionanthus filiformis","1.2.1.1 International level","on going"
 OLEACEAE,"Chionanthus filiformis","1.2.2.3 Sub-national level","on going"
 OLEACEAE,"Chionanthus fluminensis","1.2.1.1 International level","on going"
@@ -5772,6 +5819,8 @@ OPHIOGLOSSACEAE,"Botrychium virginianum","1.2.1.2 National level","on going"
 OPHIOGLOSSACEAE,"Botrychium virginianum","1.2.1.2 National level","on going"
 OPHIOGLOSSACEAE,"Ophioglossum palmatum","4.4 Protected areas","on going"
 OPHIOGLOSSACEAE,"Ophioglossum palmatum","1.2.1.3 Sub-national level","on going"
+OPILIACEAE,"Agonandra excelsa","1.2.1.3 Sub-national level",
+OPILIACEAE,"Agonandra excelsa","4.4.3 Management",
 ORCHIDACEAE,"Acianthera crinita","1.2.1.3 Sub-national level",
 ORCHIDACEAE,"Acianthera langeana","1.2.2.3 Sub-national level","on going"
 ORCHIDACEAE,"Acianthera langeana","4.4 Protected areas","on going"
@@ -6747,6 +6796,7 @@ OROBANCHACEAE,"Nothochilus coccineus","4.4 Protected areas","on going"
 OROBANCHACEAE,"Physocalyx aurantiacus","1.2.1.3 Sub-national level","on going"
 OROBANCHACEAE,"Physocalyx major","1.2.1.3 Sub-national level","on going"
 OROBANCHACEAE,"Physocalyx major","4.4 Protected areas","on going"
+OROBANCHACEAE,"Velloziella westermanii","1.2.1.3 Sub-national level","on going"
 OXALIDACEAE,"Oxalis arachnoidea","1.2.1.3 Sub-national level",
 OXALIDACEAE,"Oxalis arachnoidea","1.2.1.2 National level",
 OXALIDACEAE,"Oxalis bela-vitoriae","1.2.1.2 National level","on going"
@@ -7009,6 +7059,15 @@ PLANTAGINACEAE,"Plantago turficola","1.2.1.3 Sub-national level",
 PLANTAGINACEAE,"Stemodia harleyi","1.2.1.2 National level",
 PLANTAGINACEAE,"Stemodia harleyi","4.4 Protected areas",
 PLANTAGINACEAE,"Stemodia hyptoides","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia microphylla","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia stellata","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia stellata","4.4.3 Management",
+PLANTAGINACEAE,"Stemodia stricta","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia stricta","4.4.3 Management",
+PLANTAGINACEAE,"Stemodia trifoliata","4.4.3 Management",
+PLANTAGINACEAE,"Stemodia trifoliata","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia veronicoides","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia veronicoides","4.4.3 Management",
 POACEAE,"Acroceras excavatum","1.2.1.3 Sub-national level","on going"
 POACEAE,"Acroceras fluminense","1.2.1.3 Sub-national level","on going"
 POACEAE,"Agenium leptocladum","1.2.1.3 Sub-national level","on going"
@@ -7172,6 +7231,44 @@ POACEAE,"Panicum hylaeicum","4.4.2 Establishment","on going"
 POACEAE,"Panicum pedersenii","1.2.1.3 Sub-national level","on going"
 POACEAE,"Pariana carvalhoi","1.2.1.2 National level","on going"
 POACEAE,"Pariana carvalhoi","4.4 Protected areas","on going"
+POACEAE,"Paspalum arundinellum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum aspidiotes","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum biaristatum","1.2.1.2 National level","on going"
+POACEAE,"Paspalum brachytrichum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum burmanii","1.2.1.2 National level","on going"
+POACEAE,"Paspalum burmanii","4 Habitat and site-based actions",needed
+POACEAE,"Paspalum cinerascens","1.2.2.3 Sub-national level","on going"
+POACEAE,"Paspalum compressifolium","1.2.2.3 Sub-national level","on going"
+POACEAE,"Paspalum cromyorrhizon","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum cromyorrhizon","5.7 Ex situ conservation actions","on going"
+POACEAE,"Paspalum dedeccae","4.4 Protected areas","on going"
+POACEAE,"Paspalum dedeccae","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum dedeccae","5.7 Ex situ conservation actions","on going"
+POACEAE,"Paspalum erianthoides","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum exaltatum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum falcatum","1.2.2.3 Sub-national level","on going"
+POACEAE,"Paspalum falcatum","5.7 Ex situ conservation actions","on going"
+POACEAE,"Paspalum fasciculatum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum flaccidum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum foliiforme","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum geminiflorum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum geminiflorum","4.4.2 Establishment","on going"
+POACEAE,"Paspalum heterotrichon","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum ionanthum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum jesuiticum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum jesuiticum","4.2 Restoration",needed
+POACEAE,"Paspalum lenticulare","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum lenticulare","5.7 Ex situ conservation actions","on going"
+POACEAE,"Paspalum longiaristatum","1.2.1.2 National level","on going"
+POACEAE,"Paspalum macranthecium","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum niquelandiae","1.2.1.2 National level","on going"
+POACEAE,"Paspalum niquelandiae","4.4.2 Establishment",needed
+POACEAE,"Paspalum stellatum","1.2.2.3 Sub-national level","on going"
+POACEAE,"Paspalum umbrosum","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum usterii","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum usterii","1.2.1.3 Sub-national level","on going"
+POACEAE,"Paspalum usterii","5.7 Ex situ conservation actions","on going"
+POACEAE,"Paspalum virgatum","1.2.1.3 Sub-national level","on going"
 POACEAE,"Pharus latifolius","1.2.1.3 Sub-national level","on going"
 POACEAE,"Piptochaetium alpinum","1.2.1.3 Sub-national level","on going"
 POACEAE,"Piptochaetium palustre","1.2.2.2 National level","on going"
@@ -7179,11 +7276,13 @@ POACEAE,"Piptochaetium ruprechtianum","1.2.2.3 Sub-national level","on going"
 POACEAE,"Poa bradei","1.2.1.3 Sub-national level","on going"
 POACEAE,"Poa bradei","4.4 Protected areas","on going"
 POACEAE,"Poa reitzii","1.2.1.3 Sub-national level","on going"
+POACEAE,"Polypogon chilensis","1.2.1.3 Sub-national level","on going"
 POACEAE,"Raddia angustifolia","1.2.1.2 National level","on going"
 POACEAE,"Raddia distichophylla","1.2.1.2 National level","on going"
 POACEAE,"Raddiella esenbeckii","1.2.1.3 Sub-national level","on going"
 POACEAE,"Raddiella esenbeckii","4.4.2 Establishment","on going"
 POACEAE,"Reitzia smithii","1.2.1.3 Sub-national level","on going"
+POACEAE,"Rhynchoryza subulata","1.2.1.3 Sub-national level","on going"
 POACEAE,"Schizachyrium scabriflorum","1.2.1.3 Sub-national level","on going"
 POACEAE,"Setaria parviflora var. pilosissima","1.2.1.3 Sub-national level","on going"
 POACEAE,"Setaria parviflora var. pilosissima","4.4 Protected areas","on going"
@@ -7198,6 +7297,15 @@ POACEAE,"Sporobolus adustus","1.2.1.3 Sub-national level","on going"
 POACEAE,"Sporobolus apiculatus","1.2.1.3 Sub-national level","on going"
 POACEAE,"Sporobolus camporum","1.2.1.3 Sub-national level","on going"
 POACEAE,"Sporobolus camporum","4.4.2 Establishment","on going"
+POACEAE,"Steinchisma spathellosa","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa planaltina","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa rhizomata","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa rosengurtii","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa sellowiana","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa setigera","1.2.1.3 Sub-national level","on going"
+POACEAE,"Stipa setigera","1.1 Management plans",needed
+POACEAE,"Stipa setigera","4.2 Restoration",needed
+POACEAE,"Stipa setigera","4.1 Maintenance/Conservation",needed
 POACEAE,"Streptochaeta spicata","1.2.1.3 Sub-national level","on going"
 POACEAE,"Streptochaeta spicata","1.2.1.3 Sub-national level","on going"
 POACEAE,"Streptochaeta spicata","1.2.1.3 Sub-national level","on going"
@@ -7267,6 +7375,13 @@ POLYGALACEAE,"Polygala selaginoides","1.2.1.3 Sub-national level",
 POLYGALACEAE,"Polygala stephaniana","1.2.1.3 Sub-national level",
 POLYGALACEAE,"Polygala tamariscea","1.2.1.3 Sub-national level",
 POLYGALACEAE,"Polygala tamariscea","4.4.3 Management",
+POLYGONACEAE,"Coccoloba argentinensis","1.2.1.3 Sub-national level",
+POLYGONACEAE,"Coccoloba cereifera","4.4.3 Management",
+POLYGONACEAE,"Coccoloba cereifera","1.2.1.3 Sub-national level",
+POLYGONACEAE,"Coccoloba glaziovii","1.2.1.3 Sub-national level",
+POLYGONACEAE,"Coccoloba glaziovii","4.4.3 Management",
+POLYGONACEAE,"Coccoloba glaziovii","4.4.3 Management",
+POLYGONACEAE,"Coccoloba persicaria","1.2.1.3 Sub-national level",
 POLYPODIACEAE,"Campyloneurum decurrens","1.2.1.3 Sub-national level","on going"
 POLYPODIACEAE,"Campyloneurum decurrens","4.4 Protected areas","on going"
 POLYPODIACEAE,"Ceradenia capillaris","4.4 Protected areas","on going"
@@ -7666,8 +7781,11 @@ SALICACEAE,"Xylosma glaberrima","1.2.1.1 International level","on going"
 SANTALACEAE,"Acanthosyris paulo-alvinii","1.2.1.2 National level","on going"
 SANTALACEAE,"Eubrachion ambiguum","4.4.3 Management",
 SANTALACEAE,"Eubrachion ambiguum","1.2.1.3 Sub-national level",
+SANTALACEAE,"Jodina rhombifolia","1.2.1.3 Sub-national level",
 SANTALACEAE,"Thesium aphyllum","1.2.1.3 Sub-national level",
 SANTALACEAE,"Thesium aphyllum","4.4.3 Management",
+SANTALACEAE,"Phoradendron linearifolium","1.2.1.3 Sub-national level",
+SANTALACEAE,"Phoradendron linearifolium","4.4.3 Management",
 SAPINDACEAE,"Allophylus puberulus","1.2.1.3 Sub-national level","on going"
 SAPINDACEAE,"Allophylus puberulus","4.4 Protected areas","on going"
 SAPINDACEAE,"Allophylus semidentatus","4.4 Protected areas","on going"
@@ -7873,6 +7991,13 @@ SAPOTACEAE,"Sideroxylon obtusifolium","1.2.1.2 National level",
 SAPOTACEAE,"Sideroxylon obtusifolium","1.2.1.3 Sub-national level",
 SCHIZAEACEAE,"Schizaea elegans","1.2.1.3 Sub-national level","on going"
 SCHIZAEACEAE,"Schizaea elegans","4.4 Protected areas","on going"
+SCROPHULARIACEAE,"Ameroglossum pernambucense","1.2.1.2 National level","on going"
+SCROPHULARIACEAE,"Ameroglossum pernambucense","4.4 Protected areas","on going"
+SCROPHULARIACEAE,"Buddleja hatschbachii","1.2.2.3 Sub-national level","on going"
+SCROPHULARIACEAE,"Buddleja longiflora","1.2.2.2 National level","on going"
+SCROPHULARIACEAE,"Buddleja oblonga","1.2.2.3 Sub-national level","on going"
+SCROPHULARIACEAE,"Buddleja ramboi","1.2.1.3 Sub-national level","on going"
+SCROPHULARIACEAE,"Buddleja speciosissima","1.2.2.2 National level","on going"
 SELAGINELLACEAE,"Selaginella convoluta","4.4 Protected areas","on going"
 SELAGINELLACEAE,"Selaginella convoluta","1.2.1.3 Sub-national level","on going"
 SELAGINELLACEAE,"Selaginella mendoncae","1.2.1.2 National level","on going"
@@ -8023,6 +8148,11 @@ THELYPTERIDACEAE,"Thelypteris montana","4.4 Protected areas","on going"
 THELYPTERIDACEAE,"Thelypteris multigemmifera","1.2.1.3 Sub-national level","on going"
 THELYPTERIDACEAE,"Thelypteris novaeana","1.2.1.2 National level","on going"
 THELYPTERIDACEAE,"Thelypteris novaeana","1.2.1.3 Sub-national level","on going"
+THEOPHRASTACEAE,"Clavija nutans","1.2.2.3 Sub-national level","on going"
+THEOPHRASTACEAE,"Clavija spinosa","1.2.2.3 Sub-national level","on going"
+THEOPHRASTACEAE,"Jacquinia armillaris","1.2.2.3 Sub-national level","on going"
+THISMIACEAE,"Thismia espirito-santensis","1.2.1.3 Sub-national level",
+THISMIACEAE,"Thismia hyalina","1.2.1.3 Sub-national level",
 TRICHOCOLEACEAE,"Trichocolea brevifissa","1.2.1.3 Sub-national level","on going"
 TRIGONIACEAE,"Trigoniodendron spiritusanctense","4.4 Protected areas",
 TRIGONIACEAE,"Trigoniodendron spiritusanctense","1.2.1.3 Sub-national level",
@@ -8450,6 +8580,8 @@ NYCTAGINACEAE,"Andradaea floribunda","4.4 Protected areas","on going"
 NYCTAGINACEAE,"Pisonia ambigua","4.4 Protected areas","on going"
 OCHNACEAE,"Ouratea cuspidata","1.2.2.3 Sub-national level","on going"
 OCHNACEAE,"Ouratea cuspidata","3 Research actions","on going"
+OLACACEAE,"Heisteria ovata","1.2.1.3 Sub-national level","on going"
+OLACACEAE,"Heisteria ovata","4.4 Protected areas","on going"
 ORCHIDACEAE,"Brasilidium marshallianum","1.2.1.3 Sub-national level","on going"
 ORCHIDACEAE,"Brasilidium marshallianum","4.4 Protected areas",
 ORCHIDACEAE,"Hadrolaelia crispa","1.2.2.1 International level","on going"
@@ -8473,6 +8605,8 @@ PIPERACEAE,"Piper corintoanum","1.2.1.3 Sub-national level","on going"
 PIPERACEAE,"Piper pubisubmarginalum","1.2.1.3 Sub-national level","on going"
 PIPERACEAE,"Piper sampaioi","1.2.1.3 Sub-national level","on going"
 PIPERACEAE,"Piper vaginans","1.2.1.3 Sub-national level","on going"
+PLANTAGINACEAE,"Stemodia lobata","1.2.1.3 Sub-national level",
+PLANTAGINACEAE,"Stemodia lobata","4.4.3 Management",
 RICCIACEAE,"Riccia squamata","1.2.1.3 Sub-national level","on going"
 RUTACEAE,"Almeidea coerulea","1.2.1.3 Sub-national level","on going"
 RUTACEAE,"Almeidea coerulea","1.2.1.2 National level","on going"
@@ -8480,6 +8614,7 @@ RUTACEAE,"Hortia brasiliana","1.2.2.3 Sub-national level","on going"
 RUTACEAE,"Spiranthera odoratissima","1.2.2.3 Sub-national level","on going"
 SALICACEAE,"Casearia pauciflora","1.2.1.3 Sub-national level",
 SALICACEAE,"Salix humboldtiana","1.2.1.3 Sub-national level","on going"
+THISMIACEAE,"Thismia janeirensis","1.2.1.3 Sub-national level",
 TRIGONIACEAE,"Trigonia bahiensis","1.2.1.3 Sub-national level",
 TRIGONIACEAE,"Trigonia bahiensis","4.4.3 Management",
 VELLOZIACEAE,"Barbacenia ensifolia","1.2.1.3 Sub-national level","on going"

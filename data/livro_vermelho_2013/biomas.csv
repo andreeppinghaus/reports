@@ -255,6 +255,7 @@ ANACARDIACEAE,"Astronium graveolens",Caatinga
 ANACARDIACEAE,"Astronium graveolens",Cerrado
 ANACARDIACEAE,"Astronium graveolens","Pampa (Campos Sulinos)"
 ANACARDIACEAE,"Cyrtocarpa caatingae",Cerrado
+ANACARDIACEAE,"Myracrodruon balansae","Pampa (Campos Sulinos)"
 ANACARDIACEAE,"Myracrodruon urundeuva","Mata Atlântica"
 ANACARDIACEAE,"Myracrodruon urundeuva",Caatinga
 ANACARDIACEAE,"Myracrodruon urundeuva",Cerrado
@@ -267,17 +268,20 @@ ANACARDIACEAE,"Schinus engleri","Pampa (Campos Sulinos)"
 ANEMIACEAE,"Anemia blechnoides","Mata Atlântica"
 ANEMIACEAE,"Anemia gardneri","Mata Atlântica"
 ANEMIACEAE,"Anemia mirabilis",Caatinga
+ANEMIACEAE,"Anemia organensis","Mata Atlântica"
 ANEMIACEAE,"Anemia elegans",Cerrado
 ANEMIACEAE,"Anemia elegans","Mata Atlântica"
 ANEMIACEAE,"Anemia espiritosantensis","Mata Atlântica"
 ANEMIACEAE,"Anemia trichorhiza","Mata Atlântica"
 ANEMIACEAE,"Anemia trichorhiza",Cerrado
 ANEMIACEAE,"Anemia trichorhiza",Pantanal
+ANEMIACEAE,"Anemia warmingii","Mata Atlântica"
 ANEURACEAE,"Aneura pinguis","Mata Atlântica"
 ANEURACEAE,"Aneura pinguis",Pantanal
 ANNONACEAE,"Anaxagorea silvatica","Mata Atlântica"
 ANNONACEAE,"Annona bahiensis","Mata Atlântica"
 ANNONACEAE,"Annona burchellii",Cerrado
+ANNONACEAE,"Annona cacans","Mata Atlântica"
 ANNONACEAE,"Annona calcarata",Amazônia
 ANNONACEAE,"Annona coriacea",Cerrado
 ANNONACEAE,"Annona coriacea",Pantanal
@@ -534,11 +538,18 @@ ARACEAE,"Anthurium ianthinopodum","Mata Atlântica"
 ARACEAE,"Anthurium jilekii","Mata Atlântica"
 ARACEAE,"Anthurium jureianum","Mata Atlântica"
 ARACEAE,"Anthurium kunthii",Amazônia
+ARACEAE,"Anthurium langsdorffii","Mata Atlântica"
 ARACEAE,"Anthurium longifolium","Mata Atlântica"
+ARACEAE,"Anthurium lucidum","Mata Atlântica"
 ARACEAE,"Anthurium luschnathianum","Mata Atlântica"
 ARACEAE,"Anthurium organense","Mata Atlântica"
 ARACEAE,"Anthurium parasiticum","Mata Atlântica"
 ARACEAE,"Anthurium parvum","Mata Atlântica"
+ARACEAE,"Anthurium radicans","Mata Atlântica"
+ARACEAE,"Anthurium xanthophylloides","Mata Atlântica"
+ARACEAE,"Asterostigma cubense","Mata Atlântica"
+ARACEAE,"Asterostigma lividum","Mata Atlântica"
+ARACEAE,"Asterostigma lombardii","Mata Atlântica"
 ARACEAE,"Dieffenbachia aglaonematifolia",Caatinga
 ARACEAE,"Dieffenbachia aglaonematifolia",Cerrado
 ARACEAE,"Dracontioides desciscens",Cerrado
@@ -554,6 +565,7 @@ ARACEAE,"Philodendron fragile","Mata Atlântica"
 ARACEAE,"Philodendron hatschbachii","Mata Atlântica"
 ARACEAE,"Philodendron missionum","Mata Atlântica"
 ARACEAE,"Philodendron spiritus-sancti","Mata Atlântica"
+ARACEAE,"Philodendron vargealtense","Mata Atlântica"
 ARACEAE,"Stenospermation ulei",Amazônia
 ARACEAE,"Stenospermation ulei","Mata Atlântica"
 ARACEAE,"Taccarum peregrinum","Mata Atlântica"
@@ -611,8 +623,10 @@ ARECACEAE,"Butia archeri",Cerrado
 ARECACEAE,"Butia capitata",Cerrado
 ARECACEAE,"Butia eriospatha","Mata Atlântica"
 ARECACEAE,"Butia leiospatha",Cerrado
+ARECACEAE,"Butia leptospatha",Cerrado
 ARECACEAE,"Butia microspadix",Cerrado
 ARECACEAE,"Butia microspadix","Mata Atlântica"
+ARECACEAE,"Butia paraguayensis",Cerrado
 ARECACEAE,"Butia purpurascens",Cerrado
 ARECACEAE,"Butia yatay","Pampa (Campos Sulinos)"
 ARECACEAE,"Euterpe edulis",Cerrado
@@ -1001,6 +1015,7 @@ ASTERACEAE,"Planaltoa lychnophoroides",Cerrado
 ASTERACEAE,"Porophyllum bahiense",Caatinga
 ASTERACEAE,"Praxelis grandiflora",Cerrado
 ASTERACEAE,"Prestelia eriopus",Cerrado
+ASTERACEAE,"Proteopsis argentea",Cerrado
 ASTERACEAE,"Raulinoreitzia leptophlebia",Cerrado
 ASTERACEAE,"Richterago angustifolia",Cerrado
 ASTERACEAE,"Richterago arenaria",Cerrado
@@ -1139,22 +1154,32 @@ BEGONIACEAE,"Begonia integerrima","Mata Atlântica"
 BEGONIACEAE,"Begonia itaguassuensis","Mata Atlântica"
 BEGONIACEAE,"Begonia itatinensis","Mata Atlântica"
 BEGONIACEAE,"Begonia jureiensis","Mata Atlântica"
+BEGONIACEAE,"Begonia kuhlmannii","Mata Atlântica"
 BEGONIACEAE,"Begonia larorum","Mata Atlântica"
+BEGONIACEAE,"Begonia obscura","Mata Atlântica"
 BEGONIACEAE,"Begonia organensis","Mata Atlântica"
 BEGONIACEAE,"Begonia paranaensis","Mata Atlântica"
+BEGONIACEAE,"Begonia paulensis","Mata Atlântica"
 BEGONIACEAE,"Begonia perdusenii","Mata Atlântica"
 BEGONIACEAE,"Begonia perdusenii",Cerrado
 BEGONIACEAE,"Begonia piresiana","Mata Atlântica"
 BEGONIACEAE,"Begonia pluvialis","Mata Atlântica"
+BEGONIACEAE,"Begonia polygonifolia","Mata Atlântica"
+BEGONIACEAE,"Begonia radicans","Mata Atlântica"
 BEGONIACEAE,"Begonia rufa","Mata Atlântica"
 BEGONIACEAE,"Begonia rufa",Cerrado
+BEGONIACEAE,"Begonia ruschii","Mata Atlântica"
 BEGONIACEAE,"Begonia salesopolensis","Mata Atlântica"
+BEGONIACEAE,"Begonia scharffii","Mata Atlântica"
 BEGONIACEAE,"Begonia smilacina","Mata Atlântica"
 BEGONIACEAE,"Begonia stenolepis","Mata Atlântica"
 BEGONIACEAE,"Begonia sylvatica","Mata Atlântica"
+BEGONIACEAE,"Begonia toledoana","Mata Atlântica"
 BEGONIACEAE,"Begonia ulmifolia","Mata Atlântica"
 BEGONIACEAE,"Begonia ulmifolia",Caatinga
 BEGONIACEAE,"Begonia undulata","Mata Atlântica"
+BEGONIACEAE,"Begonia valdensium","Mata Atlântica"
+BEGONIACEAE,"Begonia venosa","Mata Atlântica"
 BEGONIACEAE,"Begonia vicina","Mata Atlântica"
 BERBERIDACEAE,"Berberis campos-portoi","Mata Atlântica"
 BERBERIDACEAE,"Berberis kleinii","Mata Atlântica"
@@ -1237,6 +1262,7 @@ BIXACEAE,"Cochlospermum regium",Amazônia
 BIXACEAE,"Cochlospermum regium",Cerrado
 BIXACEAE,"Bixa arborea",Amazônia
 BIXACEAE,"Bixa arborea","Mata Atlântica"
+BLECHNACEAE,"Blechnum andinum","Mata Atlântica"
 BLECHNACEAE,"Blechnum heringeri",Cerrado
 BLECHNACEAE,"Blechnum heringeri",Amazônia
 BLECHNACEAE,"Blechnum mochaenum","Mata Atlântica"
@@ -1269,6 +1295,7 @@ BROMELIACEAE,"Aechmea bromeliifolia var. albobracteata","Mata Atlântica"
 BROMELIACEAE,"Aechmea bromeliifolia var. albobracteata",Cerrado
 BROMELIACEAE,"Aechmea calyculata","Mata Atlântica"
 BROMELIACEAE,"Aechmea candida","Mata Atlântica"
+BROMELIACEAE,"Aechmea capixabae","Mata Atlântica"
 BROMELIACEAE,"Aechmea cariocae","Mata Atlântica"
 BROMELIACEAE,"Aechmea castanea","Mata Atlântica"
 BROMELIACEAE,"Aechmea caudata","Mata Atlântica"
@@ -1283,14 +1310,20 @@ BROMELIACEAE,"Aechmea eurycorymbus","Mata Atlântica"
 BROMELIACEAE,"Aechmea fosteriana","Mata Atlântica"
 BROMELIACEAE,"Aechmea gamosepala","Mata Atlântica"
 BROMELIACEAE,"Aechmea gracilis","Mata Atlântica"
+BROMELIACEAE,"Aechmea guarapariensis","Mata Atlântica"
 BROMELIACEAE,"Aechmea gustavoi","Mata Atlântica"
 BROMELIACEAE,"Aechmea kertesziae","Mata Atlântica"
 BROMELIACEAE,"Aechmea kleinii","Mata Atlântica"
 BROMELIACEAE,"Aechmea lingulata",Amazônia
+BROMELIACEAE,"Aechmea maasii","Mata Atlântica"
+BROMELIACEAE,"Aechmea macrochlamys","Mata Atlântica"
+BROMELIACEAE,"Aechmea marginalis","Mata Atlântica"
+BROMELIACEAE,"Aechmea muricata","Mata Atlântica"
 BROMELIACEAE,"Aechmea mutica","Mata Atlântica"
 BROMELIACEAE,"Aechmea nudicaulis","Mata Atlântica"
 BROMELIACEAE,"Aechmea orlandiana","Mata Atlântica"
 BROMELIACEAE,"Aechmea pectinata","Mata Atlântica"
+BROMELIACEAE,"Aechmea pedicellata","Mata Atlântica"
 BROMELIACEAE,"Aechmea pimenti-velosoi","Mata Atlântica"
 BROMELIACEAE,"Aechmea podantha","Mata Atlântica"
 BROMELIACEAE,"Aechmea recurvata var. albobracteata","Mata Atlântica"
@@ -1881,6 +1914,13 @@ CAMPANULACEAE,"Siphocampylus verticillatus","Mata Atlântica"
 CANNABACEAE,"Celtis ehrenbergiana",Cerrado
 CANNABACEAE,"Celtis ehrenbergiana","Mata Atlântica"
 CANNABACEAE,"Celtis ehrenbergiana",Pantanal
+CAPPARACEAE,"Crateva tapia",Amazônia
+CAPPARACEAE,"Crateva tapia",Caatinga
+CAPPARACEAE,"Crateva tapia",Cerrado
+CAPPARACEAE,"Crateva tapia","Mata Atlântica"
+CAPPARACEAE,"Hemiscola diffusa",Caatinga
+CAPPARACEAE,"Hemiscola diffusa",Cerrado
+CAPPARACEAE,"Hemiscola diffusa","Mata Atlântica"
 CARICACEAE,"Jacaratia spinosa",Amazônia
 CARICACEAE,"Jacaratia spinosa",Cerrado
 CARICACEAE,"Jacaratia spinosa","Mata Atlântica"
@@ -1968,6 +2008,7 @@ CLUSIACEAE,"Kielmeyera sigillata","Mata Atlântica"
 COMBRETACEAE,"Buchenavia hoehneana","Mata Atlântica"
 COMBRETACEAE,"Buchenavia iguaratensis","Mata Atlântica"
 COMBRETACEAE,"Buchenavia kleinii","Mata Atlântica"
+COMBRETACEAE,"Buchenavia pabstii","Mata Atlântica"
 COMBRETACEAE,"Buchenavia rabelloana","Mata Atlântica"
 COMBRETACEAE,"Combretum rupicola","Mata Atlântica"
 COMBRETACEAE,"Terminalia acuminata","Mata Atlântica"
@@ -2024,6 +2065,7 @@ CONVOLVULACEAE,"Evolvulus fuscus","Mata Atlântica"
 CONVOLVULACEAE,"Evolvulus glaziovii",Cerrado
 CONVOLVULACEAE,"Evolvulus kramerioides",Cerrado
 CONVOLVULACEAE,"Evolvulus rariflorus",Cerrado
+CONVOLVULACEAE,"Evolvulus riedelii",Cerrado
 CONVOLVULACEAE,"Evolvulus stellariifolius","Mata Atlântica"
 CONVOLVULACEAE,"Ipomoea acutisepala","Mata Atlântica"
 CONVOLVULACEAE,"Ipomoea acutisepala","Pampa (Campos Sulinos)"
@@ -2064,6 +2106,13 @@ CONVOLVULACEAE,"Operculina macrocarpa",Amazônia
 CONVOLVULACEAE,"Operculina macrocarpa","Mata Atlântica"
 CONVOLVULACEAE,"Operculina macrocarpa",Caatinga
 CONVOLVULACEAE,"Operculina macrocarpa",Cerrado
+COSTACEAE,"Chamaecostus subsessilis",Amazônia
+COSTACEAE,"Chamaecostus subsessilis",Cerrado
+COSTACEAE,"Chamaecostus cuspidatus","Mata Atlântica"
+COSTACEAE,"Chamaecostus fragilis",Amazônia
+COSTACEAE,"Chamaecostus fusiformis",Amazônia
+COSTACEAE,"Costus scaber",Amazônia
+COSTACEAE,"Costus scaber","Mata Atlântica"
 CRASSULACEAE,"Crassula peduncularis","Pampa (Campos Sulinos)"
 CRASSULACEAE,"Crassula peduncularis","Mata Atlântica"
 CUCURBITACEAE,"Cayaponia bonariensis","Mata Atlântica"
@@ -2093,6 +2142,7 @@ CYATHEACEAE,"Cyathea poeppigii",Cerrado
 CYATHEACEAE,"Cyathea pungens","Mata Atlântica"
 CYATHEACEAE,"Cyathea pungens",Cerrado
 CYATHEACEAE,"Cyathea pungens",Amazônia
+CYCLANTHACEAE,"Asplundia polymera","Mata Atlântica"
 CYCLANTHACEAE,"Asplundia polymera subsp. reitzii","Mata Atlântica"
 CYPERACEAE,"Bulbostylis distichoides",Cerrado
 CYPERACEAE,"Bulbostylis fendleri",Cerrado
@@ -2102,6 +2152,7 @@ CYPERACEAE,"Bulbostylis nesiotis","Mata Atlântica"
 CYPERACEAE,"Bulbostylis smithii",Cerrado
 CYPERACEAE,"Cryptangium claussenii","Mata Atlântica"
 CYPERACEAE,"Cryptangium claussenii",Cerrado
+CYPERACEAE,"Cyperus atlanticus","Mata Atlântica"
 CYPERACEAE,"Cyperus giganteus",Amazônia
 CYPERACEAE,"Cyperus giganteus",Caatinga
 CYPERACEAE,"Cyperus giganteus",Cerrado
@@ -2151,11 +2202,15 @@ DENNSTAEDTIACEAE,"Blotiella lindeniana","Mata Atlântica"
 DICHAPETALACEAE,"Stephanopodium engleri",Cerrado
 DICHAPETALACEAE,"Stephanopodium engleri","Mata Atlântica"
 DICHAPETALACEAE,"Stephanopodium magnifolium","Mata Atlântica"
+DICKSONIACEAE,"Dicksonia sellowiana","Mata Atlântica"
 DICRANACEAE,"Atractylocarpus brasiliensis","Mata Atlântica"
 DICRANACEAE,"Atractylocarpus brasiliensis",Caatinga
 DICRANACEAE,"Atractylocarpus longisetus","Mata Atlântica"
 DICRANACEAE,"Campylopus densicoma","Mata Atlântica"
 DILLENIACEAE,"Davilla glaziovii","Mata Atlântica"
+DILLENIACEAE,"Davilla macrocarpa","Mata Atlântica"
+DILLENIACEAE,"Doliocarpus glomeratus","Mata Atlântica"
+DILLENIACEAE,"Doliocarpus lancifolius","Mata Atlântica"
 DIOSCOREACEAE,"Dioscorea aesculifolia",Cerrado
 DIOSCOREACEAE,"Dioscorea campestris","Mata Atlântica"
 DIOSCOREACEAE,"Dioscorea campestris",Caatinga
@@ -2189,6 +2244,7 @@ DRYOPTERIDACEAE,"Elaphoglossum herminieri","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum iguapense","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum insigne","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum itatiayense","Mata Atlântica"
+DRYOPTERIDACEAE,"Elaphoglossum jamesonii","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum langsdorffii","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum macahense","Mata Atlântica"
 DRYOPTERIDACEAE,"Elaphoglossum nigrescens","Mata Atlântica"
@@ -2210,6 +2266,9 @@ ELAEOCARPACEAE,"Sloanea garckeana",Cerrado
 ELAEOCARPACEAE,"Sloanea garckeana","Mata Atlântica"
 ELAEOCARPACEAE,"Sloanea hirsuta","Mata Atlântica"
 ELAEOCARPACEAE,"Sloanea obtusifolia","Mata Atlântica"
+ELATINACEAE,"Elatine lindbergii","Mata Atlântica"
+EPHEDRACEAE,"Ephedra tweediana","Mata Atlântica"
+EPHEDRACEAE,"Ephedra tweediana","Pampa (Campos Sulinos)"
 ERICACEAE,"Agarista chlorantha",Cerrado
 ERICACEAE,"Agarista chlorantha","Mata Atlântica"
 ERICACEAE,"Agarista niederleinii","Mata Atlântica"
@@ -2440,6 +2499,7 @@ FABACEAE,"Chamaecrista brevicalyx var. elliptica",Caatinga
 FABACEAE,"Chamaecrista brevicalyx var. elliptica",Cerrado
 FABACEAE,"Chamaecrista catolesensis",Caatinga
 FABACEAE,"Chamaecrista catolesensis",Cerrado
+FABACEAE,"Chamaecrista choriophylla",Cerrado
 FABACEAE,"Chamaecrista cipoana",Cerrado
 FABACEAE,"Chamaecrista dentata",Cerrado
 FABACEAE,"Chamaecrista fodinarum",Caatinga
@@ -2567,6 +2627,7 @@ FABACEAE,"Inga sellowiana","Mata Atlântica"
 FABACEAE,"Inga suberosa",Amazônia
 FABACEAE,"Inga suborbicularis","Mata Atlântica"
 FABACEAE,"Inga unica","Mata Atlântica"
+FABACEAE,"Inga xinguensis",Amazônia
 FABACEAE,"Lathyrus acutifolius","Pampa (Campos Sulinos)"
 FABACEAE,"Lathyrus hasslerianus","Mata Atlântica"
 FABACEAE,"Lathyrus hookeri","Pampa (Campos Sulinos)"
@@ -2892,6 +2953,7 @@ IRIDACEAE,"Alophia coerulea","Mata Atlântica"
 IRIDACEAE,"Alophia coerulea",Cerrado
 IRIDACEAE,"Neomarica glauca","Mata Atlântica"
 IRIDACEAE,"Neomarica glauca",Cerrado
+IRIDACEAE,"Neomarica humilis","Mata Atlântica"
 IRIDACEAE,"Neomarica longifolia","Mata Atlântica"
 IRIDACEAE,"Neomarica sabinii","Mata Atlântica"
 IRIDACEAE,"Neomarica silvestris","Mata Atlântica"
@@ -2923,6 +2985,9 @@ KRAMERIACEAE,"Krameria grandiflora",Cerrado
 LACISTEMATACEAE,"Lacistema lucidum","Mata Atlântica"
 LACISTEMATACEAE,"Lacistema robustum","Mata Atlântica"
 LACISTEMATACEAE,"Lacistema robustum",Cerrado
+LAMIACEAE,"Aegiphila australis","Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Cunila fasciculata","Mata Atlântica (Pastore, 2011)"
+LAMIACEAE,"Cunila incana","Mata Atlântica (Pastore, 2011)"
 LAMIACEAE,"Eriope anamariae",Cerrado
 LAMIACEAE,"Eriope blanchetii","Mata Atlântica"
 LAMIACEAE,"Eriope crassipes",Amazônia
@@ -2936,6 +3001,10 @@ LAMIACEAE,"Eriope macrostachya",Cerrado
 LAMIACEAE,"Eriope macrostachya","Mata Atlântica"
 LAMIACEAE,"Eriope obovata var. gracilis",Cerrado
 LAMIACEAE,"Eriope simplex",Cerrado
+LAMIACEAE,"Glechon ciliata","Cerrado, Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Glechon discolor","Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Hesperozygis nitida","Cerrado, Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Hesperozygis ringens","Mata Atlântica (Harley et al., 2011)"
 LAMIACEAE,"Hypenia aristulata",Cerrado
 LAMIACEAE,"Hypenia crispata",Cerrado
 LAMIACEAE,"Hypenia micrantha",Cerrado
@@ -2987,6 +3056,11 @@ LAMIACEAE,"Hyptis viatica",Caatinga
 LAMIACEAE,"Ocimum nudicaule",Cerrado
 LAMIACEAE,"Ocimum ovatum",Cerrado
 LAMIACEAE,"Salvia congestiflora","Mata Atlântica"
+LAMIACEAE,"Salvia espirito-santensis","Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Salvia fruticetorum","Cerrado, Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Salvia neovidensis","Mata Atlântica  (Harley et al., 2011)"
+LAMIACEAE,"Salvia uliginosa","Mata Atlântica (Harley et al., 2011)"
+LAMIACEAE,"Vitex panshiniana","Amazônia, Caatinga, Cerrado (Harley et al., 2011)"
 LAURACEAE,"Aiouea benthamiana",Amazônia
 LAURACEAE,"Aiouea bracteata","Cerrado, Mata Atlântica (Quinet"
 LAURACEAE,"Aiouea bracteata",Baitello
@@ -3104,6 +3178,7 @@ LAURACEAE,"Urbanodendron macrophyllum","Mata Atlântica"
 LAURACEAE,"Urbanodendron verrucosum","Mata Atlântica"
 LAURACEAE,"Williamodendron cinnamomeum","Mata Atlântica"
 LECYTHIDACEAE,"Allantoma integrifolia",Amazônia
+LECYTHIDACEAE,"Allantoma kuhlmannii",Amazônia
 LECYTHIDACEAE,"Allantoma pachyantha",Amazônia
 LECYTHIDACEAE,"Allantoma pauciramosa",Amazônia
 LECYTHIDACEAE,"Allantoma uaupensis",Amazônia
@@ -3116,9 +3191,20 @@ LECYTHIDACEAE,"Cariniana legalis",Cerrado
 LECYTHIDACEAE,"Cariniana parvifolia","Mata Atlântica"
 LECYTHIDACEAE,"Cariniana penduliflora",Amazônia
 LECYTHIDACEAE,"Couratari asterotricha","Mata Atlântica"
+LECYTHIDACEAE,"Couratari atrovinosa",Amazônia
 LECYTHIDACEAE,"Couratari guianensis",Amazônia
+LECYTHIDACEAE,"Couratari longipedicellata",Amazônia
+LECYTHIDACEAE,"Couratari prancei",Amazônia
 LECYTHIDACEAE,"Couratari pyramidata","Mata Atlântica"
 LECYTHIDACEAE,"Couratari tauari",Amazônia
+LECYTHIDACEAE,"Couroupita guianensis",Amazônia
+LECYTHIDACEAE,"Eschweilera alvimii","Mata Atlântica"
+LECYTHIDACEAE,"Eschweilera amazoniciformis",Amazônia
+LECYTHIDACEAE,"Eschweilera atropetiolata",Amazônia
+LECYTHIDACEAE,"Eschweilera carinata",Amazônia
+LECYTHIDACEAE,"Eschweilera compressa","Mata Atlântica"
+LECYTHIDACEAE,"Eschweilera cyathiformis",Amazônia
+LECYTHIDACEAE,"Eschweilera obversa",Amazônia
 LECYTHIDACEAE,"Eschweilera piresii",Amazônia
 LECYTHIDACEAE,"Eschweilera punctata",Amazônia
 LECYTHIDACEAE,"Eschweilera rabeliana",Amazônia
@@ -3128,12 +3214,17 @@ LECYTHIDACEAE,"Eschweilera roraimensis",Amazônia
 LECYTHIDACEAE,"Eschweilera subcordata",Amazônia
 LECYTHIDACEAE,"Eschweilera tetrapetala","Mata Atlântica"
 LECYTHIDACEAE,"Eschweilera truncata",Amazônia
+LECYTHIDACEAE,"Gustavia acuminata",Amazônia
+LECYTHIDACEAE,"Gustavia erythrocarpa",Amazônia
 LECYTHIDACEAE,"Gustavia longepetiolata",Amazônia
 LECYTHIDACEAE,"Lecythis barnebyi",Amazônia
 LECYTHIDACEAE,"Lecythis brancoensis",Amazônia
 LECYTHIDACEAE,"Lecythis lanceolata","Mata Atlântica"
 LECYTHIDACEAE,"Lecythis lurida","Mata Atlântica"
 LECYTHIDACEAE,"Lecythis lurida",Amazônia
+LECYTHIDACEAE,"Lecythis parvifructa",Amazônia
+LECYTHIDACEAE,"Lecythis prancei",Amazônia
+LECYTHIDACEAE,"Lecythis retusa",Amazônia
 LECYTHIDACEAE,"Lecythis schomburgkii",Cerrado
 LECYTHIDACEAE,"Lecythis schomburgkii",Amazônia
 LECYTHIDACEAE,"Lecythis schwackei","Mata Atlântica"
@@ -3244,12 +3335,15 @@ LYCOPODIACEAE,"Huperzia flexibilis","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia fontinaloides","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia hemleri","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia hexasticha","Mata Atlântica"
+LYCOPODIACEAE,"Huperzia itambensis","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia martii","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia martii",Cerrado
 LYCOPODIACEAE,"Huperzia mollicoma","Mata Atlântica"
+LYCOPODIACEAE,"Huperzia mooreana","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia nuda","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia quadrifariata","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia regnellii","Mata Atlântica"
+LYCOPODIACEAE,"Huperzia rubra",Cerrado
 LYCOPODIACEAE,"Huperzia sellowiana","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia taxifolia","Mata Atlântica"
 LYCOPODIACEAE,"Huperzia taxifolia",Amazônia
@@ -3345,6 +3439,7 @@ MALPIGHIACEAE,"Byrsonima lanulosa","Amazônia, Cerrado (Mamede, 2010)."
 MALPIGHIACEAE,"Byrsonima macrophylla","Cerrado (Mamede, 2010)."
 MALPIGHIACEAE,"Byrsonima microphylla","Caatinga, Mata Atlântica (Mamede, 2010)"
 MALPIGHIACEAE,"Byrsonima morii",Caatinga
+MALPIGHIACEAE,"Byrsonima onishiana",Cerrado
 MALPIGHIACEAE,"Byrsonima rigida",Cerrado
 MALPIGHIACEAE,"Byrsonima variabilis","Caatinga, Cerrado, Mata Atlântica (Mamede, 2010)"
 MALPIGHIACEAE,"Camarea affinis","Cerrado (Mamede, 2010)"
@@ -3547,6 +3642,11 @@ MARSILEACEAE,"Pilularia americana","Mata Atlântica"
 MARSILEACEAE,"Pilularia americana","Pampa (Campos Sulinos)"
 MARSILEACEAE,"Regnellidium diphyllum","Mata Atlântica"
 MARSILEACEAE,"Regnellidium diphyllum","Pampa (Campos Sulinos)"
+MARTYNIACEAE,"Ibicella lutea","Mata Atlântica"
+MARTYNIACEAE,"Ibicella lutea",Caatinga
+MARTYNIACEAE,"Ibicella lutea","Pampa (Campos Sulinos)"
+MARTYNIACEAE,"Craniolaria integrifolia","Mata Atlântica"
+MARTYNIACEAE,"Craniolaria integrifolia",Pantanal
 MELASTOMATACEAE,"Bertolonia angustifolia","Mata Atlântica"
 MELASTOMATACEAE,"Bertolonia formosa","Mata Atlântica"
 MELASTOMATACEAE,"Bertolonia foveolata","Mata Atlântica"
@@ -3918,6 +4018,7 @@ MYRSINACEAE,"Myrsine glazioviana","Mata Atlântica"
 MYRSINACEAE,"Myrsine villosissima","Mata Atlântica"
 MYRSINACEAE,"Anagallis alternifolia",Cerrado
 MYRSINACEAE,"Anagallis alternifolia","Mata Atlântica"
+MYRSINACEAE,"Anagallis barbata","Mata Atlântica"
 MYRTACEAE,"Accara elegans","Cerrado, Mata Atlântica"
 MYRTACEAE,"Blepharocalyx salicifolius","Mata Atlântica"
 MYRTACEAE,"Blepharocalyx salicifolius",Caatinga
@@ -4177,6 +4278,11 @@ NYCTAGINACEAE,"Guapira obtusata",Cerrado
 NYCTAGINACEAE,"Guapira obtusata","Mata Atlântica"
 NYCTAGINACEAE,"Neea verticillata",Amazônia
 NYCTAGINACEAE,"Neea verticillata","Mata Atlântica"
+NYMPHAEACEAE,"Nymphaea amazonum",Amazônia
+NYMPHAEACEAE,"Nymphaea amazonum","Mata Atlântica"
+NYMPHAEACEAE,"Nymphaea amazonum",Pantanal
+NYMPHAEACEAE,"Nymphaea prolifera",Cerrado
+NYMPHAEACEAE,"Nymphaea prolifera","Mata Atlântica"
 OCHNACEAE,"Luxemburgia angustifolia",Cerrado
 OCHNACEAE,"Luxemburgia corymbosa",Cerrado
 OCHNACEAE,"Luxemburgia flexuosa",Cerrado
@@ -4184,6 +4290,16 @@ OCHNACEAE,"Ouratea hatschbachii",Cerrado
 OCHNACEAE,"Ouratea hatschbachii",Caatinga
 OCHNACEAE,"Ouratea spectabilis",Cerrado
 OCHNACEAE,"Sauvagesia nitida",Cerrado
+OLACACEAE,"Heisteria maguirei",Amazônia
+OLACACEAE,"Heisteria perianthomega",Caatinga
+OLACACEAE,"Heisteria perianthomega",Cerrado
+OLACACEAE,"Heisteria perianthomega","Mata Atlântica"
+OLACACEAE,"Heisteria silvianii","Mata Atlântica"
+OLACACEAE,"Heisteria silvianii",Cerrado
+OLACACEAE,"Minquartia guianensis",Cerrado
+OLACACEAE,"Minquartia guianensis",Amazônia
+OLACACEAE,"Ptychopetalum olacoides",Amazônia
+OLEACEAE,"Chionanthus filiformis","Mata Atlântica"
 OLEACEAE,"Chionanthus fluminensis","Mata Atlântica"
 OLEACEAE,"Chionanthus micranthus","Mata Atlântica"
 OLEACEAE,"Chionanthus subsessilis","Mata Atlântica"
@@ -4197,6 +4313,8 @@ ONAGRACEAE,"Fuchsia regia","Mata Atlântica"
 ONAGRACEAE,"Ludwigia anastomosans",Cerrado
 OPHIOGLOSSACEAE,"Botrychium virginianum","Mata Atlântica"
 OPHIOGLOSSACEAE,"Ophioglossum palmatum","Mata Atlântica"
+OPILIACEAE,"Agonandra excelsa",Cerrado
+OPILIACEAE,"Agonandra excelsa","Mata Atlântica"
 ORCHIDACEAE,"Acianthera crinita","Mata Atlântica"
 ORCHIDACEAE,"Acianthera langeana","Mata Atlântica"
 ORCHIDACEAE,"Coppensia hydrophila",Cerrado
@@ -4249,7 +4367,9 @@ ORCHIDACEAE,"Baptistonia lietzei","Mata Atlântica"
 ORCHIDACEAE,"Baptistonia pubes","Mata Atlântica"
 ORCHIDACEAE,"Baptistonia sarcodes","Mata Atlântica"
 ORCHIDACEAE,"Baptistonia truncata","Mata Atlântica"
+ORCHIDACEAE,"Baptistonia venusta","Mata Atlântica"
 ORCHIDACEAE,"Baptistonia cornigera","Mata Atlântica"
+ORCHIDACEAE,"Baptistonia cruciata","Mata Atlântica"
 ORCHIDACEAE,"Barbosella dusenii","Mata Atlântica"
 ORCHIDACEAE,"Barbosella spiritusanctensis","Mata Atlântica"
 ORCHIDACEAE,"Barbosella trilobata","Mata Atlântica"
@@ -4345,6 +4465,7 @@ ORCHIDACEAE,"Cattleya porphyroglossa","Mata Atlântica"
 ORCHIDACEAE,"Cattleya schilleriana","Mata Atlântica"
 ORCHIDACEAE,"Cattleya schofieldiana","Mata Atlântica"
 ORCHIDACEAE,"Cattleya tenuis",Cerrado
+ORCHIDACEAE,"Cattleya tigrina","Mata Atlântica"
 ORCHIDACEAE,"Cattleya velutina","Mata Atlântica"
 ORCHIDACEAE,"Cattleya walkeriana",Amazônia
 ORCHIDACEAE,"Cattleya walkeriana",Cerrado
@@ -4853,6 +4974,7 @@ OROBANCHACEAE,"Nothochilus coccineus","Mata Atlântica"
 OROBANCHACEAE,"Physocalyx aurantiacus",Caatinga
 OROBANCHACEAE,"Physocalyx aurantiacus",Cerrado
 OROBANCHACEAE,"Physocalyx major",Cerrado
+OROBANCHACEAE,"Velloziella westermanii","Mata Atlântica"
 OXALIDACEAE,"Oxalis arachnoidea","Mata Atlântica"
 OXALIDACEAE,"Oxalis bela-vitoriae","Mata Atlântica"
 OXALIDACEAE,"Oxalis blackii","Mata Atlântica"
@@ -5068,6 +5190,13 @@ PLANTAGINACEAE,"Stemodia harleyi",Caatinga
 PLANTAGINACEAE,"Stemodia hyptoides","Mata Atlântica"
 PLANTAGINACEAE,"Stemodia hyptoides","Pampa (Campos Sulinos)"
 PLANTAGINACEAE,"Stemodia hyptoides",Pantanal
+PLANTAGINACEAE,"Stemodia microphylla",Cerrado
+PLANTAGINACEAE,"Stemodia stellata",Cerrado
+PLANTAGINACEAE,"Stemodia stricta",Cerrado
+PLANTAGINACEAE,"Stemodia stricta","Mata Atlântica"
+PLANTAGINACEAE,"Stemodia trifoliata","Mata Atlântica"
+PLANTAGINACEAE,"Stemodia veronicoides",Cerrado
+PLANTAGINACEAE,"Stemodia veronicoides","Mata Atlântica"
 POACEAE,"Acroceras excavatum",Cerrado
 POACEAE,"Acroceras excavatum","Mata Atlântica"
 POACEAE,"Acroceras fluminense",Amazônia
@@ -5212,6 +5341,60 @@ POACEAE,"Panicum pedersenii","Mata Atlântica"
 POACEAE,"Panicum pedersenii","Pampa (Campos Sulinos)"
 POACEAE,"Panicum pedersenii",Pantanal
 POACEAE,"Pariana carvalhoi","Mata Atlântica"
+POACEAE,"Paspalum arundinellum",Cerrado
+POACEAE,"Paspalum arundinellum","Mata Atlântica"
+POACEAE,"Paspalum aspidiotes",Amazônia
+POACEAE,"Paspalum aspidiotes",Cerrado
+POACEAE,"Paspalum biaristatum",Cerrado
+POACEAE,"Paspalum brachytrichum","Mata Atlântica"
+POACEAE,"Paspalum burmanii",Cerrado
+POACEAE,"Paspalum cinerascens",Amazônia
+POACEAE,"Paspalum cinerascens",Cerrado
+POACEAE,"Paspalum compressifolium","Mata Atlântica"
+POACEAE,"Paspalum compressifolium","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum compressifolium",Cerrado
+POACEAE,"Paspalum cromyorrhizon","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum dedeccae",Cerrado
+POACEAE,"Paspalum dedeccae","Mata Atlântica"
+POACEAE,"Paspalum erianthoides","Mata Atlântica"
+POACEAE,"Paspalum exaltatum","Mata Atlântica"
+POACEAE,"Paspalum exaltatum","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum falcatum","Mata Atlântica"
+POACEAE,"Paspalum falcatum",Cerrado
+POACEAE,"Paspalum fasciculatum",Amazônia
+POACEAE,"Paspalum fasciculatum",Cerrado
+POACEAE,"Paspalum fasciculatum",Pantanal
+POACEAE,"Paspalum flaccidum",Cerrado
+POACEAE,"Paspalum flaccidum","Mata Atlântica"
+POACEAE,"Paspalum foliiforme",Amazônia
+POACEAE,"Paspalum foliiforme",Cerrado
+POACEAE,"Paspalum foliiforme",Pantanal
+POACEAE,"Paspalum foliiforme","Mata Atlântica"
+POACEAE,"Paspalum geminiflorum",Amazônia
+POACEAE,"Paspalum geminiflorum",Cerrado
+POACEAE,"Paspalum heterotrichon",Cerrado
+POACEAE,"Paspalum ionanthum",Cerrado
+POACEAE,"Paspalum ionanthum","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum jesuiticum","Mata Atlântica"
+POACEAE,"Paspalum lenticulare",Amazônia
+POACEAE,"Paspalum lenticulare",Cerrado
+POACEAE,"Paspalum lenticulare","Mata Atlântica"
+POACEAE,"Paspalum lenticulare","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum lenticulare",Pantanal
+POACEAE,"Paspalum longiaristatum",Cerrado
+POACEAE,"Paspalum macranthecium",Cerrado
+POACEAE,"Paspalum macranthecium",Pantanal
+POACEAE,"Paspalum niquelandiae",Cerrado
+POACEAE,"Paspalum stellatum",Amazônia
+POACEAE,"Paspalum stellatum",Cerrado
+POACEAE,"Paspalum stellatum","Mata Atlântica"
+POACEAE,"Paspalum stellatum","Pampa (Campos Sulinos)"
+POACEAE,"Paspalum umbrosum","Mata Atlântica"
+POACEAE,"Paspalum usterii","Mata Atlântica"
+POACEAE,"Paspalum virgatum",Amazônia
+POACEAE,"Paspalum virgatum","Mata Atlântica"
+POACEAE,"Paspalum virgatum",Cerrado
+POACEAE,"Paspalum virgatum",Pantanal
 POACEAE,"Pharus latifolius",Amazônia
 POACEAE,"Pharus latifolius",Caatinga
 POACEAE,"Pharus latifolius","Mata Atlântica"
@@ -5221,6 +5404,9 @@ POACEAE,"Piptochaetium ruprechtianum","Mata Atlântica"
 POACEAE,"Piptochaetium ruprechtianum","Pampa (Campos Sulinos)"
 POACEAE,"Poa bradei","Mata Atlântica"
 POACEAE,"Poa reitzii","Mata Atlântica"
+POACEAE,"Polypogon chilensis","Mata Atlântica"
+POACEAE,"Polypogon chilensis","Pampa (Campos Sulinos)"
+POACEAE,"Polypogon chilensis",Cerrado
 POACEAE,"Raddia angustifolia",Caatinga
 POACEAE,"Raddia angustifolia","Mata Atlântica"
 POACEAE,"Raddia distichophylla","Mata Atlântica"
@@ -5229,6 +5415,7 @@ POACEAE,"Raddiella esenbeckii",Caatinga
 POACEAE,"Raddiella esenbeckii",Cerrado
 POACEAE,"Raddiella esenbeckii","Mata Atlântica"
 POACEAE,"Reitzia smithii","Mata Atlântica"
+POACEAE,"Rhynchoryza subulata","Mata Atlântica"
 POACEAE,"Schizachyrium scabriflorum",Cerrado
 POACEAE,"Schizachyrium scabriflorum","Pampa (Campos Sulinos)"
 POACEAE,"Setaria parviflora var. pilosissima","Mata Atlântica"
@@ -5245,6 +5432,13 @@ POACEAE,"Sporobolus adustus","Mata Atlântica"
 POACEAE,"Sporobolus apiculatus",Cerrado
 POACEAE,"Sporobolus camporum",Cerrado
 POACEAE,"Sporobolus camporum","Mata Atlântica"
+POACEAE,"Steinchisma spathellosa","Mata Atlântica"
+POACEAE,"Stipa planaltina","Mata Atlântica"
+POACEAE,"Stipa rhizomata","Mata Atlântica"
+POACEAE,"Stipa rosengurtii","Pampa (Campos Sulinos)"
+POACEAE,"Stipa sellowiana","Mata Atlântica"
+POACEAE,"Stipa setigera","Mata Atlântica"
+POACEAE,"Stipa setigera","Pampa (Campos Sulinos)"
 POACEAE,"Streptochaeta spicata",Amazônia
 POACEAE,"Streptochaeta spicata",Caatinga
 POACEAE,"Streptochaeta spicata",Cerrado
@@ -5315,18 +5509,34 @@ POLYGALACEAE,"Polygala selaginoides","Mata Atlântica"
 POLYGALACEAE,"Polygala stephaniana",Cerrado
 POLYGALACEAE,"Polygala tamariscea",Cerrado
 POLYGALACEAE,"Polygala tamariscea","Mata Atlântica"
+POLYGONACEAE,"Coccoloba argentinensis",Cerrado
+POLYGONACEAE,"Coccoloba argentinensis","Mata Atlântica"
+POLYGONACEAE,"Coccoloba cereifera",Cerrado
+POLYGONACEAE,"Coccoloba glaziovii","Mata Atlântica"
+POLYGONACEAE,"Coccoloba persicaria","Mata Atlântica"
 POLYPODIACEAE,"Campyloneurum decurrens","Mata Atlântica"
+POLYPODIACEAE,"Ceradenia capillaris","Mata Atlântica"
+POLYPODIACEAE,"Ceradenia glaziovii","Mata Atlântica"
+POLYPODIACEAE,"Ceradenia warmingii","Mata Atlântica"
+POLYPODIACEAE,"Grammitis fluminensis","Mata Atlântica"
+POLYPODIACEAE,"Lellingeria brasiliensis","Mata Atlântica"
+POLYPODIACEAE,"Lellingeria itatimensis","Mata Atlântica"
+POLYPODIACEAE,"Lellingeria limula","Mata Atlântica"
+POLYPODIACEAE,"Lellingeria pumila","Mata Atlântica"
 POLYPODIACEAE,"Lellingeria suspensa",Amazônia
 POLYPODIACEAE,"Lellingeria tamandarei","Mata Atlântica"
 POLYPODIACEAE,"Melpomene peruviana","Mata Atlântica"
 POLYPODIACEAE,"Microgramma crispata","Mata Atlântica"
 POLYPODIACEAE,"Microgramma crispata",Caatinga
+POLYPODIACEAE,"Micropolypodium perpusillum","Mata Atlântica"
 POLYPODIACEAE,"Pecluma hoehnii",Cerrado
 POLYPODIACEAE,"Pecluma imbeana","Mata Atlântica"
 POLYPODIACEAE,"Pecluma insularis","Mata Atlântica"
+POLYPODIACEAE,"Pecluma truncorum","Mata Atlântica"
 POLYPODIACEAE,"Pleopeltis alborufula","Mata Atlântica"
 POLYPODIACEAE,"Pleopeltis monoides","Mata Atlântica"
 POLYPODIACEAE,"Pleopeltis trindadensis","Mata Atlântica"
+POLYPODIACEAE,"Terpsichore chrysleri","Mata Atlântica"
 POLYPODIACEAE,"Terpsichore semihirsuta","Mata Atlântica"
 POLYPODIACEAE,"Terpsichore senilis","Mata Atlântica"
 POLYPODIACEAE,"Terpsichore taxifolia","Mata Atlântica"
@@ -5377,10 +5587,15 @@ PTERIDACEAE,"Doryopteris rediviva","Mata Atlântica"
 PTERIDACEAE,"Doryopteris rosenstockii","Mata Atlântica"
 PTERIDACEAE,"Doryopteris rufa","Mata Atlântica"
 PTERIDACEAE,"Doryopteris subsimplex","Mata Atlântica"
+PTERIDACEAE,"Doryopteris tijucana","Mata Atlântica"
+PTERIDACEAE,"Doryopteris trilobata",Cerrado
+PTERIDACEAE,"Eriosorus biardii","Mata Atlântica"
 PTERIDACEAE,"Eriosorus cheilanthoides","Mata Atlântica"
 PTERIDACEAE,"Eriosorus cheilanthoides",Cerrado
+PTERIDACEAE,"Eriosorus insignis","Mata Atlântica"
 PTERIDACEAE,"Eriosorus rufescens","Mata Atlântica"
 PTERIDACEAE,"Jamesonia brasiliensis","Mata Atlântica"
+PTERIDACEAE,"Pellaea gleichenioides",Cerrado
 PTERIDACEAE,"Pellaea cymbiformis",Cerrado
 PTERIDACEAE,"Pteris congesta","Mata Atlântica"
 PTERIDACEAE,"Pteris limae","Mata Atlântica"
@@ -5478,6 +5693,7 @@ RUBIACEAE,"Galianthe vaginata","Mata Atlântica"
 RUBIACEAE,"Galium diphyllum","Mata Atlântica"
 RUBIACEAE,"Galium equisetoides","Mata Atlântica"
 RUBIACEAE,"Galium humile","Mata Atlântica"
+RUBIACEAE,"Galium nigroramosum","Mata Atlântica"
 RUBIACEAE,"Galium rubidiflorum","Mata Atlântica"
 RUBIACEAE,"Galium shepherdii","Mata Atlântica"
 RUBIACEAE,"Genipa americana",Amazônia
@@ -5501,6 +5717,7 @@ RUBIACEAE,"Ladenbergia hexandra",Cerrado
 RUBIACEAE,"Ladenbergia hexandra","Mata Atlântica"
 RUBIACEAE,"Manettia campanulacea","Mata Atlântica"
 RUBIACEAE,"Manettia pauciflora","Mata Atlântica"
+RUBIACEAE,"Manettia tweedieana","Mata Atlântica"
 RUBIACEAE,"Melanopsidium nigrum","Mata Atlântica"
 RUBIACEAE,"Mitracarpus anthospermoides","Mata Atlântica"
 RUBIACEAE,"Mitracarpus baturitensis",Caatinga
@@ -5556,6 +5773,7 @@ RUBIACEAE,"Rudgea crassifolia",Caatinga
 RUBIACEAE,"Rudgea crassifolia","Mata Atlântica"
 RUBIACEAE,"Rudgea erythrocarpa","Mata Atlântica"
 RUBIACEAE,"Rudgea francavillana","Mata Atlântica"
+RUBIACEAE,"Rudgea insignis","Mata Atlântica"
 RUBIACEAE,"Rudgea interrupta","Mata Atlântica"
 RUBIACEAE,"Rudgea jasminoides subsp. nervosa","Mata Atlântica"
 RUBIACEAE,"Rudgea macrophylla","Mata Atlântica"
@@ -5637,8 +5855,11 @@ SALICACEAE,"Xylosma glaberrima","Mata Atlântica"
 SANTALACEAE,"Acanthosyris paulo-alvinii",Cerrado
 SANTALACEAE,"Eubrachion ambiguum","Mata Atlântica"
 SANTALACEAE,"Eubrachion ambiguum","Pampa (Campos Sulinos)"
+SANTALACEAE,"Jodina rhombifolia","Mata Atlântica"
+SANTALACEAE,"Jodina rhombifolia","Pampa (Campos Sulinos)"
 SANTALACEAE,"Thesium aphyllum",Cerrado
 SANTALACEAE,"Thesium aphyllum","Mata Atlântica"
+SANTALACEAE,"Phoradendron linearifolium","Mata Atlântica"
 SAPINDACEAE,"Allophylus puberulus","Mata Atlântica"
 SAPINDACEAE,"Allophylus semidentatus",Amazônia
 SAPINDACEAE,"Allophylus semidentatus","Mata Atlântica"
@@ -5661,6 +5882,7 @@ SAPINDACEAE,"Paullinia racemosa","Mata Atlântica"
 SAPINDACEAE,"Paullinia riodocensis","Mata Atlântica"
 SAPINDACEAE,"Paullinia riodocensis",Caatinga
 SAPINDACEAE,"Paullinia uloptera","Mata Atlântica"
+SAPINDACEAE,"Serjania cuspidata","Mata Atlântica"
 SAPINDACEAE,"Serjania deflexa","Mata Atlântica"
 SAPINDACEAE,"Serjania divaricocca","Mata Atlântica"
 SAPINDACEAE,"Serjania hatschbachii","Mata Atlântica"
@@ -5793,6 +6015,12 @@ SAPOTACEAE,"Sideroxylon obtusifolium","Caatinga, Cerrado, Mata AtlÃ¢ntica, Pan
 SCHIZAEACEAE,"Schizaea elegans","Mata Atlântica"
 SCHIZAEACEAE,"Schizaea elegans",Cerrado
 SCHIZAEACEAE,"Schizaea elegans",Amazônia
+SCROPHULARIACEAE,"Ameroglossum pernambucense",Caatinga
+SCROPHULARIACEAE,"Buddleja hatschbachii","Mata Atlântica"
+SCROPHULARIACEAE,"Buddleja longiflora","Mata Atlântica"
+SCROPHULARIACEAE,"Buddleja oblonga","Mata Atlântica"
+SCROPHULARIACEAE,"Buddleja ramboi","Mata Atlântica"
+SCROPHULARIACEAE,"Buddleja speciosissima","Mata Atlântica"
 SELAGINELLACEAE,"Selaginella convoluta","Mata Atlântica"
 SELAGINELLACEAE,"Selaginella convoluta",Caatinga
 SELAGINELLACEAE,"Selaginella convoluta",Cerrado
@@ -5889,6 +6117,7 @@ SOLANACEAE,"Solanum pinetorum","Mata Atlântica"
 SPHAGNACEAE,"Sphagnum pendulirameum",Amazônia
 SPHAGNACEAE,"Sphagnum pendulirameum","Pampa (Campos Sulinos)"
 STYRACACEAE,"Styrax acuminatus","Mata Atlântica"
+SYMPLOCACEAE,"Symplocos altissima","Mata Atlântica"
 SYMPLOCACEAE,"Symplocos corymboclados","Mata Atlântica"
 SYMPLOCACEAE,"Symplocos falcata","Mata Atlântica"
 SYMPLOCACEAE,"Symplocos itatiaiae","Mata Atlântica"
@@ -5917,6 +6146,13 @@ THELYPTERIDACEAE,"Thelypteris macrophylla",Amazônia
 THELYPTERIDACEAE,"Thelypteris montana","Mata Atlântica"
 THELYPTERIDACEAE,"Thelypteris multigemmifera","Mata Atlântica"
 THELYPTERIDACEAE,"Thelypteris novaeana","Mata Atlântica"
+THEOPHRASTACEAE,"Clavija nutans",Cerrado
+THEOPHRASTACEAE,"Clavija nutans","Mata Atlântica"
+THEOPHRASTACEAE,"Clavija spinosa","Mata Atlântica"
+THEOPHRASTACEAE,"Jacquinia armillaris","Mata Atlântica"
+THISMIACEAE,"Thismia espirito-santensis","Mata Atlântica"
+THISMIACEAE,"Thismia hyalina",Amazônia
+THISMIACEAE,"Thismia hyalina","Mata Atlântica"
 TRICHOCOLEACEAE,"Trichocolea brevifissa","Mata Atlântica"
 TRIGONIACEAE,"Trigoniodendron spiritusanctense","Mata Atlântica"
 TRIURIDACEAE,"Sciaphila schwackeana","Mata Atlântica"
@@ -5941,7 +6177,10 @@ URTICACEAE,"Pilea hydra","Mata Atlântica"
 URTICACEAE,"Pilea rhizobola","Mata Atlântica"
 URTICACEAE,"Urera nitida","Mata Atlântica"
 VALERIANACEAE,"Valeriana glaziovii","Mata Atlântica"
+VALERIANACEAE,"Valeriana glechomifolia","Mata Atlântica"
+VALERIANACEAE,"Valeriana organensis","Mata Atlântica"
 VALERIANACEAE,"Valeriana reitziana","Mata Atlântica"
+VALERIANACEAE,"Valeriana tajuvensis","Mata Atlântica"
 VELLOZIACEAE,"Barbacenia delicatula",Cerrado
 VELLOZIACEAE,"Barbacenia exscapa",Cerrado
 VELLOZIACEAE,"Barbacenia gounelleana",Cerrado
@@ -6042,6 +6281,7 @@ WINTERACEAE,"Drimys angustifolia","Mata Atlântica"
 WINTERACEAE,"Drimys brasiliensis","Mata Atlântica"
 WINTERACEAE,"Drimys brasiliensis",Cerrado
 WINTERACEAE,"Drimys brasiliensis",Caatinga
+WOODSIACEAE,"Athyrium filix-femina","Mata Atlântica"
 XYRIDACEAE,"Xyris almae",Cerrado
 XYRIDACEAE,"Xyris augusto-coburgii",Cerrado
 XYRIDACEAE,"Xyris aurea",Cerrado
@@ -6209,6 +6449,7 @@ BROMELIACEAE,"Cryptanthus minarum","Mata Atlântica"
 BROMELIACEAE,"Cryptanthus minarum",Cerrado
 BROMELIACEAE,"Neoregelia leprosa",Cerrado
 BROMELIACEAE,"Neoregelia leprosa","Mata Atlântica"
+BROMELIACEAE,"Orthophytum duartei","Mata Atlântica"
 BROMELIACEAE,"Vriesea monacorum",Cerrado
 BROMELIACEAE,"Vriesea saxicola","Mata Atlântica"
 BROMELIACEAE,"Vriesea saxicola",Cerrado
@@ -6314,6 +6555,10 @@ NYCTAGINACEAE,"Pisonia ambigua",Cerrado
 NYCTAGINACEAE,"Pisonia ambigua","Mata Atlântica"
 OCHNACEAE,"Ouratea cuspidata","Mata Atlântica"
 OCHNACEAE,"Ouratea cuspidata",Cerrado
+OLACACEAE,"Heisteria ovata","Mata Atlântica"
+OLACACEAE,"Heisteria ovata",Caatinga
+OLACACEAE,"Heisteria ovata",Cerrado
+OLACACEAE,"Heisteria ovata",Amazônia
 ORCHIDACEAE,"Brasilidium marshallianum","Mata Atlântica"
 ORCHIDACEAE,"Hadrolaelia crispa","Mata Atlântica"
 ORCHIDACEAE,"Rodriguezia venusta","Mata Atlântica"
@@ -6333,6 +6578,7 @@ PIPERACEAE,"Piper barretoi","Mata Atlântica"
 PIPERACEAE,"Piper corintoanum","Cerrado, Mata Atlântica"
 PIPERACEAE,"Piper pubisubmarginalum","Mata Atlântica"
 PIPERACEAE,"Piper vaginans","Cerrado, Mata Atlântica"
+PLANTAGINACEAE,"Stemodia lobata",Cerrado
 RICCIACEAE,"Riccia squamata","Mata Atlântica"
 RICCIACEAE,"Riccia squamata",Caatinga
 RUTACEAE,"Almeidea coerulea","Mata Atlântica"
@@ -6346,6 +6592,7 @@ SALICACEAE,"Casearia pauciflora","Mata Atlântica"
 SALICACEAE,"Salix humboldtiana",Amazônia
 SALICACEAE,"Salix humboldtiana","Mata Atlântica"
 SALICACEAE,"Salix humboldtiana","Pampa (Campos Sulinos)"
+THISMIACEAE,"Thismia janeirensis","Mata Atlântica"
 TRIGONIACEAE,"Trigonia bahiensis",Cerrado
 TRIGONIACEAE,"Trigonia bahiensis","Mata Atlântica"
 VELLOZIACEAE,"Barbacenia ensifolia",Cerrado
@@ -6353,4 +6600,5 @@ VELLOZIACEAE,"Barbacenia glutinosa",Cerrado
 VELLOZIACEAE,"Barbacenia hirtiflora",Cerrado
 VELLOZIACEAE,"Vellozia metzgerae",Cerrado
 VELLOZIACEAE,"Vellozia streptophylla",Cerrado
+ZINGIBERACEAE,"Renealmia petasites","Mata Atlântica"
 ASPLENIACEAE,"Asplenium trindadense","Mata Atlântica"

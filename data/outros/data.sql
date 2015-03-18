@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS threats (family VARCHAR(5000) , scientificName VARCHAR(5000) , threat VARCHAR(5000) , incidence VARCHAR(5000) , timing VARCHAR(5000) , decline VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS actions (family VARCHAR(5000) , scientificName VARCHAR(5000) , action VARCHAR(5000) , situation VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS ecology (family VARCHAR(5000) , scientificName VARCHAR(5000) , lifeForm VARCHAR(5000) , fenology VARCHAR(5000) , luminosity VARCHAR(5000) , substratum VARCHAR(5000) , longevity VARCHAR(5000) , resprout VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS uses (family VARCHAR(5000) , scientificName VARCHAR(5000) , use VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS habitats (family VARCHAR(5000) , scientificName VARCHAR(5000) , habitat VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS fitofisionomias (family VARCHAR(5000) , scientificName VARCHAR(5000) , fitofisionomie VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS biomas (family VARCHAR(5000) , scientificName VARCHAR(5000) , bioma VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS assessments (family VARCHAR(5000) , scientificName VARCHAR(5000) , analysis VARCHAR(5000) , assessment VARCHAR(5000) , category VARCHAR(5000) , criteria VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS pollination (family VARCHAR(5000) , scientificName VARCHAR(5000) , pollination VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS dispersion (family VARCHAR(5000) , scientificName VARCHAR(5000) , dispersion VARCHAR(5000));
