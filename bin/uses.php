@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields=['family','scientificName','use'];
+$fields=['family','scientificName','use','resource'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
