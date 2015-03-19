@@ -1,0 +1,8 @@
+<Files occurrences.csv>
+  AuthType Basic
+  AuthName "Occurrences"
+  AuthUserFile /var/www/.htpasswd
+  Require valid-user
+</Files>
+
+IndexOptions ShowForbidden
