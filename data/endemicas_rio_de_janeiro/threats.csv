@@ -20,6 +20,8 @@ SALICACEAE,"Abatia microphylla","1.1 Housing & urban areas",local,present;past,h
 SALICACEAE,"Abatia microphylla","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
 SALICACEAE,"Abatia microphylla","8.1.2 Named species",local,past;present;future,locality;habitat;occupancy;occurrence
 SALICACEAE,"Abatia microphylla","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat;occupancy;occurrence
+ARECACEAE,"Lytocaryum weddellianum","1.1 Housing & urban areas",local,,
+ARECACEAE,"Lytocaryum weddellianum","1.2 Commercial & industrial areas",local,,
 ACANTHACEAE,"Aphelandra neesiana","2.1.4 Scale Unknown/Unrecorded",local,past;present,habitat;locality;occupancy
 ACANTHACEAE,"Aphelandra neesiana","4.1 Roads & railroads",local,past;present,locality;habitat;occupancy;occurrence
 ACANTHACEAE,"Aphelandra neesiana","1 Residential & commercial development",regional,past;present;future,locality;habitat;occupancy;occurrence
@@ -147,6 +149,10 @@ BROMELIACEAE,"Neoregelia carinata","1.1 Housing & urban areas",local,past;presen
 BROMELIACEAE,"Neoregelia carinata","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia coimbrae","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality
 BROMELIACEAE,"Neoregelia coimbrae","2.3.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+ORCHIDACEAE,"Anathallis pubipetala","2.1.2 Small-holder farming",regional,past,habitat;occurrence
+ORCHIDACEAE,"Anathallis pubipetala","2.3.2 Small-holder grazing, ranching or farming",regional,past,habitat;occurrence
+ORCHIDACEAE,"Anathallis pubipetala","1.3 Tourism & recreation areas",regional,present,habitat
+ORCHIDACEAE,"Anathallis pubipetala","1.1 Housing & urban areas",regional,present,habitat;occurrence
 ORCHIDACEAE,"Anathallis rubrolimbata","2.1.2 Small-holder farming",regional,past,habitat;occurrence
 ORCHIDACEAE,"Anathallis rubrolimbata","2.3.2 Small-holder grazing, ranching or farming",regional,past,habitat;occurrence
 ORCHIDACEAE,"Anathallis rubrolimbata","1.3 Tourism & recreation areas",regional,present,habitat
@@ -176,5 +182,33 @@ PIPERACEAE,"Peperomia bradei","1.3 Tourism & recreation areas",regional,present,
 PIPERACEAE,"Peperomia bradei","7.1.1 Increase in fire frequency/intensity",local,past;present,locality;habitat;occupancy;occurrence
 BROMELIACEAE,"Neoregelia fosteriana","7.1.1 Increase in fire frequency/intensity",local,present,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia fosteriana","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
+PIPERACEAE,"Peperomia humifusa","1.1 Housing & urban areas",local,past,locality;habitat;occupancy;occurrence
 BROMELIACEAE,"Neoregelia gavionensis","2.3.3 Agro-industry grazing, ranching or farming",local,past;present;future,locality;habitat
+ACANTHACEAE,"Justicia polita","2.1.2 Small-holder farming",regional,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Justicia polita","2.3.2 Small-holder grazing, ranching or farming",regional,past;present;future,habitat;locality;occupancy;occurrence
+ACANTHACEAE,"Justicia polita","1.3 Tourism & recreation areas",local,past;present;future,"locality;habitat;occupancy;mature individuals"
+ACANTHACEAE,"Justicia polita","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Justicia polita","7.1.1 Increase in fire frequency/intensity",local,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Justicia polita","4.1 Roads & railroads",local,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Justicia polita","9.5 Air-borne pollutants",regional,present;future,habitat
 XYRIDACEAE,"Xyris organensis","2.3 Livestock farming & ranching",local,past;present,
+BROMELIACEAE,"Neoregelia ilhana","2.1.3 Agro-industry farming",,,
+PIPERACEAE,"Peperomia papillispica","1.1 Housing & urban areas",local,present,locality;habitat;occupancy;occurrence
+BROMELIACEAE,"Neoregelia indecora","1.1 Housing & urban areas",regional,present;future,locality;habitat
+BROMELIACEAE,"Neoregelia indecora","7.1.1 Increase in fire frequency/intensity",local,present,"habitat;locality;occupancy;occurrence;mature individuals"
+LOASACEAE,"Aosa uleana","8.1 Invasive non-native/alien species/diseases",local,past;present,"habitat;mature individuals"
+LOASACEAE,"Aosa uleana","2.1.4 Scale Unknown/Unrecorded",local,past;present,habitat
+LOASACEAE,"Aosa uleana","1.3 Tourism & recreation areas",local,past;present;future,"habitat;mature individuals"
+BROMELIACEAE,"Neoregelia kuhlmannii","2.1 Annual & perennial non-timber crops",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+BROMELIACEAE,"Neoregelia lactea","7.1.1 Increase in fire frequency/intensity",local,present,"habitat;occupancy;occurrence;mature individuals"
+BROMELIACEAE,"Neoregelia lactea","9.1 Domestic & urban waste water",local,past;present,habitat
+BROMELIACEAE,"Neoregelia lactea","1.1 Housing & urban areas",local,present,locality;habitat
+BROMELIACEAE,"Neoregelia lactea","1.3 Tourism & recreation areas",local,past;present;future,habitat
+BROMELIACEAE,"Neoregelia leucophoea","1.1 Housing & urban areas",local,present,locality;habitat
+BROMELIACEAE,"Neoregelia leucophoea","7.1.1 Increase in fire frequency/intensity",local,present,"habitat;occupancy;occurrence;mature individuals"
+BROMELIACEAE,"Neoregelia leucophoea","8.1.2 Named species",local,past;present;future,habitat
+BROMELIACEAE,"Neoregelia leucophoea","1.3 Tourism & recreation areas",local,present;future,locality;habitat
+ORCHIDACEAE,"Brasilaelia fidelensis","2 Agriculture & aquaculture",regional,past;present,habitat;occurrence
+ACANTHACEAE,"Ruellia silvaccola","2.3.3 Agro-industry grazing, ranching or farming",regional,present,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Ruellia silvaccola","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
+BROMELIACEAE,"Neoregelia longipedicellata","7.1.1 Increase in fire frequency/intensity",local,past;present,"habitat;occupancy;occurrence;mature individuals"
