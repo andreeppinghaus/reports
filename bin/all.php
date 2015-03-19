@@ -61,7 +61,7 @@ while(($db = readdir($dbs)) !== false) {
 }
 closedir($dbs);
 
-passthru("python bin/csv2xlsx");
+passthru("python bin/csv2xlsx.py");
 
 
 
