@@ -27,11 +27,7 @@ $all = json_decode(file_get_contents("all.json"));
 $csv = fopen(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",'w');
 echo "Runing $base",PHP_EOL;
 
-#ob_start();
-
 register_shutdown_function(function() use ($pwd,$base,$script,$csv) {
-  #chdir($pwd);
-  #file_put_contents(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",ob_get_clean());
   fclose($csv);
   echo "Done $base",PHP_EOL;
 });
