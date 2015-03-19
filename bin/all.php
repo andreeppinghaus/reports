@@ -1,5 +1,6 @@
 <?php
 
+/*
 $dbs = json_decode(file_get_contents("http://cncflora.jbrj.gov.br/couchdb/_all_dbs"));
 foreach($dbs as $db) {
   if(!preg_match('/^_/',$db) && !preg_match('/_history$/',$db) && $db != "public") {
@@ -16,6 +17,7 @@ foreach($dbs as $db) {
     }
   }
 }
+*/
 
 $dbs = opendir(__DIR__."/../data");
 while(($db = readdir($dbs)) !== false) {
@@ -23,7 +25,10 @@ while(($db = readdir($dbs)) !== false) {
     echo "->".$db."\n";
     $db_dir = opendir(__DIR__."/../data/".$db);
 
-    $sql   = '';
+    $sql  = '';
+    $sql .= "PRAGMA synchronous = OFF;\n";
+    $sql .= "PRAGMA journal_mode = MEMORY;\n";
+
     if($db_dir) {
       while(($csv_file = readdir($db_dir)) !== false) {
         if(!preg_match("/\.csv$/",$csv_file)) continue;
@@ -41,6 +46,13 @@ while(($db = readdir($dbs)) !== false) {
             $sql .= "CREATE TABLE IF NOT EXISTS ".$table." (".implode(" , ",$fields).");\n";
 
             while(($row = fgetcsv($csv,0,',','"')) !== false) {
+              foreach($row as $k=>$v) {
+                $row[$k] = str_replace("'",'',$row[$k]);
+                $row[$k] = str_replace(";",'.',$row[$k]);
+              }
+              foreach($head as $i=>$h) {
+                if(!isset($row[$i])) $row[$i] = '';
+              }
               $sql .= "INSERT INTO ".$table." VALUES ('".implode("','",$row)."');\n";
             }
           }
@@ -51,12 +63,12 @@ while(($db = readdir($dbs)) !== false) {
       closedir($db_dir);
     }
 
-    file_put_contents(__DIR__."/../data/".$db."/data.sql",$sql);
-    @unlink(__DIR__."/../data/".$db."/data.db");
-    $sqlite = new PDO('sqlite:'.__DIR__.'/../data/'.$db."/data.db");
-    $sqlite->exec('PRAGMA synchronous = OFF');
-    $sqlite->exec('PRAGMA journal_mode = MEMORY');
-    $sqlite->exec($sql);
+    file_put_contents(__DIR__."/../data/".$db."/".$db.".sql",$sql);
+    @unlink(__DIR__."/../data/".$db."/".$db.".sqlite");
+    $sqlite = new PDO('sqlite:'.__DIR__.'/../data/'.$db."/".$db.".sqlite");
+    $sqlite->exec($sql) ;
+    $err = $sqlite->errorInfo();
+    if($err[0] != "00000") var_dump($err);
   }
 }
 closedir($dbs);
