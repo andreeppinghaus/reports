@@ -3,7 +3,7 @@ FROM debian:wheezy
 RUN sed -i -e 's/http.debian.net/ftp.us.debian.org/g' /etc/apt/sources.list && \
     apt-get update && \
     apt-get upgrade -y && \
-    apt-get install apache2 libapache2-mod-php5 php5 php5-cli php5-curl php5-common php5-sqlite php5-mysql php5-pgsql php5-gd supervisor -y && \
+    apt-get install apache2 libapache2-mod-php5 php5 php5-cli php5-curl php5-common php5-sqlite php5-mysql php5-pgsql php5-gd supervisor python-xlwt -y && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN a2enmod rewrite 
@@ -20,9 +20,11 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/apache2.pid
 ENV PHP_ENV production
 
-ADD default.conf /etc/apache2/sites-available/default
-
 RUN rm /var/www/* -Rf
+
+ADD default.conf /etc/apache2/sites-available/default
+ADD .htaccess /var/www/.htaccess
+ADD .htpasswd /var/www/.htpasswd
 
 EXPOSE 80
 
