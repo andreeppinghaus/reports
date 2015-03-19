@@ -7,6 +7,8 @@ if(php_sapi_name() !== 'cli' || !isset($argv) || count($argv) < 2 ) {
 
 $base = $argv[1];
 
+if($base == 'livro_vermelho_2013') return;
+
 preg_match('/([a-z]+)\.php$/',$argv[0],$reg);
 $script = $reg[1];
 

@@ -1,7 +1,5 @@
 <?php
 
-if($argv[1] == 'livro_vermelho') return;
-
 include 'base.php';
 
 $fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","remarks","comments"];
@@ -31,6 +29,7 @@ foreach($all->rows as $row) {
           } else if($taxon->taxonomicStatus == 'synonym') {
             $doc->acceptedNameUsage = $taxon->acceptedNameUsage;
           }
+          break;
         }
       }
       if($got) {
