@@ -1,6 +1,5 @@
 <?php
 
-/*
 $dbs = json_decode(file_get_contents("http://cncflora.jbrj.gov.br/couchdb/_all_dbs"));
 foreach($dbs as $db) {
   if(!preg_match('/^_/',$db) && !preg_match('/_history$/',$db) && $db != "public") {
@@ -17,7 +16,6 @@ foreach($dbs as $db) {
     }
   }
 }
-*/
 
 $dbs = opendir(__DIR__."/../data");
 while(($db = readdir($dbs)) !== false) {
@@ -31,7 +29,7 @@ while(($db = readdir($dbs)) !== false) {
 
     if($db_dir) {
       while(($csv_file = readdir($db_dir)) !== false) {
-        if(!preg_match("/\.csv$/",$csv_file)) continue;
+        if(!preg_match("/\.csv$/",$csv_file) && $csv_file != "occurrences.csv") continue;
         echo "-->".$csv_file."\n";
         $csv  = fopen(__DIR__."/../data/".$db."/".$csv_file,'r');
         if($csv) {
