@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>{{strings.checklist}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!--<link href="{{base}}/css/bootstrap.min.css" rel="stylesheet" >-->
+        <link href="{{base}}/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link href="{{base}}/css/app.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="{{connect_url}}/js/connect.js"></script>
+        <script type="text/javascript">
+            var flora = "{{floradata_url}}";
+            var logged = {{{logged}}};
+            var base = "{{base}}";
+            var db = "{{db}}";
+            var confirm_str  = "{{strings.confirm}}";
+        </script>
+        <script src="{{base}}/js/app.js" type="text/javascript"></script>
+    </head>
+        <body>
+        <div class="container">
+        <header class='col-md-12'>
+            <a href="{{base}}/"><h1>{{strings.report}}</h1></a>
+            {{#db}}
+            <p><span class='glyphicon glyphicon-chevron-right'></span><span class='db'>{{strings.checklist}}: {{db_name}}</span>.</p>
+            {{/db}}
+        </header>
+        <nav class="navbar navbar-default col-md-12">
+            <ul class="nav navbar-nav">
+                {{^logged}}
+                <li id='login'><a href="#">{{strings.login}}</a></li>
+                <li><a href="{{base}}/">{{strings.checklists}}</a></li>
+                {{/logged}}
+                {{#logged}}
+                <li><a href="{{base}}/">{{strings.checklists}}</a></li>
+                {{#db}}
+                <li><a href="{{base}}/{{db}}">{{strings.families}}</a></li>
+                {{/db}}
+                <li id='logout'><a href="#">{{strings.logout}}</a></li>
+                {{/logged}}
+            </ul>
+        </nav>
+

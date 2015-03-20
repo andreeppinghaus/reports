@@ -1,0 +1,13 @@
+{{> header}}
+
+<div class="col-md-12">
+  <h2>{{strings.reports}}: {{db}}</h2>
+
+    <ul>
+        {{#reports}}
+        <li><a href="{{base}}/{{db}}/{{name}}">{{label}}</a></li>
+        {{/reports}}
+    </ul>
+</div>
+
+{{> footer}}

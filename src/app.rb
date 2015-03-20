@@ -2,6 +2,7 @@
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
+require 'json'
 require 'sinatra'
 require 'sinatra/config_file'
 require 'sinatra/mustache'
@@ -21,7 +22,21 @@ def get_databases
     all_dbs = http_get("#{Sinatra::Application.settings.couchdb}/_all_dbs")
 end
 
-#puts "databases = #{get_databases}"
+def get_docs(base)
+    http_get("#{Sinatra::Application.settings.couchdb}/http://cncflora.jbrj.gov.br/couchdb/#{base}/_all_docs?include_docs=true")
+end
+
+def get_reports_names
+    file = File.read(File.expand_path("../locales/pt_report.json", __FILE__))
+    reports = []
+    _hash = JSON.parse(file)
+    _hash.each{|k,v|
+        reports.push({:name=>k,:label=>v})
+    }
+    reports
+end
+
+
 
 def view(page,data)
     @config = settings.config
@@ -35,6 +50,20 @@ def view(page,data)
 end
 
 get '/' do
-    "Hello"
+    _hash = {}
+    all_dbs = get_databases.select{ |db| !db.end_with? "_history"} - ["_replicator","_users"]
+    all_dbs.map!(&:upcase)
+    view :index, {:recortes=>all_dbs} 
+end
+
+get '/reports/:db' do
+    db =  params[:db].downcase
+    file = File.read(File.expand_path("../locales/pt_report.json", __FILE__))
+    reports = []
+    _hash = JSON.parse(file)
+    _hash.each{|k,v|
+        reports.push({:name=>k,:label=>v})
+    }
+    view :reports, {:db=>db,:reports=>reports}
 end
 

@@ -1,0 +1,21 @@
+{{> header}}
+
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>RECORTES</th>   
+                </tr>
+            </thead>
+            <tbody>
+            {{#recortes}}
+                <tr>
+                    <td><a href="{{base}}/reports/{{.}}">{{.}}</a></td>
+                </tr>
+            {{/recortes}}
+            </tbody>
+        </table>
+    </div>
+
+
+{{> footer}}

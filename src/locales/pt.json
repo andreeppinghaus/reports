@@ -1,3 +1,8 @@
 {
-    "report":"Relatório"
+    "report":"Relatório",
+    "reports":"Relatórios",
+    "login":"Login",
+    "logout":"Logout",
+    "users":"Usuários",
+    "checklists":"Recortes"
 }
