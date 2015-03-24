@@ -18,34 +18,23 @@ describe "Generation of reports." do
 
         @uri = "http://localhost:5984"
         @dao = DAO.new(@uri)
-        @file_path_base = "data"
-        @file_name_base = "livro_vermelho_2013"
-        @file_extension_base = "json"
-
+        @base_file_path = "data"
+        @base_file_name = "livro_vermelho_2013"
     }
 
-=begin
-    it "Check all databases." do
-        all_dbs = get_databases
-        history = all_dbs.select{ |d| d.end_with? "_history"}
-        others = ["_replicator","_users"]
-        db = all_dbs - (history+others)
-        expect(db.count).to eq( (all_dbs-history-others).count )
-        expect(db).to include("livro_vermelho_2013","pan_bacia_alto_tocantins")
-    end
-=end
 
 
     it "Check for the base file the reports to be generated." do
-        report_base = create_report_base(@file_path_base,@file_name_base,@file_extension_base)
-        expect(File.exists?(report_base)).to be(true)
+        dao = DAO.new(@uri,@base_file_name)
+        create_json_file_from_base(dao,@base_file_path,@base_file_name)
+        path = File.expand_path("#{@base_file_path}/#{@base_file_name}.json")
+        expect(File.exist?(path)).to be(true)
         #File.delete(report_base) if File.exist?(report_base)
     end
 
-
     it "Read base report json file to hash." do
-        @base_hash = read_json_to_hash(@file_path_base,@file_name_base,@file_extension_base)
-        expect(@base_hash["total_rows"]).to eq(@base_hash["rows"].count)
+        base_hash = read_json_file_to_hash(@base_file_path,@base_file_name)
+        expect(base_hash["total_rows"]).to eq(base_hash["rows"].count)
     end
 
     it "Generate taxons list."

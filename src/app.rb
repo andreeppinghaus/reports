@@ -7,7 +7,9 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'sinatra/mustache'
 require 'sinatra/reloader' if development?
-require 'cncflora_commons'
+#require 'cncflora_commons'
+require 'fileutils'
+require_relative 'dao/dao'
 
 if test? then
     set :test , true
@@ -17,32 +19,22 @@ end
 
 setup 'config.yml'
 
-=begin
-def get_databases
-    all_dbs = http_get("#{Sinatra::Application.settings.couchdb}/_all_dbs")
-end
 
-def get_docs(base)
-    uri = "#{Sinatra::Application.settings.couchdb}/#{base}/_all_docs?include_docs=true"
-    docs = http_get(uri)
-end
-=end
+def create_json_file_from_base(dao,file_path,file_name)
+    file_name = "#{file_name}.json" unless file_name.end_with? ".json"
+    file = "#{file_path}/#{file_name}"
 
-def create_report_base(path,name,extension)
-    file = "#{path}/#{name}.#{extension}"
-
-    if !File.exists?(file)
-        dao = DAO.new "#{Sinatra::Application.settings.couchdb}"
-        hash = dao.get_docs!(name)
-        File.open(file,"w") do |f|
+    if !File.exist?(file)      
+        hash = dao.get_docs!(dao.base)
+        File.open(file, "w"){ |f| 
             f.write(hash.to_json)
-        end
+        }        
     end
-    file
 end
 
-def read_json_to_hash(path,name,extension)
-    file = "#{path}/#{name}.#{extension}"
+def read_json_file_to_hash(file_path,file_name)
+    file_name = "#{file_name}.json" unless file_name.end_with? ".json"
+    file = "#{file_path}/#{file_name}"
     if File.exists?(file)
         hash = JSON.parse(File.read(file))
     end
@@ -90,4 +82,3 @@ get '/reports/:db' do
     }
     view :reports, {:db=>db,:reports=>reports}
 end
-

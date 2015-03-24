@@ -5,7 +5,9 @@ class DAO
 
     def initialize(uri,base=nil)
         @uri = uri
-        @base ||= "_all_dbs"
+        
+        base ||= "_all_dbs"
+        @base = base
     end
     
 
