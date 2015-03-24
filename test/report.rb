@@ -4,6 +4,8 @@
 #
 ############################################################################
 require_relative 'base'
+require_relative 'dao/dao'
+require_relative '../src/app'
 
 
 describe "Generation of reports." do
@@ -13,15 +15,16 @@ describe "Generation of reports." do
     #end
 
     before(:all){
+
         @uri = "http://localhost:5984"
+        @dao = DAO.new(@uri)
         @file_path_base = "data"
         @file_name_base = "livro_vermelho_2013"
         @file_extension_base = "json"
 
-        @all_docs = read_json_to_hash(@file_path_base,@file_name_base,@file_extension_base)
     }
 
-
+=begin
     it "Check all databases." do
         all_dbs = get_databases
         history = all_dbs.select{ |d| d.end_with? "_history"}
@@ -30,6 +33,7 @@ describe "Generation of reports." do
         expect(db.count).to eq( (all_dbs-history-others).count )
         expect(db).to include("livro_vermelho_2013","pan_bacia_alto_tocantins")
     end
+=end
 
 
     it "Check for the base file the reports to be generated." do
@@ -40,14 +44,15 @@ describe "Generation of reports." do
 
 
     it "Read base report json file to hash." do
-        expect(@all_docs["total_rows"]).to eq(@all_docs["rows"].count)
+        @base_hash = read_json_to_hash(@file_path_base,@file_name_base,@file_extension_base)
+        expect(@base_hash["total_rows"]).to eq(@base_hash["rows"].count)
     end
 
-    it "Generate assessment report."
+    it "Generate taxons list."
 
 
     it "Get index page." do
-        all_dbs = get_databases
+        all_dbs = @dao.get_all_databases
         history = all_dbs.select{ |d| d.end_with? "_history"}
         others = ["_replicator","_users"]
         db = all_dbs - (history+others)
@@ -60,7 +65,7 @@ describe "Generation of reports." do
     end
 
     it "Get the reports of a checklist" do
-        all_dbs = get_databases
+        all_dbs = @dao.get_all_databases
         history = all_dbs.select{ |d| d.end_with? "_history"}
         others = ["_replicator","_users"]
         db = all_dbs - (history+others)

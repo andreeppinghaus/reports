@@ -17,7 +17,7 @@ end
 
 setup 'config.yml'
 
-
+=begin
 def get_databases
     all_dbs = http_get("#{Sinatra::Application.settings.couchdb}/_all_dbs")
 end
@@ -26,11 +26,14 @@ def get_docs(base)
     uri = "#{Sinatra::Application.settings.couchdb}/#{base}/_all_docs?include_docs=true"
     docs = http_get(uri)
 end
+=end
 
 def create_report_base(path,name,extension)
     file = "#{path}/#{name}.#{extension}"
+
     if !File.exists?(file)
-        hash = get_docs(name)
+        dao = DAO.new "#{Sinatra::Application.settings.couchdb}"
+        hash = dao.get_docs!(name)
         File.open(file,"w") do |f|
             f.write(hash.to_json)
         end
@@ -42,8 +45,6 @@ def read_json_to_hash(path,name,extension)
     file = "#{path}/#{name}.#{extension}"
     if File.exists?(file)
         hash = JSON.parse(File.read(file))
-    else
-       #handle exception 
     end
     hash
 end
@@ -72,8 +73,9 @@ def view(page,data)
 end
 
 get '/' do
+    dao = DAO.new "#{Sinatra::Application.settings.couchdb}"
     _hash = {}
-    all_dbs = get_databases.select{ |db| !db.end_with? "_history"} - ["_replicator","_users"]
+    all_dbs = dao.get_all_databases.select{ |db| !db.end_with? "_history"} - ["_replicator","_users"]
     all_dbs.map!(&:upcase)
     view :index, {:recortes=>all_dbs} 
 end
