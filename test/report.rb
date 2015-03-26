@@ -5,7 +5,8 @@
 ############################################################################
 require_relative 'base'
 require_relative 'dao/dao'
-require_relative '../src/app'
+#require_relative '../src/app'
+require_relative File.expand_path("src/lib/dao/dao.rb")
 
 
 describe "Generation of reports." do
@@ -19,7 +20,7 @@ describe "Generation of reports." do
         @uri = "http://localhost:5984"
         @dao = DAO.new(@uri)
         @base_file_path = "data"
-        @base_file_name = "livro_vermelho_2013"
+        @base_file_name = "plantas_raras_do_cerrado"
     }
 
 

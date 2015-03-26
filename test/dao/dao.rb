@@ -3,7 +3,7 @@ ENV['RACK_ENV'] = 'test'
 
 require 'cncflora_commons'
 require 'rspec'
-require_relative '../../src/dao/dao'
+require_relative File.expand_path("src/lib/dao/dao.rb")
 
 
 describe "DAO" do
@@ -11,14 +11,17 @@ describe "DAO" do
     before(:all){
         @uri = "http://localhost:5984"
         @dao = DAO.new(@uri)
-        @base_list = "livro_vermelho_2013"
-        @types = ["taxon", "assessment", "occurrence"]
+        @base_list = "plantas_raras_do_cerrado"
+        @types = ["assessment","occurrence","profile","taxon"]
     }
 
     it "Should be a instance of a DAO" do
         dao = DAO.new(@uri)
         expect(dao).to be_a DAO
         expect(dao.uri).to eq(@uri)
+        expect(dao.base).to eq('_all_dbs')
+        expect(dao.docs).to be_an_instance_of Hash
+        expect(dao.docs.empty?).to be true
     end
 
 
@@ -28,15 +31,16 @@ describe "DAO" do
         others = ["_replicator","_users"]
         db = all_dbs - (history+others)
         expect(db.count).to eq( (all_dbs-history-others).count )
-        expect(db).to include("livro_vermelho_2013","pan_bacia_alto_tocantins")
+        expect(db).to include("livro_vermelho","pan_bacia_alto_tocantins","plantas_raras_do_cerrado")
     end
 
-    it "Should check docs of a database" do      
-        docs = @dao.get_docs!(@base_list)
-        first_doc = docs["rows"].first["doc"]
-        last_doc = docs["rows"].last["doc"]
 
-        expect(docs["total_rows"].to_i).to eq docs["rows"].count
+    it "Should check docs of a database" do      
+        @dao.get_docs!(@base_list)
+        first_doc = @dao.docs["rows"].first["doc"]
+        last_doc = @dao.docs["rows"].last["doc"]
+
+        expect(@dao.docs["total_rows"].to_i).to eq @dao.docs["rows"].count
 
         expect(first_doc.keys).to include "metadata"
         expect(first_doc["metadata"].keys).to include "type"
@@ -45,6 +49,13 @@ describe "DAO" do
         expect(last_doc.keys).to include "metadata"
         expect(last_doc["metadata"].keys).to include "type"
         expect(@types).to include last_doc["metadata"]["type"]
+    end
+
+    it "Should get docs by type" do
+        docs = @dao.get_docs_by_type(@base_list,'taxon')
+        docs.each{ |r|
+            expect(r["metadata"]["type"]).to eq('taxon')
+        }          
     end
 
 end

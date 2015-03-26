@@ -7,9 +7,8 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'sinatra/mustache'
 require 'sinatra/reloader' if development?
-#require 'cncflora_commons'
 require 'fileutils'
-require_relative 'dao/dao'
+require_relative 'lib/dao/dao'
 
 if test? then
     set :test , true
