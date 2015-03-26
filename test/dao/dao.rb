@@ -1,22 +1,21 @@
-ENV['RACK_ENV'] = 'test'
-
-
-require 'cncflora_commons'
 require 'rspec'
+require 'yaml'
 require_relative File.expand_path("src/lib/dao/dao.rb")
 
 
 describe "DAO" do
 
     before(:all){
-        @uri = "http://localhost:5984"
-        @dao = DAO.new(@uri)
-        @base_list = "plantas_raras_do_cerrado"
+        @config = YAML.load_file(File.expand_path('config.yml'))["test"]
+        @uri = @config["couchdb"] 
+        @dao = DAO.new
+        @base_list = @config["base_list"] 
         @types = ["assessment","occurrence","profile","taxon"]
     }
 
+
     it "Should be a instance of a DAO" do
-        dao = DAO.new(@uri)
+        dao = DAO.new
         expect(dao).to be_a DAO
         expect(dao.uri).to eq(@uri)
         expect(dao.base).to eq('_all_dbs')
@@ -52,7 +51,7 @@ describe "DAO" do
     end
 
     it "Should get docs by type" do
-        docs = @dao.get_docs_by_type(@base_list,'taxon')
+        docs = @dao.get_docs_by_metadata_type(@base_list,'taxon')
         docs.each{ |r|
             expect(r["metadata"]["type"]).to eq('taxon')
         }          

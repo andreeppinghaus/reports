@@ -6,7 +6,7 @@ development:
     connect_url: ""
     elasticsearch: ""
     dwc_services: ""
-    base_list: "livro_vermelho_2013"
+    base_list: "plantas_raras_do_cerrado"
 test:
     lang: "pt"
     base: ""
@@ -15,7 +15,7 @@ test:
     connect_url: ""
     elasticsearch: ""
     dwc_services: ""
-    base_list: "livro_vermelho_2013"
+    base_list: "plantas_raras_do_cerrado"
 production:
     lang: "pt"
     base: ""
