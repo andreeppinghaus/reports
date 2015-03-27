@@ -36,12 +36,11 @@ describe "BiomaDAO" do
     it "Should generate data" do
         expect(@dao.data.empty?).to be true
         @dao.generate_data
-        @dao.data.each{ |data|
-            expect(data).to be_a Hash
-            expect(data.keys).to include :family and :scientificNameWithoutAuthorship and :bioma
-            expect(@all_biomas).to include data[:bioma]
-            
-        }
+        expect(@dao.data.empty?).to be false
+        expect(@dao.data.first.keys).to include :family and :scientificNameWithoutAuthorship and :bioma
+        expect(@dao.data.first.values).to include("ACANTHACEAE","Justicia clivalis","Cerrado")
+        expect(@dao.data.last.keys).to include :family and :scientificNameWithoutAuthorship and :bioma
+        expect(@dao.data.last.values).to include("XYRIDACEAE","Xyris villosicarinata","Cerrado")
     end
 
 end

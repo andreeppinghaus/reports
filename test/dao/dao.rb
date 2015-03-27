@@ -50,10 +50,10 @@ describe "DAO" do
         expect(@types).to include last_doc["metadata"]["type"]
     end
 
-    it "Should get docs by type" do
-        docs = @dao.get_docs_by_metadata_type(@base_list,'taxon')
+    it "Should get docs by metadata type" do
+        docs = @dao.get_docs_by_metadata_type(@base_list,'profile')
         docs.each{ |r|
-            expect(r["metadata"]["type"]).to eq('taxon')
+            expect(r["metadata"]["type"]).to eq('profile')
         }          
     end
 
