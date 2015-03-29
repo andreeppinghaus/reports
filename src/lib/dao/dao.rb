@@ -19,7 +19,7 @@ class DAO
 
 
     # The method must be private?
-    def get_docs!(base)
+    def generate_docs!(base)
         # Handling  exception - base
         if !base.empty?
             @base=base
@@ -29,11 +29,19 @@ class DAO
     end
 
 
-    def get_docs_by_metadata_type(base,metadata_type)        
-        get_docs!(base)["rows"] if @docs.empty?
+    def generate_list_of_hash_docs
+        list_of_hash_docs = []
+        list_of_hash_docs = @docs["rows"] if (!@docs.empty? && @docs["rows"] && !@docs["rows"].empty?)
+        list_of_hash_docs
+    end
+
+
+    def get_docs_by_metadata_type(base,metadata_type)
         docs = []
-        _docs = @docs["rows"]
-        _docs.each{ |r|
+        if @docs.empty?
+            generate_docs!(base)
+        end
+        generate_list_of_hash_docs.each{|r|
             docs.push(r["doc"]) if r["doc"]["metadata"]["type"] == metadata_type
         }
         docs

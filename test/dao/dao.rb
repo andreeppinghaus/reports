@@ -8,7 +8,6 @@ describe "DAO" do
     before(:all){
         @config = YAML.load_file(File.expand_path('config.yml'))["test"]
         @uri = @config["couchdb"] 
-        @dao = DAO.new
         @base_list = @config["base_list"] 
         @types = ["assessment","occurrence","profile","taxon"]
     }
@@ -25,7 +24,8 @@ describe "DAO" do
 
 
     it "Should get all databases except '_replicator','_users' and those ending with '_history'." do
-        all_dbs = @dao.get_all_databases
+        dao = DAO.new
+        all_dbs = dao.get_all_databases
         history = all_dbs.select{ |d| d.end_with? "_history"}
         others = ["_replicator","_users"]
         db = all_dbs - (history+others)
@@ -33,13 +33,13 @@ describe "DAO" do
         expect(db).to include("livro_vermelho","pan_bacia_alto_tocantins","plantas_raras_do_cerrado")
     end
 
+    it "Should check docs of a database" do
+        dao = DAO.new @base_list 
+        dao.generate_docs!(dao.base)
+        first_doc = dao.docs["rows"].first["doc"]
+        last_doc = dao.docs["rows"].last["doc"]
 
-    it "Should check docs of a database" do      
-        @dao.get_docs!(@base_list)
-        first_doc = @dao.docs["rows"].first["doc"]
-        last_doc = @dao.docs["rows"].last["doc"]
-
-        expect(@dao.docs["total_rows"].to_i).to eq @dao.docs["rows"].count
+        expect(dao.docs["total_rows"]).to eq dao.docs["rows"].count
 
         expect(first_doc.keys).to include "metadata"
         expect(first_doc["metadata"].keys).to include "type"
@@ -50,11 +50,56 @@ describe "DAO" do
         expect(@types).to include last_doc["metadata"]["type"]
     end
 
-    it "Should get docs by metadata type" do
-        docs = @dao.get_docs_by_metadata_type(@base_list,'profile')
-        docs.each{ |r|
-            expect(r["metadata"]["type"]).to eq('profile')
-        }          
+
+    it "Should get docs by metadata type assessment" do
+        dao = DAO.new @base_list
+        docs = dao.get_docs_by_metadata_type(dao.base,'assessment')
+        first = docs.first["metadata"]["type"]
+        last = docs.last["metadata"]["type"]
+        expect(first).to eq('assessment')
+        expect(last).to eq('assessment')
     end
+
+
+    it "Should get docs by metadata type occurrence" do
+        dao = DAO.new @base_list
+        docs = dao.get_docs_by_metadata_type(dao.base,'occurrence')
+        first = docs.first["metadata"]["type"]
+        last = docs.last["metadata"]["type"]
+        expect(first).to eq('occurrence')
+        expect(last).to eq('occurrence')
+    end
+
+
+    it "Should get docs by metadata type profile" do
+        dao = DAO.new @base_list
+        docs = dao.get_docs_by_metadata_type(dao.base,'profile')
+        first = docs.first["metadata"]["type"]
+        last = docs.last["metadata"]["type"]
+        expect(first).to eq('profile')
+        expect(last).to eq('profile')
+    end
+
+
+    it "Should get docs by metadata type taxon" do
+        dao = DAO.new @base_list
+        docs = dao.get_docs_by_metadata_type(dao.base,'taxon')
+        first = docs.first["metadata"]["type"]
+        last = docs.last["metadata"]["type"]
+        expect(first).to eq('taxon')
+        expect(last).to eq('taxon')
+    end
+
+    it "Should generate list of hash docs" do
+        dao = DAO.new @base_list
+        list_of_hash_docs = dao.generate_list_of_hash_docs
+        expect(list_of_hash_docs.empty?).to be true
+        dao.generate_docs!(dao.base)
+        list_of_hash_docs = dao.generate_list_of_hash_docs
+        expect(list_of_hash_docs.empty?).to be false
+        expect(list_of_hash_docs.first.keys).to include "doc"
+        expect(list_of_hash_docs.last.keys).to include "doc"
+    end
+
 
 end
