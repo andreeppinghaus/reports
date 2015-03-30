@@ -3,16 +3,21 @@ require 'yaml'
 
 class DAO
     attr_accessor :uri, :base
-    attr_reader :docs
+    attr_reader :docs, :metadata_types
 
     # The uri parameter of DAO must come from config settings. It's must be refactored.
     def initialize(base="_all_dbs",uri="http://localhost:5984")
         @uri = uri
         @base = base
         @docs = {}
+        @metadata_types = {
+            :assessment=>"assessment",
+            :occurrence=>"occurrence",
+            :profile=>"profile",
+            :taxon=>"taxon"
+        }
     end
     
-    # The method is needed?
     def get_all_databases
         all_dbs = http_get("#{@uri}/#{@base}")
     end
@@ -36,15 +41,23 @@ class DAO
     end
 
 
-    def get_docs_by_metadata_type(base,metadata_type)
+    def get_docs_by_metadata_type(base,type)
         docs = []
         if @docs.empty?
             generate_docs!(base)
         end
         generate_list_of_hash_docs.each{|r|
-            docs.push(r["doc"]) if r["doc"]["metadata"]["type"] == metadata_type
+            docs.push(r["doc"]) if r["doc"]["metadata"]["type"] == type
         }
         docs
+    end
+
+    def generate_data_lists_by_metadata_type(list_types)
+        hash_data = {}
+        list_types.each{ |type|
+            hash_data[type] = get_docs_by_metadata_type @base,type
+        }
+        hash_data
     end
 
 end

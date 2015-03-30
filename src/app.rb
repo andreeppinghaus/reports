@@ -24,7 +24,7 @@ def create_json_file_from_base(dao,file_path,file_name)
     file = "#{file_path}/#{file_name}"
 
     if !File.exist?(file)      
-        hash = dao.get_docs!(dao.base)
+        hash = dao.generate_docs!(dao.base)
         File.open(file, "w"){ |f| 
             f.write(hash.to_json)
         }        

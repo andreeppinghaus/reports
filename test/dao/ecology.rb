@@ -5,40 +5,39 @@ require_relative File.expand_path("src/lib/dao/ecology")
 describe "EcologyDAO" do
 
     before(:all){
-        @config = YAML.load_file(File.expand_path('config.yml'))["test"]
-        @uri = @config["couchdb"] 
-        @dao = EcologyDAO.new
-        @base_list = @config["base_list"]
-        @keys_of_data = [
-            :family,
-            :scientificNameWithoutAuthorship,
-            :lifeForm,
-            :fenology,
-            :luminosity,
-            :substratum,
-            :longevity, 
-            :resprout
-        ]
+        @hash_fields = {
+            :id => "",
+            :family => "",
+            :scientificNameWithoutAuthorship => "",
+            :lifeForm => "", 
+            :fenology  => "", 
+            :luminosity => "",
+            :substratum => "",
+            :longevity => "", 
+            :resprout => ""
+        } 
     }   
 
 
-    it "Should be a instance of a BiomaDAO." do
-        action_dao = EcologyDAO.new
-        expect(action_dao).to be_a EcologyDAO
-        expect(action_dao.dao.uri).to eq(@config["couchdb"])            
-        expect(action_dao.dao.base).to eq(@config["base_list"])            
-        expect(action_dao.data).to be_a Array
-        expect(action_dao.data.empty?).to be true
+    it "Should be a instance of a EcologyDAO." do
+        ecology_dao = EcologyDAO.new
+        expect(ecology_dao).to be_a EcologyDAO
+        expect(ecology_dao.data.empty?).to be true
+        expect(ecology_dao.profiles).to be_a Array
+        expect(ecology_dao.profiles.empty?).to be false
     end
 
     it "Should generate data" do      
-        expect(@dao.data.empty?).to be true
-        @dao.generate_data
-        expect(@dao.data.empty?).to be false
-        expect(@dao.data.first.keys).to eq(@keys_of_data)
-        expect(@dao.data.first.values).to include("ACANTHACEAE", "Justicia clivalis", "bush", "perenifolia", nil, nil,"unkown")
-        expect(@dao.data.last.keys).to eq(@keys_of_data) 
-        expect(@dao.data.last.values).to include("XYRIDACEAE", "Xyris villosicarinata", "herb", nil)
+        ecology_dao = EcologyDAO.new
+        expect(ecology_dao.data.empty?).to be true
+        ecology_dao.generate_data
+        expect(ecology_dao.data.empty?).to be false
+        expect(ecology_dao.data.first.keys).to eq(@hash_fields.keys)
+        expect(ecology_dao.data.first[:id]).to eq("urn:lsid:cncflora.jbrj.gov.br:profile:justicia:clivalis:1374083792")
+        expect(ecology_dao.data.first.values).to include("ACANTHACEAE", "Justicia clivalis", "bush", "perenifolia", "","unkown")
+        expect(ecology_dao.data.last.keys).to eq(@hash_fields.keys)
+        expect(ecology_dao.data.last[:id]).to eq("urn:lsid:cncflora.jbrj.gov.br:profile:xyris:villosicarinata:1379511850")
+        expect(ecology_dao.data.last.values).to include("XYRIDACEAE", "Xyris villosicarinata", "herb", "")
     end
 end
 
