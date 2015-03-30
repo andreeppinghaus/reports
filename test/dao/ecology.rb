@@ -25,6 +25,7 @@ describe "EcologyDAO" do
         expect(ecology_dao.data.empty?).to be true
         expect(ecology_dao.profiles).to be_a Array
         expect(ecology_dao.profiles.empty?).to be false
+        expect(ecology_dao.hash_fields).to eq(@hash_fields)
     end
 
     it "Should generate data" do      
