@@ -1,6 +1,6 @@
 require_relative File.expand_path('src/lib/dao/report')
 
-class PollinationDAO < ReportDAO
+class PhytophysiognomieDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
     def initialize(rows_of_document=nil)
@@ -11,7 +11,7 @@ class PollinationDAO < ReportDAO
             :id => "",
             :family => "",
             :scientificNameWithoutAuthorship => "",
-            :pollination => ""
+            :phytophysiognomie => ""
         }
     end
 
@@ -22,22 +22,23 @@ class PollinationDAO < ReportDAO
         @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
 
             doc = profile["doc"]
-            reproduction = doc["reproduction"] if doc["reproduction"]
-            if reproduction && reproduction["pollinationSyndrome"] && reproduction["pollinationSyndrome"].is_a?(Array)
+            ecology = doc["ecology"] if doc["ecology"]
+            if ecology && ecology["fitofisionomies"] && ecology["fitofisionomies"].is_a?(Array)
 
                 family = ""
                 scientificName = ""
-                pollinationSyndrome = reproduction["pollinationSyndrome"]
+                phytophysiognomies = ecology["fitofisionomies"]
+
 
                 taxon = doc["taxon"] if doc["taxon"]
                 family = taxon["family"] if taxon["family"]
                 scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
 
-                pollinationSyndrome.each{ |pollination|
+                phytophysiognomies.each{ |phytophysiognomie|
                     @hash_fields[:id] = doc["_id"] 
                     @hash_fields[:family] = family
                     @hash_fields[:scientificNameWithoutAuthorship] = scientificName
-                    @hash_fields[:pollination] = pollination
+                    @hash_fields[:phytophysiognomie] = phytophysiognomie
                 }
 
 
@@ -52,7 +53,7 @@ class PollinationDAO < ReportDAO
             [ 
                 h[:family],
                 h[:scientificNameWithoutAuthorship],
-                h[:pollination]
+                h[:phytophysiognomie]
             ]
         }        
     end

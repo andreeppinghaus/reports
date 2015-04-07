@@ -4,5 +4,24 @@
     "login":"Login",
     "logout":"Logout",
     "users":"Usuários",
-    "checklists":"Recortes"
+    "checklists":"Recortes",
+    "family":"Família",
+    "scientificNameWithoutAuthorship":"Espécie",
+    "scientificNameAuthorship":"Autor",
+    "acceptedNameUsage":"Nome Aceito",
+    "pollination":"Polinização",
+    "phytophysiognomie":"Fitofisionomia",
+    "lifeform":"Forma de vida",
+    "fenology":"Fenologia",
+    "luminosity":"Luminosidade",
+    "substratum":"Substrato",
+    "longevity":"Longevidade",
+    "resprout":"brotamento",
+    "habitat":"Habitat",
+    "dispersion":"Dispersão",
+    "bioma":"Bioma",
+    "specie":"Espécie",
+    "report_of": "Relatório de",
+    "number_of_documents": "Número de documentos"
+
 }

@@ -1,14 +1,12 @@
-require_relative File.expand_path('src/lib/dao/dao')
+require_relative File.expand_path('src/lib/dao/report')
 
-class DispersionDAO
+class DispersionDAO < ReportDAO
     attr_accessor :data, :hash_fields
-    attr_reader :profiles
 
-    def initialize()
-        # The base parameter of DAO must come from config settings. It's must be refactored.
-        dao = DAO.new YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+    def initialize(rows_of_document=nil)
+        super(rows_of_document)
         @data = []
-        @profiles = dao.generate_data_lists_by_metadata_type(["profile"])["profile"]
+        @metadata_types = ["profile"]
         @hash_fields = {
             :id => "",
             :family => "",
@@ -18,20 +16,25 @@ class DispersionDAO
     end
 
 
-    def generate_data
-        @profiles.each{ |profile|
-            reproduction = profile["reproduction"] if profile["reproduction"]
+    def generate_data(types=@metadata_types)
+
+        set_docs_by_metadata_types
+        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+
+            doc = profile["doc"]
+            reproduction = doc["reproduction"] if doc["reproduction"]
             if reproduction && reproduction["dispersionSyndrome"] && reproduction["dispersionSyndrome"].is_a?(Array)
+              
                 dispersionSyndrome = reproduction["dispersionSyndrome"]
                 family = ""
                 scientificName = ""
-                if profile["taxon"] && profile["taxon"].is_a?(Hash) 
-                    taxon = profile["taxon"]
-                    family = taxon["family"] if taxon["family"] 
-                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
-                end
+
+                taxon = doc["taxon"]
+                family = taxon["family"] if taxon["family"] 
+                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+
                 dispersionSyndrome.each{ |dispersion|
-                    @hash_fields[:id] = profile["_id"] 
+                    @hash_fields[:id] = doc["_id"] 
                     @hash_fields[:family] = family
                     @hash_fields[:scientificNameWithoutAuthorship] = scientificName
                     @hash_fields[:dispersion] = dispersion 

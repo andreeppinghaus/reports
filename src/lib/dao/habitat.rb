@@ -1,14 +1,12 @@
-require_relative File.expand_path('src/lib/dao/dao')
+require_relative File.expand_path('src/lib/dao/report')
 
-class HabitatDAO
+class HabitatDAO < ReportDAO
     attr_accessor :data, :hash_fields
-    attr_reader :profiles
 
-    def initialize()
-        # The base parameter of DAO must come from config settings. It's must be refactored.
-        dao = DAO.new YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+    def initialize(rows_of_document=nil)
+        super(rows_of_document)
         @data = []
-        @profiles = dao.generate_data_lists_by_metadata_type(["profile"])["profile"]
+        @metadata_types = ["profile"]
         @hash_fields = {
             :id => "",
             :family => "",
@@ -18,20 +16,24 @@ class HabitatDAO
     end
 
 
-    def generate_data
-        @profiles.each{ |profile|
-            ecology = profile["ecology"] if profile["ecology"]
+    def generate_data(types=@metadata_types)
+
+        set_docs_by_metadata_types
+        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+
+            doc = profile["doc"]
+            ecology = doc["ecology"] if doc["ecology"]
             if ecology && ecology["habitats"] && ecology["habitats"].is_a?(Array)
-                habitats = ecology["habitats"]
+
                 family = ""
                 scientificName = ""
-                if profile["taxon"] && profile["taxon"].is_a?(Hash) 
-                    taxon = profile["taxon"]
-                    family = taxon["family"] if taxon["family"] 
-                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
-                end
+                habitats = ecology["habitats"]
+
+                taxon = doc["taxon"] if doc["taxon"]
+                family = taxon["family"] if taxon["family"] 
+                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
                 habitats.each{ |hatibat|
-                    @hash_fields[:id] = profile["_id"] 
+                    @hash_fields[:id] = doc["_id"] 
                     @hash_fields[:family] = family
                     @hash_fields[:scientificNameWithoutAuthorship] = scientificName
                     @hash_fields[:habitat] = hatibat 

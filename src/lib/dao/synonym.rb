@@ -1,6 +1,6 @@
 require_relative File.expand_path('src/lib/dao/report')
 
-class SpecieDAO < ReportDAO
+class SynonymDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
     def initialize(rows_of_document=nil)
@@ -11,7 +11,8 @@ class SpecieDAO < ReportDAO
             :id => "",
             :family => "",
             :scientificNameWithoutAuthorship => "",
-            :scientificNameAuthorship=> ""
+            :scientificNameAuthorship => "",
+            :acceptedNameUsage => ""
         }
     end
 
@@ -27,15 +28,18 @@ class SpecieDAO < ReportDAO
                 family = ""
                 scientificNameAuthorship = ""
                 scientificNameWithoutAuthorship = ""
+                acceptedNameUsage = ""
 
                 family = doc["family"] if doc["family"] 
                 scientificNameWithoutAuthorship = doc["scientificNameWithoutAuthorship"] if doc["scientificNameWithoutAuthorship"]
                 scientificNameAuthorship = doc["scientificNameAuthorship"] if doc["scientificNameAuthorship"]
+                acceptedNameUsage = doc["acceptedNameUsage"] if doc["acceptedNameUsage"]
 
                 @hash_fields[:id] = doc["_id"] 
                 @hash_fields[:family] = family.upcase
                 @hash_fields[:scientificNameWithoutAuthorship] = scientificNameWithoutAuthorship
                 @hash_fields[:scientificNameAuthorship] = scientificNameAuthorship
+                @hash_fields[:acceptedNameUsage] = acceptedNameUsage 
 
 
                 _hash_fields = @hash_fields.clone
@@ -46,8 +50,8 @@ class SpecieDAO < ReportDAO
         }
 
         @data.sort!{ |x,y| 
-            array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:scientificNameAuthorship] ] 
-            array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:scientificNameAuthorship] ] 
+            array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:scientificNameAuthorship], x[:acceptedNameUsage] ] 
+            array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:scientificNameAuthorship], y[:acceptedNameUsage] ] 
             array0 <=> array1
         }
 

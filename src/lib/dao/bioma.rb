@@ -1,45 +1,65 @@
-require_relative File.expand_path('src/lib/dao/dao')
+require_relative File.expand_path('src/lib/dao/report')
 
-class BiomaDAO
+class BiomaDAO < ReportDAO
+    attr_accessor :data, :hash_fields
 
-    attr_accessor :data, :biomas
-    attr_reader :dao
-
-    def initialize()
-        # The base parameter of DAO must come from config settings. It's must be refactored.
-        @dao = DAO.new YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+    def initialize(rows_of_document=nil)
+        super(rows_of_document)
         @data = []
-        @biomas = []
+        @metadata_types = ["profile"]
+        @hash_fields = {
+            :id => "",
+            :family => "",
+            :scientificNameWithoutAuthorship => "",
+            :bioma=> ""
+        }
     end
 
 
-    def generate_data
-        docs = @dao.get_docs_by_metadata_type(@dao.base,'profile')
-        docs.each{ |doc|
+    def generate_data(types=@metadata_types)
+
+        set_docs_by_metadata_types
+        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+
+            doc = profile["doc"]
             if doc["ecology"] && doc["ecology"]["biomas"] && doc["ecology"]["biomas"].is_a?(Array) 
-                doc["ecology"]["biomas"].each{ |b|
-                    family = doc["taxon"]["family"]
-                    scientificNameWithoutAuthorship= doc["taxon"]["scientificNameWithoutAuthorship"]
-                    @data.push({:family=>family,:scientificNameWithoutAuthorship=>scientificNameWithoutAuthorship,:bioma=>b}) 
+
+                biomas = doc["ecology"]["biomas"]
+                family = ""
+                scientificName = ""
+
+                taxon = doc["taxon"]
+
+                family = taxon["family"] if taxon["family"]
+                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+
+
+                biomas.each{ |bioma|
+                    @hash_fields[:id] = doc["_id"] 
+                    @hash_fields[:family] = family.upcase
+                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                    @hash_fields[:bioma] = bioma
                 }
+
+                _hash_fields = @hash_fields.clone
+                @data.push(_hash_fields) 
+                clean_hash_fields
+
             end
         }
-        @data.sort_by!{|h| [h[:family],h[:scientificNameWithoutAuthorship]]}
+
+        @data.sort!{ |x,y| 
+            array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:bioma] ] 
+            array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:bioma] ] 
+            array0 <=> array1
+        }
+
     end
 
-    def generate_all_biomas
-        if @biomas.empty?
-            docs = @dao.get_docs_by_metadata_type(@dao.base,'profile')
-            docs.each{ |doc|
-                if doc["ecology"] && doc["ecology"]["biomas"] && doc["ecology"]["biomas"].is_a?(Array) 
-                    doc["ecology"]["biomas"].each{ |b|
-                        @biomas.push b
-                    }
-                end                
-            }
-            @biomas.uniq!.sort!
-        end
+    def clean_hash_fields
+        @hash_fields.each{ |k,v|
+            @hash_fields[k] = ""
+        }        
     end
-
     
 end

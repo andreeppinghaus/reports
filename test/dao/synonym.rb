@@ -1,43 +1,45 @@
 require 'rspec'
 require 'yaml'
 require_relative File.expand_path("src/lib/dao/dao")
-require_relative File.expand_path("src/lib/dao/bioma")
+require_relative File.expand_path("src/lib/dao/synonym")
 
-describe "BiomaDAO" do
+describe "SynonymDAO" do
 
     before(:all){
         @config = YAML.load_file(File.expand_path('config.yml'))["test"]
         @host = @config["couchdb"] 
         @base = @config["base_list"]
-        @metadata_types = { "profile" => { "ecology" => { "biomas" => 600  } } }
+        @metadata_types = { "taxon" => { "taxonomicStatus" => { "accepted" => 613, "synonym" => 21  }  } }
         @hash_fields = {
             :id => "",
             :family => "",
             :scientificNameWithoutAuthorship  => "",
-            :bioma => ""
-        }
+            :scientificNameAuthorship => "",
+            :acceptedNameUsage => ""
+        }   
         @data =[
             {
-                :id=>"urn:lsid:cncflora.jbrj.gov.br:profile:justicia:clivalis:1374083792", 
+                :id=>"urn:lsid:cncflora.jbrj.gov.br:taxon:species:angiosperm:ACANTHACEAE:Justicia clivalis", 
                 :family=>"ACANTHACEAE", 
                 :scientificNameWithoutAuthorship=>"Justicia clivalis", 
-                :bioma=>"Cerrado"
+                :scientificNameAuthorship=>"Wassh.",
+                :acceptedNameUsage=>"Justicia clivalis"
             },
             {
-                :id=>"urn:lsid:cncflora.jbrj.gov.br:profile:xyris:villosicarinata:1379511850",
+                :id=>"urn:lsid:cncflora.jbrj.gov.br:taxon:species:angiosperm:XYRIDACEAE:Xyris villosicarinata",
                 :family=>"XYRIDACEAE", 
-                :scientificNameWithoutAuthorship=>"Xyris villosicarinata",
-                :bioma=>"Cerrado"
+                :scientificNameWithoutAuthorship=>"Xyris villosicarinata", 
+                :scientificNameAuthorship=>"Kral & Wand.",
+                :acceptedNameUsage=>"Xyris villosicarinata"
             }
         ]
-        @all_biomas = ["Amazônia", "Caatinga", "Cerrado", "Mata Atlântica", "Pampa (Campos Sulinos)", "Pantanal"]
-    }
+    } 
 
 
-    it "Should be an instance of the BiomaDAO class." do
-        dao = BiomaDAO.new
-        expect( dao ).to be_a BiomaDAO
-        expect( BiomaDAO.superclass ).to eq ReportDAO
+    it "Should be an instance of the SynonymDAO class." do
+        dao = SynonymDAO.new
+        expect( dao ).to be_a SynonymDAO
+        expect( SynonymDAO.superclass ).to eq ReportDAO
         expect( dao.host ).to eq @host
         expect( dao.base ).to eq @base
         expect( dao.rows_of_document ).to eq nil
@@ -51,14 +53,13 @@ describe "BiomaDAO" do
     end
 
 
-    it "Should generate data of the biomas report." do      
-        dao = BiomaDAO.new( DAO.new.get_rows_of_document )
+    it "Should generate data of the synonyms report." do      
+        dao = SynonymDAO.new( DAO.new.get_rows_of_document )
         expect(dao.data.empty?).to be true
         dao.generate_data        
-        expect( dao.data.count ).to eq @metadata_types["profile"]["ecology"]["biomas"]
+        expect( dao.data.count ).to eq @metadata_types["taxon"]["taxonomicStatus"]["accepted"]
         expect( dao.data.first ).to eq @data.first
         expect( dao.data.last ).to eq @data.last
     end
 
 end
-

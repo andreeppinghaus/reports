@@ -1,19 +1,17 @@
-require_relative File.expand_path('src/lib/dao/dao')
+require_relative File.expand_path('src/lib/dao/report')
 
-class EcologyDAO
+class EcologyDAO < ReportDAO
     attr_accessor :data, :hash_fields
-    attr_reader :profiles
 
-    def initialize()
-        # The base parameter of DAO must come from config settings. It's must be refactored.
-        dao = DAO.new YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+    def initialize(rows_of_document=nil)
+        super(rows_of_document)
         @data = []
-        @profiles = dao.generate_data_lists_by_metadata_type(["profile"])["profile"]
+        @metadata_types = ["profile"]
         @hash_fields = {
             :id => "",
             :family => "",
             :scientificNameWithoutAuthorship => "",
-            :lifeForm => "", 
+            :lifeform => "", 
             :fenology  => "", 
             :luminosity => "",
             :substratum => "",
@@ -23,18 +21,21 @@ class EcologyDAO
     end
 
 
-    def generate_data
-        # Problem? fenology is a key of reprodution key. Check the profile:54342ab412c74 _id.
-        @profiles.each{ |profile|
-            if profile["ecology"] && profile["ecology"].is_a?(Hash)
+
+    def generate_data(types=@metadata_types)
+
+        set_docs_by_metadata_types
+        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+
+            doc = profile["doc"]
+            if doc["ecology"] && doc["ecology"].is_a?(Hash)
 
                 family = ""
                 scientificName = ""
-                if profile["taxon"] && profile["taxon"].is_a?(Hash) 
-                    taxon = profile["taxon"]
-                    family = taxon["family"] if taxon["family"] 
-                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
-                end
+
+                taxon = doc["taxon"] if doc["taxon"]
+                family = taxon["family"] if taxon["family"] 
+                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
 
                 lifeForm = ""
                 fenology = ""
@@ -43,7 +44,7 @@ class EcologyDAO
                 longevity = ""
                 resprout = "" 
 
-                ecology = profile["ecology"]
+                ecology = doc["ecology"] 
                 lifeForm = ecology["lifeForm"] if ecology["lifeForm"]
                 fenology = ecology["fenology"] if ecology["fenology"]
                 luminosity = ecology["luminosity"] if ecology["luminosity"]
@@ -51,7 +52,7 @@ class EcologyDAO
                 longevity = ecology["longevity"] if ecology["longevity"]
                 resprout = ecology["resprout"] if ecology["resprout"]
 
-                @hash_fields[:id] = profile["_id"]
+                @hash_fields[:id] = doc["_id"]
                 @hash_fields[:family] = family 
                 @hash_fields[:scientificNameWithoutAuthorship] = scientificName 
                 @hash_fields[:lifeForm] = lifeForm

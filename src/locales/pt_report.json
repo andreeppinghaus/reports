@@ -1,16 +1,16 @@
 {
-    "actions":"Ações",
-    "assessments":"Avaliações",
-    "biomas":"Biomas",
+    "action":"Ações",
+    "assessment":"Avaliações",
+    "bioma":"Biomas",
     "dispersion":"Dispersão",
     "distribution":"Distribuição",
     "ecology":"Ecologia",
-    "phytophysiognomies":"Fitofisionomias",
-    "habitats":"Habitats",
-    "occurrences":"Ocorrências",
+    "habitat":"Habitats",
+    "occurrence":"Ocorrências",
+    "phytophysiognomie":"Fitofisionomias",
     "pollination":"Polinização",
-    "species":"Espécies",
-    "synonyms":"Sinônimos",
-    "threats":"Ameaças",
-    "users":"Usuários"
+    "specie":"Espécies",
+    "synonym":"Sinônimos",
+    "threat":"Ameaças",
+    "user":"Usuários"
 }

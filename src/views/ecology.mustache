@@ -1,0 +1,33 @@
+{{> header}}
+
+<table class="table col-md-12">
+    <thead>
+        <tr>
+            <th>{{strings.family}}</th>
+            <th>{{strings.scientificNameWithoutAuthorship}}</th>
+            <th>{{strings.lifeform}}</th> 
+            <th>{{strings.fenology}}</th>  
+            <th>{{strings.luminosity}}</th>
+            <th>{{strings.substratum}}</th>
+            <th>{{strings.longevity}}</th>
+            <th>{{strings.resprout}}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#data}}
+        <tr>
+            <td>{{family}}</td>
+            <td>{{scientificNameWithoutAuthorship}}</td>
+            <td>{{lifeForm}}</td>
+            <td>{{fenology}}</td>
+            <td>{{luminosity}}</td>
+            <td>{{substratum}}</td>
+            <td>{{longevity}}</td>
+            <td>{{resprout}}</td>
+        </tr>
+        {{/data}}
+    </tbody>
+</table>
+
+{{> footer}}
