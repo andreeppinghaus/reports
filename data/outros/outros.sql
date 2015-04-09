@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS uses (family VARCHAR(5000) , scientificName VARCHAR(5
 CREATE TABLE IF NOT EXISTS habitats (family VARCHAR(5000) , scientificName VARCHAR(5000) , habitat VARCHAR(5000));
 CREATE TABLE IF NOT EXISTS fitofisionomias (family VARCHAR(5000) , scientificName VARCHAR(5000) , fitofisionomie VARCHAR(5000));
 CREATE TABLE IF NOT EXISTS biomas (family VARCHAR(5000) , scientificName VARCHAR(5000) , bioma VARCHAR(5000));
-CREATE TABLE IF NOT EXISTS assessments (family VARCHAR(5000) , scientificName VARCHAR(5000) , analysis VARCHAR(5000) , assessment VARCHAR(5000) , category VARCHAR(5000) , criteria VARCHAR(5000));
+CREATE TABLE IF NOT EXISTS assessments (family VARCHAR(5000) , scientificNameWithoutAuthorship VARCHAR(5000) , scientificNameAuthorship VARCHAR(5000) , analysis VARCHAR(5000) , assessment VARCHAR(5000) , category VARCHAR(5000) , criteria VARCHAR(5000) , rationale VARCHAR(5000));
 CREATE TABLE IF NOT EXISTS pollination (family VARCHAR(5000) , scientificName VARCHAR(5000) , pollination VARCHAR(5000));
 CREATE TABLE IF NOT EXISTS dispersion (family VARCHAR(5000) , scientificName VARCHAR(5000) , dispersion VARCHAR(5000));

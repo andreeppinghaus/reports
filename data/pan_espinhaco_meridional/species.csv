@@ -8,6 +8,7 @@ APOCYNACEAE,"Minaria hemipogonoides","(E.Fourn.) T.U.P.Konno & Rapini"
 Asteraceae,"Piptolepis leptospermoides","(Mart. ex DC.) Sch.Bip."
 ASTERACEAE,"Eupatorium lineatum","Sch.Bip. ex Baker"
 Orchidaceae,"Octomeria geraensis",Barb.Rodr.
+Lycopodiaceae,"Phlegmariurus itambensis","(B.Øllg. & P.G.Windisch) B.Øllg."
 Asteraceae,"Lychnophora markgravii",G.M.Barroso
 Asteraceae,"Lychnophoriopsis candelabrum","(Sch.Bip.) H.Rob."
 ASTERACEAE,"Richterago caulescens",Roque
@@ -34,8 +35,10 @@ FABACEAE,"Chamaecrista lagotois","H.S.Irwin & Barneby"
 ERIOCAULACEAE,"Actinocephalus cipoensis","(Silveira) Sano"
 ERIOCAULACEAE,"Leiothrix linearis",Silveira
 ERIOCAULACEAE,"Paepalanthus ater",Silveira
+Asteraceae,"Lessingianthus rosmarinifolius","(Less.) H.Rob."
 FABACEAE,"Lupinus parvifolius",Gardner
 Eriocaulaceae,"Paepalanthus uncinatus",Gardner
+Connaraceae,"Rourea cnestidifolia",G.Schellenb.
 IRIDACEAE,"Pseudotrimezia aminae",Chukr
 IRIDACEAE,"Pseudotrimezia brevistamina",Chukr
 IRIDACEAE,"Pseudotrimezia gracilis",Chukr
@@ -65,6 +68,10 @@ VELLOZIACEAE,"Barbacenia longiscapa","Goethart & Henrard"
 VELLOZIACEAE,"Barbacenia pungens","(N.L.Menezes & Semir) Mello-Silva"
 Velloziaceae,"Barbacenia rodriguesii","(N.L.Menezes & Semir) Mello-Silva"
 ARECACEAE,"Syagrus mendanhensis",Glassman
+Bignoniaceae,"Zeyheria tuberculosa","(Vell.) Bureau ex Verl."
+MYRSINACEAE,"Myrsine congesta","(Sw.) Pipoly"
+Lauraceae,"Cinnamomum erythropus","(Nees & Mart.) Kosterm."
+Bromeliaceae,"Neoregelia leprosa",L.B.Sm.
 Eriocaulaceae,"Paepalanthus hydra",Ruhland
 LYTHRACEAE,"Diplusodon glaziovii",Koehne
 Asteraceae,"Aspilia ovalifolia","(DC.) Baker"
@@ -72,3 +79,5 @@ Pteridaceae,"Pellaea cymbiformis",J.Prado
 MELASTOMATACEAE,"Microlicia elegans",Naudin
 MELASTOMATACEAE,"Microlicia microphylla","(Naudin) Cogn."
 MALVACEAE,"Callianthe monteiroi","(Krapov.) Donnell"
+Primulaceae,"Myrsine congesta","(Sw.) Pipoly"
+Convolvulaceae,"Merremia repens ",D.F.Austin

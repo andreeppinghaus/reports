@@ -1,17 +1,14 @@
 family,scientificName,use,resource
+LECYTHIDACEAE,"Couratari pyramidata","9. Construction/structural materials",stalk
+LECYTHIDACEAE,"Couratari pyramidata","11. Other household goods",stalk
+BROMELIACEAE,"Aechmea caesia","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
 ARECACEAE,"Lytocaryum weddellianum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
-PRIMULACEAE,"Cybianthus barrosoanus","17. Unknown",
 PRIMULACEAE,"Cybianthus barrosoanus","2. Food - animal",fruit
 ARISTOLOCHIACEAE,"Aristolochia raja","17. Unknown",
-LORANTHACEAE,"Struthanthus maricensis","2. Food - animal",fruit
-LORANTHACEAE,"Psittacanthus pluricotyledonarius","2. Food - animal",fruit
 COMBRETACEAE,"Terminalia acuminata","9. Construction/structural materials",stalk
-LORANTHACEAE,"Struthanthus pentamerus","2. Food - animal",fruit
-LORANTHACEAE,"Struthanthus armandianus","2. Food - animal",fruit
-LORANTHACEAE,"Struthanthus involucratus","2. Food - animal",fruit
-LORANTHACEAE,"Struthanthus harlingianus","2. Food - animal",fruit
 BROMELIACEAE,"Neoregelia abendrothae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
 BROMELIACEAE,"Neoregelia bragarum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+COMMELINACEAE,"Dichorisandra nana","13. Pets/display animals, horticulture","whole plant"
 BROMELIACEAE,"Neoregelia camorimiana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
 BROMELIACEAE,"Neoregelia carinata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
 BROMELIACEAE,"Neoregelia coimbrae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
@@ -34,3 +31,88 @@ BROMELIACEAE,"Neoregelia lactea","12. Handicrafts, jewellery, decorations, curio
 ACANTHACEAE,"Ruellia herbstii","12. Handicrafts, jewellery, decorations, curios, etc.",flower
 BROMELIACEAE,"Neoregelia leucophoea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
 BROMELIACEAE,"Neoregelia longipedicellata","12. Handicrafts, jewellery, decorations, curios, etc.",
+BROMELIACEAE,"Neoregelia macahensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Neoregelia macwilliamsii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Neoregelia martinellii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+MALVACEAE,"Abutilon esculentum","1. Food - human",flower
+BROMELIACEAE,"Neoregelia petropolitana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Neoregelia roethii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Neoregelia sapiatibensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+Bromeliaceae,"Neoregelia paratiensis","13. Pets/display animals, horticulture","whole plant"
+BROMELIACEAE,"Neoregelia tenebrosa","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+COMMELINACEAE,"Dichorisandra odorata","13. Pets/display animals, horticulture","whole plant"
+BROMELIACEAE,"Neoregelia uleana","13. Pets/display animals, horticulture","whole plant"
+BROMELIACEAE,"Neoregelia watersiana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Cryptanthus bromelioides","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+PASSIFLORACEAE,"Passiflora imbeana","17. Unknown",
+BROMELIACEAE,"Cryptanthus delicatus","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Cryptanthus sinuosus","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Dyckia martinellii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Dyckia pseudococcinea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium altimontanum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium angustifolium","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium apiculatum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium atalaiaense","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+LAURACEAE,"Mezilaurus navalium","9. Construction/structural materials","whole plant"
+BROMELIACEAE,"Nidularium fradense","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium fulgens","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium itatiaiae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium mangaratibense","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium organense","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium rosulatum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium utriculosum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Nidularium viridipetalum","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+ARACEAE,"Philodendron alternans","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Quesnelia edmundoi","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+TRIURIDACEAE,"Peltophyllum caudatum","17. Unknown",
+TRIURIDACEAE,"Triuris alata","17. Unknown",
+BROMELIACEAE,"Quesnelia lateralis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Quesnelia seideliana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Canistropsis correia-araujoi","12. Handicrafts, jewellery, decorations, curios, etc.",
+BROMELIACEAE,"Canistropsis elata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Canistropsis marceloi","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Canistropsis pulcherrima","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia brachyphylla","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia carminea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia grazielae","12. Handicrafts, jewellery, decorations, curios, etc.",
+BROMELIACEAE,"Tillandsia neglecta","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia nuptialis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia organensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia reclinata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia roseiflora","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia sucrei","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Tillandsia thiekenii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Billbergia brasiliensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Billbergia macracantha","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea cariocae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea dealbata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea fasciata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea flavorosea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea grazielae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea paratiensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea prava","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Aechmea squarrosa","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea farneyi","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea geniculata","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea glaziouana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea heloisae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea martinellii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea nevaresii","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Alcantarea tortuosa","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia albiflos","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia beycalema","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia corcovadensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia encholirioides","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia insularis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia staminea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia suaveolens","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Pitcairnia wendtiae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea agostiniana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea altimontana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea altomacaensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea atrococcinea","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea bleherae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea botafogensis","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea brassicoides","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea costae","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"
+BROMELIACEAE,"Vriesea croceana","12. Handicrafts, jewellery, decorations, curios, etc.","whole plant"

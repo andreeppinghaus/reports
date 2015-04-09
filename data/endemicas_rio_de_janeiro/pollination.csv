@@ -1,4 +1,5 @@
 family,scientificName,pollination
+LECYTHIDACEAE,"Couratari pyramidata",entomophily
 VOCHYSIACEAE,"Callisthene dryadum",melitophily
 SALICACEAE,"Abatia microphylla",entomophily
 PRIMULACEAE,"Cybianthus barrosoanus",
@@ -14,5 +15,20 @@ LORANTHACEAE,"Struthanthus involucratus",entomophily
 LORANTHACEAE,"Struthanthus harlingianus",entomophily
 ACANTHACEAE,"Aphelandra stephanophysa",ornitophily
 SOLANACEAE,"Capsicum friburgense",
+COMMELINACEAE,"Siderasis fuscata",melitophily
 CELASTRACEAE,"Maytenus basidentata",
 ACANTHACEAE,"Justicia polita",ornitophily
+COMMELINACEAE,"Dichorisandra odorata",melitophily
+PASSIFLORACEAE,"Passiflora imbeana",
+MONIMIACEAE,"Mollinedia longicuspidata",entomophily
+MONIMIACEAE,"Mollinedia corcovadensis",entomophily
+MONIMIACEAE,"Mollinedia stenophylla",entomophily
+MONIMIACEAE,"Mollinedia acutissima",entomophily
+MONIMIACEAE,"Mollinedia acutissima",
+TRIURIDACEAE,"Peltophyllum caudatum",
+MONIMIACEAE,"Mollinedia marliae",entomophily
+BROMELIACEAE,"Pitcairnia albiflos",melitophily
+BROMELIACEAE,"Pitcairnia albiflos",falenophily
+BROMELIACEAE,"Pitcairnia albiflos",psicophily
+BROMELIACEAE,"Pitcairnia albiflos",quiropterophily
+MARCGRAVIACEAE,"Marcgravia comosa",quiropterophily

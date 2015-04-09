@@ -1,1 +1,8 @@
 family,scientificName,threat,incidence,timing,decline
+COMMELINACEAE,"Dichorisandra begoniifolia","1.1 Housing & urban areas",regional,past;present;future,
+COMMELINACEAE,"Dichorisandra begoniifolia","1.3 Tourism & recreation areas",regional,past;present;future,
+ERIOCAULACEAE,"Paepalanthus cordatus ","2 Agriculture & aquaculture",local,present,habitat;locality;occupancy;occurrence
+ERIOCAULACEAE,"Paepalanthus macer ","2 Agriculture & aquaculture",local,present,habitat;locality;occupancy;occurrence
+ERIOCAULACEAE,"Paepalanthus macer ","8.1 Invasive non-native/alien species/diseases",local,present,locality;habitat;occupancy;occurrence
+ERIOCAULACEAE,"Paepalanthus stellatus ","2 Agriculture & aquaculture",local,present,locality;habitat;occupancy;occurrence
+ERIOCAULACEAE,"Paepalanthus urbanianus ","2 Agriculture & aquaculture",local,present,habitat;locality;occupancy;occurrence
