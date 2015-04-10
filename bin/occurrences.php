@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","remarks","comments"];
+$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
 
 fputcsv($csv,$fields);
 
@@ -99,6 +99,10 @@ foreach($all->rows as $row) {
             $doc->valid = "";
           }
         }
+
+        $doc->contributor = $doc->metadata->contributor ;
+        $doc->dateLastModified = date("Y-m-d H:i:s" ,$doc->metadata->modified );
+
         $data = [];
         foreach($fields as $f) {
           if(isset($doc->$f)) {
