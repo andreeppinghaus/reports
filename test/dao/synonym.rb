@@ -54,7 +54,7 @@ describe "SynonymDAO" do
 
     it "Should generate data of the synonyms report." do      
         dao = SynonymDAO.new @host, @base
-        expect(dao.data.empty?).to be true
+        expect( dao.data ).to be_empty
         dao.generate_data        
         expect( dao.data.count ).to eq @metadata_types["taxon"]["taxonomicStatus"]["accepted"]
         expect( dao.data.first ).to eq @data.first
