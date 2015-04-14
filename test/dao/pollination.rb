@@ -1,6 +1,5 @@
 require 'rspec'
 require 'yaml'
-require_relative File.expand_path("src/lib/dao/dao")
 require_relative File.expand_path("src/lib/dao/pollination")
 
 describe "PollinationDAO" do
@@ -30,25 +29,25 @@ describe "PollinationDAO" do
 
 
     it "Should be an instance of the PollinationDAO class." do
-        dao = PollinationDAO.new
-        expect( dao ).to be_a PollinationDAO
-        expect( PollinationDAO.superclass ).to eq ReportDAO
+        dao = PollinationDAO.new @host, @base
+        expect( dao ).to be_an_instance_of PollinationDAO
+        expect( dao ).not_to be_an_instance_of ReportDAO
+        expect( dao ).to be_kind_of ReportDAO
         expect( dao.host ).to eq @host
         expect( dao.base ).to eq @base
-        expect( dao.rows_of_document ).to eq nil
         expect( dao.docs_by_metadata_types ).to be_a Hash
-        expect( dao.docs_by_metadata_types.empty? ).to be true
+        expect( dao.docs_by_metadata_types ).to be_empty
         expect( dao.metadata_types ).to be_a Array
-        expect( dao.metadata_types[0] ).to eq @metadata_types.keys[0]
+        expect( dao.metadata_types ).to eq @metadata_types.keys
         expect( dao.hash_fields).to eq @hash_fields
         expect( dao.data ).to be_a Array
-        expect( dao.data.empty? ).to be true
+        expect( dao.data ).to be_empty 
     end
 
 
     it "Should generate data of the pollinations report." do      
-        dao = PollinationDAO.new( DAO.new.get_rows_of_document )
-        expect(dao.data.empty?).to be true
+        dao = PollinationDAO.new @host, @base
+        expect( dao.data ).to be_empty 
         dao.generate_data        
         expect( dao.data.count ).to eq @metadata_types["profile"]["reproduction"]["pollinationSyndrome"]
         expect( dao.data.first ).to eq @data.first
