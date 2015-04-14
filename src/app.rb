@@ -7,7 +7,8 @@ require 'sinatra/config_file'
 require 'sinatra/mustache'
 require 'sinatra/reloader' if development?
 require 'json'
-require_relative 'lib/dao/dao'
+require 'cncflora_commons'
+require_relative 'lib/dao/report'
 #require_relative 'lib/dao/assessment'
 require_relative 'lib/dao/bioma'
 require_relative 'lib/dao/dispersion'
@@ -28,11 +29,27 @@ end
 
 setup 'config.yml'
 
-i = Time.now
-@@rows_of_document = DAO.new.get_rows_of_document
-f = Time.now
-puts "time to generate all rows of the base = #{f-i}"
 
+$HOST = YAML.load_file(File.expand_path('config.yml'))['development']['couchdb']
+$BASE = YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+
+i = Time.now
+$ALL_DBS = ReportDAO.new($HOST,$BASE).all_dbs.map!(&:upcase)
+f = Time.now
+puts "Time to generate an instance of ReportDAO and, thus, all databases: = #{f-i}"
+
+
+def get_reports(file="../locales/pt_report.json")
+    file = File.read(File.expand_path(file, __FILE__))
+    reports = []
+    hash = JSON.parse(file)
+    hash.each{|k,v|
+        reports.push({:name=>k,:label=>v})
+    }
+    reports 
+end
+
+$REPORTS = get_reports
 
 def view(page,data)
     @config = settings.config
@@ -48,22 +65,14 @@ end
 
 get '/' do
     # MIssing view test.
-    dao = ReportDAO.new
-    all_dbs = dao.all_dbs.map!(&:upcase)
-    view :index, {:recortes=>all_dbs} 
+    view :index, {:recortes=>$ALL_DBS}
 end
 
 
 get '/reports/:db' do
     # MIssing view test.
     db =  params[:db].downcase
-    file = File.read(File.expand_path("../locales/pt_report.json", __FILE__))
-    reports = []
-    _hash = JSON.parse(file)
-    _hash.each{|k,v|
-        reports.push({:name=>k,:label=>v})
-    }
-    view :reports, {:db=>db,:reports=>reports}
+    view :reports, {:db=>db,:reports=>$REPORTS}
 end
 
 
@@ -87,7 +96,7 @@ end
 
 get '/:db/report/name/bioma' do
     # MIssing view test.
-    dao = BiomaDAO.new(@@rows_of_document)
+    dao = BiomaDAO.new($rows_of_document)
     dao.generate_data
     data = dao.data
     view :bioma, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
@@ -96,7 +105,7 @@ end
 
 get '/:db/report/name/dispersion' do
     # MIssing view test.
-    dao = DispersionDAO.new(@@rows_of_document)
+    dao = DispersionDAO.new($rows_of_document)
     dao.generate_data
     data = dao.data
     view :dispersion, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
@@ -110,7 +119,7 @@ end
 
 get '/:db/report/name/ecology' do
     # MIssing view test.
-    dao = EcologyDAO.new(@@rows_of_document)
+    dao = EcologyDAO.new($rows_of_document)
     dao.generate_data
     data = dao.data
     view :ecology, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
@@ -119,7 +128,7 @@ end
 
 get '/:db/report/name/habitat' do
     # MIssing view test.
-    dao = HabitatDAO.new(@@rows_of_document)
+    dao = HabitatDAO.new($rows_of_document)
     dao.generate_data
     data = dao.data
     view :habitat, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
@@ -133,7 +142,7 @@ end
 
 get '/:db/report/name/phytophysiognomie' do
     # MIssing view test.
-    dao = PhytophysiognomieDAO.new(@@rows_of_document)
+    dao = PhytophysiognomieDAO.new($rows_of_document)
     dao.generate_data
     data = dao.data
     view :phytophysiognomie, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
@@ -142,28 +151,28 @@ end
 
 get '/:db/report/name/pollination' do
     # MIssing view test.
-    dao = PollinationDAO.new(@@rows_of_document)
+    dao = PollinationDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :pollination, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :pollination, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
 get '/:db/report/name/specie' do
     # MIssing view test.
-    dao = SpecieDAO.new(@@rows_of_document)
+    dao = SpecieDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :specie, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :specie, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
 get '/:db/report/name/synonym' do
     # MIssing view test.
-    dao = SynonymDAO.new(@@rows_of_document)
+    dao = SynonymDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :synonym, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :synonym, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
