@@ -33,7 +33,7 @@ describe "DAO" do
 
 
     it "Should be an instance of the DAO class." do
-        dao = DAO.new
+        dao = DAO.new @host, @base
         expect( dao ).to be_a DAO
         expect( dao.host ).to eq @host
         expect( dao.base ).to eq @base
@@ -41,13 +41,13 @@ describe "DAO" do
 
 
     it "Should get all databases." do
-        dao = DAO.new
+        dao = DAO.new @host, @base
         expect( dao.all_dbs ).to eq @all_dbs
     end
 
 
-    it "Should get all documents of the database." do
-        dao = DAO.new
+    it "Should get all documents of the '@base' database." do
+        dao = DAO.new @host, @base
         rows = dao.get_rows_of_document
         expect( rows ).to be_a Array
         expect( rows.count ).to eq @documents_number_of_base

@@ -6,9 +6,9 @@ class ReportDAO < DAO
     attr_reader :docs_by_metadata_types, :rows_of_document
 
 
-    def initialize(rows_of_document=nil)
-        super()
-        @rows_of_document = rows_of_document
+    def initialize(host,base)
+        super
+        @rows_of_document = get_rows_of_document
         @docs_by_metadata_types = {}
         @metadata_types = ["assessment","occurrence","profile","taxon"]
         @hash_fields = {}
@@ -16,13 +16,13 @@ class ReportDAO < DAO
 
 
     def all_dbs
-        all_dbs = super
-        all_dbs.select{ |db| !db.end_with? "_history"} - ["_replicator","_users"]
+        _all_dbs = super
+        _all_dbs.select{ |db| !db.end_with? "_history"} - ["_replicator","_users"]
     end
 
 
     def set_docs_by_metadata_types(types=@metadata_types)
-
+        raise TypeError, "rows_of_document is nil" unless !@rows_of_document.nil?
         @rows_of_document.each{ |r|
             doc = r["doc"]
             type = doc["metadata"]["type"]

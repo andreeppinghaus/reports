@@ -1,14 +1,12 @@
-require 'cncflora_commons'
+require_relative File.expand_path('src/lib/utils/cncflora_http')
 require 'yaml'
-
-HOST = YAML.load_file(File.expand_path('config.yml'))['development']['couchdb']
-BASE = YAML.load_file(File.expand_path('config.yml'))['development']['base_list']   
 
 class DAO
 
     attr_accessor :host, :base
 
-    def initialize(host=HOST,base=BASE) 
+    #def initialize(host=HOST,base=BASE) 
+    def initialize(host,base) 
         @host = host
         @base = base
     end
@@ -24,8 +22,8 @@ class DAO
     end
 
 
-    def get_all_docs(base=@base,include_docs=true)        
-        uri = "#{@host}/#{base}/_all_docs?include_docs=#{include_docs}"        
+    def get_all_docs(include_docs=true)        
+        uri = "#{host}/#{base}/_all_docs?include_docs=#{include_docs}"        
         http_get(uri)
     end
 
