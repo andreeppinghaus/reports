@@ -20,8 +20,10 @@
     "habitat":"Habitat",
     "dispersion":"Dispersão",
     "bioma":"Bioma",
-    "specie":"Espécie",
+    "species":"Espécies",
+    "synonyms":"Sinônimos",
+    "pollinations": "Polinizações",
     "report_of": "Relatório de",
-    "number_of_documents": "Número de documentos"
+    "number_of_registers": "Número de registros"
 
 }
