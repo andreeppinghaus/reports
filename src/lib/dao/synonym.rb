@@ -3,8 +3,8 @@ require_relative File.expand_path('src/lib/dao/report')
 class SynonymDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
-    def initialize(rows_of_document=nil)
-        super(rows_of_document)
+    def initialize(host,base)
+        super
         @data = []
         @metadata_types = ["taxon"]
         @hash_fields = {
@@ -17,7 +17,7 @@ class SynonymDAO < ReportDAO
     end
 
 
-    def generate_data(types=@metadata_types)
+    def generate_data
 
         set_docs_by_metadata_types
         @docs_by_metadata_types[@metadata_types[0]].each{ |taxon|
