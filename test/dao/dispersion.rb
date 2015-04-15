@@ -1,6 +1,5 @@
 require 'rspec'
 require 'yaml'
-require_relative File.expand_path("src/lib/dao/dao")
 require_relative File.expand_path("src/lib/dao/dispersion")
 
 describe "DispersionDAO" do
@@ -34,31 +33,29 @@ describe "DispersionDAO" do
 
 
     it "Should be an instance of the DispersionDAO class." do
-        dao = DispersionDAO.new
-        expect( dao ).to be_a DispersionDAO
-        expect( DispersionDAO.superclass ).to eq ReportDAO
+        dao = DispersionDAO.new @host, @base
+        expect( dao ).to be_an_instance_of DispersionDAO
+        expect( dao ).not_to be_an_instance_of ReportDAO
+        expect( dao ).to be_kind_of ReportDAO
         expect( dao.host ).to eq @host
         expect( dao.base ).to eq @base
-        expect( dao.rows_of_document ).to eq nil
         expect( dao.docs_by_metadata_types ).to be_a Hash
-        expect( dao.docs_by_metadata_types.empty? ).to be true
+        expect( dao.docs_by_metadata_types ).to be_empty
         expect( dao.metadata_types ).to be_a Array
-        expect( dao.metadata_types[0] ).to eq @metadata_types.keys[0]
+        expect( dao.metadata_types ).to eq @metadata_types.keys
         expect( dao.hash_fields).to eq @hash_fields
         expect( dao.data ).to be_a Array
-        expect( dao.data.empty? ).to be true
+        expect( dao.data ).to be_empty 
     end
 
 
     it "Should generate data of the dispersions report." do      
-        dao = DispersionDAO.new( DAO.new.get_rows_of_document )
-        expect(dao.data.empty?).to be true
+        dao = DispersionDAO.new @host, @base
+        expect( dao.data ).to be_empty
         dao.generate_data        
         expect( dao.data.count ).to eq @metadata_types["profile"]["reproduction"]["dispersionSyndrome"]
         expect( dao.data.first ).to eq @data.first
         expect( dao.data.last ).to eq @data.last
     end
-
-
 
 end

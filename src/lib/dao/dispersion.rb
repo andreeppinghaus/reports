@@ -3,8 +3,8 @@ require_relative File.expand_path('src/lib/dao/report')
 class DispersionDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
-    def initialize(rows_of_document=nil)
-        super(rows_of_document)
+    def initialize(host,base)
+        super
         @data = []
         @metadata_types = ["profile"]
         @hash_fields = {
@@ -16,51 +16,50 @@ class DispersionDAO < ReportDAO
     end
 
 
-    def generate_data(types=@metadata_types)
+    def generate_data
 
         set_docs_by_metadata_types
-        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
 
-            doc = profile["doc"]
-            reproduction = doc["reproduction"] if doc["reproduction"]
-            if reproduction && reproduction["dispersionSyndrome"] && reproduction["dispersionSyndrome"].is_a?(Array)
-              
-                dispersionSyndrome = reproduction["dispersionSyndrome"]
-                family = ""
-                scientificName = ""
+        if !( docs_by_metadata_types.empty? )
 
-                taxon = doc["taxon"]
-                family = taxon["family"] if taxon["family"] 
-                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+            family = ""
+            scientificName = ""
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |profile|
 
-                dispersionSyndrome.each{ |dispersion|
-                    @hash_fields[:id] = doc["_id"] 
-                    @hash_fields[:family] = family
-                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
-                    @hash_fields[:dispersion] = dispersion 
-                }
+                doc = profile["doc"]
+                reproduction = doc["reproduction"] if doc["reproduction"]
+                dispersionSyndrome = reproduction["dispersionSyndrome"] if reproduction && reproduction["dispersionSyndrome"]
+                if dispersionSyndrome && dispersionSyndrome.is_a?(Array)
 
+                    taxon = doc["taxon"] if doc["taxon"]
+                    family = taxon["family"] if taxon["family"]
+                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
 
-                _hash_fields = @hash_fields.clone
-                @data.push(_hash_fields) 
-                clean_hash_fields
-            end
+                    dispersionSyndrome.each{ |dispersion|
+                        @hash_fields[:id] = doc["_id"] 
+                        @hash_fields[:family] = family
+                        @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                        @hash_fields[:dispersion] = dispersion
+                    }
 
-        }
+                    _hash_fields = @hash_fields.clone
+                    @data.push(_hash_fields) 
+                    clean_hash_fields
 
-        @data.sort_by!{|h| 
-            [ 
-                h[:family],
-                h[:scientificNameWithoutAuthorship],
-                h[:dispersion]
-            ]
-        }        
-    end
+                end
 
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
+            }
+
+            @data.sort_by!{|h| 
+                [ 
+                    h[:family],
+                    h[:scientificNameWithoutAuthorship],
+                    h[:dispersion]
+                ]
+            }        
+
+        end
+                
     end
 
 end
