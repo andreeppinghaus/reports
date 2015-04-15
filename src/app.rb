@@ -96,19 +96,19 @@ end
 
 get '/:db/report/name/bioma' do
     # MIssing view test.
-    dao = BiomaDAO.new($rows_of_document)
+    dao = BiomaDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :bioma, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :bioma, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
 get '/:db/report/name/dispersion' do
     # MIssing view test.
-    dao = DispersionDAO.new($rows_of_document)
+    dao = DispersionDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :dispersion, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :dispersion, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
@@ -119,19 +119,19 @@ end
 
 get '/:db/report/name/ecology' do
     # MIssing view test.
-    dao = EcologyDAO.new($rows_of_document)
+    dao = EcologyDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :ecology, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :ecology, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
 get '/:db/report/name/habitat' do
     # MIssing view test.
-    dao = HabitatDAO.new($rows_of_document)
+    dao = HabitatDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :habitat, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :habitat, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
@@ -142,10 +142,10 @@ end
 
 get '/:db/report/name/phytophysiognomie' do
     # MIssing view test.
-    dao = PhytophysiognomieDAO.new($rows_of_document)
+    dao = PhytophysiognomieDAO.new $HOST, params[:db]
     dao.generate_data
     data = dao.data
-    view :phytophysiognomie, {:data=>data,:number_of_documents=>data.count,:db=>params[:db]}
+    view :phytophysiognomie, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 

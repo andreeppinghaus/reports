@@ -3,8 +3,8 @@ require_relative File.expand_path('src/lib/dao/report')
 class PhytophysiognomieDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
-    def initialize(rows_of_document=nil)
-        super(rows_of_document)
+    def initialize(host,base)
+        super
         @data = []
         @metadata_types = ["profile"] 
         @hash_fields = {
@@ -16,52 +16,51 @@ class PhytophysiognomieDAO < ReportDAO
     end
 
 
-    def generate_data(types=@metadata_types)
+    def generate_data
 
         set_docs_by_metadata_types
-        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
 
-            doc = profile["doc"]
-            ecology = doc["ecology"] if doc["ecology"]
-            if ecology && ecology["fitofisionomies"] && ecology["fitofisionomies"].is_a?(Array)
+        if !( docs_by_metadata_types.empty? )
 
-                family = ""
-                scientificName = ""
-                phytophysiognomies = ecology["fitofisionomies"]
+            family = ""
+            scientificName = ""
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |profile|
+
+                doc = profile["doc"]
+                ecology = doc["ecology"] if doc["ecology"]
+                fitofisionomies  = ecology["fitofisionomies"] if ecology && ecology["fitofisionomies"]
+                if ecology && fitofisionomies && fitofisionomies.is_a?(Array)
+
+                    taxon = doc["taxon"] if doc["taxon"]
+                    family = taxon["family"] if taxon["family"]
+                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+
+                    fitofisionomies.each{ |fitofisionomie|
+                        @hash_fields[:id] = doc["_id"] 
+                        @hash_fields[:family] = family
+                        @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                        @hash_fields[:phytophysiognomie] = fitofisionomie 
+                    }
 
 
-                taxon = doc["taxon"] if doc["taxon"]
-                family = taxon["family"] if taxon["family"]
-                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+                    _hash_fields = @hash_fields.clone
+                    @data.push(_hash_fields) 
+                    clean_hash_fields
 
-                phytophysiognomies.each{ |phytophysiognomie|
-                    @hash_fields[:id] = doc["_id"] 
-                    @hash_fields[:family] = family
-                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
-                    @hash_fields[:phytophysiognomie] = phytophysiognomie
-                }
+                end
 
+            }
 
-                _hash_fields = @hash_fields.clone
-                @data.push(_hash_fields) 
-                clean_hash_fields
-            end
+            @data.sort_by!{|h| 
+                [ 
+                    h[:family],
+                    h[:scientificNameWithoutAuthorship],
+                    h[:phytophysiognomie]
+                ]
+            }        
 
-        }
+        end
 
-        @data.sort_by!{|h| 
-            [ 
-                h[:family],
-                h[:scientificNameWithoutAuthorship],
-                h[:phytophysiognomie]
-            ]
-        }        
-    end
-
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
     end
 
 end
