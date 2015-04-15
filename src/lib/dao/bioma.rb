@@ -3,8 +3,8 @@ require_relative File.expand_path('src/lib/dao/report')
 class BiomaDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
-    def initialize(rows_of_document=nil)
-        super(rows_of_document)
+    def initialize(host,base)
+        super
         @data = []
         @metadata_types = ["profile"]
         @hash_fields = {
@@ -16,50 +16,48 @@ class BiomaDAO < ReportDAO
     end
 
 
-    def generate_data(types=@metadata_types)
+    def generate_data
 
         set_docs_by_metadata_types
-        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
 
-            doc = profile["doc"]
-            if doc["ecology"] && doc["ecology"]["biomas"] && doc["ecology"]["biomas"].is_a?(Array) 
+        if !( docs_by_metadata_types.empty? )
 
-                biomas = doc["ecology"]["biomas"]
-                family = ""
-                scientificName = ""
+            family = ""
+            scientificName = ""
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |profile|
 
-                taxon = doc["taxon"]
+                doc = profile["doc"]
+                ecology = doc["ecology"] if doc["ecology"]
+                biomas = ecology["biomas"] if ecology && ecology["biomas"]
+                if biomas && biomas.is_a?(Array)
 
-                family = taxon["family"] if taxon["family"]
-                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
+                    taxon = doc["taxon"] if doc["taxon"]
+                    family = taxon["family"] if taxon["family"]
+                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
 
+                    biomas.each{ |bioma|
+                        @hash_fields[:id] = doc["_id"] 
+                        @hash_fields[:family] = family
+                        @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                        @hash_fields[:bioma] = bioma 
+                    }
 
-                biomas.each{ |bioma|
-                    @hash_fields[:id] = doc["_id"] 
-                    @hash_fields[:family] = family.upcase
-                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
-                    @hash_fields[:bioma] = bioma
-                }
+                    _hash_fields = @hash_fields.clone
+                    @data.push(_hash_fields) 
+                    clean_hash_fields
 
-                _hash_fields = @hash_fields.clone
-                @data.push(_hash_fields) 
-                clean_hash_fields
+                end
 
-            end
-        }
+            }
 
-        @data.sort!{ |x,y| 
-            array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:bioma] ] 
-            array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:bioma] ] 
-            array0 <=> array1
-        }
+            @data.sort!{ |x,y| 
+                array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:bioma] ] 
+                array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:bioma] ] 
+                array0 <=> array1
+            }
 
-    end
+        end
 
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
     end
     
 end
