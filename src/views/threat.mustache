@@ -1,0 +1,31 @@
+{{> header}}
+
+<table class="table col-md-12">
+    <h3>{{strings.report_of}} {{strings.Threats}}.</h3>
+    <h4>{{strings.number_of_registers}}: {{number_of_documents}} </h4>
+    <thead>
+        <tr>
+            <th>{{strings.Family}}</th>
+            <th>{{strings.scientificNameWithoutAuthorship}}</th>
+            <th>{{strings.Threat}}</th>
+            <th>{{strings.Incidence}}</th>
+            <th>{{strings.Timing}}</th>
+            <th>{{strings.Decline}}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#data}}
+        <tr>
+            <td>{{family}}</td>
+            <td>{{scientificNameWithoutAuthorship}}</td>
+            <td>{{threat}}</td>
+            <td>{{incidence}}</td>
+            <td>{{timing}}</td>
+            <td>{{decline}}</td>
+        </tr>
+        {{/data}}
+    </tbody>
+</table>
+
+{{> footer}}
