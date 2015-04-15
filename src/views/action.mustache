@@ -1,0 +1,27 @@
+{{> header}}
+
+<table class="table col-md-12">
+    <h3>{{strings.report_of}} {{strings.Actions}}.</h3>
+    <h4>{{strings.number_of_registers}}: {{number_of_documents}} </h4>
+    <thead>
+        <tr>
+            <th>{{strings.Family}}</th>
+            <th>{{strings.scientificNameWithoutAuthorship}}</th>
+            <th>{{strings.Action}}</th>
+            <th>{{strings.Situation}}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#data}}
+        <tr>
+            <td>{{family}}</td>
+            <td>{{scientificNameWithoutAuthorship}}</td>
+            <td>{{action}}</td>
+            <td>{{situation}}</td>
+        </tr>
+        {{/data}}
+    </tbody>
+</table>
+
+{{> footer}}
