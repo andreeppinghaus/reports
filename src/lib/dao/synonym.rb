@@ -44,7 +44,6 @@ class SynonymDAO < ReportDAO
                     @hash_fields[:scientificNameAuthorship] = scientificNameAuthorship
                     @hash_fields[:acceptedNameUsage] = acceptedNameUsage 
 
-
                     _hash_fields = @hash_fields.clone
                     @data.push(_hash_fields) 
                     clean_hash_fields

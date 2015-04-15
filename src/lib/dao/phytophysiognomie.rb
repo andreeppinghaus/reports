@@ -42,7 +42,6 @@ class PhytophysiognomieDAO < ReportDAO
                         @hash_fields[:phytophysiognomie] = fitofisionomie 
                     }
 
-
                     _hash_fields = @hash_fields.clone
                     @data.push(_hash_fields) 
                     clean_hash_fields

@@ -3,8 +3,8 @@ require_relative File.expand_path('src/lib/dao/report')
 class HabitatDAO < ReportDAO
     attr_accessor :data, :hash_fields
 
-    def initialize(rows_of_document=nil)
-        super(rows_of_document)
+    def initialize(host,base)
+        super
         @data = []
         @metadata_types = ["profile"]
         @hash_fields = {
@@ -16,50 +16,50 @@ class HabitatDAO < ReportDAO
     end
 
 
-    def generate_data(types=@metadata_types)
+    def generate_data
 
         set_docs_by_metadata_types
-        @docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+        
+        if !( docs_by_metadata_types.empty? )
 
-            doc = profile["doc"]
-            ecology = doc["ecology"] if doc["ecology"]
-            if ecology && ecology["habitats"] && ecology["habitats"].is_a?(Array)
+            family = ""
+            scientificName = ""
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |profile|
 
-                family = ""
-                scientificName = ""
-                habitats = ecology["habitats"]
+                doc = profile["doc"]
+                ecology = doc["ecology"] if doc["ecology"]
+                habitats = ecology["habitats"] if ecology && ecology["habitats"]
+                if habitats && habitats.is_a?(Array) 
 
-                taxon = doc["taxon"] if doc["taxon"]
-                family = taxon["family"] if taxon["family"] 
-                scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
-                habitats.each{ |hatibat|
-                    @hash_fields[:id] = doc["_id"] 
-                    @hash_fields[:family] = family
-                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
-                    @hash_fields[:habitat] = hatibat 
-                }
+                    taxon = doc["taxon"] if doc["taxon"]
+                    family = taxon["family"] if taxon["family"]
+                    scientificName = taxon["scientificNameWithoutAuthorship"] if taxon["scientificNameWithoutAuthorship"]
 
+                    habitats.each{ |habitat|
+                        @hash_fields[:id] = doc["_id"] 
+                        @hash_fields[:family] = family
+                        @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                        @hash_fields[:habitat] = habitat
+                    }
 
-                _hash_fields = @hash_fields.clone
-                @data.push(_hash_fields) 
-                clean_hash_fields
-            end
+                    _hash_fields = @hash_fields.clone
+                    @data.push(_hash_fields) 
+                    clean_hash_fields
 
-        }
+                end
 
-        @data.sort_by!{|h| 
-            [ 
-                h[:family],
-                h[:scientificNameWithoutAuthorship],
-                h[:hatibat]
-            ]
-        }        
-    end
+            }
 
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
+            @data.sort_by!{|h| 
+                [ 
+                    h[:family],
+                    h[:scientificNameWithoutAuthorship],
+                    h[:habitat]
+                ]
+            }
+
+        end
+
     end
 
 end

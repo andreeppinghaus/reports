@@ -42,7 +42,6 @@ class PollinationDAO < ReportDAO
                         @hash_fields[:pollination] = p
                     }
 
-
                     _hash_fields = @hash_fields.clone
                     @data.push(_hash_fields) 
                     clean_hash_fields
