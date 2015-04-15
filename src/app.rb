@@ -10,6 +10,7 @@ require 'json'
 require 'cncflora_commons'
 require_relative 'lib/dao/report'
 #require_relative 'lib/dao/assessment'
+require_relative 'lib/dao/action'
 require_relative 'lib/dao/bioma'
 require_relative 'lib/dao/dispersion'
 require_relative 'lib/dao/ecology'
@@ -85,7 +86,11 @@ end
 
 
 get '/:db/report/name/action' do
-  "Missing dao and view tests."
+    # MIssing view test.
+    dao = ActionDAO.new $HOST, params[:db]
+    dao.generate_data
+    data = dao.data
+    view :action, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
 
 
