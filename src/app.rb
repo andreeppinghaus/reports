@@ -19,7 +19,7 @@ require_relative 'lib/dao/pollination'
 require_relative 'lib/dao/specie'
 require_relative 'lib/dao/synonym'
 #require_relative 'lib/dao/threat'
-#require_relative 'lib/dao/user'
+require_relative 'lib/dao/use'
 
 if test? then
     set :test , true
@@ -181,6 +181,10 @@ get '/:db/report/name/threat' do
 end
 
 
-get '/:db/report/name/user' do
-  "Missing dao and view tests."
+get '/:db/report/name/use' do
+    # MIssing view test.
+    dao = UseDAO.new $HOST, params[:db]
+    dao.generate_data
+    data = dao.data
+    view :use, {:data=>data,:number_of_documents=>if !data.empty? then data.count else 0 end,:db=>params[:db]}
 end
