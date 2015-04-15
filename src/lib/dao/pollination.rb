@@ -20,11 +20,11 @@ class PollinationDAO < ReportDAO
 
         set_docs_by_metadata_types
 
-        if !(docs_by_metadata_types.empty?)
+        if !( docs_by_metadata_types.empty? )
 
             family = ""
             scientificName = ""
-            docs_by_metadata_types[@metadata_types[0]].each{ |profile|
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |profile|
 
                 doc = profile["doc"]
                 reproduction = doc["reproduction"] if doc["reproduction"]
@@ -46,6 +46,7 @@ class PollinationDAO < ReportDAO
                     _hash_fields = @hash_fields.clone
                     @data.push(_hash_fields) 
                     clean_hash_fields
+
                 end
 
             }
@@ -59,12 +60,7 @@ class PollinationDAO < ReportDAO
             }
 
         end
-    end
 
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
     end
 
 end

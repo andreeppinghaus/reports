@@ -19,44 +19,43 @@ class SpecieDAO < ReportDAO
     def generate_data
 
         set_docs_by_metadata_types
-        @docs_by_metadata_types[@metadata_types[0]].each{ |taxon|
 
-            doc = taxon["doc"]
-            taxonomicStatus = doc["taxonomicStatus"] if doc["taxonomicStatus"]
-            if taxonomicStatus && taxonomicStatus == "accepted"
-                family = ""
-                scientificNameAuthorship = ""
-                scientificNameWithoutAuthorship = ""
+        if !( docs_by_metadata_types.empty? )
 
-                family = doc["family"] if doc["family"] 
-                scientificNameWithoutAuthorship = doc["scientificNameWithoutAuthorship"] if doc["scientificNameWithoutAuthorship"]
-                scientificNameAuthorship = doc["scientificNameAuthorship"] if doc["scientificNameAuthorship"]
+            family = ""
+            scientificName = ""
+            scientificNameAuthorship = ""
+            docs_by_metadata_types[ @metadata_types[0] ].each{ |taxon|
+                
+                doc = taxon["doc"]
+                taxonomicStatus = doc["taxonomicStatus"] if doc["taxonomicStatus"]
+                if taxonomicStatus && taxonomicStatus == "accepted"
 
-                @hash_fields[:id] = doc["_id"] 
-                @hash_fields[:family] = family.upcase
-                @hash_fields[:scientificNameWithoutAuthorship] = scientificNameWithoutAuthorship
-                @hash_fields[:scientificNameAuthorship] = scientificNameAuthorship
+                    family = doc["family"] if doc["family"] 
+                    scientificName = doc["scientificNameWithoutAuthorship"] if doc["scientificNameWithoutAuthorship"]
+                    scientificNameAuthorship = doc["scientificNameAuthorship"] if doc["scientificNameAuthorship"]
 
+                    @hash_fields[:id] = doc["_id"] 
+                    @hash_fields[:family] = family.upcase
+                    @hash_fields[:scientificNameWithoutAuthorship] = scientificName
+                    @hash_fields[:scientificNameAuthorship] = scientificNameAuthorship
 
-                _hash_fields = @hash_fields.clone
-                @data.push(_hash_fields) 
-                clean_hash_fields
-            end
+                    _hash_fields = @hash_fields.clone
+                    @data.push(_hash_fields) 
+                    clean_hash_fields
+                     
+                end
 
-        }
+            }
 
-        @data.sort!{ |x,y| 
-            array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:scientificNameAuthorship] ] 
-            array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:scientificNameAuthorship] ] 
-            array0 <=> array1
-        }
+            @data.sort!{ |x,y| 
+                array0 = [ x[:family], x[:scientificNameWithoutAuthorship], x[:scientificNameAuthorship] ] 
+                array1 = [ y[:family], y[:scientificNameWithoutAuthorship], y[:scientificNameAuthorship] ] 
+                array0 <=> array1
+            }
 
-    end
+        end
 
-    def clean_hash_fields
-        @hash_fields.each{ |k,v|
-            @hash_fields[k] = ""
-        }        
     end
 
 end

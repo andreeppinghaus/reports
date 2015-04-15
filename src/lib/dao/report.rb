@@ -33,6 +33,13 @@ class ReportDAO < DAO
         }
     end
 
+    
+    def clean_hash_fields
+        @hash_fields.each{ |k,v|
+            @hash_fields[k] = ""
+        }        
+    end
+
 
 
 end
