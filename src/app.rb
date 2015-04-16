@@ -78,7 +78,7 @@ get '/:db/report/:report' do
     # MIssing view test.
     report = params[:report]
     db = params[:db]
-    redirect "/#{db}/report/name/#{report}" 
+    redirect "#{settings.base}/#{db}/report/name/#{report}" 
 end
 
 
