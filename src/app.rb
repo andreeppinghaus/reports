@@ -31,13 +31,8 @@ end
 setup 'config.yml'
 
 
-$HOST = YAML.load_file(File.expand_path('config.yml'))['development']['couchdb']
-$BASE = YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+$HOST = settings.couchdb # YAML.load_file(File.expand_path('config.yml'))['development']['couchdb']
 
-i = Time.now
-$ALL_DBS = ReportDAO.new($HOST,$BASE).all_dbs.map!(&:upcase)
-f = Time.now
-puts "Time to generate an instance of ReportDAO and, thus, all databases: = #{f-i}"
 
 
 def get_reports(file="../locales/pt_report.json")
@@ -66,6 +61,8 @@ end
 
 get '/' do
     # MIssing view test.
+    $BASE = YAML.load_file(File.expand_path('config.yml'))['development']['base_list']
+    $ALL_DBS = ReportDAO.new($HOST,$BASE).all_dbs.map!(&:upcase)
     view :index, {:recortes=>$ALL_DBS}
 end
 
