@@ -1,0 +1,35 @@
+{{> header}}
+
+<table class="table col-md-12">
+    <h3>{{strings.report_of}} {{strings.Assessments}}.</h3>
+    <h4>{{strings.number_of_registers}}: {{number_of_documents}} </h4>
+    <thead>
+        <tr>
+            <th>{{strings.Family}}</th>
+            <th>{{strings.scientificNameWithoutAuthorship}}</th>
+            <th>{{strings.scientificNameAuthorship}}</th>
+            <th>{{strings.Analysis}}</th>
+            <th>{{strings.Assessment}}</th>
+            <th>{{strings.Category}}</th>
+            <th>{{strings.Criteria}}</th>
+            <!--<th>{{strings.Rationale}}</th>-->
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#data}}
+        <tr>
+            <td>{{family}}</td>
+            <td>{{scientificNameWithoutAuthorship}}</td>
+            <td>{{scientificNameAuthorship}}</td>
+            <td>{{analysis}}</td>
+            <td>{{assessment}}</td>
+            <td>{{category}}</td>
+            <td>{{criteria}}</td>
+            <!--<td>{{rationale}}</td>-->
+        </tr>
+        {{/data}}
+    </tbody>
+</table>
+
+{{> footer}}
