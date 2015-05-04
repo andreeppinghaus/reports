@@ -32,7 +32,9 @@ foreach($all->rows as $row) {
           break;
         }
       }
-      if($got) {
+      if(!$got) {
+        echo "Missing ".$doc->_id."\n";
+      } else {
         if(isset($doc->georeferenceVerificationStatus)) {
           if($doc->georeferenceVerificationStatus == "1" || $doc->georeferenceVerificationStatus == "ok") {
             $doc->georeferenceVerificationStatus = "ok";
@@ -112,8 +114,6 @@ foreach($all->rows as $row) {
           }
         }
         fputcsv($csv,$data);
-      } else {
-        //var_dump($doc);
       }
     }
 }
