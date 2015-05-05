@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
+$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
 
 fputcsv($csv,$fields);
 
@@ -10,7 +10,9 @@ $taxons = [];
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='taxon') {
+      if(isset($doc->scientificNameWithoutAuthorship) && strlen($doc->scientificNameWithoutAuthorship) > 1) {
         $taxons[]=$doc;
+      }
     }
 }
 
@@ -18,7 +20,7 @@ foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='occurrence') {
       $got =false;
-      foreach($taxons as $taxon) {
+      foreach($taxons as $k=>$taxon) {
         $m1 = "/.*".$taxon->scientificNameWithoutAuthorship.".*/";
         if(  (isset($doc->scientificName) && preg_match($m1,$doc->scientificName) )
           || (isset($doc->scientificNameWithoutAuthorship) && preg_match($m1,$doc->scientificNameWithoutAuthorship) )
@@ -35,6 +37,7 @@ foreach($all->rows as $row) {
       if(!$got) {
         echo "Missing ".$doc->_id."\n";
       } else {
+        echo "Got ".$doc->_id."\n";
         if(isset($doc->georeferenceVerificationStatus)) {
           if($doc->georeferenceVerificationStatus == "1" || $doc->georeferenceVerificationStatus == "ok") {
             $doc->georeferenceVerificationStatus = "ok";
