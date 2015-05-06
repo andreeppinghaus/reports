@@ -1,4 +1,20 @@
 family,scientificName,threat,incidence,timing,decline
+BORAGINACEAE,"Varronia leucomalla","4.1 Roads & railroads",local,past;present,habitat
+BORAGINACEAE,"Varronia leucomalla","9.5 Air-borne pollutants",local,past;present,habitat
+BORAGINACEAE,"Varronia leucomalla","1.1 Housing & urban areas",local,past;present,habitat
+BORAGINACEAE,"Varronia leucomalla","10.3 Avalanches/landslides",local,past;present,
+ACANTHACEAE,"Aphelandra neesiana","2.1.4 Scale Unknown/Unrecorded",local,past;present,habitat;locality;occupancy
+ACANTHACEAE,"Aphelandra neesiana","4.1 Roads & railroads",local,past;present,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Aphelandra neesiana","1 Residential & commercial development",regional,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Aphelandra neesiana","10.3 Avalanches/landslides",regional,present;future,locality;habitat;occupancy
+ACANTHACEAE,"Ruellia silvaccola","2.3.3 Agro-industry grazing, ranching or farming",regional,present,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Ruellia silvaccola","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Ruellia silvaccola","4.1 Roads & railroads",local,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Ruellia silvaccola","8.1.2 Named species",local,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Schaueria calycotricha","1 Residential & commercial development",local,past;present,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Schaueria calycotricha","1.3 Tourism & recreation areas",regional,past;present;future,
+ACANTHACEAE,"Schaueria calycotricha","4.1 Roads & railroads",local,past;present;future,locality;habitat;occupancy;occurrence
+ACANTHACEAE,"Schaueria sulfurea","2 Agriculture & aquaculture",regional,past;present;future,locality;habitat;occupancy;occurrence
 COMMELINACEAE,"Dichorisandra begoniifolia","1.1 Housing & urban areas",regional,past;present;future,
 COMMELINACEAE,"Dichorisandra begoniifolia","1.3 Tourism & recreation areas",regional,past;present;future,
 ERIOCAULACEAE,"Paepalanthus cordatus ","2 Agriculture & aquaculture",local,present,habitat;locality;occupancy;occurrence
@@ -6,3 +22,20 @@ ERIOCAULACEAE,"Paepalanthus macer ","2 Agriculture & aquaculture",local,present,
 ERIOCAULACEAE,"Paepalanthus macer ","8.1 Invasive non-native/alien species/diseases",local,present,locality;habitat;occupancy;occurrence
 ERIOCAULACEAE,"Paepalanthus stellatus ","2 Agriculture & aquaculture",local,present,locality;habitat;occupancy;occurrence
 ERIOCAULACEAE,"Paepalanthus urbanianus ","2 Agriculture & aquaculture",local,present,habitat;locality;occupancy;occurrence
+URTICACEAE,"Pilea apiculata","1.3 Tourism & recreation areas",local,present,habitat;occupancy
+URTICACEAE,"Pilea apiculata","7.1.1 Increase in fire frequency/intensity",local,past;present,habitat
+URTICACEAE,"Pilea apiculata","1.1 Housing & urban areas",local,past;present,habitat
+DILLENIACEAE,"Doliocarpus littoralis","1.1 Housing & urban areas",local,past;present;future,habitat;occupancy
+CALOPHYLLACEAE,"Kielmeyera rizziniana","1 Residential & commercial development",local,past;present;future,locality
+CALOPHYLLACEAE,"Kielmeyera rizziniana","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
+POACEAE,"Chusquea sclerophylla","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+POACEAE,"Chusquea sclerophylla","8.1.2 Named species",local,past;present;future,habitat;occurrence
+POACEAE,"Chusquea sclerophylla","1 Residential & commercial development",local,past;present;future,locality;habitat
+DIOSCOREACEAE,"Dioscorea campos-portoi","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat;occupancy;occurrence
+DIOSCOREACEAE,"Dioscorea campos-portoi","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
+DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","1.1 Housing & urban areas",local,past;present;future,locality;habitat;occupancy;occurrence
+DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
+DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","6.2 War, civil unrest & military exercises",local,past;present,locality;habitat;occupancy;occurrence
+DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","1.3 Tourism & recreation areas",local,present;future,locality;habitat;occupancy;occurrence
+SAPINDACEAE,"Paullinia marginata","4.1 Roads & railroads",local,past;present;future,habitat;locality
+SAPINDACEAE,"Paullinia marginata","1 Residential & commercial development",regional,past;present;future,locality;habitat;occupancy;occurrence

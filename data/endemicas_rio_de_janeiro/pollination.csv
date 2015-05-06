@@ -4,9 +4,11 @@ VOCHYSIACEAE,"Callisthene dryadum",melitophily
 SALICACEAE,"Abatia microphylla",entomophily
 PRIMULACEAE,"Cybianthus barrosoanus",
 ERIOCAULACEAE,"Paepalanthus ovatus",anemophily
+CACTACEAE,"Rhipsalis flagelliformis",entomophily
 ANNONACEAE,"Annona ferruginea",cantarophily
 ARISTOLOCHIACEAE,"Aristolochia raja",entomophily
 PIPERACEAE,"Peperomia arbuscula",
+CACTACEAE,"Rhipsalis mesembryanthemoides",entomophily
 LORANTHACEAE,"Struthanthus maricensis",entomophily
 LORANTHACEAE,"Psittacanthus pluricotyledonarius",ornitophily
 LORANTHACEAE,"Struthanthus pentamerus",entomophily
@@ -19,6 +21,7 @@ COMMELINACEAE,"Siderasis fuscata",melitophily
 CELASTRACEAE,"Maytenus basidentata",
 ACANTHACEAE,"Justicia polita",ornitophily
 COMMELINACEAE,"Dichorisandra odorata",melitophily
+PROTEACEAE,"Roupala gracilis",melitophily
 PASSIFLORACEAE,"Passiflora imbeana",
 MONIMIACEAE,"Mollinedia longicuspidata",entomophily
 MONIMIACEAE,"Mollinedia corcovadensis",entomophily
@@ -26,9 +29,14 @@ MONIMIACEAE,"Mollinedia stenophylla",entomophily
 MONIMIACEAE,"Mollinedia acutissima",entomophily
 MONIMIACEAE,"Mollinedia acutissima",
 TRIURIDACEAE,"Peltophyllum caudatum",
+TRIURIDACEAE,"Triuris alata",
 MONIMIACEAE,"Mollinedia marliae",entomophily
+CACTACEAE,"Rhipsalis triangularis",entomophily
 BROMELIACEAE,"Pitcairnia albiflos",melitophily
 BROMELIACEAE,"Pitcairnia albiflos",falenophily
 BROMELIACEAE,"Pitcairnia albiflos",psicophily
 BROMELIACEAE,"Pitcairnia albiflos",quiropterophily
 MARCGRAVIACEAE,"Marcgravia comosa",quiropterophily
+CACTACEAE,"Rhipsalis ormindoi",entomophily
+FABACEAE,"Luetzelburgia trialata",melitophily
+GESNERIACEAE,"Sinningia cochlearis",ornitophily

@@ -3,7 +3,9 @@ Monimiaceae,"Grazielanthus arkeocarpus",ornitochory
 LECYTHIDACEAE,"Couratari pyramidata",anemochory
 VOCHYSIACEAE,"Callisthene dryadum",anemochory
 SALICACEAE,"Abatia microphylla",zoochory
+CACTACEAE,"Rhipsalis flagelliformis",ornitochory
 ANNONACEAE,"Annona ferruginea",zoochory
+CACTACEAE,"Rhipsalis mesembryanthemoides",ornitochory
 LORANTHACEAE,"Struthanthus maricensis",ornitochory
 LORANTHACEAE,"Psittacanthus pluricotyledonarius",ornitochory
 LORANTHACEAE,"Struthanthus pentamerus",ornitochory
@@ -20,3 +22,6 @@ MONIMIACEAE,"Mollinedia longicuspidata",zoochory
 MONIMIACEAE,"Mollinedia corcovadensis",zoochory
 MONIMIACEAE,"Mollinedia acutissima",zoochory
 TRIURIDACEAE,"Peltophyllum caudatum",
+CACTACEAE,"Rhipsalis triangularis",ornitochory
+CACTACEAE,"Rhipsalis ormindoi",ornitochory
+LOGANIACEAE,"Strychnos jacarepiensis",zoochory
