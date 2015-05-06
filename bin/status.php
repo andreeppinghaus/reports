@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","assessment","category","criteria","assessor","evaluator","rationale"];
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","analysis","assessment","category","criteria"];
 fputcsv($csv,$fields);
 
 $taxons = [];
@@ -14,11 +14,9 @@ foreach($all->rows as $row) {
                 arraY("family"=>$doc->family,
                     "name"=>$doc->scientificNameWithoutAuthorship,
                     "author"=>$doc->scientificNameAuthorship,
+                    "analysis"=>"",
                     "assessment"=>"",
-                    "assessor"=>"",
-                    "evaluator"=>"",
                     "category"=>"",
-                    "rationale"=>"",
                     "criteria"=>""
                 );
         }
@@ -27,7 +25,9 @@ foreach($all->rows as $row) {
 
 foreach($all->rows as $row) {
     $doc = $row->doc;
-    if($doc->metadata->type=='assessment') {
+    if($doc->metadata->type=='profile') {
+        $taxons[$doc->taxon->scientificNameWithoutAuthorship]['analysis'] = $doc->metadata->status;
+    } else if($doc->metadata->type=='assessment') {
         $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment'] = $doc->metadata->status;
         if(isset($doc->category)) {
             $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
@@ -35,21 +35,12 @@ foreach($all->rows as $row) {
         if(isset($doc->criteria)) {
             $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
         }
-        if(isset($doc->assessor)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessor'] = $doc->assessor;
-        }
-        if(isset($doc->evaluator)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['evaluator'] = $doc->evaluator;
-        }
-        if(isset($doc->rationale)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = $doc->rationale;
-        }
     }
 }
 
 foreach($taxons as $taxon) {
   $data=[
-    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"]
+    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["analysis"],$taxon["assessment"],$taxon["category"],$taxon["criteria"]
   ];
   fputcsv($csv,$data);
 }
