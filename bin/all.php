@@ -73,5 +73,5 @@ closedir($dbs);
 
 passthru("python bin/csv2xlsx.py");
 
-
+passthru("zip -r data/all.zip data/* -x data/*/occurrences.csv data/*/*.sqlite data/*/*.sql data/*/all.json");
 
