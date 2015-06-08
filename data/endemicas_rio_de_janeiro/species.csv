@@ -2,12 +2,15 @@ family,scientificNameWithoutAuthorship,scientificNameAuthorship
 Poaceae,"Glaziophyton mirabile",Franch.
 COMMELINACEAE,"Dichorisandra picta",Lodd.
 Bromeliaceae,"Neoregelia paratiensis",Leme
+Poaceae,"Chusquea sclerophylla",Döll
 CACTACEAE,"Rhipsalis triangularis",Werderm.
+Myrtaceae,"Myrcia innovans",Kiaersk.
 Amaryllidaceae,"Worsleya procera","(Lem.) Traub"
 Malpighiaceae,"Hiraea macrophylla","(Colla) P.L.R.Moraes & Guglielmone"
 ORCHIDACEAE,"Pabstiella dracula","(Seehawer) Luer & Toscano"
 Acanthaceae,"Aphelandra stephanophysa",Nees
 Acanthaceae,"Justicia meyeniana","(Nees) Lindau"
+Amaryllidaceae,"Griffinia intermedia",Lindl.
 Orchidaceae,"Pabstiella pantherina","(Seehawer) Luer & Toscano"
 ACANTHACEAE,"Aphelandra bradeana",Rizzini
 ACANTHACEAE,"Aphelandra rigida","Glaz. ex Mildbr."
@@ -259,7 +262,6 @@ BROMELIACEAE,"Tillandsia thiekenii",Ehlers
 BROMELIACEAE,"Vriesea agostiniana",E.Pereira
 BROMELIACEAE,"Vriesea altimontana","E.Pereira & Martinelli"
 BROMELIACEAE,"Vriesea altomacaensis",A.F.Costa
-BROMELIACEAE,"Vriesea atrococcinea",Rauh
 BROMELIACEAE,"Vriesea bleherae","Roth & W. Weber"
 BROMELIACEAE,"Vriesea botafogensis",Mez
 BROMELIACEAE,"Vriesea brassicoides","(Baker) Mez"
@@ -272,7 +274,6 @@ BROMELIACEAE,"Vriesea fradensis",A.F.Costa
 BROMELIACEAE,"Vriesea garlippiana",Leme
 BROMELIACEAE,"Vriesea gastiniana","Leme & G.K.Br."
 BROMELIACEAE,"Vriesea goniorachis","(Baker) Mez"
-BROMELIACEAE,"Vriesea grandiflora",Leme
 BROMELIACEAE,"Vriesea joyae","E.Pereira & I.A.Penna"
 BROMELIACEAE,"Vriesea leptantha",Harms
 BROMELIACEAE,"Vriesea lidicensis",Reitz
@@ -325,10 +326,7 @@ COMMELINACEAE,"Dichorisandra oxypetala",Hook.
 COMMELINACEAE,"Siderasis fuscata","(Lodd.) H.E.Moore"
 CONNARACEAE,"Connarus marginatus",Planch.
 CONVOLVULACEAE,"Bonamia umbellata","(Choisy) Hallier f."
-CUCURBITACEAE,"Cayaponia latiloba","(Cogn.) Gomes-Klein"
-CUCURBITACEAE,"Gurania cinerea",Suessenguth
 CUCURBITACEAE,"Gurania cogniauxiana",Barb.Rodr.
-CUCURBITACEAE,"Gurania ovata",Cogn.
 CUCURBITACEAE,"Wilbrandia glaziovii",Cogn.
 CYPERACEAE,"Hypolytrum glaziovii",Boeckeler
 CYPERACEAE,"Rhynchospora luetzelburgiana",Kük.
@@ -449,9 +447,7 @@ IRIDACEAE,"Trimezia organensis",Ravenna
 ISOETACEAE,"Isoetes goebelii",U.Weber
 ISOETACEAE,"Isoetes organensis",U.Weber
 ISOETACEAE,"Isoetes ulei",U.Weber
-LAMIACEAE,"Hedeoma crenatum",Irving
 LAMIACEAE,"Hyptis cymulosa",Benth.
-LAMIACEAE,"Salvia altissima",Pohl
 LAMIACEAE,"Salvia benthamiana",Gardner
 LAMIACEAE,"Salvia longibracteolata",E.P.Santos
 LAMIACEAE,"Salvia rivularis",Gardner
@@ -950,14 +946,23 @@ VIOLACEAE,"Rinorea laevigata","(Sol. ex Ging.) Hekking"
 VOCHYSIACEAE,"Callisthene dryadum",Duarte
 XYRIDACEAE,"Xyris organensis",Malme
 Pteridaceae,"Jamesonia brasiliensis",Christ
+Orchidaceae,"Brasilaelia lobata","(Lindl.) Gutfreund"
+BEGONIACEAE,"Begonia sylvestris",A.DC.
+BEGONIACEAE,"Begonia arborescens",Raddi
 FABACEAE,"Mimosa bocainae",Barneby
 Poaceae,"Trisetum brasiliense",Louis-Marie
+BEGONIACEAE,"Begonia bonitoensis",Brade
+Ditrichaceae,"Ditrichum itatiaiae","(Müll.Hal.) Paris"
+" Ditrichaceae","Ditrichum itatiaiae","(Müll.Hal.) Paris"
 FABACEAE,"Mimosa itatiaiensis",Dusén
 ARACEAE,"Anthurium sakuraguianum",
-ARACEAE,"Philodendron luizae",
+ARACEAE,"Philodendron luisae",
+" Ditrichaceae","Ditrichum itatiaiae","(Müll.Hal.) Paris"
 ARACEAE,"Anthurium cronembergerae",
+MALPIGHIACEAE,"Hiraea restingae ",C.E.Anderson
 ORCHIDACEAE,"Pabstiella purpurea","(Seehawer) Luer & Toscano"
 LOASACEAE,"Aosa uleana","(Urb. & Gilg) Weigend"
+BEGONIACEAE,"Begonia tomentosa",Schott
 MORACEAE,"Ficus nevesiae",Carauta
 ORCHIDACEAE,"Brasiliorchis moutinhoi","(Pabst) F.Barros & L.Guimarães"
 CACTACEAE,"Schlumbergera russelliana","(Hook.) Britton & Rose"

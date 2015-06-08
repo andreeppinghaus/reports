@@ -28,6 +28,14 @@ URTICACEAE,"Pilea apiculata","1.1 Housing & urban areas",local,past;present,habi
 DILLENIACEAE,"Doliocarpus littoralis","1.1 Housing & urban areas",local,past;present;future,habitat;occupancy
 CALOPHYLLACEAE,"Kielmeyera rizziniana","1 Residential & commercial development",local,past;present;future,locality
 CALOPHYLLACEAE,"Kielmeyera rizziniana","7.1 Fire & fire suppression",local,past;present;future,locality;habitat;occupancy;occurrence
+BROMELIACEAE,"Vriesea grandiflora","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"habitat;occupancy;occurrence;mature individuals"
+BROMELIACEAE,"Vriesea grandiflora","2.3.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occurrence;occupancy;mature individuals"
+BROMELIACEAE,"Vriesea grandiflora","1 Residential & commercial development",local,past;present;future,"mature individuals;locality;habitat"
+BROMELIACEAE,"Vriesea grandiflora","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality;occurrence
+CUCURBITACEAE,"Gurania ovata","4.1 Roads & railroads",regional,past;present;future,occupancy;occurrence;habitat
+CUCURBITACEAE,"Gurania ovata","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
+CUCURBITACEAE,"Gurania ovata","1.3 Tourism & recreation areas",regional,past;present;future,
+CUCURBITACEAE,"Gurania ovata","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,occupancy;occurrence
 POACEAE,"Chusquea sclerophylla","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 POACEAE,"Chusquea sclerophylla","8.1.2 Named species",local,past;present;future,habitat;occurrence
 POACEAE,"Chusquea sclerophylla","1 Residential & commercial development",local,past;present;future,locality;habitat
@@ -39,3 +47,4 @@ DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","6.2 War, civil unrest & military exe
 DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","1.3 Tourism & recreation areas",local,present;future,locality;habitat;occupancy;occurrence
 SAPINDACEAE,"Paullinia marginata","4.1 Roads & railroads",local,past;present;future,habitat;locality
 SAPINDACEAE,"Paullinia marginata","1 Residential & commercial development",regional,past;present;future,locality;habitat;occupancy;occurrence
+ERIOCAULACEAE,"Paepalanthus macaheesis","2 Agriculture & aquaculture",local,present,

@@ -1,7 +1,7 @@
 family,scientificName,lifeForm,fenology,luminosity,substratum,longevity,resprout
-BORAGINACEAE,"Varronia leucomalla",Array,,,Array,,
-ACANTHACEAE,"Aphelandra neesiana",Array,,,Array,,
-DICHAPETALACEAE,"Stephanopodium estrellense",Array,,Array,Array,unkown,unkown
+BORAGINACEAE,"Varronia leucomalla","bush ; subshrub",,,terrestrial,,
+ACANTHACEAE,"Aphelandra neesiana",subshrub,,,terrestrial,,
+DICHAPETALACEAE,"Stephanopodium estrellense","small tree",,esciophytic,terrestrial,unkown,unkown
 ACANTHACEAE,"Ruellia herbstii",herb,,,terrestrial,,
 ACANTHACEAE,"Ruellia silvaccola",herb,,esciophytic,terrestrial,perennial,
 PHYLLANTHACEAE,"Phyllanthus augustinii",herb,,,terrestrial,,
@@ -9,16 +9,21 @@ ACANTHACEAE,"Schaueria calycotricha",bush,,esciophytic,terrestrial,,
 ACANTHACEAE,"Schaueria sulfurea",bush,,,terrestrial,,
 Orchidaceae,"Aganisia cyanea f. cyanea",herb,,mesophytic,epiphytic,perennial,unkown
 COMMELINACEAE,"Dichorisandra begoniifolia",herb,perenifolia,mesophytic,terrestrial,perennial,unkown
-EUPHORBIACEAE,"Acalypha macularis",Array,,,Array,,
+EUPHORBIACEAE,"Acalypha macularis",bush,,,terrestrial,,
 ERIOCAULACEAE,"Paepalanthus cordatus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
 ERIOCAULACEAE,"Paepalanthus macer ",subshrub,perenifolia,heliophytic,terrestrial,unkown,no
 ERIOCAULACEAE,"Paepalanthus stellatus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
 ERIOCAULACEAE,"Paepalanthus urbanianus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
-URTICACEAE,"Pilea apiculata",Array,,,Array,,
-DILLENIACEAE,"Doliocarpus littoralis",Array,,,Array,,
-CALOPHYLLACEAE,"Kielmeyera rizziniana",Array,,,Array,,
-MORACEAE,"Maclura brasiliensis",Array,,,Array,,
-POACEAE,"Chusquea sclerophylla",Array,,,Array,,
-DIOSCOREACEAE,"Dioscorea campos-portoi",Array,,,Array,,
-DIOSCOREACEAE,"Dioscorea pseudomacrocapsa",Array,,Array,Array,,
-SAPINDACEAE,"Paullinia marginata",Array,,,Array,,
+URTICACEAE,"Pilea apiculata",herb,,,terrestrial,,
+DILLENIACEAE,"Doliocarpus littoralis",liana,,,terrestrial,,
+BROMELIACEAE,"Vriesea atrococcinea",herb,,,epiphytic,,
+CALOPHYLLACEAE,"Kielmeyera rizziniana",tree,,,terrestrial,,
+MORACEAE,"Maclura brasiliensis","liana ; bush ; tree",,,terrestrial,,
+BROMELIACEAE,"Vriesea grandiflora",herb,,,epiphytic,,
+CUCURBITACEAE,"Cayaponia latiloba",liana,,,,,
+CUCURBITACEAE,"Gurania ovata",liana,,,terrestrial,,
+POACEAE,"Chusquea sclerophylla",bush,,,terrestrial,,
+DIOSCOREACEAE,"Dioscorea campos-portoi",liana,,,terrestrial,,
+DIOSCOREACEAE,"Dioscorea pseudomacrocapsa",liana,,"heliophytic ; esciophytic","terrestrial ; rupicolous",,
+SAPINDACEAE,"Paullinia marginata",liana,,,terrestrial,,
+ERIOCAULACEAE,"Paepalanthus macaheesis",herb,perenifolia,mesophytic,terrestrial,perennial,no

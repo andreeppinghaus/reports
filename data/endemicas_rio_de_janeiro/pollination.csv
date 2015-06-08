@@ -4,8 +4,10 @@ VOCHYSIACEAE,"Callisthene dryadum",melitophily
 SALICACEAE,"Abatia microphylla",entomophily
 PRIMULACEAE,"Cybianthus barrosoanus",
 ERIOCAULACEAE,"Paepalanthus ovatus",anemophily
+CACTACEAE,"Pilosocereus ulei",quiropterophily
 CACTACEAE,"Rhipsalis flagelliformis",entomophily
 ANNONACEAE,"Annona ferruginea",cantarophily
+ARACEAE,"Anthurium aduncum",entomophily
 ARISTOLOCHIACEAE,"Aristolochia raja",entomophily
 PIPERACEAE,"Peperomia arbuscula",
 CACTACEAE,"Rhipsalis mesembryanthemoides",entomophily
@@ -25,6 +27,7 @@ PROTEACEAE,"Roupala gracilis",melitophily
 PASSIFLORACEAE,"Passiflora imbeana",
 MONIMIACEAE,"Mollinedia longicuspidata",entomophily
 MONIMIACEAE,"Mollinedia corcovadensis",entomophily
+ARACEAE,"Anthurium augustinum",entomophily
 MONIMIACEAE,"Mollinedia stenophylla",entomophily
 MONIMIACEAE,"Mollinedia acutissima",entomophily
 MONIMIACEAE,"Mollinedia acutissima",
@@ -39,4 +42,8 @@ BROMELIACEAE,"Pitcairnia albiflos",quiropterophily
 MARCGRAVIACEAE,"Marcgravia comosa",quiropterophily
 CACTACEAE,"Rhipsalis ormindoi",entomophily
 FABACEAE,"Luetzelburgia trialata",melitophily
+DIOSCOREACEAE,"Dioscorea bradei",entomophily
+DIOSCOREACEAE,"Dioscorea campanulata",entomophily
+DIOSCOREACEAE,"Dioscorea itatiaiensis",entomophily
+DIOSCOREACEAE,"Dioscorea margarethia",entomophily
 GESNERIACEAE,"Sinningia cochlearis",ornitophily

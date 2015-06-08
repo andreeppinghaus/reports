@@ -1,0 +1,33 @@
+family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
+Fabaceae,"Eriosema platycarpon",Micheli,,,,
+MELASTOMATACEAE,"Lavoisiera quinquenervis",Wurdack,,,,
+PODOCARPACEAE,"Podocarpus barretoi","Laubenf. & Silba",,,,
+ASTERACEAE,"Calea abbreviata","Pruski & Urbatsch",,,,
+AMARYLLIDACEAE,"Griffinia nocturna",Ravenna,,,,
+Annonaceae,"Annona burchellii",R.E.Fr.,,,,
+Annonaceae,"Annona malmeana",R.E.Fr.,,,,
+Eriocaulaceae,"Paepalanthus macer",Trovó,,,,
+Rubiaceae,"Borreria pulchristipula","(Bremek.) Bacigalupo & E.L.Cabral",,,,
+Xyridaceae,"Xyris metallica","Klotzsch ex Seub.",,,,
+Eriocaulaceae,"Paepalanthus cordatus",Ruhland,,,,
+Eriocaulaceae,"Paepalanthus extremensis",Silveira,,,,
+Asteraceae,"Eremanthus praetermissus",Loeuille,done,comments,VU,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v)"
+Asteraceae,"Eremanthus ovatifolius",Loeuille,done,comments,CR,"B2ab(ii,iii,iv,v)"
+ERIOCAULACEAE,"Paepalanthus capixabensis",Trovó,done,comments,CR,"B1ab(i,ii,iii,iv)"
+LAMIACEAE,"Hypenia aristulata","(Epling) Harley",,,,
+LAURACEAE,"Cinnamomum taubertianum","(Mez & Schwacke) Kosterm.",,,,
+Lentibulariaceae,"Utricularia biovularioides","(Kuhlm.) P.Taylor",,,,
+LYTHRACEAE,"Diplusodon ericoides",Lourteig,,,,
+Lythraceae,"Lafoensia vandelliana subsp. replicata","(Pohl) Lourteig",,,,
+Melastomataceae,"Cambessedesia glaziovii","Cogn. ex A.B.Martins",,,,
+ORCHIDACEAE,"Cyrtopodium linearifolium","J.A.N.Batista & Bianchetti",,,,
+Piperaceae,"Peperomia regelii",C.DC.,,,,
+POACEAE,"Altoparadisium chapadense","Filg. et al.",,,,
+Moraceae,"Ficus aripuanensis","C.C.Berg & Kooy",,,,
+POACEAE,"Axonopus hydrolithicus","(Filg., Davidse & Zuloaga) A. López & Morrone",,,,
+BROMELIACEAE,"Encholirium fragae",Forzza,done,review,DD,
+BROMELIACEAE,"Encholirium kranzianum","Leme & Forzza",done,review,CR,"B2ab(i,ii,iii)"
+BROMELIACEAE,"Encholirium splendidum",Forzza,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+ERIOCAULACEAE,"Paepalanthus echinoides",Trovó.,done,comments,EN,"A3cd;B2ab(i,ii,iii,iv,v)"
+,,,open,,,
+,,,open,,,

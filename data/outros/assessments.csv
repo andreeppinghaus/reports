@@ -1,3 +1,10 @@
-family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria,rationale
-MYRTACEAE,"Eugenia chlorocarpa",O.Berg,validation,,,,
-MYRTACEAE,"Eugenia martiana","(O.Berg) Mattos",validation,,,,
+family,scientificNameWithoutAuthorship,scientificNameAuthorship,assessment,category,criteria,assessor,evaluator,rationale
+Scrophulariaceae,"Buddleja speciosissima ",Taub.,,,,,,
+Acanthaceae,"Aphelandra espirito-santensis","Profice & Wassh.",,,,,,
+Acanthaceae,"Aphelandra longiflora","(Lindl.) Profice",,,,,,
+MYRTACEAE,"Eugenia chlorocarpa",O.Berg,,,,,,
+MYRTACEAE,"Eugenia martiana","(O.Berg) Mattos",,,,,,
+Poaceae,"Paspalum biaristatum","Filg. & Davidse",,,,,,
+Poaceae,"Paspalum longiaristatum","Davidse & Filg.",,,,,,
+Ephedraceae,"Ephedra tweediana",C.A.Mey.,,,,,,
+Poaceae,"Paspalum niquelandiae",Filg.,,,,,,

@@ -17,7 +17,7 @@ LECYTHIDACEAE,"Couratari pyramidata","2.1 Annual & perennial non-timber crops",r
 ACANTHACEAE,"Aphelandra bradeana","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy
 BROMELIACEAE,"Aechmea caesia","2 Agriculture & aquaculture",local,past;present,"habitat;occurrence;occupancy;mature individuals"
 BROMELIACEAE,"Aechmea caesia","1.1 Housing & urban areas",local,present;future,habitat
-LAURACEAE,"Aniba pedicellata","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy
+LAURACEAE,"Aniba pedicellata","7.1.1 Increase in fire frequency/intensity",regional,past;present,locality;habitat;occupancy
 LAURACEAE,"Beilschmiedia stricta","2.3 Livestock farming & ranching",regional,past;present;future,habitat;locality;occupancy;occurrence
 LAURACEAE,"Beilschmiedia stricta","5.2.1 Intentional use (species being assessed is the target)",local,present,habitat;occupancy
 LAURACEAE,"Beilschmiedia stricta","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,
@@ -50,11 +50,11 @@ ANNONACEAE,"Annona ferruginea","9.5 Air-borne pollutants",local,past;present;fut
 ANNONACEAE,"Annona ferruginea","1.1 Housing & urban areas",local,past;present;future,locality;habitat
 ARACEAE,"Anthurium binotii","1 Residential & commercial development",local,past;present;future,occurrence;habitat;
 ARACEAE,"Anthurium binotii","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy;occurrence
-ARACEAE,"Anthurium binotii","2 Agriculture & aquaculture",local,past,habitat;occurrence
 ARISTOLOCHIACEAE,"Aristolochia raja","1.1 Housing & urban areas",regional,past;present;future,occurrence;
 ARISTOLOCHIACEAE,"Aristolochia raja","6.1 Recreational activities",regional,past;present;future,
 PIPERACEAE,"Peperomia arbuscula","7.1 Fire & fire suppression",local,present,
 PIPERACEAE,"Peperomia arbuscula","1.3 Tourism & recreation areas",regional,present,locality;habitat;occupancy;occurrence
+PIPERACEAE,"Peperomia arbuscula","2.1.2 Small-holder farming",local,past;present,locality;habitat;occupancy
 POLYGONACEAE,"Coccoloba rigida","1.1 Housing & urban areas",local,past;present;future,locality;habitat;occupancy;occurrence
 POLYGONACEAE,"Coccoloba rigida","2.3 Livestock farming & ranching",local,past,locality;habitat;occupancy;occurrence
 POLYGONACEAE,"Coccoloba rigida","3.2 Mining & quarrying",local,present,locality;habitat
@@ -188,8 +188,6 @@ ACANTHACEAE,"Herpetacanthus parvispica","2.3.4 Scale Unknown/Unrecorded",local,p
 BROMELIACEAE,"Neoregelia abendrothae","9.5 Air-borne pollutants",local,present,habitat
 BROMELIACEAE,"Neoregelia abendrothae","7.1.1 Increase in fire frequency/intensity",local,present,"habitat;locality;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia abendrothae","8.1.2 Named species",local,present,habitat
-BROMELIACEAE,"Neoregelia abendrothae","1.1 Housing & urban areas",local,present,"locality;habitat;occupancy;occurrence;mature individuals"
-BROMELIACEAE,"Neoregelia abendrothae","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality
 BROMELIACEAE,"Neoregelia bragarum","2.1.2 Small-holder farming",local,past;present,"habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia bragarum","2.3.2 Small-holder grazing, ranching or farming",local,past;present,"habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia bragarum","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality
@@ -212,6 +210,7 @@ SOLANACEAE,"Capsicum friburgense","1.1 Housing & urban areas",regional,present,l
 SOLANACEAE,"Capsicum friburgense","4.1 Roads & railroads",local,past;present;future,locality;habitat;occurrence;occupancy
 DICHAPETALACEAE,"Stephanopodium sessile","1.1 Housing & urban areas",local,past;present;future,habitat;occupancy;occurrence
 DICHAPETALACEAE,"Stephanopodium sessile","8.1.2 Named species",local,past;present,habitat;occupancy
+BROMELIACEAE,"Neoregelia camorimiana","1 Residential & commercial development",local,present;future,locality;habitat
 CLUSIACEAE,"Clusia fragrans","7.1.1 Increase in fire frequency/intensity",local,past;present;future,
 BROMELIACEAE,"Neoregelia carinata","1.1 Housing & urban areas",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia carinata","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"habitat;occupancy;occurrence;mature individuals"
@@ -316,7 +315,6 @@ BROMELIACEAE,"Neoregelia macahensis","2.1.2 Small-holder farming",local,past;pre
 BROMELIACEAE,"Neoregelia macahensis","1.1 Housing & urban areas",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Neoregelia macahensis","1.3 Tourism & recreation areas",local,present,locality;habitat
 ORCHIDACEAE,"Brasilidium dasytyle","7.1.1 Increase in fire frequency/intensity",regional,present,habitat;occurrence
-BROMELIACEAE,"Neoregelia macwilliamsii","2.1.2 Small-holder farming",local,past;present,
 BROMELIACEAE,"Neoregelia macwilliamsii","1 Residential & commercial development",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 PHYLLANTHACEAE,"Phyllanthus itatiaiensis","7.1.1 Increase in fire frequency/intensity",local,past;present;future,habitat;occupancy
 PHYLLANTHACEAE,"Phyllanthus mocotensis","2 Agriculture & aquaculture",local,past;present;future,
@@ -326,7 +324,6 @@ ORCHIDACEAE,"Bulbophyllum macroceras","2 Agriculture & aquaculture",regional,pas
 ORCHIDACEAE,"Bulbophyllum macroceras","1.3 Tourism & recreation areas",regional,present,habitat
 ORCHIDACEAE,"Bulbophyllum macroceras","1.1 Housing & urban areas",regional,present,habitat;occurrence
 BROMELIACEAE,"Neoregelia martinellii","1 Residential & commercial development",local,present,locality;habitat
-BROMELIACEAE,"Neoregelia martinellii","2 Agriculture & aquaculture",local,past;present,"locality;habitat;occurrence;occupancy;mature individuals"
 DRYOPTERIDACEAE,"Elaphoglossum didymoglossoides","2.1.4 Scale Unknown/Unrecorded",,,
 ASPLENIACEAE,"Asplenium cariocanum","7.1.1 Increase in fire frequency/intensity",local,past;present;future,habitat;occurrence
 ASPLENIACEAE,"Asplenium cariocanum","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality
@@ -352,9 +349,7 @@ BROMELIACEAE,"Neoregelia petropolitana","7.1.1 Increase in fire frequency/intens
 BROMELIACEAE,"Neoregelia petropolitana","8.1.2 Named species",local,present,habitat
 ORCHIDACEAE,"Baptistonia pulchella","9.5 Air-borne pollutants",regional,present,habitat
 ORCHIDACEAE,"Baptistonia pulchella","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occurrence
-BROMELIACEAE,"Neoregelia sapiatibensis","3.2 Mining & quarrying",local,present,habitat
-BROMELIACEAE,"Neoregelia sapiatibensis","5.2 Gathering terrestrial plants",local,,
-BROMELIACEAE,"Neoregelia sapiatibensis","7.1.1 Increase in fire frequency/intensity",local,,"habitat;occupancy;occurrence;mature individuals"
+BROMELIACEAE,"Neoregelia rubrovittata","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
 BROMELIACEAE,"Neoregelia sapiatibensis","1 Residential & commercial development",local,present;future,habitat;locality
 ORCHIDACEAE,"Campylocentrum organense","7.1.1 Increase in fire frequency/intensity",regional,present;past,habitat
 ORCHIDACEAE,"Campylocentrum organense","9.5 Air-borne pollutants",regional,present;past,habitat
@@ -393,6 +388,7 @@ BROMELIACEAE,"Cryptanthus bromelioides","9.5 Air-borne pollutants",local,past;pr
 BROMELIACEAE,"Cryptanthus bromelioides","7.1.1 Increase in fire frequency/intensity",local,past;present,"habitat;locality;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Cryptanthus bromelioides","1.3 Tourism & recreation areas",regional,past;present;future,habitat;locality
 PASSIFLORACEAE,"Passiflora imbeana","7.1 Fire & fire suppression",local,future,
+PASSIFLORACEAE,"Passiflora imbeana","2.1.2 Small-holder farming",local,past;present;future,locality;habitat
 ORCHIDACEAE,"Cattleya dormaniana","2 Agriculture & aquaculture",regional,past,habitat;occurrence
 ORCHIDACEAE,"Cattleya dormaniana","1.3 Tourism & recreation areas",regional,present,habitat
 ORCHIDACEAE,"Cattleya dormaniana","1.1 Housing & urban areas",regional,present,habitat;occurrence
@@ -533,6 +529,7 @@ ORCHIDACEAE,"Epidendrum goebelii","1.3 Tourism & recreation areas",regional,pres
 ORCHIDACEAE,"Epidendrum goebelii","1.1 Housing & urban areas",regional,present,habitat;occurrence
 ASTERACEAE,"Baccharis ciliata","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
 ASTERACEAE,"Baccharis friburgensis","2 Agriculture & aquaculture",local,past;present;future,habitat;occurrence
+ORCHIDACEAE,"Epidendrum harrisoniae","6.1 Recreational activities",local,past;present,habitat;occurrence
 ASTERACEAE,"Baccharis pseudovaccinioides","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
 ASTERACEAE,"Bartlettina hemisphaerica","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 ASTERACEAE,"Bartlettina hemisphaerica","1.1 Housing & urban areas",local,past;present;future,occurrence;habitat
@@ -583,6 +580,9 @@ ASTERACEAE,"Mikania hastifolia","8.1.1 Unspecified species",local,past;present;f
 ASTERACEAE,"Mikania hastifolia","7.1 Fire & fire suppression",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 ASTERACEAE,"Mikania hastifolia","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
 ASTERACEAE,"Mikania hastifolia","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+ARACEAE,"Anthurium harrisii","7.1 Fire & fire suppression",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+ARACEAE,"Anthurium harrisii","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+ARACEAE,"Anthurium harrisii","9.1.1 Sewage",local,past;present;future,occurrence;habitat
 BROMELIACEAE,"Nidularium utriculosum","1 Residential & commercial development",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Nidularium utriculosum","2.3.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 PRIMULACEAE,"Stylogyne sordida","1.1 Housing & urban areas",local,past;present;future,locality;habitat;occupancy;occurrence
@@ -600,6 +600,9 @@ ARACEAE,"Anthurium lucidum","8.1.2 Named species",local,past;present;future,occu
 ARACEAE,"Anthurium lucidum","1.1 Housing & urban areas",local,past;present;future,occurrence;habitat
 BROMELIACEAE,"Nidularium viridipetalum","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Nidularium viridipetalum","1.1 Housing & urban areas",local,present;future,"habitat;locality;occupancy;occurrence;mature individuals"
+ORCHIDACEAE,"Habenaria gnoma","2.3 Livestock farming & ranching",local,present,habitat;occurrence
+ORCHIDACEAE,"Habenaria gnoma","4.1 Roads & railroads",local,present,habitat;occurrence
+ORCHIDACEAE,"Habenaria gnoma","1.1 Housing & urban areas",regional,present,habitat;occurrence
 ASTERACEAE,"Piptocarpha verticillata","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
 ASTERACEAE,"Senecio arctiifolius","2.3 Livestock farming & ranching",local,past;present;future,locality;habitat;occurrence
 ASTERACEAE,"Senecio arctiifolius","1.1 Housing & urban areas",local,past;present;future,habitat;occupancy;occurrence
@@ -625,10 +628,7 @@ MONIMIACEAE,"Mollinedia corcovadensis","1.1 Housing & urban areas",regional,past
 MONIMIACEAE,"Mollinedia corcovadensis","1.3 Tourism & recreation areas",regional,past;present;future,
 MONIMIACEAE,"Mollinedia corcovadensis","10.3 Avalanches/landslides",regional,past;present;future,locality;occupancy;habitat;occurrence
 MONIMIACEAE,"Mollinedia corcovadensis","7.1 Fire & fire suppression",regional,past;present;future,locality;habitat;occupancy;occurrence
-ARACEAE,"Anthurium augustinum","2 Agriculture & aquaculture",local,past;present,locality;habitat;occurrence
 ARACEAE,"Anthurium augustinum","2 Agriculture & aquaculture",local,past;present,habitat;occurrence;locality
-ARACEAE,"Anthurium augustinum","8.1.2 Named species",local,past;present,occupancy
-ARACEAE,"Anthurium augustinum","1.3 Tourism & recreation areas",local,past;present;future,occurrence;occupancy;habitat
 MONIMIACEAE,"Mollinedia stenophylla","1.1 Housing & urban areas",regional,present;future,locality;habitat;occupancy;occurrence
 MONIMIACEAE,"Mollinedia stenophylla","1.3 Tourism & recreation areas",regional,,
 ARACEAE,"Anthurium bragae","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
@@ -663,6 +663,7 @@ ARACEAE,"Philodendron fragile","7.1.1 Increase in fire frequency/intensity",loca
 ARACEAE,"Philodendron fragile","2 Agriculture & aquaculture",local,past;present;future,habitat;occurrence
 ARACEAE,"Philodendron millerianum","1 Residential & commercial development",local,past;present;future,habitat;occurrence
 ARACEAE,"Wolffiella neotropica","1 Residential & commercial development",local,past;present;future,habitat;occurrence
+ORCHIDACEAE,"Hoffmannseggella alvaroana","2 Agriculture & aquaculture",regional,present;past,locality;habitat;occurrence
 ORCHIDACEAE,"Lankesterella pilosa","10.3 Avalanches/landslides",regional,past;present,habitat;occurrence
 BROMELIACEAE,"Quesnelia edmundoi","1.1 Housing & urban areas",local,past;present;future,"habitat;locality;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Quesnelia edmundoi","2.3.3 Agro-industry grazing, ranching or farming",local,past;present;future,"habitat;occupancy;occupancy;occurrence;mature individuals"
@@ -687,7 +688,9 @@ BROMELIACEAE,"Canistropsis elata","1.1 Housing & urban areas",local,past;present
 BROMELIACEAE,"Canistropsis pulcherrima","1 Residential & commercial development",regional,past;present;future,locality;habitat
 BROMELIACEAE,"Tillandsia brachyphylla","5.2.1 Intentional use (species being assessed is the target)",regional,past;present,"occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Tillandsia brachyphylla","7.1.1 Increase in fire frequency/intensity",regional,past;present,"habitat;occupancy;occurrence;mature individuals"
-MONIMIACEAE,"Mollinedia marliae","1.1 Housing & urban areas",regional,past;present;future,
+MONIMIACEAE,"Mollinedia marliae","2 Agriculture & aquaculture",regional,past;present,locality;habitat;occupancy
+MONIMIACEAE,"Mollinedia marliae","1 Residential & commercial development",regional,,
+MONIMIACEAE,"Mollinedia marliae","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy
 MELASTOMATACEAE,"Huberia triplinervis","2.3.2 Small-holder grazing, ranching or farming",regional,past;present,habitat;occupancy;occurrence
 MELASTOMATACEAE,"Huberia triplinervis","2.1.2 Small-holder farming",regional,past;present,habitat;occupancy;occurrence
 MELASTOMATACEAE,"Huberia triplinervis","1.3 Tourism & recreation areas",regional,past;present,habitat
@@ -755,7 +758,7 @@ BROMELIACEAE,"Tillandsia sucrei","1.3 Tourism & recreation areas",local,past;pre
 BROMELIACEAE,"Tillandsia sucrei","9.5 Air-borne pollutants",local,past;present;future,habitat
 BROMELIACEAE,"Tillandsia sucrei","7.1.1 Increase in fire frequency/intensity",local,past;present,"locality;habitat;occupancy;occurrence;mature individuals"
 ARACEAE,"Anthurium sakuraguianum","1.1 Housing & urban areas",local,past;past;future,habitat;occurrence
-ARACEAE,"Philodendron luizae","2 Agriculture & aquaculture",local,past;past;future,occurrence;habitat
+ARACEAE,"Philodendron luisae","2 Agriculture & aquaculture",local,past;past;future,occurrence;habitat
 MELASTOMATACEAE,"Leandra laxa","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occupancy;occurrence
 MELASTOMATACEAE,"Leandra laxa","2.1.2 Small-holder farming",regional,past;present,habitat;occupancy;occurrence
 MELASTOMATACEAE,"Leandra laxa","1.3 Tourism & recreation areas",regional,past;present,habitat;occupancy;occurrence
@@ -934,6 +937,8 @@ BROMELIACEAE,"Vriesea brassicoides","1.3 Tourism & recreation areas",local,past;
 BROMELIACEAE,"Vriesea costae","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
 BROMELIACEAE,"Vriesea fluminensis","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Vriesea fluminensis","1 Residential & commercial development",local,past;present;future,"habitat;locality;occupancy;occurrence;mature individuals"
+ORCHIDACEAE,"Prescottia spiranthophylla","6.1 Recreational activities",local,present,locality;habitat;occurrence
+ORCHIDACEAE,"Prescottia spiranthophylla","1.1 Housing & urban areas",regional,present,habitat;occurrence
 BROMELIACEAE,"Vriesea fontourae","1 Residential & commercial development",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 BROMELIACEAE,"Vriesea fontourae","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 CONVOLVULACEAE,"Bonamia langsdorffii","1 Residential & commercial development",local,past;present;future,locality;habitat;occupancy;occurrence
@@ -956,10 +961,6 @@ FABACEAE,"Machaerium obovatum","1 Residential & commercial development",regional
 MORACEAE,"Maclura brasiliensis","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
 MORACEAE,"Sorocea carautana","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
 MORACEAE,"Sorocea carautana","1.3 Tourism & recreation areas",regional,present;future,locality
-BROMELIACEAE,"Vriesea grandiflora","2.1.4 Scale Unknown/Unrecorded",local,past;present;future,"habitat;occupancy;occurrence;mature individuals"
-BROMELIACEAE,"Vriesea grandiflora","2.3.4 Scale Unknown/Unrecorded",local,past;present;future,"locality;habitat;occurrence;occupancy;mature individuals"
-BROMELIACEAE,"Vriesea grandiflora","1 Residential & commercial development",local,past;present;future,"mature individuals;locality;habitat"
-BROMELIACEAE,"Vriesea grandiflora","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality;occurrence
 ORCHIDACEAE,"Stelis palmeiraensis","1.1 Housing & urban areas",regional,past;present,habitat;occurrence
 ORCHIDACEAE,"Stelis palmeiraensis","2.1 Annual & perennial non-timber crops",regional,past,habitat;occurrence
 ORCHIDACEAE,"Stelis palmeiraensis","8.1.2 Named species",local,present,habitat
@@ -1052,6 +1053,8 @@ BROMELIACEAE,"Vriesea vidalii","8.1.2 Named species",regional,past;present;futur
 BROMELIACEAE,"Vriesea vidalii","1.3 Tourism & recreation areas",local,past;present;future,habitat;locality
 APOCYNACEAE,"Ditassa maricaensis","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
 APOCYNACEAE,"Ditassa maricaensis","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+APOCYNACEAE,"Ditassa subumbellata","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+APOCYNACEAE,"Ditassa subumbellata","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
 BROMELIACEAE,"Vriesea warmingii","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
 MYRTACEAE,"Campomanesia hirsuta","2.3 Livestock farming & ranching",regional,present,habitat;occurrence
 MYRTACEAE,"Campomanesia hirsuta","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occurrence;locality
@@ -1075,7 +1078,6 @@ FABACEAE,"Swartzia submontana","7.1.1 Increase in fire frequency/intensity",regi
 MARANTACEAE,"Goeppertia dorothyae","1.1 Housing & urban areas",local,present;future,habitat;occupancy
 MARANTACEAE,"Goeppertia dorothyae","4.1 Roads & railroads",local,present;future,habitat
 MARANTACEAE,"Goeppertia dorothyae","8.1.2 Named species",,,
-FABACEAE,"Piptadenia laxipinna","1.1 Housing & urban areas",local,,
 MARANTACEAE,"Goeppertia fatimae","2.1.2 Small-holder farming",local,past;present,habitat
 MARANTACEAE,"Goeppertia fatimae","1.1 Housing & urban areas",local,past;present,habitat
 MARANTACEAE,"Goeppertia fatimae","1.3 Tourism & recreation areas",local,present;future,habitat
@@ -1083,6 +1085,9 @@ FABACEAE,"Poecilanthe fluminensis","7.1.1 Increase in fire frequency/intensity",
 FABACEAE,"Poecilanthe fluminensis","1.3 Tourism & recreation areas",regional,present,habitat;occurrence
 FABACEAE,"Poecilanthe fluminensis","1.2 Commercial & industrial areas",regional,present,habitat;occurrence
 APOCYNACEAE,"Orthosia arenosa","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+APOCYNACEAE,"Orthosia arenosa","1.1 Housing & urban areas",local,past;present;future,occurrence;habitat
+APOCYNACEAE,"Orthosia arenosa","2.3 Livestock farming & ranching",local,past,habitat;occurrence
+APOCYNACEAE,"Orthosia arenosa","9.1 Domestic & urban waste water",local,past;present;future,habitat;occurrence;occupancy
 APOCYNACEAE,"Oxypetalum costae","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
 APOCYNACEAE,"Oxypetalum costae","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 APOCYNACEAE,"Oxypetalum lutescens","1.2 Commercial & industrial areas",local,past;present;future,habitat;occurrence
@@ -1094,7 +1099,6 @@ MALPIGHIACEAE,"Heteropterys ternstroemiifolia","1.3 Tourism & recreation areas",
 MALPIGHIACEAE,"Heteropterys ternstroemiifolia","4.1 Roads & railroads",regional,past;present;future,locality;habitat;occupancy
 MALPIGHIACEAE,"Heteropterys ternstroemiifolia","7.1 Fire & fire suppression",regional,past;present;future,locality;habitat;occupancy
 OCHNACEAE,"Luxemburgia glazioviana","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy;occurrence
-OCHNACEAE,"Luxemburgia glazioviana","2 Agriculture & aquaculture",regional,past,locality;habitat;occupancy
 OCHNACEAE,"Luxemburgia glazioviana","1 Residential & commercial development",regional,present;future,
 OCHNACEAE,"Luxemburgia glazioviana","1.3 Tourism & recreation areas",regional,,
 OCHNACEAE,"Luxemburgia glazioviana","8.4.2 Named species",regional,present;future,habitat;occupancy
@@ -1139,7 +1143,7 @@ MYRTACEAE,"Eugenia cinerascens","1.1 Housing & urban areas",regional,present;pas
 MYRTACEAE,"Eugenia cinerascens","1.3 Tourism & recreation areas",regional,present,habitat
 MYRTACEAE,"Eugenia cinerascens","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occurrence
 MALPIGHIACEAE,"Stigmaphyllon affine","1 Residential & commercial development",regional,past;present;future,locality;habitat;occupancy;occurrence
-MALPIGHIACEAE,"Stigmaphyllon affine","2.3 Livestock farming & ranching",regional,past;present;future,locality;habitat;occupancy;occurrence
+MALPIGHIACEAE,"Stigmaphyllon affine","2.1 Annual & perennial non-timber crops",regional,past;present;future,locality;habitat;occupancy;occurrence
 MALPIGHIACEAE,"Stigmaphyllon affine","1.1 Housing & urban areas",local,past;present;future,locality
 GESNERIACEAE,"Besleria melancholica","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 GESNERIACEAE,"Besleria melancholica","1.3 Tourism & recreation areas",local,past;present;future,occurrence;habitat
@@ -1152,10 +1156,6 @@ CUCURBITACEAE,"Gurania cogniauxiana","8.4.2 Named species",regional,past;present
 PICRAMNIACEAE,"Picramnia grandifolia","1 Residential & commercial development",local,past;present;future,locality;habitat
 PICRAMNIACEAE,"Picramnia grandifolia","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 PICRAMNIACEAE,"Picramnia grandifolia","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
-CUCURBITACEAE,"Gurania ovata","4.1 Roads & railroads",regional,past;present;future,occupancy;occurrence;habitat
-CUCURBITACEAE,"Gurania ovata","1.1 Housing & urban areas",regional,past;present;future,locality;habitat;occupancy;occurrence
-CUCURBITACEAE,"Gurania ovata","1.3 Tourism & recreation areas",regional,past;present;future,
-CUCURBITACEAE,"Gurania ovata","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,occupancy;occurrence
 MYRTACEAE,"Eugenia corcovadensis","9.5 Air-borne pollutants",regional,present,habitat
 MYRTACEAE,"Eugenia corcovadensis","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occurrence
 MYRTACEAE,"Eugenia corcovadensis","2.3 Livestock farming & ranching",regional,past,habitat;occurrence
@@ -1184,6 +1184,8 @@ MYRTACEAE,"Eugenia expansa","1 Residential & commercial development",regional,pr
 MYRTACEAE,"Eugenia expansa","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occurrence
 MYRTACEAE,"Eugenia expansa","1.3 Tourism & recreation areas",local,present,habitat
 MYRTACEAE,"Eugenia expansa","4.1 Roads & railroads",regional,past;present,habitat;occurrence
+DIOSCOREACEAE,"Dioscorea campanulata","1.3 Tourism & recreation areas",local,present;future,locality;habitat;occupancy
+DIOSCOREACEAE,"Dioscorea campanulata","4.1 Roads & railroads",local,present;future,locality;habitat;occupancy;occurrence
 POACEAE,"Dichanthelium cucaense","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"habitat;occupancy;occurrence;mature individuals;locality"
 MELASTOMATACEAE,"Miconia klotzschii","1.1 Housing & urban areas",regional,past;present,habitat;occupancy;occurrence
 MELASTOMATACEAE,"Miconia laeta","1.1 Housing & urban areas",regional,past;present,habitat;occupancy;occurrence
@@ -1255,6 +1257,8 @@ RUBIACEAE,"Chomelia monantha","1 Residential & commercial development",regional,
 RUBIACEAE,"Chomelia monantha","1.3 Tourism & recreation areas",local,present;future,locality;habitat;occupancy
 RUBIACEAE,"Chomelia monantha","4.1 Roads & railroads",local,present;future,habitat;locality;occupancy
 DIOSCOREACEAE,"Dioscorea pedalis","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,locality;habitat;occupancy
+DIOSCOREACEAE,"Dioscorea pedalis","5 Biological resource use",local,present,locality;habitat;occupancy
+DIOSCOREACEAE,"Dioscorea pedalis","1.3 Tourism & recreation areas",local,present,locality;habitat;occupancy
 SAPINDACEAE,"Allophylus exappendiculatus","1 Residential & commercial development",local,past;present;future,habitat;locality
 MYRTACEAE,"Eugenia irirensis","1.1 Housing & urban areas",regional,present;past,habitat;occurrence
 SAPINDACEAE,"Allophylus heterophyllus","7.1.1 Increase in fire frequency/intensity",local,past;present;future,locality;habitat;occupancy;occurrence
@@ -1620,3 +1624,25 @@ VELLOZIACEAE,"Barbacenia squamata","7.1.1 Increase in fire frequency/intensity",
 VELLOZIACEAE,"Barbacenia squamata","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
 VELLOZIACEAE,"Barbacenia squamata","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
 VELLOZIACEAE,"Barbacenia squamata","8.1.2 Named species",local,past;present;future,occupancy;occurrence
+BEGONIACEAE,"Begonia arborescens","7.1.1 Increase in fire frequency/intensity",regional,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+BEGONIACEAE,"Begonia arborescens","1.3 Tourism & recreation areas",local,past;present;future,
+BEGONIACEAE,"Begonia arborescens","7.1.1 Increase in fire frequency/intensity",local,past;present;future,
+BEGONIACEAE,"Begonia arborescens","4.1 Roads & railroads",local,past;present;future,habitat;occurrence
+BEGONIACEAE,"Begonia arborescens","2.3 Livestock farming & ranching",local,past;present;future,
+BEGONIACEAE,"Begonia arborescens","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+Myrtaceae,"Myrcia innovans","2 Agriculture & aquaculture",regional,past,habitat;occurrence
+Myrtaceae,"Myrcia innovans","1 Residential & commercial development",regional,present,habitat;occurrence
+Orchidaceae,"Brasilaelia lobata","1.3 Tourism & recreation areas",local,past;present;future,locality;habitat
+Orchidaceae,"Brasilaelia lobata","5.2 Gathering terrestrial plants",local,past,"mature individuals"
+Orchidaceae,"Brasilaelia lobata","7.1 Fire & fire suppression",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+Orchidaceae,"Brasilaelia lobata","11 Climate change & severe weather",local,past;present;future,"mature individuals"
+Amaryllidaceae,"Griffinia intermedia","7.1.1 Increase in fire frequency/intensity",local,past;present;future,"locality;habitat;occupancy;occurrence;mature individuals"
+Amaryllidaceae,"Griffinia intermedia","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
+BEGONIACEAE,"Begonia bonitoensis","7.1.1 Increase in fire frequency/intensity",local,past;present;future,
+BEGONIACEAE,"Begonia bonitoensis","1.3 Tourism & recreation areas",local,past;present;future,habitat;occurrence
+BEGONIACEAE,"Begonia tomentosa","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+BEGONIACEAE,"Begonia tomentosa","1.1 Housing & urban areas",local,past;present;future,habitat;occurrence
+BEGONIACEAE,"Begonia sylvestris","2.2.2 Agro-industry plantations",local,past;present;future,habitat;occurrence
+Poaceae,"Chusquea sclerophylla","7.1.1 Increase in fire frequency/intensity",local,past;present;future,locality;habitat;occupancy;occurrence
+Poaceae,"Chusquea sclerophylla","8.1.2 Named species",local,past;present;future,habitat;occupancy
+Poaceae,"Chusquea sclerophylla","1.1 Housing & urban areas",local,past;present,locality;habitat;occupancy;occurrence

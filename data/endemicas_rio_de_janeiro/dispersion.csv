@@ -3,6 +3,9 @@ Monimiaceae,"Grazielanthus arkeocarpus",ornitochory
 LECYTHIDACEAE,"Couratari pyramidata",anemochory
 VOCHYSIACEAE,"Callisthene dryadum",anemochory
 SALICACEAE,"Abatia microphylla",zoochory
+CACTACEAE,"Pilosocereus ulei",hidrochory
+CACTACEAE,"Pilosocereus ulei",anemochory
+CACTACEAE,"Pilosocereus ulei",zoochory
 CACTACEAE,"Rhipsalis flagelliformis",ornitochory
 ANNONACEAE,"Annona ferruginea",zoochory
 CACTACEAE,"Rhipsalis mesembryanthemoides",ornitochory
@@ -25,3 +28,5 @@ TRIURIDACEAE,"Peltophyllum caudatum",
 CACTACEAE,"Rhipsalis triangularis",ornitochory
 CACTACEAE,"Rhipsalis ormindoi",ornitochory
 LOGANIACEAE,"Strychnos jacarepiensis",zoochory
+DIOSCOREACEAE,"Dioscorea itatiaiensis",anemochory
+DIOSCOREACEAE,"Dioscorea margarethia",anemochory
