@@ -8,7 +8,7 @@ fputcsv($csv,$fields);
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='taxon') {
-        if($doc->taxonomicStatus == 'accepted') {
+        if($doc->taxonomicStatus == 'synonym') {
             $data=[
                $doc->family
               ,$doc->scientificNameWithoutAuthorship
