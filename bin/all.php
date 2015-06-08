@@ -20,6 +20,7 @@ foreach($dbs as $db) {
 $dbs = opendir(__DIR__."/../data");
 while(($db = readdir($dbs)) !== false) {
   if($db != "." && $db != '..' ) {
+    if(!is_dir(__DIR__."/../data/".$db)) continue;
     echo "->".$db."\n";
     $db_dir = opendir(__DIR__."/../data/".$db);
 
