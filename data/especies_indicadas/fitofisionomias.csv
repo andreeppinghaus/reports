@@ -1,6 +1,7 @@
 family,scientificName,fitofisionomie
 BORAGINACEAE,"Varronia leucomalla","Floresta Ombrófila Densa"
 ACANTHACEAE,"Aphelandra neesiana","Floresta Ombrófila Densa"
+APIACEAE,"Eryngium goulartii","Campos de Altitude"
 DICHAPETALACEAE,"Stephanopodium estrellense","Floresta Ombrófila Densa"
 DICHAPETALACEAE,"Stephanopodium estrellense","Floresta Ombrófila Densa Montana"
 ACANTHACEAE,"Ruellia silvaccola","Floresta Ombrófila Densa"
@@ -18,6 +19,7 @@ ERIOCAULACEAE,"Paepalanthus urbanianus ","Savana Gramíneo-Lenhosa"
 URTICACEAE,"Pilea apiculata","Floresta Ombrófila Densa"
 DILLENIACEAE,"Doliocarpus littoralis","Vegetação de Restinga"
 DILLENIACEAE,"Doliocarpus littoralis","Floresta Ombrófila Densa Submontana"
+BROMELIACEAE,"Vriesea agostiniana",
 BROMELIACEAE,"Vriesea atrococcinea",
 CALOPHYLLACEAE,"Kielmeyera rizziniana","Vegetação de Restinga"
 MORACEAE,"Maclura brasiliensis","Vegetação de Restinga"
@@ -26,4 +28,6 @@ CUCURBITACEAE,"Gurania ovata","Floresta Ombrófila Densa"
 POACEAE,"Chusquea sclerophylla","Campos de Altitude"
 DIOSCOREACEAE,"Dioscorea campos-portoi","Floresta Ombrófila Densa Alto-Montana"
 DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","Floresta Ombrófila Densa"
+PTERIDACEAE,"Doryopteris tijucana","Floresta Ombrófila Densa Submontana"
+RUBIACEAE,"Psychotria friburgensis","Floresta Ombrófila Densa"
 ERIOCAULACEAE,"Paepalanthus macaheesis","Floresta Ombrófila Densa Alto-Montana"

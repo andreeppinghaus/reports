@@ -1,5 +1,6 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
 ERICACEAE,"Gaylussacia pruinosa",Loes.,,,,
+Apiaceae,"Eryngium goulartii","Glaz. & Urb. ex Urb.",validation,,,
 Orchidaceae,"Otostylis alba","(Ridl.) Summerh.",,,,
 ERIOCAULACEAE,"Paepalanthus urbanianus ",Ruhland,done,comments,VU,D2
 Orchidaceae,"Aganisia pulchella",Lindl.,,,,
@@ -8,10 +9,14 @@ ACANTHACEAE,"Ruellia herbstii","(Hook.) Hiern",validation,,,
 ACANTHACEAE,"Ruellia silvaccola","(Mart. ex Ness) Lindau",validation,,,
 ACANTHACEAE,"Schaueria calycotricha","(Link & Otto) Nees",validation,,,
 ACANTHACEAE,"Schaueria sulfurea",Nees,validation,,,
+ANEMIACEAE,"Anemia candidoi",Brade,done,,,
 BORAGINACEAE,"Varronia leucomalla","(Taub.) Borhidi",validation,,,
+BROMELIACEAE,"Vriesea agostiniana",E.Pereira,review,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Vriesea atra",Mez,open,,,
 BROMELIACEAE,"Vriesea atrococcinea",Rauh,done,review,DD,
 BROMELIACEAE,"Vriesea grandiflora",Leme,review,open,,
+BROMELIACEAE,"Vriesea joyae","E.Pereira & I.A.Penna",review,review,CR,"B2ab(i,ii,iii)"
+BROMELIACEAE,"Vriesea secundiflora",Leme,review,,,
 CALOPHYLLACEAE,"Kielmeyera rizziniana",Saddi,validation,,,
 CUCURBITACEAE,"Cayaponia latiloba","(Cogn.) Gomes-Klein",open,,,
 CUCURBITACEAE,"Gurania cinerea",Suessenguth,validation,,,
@@ -29,7 +34,9 @@ MALVACEAE,"Waltheria glazioviana",K.Schum.,open,,,
 MALVACEAE,"Waltheria petiolata",K.Schum.,open,,,
 MORACEAE,"Maclura brasiliensis","(Mart.) Endl.",open,,,
 PHYLLANTHACEAE,"Phyllanthus augustinii",Baill.,validation,,,
-SAPINDACEAE,"Paullinia marginata",Casar.,open,,,
+PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst.",validation,,,
+PTERIDACEAE,"Pteris congesta",J.Prado,validation,,,
+RUBIACEAE,"Psychotria friburgensis",Standl.,open,,,
 URTICACEAE,"Pilea apiculata",Killip,validation,,,
 Dichapetalaceae,"Stephanopodium organense","(Rizzini) Prance",,,,
 ERIOCAULACEAE,"Paepalanthus stellatus "," Trovó",done,comments,VU,D2

@@ -1,4 +1,5 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship
+Apiaceae,"Eryngium goulartii","Glaz. & Urb. ex Urb."
 Poaceae,"Glaziophyton mirabile",Franch.
 COMMELINACEAE,"Dichorisandra picta",Lodd.
 Bromeliaceae,"Neoregelia paratiensis",Leme
@@ -22,7 +23,6 @@ ACANTHACEAE,"Justicia polita","(Nees) Profice"
 ACANTHACEAE,"Staurogyne brachiata","(Hiern) Leonard"
 ACANTHACEAE,"Staurogyne euryphylla",E.Hossain
 AMARYLLIDACEAE,"Griffinia rochae",Morel
-ANEMIACEAE,"Anemia candidoi",Brade
 ANNONACEAE,"Annona ferruginea","(R.E.Fr.) H.Rainer"
 ANNONACEAE,"Annona parviflora","(A.St.-Hil.) H.Rainer"
 ANNONACEAE,"Duguetia microphylla","(R.E.Fr.) R.E.Fr."
@@ -259,7 +259,6 @@ BROMELIACEAE,"Tillandsia reclinata","E.Pereira & Martinelli"
 BROMELIACEAE,"Tillandsia roseiflora","Ehlers & W.Weber"
 BROMELIACEAE,"Tillandsia sucrei",E.Pereira
 BROMELIACEAE,"Tillandsia thiekenii",Ehlers
-BROMELIACEAE,"Vriesea agostiniana",E.Pereira
 BROMELIACEAE,"Vriesea altimontana","E.Pereira & Martinelli"
 BROMELIACEAE,"Vriesea altomacaensis",A.F.Costa
 BROMELIACEAE,"Vriesea bleherae","Roth & W. Weber"
@@ -274,7 +273,6 @@ BROMELIACEAE,"Vriesea fradensis",A.F.Costa
 BROMELIACEAE,"Vriesea garlippiana",Leme
 BROMELIACEAE,"Vriesea gastiniana","Leme & G.K.Br."
 BROMELIACEAE,"Vriesea goniorachis","(Baker) Mez"
-BROMELIACEAE,"Vriesea joyae","E.Pereira & I.A.Penna"
 BROMELIACEAE,"Vriesea leptantha",Harms
 BROMELIACEAE,"Vriesea lidicensis",Reitz
 BROMELIACEAE,"Vriesea nubicola",Leme
@@ -284,7 +282,6 @@ BROMELIACEAE,"Vriesea punctulata","E.Pereira & I.A.Penna"
 BROMELIACEAE,"Vriesea roethii",W.Weber
 BROMELIACEAE,"Vriesea rubyae",E.Pereira
 BROMELIACEAE,"Vriesea saundersii","(Carrière) E.Morren ex Mez"
-BROMELIACEAE,"Vriesea secundiflora",Leme
 BROMELIACEAE,"Vriesea serrana","E.Pereira & I.A.Penna"
 BROMELIACEAE,"Vriesea sucrei","L.B.Sm. & Read"
 BROMELIACEAE,"Vriesea teresopolitana",Leme
@@ -813,8 +810,6 @@ PTERIDACEAE,"Cheilanthes incisa","Kunze ex Mett."
 PTERIDACEAE,"Doryopteris magdalenensis","(Brade) Brade"
 PTERIDACEAE,"Doryopteris quinquelobata","(Fée) Diels"
 PTERIDACEAE,"Doryopteris subsimplex","(Fée) Diels"
-PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst."
-PTERIDACEAE,"Pteris congesta",J.Prado
 RANUNCULACEAE,"Anemone assisbrasiliana","Kuhlm. & Porto"
 RUBIACEAE,"Bathysa sylvestrae","Germano-Filho & M.Gomes"
 RUBIACEAE,"Chomelia monantha","(K.Schum. ex Standl.) Steyerm."
@@ -868,7 +863,6 @@ RUBIACEAE,"Psychotria brachyanthema",Standl.
 RUBIACEAE,"Psychotria caudata",M.Gomes
 RUBIACEAE,"Psychotria clavipes",Müll.Arg.
 RUBIACEAE,"Psychotria densicostata",Müll.Arg.
-RUBIACEAE,"Psychotria friburgensis",Standl.
 RUBIACEAE,"Psychotria lindleyana",Müll.Arg.
 RUBIACEAE,"Psychotria lucidifolia",Standl.
 RUBIACEAE,"Psychotria mandiocana",Müll.Arg.
@@ -904,6 +898,7 @@ SAPINDACEAE,"Cupania fluminensis",Acev.-Rodr.
 SAPINDACEAE,"Cupania schizoneura",Radlk.
 SAPINDACEAE,"Matayba leucodyctia",Radlk.
 SAPINDACEAE,"Matayba talisioides",Radlk.
+SAPINDACEAE,"Paullinia marginata",Casar.
 SAPINDACEAE,"Serjania acuminata",Radlk.
 SAPINDACEAE,"Serjania fluminensis",Acev.-Rodr.
 SAPINDACEAE,"Serjania hamuligera",Radlk.
@@ -945,6 +940,7 @@ VELLOZIACEAE,"Barbacenia squamata",Herb.
 VIOLACEAE,"Rinorea laevigata","(Sol. ex Ging.) Hekking"
 VOCHYSIACEAE,"Callisthene dryadum",Duarte
 XYRIDACEAE,"Xyris organensis",Malme
+Calophyllaceae,"Kielmeyera aureovinosa","M. Gomes"
 Pteridaceae,"Jamesonia brasiliensis",Christ
 Orchidaceae,"Brasilaelia lobata","(Lindl.) Gutfreund"
 BEGONIACEAE,"Begonia sylvestris",A.DC.

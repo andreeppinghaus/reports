@@ -1,7 +1,10 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
+ERIOCAULACEAE,"Paepalanthus velutiphyllus",,,,,
 Asteraceae,"Eremanthus praetermissus",Loeuille,done,comments,VU,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v)"
 Asteraceae,"Eremanthus ovatifolius",Loeuille,done,comments,CR,"B2ab(ii,iii,iv,v)"
 ERIOCAULACEAE,"Paepalanthus capixabensis",Trovó,done,comments,CR,"B1ab(i,ii,iii,iv)"
+ERIOCAULACEAE,"Paepalanthus farinaceus",,,,,
+ERIOCAULACEAE,"Paepalanthus argyrotrychus",,,,,
 BROMELIACEAE,"Encholirium fragae",Forzza,done,review,DD,
 BROMELIACEAE,"Encholirium kranzianum","Leme & Forzza",done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Encholirium splendidum",Forzza,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"

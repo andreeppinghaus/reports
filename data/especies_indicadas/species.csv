@@ -1,5 +1,6 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship
 ERICACEAE,"Gaylussacia pruinosa",Loes.
+Apiaceae,"Eryngium goulartii","Glaz. & Urb. ex Urb."
 Orchidaceae,"Otostylis alba","(Ridl.) Summerh."
 ERIOCAULACEAE,"Paepalanthus urbanianus ",Ruhland
 Orchidaceae,"Aganisia pulchella",Lindl.
@@ -8,10 +9,14 @@ ACANTHACEAE,"Ruellia herbstii","(Hook.) Hiern"
 ACANTHACEAE,"Ruellia silvaccola","(Mart. ex Ness) Lindau"
 ACANTHACEAE,"Schaueria calycotricha","(Link & Otto) Nees"
 ACANTHACEAE,"Schaueria sulfurea",Nees
+ANEMIACEAE,"Anemia candidoi",Brade
 BORAGINACEAE,"Varronia leucomalla","(Taub.) Borhidi"
+BROMELIACEAE,"Vriesea agostiniana",E.Pereira
 BROMELIACEAE,"Vriesea atra",Mez
 BROMELIACEAE,"Vriesea atrococcinea",Rauh
 BROMELIACEAE,"Vriesea grandiflora",Leme
+BROMELIACEAE,"Vriesea joyae","E.Pereira & I.A.Penna"
+BROMELIACEAE,"Vriesea secundiflora",Leme
 CALOPHYLLACEAE,"Kielmeyera rizziniana",Saddi
 CUCURBITACEAE,"Cayaponia latiloba","(Cogn.) Gomes-Klein"
 CUCURBITACEAE,"Gurania cinerea",Suessenguth
@@ -29,7 +34,9 @@ MALVACEAE,"Waltheria glazioviana",K.Schum.
 MALVACEAE,"Waltheria petiolata",K.Schum.
 MORACEAE,"Maclura brasiliensis","(Mart.) Endl."
 PHYLLANTHACEAE,"Phyllanthus augustinii",Baill.
-SAPINDACEAE,"Paullinia marginata",Casar.
+PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst."
+PTERIDACEAE,"Pteris congesta",J.Prado
+RUBIACEAE,"Psychotria friburgensis",Standl.
 URTICACEAE,"Pilea apiculata",Killip
 DICHAPETALACEAE,"Stephanopodium organense","(Rizzini) Prance"
 Dichapetalaceae,"Stephanopodium organense","(Rizzini) Prance"

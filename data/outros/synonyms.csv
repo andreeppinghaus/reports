@@ -1,5 +1,6 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,acceptedNameUsage
 Acanthaceae,"Geissomeria ciliata",Rizzini,"Aphelandra longiflora (Lindl.) Profice"
+Scrophulariaceae,"Buddleja ulei",Dusén,"Buddleja speciosissima Taub."
 Acanthaceae,"Geissomeria longiflora",Lindl.,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Geissomeria longiflora var. monostachya",Nees,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Geissomeria distans",Nees,"Aphelandra longiflora (Lindl.) Profice"
@@ -11,7 +12,9 @@ Acanthaceae,"Geissomeria dawsonii",Leonard,"Aphelandra longiflora (Lindl.) Profi
 Acanthaceae,"Stenandrium speciosum",Nees,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Ruellia spicata",Vell.,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Geissomeria longiflora var. obtusa",Nees,"Aphelandra longiflora (Lindl.) Profice"
+Ephedraceae,"Ephedra scandens",Miers,"Ephedra tweediana C.A.Mey."
 MYRTACEAE,"Calycorectes martianus",O.Berg,"Eugenia martiana"
+Lamiaceae,"Glechon ringens",Benth.,"Hesperozygis ringens (Benth.) Epling"
 Acanthaceae,"Geissomeria cincinnata",Nees,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Geissomeria cincinnata var. redacta",Rizzini,"Aphelandra longiflora (Lindl.) Profice"
 Acanthaceae,"Geissomeria tetragona",Lindau,"Aphelandra longiflora (Lindl.) Profice"

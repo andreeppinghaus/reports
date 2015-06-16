@@ -1,6 +1,5 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
 Verbenaceae,"Lippia diamantinensis",Glaziou,done,comments,LC,
-Verbenaceae,"Lippia lasiocalycina",Cham.,done,open,LC,
 Melastomataceae,"Cambessedesia cambessedesioides","(Wurdack) A.B.Martins",done,comments,VU,"B1ab(i,ii,iii,iv,v)"
 Verbenaceae,"Lantana gracilis",T.Silva,done,comments,LC,
 Fabaceae,"Chamaecrista gymnothyrsa","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
@@ -612,5 +611,6 @@ XYRIDACEAE,"Xyris veruina",Malme,done,comments,EN,"B1ab(i,ii,iii,v)"
 XYRIDACEAE,"Xyris vestita",Malme,done,comments,VU,"B2ab(i,iii,v)"
 XYRIDACEAE,"Xyris villosicarinata","Kral & Wand.",done,comments,DD,
 ERIOCAULACEAE,"Leiothrix fulgida var. milho-verdensis","(Silveira) Giul.",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+,,,done,open,LC,
 ,,,open,,,
 ,,,open,,,

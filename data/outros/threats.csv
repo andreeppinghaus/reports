@@ -1,2 +1,10 @@
 family,scientificName,threat,incidence,timing,decline
 MYRTACEAE,"Eugenia martiana","2 Agriculture & aquaculture",regional,present;past,habitat;occurrence
+Ephedraceae,"Ephedra tweediana","1.1 Housing & urban areas",regional,past;present,habitat;occupancy;occurrence
+LAMIACEAE,"Hesperozygis ringens","7.1.1 Increase in fire frequency/intensity",regional,past;present,habitat;occupancy;occurrence
+LAMIACEAE,"Hesperozygis ringens","5.2.1 Intentional use (species being assessed is the target)",local,past;present,occupancy
+LAMIACEAE,"Hesperozygis ringens","2 Agriculture & aquaculture",regional,past;present,habitat;occupancy;occurrence
+Poaceae,"Paspalum niquelandiae","3.2 Mining & quarrying",regional,past;present;future,locality;habitat;occupancy;occurrence
+Isoetaceae,"Isoetes luetzelburgii","2 Agriculture & aquaculture",,,
+Fabaceae,"Mimosa bracteolaris","2 Agriculture & aquaculture",regional,past;present,habitat;occupancy;occurrence
+Erythroxylaceae,"Erythroxylum substriatum","2 Agriculture & aquaculture",regional,past;present,habitat;occupancy;occurrence
