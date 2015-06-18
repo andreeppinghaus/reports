@@ -52,8 +52,10 @@ foreach($all->rows as $row) {
               if(isset($doc->validation->status)) {
                 if($doc->validation->status == "valid") {
                   $doc->valid="true";
-                } else {
+                } else if($doc->validation->status == "invalid") {
                   $doc->valid="false";
+                } else {
+                  $doc->valid="";
                 }
               } else {
                 if(
