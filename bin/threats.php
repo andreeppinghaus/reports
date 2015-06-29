@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["family","scientificName","threat","incidence","timing","decline"];
+$fields = ["family","scientificName","threat","incidence","timing","decline","details","references"];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
@@ -18,6 +18,8 @@ foreach($all->rows as $row) {
             ,$t->incidence
             ,implode(";",$t->timing)
             ,implode(";",$t->decline)
+            ,$t->details
+            ,implode(";",$t->references)
           ];
           fputcsv($csv,$data);
         }

@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields=['family','scientificName','use','resource'];
+$fields=['family','scientificName','use','resource','details','references'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
@@ -11,7 +11,14 @@ foreach($all->rows as $row) {
     if(isset($d->uses) && is_array($d->uses)) {
       foreach($d->uses as $t) {
         if(isset($t->use)) {
-          $data=[ $d->taxon->family,$d->taxon->scientificNameWithoutAuthorship, $t->use, $t->resource ];
+          $data=[
+             $d->taxon->family
+            ,$d->taxon->scientificNameWithoutAuthorship
+            ,$t->use
+            ,$t->resource 
+            ,$t->details
+            ,implode(";",$t->references)
+           ] ;
           fputcsv($csv,$data);
         }
       }

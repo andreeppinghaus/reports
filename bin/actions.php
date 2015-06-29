@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["family","scientificName","action","situation"];
+$fields = ["family","scientificName","action","situation",'details','references'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
@@ -16,6 +16,8 @@ foreach($all->rows as $row) {
             ,$d->taxon->scientificNameWithoutAuthorship
             ,$t->action
             ,$t->situation
+            ,$t->details
+            ,implode(";",$t->references)
           ];
           fputcsv($csv,$data);
         }
