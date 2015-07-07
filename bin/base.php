@@ -9,7 +9,7 @@ $base = $argv[1];
 
 if($base == 'livro_vermelho_2013') return;
 
-preg_match('/([a-z]+)\.php$/',$argv[0],$reg);
+preg_match('/([a-zA-Z0-9]+)\.php$/',$argv[0],$reg);
 $script = $reg[1];
 
 echo "Start $script",PHP_EOL;
@@ -26,7 +26,6 @@ if(!file_exists("all.json")) {
 }
 
 $all = json_decode(file_get_contents("all.json"));
-var_dump($all->rows[0]);
 $csv = fopen(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",'w');
 echo "Runing $base",PHP_EOL;
 
