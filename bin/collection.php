@@ -16,7 +16,11 @@ foreach($all->rows as $row) {
     }
 }
 
+$i=0;
+$t = count($all->rows);
 foreach($all->rows as $row) {
+    $i++;
+    echo $i." of ".$t."\n";
     $doc = $row->doc;
     if($doc->metadata->type=='occurrence') {
       $got =false;
