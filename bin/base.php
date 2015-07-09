@@ -25,7 +25,14 @@ if(!file_exists("all.json")) {
   passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
 }
 
-$all = json_decode(file_get_contents("all.json"));
+$all = new StdClass;
+$all->rows = array();
+$af = fopen("all.json",'r');
+fgets($af);
+while($l = fgets($af)){
+  $all->rows[] = json_decode(substr($l,0,-3));
+}
+#$all = json_decode(file_get_contents("all.json"));
 $csv = fopen(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",'w');
 echo "Runing $base",PHP_EOL;
 
