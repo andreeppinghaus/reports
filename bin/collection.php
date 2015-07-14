@@ -1,5 +1,6 @@
 <?php
 
+return;
 include 'base.php';
 
 $fields = ["occurrenceID","institutionCode","oldCollectionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","georeferenceVerificationStatus","acceptedNameUsage","valid","dateLastModified","created","creator","contributor"];
