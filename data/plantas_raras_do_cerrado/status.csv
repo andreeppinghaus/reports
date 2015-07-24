@@ -13,7 +13,6 @@ Verbenaceae,"Lippia rubella","(Moldenke) T.R.S.Silva & Salimena",done,comments,E
 Araliaceae,"Schefflera lucumoides","(Decne. & Planch. ex Marchal) Frodin & Fiaschi",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 ERIOCAULACEAE,"Comanthera pignalii",Echtern.,done,comments,CR,"B2ab(i,ii,iii,iv)"
 Fabaceae,"Albizia robsonii","V. Maioli e H.C. de Lima",done,open,EN,"B2ab(i,ii,iii,iv,v);E"
-RUBIACEAE,"Bradea borrerioides","J.A.Oliveira & Sobrado",done,review,EN,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v);D1"
 ERIOCAULACEAE,"Syngonanthus incurvifolius",M.T.C.Watan.,done,comments,CR,"A2ac;B2ab(i,ii,iii)"
 ERIOCAULACEAE,"Syngonanthus vittatus",M.T.C.Watan,done,comments,EN,"B2ab(i,ii,iii)"
 ACANTHACEAE,"Justicia clivalis",Wassh.,done,comments,NT,
@@ -29,7 +28,7 @@ AMARANTHACEAE,"Gomphrena marginata",Seub.,done,comments,EN,"B1ab(i,iii,iv)+2ab(i
 ANNONACEAE,"Duguetia rotundifolia",R.E.Fr.,done,comments,DD,
 APOCYNACEAE,"Barjonia grazielae","Fontella & Marquete",done,comments,EN,"B1ab(i,ii,iii)"
 APOCYNACEAE,"Blepharodon hatschbachii","Fontella & Marquete",done,comments,EN,"B1ab(i,ii,iii)"
-APOCYNACEAE,"Ditassa emmerichii",Fontella,done,open,DD,
+APOCYNACEAE,"Ditassa emmerichii",Fontella,done,comments,DD,
 APOCYNACEAE,"Ditassa insignis",Farinaccio,done,comments,EN,"B1ab(i,ii,iii)"
 APOCYNACEAE,"Ditassa obscura","(E.Fourn.) Farinaccio & T.U.P.Konno",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 APOCYNACEAE,"Mandevilla rubra","Markgr. ex M.F.Sales et al.",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
@@ -119,7 +118,7 @@ CARYOPHYLLACEAE,"Paronychia fasciculata",Chaudhri,done,comments,CR,"B2ab(i,ii,ii
 CELASTRACEAE,"Maytenus opaca",Reissek,done,comments,NT,
 CHRYSOBALANACEAE,"Hirtella juruensis",Pilg.,done,comments,EN,"B2ab(i,ii,iii,iv)"
 CHRYSOBALANACEAE,"Licania maguirei",Prance,done,comments,EN,"B2ab(i,ii,iii,iv)"
-COMMELINACEAE,"Tripogandra elata",D.R.Hunt,done,open,EN,"B2ab(i,ii,iii,iv,v)"
+COMMELINACEAE,"Tripogandra elata",D.R.Hunt,done,comments,EN,"B2ab(i,ii,iii,iv,v)"
 COMMELINACEAE,"Tripogandra warmingiana","(Seub.) Handlos",done,comments,VU,"A4c;B2ab(i,ii,iii,iv)"
 CONNARACEAE,"Rourea chrysomalla","Glaz. ex G.Schellenb.",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 CONNARACEAE,"Rourea prancei",Forero,done,comments,DD,
@@ -168,7 +167,7 @@ ERIOCAULACEAE,"Eriocaulon papillosum",Körn.,done,comments,DD,
 ERIOCAULACEAE,"Leiothrix cipoensis",Giul.,done,comments,DD,
 ERIOCAULACEAE,"Leiothrix crassifolia","(Bong.) Ruhland",done,comments,LC,
 ERIOCAULACEAE,"Leiothrix distichoclada",Herzog,done,comments,LC,
-ERIOCAULACEAE,"Leiothrix luxurians","(Körn.)  Ruhland",done,open,EN,B1ab(iii)+2ab(iii)
+ERIOCAULACEAE,"Leiothrix luxurians","(Körn.)  Ruhland",done,comments,EN,B1ab(iii)+2ab(iii)
 ERIOCAULACEAE,"Leiothrix rupestris",Giul.,done,comments,CR,B2ab(iii)
 ERIOCAULACEAE,"Leiothrix sclerophylla",Silveira,done,comments,VU,D2
 ERIOCAULACEAE,"Leiothrix sinuosa",Giul.,done,comments,VU,D2
@@ -233,7 +232,7 @@ FABACEAE,"Chamaecrista geraldii","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",don
 FABACEAE,"Chamaecrista gumminans","H.S.Irwin & Barneby",done,comments,DD,
 FABACEAE,"Chamaecrista hatschbachii","H.S.Irwin & Barneby",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 FABACEAE,"Chamaecrista itabiritoana","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",done,comments,CR,"B1ab(i,ii,iii)"
-FABACEAE,"Chamaecrista ixodes","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",open,comments,DD,
+FABACEAE,"Chamaecrista ixodes","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",done,comments,DD,
 FABACEAE,"Chamaecrista lavradioides","(Benth.) H.S.Irwin & Barneby",done,comments,VU,D2
 FABACEAE,"Chamaecrista leucopilis","(Glaz. ex Harms) H.S.Irwin & Barneby",done,comments,DD,
 FABACEAE,"Chamaecrista macedoi","(H.S.Irwin & Barneby) H.S.Irwin & Barneby",done,comments,EN,"B2ab(i,ii,iii)"
@@ -305,7 +304,7 @@ LAMIACEAE,"Hyptis loeseneriana",Pilg.,done,comments,DD,
 LAMIACEAE,"Hyptis nivea",Epling,done,comments,EN,"B1ab(i,ii,iii,v)+2ab(i,ii,iii,v)"
 LAMIACEAE,"Hyptis nubicola",Harley,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 LAMIACEAE,"Hyptis silvinae",Harley,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
-LAMIACEAE,"Hyptis tenuifolia",Epling,open,comments,NT,
+LAMIACEAE,"Hyptis tenuifolia",Epling,done,comments,NT,
 LENTIBULARIACEAE,"Utricularia huntii",P.Taylor,done,comments,DD,
 LOGANIACEAE,"Strychnos cerradoensis","Krukoff & Barneby",done,comments,DD,
 LORANTHACEAE,"Oryctina eubrachioides",Kuijt,done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
@@ -354,7 +353,7 @@ LYTHRACEAE,"Diplusodon sigillatus",Lourteig,done,comments,EN,"B1ab(i,ii,iii)+2ab
 LYTHRACEAE,"Diplusodon sordidus",Koehne,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii,v)"
 LYTHRACEAE,"Diplusodon thysanosepalus",Lourteig,done,comments,DD,
 LYTHRACEAE,"Diplusodon trigintus",T.B.Cavalc.,done,comments,EN,"B2ab(i,ii,iii)"
-MALPIGHIACEAE,"Acmanthera fernandesii",W.R.Anderson,done,open,DD,
+MALPIGHIACEAE,"Acmanthera fernandesii",W.R.Anderson,done,comments,DD,
 MALPIGHIACEAE,"Amorimia velutina",W.R.Anderson,done,comments,DD,
 MALPIGHIACEAE,"Banisteriopsis arborea",B.Gates,done,comments,VU,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MALPIGHIACEAE,"Banisteriopsis byssacea",B.Gates,done,comments,VU,"B1ab(i,ii,iii)"
@@ -374,7 +373,6 @@ MALPIGHIACEAE,"Stigmaphyllon jobertii",C.E.Anderson,done,comments,DD,
 MELASTOMATACEAE,"Cambessedesia pityrophylla","(Mart. ex DC.) A.B.Martins",done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Cambessedesia salviifolia","(Cham.) A.B.Martins",done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Cambessedesia semidecandra","A.St.-Hil. ex A.B.Martins",done,comments,VU,D2
-MELASTOMATACEAE,"Chaetostoma cupressimum","(D.Don) C.Koschnitzke & A.B.Martins",open,comments,DD,
 MELASTOMATACEAE,"Chaetostoma flavum","C.Koschnitzke & A.B.Martins",done,comments,VU,D2
 MELASTOMATACEAE,"Chaetostoma inerme",Naudin,done,comments,CR,B1ab(iii)+2ab(iii)
 MELASTOMATACEAE,"Chaetostoma selagineum","(Naudin) C.Koschnitzke & A.B.Martins",done,comments,LC,
@@ -388,7 +386,7 @@ MELASTOMATACEAE,"Lavoisiera firmula","Mart. & Schrank ex DC.",done,comments,EN,"
 MELASTOMATACEAE,"Lavoisiera harleyi",Wurdack,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 MELASTOMATACEAE,"Lavoisiera humilis",Naudin,done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Lavoisiera macrocarpa",Naudin,done,comments,NT,
-MELASTOMATACEAE,"Lavoisiera mucorifera","Mart. & Schrank ex DC.",done,open,NT,
+MELASTOMATACEAE,"Lavoisiera mucorifera","Mart. & Schrank ex DC.",done,comments,NT,
 MELASTOMATACEAE,"Lavoisiera punctata","Mart. & Schrank ex DC.",done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Lavoisiera senaei",Schwacke,done,comments,VU,D2
 MELASTOMATACEAE,"Lavoisiera subulata",Triana,done,comments,VU,D2
@@ -404,7 +402,7 @@ MELASTOMATACEAE,"Microlicia noblickii","(Wurdack) A.B.Martins & Almeda",done,com
 MELASTOMATACEAE,"Microlicia oligochaeta",Wurdack,done,comments,EN,"B1ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Microlicia ordinata","(Wurdack) Almeda & A.B.Martins",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 MELASTOMATACEAE,"Microlicia petasensis",Wurdack,done,comments,VU,"B1ab(i,ii,iii)"
-MELASTOMATACEAE,"Microlicia pinheiroi",Wurdack,open,comments,EN,"B2ab(i,ii,iii,iv)"
+MELASTOMATACEAE,"Microlicia pinheiroi",Wurdack,done,comments,EN,"B2ab(i,ii,iii,iv)"
 MELASTOMATACEAE,"Microlicia scoparia","(A.St.-Hil.) DC.",done,comments,NT,
 MELASTOMATACEAE,"Microlicia sincorensis","(DC.) Mart.",done,comments,VU,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 MELASTOMATACEAE,"Microlicia subaequalis",Wurdack,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
@@ -563,14 +561,14 @@ VELLOZIACEAE,"Vellozia costata","L.B.Sm. & Ayensu",done,comments,DD,
 VELLOZIACEAE,"Vellozia crinita","Goethart & Henrard",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia exilis","Goethart & Henrard",done,comments,EN,
 VELLOZIACEAE,"Vellozia graomogolensis",L.B.Sm.,done,comments,DD,
-VELLOZIACEAE,"Vellozia luteola","Mello-Silva & N.L.Menezes",done,open,EN,"B2ab(i,ii,iii)"
+VELLOZIACEAE,"Vellozia luteola","Mello-Silva & N.L.Menezes",done,comments,EN,"B2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia maxillarioides",L.B.Sm.,done,comments,EN,"A2c;B1ab(i,ii,iii)+2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia prolifera",Mello-Silva,done,comments,CR,"B2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia sellowii",Seub.,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia spiralis",L.B.Sm.,done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 VELLOZIACEAE,"Vellozia tillandsioides",Mello-Silva,done,comments,CR,"B1ab(i,iii)"
 VELLOZIACEAE,"Vellozia torquata","L.B.Sm. & Ayensu",done,comments,DD,
-VERBENACEAE,"Bouchea chascanoides",Moldenke,done,open,DD,
+VERBENACEAE,"Bouchea chascanoides",Moldenke,done,comments,DD,
 VERBENACEAE,"Bouchea fluminensis","(Vell.) Moldenke",done,comments,LC,
 VERBENACEAE,"Lippia ciliata",Salimena,done,comments,DD,
 VERBENACEAE,"Lippia duartei",Moldenke,done,comments,CR,"B1ab(i,ii,iii)"
@@ -611,6 +609,8 @@ XYRIDACEAE,"Xyris veruina",Malme,done,comments,EN,"B1ab(i,ii,iii,v)"
 XYRIDACEAE,"Xyris vestita",Malme,done,comments,VU,"B2ab(i,iii,v)"
 XYRIDACEAE,"Xyris villosicarinata","Kral & Wand.",done,comments,DD,
 ERIOCAULACEAE,"Leiothrix fulgida var. milho-verdensis","(Silveira) Giul.",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+,,,open,comments,DD,
 ,,,done,open,LC,
+,,,,comments,EN,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v);D1"
 ,,,open,,,
 ,,,open,,,

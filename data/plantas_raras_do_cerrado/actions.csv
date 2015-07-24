@@ -1,309 +1,317 @@
-family,scientificName,action,situation
-Fabaceae,"Albizia robsonii","1.1 Site/area protection","on going"
-Fabaceae,"Albizia robsonii","3.4 Ex-situ conservation",needed
-RUBIACEAE,"Bradea borrerioides","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Syngonanthus incurvifolius","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Syngonanthus incurvifolius","3.4 Ex-situ conservation",needed
-ERIOCAULACEAE,"Syngonanthus incurvifolius","4.3 Awareness & communications",needed
-ERIOCAULACEAE,"Syngonanthus vittatus","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Syngonanthus vittatus","3.4 Ex-situ conservation",needed
-ERIOCAULACEAE,"Syngonanthus vittatus","4.3 Awareness & communications",needed
-CYPERACEAE,"Abildgaardia papillosa","1.1 Site/area protection","on going"
-CYPERACEAE,"Abildgaardia papillosa","4 Education & awareness","on going"
-MALPIGHIACEAE,"Acmanthera fernandesii","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus aggregatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Actinocephalus callophyllus","1.1 Site/area protection",
-ERIOCAULACEAE,"Actinocephalus compactus","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus coutoensis","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus deflexus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Actinocephalus diffusus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Actinocephalus falcifolius","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus fimbriatus","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus glabrescens","1.1 Site/area protection",
-ERIOCAULACEAE,"Actinocephalus graminifolius","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Actinocephalus herzogii","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Actinocephalus nodifer","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Actinocephalus robustus","1.1 Site/area protection",
-FABACEAE,"Aeschynomene simplicifolia","1.1 Site/area protection","on going"
-ALSTROEMERIACEAE,"Alstroemeria chapadensis","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Amorimia velutina","1.1 Site/area protection",needed
-POACEAE,"Andropogon campestris","1.1 Site/area protection","on going"
-PLANTAGINACEAE,"Angelonia pratensis","1.1 Site/area protection","on going"
-ARACEAE,"Anthurium megapetiolatum","1.1 Site/area protection","on going"
-POLYGALACEAE,"Asemeia pohliana","1.1 Site/area protection",
-POACEAE,"Axonopus aureus","1.1 Site/area protection","on going"
-POACEAE,"Axonopus grandifolius","1.1 Site/area protection",needed
-MALPIGHIACEAE,"Banisteriopsis arborea","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Banisteriopsis byssacea","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Barbacenia blackii","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Barbacenia fulva","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Barbacenia glabra","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Barbacenia lymansmithii","1.1 Site/area protection","on going"
-FABACEAE,"Bauhinia candelabriformis","1.1 Site/area protection","on going"
-FABACEAE,"Bauhinia malacotrichoides","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria amapaensis","1.1 Site/area protection",
-RUBIACEAE,"Borreria burchellii","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria gracillima","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria guimaraesensis","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria paulista","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria rosmarinifolia","1.1 Site/area protection","on going"
-RUBIACEAE,"Borreria tocantinsiana","1.1 Site/area protection",needed
-VERBENACEAE,"Bouchea chascanoides","1.1 Site/area protection","on going"
-SOLANACEAE,"Brunfelsia rupestris","1.1 Site/area protection","on going"
-SCROPHULARIACEAE,"Buddleja longiflora","1.1 Site/area protection","on going"
-SCROPHULARIACEAE,"Buddleja speciosissima","1.1 Site/area protection","on going"
-CYPERACEAE,"Bulbostylis lombardii","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Byrsonima cordifolia","1.1 Site/area protection",needed
-MALPIGHIACEAE,"Byrsonima hatschbachii","1.1 Site/area protection","on going"
-VOCHYSIACEAE,"Callisthene erythroclada","1 Land/water protection","on going"
-MELASTOMATACEAE,"Cambessedesia cambessedesioides","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Cambessedesia salviifolia","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Cambessedesia semidecandra","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Chaetostoma inerme","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Chaetostoma selagineum","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Chaetostoma stenocladon","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista altoana","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista ericifolia","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista gymnothyrsa","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista leucopilis","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista pachyclada","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista phyllostachya","1.1 Site/area protection","on going"
-FABACEAE,"Chamaecrista psoraleopsis","1.1 Site/area protection","on going"
-ASTERACEAE,"Chrysolaena dusenii","1.1 Site/area protection","on going"
-CACTACEAE,"Cipocereus pleurocarpus","5.1.1 International level","on going"
-CACTACEAE,"Cipocereus pleurocarpus","2.1 Site/area management",needed
-ERIOCAULACEAE,"Comanthera cipoensis","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Comanthera circinnata","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Comanthera floccosa","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Comanthera hatschbachii","1.1 Site/area protection","on going"
-FABACEAE,"Crotalaria rufipila","1.1 Site/area protection","on going"
-EUPHORBIACEAE,"Croton arlineae","1 Land/water protection","on going"
-CYPERACEAE,"Cryptangium humile","1.1 Site/area protection","on going"
-CYPERACEAE,"Cryptangium polyphyllum","1.1 Site/area protection","on going"
-LYTHRACEAE,"Cuphea cunninghamiifolia","1.1 Site/area protection","on going"
-LYTHRACEAE,"Cuphea disperma","1.1 Site/area protection","on going"
-LYTHRACEAE,"Cuphea glareosa","1.1 Site/area protection","on going"
-LYTHRACEAE,"Cuphea sclerophylla","1.1 Site/area protection","on going"
-CYPERACEAE,"Cyperus almensis","1.1 Site/area protection","on going"
-FABACEAE,"Desmodium glabrescens","2.1 Site/area management","on going"
-FABACEAE,"Desmodium juruenense","1.1 Site/area protection","on going"
-POACEAE,"Dichanthelium sendulskyii","1.1 Site/area protection","on going"
-POACEAE,"Digitaria pampinosa","1.1 Site/area protection","on going"
-POACEAE,"Digitaria pampinosa","5.1.1 International level","on going"
-POACEAE,"Digitaria pampinosa","1.1 Site/area protection","on going"
-EBENACEAE,"Diospyros mexiae","1.1 Site/area protection",needed
-LYTHRACEAE,"Diplusodon adpressipilus","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon alatus","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon argenteus","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon bradei","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon canastrensis","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon leucocalycinus","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon nigricans","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon parvifolius","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon rupestris","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon sigillatus","1.1 Site/area protection","on going"
-LYTHRACEAE,"Diplusodon sordidus","1.1 Site/area protection","on going"
-APOCYNACEAE,"Ditassa insignis","1.1 Site/area protection","on going"
-APOCYNACEAE,"Ditassa obscura","1.1 Site/area protection","on going"
-BROMELIACEAE,"Dyckia bracteata","1.1 Site/area protection","on going"
-BROMELIACEAE,"Dyckia mello-barretoi","1.1 Site/area protection","on going"
-CYPERACEAE,"Eleocharis loefgreniana","1.1 Site/area protection","on going"
-CYPERACEAE,"Eleocharis morroi","1.1 Site/area protection","on going"
-CYPERACEAE,"Eleocharis olivaceonux","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Eriocaulon aquatile","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Eriocaulon burchellii","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Eriocaulon cipoense","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Eriocaulon griseum","1.1 Site/area protection","on going"
-LAMIACEAE,"Eriope sincorana","1.1 Site/area protection","on going"
-CONVOLVULACEAE,"Evolvulus chapadensis","1.1 Site/area protection","on going"
-MORACEAE,"Ficus carautana","1.1 Site/area protection","on going"
-RUBIACEAE,"Galianthe macedoi","1.1 Site/area protection","on going"
-AMARANTHACEAE,"Gomphrena hermogenesii","1.1 Site/area protection","on going"
-ORCHIDACEAE,"Habenaria meeana","1.1 Site/area protection","on going"
-ORCHIDACEAE,"Habenaria pseudohamata","1.1 Site/area protection","on going"
-ORCHIDACEAE,"Hadrolaelia praestans","3.4 Ex-situ conservation","on going"
-ORCHIDACEAE,"Hadrolaelia praestans","1.1 Site/area protection","on going"
-ORCHIDACEAE,"Hoffmannseggella pendula","1.1 Site/area protection","on going"
-AQUIFOLIACEAE,"Ilex mucugensis","5.1.1 International level","on going"
-AQUIFOLIACEAE,"Ilex mucugensis","1.1 Site/area protection","on going"
-BIGNONIACEAE,"Jacaranda racemosa","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Janusia christianeae","1.1 Site/area protection",needed
-ACANTHACEAE,"Justicia clivalis","1.1 Site/area protection","on going"
-CALOPHYLLACEAE,"Kielmeyera juruensis","1.1 Site/area protection","on going"
-CALOPHYLLACEAE,"Kielmeyera trichophora","1.1 Site/area protection","on going"
-CYPERACEAE,"Lagenocarpus adamantinus","1.1 Site/area protection","on going"
-CUNONIACEAE,"Lamanonia brasiliensis","1.1 Site/area protection","on going"
-VERBENACEAE,"Lantana gracilis","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Lavoisiera caryophyllea","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Lavoisiera harleyi","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Lavoisiera macrocarpa","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Lavoisiera mucorifera","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Lavoisiera subulata","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix cipoensis","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix crassifolia","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix distichoclada","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix luxurians","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix rupestris","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix sclerophylla","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix sinuosa","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Leiothrix spiralis","1.1 Site/area protection","on going"
-ORCHIDACEAE,"Leptotes vellozicola","1.1 Site/area protection",needed
-ASTERACEAE,"Lessingianthus caiapoensis","1.1 Site/area protection","on going"
-BALANOPHORACEAE,"Lophophytum rizzoi","1.1 Site/area protection","on going"
-OCHNACEAE,"Luxemburgia ciliatibracteata","1.1 Site/area protection","on going"
-OCHNACEAE,"Luxemburgia damazioana","1.1 Site/area protection",needed
-MONIMIACEAE,"Macropeplus schwackeanus","1.1 Site/area protection",needed
-MONIMIACEAE,"Macropeplus schwackeanus","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Mascagnia aptera","1.1 Site/area protection",needed
-MELASTOMATACEAE,"Microlicia crebropunctata","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia giuliettiana","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia mucugensis","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia noblickii","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia oligochaeta","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia scoparia","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Microlicia suborbicularifolia","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa decorticans","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa lepidophora","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa pyrenea","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa setosissima","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa splendida","1.1 Site/area protection","on going"
-FABACEAE,"Mimosa ulbrichiana","1.2 Resource & habitat protection","on going"
-FABACEAE,"Mimosa ulei","1.1 Site/area protection","on going"
-APOCYNACEAE,"Minaria campanuliflora","1.1 Site/area protection","on going"
-ASTERACEAE,"Minasia cabralensis","1.1 Site/area protection","on going"
-RUBIACEAE,"Mitracarpus pusillus","1.1 Site/area protection","on going"
-APOCYNACEAE,"Nephradenia filipes","1.1 Site/area protection","on going"
-BROMELIACEAE,"Orthophytum mello-barretoi","1.1 Site/area protection","on going"
-BROMELIACEAE,"Orthophytum schulzianum","1.1 Site/area protection","on going"
-LORANTHACEAE,"Oryctina eubrachioides","1.1 Site/area protection","on going"
-POACEAE,"Otachyrium piligerum","1.1 Site/area protection","on going"
-OCHNACEAE,"Ouratea acicularis","1.1 Site/area protection","on going"
-OCHNACEAE,"Ouratea acicularis","5.1.2 National level","on going"
-OXALIDACEAE,"Oxalis veadeirosensis","1.1 Site/area protection","on going"
-APOCYNACEAE,"Oxypetalum habrogynum","1.1 Site/area protection","on going"
-APOCYNACEAE,"Oxypetalum helios","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus albo-tomentosus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus almasensis","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus anamariae","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus argenteus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus aureus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus barbiger","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus barbulatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus cinereus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus complanatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus contasensis","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus cordatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus erigeron","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus globulifer","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus harleyi","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus homomallus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus inopinatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus luetzelburgii","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus obtusifolius","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus pulvinatus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus revolutus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus senaeanus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus stannardii","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus stuetzelii","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus superbus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Paepalanthus urbanianus","1.1 Site/area protection","on going"
-GESNERIACEAE,"Paliavana plumerioides","1.1 Site/area protection","on going"
-GESNERIACEAE,"Paliavana plumerioides","3.4 Ex-situ conservation","on going"
-POACEAE,"Panicum nutabundum","1.1 Site/area protection","on going"
-CARYOPHYLLACEAE,"Paronychia fasciculata","1.1 Site/area protection","on going"
-POACEAE,"Paspalum brachytrichum","1.1 Site/area protection","on going"
-POACEAE,"Paspalum petrense","5.1.2 National level","on going"
-POACEAE,"Paspalum petrense","3.4 Ex-situ conservation","on going"
-POACEAE,"Paspalum petrense","1.1 Site/area protection","on going"
-PASSIFLORACEAE,"Passiflora hypoglauca","1.1 Site/area protection","on going"
-PASSIFLORACEAE,"Passiflora mucugeana","1.1 Site/area protection","on going"
-MALPIGHIACEAE,"Peixotoa anadenanthera","1.1 Site/area protection",needed
-MALPIGHIACEAE,"Peixotoa axillaris","1.1 Site/area protection",needed
-ARACEAE,"Philodendron cipoense","1.1 Site/area protection","on going"
-ARACEAE,"Philodendron cipoense","3.4 Ex-situ conservation","on going"
-ARACEAE,"Philodendron pachyphyllum","1.1 Site/area protection","on going"
-ARACEAE,"Philodendron rhizomatosum","1.1 Site/area protection","on going"
-ARACEAE,"Philodendron rhizomatosum","3.4 Ex-situ conservation","on going"
-SANTALACEAE,"Phoradendron anamariae","1.1 Site/area protection","on going"
-SANTALACEAE,"Phoradendron virens","1.1 Site/area protection","on going"
-TURNERACEAE,"Piriqueta emasensis","1.1 Site/area protection","on going"
-BROMELIACEAE,"Pitcairnia curvidens","1.1 Site/area protection","on going"
-ACANTHACEAE,"Poikilacanthus bahiensis","1.1 Site/area protection","on going"
-FABACEAE,"Poiretia bahiana","1.1 Site/area protection","on going"
-FABACEAE,"Poiretia marginata","1.1 Site/area protection","on going"
-FABACEAE,"Poiretia unifoliolata","1.1 Site/area protection",
-POLYGALACEAE,"Polygala apparicioi","1.1 Site/area protection","on going"
-POLYGALACEAE,"Polygala bevilacquai","1.1 Site/area protection",needed
-POLYGALACEAE,"Polygala grazielae","1.1 Site/area protection",needed
-POLYGALACEAE,"Polygala juncea","1.1 Site/area protection","on going"
-POLYGALACEAE,"Polygala malmeana","1.1 Site/area protection","on going"
-POLYGALACEAE,"Polygala patens","1.1 Site/area protection",needed
-POLYGALACEAE,"Polygala pseudocoriacea","1.1 Site/area protection",needed
-POLYGALACEAE,"Polygala suganumae","1.1 Site/area protection",needed
-POLYGALACEAE,"Polygala trifurcata","1.1 Site/area protection","on going"
-POLYGALACEAE,"Polygala vollii","1.1 Site/area protection","on going"
-GENTIANACEAE,"Prepusa montana","1.1 Site/area protection","on going"
-BURSERACEAE,"Protium dawsonii","1.1 Site/area protection","on going"
-MYRTACEAE,"Psidium firmum","1.1 Site/area protection","on going"
-RUBIACEAE,"Psyllocarpus schwackei","1.1 Site/area protection","on going"
-MELASTOMATACEAE,"Pterolepis rotundifolia","1.1 Site/area protection","on going"
-POACEAE,"Rheochloa scabrifolia","1.1 Site/area protection","on going"
-CACTACEAE,"Rhipsalis agudoensis","2.1 Site/area management",needed
-CYPERACEAE,"Rhynchospora enmanuelis","1.1 Site/area protection",needed
-CYPERACEAE,"Rhynchospora tenuis","1.1 Site/area protection","on going"
-CONNARACEAE,"Rourea tenuis","1.1 Site/area protection","on going"
-OCHNACEAE,"Sauvagesia lanceolata","1.1 Site/area protection","on going"
-OCHNACEAE,"Sauvagesia oliveirae","5.4.2 National level","on going"
-ARALIACEAE,"Schefflera botumirimensis","1.1 Site/area protection",needed
-ARALIACEAE,"Schefflera cephalantha","1.1 Site/area protection","on going"
-ARALIACEAE,"Schefflera fruticosa","1.1 Site/area protection","on going"
-GENTIANACEAE,"Schultesia irwiniana","1.1 Site/area protection",needed
-GENTIANACEAE,"Schultesia pachyphylla","1.1 Site/area protection","on going"
-GENTIANACEAE,"Schultesia sucreana","1.1 Site/area protection","on going"
-CYPERACEAE,"Scleria cuyabensis","1.1 Site/area protection","on going"
-VERBENACEAE,"Stachytarpheta froesii","1.1 Site/area protection","on going"
-VERBENACEAE,"Stachytarpheta integrifolia","2.1 Site/area management","on going"
-VERBENACEAE,"Stachytarpheta lacunosa","2.1 Site/area management",needed
-RUBIACEAE,"Staelia tocantinsiana","1.1 Site/area protection","on going"
-ACANTHACEAE,"Staurogyne minarum","1.1 Site/area protection","on going"
-ACANTHACEAE,"Stenandrium irwinii","1.1 Site/area protection","on going"
-ASTERACEAE,"Stenophalium heringeri","1.1 Site/area protection","on going"
-ASTERACEAE,"Stevia resinosa","1.1 Site/area protection","on going"
-LORANTHACEAE,"Struthanthus planaltinae","1.1 Site/area protection","on going"
-LORANTHACEAE,"Struthanthus pusillifolius","1.1 Site/area protection","on going"
-SYMPLOCACEAE,"Symplocos glaberrima","1.1 Site/area protection","on going"
-SYMPLOCACEAE,"Symplocos insolita","1.1 Site/area protection","on going"
-SYMPLOCACEAE,"Symplocos saxatilis","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Syngonanthus bracteosus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Syngonanthus hygrotrichus","1.1 Site/area protection","on going"
-ERIOCAULACEAE,"Syngonanthus latifolius","1.1 Site/area protection",needed
-BROMELIACEAE,"Tillandsia sprengeliana","1.1 Site/area protection","on going"
-COMMELINACEAE,"Tripogandra elata","3.4 Ex-situ conservation","on going"
-COMMELINACEAE,"Tripogandra warmingiana","1.1 Site/area protection","on going"
-TURNERACEAE,"Turnera cipoensis","1.1 Site/area protection","on going"
-TURNERACEAE,"Turnera ignota","1.1 Site/area protection","on going"
-TURNERACEAE,"Turnera luetzelburgii","1.1 Site/area protection","on going"
-TURNERACEAE,"Turnera pinifolia","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Vellozia crinita","5.1.2 National level","on going"
-VELLOZIACEAE,"Vellozia crinita","1.1 Site/area protection","on going"
-VELLOZIACEAE,"Vellozia spiralis","1.1 Site/area protection","on going"
-VOCHYSIACEAE,"Vochysia petraea","1.1 Site/area protection","on going"
-VOCHYSIACEAE,"Vochysia pygmaea","1.1 Site/area protection","on going"
-VOCHYSIACEAE,"Vochysia rotundifolia","1.1 Site/area protection","on going"
-ASTERACEAE,"Wedelia souzae","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris archeri","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris diaphanobracteata","1.1 Site/area protection",
-XYRIDACEAE,"Xyris goyazensis","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris jataiana","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris lanuginosa","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris mertensiana","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris obcordata","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris paradisiaca","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris picea","1.1 Site/area protection",needed
-XYRIDACEAE,"Xyris pranceana","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris rupicola","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris spectabilis","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris subsetigera","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris veruina","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris vestita","1.1 Site/area protection","on going"
-XYRIDACEAE,"Xyris villosicarinata","1.1 Site/area protection",needed
+family,scientificName,action,situation,details,references
+Fabaceae,"Albizia robsonii","1.1 Site/area protection","on going","Uma das coletas depositadas no RB é proveniente do município de Carapebus, que é em parte protegido pelo PARNA Jurubatiba (RB421163- M.G.Santos 353- RJ: Carapebus- 21/6/1995). No entanto apenas um indivíduo da espécie foi registrado não havendo maiores informações sobre o tamanho da su-população no local.",
+Fabaceae,"Albizia robsonii","3.4 Ex-situ conservation",needed,"Por conta da ameaça ao habitat natural de Albizia robsonii a conservação ex-situ da espécie se torna necessária, seja pela produção de material para pesquisas, armazenamento de germoplasma, ou produção de material pra re-introdução, restauração e manejo de habitat.
+",
+ERIOCAULACEAE,"Syngonanthus incurvifolius","1.1 Site/area protection",needed,"A espécie ocorre fora de unidade de conservação, mas próximo dos limites do Parque Nacional da Chapara dos Veadeiros (PNCV) (Watanabe et al. submetido). Seria importante intensificar as buscas na região para tentar encontrar sub-populações dentro do Parque (L. Echternacht com. pess.).","Watanabe, MTC, Echternacht, L, Hensold, N, Sano, PT, in prep. Two new and endangered species of Syngonanthus (Eriocaulaceae) from Chapada dos Veadeiros, Goiás, Brazil. Phytotaxa."
+ERIOCAULACEAE,"Syngonanthus incurvifolius","3.4 Ex-situ conservation",needed,"Visto que a espécie ocorre em uma área muito pequena, sob fortes pressões de degradação (Watanabe et al. submetido), seria importante desenvolver estratégias de cultivo ex sito, em jardin botânico ou instituições afins ou mesmo dentro do PNCV (L. Echternacht com. pess.). ","Watanabe, MTC, Echternacht, L, Hensold, N, Sano, PT, in prep. Two new and endangered species of Syngonanthus (Eriocaulaceae) from Chapada dos Veadeiros, Goiás, Brazil. Phytotaxa."
+ERIOCAULACEAE,"Syngonanthus incurvifolius","4.3 Awareness & communications",needed,"São desejadas ações de conscientização ambiental na região, a fim de informar aos habitantes locais e gestores sobre esta e outras espécies ameaçadas que ocorrem na região (L. Echternacht com. pess.).",
+ERIOCAULACEAE,"Syngonanthus vittatus","1.1 Site/area protection",needed,"A espécie ocorre fora de unidade de conservação, mas próximo dos limites do Parque Nacional da Chapara dos Veadeiros (PNCV) (Watanabe et al. submetido). Seria importante intensificar as buscas na região para tentar encontrar subpopulações dentro do Parque e/ou  aumentar os limites do Parque para incluir esta espécie em seu território (L. Echternacht com. pess.).
+","Watanabe, MTC, Echternacht, L, Hensold, N, Sano, PT, in prep. Two new and endangered species of Syngonanthus (Eriocaulaceae) from Chapada dos Veadeiros, Goiás, Brazil. Phytotaxa."
+ERIOCAULACEAE,"Syngonanthus vittatus","3.4 Ex-situ conservation",needed,"Visto que a espécie ocorre em uma área muito pequena, sob fortes pressões de degradação (Watanabe et al. submetido), seria importante desenvolver estratégias de cultivo ex situ, em Jardim Botânico, instituições afins ou mesmo dentro do PNCV (L. Echternacht com. pess.).","Watanabe, MTC, Echternacht, L, Hensold, N, Sano, PT, in prep. Two new and endangered species of Syngonanthus (Eriocaulaceae) from Chapada dos Veadeiros, Goiás, Brazil. Phytotaxa."
+ERIOCAULACEAE,"Syngonanthus vittatus","4.3 Awareness & communications",needed,"São desejadas ações de conscientização ambiental na região, a fim de informar aos habitantes locais e gestores sobre esta e outras espécies ameaçadas que ocorrem na região (L. Echternacht com. pess.).",
+CYPERACEAE,"Abildgaardia papillosa","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina. ",
+CYPERACEAE,"Abildgaardia papillosa","4 Education & awareness","on going","O governo do estado da Bahia, através da Diretoria de Educação Ambiental, vem apoiando ações de prevenção, combate e fiscalização de incêndios florestais na região da Chapada Diamantina e Oeste da Bahia no sentido de oferecer instrumentos de apoio pedagógico em oficinas com professores, agentes comunitários de saúde, brigadistas, entre outros profissionais que têm contato direto com as comunidades visando diminuir a ocorrência dos incêndios (Secretaria do Meio Ambiente da Bahia). Além disso, o IBAMA criou um setor especializado na prevenção e no combate a incêndios florestais, o PREVFOGO, que assumiu todas as atribuições correlatas ao combate ao fogo em Unidades de Conservação (MMA/ICMBio, 2007).","MMA/ICMBio. Plano de Manejo para o Parque Nacional da Chapada Diamantina – Versão Preliminar. Presente em: <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_chapada_diamantina.pdf>., 2007. Acessado em 03 set. 2013.;SECRETARIA DO MEIO AMBIENTE DA BAHIA. Educação ambiental no programa Bahia sem fogo. Disponível em: <http://www.meioambiente.ba.gov.br/conteudo.aspx?s=EAPBF&p=EDU_AMBI>. Acessado em 06 set. 2013."
+MALPIGHIACEAE,"Acmanthera fernandesii","1.1 Site/area protection",needed,"O município de Santa Filomena não possui dentro de seus limites nenhuma Unidade de Conservação, fazendo-se necessário a criação de áreas protegidas para garantir a perpetuação da biodiversidade nessa região (MMA/ICMbio, 2011).","MMA/ICMBio 2011. Atlas do Corredor Ecológico da região do Jalapão. Disponível em: < http://www.icmbio.gov.br/portal/images/stories/comunicacao/downloads/atlasjalapao.pdf> Acesso em 20 d novembro 2013."
+ERIOCAULACEAE,"Actinocephalus aggregatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Actinocephalus callophyllus","1.1 Site/area protection",,"A espécie ocorre no Parque Estadual do Pico do Itambé. ",
+ERIOCAULACEAE,"Actinocephalus compactus","1.1 Site/area protection",needed,"A espécie não se encontra em área protegida, sendo uma necessidade, visto sua única ocorrência descrita na Cadeia do Espinhaço, no município de Diamantina (J.A. Silva et al., 2008).",
+ERIOCAULACEAE,"Actinocephalus coutoensis","1.1 Site/area protection",needed,"A espécie não foi coletada no interior de Unidades de Conservação. Devido a ocorrência restrita e em locais atividades humanas intensas, o estabelecimento de uma Unidade de Conservação na região poderia ser uma importante ação para a conservação.",
+ERIOCAULACEAE,"Actinocephalus deflexus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Actinocephalus diffusus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Actinocephalus falcifolius","1.1 Site/area protection",needed,"A espécie não se encontra em áreas Unidades de Conservação.",
+ERIOCAULACEAE,"Actinocephalus fimbriatus","1.1 Site/area protection",needed,"A espécie é endêmica da região da Chapada do Couto, que não está contido em uma Unidades de Conservação (UC). A criação de uma UC é importante para a conservação desta espécie.
+",
+ERIOCAULACEAE,"Actinocephalus glabrescens","1.1 Site/area protection",,"A Cadeia do Espinhaço estende-se pelos estados de Minas Gerais e Bahia, havendo um mosaico de Unidades de Conservação espalhadas pela cadeia montanhosa. Porém, não é possível aferir sua ocorrência dentro de Unidade de Conservação pela falta de maiores dados.",
+ERIOCAULACEAE,"Actinocephalus graminifolius","1.1 Site/area protection","on going","A espécie ocorre na Serra do Cipó, localizada dentro do Parque Nacional da Serra do Cipó, MG. ",
+ERIOCAULACEAE,"Actinocephalus herzogii","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Actinocephalus nodifer","1.1 Site/area protection",needed,"A espécie é endêmica da região da Chapada do Couto, que não está contido em uma Unidades de Conservação.",
+ERIOCAULACEAE,"Actinocephalus robustus","1.1 Site/area protection",,"A espécie ocorre na Serra do Cipó, localizada dentro do Parque Nacional da Serra do Cipó, MG.",
+FABACEAE,"Aeschynomene simplicifolia","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (Queiroz et al., 2009).","QUEIROZ, L.P.;  CARDOSO, D.B.O.S.; CONCEIÇÃO; A. S.; SOUZA, E.R.; TOZZI, A.M.G., PÉREZ, A.P.F., SILVA, M.J.; SIMON, M.F.; MARSANO, V.F.; COSTA, J.A.S.; RODRIGUES,  W.A.; LIMA, L.C.P.L.;  BOCAGE, A. Leguminosae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. p. 212- 237."
+ALSTROEMERIACEAE,"Alstroemeria chapadensis","1.1 Site/area protection","on going","Presente em Unidade de Conservação, no Parque Nacional da Chapada dos Guimarães (ICMBio, 2009).","ICMBio. Plano de Manejo Parque Nacional da Chapada dos Guimarães. Ministério do Meio Ambeinte: Chapada dos Guimarães, MT, 2009. Pp. 1-234."
+MALPIGHIACEAE,"Amorimia velutina","1.1 Site/area protection",needed,"A espécie foi registrada dentro de uma Unidade de Conservação de uso sustentável (APA da Serra do Sabonetal, MG); não existem registros deste táxon em Unidades de Conservação de proteção integral (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+POACEAE,"Andropogon campestris","1.1 Site/area protection","on going","A espécie ocorre na região da Serra da Lapa, podendo estar na área do Parque Nacional da Serra do Cipó (MMA/ICMBIO, 2009).","MMA/ICMBio. Plano de Manejo para o Parque Nacional da Serra do Cipó e Área de Proteção Ambiental Morro da Pedreira. Disponível em: <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/Encarte%201_c.pdf>. 2009. Acessado em: 03 set. 2013."
+PLANTAGINACEAE,"Angelonia pratensis","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional Grande Sertão Veredas, no estado de Minas Gerais (R.C. Mendonça 3335).",
+ARACEAE,"Anthurium megapetiolatum","1.1 Site/area protection","on going","Ocorre no Parque Nacional do Caparaó (M.C. Brügger 0327) e no  Parque Natural Municipal do Ribeirão do Campo  no Estado de Minas Gerais (R.C. Mota 1824). ",
+POLYGALACEAE,"Asemeia pohliana","1.1 Site/area protection",,"A espécie ocorre dentro dos limites do Parque Nacional da Serra da Canastra (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/> "
+POACEAE,"Axonopus aureus","1.1 Site/area protection","on going","A espécie possui registros de coleta  em Unidades de Conservação de diferentes estados como: Paraíba na Reserva Biológica Guaribas (L.P. Felix 4022); em Sergipe no Parque Nacional da Serra de Itabaiana (J.E. Nascimento-Júnior 93); em Goiás no Parque Estadual Serra dos Pirineus (Miranda et al. s.n., HUEG 1444), Reserva biológica da Serra Dourada (J.A. Rizzo 4349), Parque Nacional Chapada dos Veadeiros (F.C.A. Oliveira et al. 408); no Distrito Federal no Parque Nacional de Brasília (M. Barros et al. 2240) e na Reserva Ecológica do IBGE (M. Aparecida da Silva 6976); no Espírito Santo no Parque Estadual Paulo Cesar Vinha (O.J. Pereira 2336); em Minas Gerais no Parque Nacional Grande Sertão Veredas (R. Rodrigues-da-Silva et al. 377), Parque Estadual Ibitipoca (R. Dias-Melo 161), Parque Estadual Rola Moça (H.M. Longhi-Wagner9115), Reserva Ecológica do Panga (A.J.M. Guimarães s.n., CESJ 47943), RPPN Magnesita S/A (M.B. Roschel et al. s.n., OUPR; 15580), Reserva do Clube de Caça e Pesca Itroró (A.F. Amaral s.n., HUFU 27908) e Estação Ambiental Galheiros (E.H. Amorim 843); e em São Paulo no Parque do Estado (T. Sendulsky 1190), no Parque Estadual Furnas do Bom Jesus (A.T. Nakamura et al. s.n., ICN 137787) e Estação Ecológica de Itirapina (J.L.S. Tannus 590).",
+POACEAE,"Axonopus grandifolius","1.1 Site/area protection",needed,"Santana de Pirapama está em uma área entre o Parque Nacional da Serra do Cipó e a região de Diamantina (Zappi et al., 2010). Porém, não está incluída dentro de nenhuma área protegida, apesar de ser  estratégica sua proteção, já que está inserida dentro de um possível corredor ecológico de ligação entre a região central e a região Meridional da Serra do Espinhaço (Zappi et al., 2010). É extremamente alta a prioridade de preservação da região meridional da Cadeia do Espinhaço em Minas Gerais, com base em fatores bióticos e abióticos, havendo necessidade de incluir essas áreas em um plano mais coordenado para a conservação da biodiversidade na região (Drummond et al., 2005 apud Zappi et al., 2010) ","ZAPPI, D.; BAENA, S.; MILLIKEN, W. Projeto Flora Toucan Cipó,  Santana de Pirapama - MG. Relatório e Mapeamento da Vegetação. 2010 "
+MALPIGHIACEAE,"Banisteriopsis arborea","1.1 Site/area protection","on going","Com base nos registros de coleta da espécie, suspeita-se que esta ocorra dentro dos limites das seguintes Unidades de Conservação ao longo da Cadeia do Espinhaço em Minas Gerais: Parque Estadual do Biribiri e Parque Nacional da Serra do Cipó (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+MALPIGHIACEAE,"Banisteriopsis byssacea","1.1 Site/area protection","on going","A espécie foi registrada dentro dos limites do Parque Nacional da Serra da Canastra, MG (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+VELLOZIACEAE,"Barbacenia blackii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra do Cipó (M. Pereira et al. 1046).",
+VELLOZIACEAE,"Barbacenia fulva","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Nacional da Serra da Canastra (R. Mello-Silva 1675).",
+VELLOZIACEAE,"Barbacenia glabra","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra da Canastra (Romero & Nakajima, 1999).","ROMERO, R.; NAKAJIMA, J.N. Espécies endêmicas do Parque Nacional da Serra da Canastra, Minas Gerais. Revista Brasileira de Botânica, v.22, n.2, pp.259-265, 1999."
+VELLOZIACEAE,"Barbacenia lymansmithii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra da Canastra (J.N. Nakajima et al. 2524).",
+FABACEAE,"Bauhinia candelabriformis","1.1 Site/area protection","on going","Ocorre Parque Nacional da Chapada dos Veadeiros (Vaz & Tozzi, 2003).","VAZ, A.M.S.F.; TOZZI, A.M.G.A.  Bauhinia ser. Cansenia (Leguminosae: Caesalpinioideae) no Brasil. Rodriguésia, v. 54, n. 83, p. 55-143, 2003."
+FABACEAE,"Bauhinia malacotrichoides","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Chapada dos Veadeiros (M.G.L. Wanderley 1770) e na Reserva Biológica da Serra Dourada (A.S.F. Vaz 1055).",
+RUBIACEAE,"Borreria amapaensis","1.1 Site/area protection",,"A espécie foi coletada em uma região que não é contemplada pelo o Corredor de Biodiversidade do Amapá, constituído por doze Unidades de Conservação (federais, estaduais e municipais) e cinco terras indígenas (Conservation). ","Conservation. Disponível em: <http://www.conservation.org.br/corredoramapa/txt.php?id=13&men=1&title=Corredor/UnidadesdeConserva%E7%E3o>. Acessado em: 11 set. 2013."
+RUBIACEAE,"Borreria burchellii","1.1 Site/area protection","on going","Parte da Serra Geral de Goiás está inserda na Área de Proteção Ambiental da Serra Geral de Goiás (APA Serra Geral), que serve como zona de amortecimento para outras duas Unidades de Conservação, localizados o Parque Estadual de Terra Ronca e Reserva Extrativista de Recanto das Araras de Terra Ronca (Governo do Estado de Goiás). ","GOVERNO DO ESTADO DE GOIÁS. Área de Proteção Ambiental da Serra Geral de Goiás (APA Serra Geral). Disponível em: <http://www.semarhtemplate.go.gov.br/conteudo/area-de-protecao-ambiental-da-serra-geral-de-goias-apa-serra-geral>. Acessado em 11 set. 2013."
+RUBIACEAE,"Borreria gracillima","1.1 Site/area protection","on going","A espécie é encontrada no Parque Nacional da Chapada dos Veadeiros. ",
+RUBIACEAE,"Borreria guimaraesensis","1.1 Site/area protection","on going","A espécie ocorre dentro do Parque Nacional da Chapada dos Guimarães. ",
+RUBIACEAE,"Borreria paulista","1.1 Site/area protection","on going","A espécie é descrita ocorrendo em áreas de Horto Florestal em São Paulo e no Parque Estadual do Guartelá, no estado do Paraná.",
+RUBIACEAE,"Borreria rosmarinifolia","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+RUBIACEAE,"Borreria tocantinsiana","1.1 Site/area protection",needed,"A espécie é endêmica do município de Conceição do Tocantins, não sendo registrada ocorrência em outros locais. O município não conta com nenhuma Unidade de Conservação, o que aumenta ainda mais a ameaça sobre a espécie em questão.",
+VERBENACEAE,"Bouchea chascanoides","1.1 Site/area protection","on going","O Parque Estadual de Grão Mogol está dentro da região de ocorrência da espécie (Fonseca & Lessa, 2010).","FONSECA, D. S. R.; LESSA, S.N. Um breve diagnóstico ambiental do parque estadual de grão mogol (MG) e seu contexto espacial. Caminhos de Geografia Uberlândia v. 11, n. 35 Set/2010 p. 260 - 274."
+SOLANACEAE,"Brunfelsia rupestris","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual do Rio Preto (L.L. Giacomin et al. 1133).",
+SCROPHULARIACEAE,"Buddleja longiflora","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Nacional do Caparaó (Souza et al., 2009).","NORMAN, E.M. Buddlejaceae. Fl. Neotrop. Monogr. 81: 1-225. 2000.;SOUZA,V.C.;  FERREIRA, H.D. ; GIULIETTI, A.M. Scrophulariaceae. In :Plantas raras do Brasil / organizadores Giulietti, A.M.; Rapini, A.; Andrade, M.J.G. et al – Belo Horizonte, MG : Conservação Internacional. 496 p. : il., fots. color., mapas; 26 cm. Co-editora: Universidade Estadual de Feira de Santana. ISBN: 978-85-98830-12-4. 2009"
+SCROPHULARIACEAE,"Buddleja speciosissima","1.1 Site/area protection","on going","A espécie ocorre nos campos de altitude do Parque Nacional do Itatiaia (Norman, 2000). ","ICMBIO. Parque Nacional do Itatiaia. Disponível em:<http://www.icmbio.gov.br/parnaitatiaia/>. Acessado em 21 de agosto.2013;NORMAN, E.M. Buddlejaceae. Fl. Neotrop. Monogr. 81: 1-225. 2000."
+CYPERACEAE,"Bulbostylis lombardii","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+MALPIGHIACEAE,"Byrsonima cordifolia","1.1 Site/area protection",needed,"A espécie não ocorre dentro dos limites de nenhuma Unidade de Conservação (CNCFlora, 2013).",
+MALPIGHIACEAE,"Byrsonima hatschbachii","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Nacional da Chapada dos Guimarães (MT), porém outras áreas de sua ocorrência não possuem nenhuma Unidade de Conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+VOCHYSIACEAE,"Callisthene erythroclada","1 Land/water protection","on going","A espécie ocorre no interior do Parque Nacional da Serra do Cipó, do Parque Nacional das Sempre-Vivas, do Parque Estadual do Rio Preto e do Parque Estadual da Serra Negra.",
+MELASTOMATACEAE,"Cambessedesia cambessedesioides","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Municipal de Mucugê (P.N. Oliveira 9).",
+MELASTOMATACEAE,"Cambessedesia salviifolia","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual do Rio Preto (N.F.O. Mota 1410).",
+MELASTOMATACEAE,"Cambessedesia semidecandra","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Nacional da Serra do Cipó (M. Pereira et al. s.n., BHCB 19648).",
+MELASTOMATACEAE,"Chaetostoma inerme","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Estadual do Ibitipoca (H.C. Souza s.n., BHCB 8845).",
+MELASTOMATACEAE,"Chaetostoma selagineum","1.1 Site/area protection","on going","Ocorre em unidades de conservação: RPPN Linda Serra dos Topázios (C.E.B. Proença et al. 1412) e Parque Estadual da Serra dos Pirineus (F. Almeda et al. 9471), no estado de Goiás.",
+MELASTOMATACEAE,"Chaetostoma stenocladon","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual dos Pirineus, no estado de Goiás (F. Almeda et al. 9529).",
+FABACEAE,"Chamaecrista altoana","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Chapada dos Veadeiros (Queiroz et al., 2009).","QUEIROZ, L.P.;  CARDOSO, D.B.O.S.; CONCEIÇÃO; A. S.; SOUZA, E.R.; TOZZI, A.M.G., PÉREZ, A.P.F., SILVA, M.J.; SIMON, M.F.; MARSANO, V.F.; COSTA, J.A.S.; RODRIGUES,  W.A.; LIMA, L.C.P.L.;  BOCAGE, A. Leguminosae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. p. 212- 237."
+FABACEAE,"Chamaecrista ericifolia","1.1 Site/area protection","on going","Coletada na Reserva da Companhia Vale do Rio Doce, no estado do Espírito Santo (M.A. Pinheiro- Ferreira 510).",
+FABACEAE,"Chamaecrista gymnothyrsa","1.1 Site/area protection","on going","Ocorre no Parque nacional da Chapada dos Veadeiros (Queiroz et al., 2009).","QUEIROZ, L.P.;  CARDOSO, D.B.O.S.; CONCEIÇÃO; A. S.; SOUZA, E.R.; TOZZI, A.M.G., PÉREZ, A.P.F., SILVA, M.J.; SIMON, M.F.; MARSANO, V.F.; COSTA, J.A.S.; RODRIGUES,  W.A.; LIMA, L.C.P.L.;  BOCAGE, A. Leguminosae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. p. 212- 237."
+FABACEAE,"Chamaecrista leucopilis","1.1 Site/area protection","on going","Ocorre no no Parque Nacional Chapada dos Veadeiros (Queiroz et al., 2009).","QUEIROZ, L.P.;  CARDOSO, D.B.O.S.; CONCEIÇÃO; A. S.; SOUZA, E.R.; TOZZI, A.M.G., PÉREZ, A.P.F., SILVA, M.J.; SIMON, M.F.; MARSANO, V.F.; COSTA, J.A.S.; RODRIGUES,  W.A.; LIMA, L.C.P.L.;  BOCAGE, A. Leguminosae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. p. 212- 237."
+FABACEAE,"Chamaecrista pachyclada","1.1 Site/area protection","on going","Ocorre no Parque Nacional de Brasília Distrito Federal (L.A. Dambrós 128).",
+FABACEAE,"Chamaecrista phyllostachya","1.1 Site/area protection","on going","Ocorre no Parque Estadual da Serra do Cabral, em Joaquim Felício, Minas Gerais (G. Hatschbach 77497).",
+FABACEAE,"Chamaecrista psoraleopsis","1.1 Site/area protection","on going","Ocorre no Parque Estadual da Serra de Caldas Novas (J.O.V. Iglesias et al. 105).",
+ASTERACEAE,"Chrysolaena dusenii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual do Guartelá, no estado do Paraná (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+CACTACEAE,"Cipocereus pleurocarpus","5.1.1 International level","on going","A espécie está listada como pouco preocupante pela IUCN, porque mesmo que ela tenha uma distribuição restrita, a espécie é abundante em seu habitat. Algumas subpopulações estão presentes em uma área protegida, contudo a perda de habitat continua sendo um fator de alerta (Santos, com. pess.; IUCN, 2013).","IUCN 2013. IUCN Red List of Threatened Species. Version 2013.2. <www.iucnredlist.org>. Acessado em 11 Dezembro 2013."
+CACTACEAE,"Cipocereus pleurocarpus","2.1 Site/area management",needed,"Necessidade de levantamento exato de populações dentro e fora de Unidades de Conservação (Santos, com. pess.).",
+ERIOCAULACEAE,"Comanthera cipoensis","1.1 Site/area protection","on going","A espécie ocorre na Serra do Cipó, localizada dentro do Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Comanthera circinnata","1.1 Site/area protection","on going","A espécie ocorre na Serra do Cipó, localizada dentro do Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Comanthera floccosa","1.1 Site/area protection",needed,"Necessidade de implantação de uma reserva na Serra do Açuruá, pelo endemismo da espécie nesta região e pelas pressões antrópicas existentes no local. ",
+ERIOCAULACEAE,"Comanthera hatschbachii","1.1 Site/area protection","on going","A espécie ocorre no município de Morro do Chapéu, que conta com o Parque Estadual de Morro do Chapéu (Lobão, 2006).",
+FABACEAE,"Crotalaria rufipila","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Serra do Cipó, em Minas Gerais (M. Pereira et al. 990).",
+EUPHORBIACEAE,"Croton arlineae","1 Land/water protection","on going","A espécie encontra-se na Área de Proteção Ambiental Serra de São José. Porém, esta categoria de Unidade de Conservação é pouco eficiente para garantir a eficácia de preservação desta espécie. ",
+CYPERACEAE,"Cryptangium humile","1.1 Site/area protection","on going","A espécie ocorre no Parque Estadual do Ibitipoca e no Parque Estadual da Serra do Cipó.",
+CYPERACEAE,"Cryptangium polyphyllum","1.1 Site/area protection","on going","O Pico do Tinguá, onde foram realizadas coletas da espécie, encontra-se na Reserva Biológica do Tinguá.",
+LYTHRACEAE,"Cuphea cunninghamiifolia","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros. ",
+LYTHRACEAE,"Cuphea disperma","1.1 Site/area protection","on going","A espécie ocorre na Chapada Diamantina e no Parque Nacional de Sete Cidades.",
+LYTHRACEAE,"Cuphea glareosa","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina (G. Almeida-Silva 110). ",
+LYTHRACEAE,"Cuphea sclerophylla","1.1 Site/area protection","on going","A espécie ocorre ne Reserva Biológica da Serra Dourada (J.A. Rizzo 10906). ",
+CYPERACEAE,"Cyperus almensis","1.1 Site/area protection","on going","A espécie ocorre na localidade de de Pico das Almas, localizada no Parque Parque Nacional da Chapada Diamantina (R.M. Harley 24501; J.G. Jardim 770). Ela ocorre também no município de Morro do Chapéu, que conta com o Parque Estadual de Morro do Chapéu.",
+FABACEAE,"Desmodium glabrescens","2.1 Site/area management","on going","Ocorre no Parque Nacional da Chapada dos Guimarães, no Mato Grosso (L.C.P. Lima 620).",
+FABACEAE,"Desmodium juruenense","1.1 Site/area protection","on going","Ocorre no Parque Nacional dos Campos Amazônicos, Manicoré, Amazonas (L.C.P. Lima 631).",
+POACEAE,"Dichanthelium sendulskyii","1.1 Site/area protection","on going","Dichanthelium sendulskyii encontra-se presente no Parque Nacional da Serra do Cipó (Zuloaga & Morrone, 1996).","ZULOAGA, F.O. ; MORRONE, O. New species of Paniceae (Poaceae: Panicoideae) from Brazil. Novon 6: 310-317. 1996."
+POACEAE,"Digitaria pampinosa","1.1 Site/area protection","on going","Presença de coleta em região do Parque Arqueológico da Serra de Santo Antônio.",
+POACEAE,"Digitaria pampinosa","5.1.1 International level","on going","A serra do Espinhaço foi considerada em 2005 a sétima Reserva da Biosfera Brasileira (Serra do Espinhaço, 2013).","Serra do Espinhaço. disponível em: <http://www.serradoespinhaco.com.br/serra-do-espinhaco>. Acessado em 16 de agosto. 2013"
+POACEAE,"Digitaria pampinosa","1.1 Site/area protection","on going","O Pico do Itacolomi se localiza na Serra do Espinhaço, dentro do Parque Estadual do Itacolomi (IEF-MG, 2014).","IEF-MG. Instituto Estadual de Florestas de Minas Gerais. Parque Estadual do Itacolomi. Disponível em: <http://www.ief.mg.gov.br/component/content/193?task=view>. Acesso em 7 jan. 2014"
+EBENACEAE,"Diospyros mexiae","1.1 Site/area protection",needed,"A espécie ocorre em localidades desprovidas de Unidades de Conservação, o que diminui sua proteção. ",
+LYTHRACEAE,"Diplusodon adpressipilus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (T.B. Cavalcanti 697).",
+LYTHRACEAE,"Diplusodon alatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (G. Hatschbach 54781).",
+LYTHRACEAE,"Diplusodon argenteus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (T.B. Cavalcanti 849).",
+LYTHRACEAE,"Diplusodon bradei","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra da Canastra (R. Romero 2509).",
+LYTHRACEAE,"Diplusodon canastrensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra da Canastra (R. Mello-Silva 1973).
+",
+LYTHRACEAE,"Diplusodon leucocalycinus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (S. R. Neto 605).",
+LYTHRACEAE,"Diplusodon nigricans","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (J.A. Rizzo 7374).",
+LYTHRACEAE,"Diplusodon parvifolius","1.1 Site/area protection","on going"," A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+LYTHRACEAE,"Diplusodon rupestris","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra da Canastra (Cavalcante & Noronha, 2009).","CAVALCANTE, T.B.; NORONHA, S.E. Lythraceae In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 496."
+LYTHRACEAE,"Diplusodon sigillatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (J.A. Rizzo 7785).",
+LYTHRACEAE,"Diplusodon sordidus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (T.B. Cavalcanti 662).",
+APOCYNACEAE,"Ditassa insignis","1.1 Site/area protection","on going","A espécie ocorre no interior do Parque Nacional da Serra da Canastra (Fontella-Pereira & Schwarz, 1981).","FONTELLA-PEREIRA, J. ;SCHWARZ, E. A. Estudos em Asclepiadaceae, 14. Novos sinônimos e uma nova combinadao. Bol. Mus. Bot. Munic. 50:1 - 14. 1981"
+APOCYNACEAE,"Ditassa obscura","1.1 Site/area protection","on going","Existem coletas indicando a presença da espécie no Parque Nacional da Serra da Canastra (M.A. Farinaccio et al. 516).",
+BROMELIACEAE,"Dyckia bracteata","1.1 Site/area protection","on going","A espécie ocorre no interior do Parque Nacional do Caparoá.",
+BROMELIACEAE,"Dyckia mello-barretoi","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó.",
+CYPERACEAE,"Eleocharis loefgreniana","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG, e na Estação Ecológica de Itirapina, SP.",
+CYPERACEAE,"Eleocharis morroi","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina e no município de Morro do Chapéu, que conta com o Parque Estadual de Morro do Chapéu.",
+CYPERACEAE,"Eleocharis olivaceonux","1.1 Site/area protection","on going","A espécie ocorre na localidade de de Pico das Almas, localizada no Parque Parque Nacional da Chapada Diamantina e também no município de Morro do Chapéu, que conta com o Parque Estadual de Morro do Chapéu (Lobão, 2006)","LOBÃO, J.S.B. Análise socioambiental no município de Morro do Chapéu-BA baseado em geotecnologias. Salvador, BA: Universidade Federal da Bahia, 2006."
+ERIOCAULACEAE,"Eriocaulon aquatile","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Estadual do Rio Preto, do Parque Nacional Sempre Vivas, do Parque Estadual do Morro do Chapéu e do Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Eriocaulon burchellii","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros e nos limites da RPPN Varanda da Serra (M.L. Fonseca 5336).",
+ERIOCAULACEAE,"Eriocaulon cipoense","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Eriocaulon griseum","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra das Confusões (G. Martinelli 16307).",
+LAMIACEAE,"Eriope sincorana","1.1 Site/area protection","on going","Existe registro de coleta da espécie dentro do Parque Nacional da Chapada Diamantina (A.A. Conceição 1214).",
+CONVOLVULACEAE,"Evolvulus chapadensis","1.1 Site/area protection","on going","A espécie ocorre no interior do Parque Nacional da Chapada dos Veadeiros.",
+MORACEAE,"Ficus carautana","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Estação Ecológica Taiamã, no estado de Mato Grosso (Romaniuc Neto et al., 2009).","ROMANIUC NETO, S.; CARAUTA, J.P.P.; VIANNA FILHO, M.D.M. et al. 2013. Moraceae in Lista de Espécies da Flora do Brasil. Jardim Botânico do Rio de Janeiro. (http://floradobrasil.jbrj.gov.br/jabot/floradobrasil/FB111309)"
+RUBIACEAE,"Galianthe macedoi","1.1 Site/area protection","on going","A espécie é encontrada no Parque Nacional de Brasília.",
+AMARANTHACEAE,"Gomphrena hermogenesii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: RPPN Cara Preta (Frank-de-Carvalho et al., 2010) e PARNA da Chapada dos Veadeiros (Siqueira, 1991).","JOSAFÁ CARLOS DE SIQUEIRA. O gênero Gomphrena L. (Amaranthaceae) no Brasil. Campinas, SP: Universidade Estadual de Campinas, 1991.; FANK-DE-CARVALHO, S.M.; MARCHIORETTO, M.S.; BÁO, S.N. Leaf anatomy, morphology and ecological aspects of Amaranthaceae species from Reserva Particular do Patrimônio Natural Cara Preta, in Alto Paraíso, GO, Brazil. Biota Neotrop. 10(4): http://www.biotaneotropica.org.br/v10n4/en/abstract?article+bn01310042010."
+ORCHIDACEAE,"Habenaria meeana","1.1 Site/area protection","on going","Ocorre em unidades de conservação: Parque Municipal de Mucugê, no Estado da Bahia (Azevedo, 2004) e Parque Estadual do Rio Preto, em Minas Gerais (BHCB; Batista, J.A.N. 2028).","CECÍLIA OLIVEIRA DE AZEVEDO. A família Orchidaceae no Parque Municipal de Mucugê, Bahia, Brasil. Universidade Estadual de Feira de Santana, Feira de Santana, Bahia. 2004."
+ORCHIDACEAE,"Habenaria pseudohamata","1.1 Site/area protection","on going","Ocorre em unidades de conservação: Parque Municipal de Mucugê, no Estado da Bahia (HUEFS; Lambert, S.M. 12), Parque Estadual do Rio Preto (BHCB; Viana, P.L.; Lopes, L.E. 2810), Parque Nacional das Sempre Vivas (BHCB; Almeida, T.E. et al. 973) e Parque Estadual da Serra Negra (BHCB; Batista, J.A.N. et al. 2035) em Minas Gerais.",
+ORCHIDACEAE,"Hadrolaelia praestans","3.4 Ex-situ conservation","on going","Cultivada no Herbário SP (SP 17186; Hoehne, F.C. s.n.).",
+ORCHIDACEAE,"Hadrolaelia praestans","1.1 Site/area protection","on going","Ocorre em unidade de conservação: Reserva biológica Augusto Ruschi (RB; Monteiro, D. 330) e Estação Biológica de Santa Lúcia (MBML; Kollmann, L. 8835), no Estado do Espírito Santo.",
+ORCHIDACEAE,"Hoffmannseggella pendula","1.1 Site/area protection","on going","Ocorre em unidade de conservação: Parque Estadual de Cachoeira do Campo (MG) (Van den Berg et al. In Plantas Raras do Brasil; Giulietti et al., 2009).","VAN DEN BERG, C.; BARROS, F.; SINGER, R.B.; AZEVEDO, C.O.; CHIRON, G.R.; SMIDT, E.C.; FORSTER, W.; FELIX, L.P.; FIGUEIRÊDO, G.R.G.; MONTEIRO, S.H.N. Orchidaceae. In: GIULIETTI, A.M.; RAPINI, A.; ANDRADE, M.J.G.; QUEIROZ, L.P.; SILVA, J.M.C. Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 299-309."
+AQUIFOLIACEAE,"Ilex mucugensis","5.1.1 International level","on going","Ilex mucugensis é conhecida a partir de única localidade e apresenta uma EOO estimada inferior a 5000 Km², podendo assim, ser considerada ""Em Perigo"", de acordo com o critério B1a, levando-se em conta os critérios adotados pela IUCN (2001) (Groppo, 2007). 
+
+","GROPPO, M. A new species of Ilex (Aquifoliaceae) from Espinhaço Range, Bahia, Brazil. Botanical Journal of the Linnean Society, 155: 153–156. 2007"
+AQUIFOLIACEAE,"Ilex mucugensis","1.1 Site/area protection","on going","Há registro da espécie no PARNA da Chapada Diamantina (Groppo, 2007). Entretanto, o Parque carece de recursos e organização para colocar seu plano de manejo em funcionamento e regular as atividades na Unidade (MMA/ICMBio, 2007).","GROPPO, M. A new species of Ilex (Aquifoliaceae) from Espinhaço Range, Bahia, Brazil. Botanical Journal of the Linnean Society, 155: 153–156. 2007;MMA/ICMBio. Plano de Manejo para o Parque Nacional da Chapada Diamantina – Versão Preliminar. Presente em: <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_chapada_diamantina.pdf>., 2007. Acessado em 03 set. 2013."
+BIGNONIACEAE,"Jacaranda racemosa","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Serra da Canastra (MG) (Santana et al., 2011).","SANTANA, O.A.; JÚNIOR, A.C.; GOMES, R.A.T.; COUTO JÚNIOR, A.F.; SOUZA, V.V.; OLIVEIRA, S.N.; FREITAS, L.F.; GUIMARÃES, R.F.; MARTINS, E.S. Inventário das espécies vegetais na Serra da Canastra, Parque Nacional da Serra da Canastra, Minas Gerais, Brasil. Espaço & Geografia, v. 14, n. 1, p. 53-77, 2011."
+MALPIGHIACEAE,"Janusia christianeae","1.1 Site/area protection",needed,"A espécie ocorre em uma das áreas mais degradadas do sertão baiano, e não encontra-se protegida por nenhuma categoria de Unidade de Conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+ACANTHACEAE,"Justicia clivalis","1.1 Site/area protection","on going","Ocorre no Monumento Natural do Morro da Pedreira (Morro do Urubu), em Brasília (M.R.V. Zanatta et al. 1339).",
+CALOPHYLLACEAE,"Kielmeyera juruensis","1.1 Site/area protection","on going","No município de Juruena há o Parque Nacional do Juruena, sob os cuidados do ICMBio. Atualmente, nesta área, é possível que haja maiores chances de a espécie ser encontrada (Trad, com. pess.)",
+CALOPHYLLACEAE,"Kielmeyera trichophora","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional das Emas (M.A. Batalha 2035).",
+CYPERACEAE,"Lagenocarpus adamantinus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+CUNONIACEAE,"Lamanonia brasiliensis","1.1 Site/area protection","on going","Ocorre na Reserva Ecológica do IBGE, Distrito Federal (E.P. Heringer 7616).",
+VERBENACEAE,"Lantana gracilis","1.1 Site/area protection","on going","A espécie foi coletada em Unidade de Conservação (Parque Nacional da Serra de Itabaiana) (T.V.P. Dantas 14).",
+MELASTOMATACEAE,"Lavoisiera caryophyllea","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra do Cipó (J.R. Pirani 11920).",
+MELASTOMATACEAE,"Lavoisiera harleyi","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Nacional da Chapada Diamantina (A.A. Conceição 1308).",
+MELASTOMATACEAE,"Lavoisiera macrocarpa","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra do Cipó (F. Almeda 8579).",
+MELASTOMATACEAE,"Lavoisiera mucorifera","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Estadual do Biribiri (R. Romero 8341) e Parque Estadual do Rio Preto (J.A. Lombardi 3782).",
+MELASTOMATACEAE,"Lavoisiera subulata","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Parque Nacional da Serra do Cipó (M. Pereira s.n., BHCB 19650).",
+ERIOCAULACEAE,"Leiothrix cipoensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Leiothrix crassifolia","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Leiothrix distichoclada","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Leiothrix luxurians","1.1 Site/area protection","on going","A espécie ocorre no Parque Estadual da Serra do Cipó (H.S. Irwin s.n., CESJ 3516).",
+ERIOCAULACEAE,"Leiothrix rupestris","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó.",
+ERIOCAULACEAE,"Leiothrix sclerophylla","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Leiothrix sinuosa","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Leiothrix spiralis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ORCHIDACEAE,"Leptotes vellozicola","1.1 Site/area protection",needed,"A única população conhecida de L. vellozicola não está em área protegida (Van den Berg et al., 2006).","VAN DEN BERG, C.; SMIDT, E.C.; MARÇAL, S. Leptotes vellozicola: a new species of Orchidaceae from Bahia, Brazil. Neodiversity, v.1, pp.1-5, 2006."
+ASTERACEAE,"Lessingianthus caiapoensis","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional das Emas (Nakajima et al., 2009).",
+BALANOPHORACEAE,"Lophophytum rizzoi","1.1 Site/area protection","on going","A espécie ocorre nas proximidades do Parque Estadual Serra dos Pirineus e do Parque Nacional da Chapada dos Veadeiros.",
+OCHNACEAE,"Luxemburgia ciliatibracteata","1.1 Site/area protection","on going","A espécie foi coletada dentro do Parque Nacional da Serra do Cipó (L.S. Kinoshita et al. 385).",
+OCHNACEAE,"Luxemburgia damazioana","1.1 Site/area protection",needed,"A espécie foi coletada dentro do Parque Nacional da Serra do Cipó (L.S. Kinoshita et al. 225).",
+MONIMIACEAE,"Macropeplus schwackeanus","1.1 Site/area protection",needed,"Existe uma proposta de criação do Parque Nacional da Serra do Gandarela (MMA/ICMBio, 2010).","MMA/ICMBIO. Proposta de criação do Parque Nacional  da Serra do Gandarela. Presente em: <http://www.icmbio.gov.br/portal/images/stories/o-que fazemos/Estudo%20que%20originou%20a%20proposta.pdf>, 2010. Acessado em 12 nov. 2013."
+MONIMIACEAE,"Macropeplus schwackeanus","1.1 Site/area protection","on going","Existem registros de coleta da espécie dentro do Parque Estadual do Ibitipoca (P. Andrade 976).",
+MALPIGHIACEAE,"Mascagnia aptera","1.1 Site/area protection",needed,"A espécie ocorre nas proximidades do Parque Nacional da Chapada dos Guimarães, entretando a única população conhecida encontra-se nas margens de estrada, fora dos limites da mesma (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+MELASTOMATACEAE,"Microlicia crebropunctata","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Chapada dos Veadeiros (R.A. Drummond 346).",
+MELASTOMATACEAE,"Microlicia giuliettiana","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Chapada Diamantina (G. Almeida-Silva 182).",
+MELASTOMATACEAE,"Microlicia mucugensis","1.1 Site/area protection","on going","Ocorre em unidade de conservação: Parque Municipal de Mucugê (P.N. Oliveira 3).",
+MELASTOMATACEAE,"Microlicia noblickii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Chapada Diamantina (G. Almeida-Silva 283).",
+MELASTOMATACEAE,"Microlicia oligochaeta","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Chapada Diamantina (A. Moraes 15).",
+MELASTOMATACEAE,"Microlicia scoparia","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Serra da Canastra (Romero & Martins, 2002).","ROMERO, R.; MARTINS, A.B. Melastomataceae do Parque Nacional da Serra da Canastra, Minas Gerais, Brasil. Revista Brasileira de Botância, v.25, n.1, pp.19-24, 2002."
+MELASTOMATACEAE,"Microlicia suborbicularifolia","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: RPPN do Caraça (R. Romero et al. 5305).",
+FABACEAE,"Mimosa decorticans","1.1 Site/area protection","on going","Ocorre na Reserva Particular do Patrimônio Natural Linda Serra dos Topázio, em Goiás (L.M. Borges 537).",
+FABACEAE,"Mimosa lepidophora","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Serra das Confusões (G. Martinelli 16360) e Parque Nacional Serra da Capivara (J.R. Lemos 43AQ), Piauí. ",
+FABACEAE,"Mimosa pyrenea","1.1 Site/area protection","on going","Ocorre no Jardim Botânico de Brasília, na Pousada e Santuário Ecológico Terraviva (C.E.B. Proença et al. 3431) e Parque Estadual dos Pirineus, Goiás (R.F. Monteiro 115).",
+FABACEAE,"Mimosa setosissima","1.1 Site/area protection","on going","Ocorre no Parque Estadual da Serra dos Pireneus, Cocalzinho, Goiás (P.G.  Delprete et al. 9739). ",
+FABACEAE,"Mimosa splendida","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Chapada dos Veadeiros, em Cavalcante, Goiás (G. Martinelli 16451).",
+FABACEAE,"Mimosa ulbrichiana","1.2 Resource & habitat protection","on going","Ocorre na Área de Proteção Ambiental de Itaparica (M.C. Ferreira 1268).",
+FABACEAE,"Mimosa ulei","1.1 Site/area protection","on going","Ocorre no Parque Nacional Chapada dos Veadeiros (M.F. Simon s.n., UB 7083; R.C. Mendonça s.n., RB 482183).",
+APOCYNACEAE,"Minaria campanuliflora","1.1 Site/area protection","on going","Espécie ocorre no Parque Estadual do Rio Preto (P.L. Ribeiro 409). ",
+ASTERACEAE,"Minasia cabralensis","1.1 Site/area protection","on going","A espécie possui registros dentro dos limites do Parque Estadual da Serra do Cabral e no Parque Nacional das Sempre Vivas, ambos em Minas Gerais (CNCFlora, 2013).","CNCFlora - Base de Dados do Centro Nacional de Conservação da Flora <www.cncflora.jbrj.gov.,br>. acesso em: 12.11.2013"
+RUBIACEAE,"Mitracarpus pusillus","1.1 Site/area protection","on going","A região de descrição de ocorrência da espécie conta com o Parque Estadual da Serra do Cabral (Universidade Federal de Minas Gerais, 2010). ",
+APOCYNACEAE,"Nephradenia filipes","1.1 Site/area protection","on going","Espécie ocorre no Parque Nacional da Chapada dos Guimarães (MMA/ICMBIO, 2009).","MMA/ICMBio. Plano de Manejo do Parque Nacional da Chapada dos Guimarães. Brasília, DF. p. Presente em: <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_chapada-dos-guimaraes.pdf>., 2009."
+BROMELIACEAE,"Orthophytum mello-barretoi","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó.",
+BROMELIACEAE,"Orthophytum schulzianum","1.1 Site/area protection","on going","A espécie ocorre no Parque Estadual do Rio Preto.",
+LORANTHACEAE,"Oryctina eubrachioides","1.1 Site/area protection","on going","A espécie apresenta ocorrências na área do Parque Nacional Cavernas do Peruaçu.",
+POACEAE,"Otachyrium piligerum","1.1 Site/area protection","on going","Espécie encontrada no Parque Nacional Grande Sertão Veredas (R. Rodrigues-da-Silva et al. 157) que apresenta Plano de Manejo (MMA/IBAMA/FUNATURA, 2003).","MMA/IBAMA/FUNATURA. Parque Nacional Grande Sertão Veredas. Disponível em:<http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_grande_sertao_veredas.pdf>. Acessado em 12 de agosto de 2013. 2003"
+OCHNACEAE,"Ouratea acicularis","1.1 Site/area protection","on going","A espécie ocorre na Estação Ecológica da Serra Geral do Tocantins (D. Barbosa-Silva 38) e no Parque Estadual do Jalapão (T.B. Cavalcanti 2757).",
+OCHNACEAE,"Ouratea acicularis","5.1.2 National level","on going","Espécie categorizada na obra original como ""Vulnerável"" (VU) (Yamamoto et al., 2008).","YAMAMOTO, K ; CHACON, RG ; PROENCA, C. et al. A distinctive new species of Ouratea (Ochnaceae) from the Jalapao Region, Tocantins, Brazil. Novon, Vol.18(3), pp.397-404 , 2008."
+OXALIDACEAE,"Oxalis veadeirosensis","1.1 Site/area protection","on going","Encontrada em Unidade de Conservação: Parque Nacional da Chapada dos Veadeiros (T.B. Cavalcanti 692).",
+APOCYNACEAE,"Oxypetalum habrogynum","1.1 Site/area protection","on going","A espécie ocorre no interior do Parque Nacional da Serra da Canastra.","MMA/IBAMA- Plano de Manejo do Parque Nacional da Serra da Canastra. Ministério do Meio ambiente/Instituto Brasileiro do Meio Ambiente e dos Recursos Renováveis, disponível em <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/PM_PNSC_Resumo_Executivo.PDF> acessado em 25 de agosto de 2013. 2005"
+APOCYNACEAE,"Oxypetalum helios","1.1 Site/area protection","on going","A espécie ocorre no interior do Parque Nacional da Serra da Canastra.","MMA/IBAMA- Plano de Manejo do Parque Nacional da Serra da Canastra. Ministério do Meio ambiente/Instituto Brasileiro do Meio Ambiente e dos Recursos Renováveis, disponível em <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/PM_PNSC_Resumo_Executivo.PDF> acessado em 25 de agosto de 2013. 2005"
+ERIOCAULACEAE,"Paepalanthus albo-tomentosus","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus almasensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus anamariae","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus argenteus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus aureus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus barbiger","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus barbulatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus cinereus","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus complanatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus contasensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus cordatus","1.1 Site/area protection","on going","Parque Nacional da Chapada dos Veadeiros.",
+ERIOCAULACEAE,"Paepalanthus erigeron","1.1 Site/area protection","on going","A espécie ocorre no Parque Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus globulifer","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus harleyi","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus homomallus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus inopinatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG (Giulietti et al., 2009).",
+ERIOCAULACEAE,"Paepalanthus luetzelburgii","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus obtusifolius","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus pulvinatus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus revolutus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus senaeanus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus stannardii","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+ERIOCAULACEAE,"Paepalanthus stuetzelii","1.1 Site/area protection","on going","A espécie encontra-se em regiões da Serra da Mangabeira, em Belo Horizonte, MG. No bairro de Mangabeiras, localiza-se o Parque Municipal das Mangabeiras, que possui como objetivo a conservação ambiental da região (Prefeitura de Belo Horizonte). Porém, os registros de coleta da espécie na Serra não especifica a ocorrência dentro dos limites do Parque Municipal.","PREFEITURA DE BELO HORIZONTE. Parque Municipal das Mangabeiras. Disponível em: <Parque Municipal das Mangabeiras>. Acessado em: 04/10/2013."
+ERIOCAULACEAE,"Paepalanthus superbus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Paepalanthus urbanianus","1.1 Site/area protection","on going","A espécie é encontrada no Parque Nacional da Chapada dos Veadeiros.",
+GESNERIACEAE,"Paliavana plumerioides","1.1 Site/area protection","on going","A região de ocorrência da espécie conta com o Parque Estadual da Serra do Cabral. ",
+GESNERIACEAE,"Paliavana plumerioides","3.4 Ex-situ conservation","on going","Planta em cultivo no Jardim Botanico Plantarum",
+POACEAE,"Panicum nutabundum","1.1 Site/area protection","on going","Em 2005 foi criada a Reserva Biológica Nascentes da Serra do Cachimbo, com plano de manejo publicado em 2009 (MMA/ICMBio, 2009). ","MMA/ICMBio. Plano de Manejo da Reserva Biológica Nascentes da Serra do Cachimbo. Brasília, DF. Disponível em:<http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/rebio_nascentes_da_serra_do_cachimbo.pdf>. 2009. Acessado em 8 jan. 2014."
+CARYOPHYLLACEAE,"Paronychia fasciculata","1.1 Site/area protection","on going","As coletas indicadas para a Serra do Curral estão protegidas na área de proteção ambiental do Parque das Mangabeiras (IBGE, 2013). Entretanto, ainda que a Serra do Curral, seja considerada monumento símbolo da cidade de Belo Horizonte, tombado em 1960 pelo Iphan, tem sido afetada pela exploração do minério de ferro, em parte devido à precariedade da definição de área protegida feita no processo de tombamento federal (O Tempo, 2013). ","IBGE-Instituto Brasileiro de Geografia e Estatística. Cidades@ Diamantina Disponível em: < http://www.ibge.gov.br/cidadesat/xtras/perfil.php?codmun=312160&search=minas-gerais|diamantina >. Acessado em 24 de agosto . 2013;O Tempo. Iphan terá que delimitar perímetro de tombamento da Serra do Curral. Disponível em: http://www.otempo.com.br/cidades/iphan-ter%C3%A1-que-delimitar-per%C3%ADmetro-de-tombamento-da-serra-do-curral-1.757245. Acesso em: 9 dez. 2013.;MARCHIORETTO, M. S., SILVA, V. L., BITTENCOURT, C.C.C. Análise da Distribuição Geográfica da Família Caryophyllaceae no Rio Grande do Sul. PESQUISAS, BOTÂNICA n. 61, p. 205-218, 2010."
+POACEAE,"Paspalum brachytrichum","1.1 Site/area protection","on going","Há registro de coleta da espécie em Nova Lima no Parque Estadual do Rola-Moça (IEF-MG, 2014)","IEF-MG - Instituto Estadual de Florestas de Minas Gerais. Parque Estadual do Rola-Moça. Disponível em: <http://www.ief.mg.gov.br/component/content/198?task=view>. Acessado em 9 jan. 2014"
+POACEAE,"Paspalum petrense","5.1.2 National level","on going","O município de Pirenópolis é tombado pelo Patrimônio Histórico Nacional (IPHAN), de acordo com o IBGE (2013).","IBGE-Instituto Brasileiro de Geografia e Estatística. Cidades@ Pirenópolis Disponível em: < http://www.ibge.gov.br/cidadesat/xtras/perfil.php?codmun=521730&search=goias|piren%F3polis >. Acessado em 24 de agosto . 2013"
+POACEAE,"Paspalum petrense","3.4 Ex-situ conservation","on going","A espécie foi coletada na Reserva ecológica do IBGE em cultivo a partir de muda estéril (F.C.A. Oliveira 718).",
+POACEAE,"Paspalum petrense","1.1 Site/area protection","on going","Espécie coletada na Reserva Biológica da Serra Dourada-Cerradão (J.A. Rizzo 11345).",
+PASSIFLORACEAE,"Passiflora hypoglauca","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó.",
+PASSIFLORACEAE,"Passiflora mucugeana","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina. ",
+MALPIGHIACEAE,"Peixotoa anadenanthera","1.1 Site/area protection",needed,"Apesar de ocorrer na região da Chapada dos Veadeiros, não há nenhuma referência a ocorrência desta espécie dentro dos limites do Parque Nacional que protege os remanescentes de vegetação na região (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+MALPIGHIACEAE,"Peixotoa axillaris","1.1 Site/area protection",needed,"A espécie não ocorre dentro dpos limites de nenhuma Unidade de Conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+ARACEAE,"Philodendron cipoense","1.1 Site/area protection","on going","Coletada no Parque Nacional da Serra do Cipó (Sakuragui et al., 2005) e no Parque Natural Municipal do Ribeirão do Campo (R.C. Mota 1825).","SAKURAGUI, C.M., MAYO, S.J. ; COELHO, M.A.N. Taxonomic revision of Brazilian species of Philodendron section Macrolebium. Kew Bull, v.60, p. 465-513, 2005."
+ARACEAE,"Philodendron cipoense","3.4 Ex-situ conservation","on going","Cultivada no estado do Rio de Janeiro, em Pedra de Guaratiba, Sítio Burle Marx (M. Nadruz 946).",
+ARACEAE,"Philodendron pachyphyllum","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina (Sakuragui et al., 2005).","SAKURAGUI, C.M., MAYO, S.J. ; COELHO, M.A.N. Taxonomic revision of Brazilian species of Philodendron section Macrolebium. Kew Bull. 60: 465-513, 2005."
+ARACEAE,"Philodendron rhizomatosum","1.1 Site/area protection","on going","Espécie ocorre no Parque Nacional da Serra do Cipó (Sakuragui et al., 2005).","SAKURAGUI, C.M., MAYO, S.J. ; COELHO, M.A.N. Taxonomic revision of Brazilian species of Philodendron section Macrolebium. Kew Bull, v.60, p. 465-513, 2005."
+ARACEAE,"Philodendron rhizomatosum","3.4 Ex-situ conservation","on going","Cultivada no Estado de São Paulo, no município de Pouso Alto na Fazenda Sertãozinho (Sakuragui et al., 2005).","SAKURAGUI, C.M., MAYO, S.J. ; COELHO, M.A.N. Taxonomic revision of Brazilian species of Philodendron section Macrolebium. Kew Bull, v.60, p. 465-513, 2005."
+SANTALACEAE,"Phoradendron anamariae","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional da Chapada dos Veadeiros, GO (J.R. Pirani et al. 1701).",
+SANTALACEAE,"Phoradendron virens","1.1 Site/area protection","on going","Espécie presente em dados de coleta na APA de Cafuringa (APA de Cafuringa, 2013)","APA de Cafuringa. Disponivel em: <http://www.ibram.df.gov.br/component/content/article/257-unidades-de-conservacao/264-apa-de-cafuringa.html>. Acessado em 11 de agosto. 2013"
+TURNERACEAE,"Piriqueta emasensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional das Emas (Arbo, 2002).","ARBO, M. M. Una especie nueva de Piriqueta (Turneraceae) del Parque Nacional das Emas, Goiás, Brasil. Bol. Bot. Univ. São Paulo, v. 20,  p.13-15, 2002. "
+BROMELIACEAE,"Pitcairnia curvidens","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó e na RPPN Alto da Boa Vista.",
+ACANTHACEAE,"Poikilacanthus bahiensis","1.1 Site/area protection","on going","Coletada no Parque Estadual do Morro do Chapéu, Bahia (J.M. Gonçalves 10).",
+FABACEAE,"Poiretia bahiana","1.1 Site/area protection","on going","Coletada no Parque Nacional da Chapada Diamantina (RB 408254 Col: Mattos Silva, L.A. 2768) e  no Refúgio Ecológico Montano, Palmeiras (IPA; Pinto, P. 438)",
+FABACEAE,"Poiretia marginata","1.1 Site/area protection","on going","Coletada na Estação Ecológica do Panga, Uberlândia, Minas Gerais (I. Schiavini s.n., HUFU 859)",
+FABACEAE,"Poiretia unifoliolata","1.1 Site/area protection",,"Ocorre no Parque Nacional da Serra do Cipó (T.B. Cavalcanti CFSC10652).",
+POLYGALACEAE,"Polygala apparicioi","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó e no Parque Nacional da Serra da Canastra (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala bevilacquai","1.1 Site/area protection",needed,"As populações de P. bevilacquai não encontram-se protegidas por nenhuma categoria de unidade de conservação (CNCFlora, 2013). Porém, a coordenada de registro em área de entorno da Estação experimental de Itirapina, se refere à localidade dentro de área protegida, na Estação Ecológica de Itirapina (Negrão, com. pess.)","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/> ;NEGRÃO, R. 2014. Comunicação Pessoal da Colaboradora Raquel Negrão para Eduardo Fernadez, Analista de Dados do CNCFlora."
+POLYGALACEAE,"Polygala grazielae","1.1 Site/area protection",needed,"Não há registro de ocorrência deste táxon dentro dos limites de nenhuma Unidade de Conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala juncea","1.1 Site/area protection","on going","A espécie ocorre dentros do limites do Parque Nacional da Serra da Canastra (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala malmeana","1.1 Site/area protection","on going","A espécie ocorre dentros dos limites do Parque Nacional da Chapada dos Guimarães e na RPPN Linda Serra dos Topázios, ambas em Mato Grosso (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala patens","1.1 Site/area protection",needed,"As subpopulações conhecidas desta espécie não encontram-se protegidas por nenhuma categoria de Unidade de Conservação (CNCFlora, 2013); entretanto, a localidade de ocorrência da espécie (Fazenda Renascer) é de difícil acesso e o manejo adotado para a área teve pouco impacto sobre a população de P. patens nos últimos anos.","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala pseudocoriacea","1.1 Site/area protection",needed,"A espécie não encontra-se protegida por nenhuma categoria de unidade de conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala suganumae","1.1 Site/area protection",needed,"As subpopulações conhecidas desta espécie não encontram-se protegidas por nenhuma categoria de Unidade de Conservação (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala trifurcata","1.1 Site/area protection","on going","A espécie possui registros dentro dos limites do Parque Nacional da Chapada Diamantina (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+POLYGALACEAE,"Polygala vollii","1.1 Site/area protection","on going","A espécie possui registros somente dentro dos limites do Parque Nacional do Caparaó (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>"
+GENTIANACEAE,"Prepusa montana","1.1 Site/area protection","on going","Presente no Parque Nacional da Chapada Diamantina, no Parque Estadual do Morro do Chapéu e no Parque Municipal do Mucugê (Guimarães, com. pess.).",
+BURSERACEAE,"Protium dawsonii","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Nacional de Brasília (P.C.M. Ramos 525). ",
+MYRTACEAE,"Psidium firmum","1.1 Site/area protection","on going","A espécie ocorre em Unidades de Conservação, como o Parque Estadual da Serra do Pirineus, o Parque Nacional da Chapada Diamantina e o Jardim Botânico de Brasília. ",
+RUBIACEAE,"Psyllocarpus schwackei","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+MELASTOMATACEAE,"Pterolepis rotundifolia","1.1 Site/area protection","on going","Ocorre em unidades de conservação: Parque Nacional da Chapada Diamantina (A.A. Conceição 1320) e Parque Municipal de Mucugê (R.M. Harley 54632).",
+POACEAE,"Rheochloa scabrifolia","1.1 Site/area protection","on going","Ocorre no Parque Nacional das Emas, que possui plano de manejo (MMA/IBAMA, 2004).","MMA/IBAMA. Plano de Manejo Parque Nacional das Emas. Disponível em:<http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_emas.pdf>. Acessado em 17 de agosto de 2013. 2004"
+CACTACEAE,"Rhipsalis agudoensis","2.1 Site/area management",needed,"Necessidade de redescobrir esta espécie na natureza já que não foi registrada novamente desde a coleta do material tipo na década de 80 (Santos, com. pess.). ",
+CYPERACEAE,"Rhynchospora enmanuelis","1.1 Site/area protection",needed,"Nos locais de ocorrência da espécie não existem Unidades de Conservação, sendo necessário a implantação dos mesmos devido às fortes pressões ambientais e degradação ocorridas tanto em Tupã-SP quanto em Araucária, PR. ",
+CYPERACEAE,"Rhynchospora tenuis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra da Canastra (J.N. Nakajima 962; 3709).",
+CONNARACEAE,"Rourea tenuis","1.1 Site/area protection","on going","A espécie foi coletada no Parque Nacional e Histórico do Monte Pascoal (A.M. Amorim 2530).",
+OCHNACEAE,"Sauvagesia lanceolata","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Veadeiros (Cardoso, 2009).","CARDOSO, D.B.O.S. Ochnaceae. In: GIULIETTI, A.M.; RAPINI, A.; ANDRADE, M.J.G.; QUEIROZ, L.P.; SILVA, J.M.C. Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 293-296."
+OCHNACEAE,"Sauvagesia oliveirae","5.4.2 National level","on going","Espécie com indicação de status de ameaça na obra original como ""Em perigo"" (EN)(Harley et al., 2005).","HARLEY, R.M.; GIULIETTI, A.M.; LEITE, K.R.B. Two new species and a new record of Sauvagesia (Ochnaceae) in the Chapada Diamantina of Bahia, Brazil. Kew Bull. 60: 571-580. 2005."
+ARALIACEAE,"Schefflera botumirimensis","1.1 Site/area protection",needed,"A serra onde a espécie ocorre não é legalmente protegida (Fiaschi, com. pess.)","FIASCHI, P. Comunicação pessoal do especialista Pedro Fiaschi para o analista de dados Eduardo Fernandez, pesquisador do CNCFlora, 2013."
+ARALIACEAE,"Schefflera cephalantha","1.1 Site/area protection","on going","A espécie encontra-se protegida atualmente pelo Parque Nacional da Chapada dos Guimarães (Fiaschi & Pirani, 2008).","MMA/ICMBio. Plano de Manejo do Parque Nacional da Chapada dos Guimarães. Brasília, DF. p. Presente em: <http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/parna_chapada-dos-guimaraes.pdf>., 2009.;FIASCHI, P.; PIRANI, J.R. 2008. Padrões de distribuição geográfica das espécies de Schefflera J. R. Forst. & G. Forst. (Araliaceae) do Brasil extra-amazônico. Revista Brasil. Bot., V.31, n.4, p.633-644."
+ARALIACEAE,"Schefflera fruticosa","1.1 Site/area protection","on going","A espécie possui sub populações protegidas pelos limites do Parque Nacional da Serra do Cipó, MG (Fiaschi & Pirani, 2005).","FIASCHI, P.; PIRANI, J.R. 2005. Three New Species of Schefflera (Araliaceae) from the Espinhaço Range in Minas Gerais Brazil, NOVON 15(1): 17-122."
+GENTIANACEAE,"Schultesia irwiniana","1.1 Site/area protection",needed,"Espécie não protegida (Guimarães, com. pess.).",
+GENTIANACEAE,"Schultesia pachyphylla","1.1 Site/area protection","on going","De acordo com notas de coleta, a espécie está presente no parque Nacional da Chapada Diamantina (G. Almeida-Silva 152), e no Parque Estadual das Sete Passagens (N.G. Jesus 1258), indicando algum tipo de proteção a espécie.",
+GENTIANACEAE,"Schultesia sucreana","1.1 Site/area protection","on going","Espécie encontrada no Parque Nacional de Sete Cidades, Piauí (Guimarães, 2002). A maior parte da flora encontrada no parque é típica de Cerrado, com espécies como ""murici"", ""cascudo"", ""lixeira"", ""bacuri"", ""pequi"" e ""pau-terra"", avistadas com facilidade, e nas manchas de Caatinga encontram-se ""juazeiros"", ""juremas"", ""aroeiras"" e cactos, como o ""xique-xique"" e a ""coroa-de-frade"" (IBDF, 1979).","IBDF. Instituto Brasileiro de Desenvolvimento Florestal. Plano de Manejo Parque Nacional de Sete Cidades. Disponível em:<http://www.icmbio.gov.br/portal/images/stories/imgs-unidades-coservacao/PARNA%20SETE%20CIDADES.pdf>. Acessado em 18 de agosto de 2013. 1979;GUIMARÃES, E.F. Schultesia Mart. (Gentianaceae) – Revisão taxonômica. Tese de doutorado, Museu Nacional, Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2002."
+CYPERACEAE,"Scleria cuyabensis","1.1 Site/area protection","on going","A espécie ocorre no Parque Estadual Serra dos Pirineus e no Parque Nacional da Chapada dos Veadeiros.",
+VERBENACEAE,"Stachytarpheta froesii","1.1 Site/area protection","on going","A espécie foi coletada dentro do Parque Nacional da Chapada Diamantina (M.G.L. Wandeley 1599).",
+VERBENACEAE,"Stachytarpheta integrifolia","2.1 Site/area management","on going","Algumas das localidades onde foi coletada estão dentro do Parque Nacional de Chapada dos Veadeiros, no entanto, outras estão fora dos limites da área de proteção (Atkins, 2005). ","ATKINS, S. The genus Stachytarpheta (Verbenaceae) in Brazil. Kew Bulletin, v. 60, n. 2, p. 161-272, 2005."
+VERBENACEAE,"Stachytarpheta lacunosa","2.1 Site/area management",needed,"Todas as localidades estão dentro de um raio de 25 km umas das outras, ao longo dos cumes do extremo norte da Chapada Diamantina. No momento essas áreas não são protegidas (Atkins, 2005).","ATKINS, S. The genus Stachytarpheta (Verbenaceae) in Brazil. Kew Bulletin, v. 60, n. 2, p. 161-272, 2005."
+RUBIACEAE,"Staelia tocantinsiana","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional do Araguaia.",
+ACANTHACEAE,"Staurogyne minarum","1.1 Site/area protection","on going","Ocorre no Parque Natural do Caraça (Catas Altas) e na Reserva Biológica do Jambreiro (Nova Lima) em Minas Gerais (Kameyama et al., 2009).","KAMEYAMA, C.; CORTÊS, A.L.A.; PROFICE, S.R.; BRAZ, D.M., DALY, D.C. Acanthaceae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. pp. 39 - 43."
+ACANTHACEAE,"Stenandrium irwinii","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Chapada Diamantina (Kameyama, et al., 2009).","KAMEYAMA, C.; CORTÊS, A.L.A.; PROFICE, S.R.; BRAZ, D.M., DALY, D.C. Acanthaceae. In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservação Internacional; Universidade Estadual de Feira de Santana, 2009. pp. 39 - 43."
+ASTERACEAE,"Stenophalium heringeri","1.1 Site/area protection","on going","A espécie foi encontrada dentro dos limites do Parque Nacional de Brasília (C.R. Martins 787).",
+ASTERACEAE,"Stevia resinosa","1.1 Site/area protection","on going","Há registros da espécie em Unidades de Conservação, como no Parque Estadual do Ibitipoca (R.C. Forzza 1813).",
+LORANTHACEAE,"Struthanthus planaltinae","1.1 Site/area protection","on going","A espécie ocorre na Reserva Ecológica do IBGE (E.P. Heringer 2874). Entretanto, todas as reservas do Distrito Federal estão circundadas pela malha urbana e sob pressão intensa do crescimento urbano (UNESCO, 2002).","UNESCO - Organização das Nações Unidas para a Educação, a Ciência e a Cultura.Vegetação do Distrito Federal : tempo e espaço. Brasília : UNESCO, 2002.  2.ed. 80p."
+LORANTHACEAE,"Struthanthus pusillifolius","1.1 Site/area protection","on going","Espécie encontrada na Reserva Ecológica do Roncador (E.P. Heringer 157), APA IBGE. A Reserva Ecológica do Roncador trata-se de uma das mais importantes reservas ecológicas do Brasil e é mantida pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Entretanto, todas as reservas do Distrito Federal estão circundadas pela malha urbana e sob pressão intensa pelo crescimento urbano (UNESCO, 2002). A espécie também ocorre em Minas Gerais, na área do Parque Nacional Serra da Canastra.","UNESCO - Organização das Nações Unidas para a Educação, a Ciência e a Cultura.Vegetação do Distrito Federal : tempo e espaço. Brasília : UNESCO, 2002.  2.ed. 80p."
+SYMPLOCACEAE,"Symplocos glaberrima","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+SYMPLOCACEAE,"Symplocos insolita","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+SYMPLOCACEAE,"Symplocos saxatilis","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Syngonanthus bracteosus","1.1 Site/area protection","on going","A região de ocorrência da espécie conta com o Parque Estadual da Serra do Cabral (http://www.ief.mg.gov.br/areas-protegidas/210). ",
+ERIOCAULACEAE,"Syngonanthus hygrotrichus","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó, MG.",
+ERIOCAULACEAE,"Syngonanthus latifolius","1.1 Site/area protection",needed,"A Serra do Roncador não se encontra dentro dos limites de nenhuma Unidade de Conservação. Dado o endemismo da especie da espécie no local, bem como as características paisagística, ambientais e ecológicas, seria importante a demarcação da Serra do Roncador, ou parte dela, dentro alguma categoria de Unidade de Conservação segundo o Sistema Nacional de Unidades de Conservação. ",
+BROMELIACEAE,"Tillandsia sprengeliana","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada Diamantina.",
+COMMELINACEAE,"Tripogandra elata","3.4 Ex-situ conservation","on going","Cultivada no Museu de Biologia Mello Leitão, no estado do Espírito Santo (J.A. Lombardi 1144), e no Jardim Botânico de Belo Horizonte em Minas Gerais (Pellegrini, com. pess.).",
+COMMELINACEAE,"Tripogandra warmingiana","1.1 Site/area protection","on going","Ocorre em Unidades de Conservação: Reserva Ecológica do Rio das Pedras (J.A. Lira Neto 473) e Parque Estadual da Serra da Tiririca no estado do Rio de Janeiro, APA Carste de Lagoa Santa e Estação Biológica de Caratinga em Minas Gerais (Herrmann et al., 1998; Pellegrini et al., 2013).","PELLEGRINI, M.O.O.; AONA-PINHEIRO, L.Y.S.; FORZZA, R.C. Taxonomy and conservation status of Tripogandra warmingiana (Seub.) Handlos (Commelinaceae), a previously obscure taxon from Brazil. Phytotaxa 91 (2): 39–49, 2013.;HERRMANN, G.; KOHLER, H.C.; DUARTE, J.C.; CARVALHO, P.G.S. Plano de Manejo Área de Proteção Ambiental Carste de Lagoa Santa. Instituto Brasileiro  do Meio Ambiente e dos Recursos Naturais Renováveis. IBAMA; CPRM; GERIDE; Fundação Biodiversitas. Belo Horizonte, MG. 1998."
+TURNERACEAE,"Turnera cipoensis","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Serra do Cipó (G.S. França s.n., BHCB 17636), no município de Santana do Riacho, e no Parque Nacional da Serra da Canastra, no município de São Roque de Minas (L.S. Kinoshita et al. 96145) em Minas Gerais.",
+TURNERACEAE,"Turnera ignota","1.1 Site/area protection","on going","A espécie ocorre no Parque Estadual do Rio Preto (Arbo & Giulietti, 2009).
+
+","ARBO, M.M.; GIULIETTI, A.M.  Turneraceae  In: GIULIETTI, A.M.; RAPINI, A.; ANDRADE, M.J.G.; QUEIROZ, L.P.; SILVA, J.M.C. Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 385-390."
+TURNERACEAE,"Turnera luetzelburgii","1.1 Site/area protection","on going","Ocorre no Parque Nacional da Chapada Diamantina (A.A. Conceição 4110).
+",
+TURNERACEAE,"Turnera pinifolia","1.1 Site/area protection","on going"," A espécie ocorre no Parque Estadual da Serra dos Pirineus (M.L. Fonseca 5021).",
+VELLOZIACEAE,"Vellozia crinita","5.1.2 National level","on going","Considerada ""Vulnerável"" (VU) em avaliação empreendida pela Biodiversitas (2007).",
+VELLOZIACEAE,"Vellozia crinita","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual de Ibitipoca (R. Mello-Silva 3249).",
+VELLOZIACEAE,"Vellozia spiralis","1.1 Site/area protection","on going","Ocorre em Unidade de Conservação: Parque Estadual de Grão-Mogol (J. Alcantara 1210).",
+VOCHYSIACEAE,"Vochysia petraea","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Chapada dos Guimarães.",
+VOCHYSIACEAE,"Vochysia pygmaea","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipó.",
+VOCHYSIACEAE,"Vochysia rotundifolia","1.1 Site/area protection","on going","A espécie ocorre no Parque Nacional da Serra do Cipóe no Parque Estadual do Biribiri, no estado de Minas Gerais (Shimizu, com. pess.).",
+ASTERACEAE,"Wedelia souzae","1.1 Site/area protection","on going","A espécie possui registros dentro dos limites do Parque Nacional da Chapada dos Veadeiros (CNCFlora, 2013).","CNCFlora - Base de Dados do Centro Nacional de Conservação da Flora <www.cncflora.jbrj.gov.,br>. acesso em: 12.11.2013"
+XYRIDACEAE,"Xyris archeri","1.1 Site/area protection","on going","A espécie possui registros de coleta dentro dos limites do Parque Estadual de Ibitipoca, MG (R.C. Forzza 3035) e possivelmente dentro dos limites do Parque Nacional da Serra do Cipó (W.A. Archer 4977).",
+XYRIDACEAE,"Xyris diaphanobracteata","1.1 Site/area protection",,"A espécie ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros (GO) (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris goyazensis","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros (GO) (A.A.A. Barbosa 187).",
+XYRIDACEAE,"Xyris jataiana","1.1 Site/area protection","on going","A espécie provavelmente ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros, GO (Wanderley, 2009).","WANDERLEY, M.G.L. Xyridaceae In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 496."
+XYRIDACEAE,"Xyris lanuginosa","1.1 Site/area protection","on going","A espécie apresenta registras dentro dos limites de duas Unidades de Conservação de Proteção Integral: Parque Nacional da Chapada dos Veadeiros (GO) e Parque Nacional da Chapada dos Guimarães (MT) (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris mertensiana","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Nacional da Chapada Diamantina (Wanderley, 2009; CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>.;WANDERLEY, M.G.L. Xyridaceae In: GIULIETTI, A. M.; RAPINI, A.; ANDRADE, M. J. G.; QUEIROZ, L. P. DE; SILVA, J. M. C. D. (Eds.). Plantas Raras do Brasil. Belo Horizonte: Conservaçao Internacional; Univesidade Estadual de Feira de Santana, 2009. p. 496."
+XYRIDACEAE,"Xyris obcordata","1.1 Site/area protection","on going","A espécie possui registros de ocorrência no Parque Estadual de Grão Mogol (Wanderley & Silva, 2009).",
+XYRIDACEAE,"Xyris paradisiaca","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros (GO) (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris picea","1.1 Site/area protection",needed,"Apesar de ocorrer em Unidades de Conservação, as mesmas não são de proteção integral; portanto, existe a necessidade real de se proteger efetivamente a região de ocorrência de X. picea através da criação de novas Unidades de Conservação de Proteção Integral (Fernandez, com. pess.).",
+XYRIDACEAE,"Xyris pranceana","1.1 Site/area protection","on going","A espécie provavelmente ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros, GO (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris rupicola","1.1 Site/area protection","on going","A espécie possui registros de ocorrência nas seguintes Unidades de Conservação: Parque Nacional da Chapada Diamantina, RPPN do Caraça, Parque Nacional, APA Pau-de-Fruta, entre outras ao longo da Cadeia do Espinhaço (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris spectabilis","1.1 Site/area protection","on going","A espécie possui registros dentro das seguintes Unidades de Conservação: Parque Estadual da Serra do Papagaio, Parque Estadual do Rio Preto, RPPN do Caraça e Parque Estadual de Ibitipoca (MG) e provavelmente Parque Nacional da Chapada Diamantina (BA) (CNCFlora, 2013). ",
+XYRIDACEAE,"Xyris subsetigera","1.1 Site/area protection","on going","A espécie ocorre dentro dos limites do Parque Nacional da Serra do Cipó e outras unidades de conservação de categorias não tão restritivas ao longo de sua área de distribuição (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris veruina","1.1 Site/area protection","on going","A espécie possivelmente ocorre dentro dos limites do Parque Nacional da Chapada dos Veadeiros, GO (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris vestita","1.1 Site/area protection","on going","A espécie ocorre provavelmente dentro dos limites do Parque Nacional da Chapada dos Veadeiros e Parque Estadual da Serra dos Pirineus (CNCFlora, 2013).","CNCFlora. 2013. Base de Dados do Centro Nacional de Conservação da Flora. Disponível em: <http://cncflora.jbrj.gov.br/portal/>."
+XYRIDACEAE,"Xyris villosicarinata","1.1 Site/area protection",needed,"Apesar de existirem algumas Unidades de Conservação na área de ocorrência de X. villosicarinata, os poucos registros apontam para a ocorrência desta espécie em local que não encontra-se protegido por Unidade de Conservação de Proteção Integral (Carmo, 2010). Em Minas Gerais, menos de 280 ha de cangas estão localizados em Unidades de Conservação de Proteção Integral. Esta situação deve ser urgentemente revertida, pois as pressões (presentes e projetadas) nestes ecossistemas podem torná-los funcionalmente extintos (Carmo, 2010).","do CARMO, F.F. 2010. Importância Ambiental e Estado de Conservação dos Ecossistemas de Cangas no Quadrilátero Ferrífero e Proposta de Áreas-Alvo para a Investigação e Proteção da Biodiversidade em Minas Gerais. Dissertação de doutorado, Universidade Federal de Minas Gerais."

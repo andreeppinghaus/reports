@@ -1,4 +1,5 @@
 family,scientificName,habitat
+RUBIACEAE,"Bradea borrerioides","6 Rocky Areas [e.g. inland cliffs, mountain peaks]"
 BROMELIACEAE,"Encholirium fragae","2.1 Dry Savanna"
 BROMELIACEAE,"Encholirium kranzianum","2.1 Dry Savanna"
 BROMELIACEAE,"Encholirum splendidum","2.1 Dry Savanna"
@@ -8,3 +9,4 @@ Asteraceae,"Eremanthus praetermissus","4.7 Subtropical/Tropical High Altitude Gr
 Asteraceae,"Eremanthus ovatifolius","3.5 Subtropical/Tropical Dry Shrubland"
 ERIOCAULACEAE,"Paepalanthus capixabensis","4.7 Subtropical/Tropical High Altitude Grassland"
 ERIOCAULACEAE,"Paepalanthus echinoides","4.7 Subtropical/Tropical High Altitude Grassland"
+ERIOCAULACEAE,"Paepalanthus argyrotrychus","6 Rocky Areas [e.g. inland cliffs, mountain peaks]"

@@ -1,0 +1,98 @@
+family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total
+AQUIFOLIACEAE,"Ilex prostrata Groppo",7,0,6,13,0,0,7,6,13
+FABACEAE,"Chamaecrista lagotois H.S.Irwin & Barneby",4,3,7,14,0,0,4,10,14
+FABACEAE,"Chamaecrista aristata (Benth.) H.S.Irwin & Barneby",9,11,26,43,3,0,9,37,46
+BROMELIACEAE,"Encholirium pedicellatum (Mez) Rauh",1,1,8,10,0,0,1,9,10
+BROMELIACEAE,"Encholirium biflorum (Mez) Forzza",3,8,3,13,1,0,3,11,14
+OXALIDACEAE,"Oxalis diamantinae Knuth",0,1,4,5,0,0,0,5,5
+APOCYNACEAE,"Minaria bifurcata",0,3,2,5,0,0,0,5,5
+MELASTOMATACEAE,"Microlicia microphylla (Naudin) Cogn.",7,6,0,5,8,0,3,10,13
+ASTERACEAE,"Lychnophora souzae H.Rob.",12,1,0,13,0,0,12,1,13
+Bignoniaceae,"Zeyheria tuberculosa (Vell.) Bureau ex Verl.",0,0,249,233,16,0,0,249,249
+APOCYNACEAE,"Hemipogon piranii",1,1,3,5,0,0,1,4,5
+APOCYNACEAE,"Hemipogon hatschbachii (Fontella & Marquete) Rapini",0,4,5,9,0,0,0,9,9
+APOCYNACEAE,"Minaria diamantinensis",0,1,2,3,0,0,0,3,3
+APOCYNACEAE,"Hemipogon piranii (Fontella) Rapini",1,7,4,12,0,0,1,11,12
+MALPIGHIACEAE,"Byrsonima fonsecae W.R.Anderson",8,0,1,9,0,0,8,1,9
+ARECACEAE,"Syagrus mendanhensis Glassman",8,0,10,18,0,0,8,10,18
+XYRIDACEAE,"Xyris dardanoi Wand.",2,0,6,8,0,0,2,6,8
+XYRIDACEAE,"Xyris hystrix Seub.",6,1,20,24,3,0,6,21,27
+XYRIDACEAE,"Xyris platystachya L.A.Nilsson ex Malme",13,4,5,18,4,0,11,11,22
+XYRIDACEAE,"Xyris nigricans L.A.Nilsson",2,4,9,11,4,0,1,14,15
+VELLOZIACEAE,"Barbacenia longiscapa Goethart & Henrard",1,1,5,5,2,0,1,6,7
+MALVACEAE,"Callianthe monteiroi",3,3,1,7,0,0,3,4,7
+ERIOCAULACEAE,"Actinocephalus ciliatus (Bong.) Sano",4,5,0,9,0,0,4,5,9
+FABACEAE,"Lupinus parvifolius Gardner",9,14,0,21,2,0,9,14,23
+LYTHRACEAE,"Diplusodon glaziovii Koehne",1,5,1,7,0,0,1,6,7
+Asteraceae,"Piptolepis leptospermoides (Mart. ex DC.) Sch.Bip.",18,6,0,23,1,0,17,7,24
+APOCYNACEAE,"Minaria hemipogonoides",1,1,4,4,2,0,1,5,6
+ASTERACEAE,"Lychnophora humillima Sch.Bip.",11,4,0,12,3,0,9,6,15
+ASTERACEAE,"Aspilia jugata H.Rob.",1,4,1,6,0,0,1,5,6
+APOCYNACEAE,"Hemipogon hatschbachii",0,0,3,3,0,0,0,3,3
+VELLOZIACEAE,"Barbacenia pungens",0,1,1,2,0,0,0,2,2
+ASTERACEAE,"Richterago caulescens Roque",23,12,7,42,0,0,23,19,42
+MALPIGHIACEAE,"Peixotoa andersonii C.E.Anderson",1,0,0,1,0,0,1,0,1
+IRIDACEAE,"Pseudotrimezia aminae Chukr",0,0,2,2,0,0,0,2,2
+BROMELIACEAE,"Dyckia ursina L.B.Sm.",4,6,6,14,2,0,4,12,16
+ERIOCAULACEAE,"Paepalanthus ater Silveira",2,10,0,12,0,0,2,10,12
+VELLOZIACEAE,"Barbacenia glutinosa Goethart & Henrard",6,3,1,10,0,0,6,4,10
+MELASTOMATACEAE,"Lavoisiera sampaioana Barreto",34,19,0,53,0,0,34,19,53
+IRIDACEAE,"Pseudotrimezia gracilis Chukr",1,3,9,13,0,0,1,12,13
+MELASTOMATACEAE,"Microlicia elegans Naudin",6,21,0,21,6,0,5,22,27
+APOCYNACEAE,"Minaria hemipogonoides (E.Fourn.) T.U.P.Konno & Rapini",4,1,3,8,0,0,4,4,8
+Iridaceae,"Trimezia fistulosa var. longifolia Chukr",1,1,4,6,0,0,1,5,6
+APOCYNACEAE,"Minaria diamantinensis (Fontella) T.U.P.Konno & Rapini",1,4,4,9,0,0,1,8,9
+APOCYNACEAE,"Hemipogon abietoides E.Fourn.",3,2,2,7,0,0,3,4,7
+BROMELIACEAE,"Encholirium vogelii Rauh",2,0,2,4,0,0,2,2,4
+OROBANCHACEAE,"Agalinis schwackeana (Diels) V.C.Souza & Giul.",1,2,3,5,1,0,1,5,6
+FABACEAE,"Chamaecrista aristata",0,0,2,2,0,0,0,2,2
+ORCHIDACEAE,"Grobya cipoensis F.Barros & LourenÃÂ§o",2,0,3,5,0,0,2,3,5
+ASTERACEAE,"Aspilia eglerii J.U.Santos",0,2,1,3,0,0,0,3,3
+ORCHIDACEAE,"Constantia cipoensis Porto & Brade",5,0,3,8,0,0,5,3,8
+XYRIDACEAE,"Xyris tortilis Wand.",2,0,7,9,0,0,2,7,9
+APOCYNACEAE,"Minaria bifurcata (Rapini) T.U.P.Konno & Rapini",0,1,0,1,0,0,0,1,1
+ERIOCAULACEAE,"Actinocephalus cipoensis (Silveira) Sano",1,1,0,2,0,0,1,1,2
+ORCHIDACEAE,"Pseudolaelia cipoensis Pabst",1,1,3,5,0,0,1,4,5
+VELLOZIACEAE,"Barbacenia pungens (N.L.Menezes & Semir) Mello-Silva",0,0,1,1,0,0,0,1,1
+IRIDACEAE,"Pseudotrimezia brevistamina Chukr",1,0,1,2,0,0,1,1,2
+ASTERACEAE,"Eupatorium lineatum Sch.Bip. ex Baker",7,4,2,11,2,0,7,6,13
+ERIOCAULACEAE,"Leiothrix linearis Silveira",3,2,0,5,0,0,3,2,5
+Melastomataceae,"Lavoisiera angustifolia Cogn.",2,3,0,4,1,0,2,3,5
+Eriocaulaceae,"Paepalanthus uncinatus Gardner",2,5,0,7,0,0,2,5,7
+Eriocaulaceae,"Eriocaulon cipoense Silveira",4,3,0,7,0,0,4,3,7
+Melastomataceae,"Lavoisiera tetragona Mart. & Schrank ex DC.",8,3,2,6,7,0,3,10,13
+Eriocaulaceae,"Leiothrix rupestris Giul.",8,4,0,11,1,0,7,5,12
+Lamiaceae,"Eriope angustifolia Epling",12,0,5,17,0,0,12,5,17
+Melastomataceae,"Microlicia juniperina A.St.-Hil.",16,21,0,34,2,1,16,21,37
+Alstroemeriaceae,"Alstroemeria brasiliensis Spreng.",12,18,0,22,8,0,11,19,30
+Alstroemeriaceae,"Alstroemeria penduliflora M.C.Assis",9,8,0,17,0,0,9,8,17
+Apocynaceae,"Ditassa itambensis Rapini",4,9,0,13,0,0,4,9,13
+Asteraceae,"Aspilia cylindrocephala H.Rob.",23,15,0,38,0,0,23,15,38
+Asteraceae,"Lychnophora markgravii G.M.Barroso",43,9,0,52,0,0,43,9,52
+Bromeliaceae,"Encholirium scrutor (L.B.Sm.) Rauh",5,8,0,12,1,0,5,8,13
+Eriocaulaceae,"Paepalanthus hydra Ruhland",13,12,0,23,2,0,12,13,25
+Euphorbiaceae,"Euphorbia attastoma Rizzini",23,6,0,26,3,0,23,6,29
+Lauraceae,"Persea pedunculosa Meisn.",7,3,0,9,1,0,6,4,10
+Orchidaceae,"Octomeria geraensis Barb.Rodr.",14,1,0,11,4,0,11,4,15
+Pteridaceae,"Pellaea cymbiformis J.Prado",5,1,0,6,0,0,5,1,6
+Asteraceae,"Lychnophoriopsis candelabrum (Sch.Bip.) H.Rob.",8,1,0,6,3,0,6,3,9
+ASTERACEAE,"Aspilia ovalifolia",1,0,0,1,0,0,1,0,1
+Iridaceae,"Trimezia plicatifolia Chukr",2,0,0,2,0,0,2,0,2
+Velloziaceae,"Barbacenia rodriguesii (N.L.Menezes & Semir) Mello-Silva",3,3,0,6,0,0,3,3,6
+LOGANIACEAE,"Spigelia cipoensis Zappi",3,0,0,3,0,0,3,0,3
+LYCOPODIACEAE,"Phlegmariurus itambensis",5,0,0,5,0,0,5,0,5
+MYRSINACEAE,"Myrsine congesta (Sw.) Pipoly",24,2,0,24,2,0,24,2,26
+Asteraceae,"Lessingianthus rosmarinifolius (Less.) H.Rob.",17,0,0,17,0,0,17,0,17
+Bromeliaceae,"Neoregelia leprosa L.B.Sm.",7,0,0,7,0,0,7,0,7
+Connaraceae,"Rourea cnestidifolia G.Schellenb.",8,3,0,8,3,0,8,3,11
+Lauraceae,"Cinnamomum erythropus (Nees & Mart.) Kosterm.",10,9,0,14,5,0,10,9,19
+ASTERACEAE,"Lychnophoriopsis candelabrum",44,0,0,35,9,0,35,9,44
+Asteraceae,"Aspilia ovalifolia (DC.) Baker",36,18,0,53,1,0,35,19,54
+MALVACEAE,"Callianthe monteiroi (Krapov.) Donnell",4,1,0,5,0,0,4,1,5
+ERIOCAULACEAE,"Actinocephalus ciliatus",1,0,0,1,0,0,1,0,1
+LYTHRACEAE,"Diplusodon glaziovii",0,3,0,3,0,0,0,3,3
+ASTERACEAE,"Piptolepis leptospermoides",2,0,0,0,2,0,0,2,2
+BROMELIACEAE,"Encholirium biflorum",1,3,0,4,0,0,1,3,4
+BROMELIACEAE,"Encholirium pedicellatum",1,1,0,2,0,0,1,1,2
+VELLOZIACEAE,"Barbacenia longiscapa",3,2,0,4,1,0,3,2,5
+ERIOCAULACEAE,"Actinocephalus cipoensis",1,0,0,1,0,0,1,0,1

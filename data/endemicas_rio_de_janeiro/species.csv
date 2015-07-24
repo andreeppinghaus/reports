@@ -1,13 +1,13 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship
-Apiaceae,"Eryngium goulartii","Glaz. & Urb. ex Urb."
 Poaceae,"Glaziophyton mirabile",Franch.
+Thismiaceae,"Thismia glaziovii",Poulsen
 COMMELINACEAE,"Dichorisandra picta",Lodd.
 Bromeliaceae,"Neoregelia paratiensis",Leme
 Poaceae,"Chusquea sclerophylla",Döll
+Gesneriaceae,"Besleria macahensis",Brade
 CACTACEAE,"Rhipsalis triangularis",Werderm.
 Myrtaceae,"Myrcia innovans",Kiaersk.
 Amaryllidaceae,"Worsleya procera","(Lem.) Traub"
-Malpighiaceae,"Hiraea macrophylla","(Colla) P.L.R.Moraes & Guglielmone"
 ORCHIDACEAE,"Pabstiella dracula","(Seehawer) Luer & Toscano"
 Acanthaceae,"Aphelandra stephanophysa",Nees
 Acanthaceae,"Justicia meyeniana","(Nees) Lindau"
@@ -23,6 +23,7 @@ ACANTHACEAE,"Justicia polita","(Nees) Profice"
 ACANTHACEAE,"Staurogyne brachiata","(Hiern) Leonard"
 ACANTHACEAE,"Staurogyne euryphylla",E.Hossain
 AMARYLLIDACEAE,"Griffinia rochae",Morel
+ANEMIACEAE,"Anemia candidoi",Brade
 ANNONACEAE,"Annona ferruginea","(R.E.Fr.) H.Rainer"
 ANNONACEAE,"Annona parviflora","(A.St.-Hil.) H.Rainer"
 ANNONACEAE,"Duguetia microphylla","(R.E.Fr.) R.E.Fr."
@@ -32,7 +33,6 @@ ANNONACEAE,"Trigynaea axilliflora","D.M.Johnson & N.A.Murray"
 ANNONACEAE,"Unonopsis riedeliana",R.E.Fr.
 ANTHOCEROTACEAE,"Anthoceros lamellatus",Steph.
 APIACEAE,"Eryngium fluminense",Urb.
-APIACEAE,"Eryngium goulartii","Glaz. & Urb. ex Urb."
 APOCYNACEAE,"Aspidosperma compactinervium",Kuhlm.
 APOCYNACEAE,"Aspidosperma ingratum",K.Schum.
 APOCYNACEAE,"Cynanchum brasiliense","(Morillo) Liede"
@@ -261,6 +261,7 @@ BROMELIACEAE,"Tillandsia sucrei",E.Pereira
 BROMELIACEAE,"Tillandsia thiekenii",Ehlers
 BROMELIACEAE,"Vriesea altimontana","E.Pereira & Martinelli"
 BROMELIACEAE,"Vriesea altomacaensis",A.F.Costa
+BROMELIACEAE,"Vriesea atrococcinea",Rauh
 BROMELIACEAE,"Vriesea bleherae","Roth & W. Weber"
 BROMELIACEAE,"Vriesea botafogensis",Mez
 BROMELIACEAE,"Vriesea brassicoides","(Baker) Mez"
@@ -277,9 +278,7 @@ BROMELIACEAE,"Vriesea leptantha",Harms
 BROMELIACEAE,"Vriesea lidicensis",Reitz
 BROMELIACEAE,"Vriesea nubicola",Leme
 BROMELIACEAE,"Vriesea pastuchoffiana",Glaz.
-BROMELIACEAE,"Vriesea pauciflora",Mez
 BROMELIACEAE,"Vriesea punctulata","E.Pereira & I.A.Penna"
-BROMELIACEAE,"Vriesea roethii",W.Weber
 BROMELIACEAE,"Vriesea rubyae",E.Pereira
 BROMELIACEAE,"Vriesea saundersii","(Carrière) E.Morren ex Mez"
 BROMELIACEAE,"Vriesea serrana","E.Pereira & I.A.Penna"
@@ -328,7 +327,6 @@ CUCURBITACEAE,"Wilbrandia glaziovii",Cogn.
 CYPERACEAE,"Hypolytrum glaziovii",Boeckeler
 CYPERACEAE,"Rhynchospora luetzelburgiana",Kük.
 CYPERACEAE,"Rhynchospora sampaioana",Gross
-CYPERACEAE,"Scleria bradei",Pilg.
 CYPERACEAE,"Trilepis tenuis",Vitta
 DICHAPETALACEAE,"Stephanopodium sessile",Rizzini
 DICRANACEAE,"Dicranoloma brasiliense",Herzog
@@ -344,9 +342,7 @@ DIOSCOREACEAE,"Dioscorea pumilio",Griseb.
 DIOSCOREACEAE,"Dioscorea septemnervis",Vell.
 DIOSCOREACEAE,"Dioscorea sphaeroidea","R. Couto & J. M. A. Braga"
 DRYOPTERIDACEAE,"Ctenitis flexuosa","(Fée) Copel."
-DRYOPTERIDACEAE,"Elaphoglossum miersii","(Baker) C.Chr."
 DRYOPTERIDACEAE,"Elaphoglossum mourae",Brade
-DRYOPTERIDACEAE,"Polystichum auritum","(Fée) Yatsk."
 ERICACEAE,"Agarista organensis","(Gardner) Hook. ex Nied."
 ERICACEAE,"Agarista uleana","(Sleumer) Judd"
 ERICACEAE,"Gaylussacia pruinosa",Loes.
@@ -435,7 +431,6 @@ GESNERIACEAE,"Vanhouttea fruticulosa","(Glaz. ex Hoehne) Chautems"
 GESNERIACEAE,"Vanhouttea gardneri","(Hook.) Fritsch"
 GESNERIACEAE,"Vanhouttea lanata",Fritsch
 HELICONIACEAE,"Heliconia pseudoaemygdiana","Emygdio & E.Santos"
-HYMENOPHYLLACEAE,"Hymenophyllum sampaioanum","Brade & Rosenst."
 IRIDACEAE,"Neomarica itatiaica","(Ravenna) A. Gil"
 IRIDACEAE,"Neomarica longifolia","(Link & Otto) Sprague"
 IRIDACEAE,"Neomarica northiana","(Schneev.) Sprague"
@@ -635,16 +630,12 @@ MYRTACEAE,"Marlierea resupinata","(Vell.) O.Berg"
 MYRTACEAE,"Marlierea sessiliflora",O.Berg
 MYRTACEAE,"Marlierea silvestris","(Vell.) Mattos"
 MYRTACEAE,"Myrcia badia","(O.Berg) N.Silveira"
-MYRTACEAE,"Myrcia colpodes",Kiaersk.
 MYRTACEAE,"Myrcia dolichopetala",Kiaersk.
 MYRTACEAE,"Myrcia magnifolia","(O.Berg) Kiaersk."
 MYRTACEAE,"Myrcia neocambessedeana","E.Lucas & Sobral"
-MYRTACEAE,"Myrcia oreioeca",Kiaersk.
-MYRTACEAE,"Myrcia rubiginosa",Cambess.
 MYRTACEAE,"Myrcia stewartiana",O.Berg
 MYRTACEAE,"Myrcia velutiflora","(Mattos & D.Legrand) Mattos"
 MYRTACEAE,"Myrcia warmingiana",Kiaersk.
-MYRTACEAE,"Myrciaria pallida",O.Berg
 MYRTACEAE,"Myrciaria pumila","(Gardner) O.Berg"
 MYRTACEAE,"Neomitranthes apiculata","(Burret) Mattos"
 MYRTACEAE,"Neomitranthes riedeliana","(O.Berg) Mattos"
@@ -784,7 +775,6 @@ PIPERACEAE,"Piper weddellii",C.DC.
 PLANTAGINACEAE,"Achetaria latifolia",V.C.Souza
 PLANTAGINACEAE,"Ildefonsia bibracteata",Gardner
 POACEAE,"Apochloa tijucae","(Renvoize) Zuloaga & Morrone"
-POACEAE,"Axonopus comatus","(Mez) Swallen"
 POACEAE,"Chusquea tenuis","Glaz. ex E.G.Camus"
 POACEAE,"Chusquea wilkesii",Munro
 POACEAE,"Dichanthelium cucaense","(Zuloaga & Morrone) Zuloaga"
@@ -796,7 +786,6 @@ POACEAE,"Trisetum brasiliense",Louis-Marie
 PODOSTEMACEAE,"Podostemum saldanhanum","(Warm.) C.T.Philbrick & Novelo"
 POLYGALACEAE,"Polygala revoluta",Gardner
 POLYGONACEAE,"Coccoloba rigida",Meisn.
-POLYPODIACEAE,"Alansmia alfaroi","(Donn. Sm.) Moguel & M. Kessler"
 POLYPODIACEAE,"Moranopteris xbradei","(Labiak & F.B.Matos) R.Y. Hirai & J. Prado"
 POLYPODIACEAE,"Pecluma imbeana","(Brade) Salino"
 POLYPODIACEAE,"Stenogrammitis luetzelburgii","(Rosenst.) Labiak"
@@ -806,10 +795,11 @@ PRIMULACEAE,"Stylogyne araujoana","Carrijo, M.F. Freitas A.L. Peixoto"
 PRIMULACEAE,"Stylogyne leptantha","(Miq.) Mez"
 PRIMULACEAE,"Stylogyne sordida",Mez
 PROTEACEAE,"Roupala gracilis",Meisn.
-PTERIDACEAE,"Cheilanthes incisa","Kunze ex Mett."
 PTERIDACEAE,"Doryopteris magdalenensis","(Brade) Brade"
 PTERIDACEAE,"Doryopteris quinquelobata","(Fée) Diels"
 PTERIDACEAE,"Doryopteris subsimplex","(Fée) Diels"
+PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst."
+PTERIDACEAE,"Pteris congesta",J.Prado
 RANUNCULACEAE,"Anemone assisbrasiliana","Kuhlm. & Porto"
 RUBIACEAE,"Bathysa sylvestrae","Germano-Filho & M.Gomes"
 RUBIACEAE,"Chomelia monantha","(K.Schum. ex Standl.) Steyerm."
@@ -846,7 +836,6 @@ RUBIACEAE,"Hindsia arianeae","Di Maio"
 RUBIACEAE,"Hindsia cucullata","Di Maio"
 RUBIACEAE,"Hindsia glabra",K.Schum.
 RUBIACEAE,"Hindsia phyllocalyx",K.Schum.
-RUBIACEAE,"Hindsia ramosissima",Gardner
 RUBIACEAE,"Hindsia republicana","Di Maio"
 RUBIACEAE,"Hindsia violacea",Benth.
 RUBIACEAE,"Ixora heterophylla",Müll.Arg.
@@ -881,11 +870,8 @@ RUBIACEAE,"Rudgea insignis",Müll.Arg.
 RUBIACEAE,"Rudgea macrophylla",Benth.
 RUBIACEAE,"Rudgea parvifolia","(Cham.) Müll.Arg."
 RUBIACEAE,"Rustia simpsonii",Delprete
-RUBIACEAE,"Simira rubra","(Mart.) Steyerm."
-RUBIACEAE,"Simira walteri","Silva Neto & Callado"
 RUBIACEAE,"Standleya erecta",Brade
 RUBIACEAE,"Standleya limae",Brade
-RUTACEAE,"Almeidea limae",I.M.Silva
 RUTACEAE,"Conchocarpus grandiflorus","(Engl.) Kallunki & Pirani"
 RUTACEAE,"Conchocarpus ovatus","(A.St.-Hil. & Tul.) Kallunki & Pirani"
 RUTACEAE,"Conchocarpus paniculatus","(Engl.) Kallunki & Pirani"
@@ -941,7 +927,7 @@ VIOLACEAE,"Rinorea laevigata","(Sol. ex Ging.) Hekking"
 VOCHYSIACEAE,"Callisthene dryadum",Duarte
 XYRIDACEAE,"Xyris organensis",Malme
 Calophyllaceae,"Kielmeyera aureovinosa","M. Gomes"
-Pteridaceae,"Jamesonia brasiliensis",Christ
+Bromeliaceae,"Vriesea eltoniana",E.Pereira
 Orchidaceae,"Brasilaelia lobata","(Lindl.) Gutfreund"
 BEGONIACEAE,"Begonia sylvestris",A.DC.
 BEGONIACEAE,"Begonia arborescens",Raddi
@@ -949,12 +935,13 @@ FABACEAE,"Mimosa bocainae",Barneby
 Poaceae,"Trisetum brasiliense",Louis-Marie
 BEGONIACEAE,"Begonia bonitoensis",Brade
 Ditrichaceae,"Ditrichum itatiaiae","(Müll.Hal.) Paris"
-" Ditrichaceae","Ditrichum itatiaiae","(Müll.Hal.) Paris"
+Ditrichaceae,"Ditrichum itatiaiae","(Müll.Hal.) Paris"
 FABACEAE,"Mimosa itatiaiensis",Dusén
 ARACEAE,"Anthurium sakuraguianum",
 ARACEAE,"Philodendron luisae",
-" Ditrichaceae","Ditrichum itatiaiae","(Müll.Hal.) Paris"
+Ditrichaceae,"Ditrichum itatiaiae","(Müll.Hal.) Paris"
 ARACEAE,"Anthurium cronembergerae",
+Poaceae,"Glaziophyton mirable",Franch.
 MALPIGHIACEAE,"Hiraea restingae ",C.E.Anderson
 ORCHIDACEAE,"Pabstiella purpurea","(Seehawer) Luer & Toscano"
 LOASACEAE,"Aosa uleana","(Urb. & Gilg) Weigend"

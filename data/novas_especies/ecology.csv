@@ -1,4 +1,5 @@
 family,scientificName,lifeForm,fenology,luminosity,substratum,longevity,resprout
+RUBIACEAE,"Bradea borrerioides",subshrub,perenifolia,mesophytic,saxicolous,unkown,unkown
 BROMELIACEAE,"Encholirium fragae",herb,,,rupicolous,,
 BROMELIACEAE,"Encholirium kranzianum",herb,,,rupicolous,,
 BROMELIACEAE,"Encholirum splendidum",herb,,,rupicolous,,
@@ -7,3 +8,4 @@ Asteraceae,"Eremanthus praetermissus","small tree",perenifolia,heliophytic,terre
 Asteraceae,"Eremanthus ovatifolius","small tree",perenifolia,heliophytic,terrestrial,perennial,unkown
 ERIOCAULACEAE,"Paepalanthus capixabensis",herb,perenifolia,heliophytic,terrestrial,perennial,yes
 ERIOCAULACEAE,"Paepalanthus echinoides",herb,,heliophytic,terrestrial,unkown,unkown
+ERIOCAULACEAE,"Paepalanthus argyrotrychus",herb,perenifolia,heliophytic,terrestrial,unkown,unkown

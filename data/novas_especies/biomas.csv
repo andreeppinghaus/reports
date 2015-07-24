@@ -1,4 +1,5 @@
 family,scientificName,bioma
+RUBIACEAE,"Bradea borrerioides","Mata Atlântica"
 BROMELIACEAE,"Encholirium fragae",Caatinga
 BROMELIACEAE,"Encholirium kranzianum",Caatinga
 BROMELIACEAE,"Encholirum splendidum",Cerrado
@@ -7,3 +8,4 @@ Asteraceae,"Eremanthus praetermissus","Mata Atlântica"
 Asteraceae,"Eremanthus ovatifolius",Cerrado
 ERIOCAULACEAE,"Paepalanthus capixabensis","Mata Atlântica"
 ERIOCAULACEAE,"Paepalanthus echinoides",Cerrado
+ERIOCAULACEAE,"Paepalanthus argyrotrychus",Cerrado

@@ -4,6 +4,7 @@ Apiaceae,"Eryngium goulartii","Glaz. & Urb. ex Urb."
 Orchidaceae,"Otostylis alba","(Ridl.) Summerh."
 ERIOCAULACEAE,"Paepalanthus urbanianus ",Ruhland
 Orchidaceae,"Aganisia pulchella",Lindl.
+Malpighiaceae,"Hiraea macrophylla","(Colla) P.L.R.Moraes & Guglielmone"
 ACANTHACEAE,"Aphelandra neesiana",Wassh.
 ACANTHACEAE,"Ruellia herbstii","(Hook.) Hiern"
 ACANTHACEAE,"Ruellia silvaccola","(Mart. ex Ness) Lindau"
@@ -13,19 +14,23 @@ ANEMIACEAE,"Anemia candidoi",Brade
 BORAGINACEAE,"Varronia leucomalla","(Taub.) Borhidi"
 BROMELIACEAE,"Vriesea agostiniana",E.Pereira
 BROMELIACEAE,"Vriesea atra",Mez
-BROMELIACEAE,"Vriesea atrococcinea",Rauh
 BROMELIACEAE,"Vriesea grandiflora",Leme
 BROMELIACEAE,"Vriesea joyae","E.Pereira & I.A.Penna"
+BROMELIACEAE,"Vriesea pauciflora",Mez
+BROMELIACEAE,"Vriesea roethii",W.Weber
 BROMELIACEAE,"Vriesea secundiflora",Leme
 CALOPHYLLACEAE,"Kielmeyera rizziniana",Saddi
 CUCURBITACEAE,"Cayaponia latiloba","(Cogn.) Gomes-Klein"
 CUCURBITACEAE,"Gurania cinerea",Suessenguth
 CUCURBITACEAE,"Gurania ovata",Cogn.
+CYPERACEAE,"Scleria bradei",Pilg.
 DICHAPETALACEAE,"Stephanopodium estrellense",Baill.
 DILLENIACEAE,"Doliocarpus littoralis","(Kubitzki) Fraga & Stehmann"
 DIOSCOREACEAE,"Dioscorea campos-portoi",R.Knuth
 DIOSCOREACEAE,"Dioscorea pseudomacrocapsa","G.M.Barroso et al."
+DRYOPTERIDACEAE,"Polystichum auritum","(Fée) Yatsk."
 EUPHORBIACEAE,"Acalypha macularis","Pax & K.Hoffm."
+HYMENOPHYLLACEAE,"Hymenophyllum sampaioanum","Brade & Rosenst."
 MALVACEAE,"Abutilon macrocarpum","Guillem. & Perr."
 MALVACEAE,"Callianthe rufivela","(Hochr.) Donnel"
 MALVACEAE,"Callianthe schenckii","(K. Shum.) Donnel"
@@ -33,12 +38,22 @@ MALVACEAE,"Sida schumanniana",Krapov.
 MALVACEAE,"Waltheria glazioviana",K.Schum.
 MALVACEAE,"Waltheria petiolata",K.Schum.
 MORACEAE,"Maclura brasiliensis","(Mart.) Endl."
+MYRTACEAE,"Myrcia colpodes",Kiaersk.
+MYRTACEAE,"Myrcia oreioeca",Kiaersk.
+MYRTACEAE,"Myrcia rubiginosa",Cambess.
+MYRTACEAE,"Myrciaria pallida",O.Berg
 PHYLLANTHACEAE,"Phyllanthus augustinii",Baill.
+POLYPODIACEAE,"Alansmia alfaroi","(Donn. Sm.) Moguel & M. Kessler"
+PTERIDACEAE,"Cheilanthes incisa","Kunze ex Mett."
 PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst."
 PTERIDACEAE,"Pteris congesta",J.Prado
+RUBIACEAE,"Hindsia glabra",K.Schum.
+RUBIACEAE,"Hindsia ramosissima",Gardner
 RUBIACEAE,"Psychotria friburgensis",Standl.
+RUBIACEAE,"Simira walteri","Silva Neto & Callado"
 URTICACEAE,"Pilea apiculata",Killip
 DICHAPETALACEAE,"Stephanopodium organense","(Rizzini) Prance"
+Pteridaceae,"Jamesonia brasiliensis",Christ
 Dichapetalaceae,"Stephanopodium organense","(Rizzini) Prance"
 ERIOCAULACEAE,"Paepalanthus stellatus "," Trovó"
 Orchidaceae,"Aganisia cyanea f. cyanea","(Lindl.) Rchb.f."

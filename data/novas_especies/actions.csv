@@ -1,4 +1,8 @@
-family,scientificName,action,situation
-Asteraceae,"Eremanthus praetermissus","1.1 Site/area protection","on going"
-Asteraceae,"Eremanthus ovatifolius","1.1 Site/area protection",needed
-ERIOCAULACEAE,"Paepalanthus capixabensis","1.1 Site/area protection",needed
+family,scientificName,action,situation,details,references
+RUBIACEAE,"Bradea borrerioides","1.1 Site/area protection",needed,"Há uma grande carência de unidades de conservação para a proteção dos inselbergues nos estados do Espírito Santo e Minas Gerais. Nenhuma das subpopulações de Bradea borrerioides se encontra protegida por UCs (Oliveira & Sobrado no prelo). Plantas endêmicas de inselbergues muitas vezes não sobrevivem em coleções ex situ pelo fato de as condições climatológicas e ecológicas deste habitat serem de difícil reprodução em coleções ex situ (Oliveira & Sobrado no prelo). Assim, a criação de UCs para preservação in situ é de extrema importância para a sobrevivência da espécie.
+",
+Asteraceae,"Eremanthus praetermissus","1.1 Site/area protection","on going","A espécie ocorre em localidades de três Unidades de Conservação de proteção integral: Parque Estadual da Serra do Mar, núcleo Caraguatatuba (Paula-Souza; 3477; Franco; 3006), Parque Estadual da Ilha Anchieta, Mirante do Sul (Luize;19) e Parque Estadual da Serra do Mar, Morro do Cuscuzeiro (Bertoncello; 905).
+",
+Asteraceae,"Eremanthus ovatifolius","1.1 Site/area protection",needed,"O Pico da Aliança apresenta uma flora rica com varias espécies novas sendo descritas atualmente (Loeuille, com. pess.). Entretanto a área não está protegida por nenhuma UC (Loeuille, com. pess.). Apesar de abundante, a espécie é localmente restrita a essa região (Loeuille and Pirani, em prep.). ",
+ERIOCAULACEAE,"Paepalanthus capixabensis","1.1 Site/area protection",needed,"A espécie não ocorre em nenhuma unidade de conservação (Trovó et al. in prep.)","Trovó, M.; Nicoletti, C. & Sano, P.T. Paepalanthus capixabensis, a new microendemic species from Espírito Santo, Brazil. Phytotaxa (in prep.)"
+ERIOCAULACEAE,"Paepalanthus argyrotrychus","1.1 Site/area protection",needed,"No local ocorrem outras espécies micro-endêmicas e seria necessário proteger a área, pelo menos uma parte da serra.",
