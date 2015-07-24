@@ -9,7 +9,7 @@ $base = $argv[1];
 
 if($base == 'livro_vermelho_2013') return;
 
-preg_match('/([a-zA-Z0-9]+)\.php$/',$argv[0],$reg);
+preg_match('/([a-zA-Z0-9_]+)\.php$/',$argv[0],$reg);
 $script = $reg[1];
 
 echo "Start $script",PHP_EOL;
@@ -33,7 +33,8 @@ while($l = fgets($af)){
   $all->rows[] = json_decode(substr($l,0,-3));
 }
 #$all = json_decode(file_get_contents("all.json"));
-$csv = fopen(__DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv",'w');
+$file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
+$csv  = fopen($file,'w');
 echo "Runing $base",PHP_EOL;
 
 register_shutdown_function(function() use ($pwd,$base,$script,$csv) {
