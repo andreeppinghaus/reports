@@ -14,6 +14,7 @@ foreach($all->rows as $row) {
                 arraY("family"=>$doc->family,
                     "name"=>$doc->scientificNameWithoutAuthorship,
                     "author"=>$doc->scientificNameAuthorship,
+                    "acceptedNameUsage"=>$doc->scientificName,
                     "analysis"=>"",
                     "assessment"=>"",
                     "category"=>"",

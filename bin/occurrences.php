@@ -17,6 +17,16 @@ foreach($all->rows as $row) {
     }
 }
 
+foreach($taxons as $taxon) {
+  if($taxon->taxonomicStatus == 'synonym') {
+    foreach($taxons as $taxon2) {
+      if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage) {
+        $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
+      }
+    }
+  }
+}
+
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='occurrence') {
@@ -28,9 +38,9 @@ foreach($all->rows as $row) {
           || (isset($doc->acceptedNameUsage) && preg_match($m1,$doc->acceptedNameUsage) )) {
           $got=true;
           if($taxon->taxonomicStatus == 'accepted') {
-            $doc->acceptedNameUsage = $taxon->scientificName;
+            $doc->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
           } else if($taxon->taxonomicStatus == 'synonym') {
-            $doc->acceptedNameUsage = $taxon->acceptedNameUsage;
+            $doc->acceptedNameUsage = $taxon->acceptedNameUsageWithoutAuthorship;
           }
           break;
         }
