@@ -42,7 +42,7 @@ while(($db = readdir($dbs)) !== false) {
             }
 
             $table = str_replace(".csv","",$csv_file);
-            $sql .= "CREATE TABLE IF NOT EXISTS ".$table." (".implode(" , ",$fields).");\n";
+            $sql .= "CREATE TABLE IF NOT EXISTS `".$table."` (`".implode("` , `",$fields)."`);\n";
 
             while(($row = fgetcsv($csv,0,',','"')) !== false) {
               foreach($row as $k=>$v) {
@@ -52,7 +52,7 @@ while(($db = readdir($dbs)) !== false) {
               foreach($head as $i=>$h) {
                 if(!isset($row[$i])) $row[$i] = '';
               }
-              $sql .= "INSERT INTO ".$table." VALUES ('".implode("','",$row)."');\n";
+              $sql .= "INSERT INTO `".$table."` VALUES ('".implode("','",$row)."');\n";
             }
           }
 
