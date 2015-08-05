@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install supervisor python-xlwt -y && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-ADD default.conf /etc/apache2/sites-available/default
+ADD default.conf /etc/apache2/sites-available/000-default.conf
 ADD .htaccess /var/www/.htaccess
 ADD .htpasswd /var/www/.htpasswd
 
