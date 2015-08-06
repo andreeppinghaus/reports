@@ -30,7 +30,7 @@ while(($db = readdir($dbs)) !== false) {
 
     if($db_dir) {
       while(($csv_file = readdir($db_dir)) !== false) {
-        if(!preg_match("/\.csv$/",$csv_file) && $csv_file != "occurrences.csv") continue;
+        if(!preg_match("/\.csv$/",$csv_file)) continue;
         echo "-->".$csv_file."\n";
         $csv  = fopen(__DIR__."/../data/".$db."/".$csv_file,'r');
         if($csv) {
@@ -74,5 +74,5 @@ closedir($dbs);
 
 passthru("python bin/csv2xlsx.py");
 
-passthru("zip -r data/all.zip data/* -x data/*/occurrences.csv data/*/*.sqlite data/*/*.sql data/*/all.json");
+passthru("zip -r data/all.zip data/* -x data/*/*.sqlite data/*/*.sql data/*/all.json");
 
