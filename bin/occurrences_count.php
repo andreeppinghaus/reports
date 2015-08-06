@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["family","acceptedNameUsage","valid","invalid","not_validated","sig_ok","sig_nok","no_sig","used","unused","total"];
+$fields = ["family","acceptedNameUsage","valid","invalid","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
 
 fputcsv($csv,$fields);
 
@@ -19,7 +19,7 @@ foreach($all->rows as $row) {
 foreach($taxons as $taxon) {
   if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
-      if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage) {
+      if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
         $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
       }
     }
@@ -159,7 +159,23 @@ foreach($all->rows as $row) {
 }
 
 
+$i=0;
 foreach($data as $d) {
+  $i++;
+  if($i==100) {
+    sleep ( 2 );
+    $i=0;
+  }
+
+  $url = 'http://jb049/occurrences/'.$base.'/specie/'.urlencode($d->acceptedNameUsage).'?json=true';
+  $sess='1b71063e4887a009fd6742376c6f92a52036817eb443ac8479750dac81233d42';
+  shell_exec("curl '".$url."' -L -H 'Cookie: rack.session=".$sess."' > tmp_occs.json");
+  $resp = file_get_contents('tmp_occs.json');
+  $json = json_decode($resp);
+
+  $d->aoo = $json->stats->aoo;
+  $d->eoo = $json->stats->eoo;
+
   $row = array();
   foreach($fields as $f) {
     $row[] = $d->$f;
