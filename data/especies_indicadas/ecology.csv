@@ -15,6 +15,7 @@ COMMELINACEAE,"Dichorisandra begoniifolia",herb,perenifolia,mesophytic,terrestri
 EUPHORBIACEAE,"Acalypha macularis",bush,,,terrestrial,,
 ERIOCAULACEAE,"Paepalanthus cordatus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
 ERIOCAULACEAE,"Paepalanthus macer ",subshrub,perenifolia,heliophytic,terrestrial,unkown,no
+BROMELIACEAE,"Aechmea flavorosea",herb,,,epiphytic,,
 ERIOCAULACEAE,"Paepalanthus stellatus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
 ERIOCAULACEAE,"Paepalanthus urbanianus ",herb,perenifolia,heliophytic,terrestrial,unkown,no
 URTICACEAE,"Pilea apiculata",herb,,,terrestrial,,
@@ -29,6 +30,7 @@ CYPERACEAE,"Scleria bradei",herb,,,terrestrial,,
 BROMELIACEAE,"Vriesea roethii",herb,,,epiphytic,,
 BROMELIACEAE,"Vriesea secundiflora",herb,,,epiphytic,,
 Malpighiaceae,"Hiraea macrophylla",liana,,heliophytic,terrestrial,,
+MYRTACEAE,"Eugenia cinerascens",,,,,,
 CUCURBITACEAE,"Cayaponia latiloba",liana,,,,,
 CUCURBITACEAE,"Gurania ovata",liana,,,terrestrial,,
 POACEAE,"Chusquea sclerophylla",bush,,,terrestrial,,
@@ -41,7 +43,9 @@ PTERIDACEAE,"Doryopteris tijucana",herb,,,rupicolous,,
 Pteridaceae,"Jamesonia brasiliensis",herb,,,rupicolous,,
 PTERIDACEAE,"Pteris congesta",herb,,,terrestrial,,
 POLYPODIACEAE,"Alansmia alfaroi",herb,,,epiphytic,,
+RUBIACEAE,"Rudgea allophylla",bush,,,,,
 MYRTACEAE,"Myrcia colpodes","bush ; tree",,,,,
+RUBIACEAE,"Psychotria mineirensis",bush,,,terrestrial,,
 RUBIACEAE,"Psychotria friburgensis",bush,,,terrestrial,,
 MYRTACEAE,"Myrcia oreioeca",tree,,,terrestrial,,
 MYRTACEAE,"Myrcia rubiginosa",tree,,,terrestrial,,

@@ -1,9 +1,10 @@
 family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total
-MYRTACEAE,"Eugenia martiana (O.Berg) Mattos",0,0,16,16,0,0,0,16,16
-MYRTACEAE,"Eugenia chlorocarpa O.Berg",0,3,2,0,5,0,0,5,5
-Poaceae,"Paspalum niquelandiae Filg.",0,4,5,8,1,0,0,9,9
-Lamiaceae,"Hesperozygis ringens (Benth.) Epling",0,3,31,31,3,0,0,34,34
-Erythroxylaceae,"Erythroxylum substriatum O.E.Schulz",0,2,5,4,3,0,0,7,7
-Ephedraceae,"Ephedra tweediana C.A.Mey.",0,25,76,85,5,11,0,101,101
-Fabaceae,"Mimosa bracteolaris Benth.",0,2,16,5,13,0,0,18,18
-Isoetaceae,"Isoetes luetzelburgii U.Weber",0,0,4,4,0,0,0,4,4
+MYRTACEAE,"Eugenia martiana",0,0,16,16,0,0,0,16,16
+MYRTACEAE,"Eugenia chlorocarpa",0,3,2,0,5,0,0,5,5
+Poaceae,"Paspalum niquelandiae",0,4,5,8,1,0,0,9,9
+Lamiaceae,"Glechon ringens",0,0,6,4,2,0,0,6,6
+Erythroxylaceae,"Erythroxylum substriatum",0,2,5,4,3,0,0,7,7
+Ephedraceae,"Ephedra tweediana",0,25,76,85,5,11,0,101,101
+Fabaceae,"Mimosa bracteolaris",0,2,16,5,13,0,0,18,18
+Lamiaceae,"Hesperozygis ringens",0,3,25,27,1,0,0,28,28
+Isoetaceae,"Isoetes luetzelburgii",0,0,4,4,0,0,0,4,4

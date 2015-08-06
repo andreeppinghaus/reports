@@ -1,12 +1,19 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
-ERIOCAULACEAE,"Paepalanthus velutiphyllus",,,,,
+Lentibulariaceae,"Genlisea metallica","Rivadavia & A.Fleischm.",,,,
+Lentibulariaceae,"Genlisea oligophylla","Rivadavia & A.Fleischm.",,,,
+Lentibulariaceae,"Genlisea exhibitionista","Rivadavia & A.Fleischm.",,,,
+Lentibulariaceae,"Genlisea nebulicola","Rivadavia, Gonella & A. Fleischm.",,,,
+ERIOCAULACEAE,"Paepalanthus velutiphyllus",,sig,,,
+Droseraceae,"Drosera graminifolia",A.St.-Hil.,,,,
 Asteraceae,"Eremanthus praetermissus",Loeuille,done,comments,VU,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v)"
 Asteraceae,"Eremanthus ovatifolius",Loeuille,done,comments,CR,"B2ab(ii,iii,iv,v)"
 ERIOCAULACEAE,"Paepalanthus capixabensis",Trovó,done,comments,CR,"B1ab(i,ii,iii,iv)"
+MAGNOLIACEAE,"Magnolia paraensis ","A. Vázquez",open,,,
 RUBIACEAE,"Bradea pubescens","Brade ex J.A.Oliveira",,,,
 RUBIACEAE,"Bradea arenicola ",J.A.Oliveira,,,,
-ERIOCAULACEAE,"Paepalanthus farinaceus",,,,,
-ERIOCAULACEAE,"Paepalanthus argyrotrychus",,open,,,
+ERIOCAULACEAE,"Paepalanthus farinaceus",,sig,,,
+Droseraceae,"Drosera villosa",A.St.-Hil.,,,,
+ERIOCAULACEAE,"Paepalanthus argyrotrychus",,sig,,,
 RUBIACEAE,"Bradea laeterosea ",J.A.Oliveira,,,,
 RUBIACEAE,"Bradea borrerioides","J.A.Oliveira & Sobrado",done,comments,EN,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v);D1"
 BROMELIACEAE,"Encholirium fragae",Forzza,done,review,DD,

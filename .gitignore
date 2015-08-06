@@ -1,6 +1,7 @@
 tmp_occs.json
 all.json
 occurrences.csv
+sig.csv
 *.swp
 *~
 *.zip

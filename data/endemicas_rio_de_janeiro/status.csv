@@ -1,5 +1,5 @@
 family,scientificNameWithoutAuthorship,scientificNameAuthorship,analysis,assessment,category,criteria
-Poaceae,"Glaziophyton mirabile",Franch.,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+Poaceae,"Glaziophyton mirabile",Franch.,validation,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 Thismiaceae,"Thismia glaziovii",Poulsen,review,,,
 COMMELINACEAE,"Dichorisandra picta",Lodd.,open,review,CR,"B1ab(i,ii,iii,iv);C1+2a(i)"
 Bromeliaceae,"Neoregelia paratiensis",Leme,done,review,DD,
@@ -9,13 +9,13 @@ CACTACEAE,"Rhipsalis triangularis",Werderm.,validation,,,
 Myrtaceae,"Myrcia innovans",Kiaersk.,review,,,
 Amaryllidaceae,"Worsleya procera","(Lem.) Traub",validation,,,
 ORCHIDACEAE,"Pabstiella dracula","(Seehawer) Luer & Toscano",done,review,CR,B2ab(iii)
-Acanthaceae,"Aphelandra stephanophysa",Nees,done,review,CR,"B2ab(i,ii,iii,iv)"
-Acanthaceae,"Justicia meyeniana","(Nees) Lindau",done,review,VU,"B1ab(i,ii,iii,iv)"
+Acanthaceae,"Aphelandra stephanophysa",Nees,validation,review,CR,"B2ab(i,ii,iii,iv)"
+Acanthaceae,"Justicia meyeniana","(Nees) Lindau",validation,review,VU,"B1ab(i,ii,iii,iv)"
 Amaryllidaceae,"Griffinia intermedia",Lindl.,validation,,,
 Orchidaceae,"Pabstiella pantherina","(Seehawer) Luer & Toscano",done,review,DD,
-ACANTHACEAE,"Aphelandra bradeana",Rizzini,done,review,CR,"B2ab(i,ii,iii,iv)"
+ACANTHACEAE,"Aphelandra bradeana",Rizzini,done,comments,CR,"B2ab(i,ii,iii,iv)"
 ACANTHACEAE,"Aphelandra rigida","Glaz. ex Mildbr.",done,review,CR,"B2ab(ii,iii,iv)"
-ACANTHACEAE,"Herpetacanthus delicatus","Indriunas & Kameyama",done,review,CR,"B2ab(ii,iii,iv)"
+ACANTHACEAE,"Herpetacanthus delicatus","Indriunas & Kameyama",validation,review,CR,"B2ab(ii,iii,iv)"
 ACANTHACEAE,"Herpetacanthus parvispica","Indriunas & Kameyama",done,review,CR,"B2ab(ii,iii,iv)"
 ACANTHACEAE,"Justicia itatiaiensis",Profice,done,review,CR,"B2ab(ii,iii,iv)"
 ACANTHACEAE,"Justicia nervata","(Lindau) Profice",done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
@@ -25,12 +25,12 @@ ACANTHACEAE,"Staurogyne euryphylla",E.Hossain,done,review,EN,"B1ab(i,ii,iii,iv)+
 AMARYLLIDACEAE,"Griffinia rochae",Morel,validation,,,
 ANEMIACEAE,"Anemia candidoi",Brade,done,review,DD,
 ANNONACEAE,"Annona ferruginea","(R.E.Fr.) H.Rainer",done,review,DD,
-ANNONACEAE,"Annona parviflora","(A.St.-Hil.) H.Rainer",done,review,VU,"B1ab(i,iii)"
+ANNONACEAE,"Annona parviflora","(A.St.-Hil.) H.Rainer",validation,review,VU,"B1ab(i,iii)"
 ANNONACEAE,"Duguetia microphylla","(R.E.Fr.) R.E.Fr.",done,review,EN,B1ab(iii)+2ab(iii)
 ANNONACEAE,"Duguetia pohliana",Mart.,done,review,EN,B1ab(iii)+2ab(iii)
 ANNONACEAE,"Hornschuchia alba","(A.St.-Hil.) R.E.Fr.",done,review,CR,B1ab(iii)
 ANNONACEAE,"Trigynaea axilliflora","D.M.Johnson & N.A.Murray",done,review,EN,B1ab(iii)+2ab(iii)
-ANNONACEAE,"Unonopsis riedeliana",R.E.Fr.,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+ANNONACEAE,"Unonopsis riedeliana",R.E.Fr.,validation,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 ANTHOCEROTACEAE,"Anthoceros lamellatus",Steph.,review,,,
 APIACEAE,"Eryngium fluminense",Urb.,done,open,,
 APOCYNACEAE,"Aspidosperma compactinervium",Kuhlm.,review,open,,
@@ -86,7 +86,7 @@ ARALIACEAE,"Hydrocotyle alpestris",Gardner,done,review,CR,"B1ab(i,ii,iii)"
 ARALIACEAE,"Hydrocotyle bradei",Rossberg,done,review,CR,"B2ab(ii,iii)"
 ARALIACEAE,"Hydrocotyle ulei",H.Wolff,done,review,EN,"B1ab(i,ii,iii,iv)"
 ARALIACEAE,"Schefflera succinea","Frodin & Fiaschi",done,,,
-ARECACEAE,"Lytocaryum weddellianum","(H.Wendl.) Toledo",done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
+ARECACEAE,"Lytocaryum weddellianum","(H.Wendl.) Toledo",validation,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 ARISTOLOCHIACEAE,"Aristolochia raja","Mart. & Zucc.",done,open,EN,"B1ab(i,iii,iv)+2ab(ii,iii,iv)"
 ASPLENIACEAE,"Asplenium cariocanum",Brade,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 ASTERACEAE,"Austrocritonia rosea","(Gardner) R.M.King & H.Rob.",review,review,EN,"B1ab(i,ii,iii,v)c(i,ii,iii,iv)"
@@ -167,13 +167,12 @@ BEGONIACEAE,"Begonia valida",Goebel,validation,,,
 BEGONIACEAE,"Begonia velloziana",Walp.,validation,,,
 BIGNONIACEAE,"Adenocalymma bullatum","Bureau & K.Schum.",done,review,DD,
 BIGNONIACEAE,"Bignonia costata","(Bureau & K.Schum.) L.G.Lohmann",done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
-BIGNONIACEAE,"Fridericia elegans","(Vell.) L.G.Lohmann",done,review,VU,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
+BIGNONIACEAE,"Fridericia elegans","(Vell.) L.G.Lohmann",validation,review,VU,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 BIGNONIACEAE,"Jacaranda crassifolia",Morawetz,done,review,EN,"B1ab(ii,iii,iv)+2ab(ii,iii,iv)"
 BROMELIACEAE,"Aechmea caesia","E.Morren ex Baker",validation,,,
 BROMELIACEAE,"Aechmea cariocae",L.B.Sm.,validation,,,
 BROMELIACEAE,"Aechmea dealbata","E.Morren ex Baker",validation,,,
 BROMELIACEAE,"Aechmea fasciata","(Lindl.) Baker",validation,,,
-BROMELIACEAE,"Aechmea flavorosea",E.Pereira,validation,,,
 BROMELIACEAE,"Aechmea grazielae","Martinelli & Leme",validation,,,
 BROMELIACEAE,"Aechmea paratiensis","Leme & Fraga",validation,,,
 BROMELIACEAE,"Aechmea prava",E.Pereira,validation,,,
@@ -192,12 +191,12 @@ BROMELIACEAE,"Canistropsis correia-araujoi","(E.Pereira & Leme) Leme",validation
 BROMELIACEAE,"Canistropsis elata","(E.Pereira & Leme) Leme",validation,,,
 BROMELIACEAE,"Canistropsis marceloi","(E.Pereira & Moutinho) Leme",validation,,,
 BROMELIACEAE,"Canistropsis pulcherrima","(E.Pereira & Leme) Leme",validation,,,
-BROMELIACEAE,"Cryptanthus bromelioides","Otto & A.Dietr.",done,,,
+BROMELIACEAE,"Cryptanthus bromelioides","Otto & A.Dietr.",validation,,,
 BROMELIACEAE,"Cryptanthus delicatus",Leme,done,,,
-BROMELIACEAE,"Cryptanthus sinuosus",L.B.Sm.,done,,,
+BROMELIACEAE,"Cryptanthus sinuosus",L.B.Sm.,validation,,,
 BROMELIACEAE,"Dyckia martinellii","B.R. Silva & Forzza",validation,,,
 BROMELIACEAE,"Dyckia pseudococcinea",L.B.Sm.,validation,,,
-BROMELIACEAE,"Neoregelia abendrothae",L.B.Sm.,done,review,CR,"B1ab(i,iii)"
+BROMELIACEAE,"Neoregelia abendrothae",L.B.Sm.,validation,review,CR,"B1ab(i,iii)"
 BROMELIACEAE,"Neoregelia bragarum","(E.Pereira & L.B.Sm.) Leme",done,review,EN,"B1ab(i,iii)"
 BROMELIACEAE,"Neoregelia camorimiana","E.Pereira & I.A.Penna",done,review,DD,
 BROMELIACEAE,"Neoregelia carinata",Leme,done,review,CR,"B2ab(i,ii,iii)"
@@ -205,7 +204,7 @@ BROMELIACEAE,"Neoregelia coimbrae","E.Pereira & Leme",done,review,EN,"B1ab(i,ii,
 BROMELIACEAE,"Neoregelia coriacea","(Antoine) L.B.Sm.",done,review,DD,
 BROMELIACEAE,"Neoregelia correia-araujoi","E.Pereira & I.A.Penna",done,review,DD,
 BROMELIACEAE,"Neoregelia desenganensis",Leme,done,review,DD,
-BROMELIACEAE,"Neoregelia eltoniana",W.Weber,done,review,EN,"A2c;B1ab(i,ii,iii)+2ab(i,ii,iii)"
+BROMELIACEAE,"Neoregelia eltoniana",W.Weber,validation,review,EN,"A2c;B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Neoregelia fluminensis",L.B.Sm.,done,review,EN,"B2ab(i,iii)"
 BROMELIACEAE,"Neoregelia fosteriana",L.B.Sm.,done,review,CR,"B1ab(i,iii)"
 BROMELIACEAE,"Neoregelia gavionensis","Martinelli & Leme",done,review,DD,
@@ -220,7 +219,7 @@ BROMELIACEAE,"Neoregelia macwilliamsii",L.B.Sm.,done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Neoregelia martinellii",W.Weber,done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Neoregelia nevaresii","Leme & H.Luther",done,review,DD,
 BROMELIACEAE,"Neoregelia petropolitana",Leme,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
-BROMELIACEAE,"Neoregelia roethii",W.Weber,done,review,DD,
+BROMELIACEAE,"Neoregelia roethii",W.Weber,validation,review,DD,
 BROMELIACEAE,"Neoregelia rubrovittata",Leme,done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Neoregelia sapiatibensis","E.Pereira & I.A.Penna",done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Neoregelia tenebrosa",Leme,done,review,EN,"B2ab(ii,iii)"
@@ -228,15 +227,15 @@ BROMELIACEAE,"Neoregelia uleana",L.B.Sm.,done,,,
 BROMELIACEAE,"Neoregelia watersiana",Leme,done,review,DD,
 BROMELIACEAE,"Nidularium altimontanum",Leme,done,review,CR,"B1ab(i,iii)"
 BROMELIACEAE,"Nidularium angustifolium",Ule,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
-BROMELIACEAE,"Nidularium apiculatum",L.B.Sm.,done,review,CR,"B2ab(i,iii)"
-BROMELIACEAE,"Nidularium atalaiaense","E.Pereira & Leme",done,review,EN,"B1ab(i,iii,iv)"
+BROMELIACEAE,"Nidularium apiculatum",L.B.Sm.,validation,review,CR,"B2ab(i,iii)"
+BROMELIACEAE,"Nidularium atalaiaense","E.Pereira & Leme",done,open,EN,"B1ab(i,iii,iv)"
 BROMELIACEAE,"Nidularium fradense",Leme,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
-BROMELIACEAE,"Nidularium fulgens",Lem.,done,review,VU,"B1ab(i,iii)"
+BROMELIACEAE,"Nidularium fulgens",Lem.,validation,review,VU,"B1ab(i,iii)"
 BROMELIACEAE,"Nidularium itatiaiae",L.B.Sm.,done,review,EN,"B1ab(iii,v)+2ab(iii,v)"
 BROMELIACEAE,"Nidularium mangaratibense",Leme,done,review,CR,"B2ab(iii,v)"
 BROMELIACEAE,"Nidularium organense",Leme,done,review,CR,"B2ab(i,ii,iii)"
-BROMELIACEAE,"Nidularium rosulatum",Ule,done,review,VU,"B1ab(i,iii)"
-BROMELIACEAE,"Nidularium utriculosum",Ule,done,open,,
+BROMELIACEAE,"Nidularium rosulatum",Ule,validation,review,VU,"B1ab(i,iii)"
+BROMELIACEAE,"Nidularium utriculosum",Ule,validation,open,,
 BROMELIACEAE,"Nidularium viridipetalum",Leme,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Pitcairnia albiflos",Herb.,validation,,,
 BROMELIACEAE,"Pitcairnia beycalema",Beer,validation,,,
@@ -250,20 +249,20 @@ BROMELIACEAE,"Quesnelia edmundoi",L.B.Sm.,validation,,,
 BROMELIACEAE,"Quesnelia lateralis",Wawra,validation,,,
 BROMELIACEAE,"Quesnelia seideliana",L.B.Sm.,validation,,,
 BROMELIACEAE,"Tillandsia brachyphylla",Baker,done,review,EN,"B1ab(iii,v)+2ab(iii,v)"
-BROMELIACEAE,"Tillandsia carminea",W.Till,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+BROMELIACEAE,"Tillandsia carminea",W.Till,validation,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Tillandsia grazielae","D.Sucre & R.Braga",done,review,EN,"B2ab(iii,iv)"
-BROMELIACEAE,"Tillandsia neglecta",E.Pereira,done,review,CR,"B2ab(iii,iv)"
-BROMELIACEAE,"Tillandsia nuptialis","R.Braga & Sucre",done,review,CR,"B1ab(i,ii,iii)"
-BROMELIACEAE,"Tillandsia organensis",Ehlers,done,review,CR,"B2ab(i,ii,iii)"
-BROMELIACEAE,"Tillandsia reclinata","E.Pereira & Martinelli",done,review,CR,"B2ab(i,ii,v);C2a(i,ii);D"
-BROMELIACEAE,"Tillandsia roseiflora","Ehlers & W.Weber",done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+BROMELIACEAE,"Tillandsia neglecta",E.Pereira,validation,review,CR,"B2ab(iii,iv)"
+BROMELIACEAE,"Tillandsia nuptialis","R.Braga & Sucre",done,review,CR,"B2ab(i,ii,iii)"
+BROMELIACEAE,"Tillandsia organensis",Ehlers,validation,review,CR,"B2ab(i,ii,iii)"
+BROMELIACEAE,"Tillandsia reclinata","E.Pereira & Martinelli",validation,review,CR,"B2ab(i,ii,v);C2a(i,ii);D"
+BROMELIACEAE,"Tillandsia roseiflora","Ehlers & W.Weber",validation,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 BROMELIACEAE,"Tillandsia sucrei",E.Pereira,done,review,CR,"B1ab(i,ii,iii)"
-BROMELIACEAE,"Tillandsia thiekenii",Ehlers,done,review,DD,
-BROMELIACEAE,"Vriesea altimontana","E.Pereira & Martinelli",done,,,
-BROMELIACEAE,"Vriesea altomacaensis",A.F.Costa,done,review,CR,"B1ab(i,iii)"
+BROMELIACEAE,"Tillandsia thiekenii",Ehlers,validation,review,DD,
+BROMELIACEAE,"Vriesea altimontana","E.Pereira & Martinelli",validation,,,
+BROMELIACEAE,"Vriesea altomacaensis",A.F.Costa,validation,review,CR,"B1ab(i,iii)"
 BROMELIACEAE,"Vriesea atrococcinea",Rauh,done,review,DD,
 BROMELIACEAE,"Vriesea bleherae","Roth & W. Weber",done,,,
-BROMELIACEAE,"Vriesea botafogensis",Mez,done,review,EN,"B2ab(ii,iii)"
+BROMELIACEAE,"Vriesea botafogensis",Mez,validation,review,EN,"B2ab(ii,iii)"
 BROMELIACEAE,"Vriesea brassicoides","(Baker) Mez",done,review,EN,"B2ab(ii,iii)"
 BROMELIACEAE,"Vriesea costae","B.R. Silva & Leme",done,review,EN,"B2ab(ii,iii)"
 BROMELIACEAE,"Vriesea croceana","Leme & G.K.Br.",done,review,DD,
@@ -273,21 +272,21 @@ BROMELIACEAE,"Vriesea fontourae","B.R. Silva",done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Vriesea fradensis",A.F.Costa,done,review,EN,"B2ab(ii,iii)"
 BROMELIACEAE,"Vriesea garlippiana",Leme,done,review,CR,"B2ab(i,ii,iii)"
 BROMELIACEAE,"Vriesea gastiniana","Leme & G.K.Br.",done,review,DD,
-BROMELIACEAE,"Vriesea goniorachis","(Baker) Mez",done,review,EN,"B2ab(ii,iii)"
-BROMELIACEAE,"Vriesea leptantha",Harms,done,open,CR,"B1ab(i,ii,iii)"
-BROMELIACEAE,"Vriesea lidicensis",Reitz,done,open,,
+BROMELIACEAE,"Vriesea goniorachis","(Baker) Mez",validation,review,EN,"B2ab(ii,iii)"
+BROMELIACEAE,"Vriesea leptantha",Harms,validation,open,CR,"B1ab(i,ii,iii)"
+BROMELIACEAE,"Vriesea lidicensis",Reitz,validation,open,,
 BROMELIACEAE,"Vriesea nubicola",Leme,done,open,DD,
 BROMELIACEAE,"Vriesea pastuchoffiana",Glaz.,done,open,EN,"B1ab(i,ii,iii,v)"
 BROMELIACEAE,"Vriesea punctulata","E.Pereira & I.A.Penna",done,,,
 BROMELIACEAE,"Vriesea rubyae",E.Pereira,done,,,
-BROMELIACEAE,"Vriesea saundersii","(Carrière) E.Morren ex Mez",done,,,
+BROMELIACEAE,"Vriesea saundersii","(Carrière) E.Morren ex Mez",validation,,,
 BROMELIACEAE,"Vriesea serrana","E.Pereira & I.A.Penna",done,,,
-BROMELIACEAE,"Vriesea sucrei","L.B.Sm. & Read",done,,,
+BROMELIACEAE,"Vriesea sucrei","L.B.Sm. & Read",validation,,,
 BROMELIACEAE,"Vriesea teresopolitana",Leme,done,,,
 BROMELIACEAE,"Vriesea thyrsoidea",Mez,done,open,,
 BROMELIACEAE,"Vriesea triligulata",Mez,done,,,
 BROMELIACEAE,"Vriesea vidalii","L.B.Sm. & Handro",done,,,
-BROMELIACEAE,"Vriesea warmingii",E.Morren,done,,,
+BROMELIACEAE,"Vriesea warmingii",E.Morren,validation,,,
 BROMELIACEAE,"Vriesea zildae","R. Moura & A. F. Costa",done,,,
 BURSERACEAE,"Tetragastris breviacuminata",Swart,done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 CACTACEAE,"Pilosocereus ulei","(K.Schum.) Byles & G.D.Rowley",validation,,,
@@ -295,8 +294,8 @@ CACTACEAE,"Rhipsalis flagelliformis","N.P.Taylor & Zappi",validation,,,
 CACTACEAE,"Rhipsalis mesembryanthemoides",Haw.,validation,,,
 CACTACEAE,"Rhipsalis ormindoi","N.P.Taylor & Zappi",validation,,,
 CACTACEAE,"Rhipsalis pentaptera",A.Dietr.,validation,,,
-CALOPHYLLACEAE,"Kielmeyera excelsa",Cambess.,done,open,VU,D2
-CALOPHYLLACEAE,"Kielmeyera gracilis",Wawra,done,comments,DD,
+CALOPHYLLACEAE,"Kielmeyera excelsa",Cambess.,validation,open,VU,D2
+CALOPHYLLACEAE,"Kielmeyera gracilis",Wawra,validation,comments,DD,
 CALOPHYLLACEAE,"Kielmeyera insignis",Saddi,done,comments,DD,
 CAMPANULACEAE,"Lobelia glazioviana",Zahlbr.,review,,,
 CAMPANULACEAE,"Lobelia santos-limae",Brade,review,,,
@@ -325,7 +324,7 @@ CONVOLVULACEAE,"Bonamia umbellata","(Choisy) Hallier f.",done,review,CR,"B2ab(ii
 CUCURBITACEAE,"Gurania cogniauxiana",Barb.Rodr.,validation,comments,DD,
 CUCURBITACEAE,"Wilbrandia glaziovii",Cogn.,done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 CYPERACEAE,"Hypolytrum glaziovii",Boeckeler,validation,,,
-CYPERACEAE,"Rhynchospora luetzelburgiana",Kük.,done,comments,DD,
+CYPERACEAE,"Rhynchospora luetzelburgiana",Kük.,validation,comments,DD,
 CYPERACEAE,"Rhynchospora sampaioana",Gross,done,comments,CR,"B2ab(ii,iii,iv)"
 CYPERACEAE,"Trilepis tenuis",Vitta,done,review,CR,"B2ab(ii,iii,iv)"
 DICHAPETALACEAE,"Stephanopodium sessile",Rizzini,done,open,CR,"B2ab(ii,iii,iv)"
@@ -336,9 +335,9 @@ DIOSCOREACEAE,"Dioscorea campanulata","Uline ex R.Knuth",done,review,CR,"B2ab(ii
 DIOSCOREACEAE,"Dioscorea itatiaiensis",R.Knuth,done,,,
 DIOSCOREACEAE,"Dioscorea margarethia","G.M.Barroso et al.",review,,,
 DIOSCOREACEAE,"Dioscorea oppositiflora",Griseb.,done,review,DD,
-DIOSCOREACEAE,"Dioscorea organensis",R.Knuth,done,,,
+DIOSCOREACEAE,"Dioscorea organensis",R.Knuth,validation,,,
 DIOSCOREACEAE,"Dioscorea pedalis","(Uline ex R. Knuth) R. Couto & J. M. A. Braga",review,,,
-DIOSCOREACEAE,"Dioscorea pumilio",Griseb.,done,,,
+DIOSCOREACEAE,"Dioscorea pumilio",Griseb.,validation,,,
 DIOSCOREACEAE,"Dioscorea septemnervis",Vell.,done,,,
 DIOSCOREACEAE,"Dioscorea sphaeroidea","R. Couto & J. M. A. Braga",done,review,CR,"B2ab(ii,iii,iv);C2a(i);D"
 DRYOPTERIDACEAE,"Ctenitis flexuosa","(Fée) Copel.",done,review,DD,
@@ -347,7 +346,7 @@ ERICACEAE,"Agarista organensis","(Gardner) Hook. ex Nied.",review,,,
 ERICACEAE,"Agarista uleana","(Sleumer) Judd",review,,,
 ERICACEAE,"Gaylussacia pruinosa",Loes.,review,,,
 ERICACEAE,"Gaylussacia retivenia",Sleumer,review,,,
-ERIOCAULACEAE,"Paepalanthus ovatus",Körn.,done,review,CR,C2a(i);D
+ERIOCAULACEAE,"Paepalanthus ovatus",Körn.,validation,review,CR,C2a(i);D
 ERYTHROXYLACEAE,"Erythroxylum cincinnatum",Mart.,review,,,
 ERYTHROXYLACEAE,"Erythroxylum gaudichaudii",Peyr.,review,,,
 ERYTHROXYLACEAE,"Erythroxylum glazioui",O.E.Schulz,review,,,
@@ -387,7 +386,7 @@ FABACEAE,"Luetzelburgia trialata","(Ducke) Ducke",done,review,EN,"B1ab(i,ii,iii,
 FABACEAE,"Lupinus dusenianus",C.P.Sm.,done,review,EN,"B1ab(i,ii,iii)"
 FABACEAE,"Lupinus hasslerianus",C.P.Sm.,done,review,DD,
 FABACEAE,"Lupinus russellianus",C.P.Sm.,validation,,,
-FABACEAE,"Machaerium firmum","(Vell.) Benth.",done,,,
+FABACEAE,"Machaerium firmum","(Vell.) Benth.",open,,,
 FABACEAE,"Machaerium legale","(Vell.) Benth.",done,,,
 FABACEAE,"Machaerium macaense","C.V. Mendonça, A.M.G. Azevedo & H.C. Lima",done,,,
 FABACEAE,"Machaerium obovatum","Kuhlm. & Hoehne",done,,,
@@ -410,7 +409,7 @@ GENTIANACEAE,"Prepusa alata","Porto & Brade",done,review,CR,"B1ab(i,ii,iii)"
 GENTIANACEAE,"Prepusa connata",Gardner,done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 GENTIANACEAE,"Prepusa hookeriana",Gardner,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 GERANIACEAE,"Geranium brasiliense",Progel,done,,,
-GESNERIACEAE,"Besleria fluminensis",Brade,validation,,,
+GESNERIACEAE,"Besleria fluminensis",Brade,review,,,
 GESNERIACEAE,"Besleria melancholica","(Vell.) C.V.Morton",validation,,,
 GESNERIACEAE,"Nematanthus mirabilis","(Handro) Chautems",validation,,,
 GESNERIACEAE,"Nematanthus pycnophyllus","Chautems et al.",validation,,,
@@ -437,25 +436,25 @@ IRIDACEAE,"Neomarica northiana","(Schneev.) Sprague",review,open,EN,"B1ab(i,ii,i
 IRIDACEAE,"Neomarica silvestris","(Vell.) Chukr",review,,,
 IRIDACEAE,"Trimezia organensis",Ravenna,review,open,EN,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v)"
 ISOETACEAE,"Isoetes goebelii",U.Weber,done,review,CR,"B2ab(i,ii,iii)"
-ISOETACEAE,"Isoetes organensis",U.Weber,done,review,DD,
+ISOETACEAE,"Isoetes organensis",U.Weber,validation,review,DD,
 ISOETACEAE,"Isoetes ulei",U.Weber,done,review,CR,"B2ab(ii,iii)"
 LAMIACEAE,"Hyptis cymulosa",Benth.,review,open,DD,
 LAMIACEAE,"Salvia benthamiana",Gardner,review,open,EN,"B1ab(i,ii,iii,iv,v)+2ab(i,ii,iii,iv,v)"
 LAMIACEAE,"Salvia longibracteolata",E.P.Santos,review,open,CR,"B1ab(i,iii)"
 LAMIACEAE,"Salvia rivularis",Gardner,review,open,VU,"B1ab(i,ii,iii,iv,v)"
 LAMIACEAE,"Scutellaria tubiflora",Benth.,review,open,DD,
-LAURACEAE,"Aniba pedicellata",Kosterm.,done,comments,DD,
-LAURACEAE,"Beilschmiedia angustifolia",Kosterm.,review,open,EN,B1ab(iii)+2ab(iii)
+LAURACEAE,"Aniba pedicellata",Kosterm.,validation,comments,DD,
+LAURACEAE,"Beilschmiedia angustifolia",Kosterm.,validation,open,EN,B1ab(iii)+2ab(iii)
 LAURACEAE,"Beilschmiedia stricta",Kosterm.,review,review,DD,
 LAURACEAE,"Endlicheria balsamea",Vattimo-Gil,review,comments,DD,
-LAURACEAE,"Mezilaurus navalium","(Allemão) Taub. ex Mez",review,open,CR,A1d
-LAURACEAE,"Nectandra spicata",Meisn.,review,comments,DD,
-LAURACEAE,"Ocotea abbreviata","Schwacke & Mez",review,open,DD,
-LAURACEAE,"Ocotea leucophloea","(Nees et Mart.) L.C.S. Assis e Mello-Silva",review,open,DD,
-LAURACEAE,"Ocotea schwackeana",Mez,review-sig,review,EN,B1ab(iii)+2ab(iii)
+LAURACEAE,"Mezilaurus navalium","(Allemão) Taub. ex Mez",validation,open,CR,A1d
+LAURACEAE,"Nectandra spicata",Meisn.,validation,comments,DD,
+LAURACEAE,"Ocotea abbreviata","Schwacke & Mez",review,review,DD,
+LAURACEAE,"Ocotea leucophloea","(Nees et Mart.) L.C.S. Assis e Mello-Silva",review,review,DD,
+LAURACEAE,"Ocotea schwackeana",Mez,validation,review,EN,B1ab(iii)+2ab(iii)
 LAURACEAE,"Ocotea sinaiana",Vattimo-Gil,review-sig,review,DD,
 LAURACEAE,"Ocotea sulcata",Vattimo-Gil,review,review,EN,"B1ab(iii,v)+2ab(iii,v)"
-LECYTHIDACEAE,"Couratari pyramidata","(Vell.) Kunth",done,review,EN,"A2ad;B2ab(i,ii,iii,iv,v)"
+LECYTHIDACEAE,"Couratari pyramidata","(Vell.) Kunth",validation,review,EN,"A2ad;B2ab(i,ii,iii,iv,v)"
 LEJEUNEACEAE,"Colura itatyana",Steph.,validation,,,
 LENTIBULARIACEAE,"Utricularia geminiloba",Benj.,validation,,,
 LOGANIACEAE,"Strychnos dantaensis","E.A. Manoel, Carrijo & E.F. Gim.",done,review,CR,"B2ab(ii,iii)"
@@ -468,12 +467,12 @@ LORANTHACEAE,"Struthanthus involucratus",Rizzini,done,review,CR,"B2ab(ii,iii,iv)
 LORANTHACEAE,"Struthanthus maricensis","Rizzini ex Profice",done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 LORANTHACEAE,"Struthanthus pentamerus",Rizzini,done,review,CR,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MALPIGHIACEAE,"Banisteriopsis magdalenensis",B.Gates,done,comments,DD,
-MALPIGHIACEAE,"Bronwenia peckoltii","W.R.Anderson & C.C.Davis",done,review,DD,
+MALPIGHIACEAE,"Bronwenia peckoltii","W.R.Anderson & C.C.Davis",validation,review,DD,
 MALPIGHIACEAE,"Heteropterys occhionii",Amorim,done,open,,
-MALPIGHIACEAE,"Heteropterys ternstroemiifolia",A.Juss.,done,open,,
+MALPIGHIACEAE,"Heteropterys ternstroemiifolia",A.Juss.,validation,open,,
 MALPIGHIACEAE,"Janusia diminuta","R.Sebast. & Mamede",done,review,CR,"B2ab(ii,iii,iv)"
-MALPIGHIACEAE,"Stigmaphyllon affine",A.Juss.,done,review,VU,"B1ab(i,ii,iii,iv)"
-MALPIGHIACEAE,"Stigmaphyllon carautae",C.E.Anderson,done,open,,
+MALPIGHIACEAE,"Stigmaphyllon affine",A.Juss.,validation,review,VU,"B1ab(i,ii,iii,iv)"
+MALPIGHIACEAE,"Stigmaphyllon carautae",C.E.Anderson,validation,open,,
 MALVACEAE,"Abutilon anodoides","A.St.-Hil. & Naudin",review,,,
 MALVACEAE,"Abutilon esculentum",A.St.-Hil.,review,,,
 MALVACEAE,"Abutilon hirsutum","(Vell.) K.Schum.",review,,,
@@ -491,7 +490,7 @@ MARANTACEAE,"Goeppertia grazielae","(H.Kenn. & J.M.A.Braga) Borchs. & S.Suárez"
 MARANTACEAE,"Goeppertia reginae","(J.M.A.Braga) Borchs. & S.Suárez",validation,,,
 MARANTACEAE,"Goeppertia sphaerocephala","(K.Schum.) Borchs. & S.Suárez",validation,,,
 MARANTACEAE,"Thalia petersiana","K. Schum.",validation,,,
-MARCGRAVIACEAE,"Marcgravia comosa",C.Presl,done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
+MARCGRAVIACEAE,"Marcgravia comosa",C.Presl,validation,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 MARCGRAVIACEAE,"Souroubea platyadenia","(Gilg) de Roon",done,review,DD,
 MELASTOMATACEAE,"Behuria cordifolia",Cogn.,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 MELASTOMATACEAE,"Behuria corymbosa",Cogn.,done,review,CR,"B2ab(ii,iii)"
@@ -577,12 +576,12 @@ MELASTOMATACEAE,"Tibouchina thereminiana","(DC.) Cogn.",done,review,VU,D2
 MELASTOMATACEAE,"Tibouchina virgata","(Gardner) Cogn.",done,review,DD,
 MELIACEAE,"Trichilia luciae",Barreiros,review,,,
 MONIMIACEAE,"Grazielanthus arkeocarpus","Peixoto & Per.-Moura",done,review,CR,"B2ab(i,ii,iii,iv);D1"
-MONIMIACEAE,"Macropeplus friburgensis","(Perkins) I.Santos & Peixoto",done,open,,
-MONIMIACEAE,"Mollinedia acutissima",Perkins,done,review,CR,"B2ab(ii,iii,iv)"
-MONIMIACEAE,"Mollinedia corcovadensis",Perkins,done,review,CR,"B2ab(ii,iii,iv)"
+MONIMIACEAE,"Macropeplus friburgensis","(Perkins) I.Santos & Peixoto",validation,open,,
+MONIMIACEAE,"Mollinedia acutissima",Perkins,validation,review,CR,"B2ab(ii,iii,iv)"
+MONIMIACEAE,"Mollinedia corcovadensis",Perkins,validation,review,CR,"B2ab(ii,iii,iv)"
 MONIMIACEAE,"Mollinedia longicuspidata",Perkins,done,open,,
-MONIMIACEAE,"Mollinedia marliae","Peixoto & V. Pereira",done,review,CR,"B2ab(ii,iii,iv);C2a(i);D1"
-MONIMIACEAE,"Mollinedia stenophylla",Perkins,done,review,CR,"B2ab(ii,iii,iv)"
+MONIMIACEAE,"Mollinedia marliae","Peixoto & V. Pereira",validation,review,CR,"B2ab(ii,iii,iv);C2a(i);D1"
+MONIMIACEAE,"Mollinedia stenophylla",Perkins,validation,review,CR,"B2ab(ii,iii,iv)"
 MORACEAE,"Dorstenia brevipetiolata",C.C.Berg,done,review,DD,
 MORACEAE,"Dorstenia fischeri",Bureau,done,open,CR,"B2ab(i,ii,iii,iv)"
 MORACEAE,"Sorocea carautana","M.D.M.Vianna et al.",done,review,EN,"B2ab(i,ii,iii,iv)"
@@ -603,27 +602,26 @@ MYRTACEAE,"Eugenia arvensis",Vell.,review,,,
 MYRTACEAE,"Eugenia augustana",Kiaersk.,review,,,
 MYRTACEAE,"Eugenia brachysepala",Kiaersk.,review,,,
 MYRTACEAE,"Eugenia cambucae",Mattos,review,,,
-MYRTACEAE,"Eugenia cinerascens",Gardner,review,,,
-MYRTACEAE,"Eugenia coccifera",O.Berg,validation,,,
-MYRTACEAE,"Eugenia corcovadensis",Kiaersk.,validation,,,
-MYRTACEAE,"Eugenia crenata",Vell.,validation,,,
-MYRTACEAE,"Eugenia decussata","(Vell.) Mattos",validation,,,
-MYRTACEAE,"Eugenia expansa","Spring ex Mart.",validation,,,
-MYRTACEAE,"Eugenia grandifolia",O.Berg,validation,,,
-MYRTACEAE,"Eugenia grazielae","Mattos & D.Legrand",validation,,,
-MYRTACEAE,"Eugenia irirensis",O.Berg,validation,,,
-MYRTACEAE,"Eugenia itaguahiensis",Nied.,validation,,,
-MYRTACEAE,"Eugenia kuhlmanniana","Mattos & D.Legrand",validation,,,
-MYRTACEAE,"Eugenia marambaiensis","M.C.Souza & M.P.Lima",validation,,,
-MYRTACEAE,"Eugenia oxyoentophylla",Kiaersk.,validation,,,
-MYRTACEAE,"Eugenia strellensis",O.Berg,validation,,,
-MYRTACEAE,"Eugenia strigipes",O.Berg,validation,,,
-MYRTACEAE,"Eugenia violascens",O.Berg,validation,,,
+MYRTACEAE,"Eugenia coccifera",O.Berg,review,,,
+MYRTACEAE,"Eugenia corcovadensis",Kiaersk.,review,,,
+MYRTACEAE,"Eugenia crenata",Vell.,review,,,
+MYRTACEAE,"Eugenia decussata","(Vell.) Mattos",review,,,
+MYRTACEAE,"Eugenia expansa","Spring ex Mart.",review,,,
+MYRTACEAE,"Eugenia grandifolia",O.Berg,review,,,
+MYRTACEAE,"Eugenia grazielae","Mattos & D.Legrand",review,,,
+MYRTACEAE,"Eugenia irirensis",O.Berg,review,,,
+MYRTACEAE,"Eugenia itaguahiensis",Nied.,review,,,
+MYRTACEAE,"Eugenia kuhlmanniana","Mattos & D.Legrand",review,,,
+MYRTACEAE,"Eugenia marambaiensis","M.C.Souza & M.P.Lima",review,,,
+MYRTACEAE,"Eugenia oxyoentophylla",Kiaersk.,review,,,
+MYRTACEAE,"Eugenia strellensis",O.Berg,review,,,
+MYRTACEAE,"Eugenia strigipes",O.Berg,review,,,
+MYRTACEAE,"Eugenia violascens",O.Berg,review,,,
 MYRTACEAE,"Marlierea capitata",O.Berg,review,,,
 MYRTACEAE,"Marlierea choriophylla",Kiaersk.,review,,,
 MYRTACEAE,"Marlierea estrellensis",O.Berg,review,,,
 MYRTACEAE,"Marlierea guanabarina","Mattos & D.Legrand",review,,,
-MYRTACEAE,"Marlierea langsdorffii",O.Berg,done,,,
+MYRTACEAE,"Marlierea langsdorffii",O.Berg,validation,,,
 MYRTACEAE,"Marlierea martinellii","G.M.Barroso & Peixoto",review,,,
 MYRTACEAE,"Marlierea occhionii",D.Legrand,done,,,
 MYRTACEAE,"Marlierea resupinata","(Vell.) O.Berg",review,,,
@@ -646,7 +644,7 @@ MYRTACEAE,"Plinia martinellii","G.M.Barroso & M.Peron",review,,,
 MYRTACEAE,"Plinia sebastianopolitana",G.M.Barroso,review,,,
 MYRTACEAE,"Psidium anthomega",Vell.,review,,,
 MYRTACEAE,"Psidium arboreum",Vell.,review,,,
-OCHNACEAE,"Luxemburgia glazioviana","(Engl.) Beauverd",done,review,EN,"B2ab(i,ii,iii,iv)"
+OCHNACEAE,"Luxemburgia glazioviana","(Engl.) Beauverd",validation,review,EN,"B2ab(i,ii,iii,iv)"
 OCHNACEAE,"Ouratea campos-portoi",Sleumer,validation,open,,
 OCHNACEAE,"Ouratea grandifolia","(Planch.) Engl.",validation,open,,
 OCHNACEAE,"Ouratea miersii","(Planch.) Engl.",validation,open,,
@@ -667,7 +665,7 @@ ORCHIDACEAE,"Acianthera subrotundifolia","(Cogn.) F.Barros & V.T.Rodrigues",done
 ORCHIDACEAE,"Anathallis flammea","(Barb.Rodr.) F.Barros",done,comments,DD,
 ORCHIDACEAE,"Anathallis githaginea","(Pabst & Garay) Pridgeon & M.W.Chase",done,comments,DD,
 ORCHIDACEAE,"Anathallis lichenophila","(Porto & Brade) Luer",done,review,DD,
-ORCHIDACEAE,"Anathallis pubipetala","(Hoehne) Pridgeon & M.W.Chase",done,comments,EN,B1ab(iii)+2ab(iii)
+ORCHIDACEAE,"Anathallis pubipetala","(Hoehne) Pridgeon & M.W.Chase",validation,comments,EN,B1ab(iii)+2ab(iii)
 ORCHIDACEAE,"Anathallis rubrolimbata","(Hoehne) F.Barros & Barberena",done,review,DD,
 ORCHIDACEAE,"Anathallis spannageliana","(Hoehne) Pridgeon & M.W.Chase",done,review,EN,"B1ab(i,iii)"
 ORCHIDACEAE,"Baptistonia pulchella","(Regel) Chiron & V.P.Castro",done,review,EN,B1ab(iii)+2ab(iii)
@@ -679,31 +677,31 @@ ORCHIDACEAE,"Brasiliorchis polyantha","(Barb.Rodr.) R.B.Singer et al.",done,comm
 ORCHIDACEAE,"Bulbophyllum macroceras",Barb.Rodr.,done,comments,EN,"B1ab(i,iii)"
 ORCHIDACEAE,"Campylocentrum calostachyum","(Barb. Rodr.) Cogn.",done,comments,DD,
 ORCHIDACEAE,"Campylocentrum organense","(Rchb.f.) Rolfe",done,comments,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
-ORCHIDACEAE,"Catasetum globiflorum",Hook.,done,comments,DD,
+ORCHIDACEAE,"Catasetum globiflorum",Hook.,validation,comments,DD,
 ORCHIDACEAE,"Cattleya dormaniana",Rchb.f.,done,,,
 ORCHIDACEAE,"Centroglossa greeniana","(Rchb.f.) Cogn.",done,comments,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 ORCHIDACEAE,"Cleistes liliastrum",Rchb.f.,done,comments,DD,
-ORCHIDACEAE,"Cleistes miersii",Gardner,done,review,DD,
+ORCHIDACEAE,"Cleistes miersii",Gardner,validation,review,DD,
 ORCHIDACEAE,"Coppensia edmundoi","(Pabst) Campacci",done,comments,DD,
 ORCHIDACEAE,"Cyclopogon gardneri","Mytnik et al.",done,comments,DD,
-ORCHIDACEAE,"Cyclopogon proboscideus",Szlach.,done,comments,DD,
+ORCHIDACEAE,"Cyclopogon proboscideus",Szlach.,validation,comments,DD,
 ORCHIDACEAE,"Cyclopogon venustus","(Barb.Rodr) Schltr.",done,comments,EN,B1ab(iii)+2ab(iii)
 ORCHIDACEAE,"Encyclia viridiflora",Hook.,done,comments,DD,
-ORCHIDACEAE,"Epidendrum ammophilum",Barb.Rodr.,done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
+ORCHIDACEAE,"Epidendrum ammophilum",Barb.Rodr.,validation,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 ORCHIDACEAE,"Epidendrum goebelii",Schltr.,done,comments,DD,
 ORCHIDACEAE,"Epidendrum harrisoniae",Hook.,done,review,CR,"B1ab(iii,iv)"
 ORCHIDACEAE,"Epistephium portellianum",Barb.Rodr.,done,comments,DD,
-ORCHIDACEAE,"Eurystyles lobata","Chiron & V.P.Castro",done,comments,DD,
-ORCHIDACEAE,"Eurystyles rutkowskiana",Szlach.,done,comments,DD,
+ORCHIDACEAE,"Eurystyles lobata","Chiron & V.P.Castro",validation,comments,DD,
+ORCHIDACEAE,"Eurystyles rutkowskiana",Szlach.,validation,comments,DD,
 ORCHIDACEAE,"Gomesa messmeriana","(Campacci) Laitano",done,comments,DD,
 ORCHIDACEAE,"Habenaria gnoma",Barb.Rodr.,done,review,CR,B2ab(iii)
 ORCHIDACEAE,"Hadrolaelia acuensis","(Fowlie) Chiron & V.P.Castro",done,comments,DD,
-ORCHIDACEAE,"Hapalorchis cymbirostris",Szlach.,done,comments,DD,
+ORCHIDACEAE,"Hapalorchis cymbirostris",Szlach.,validation,comments,DD,
 ORCHIDACEAE,"Hapalorchis panduratus",Szlach.,done,comments,DD,
 ORCHIDACEAE,"Hoffmannseggella alvaroana","(F.E.L.Miranda) V.P.Castro & Chiron",done,review,EN,B1ab(iii)+2ab(iii)
 ORCHIDACEAE,"Lankesterella parvula","(Kraenzl.) Pabst",done,comments,DD,
 ORCHIDACEAE,"Lankesterella pilosa","(Cogn.) Hoehne",done,comments,DD,
-ORCHIDACEAE,"Lankesterella spannageliana","(Hoehne & Brade) Mansf.",done,comments,DD,
+ORCHIDACEAE,"Lankesterella spannageliana","(Hoehne & Brade) Mansf.",validation,comments,DD,
 ORCHIDACEAE,"Maxillaria pterocarpa",Barb.Rodr.,done,comments,DD,
 ORCHIDACEAE,"Miltonia flava",Lindl.,done,comments,DD,
 ORCHIDACEAE,"Octomeria aetheoantha",Barb.Rodr.,done,comments,DD,
@@ -717,17 +715,17 @@ ORCHIDACEAE,"Octomeria multiflora",Barb.Rodr.,done,comments,DD,
 ORCHIDACEAE,"Octomeria pumila",Seehawer,done,comments,DD,
 ORCHIDACEAE,"Octomeria rodeiensis",Barb.Rodr.,done,review,EN,B1ab(iii)+2ab(iii)
 ORCHIDACEAE,"Octomeria rodriguesii",Cogn.,done,review,EN,B1ab(iii)+2ab(iii)
-ORCHIDACEAE,"Octomeria sarcophylla",Barb.Rodr.,done,comments,DD,
+ORCHIDACEAE,"Octomeria sarcophylla",Barb.Rodr.,validation,comments,DD,
 ORCHIDACEAE,"Pabstia placanthera","(Hook.) Garay",done,comments,DD,
 ORCHIDACEAE,"Pabstiella calcarata","(Cogn.) Luer",done,review,EN,B1ab(iii)+2ab(iii)
 ORCHIDACEAE,"Pabstiella crassicaulis","(Barb.Rodr.) Luer",done,comments,DD,
 ORCHIDACEAE,"Pabstiella elegantula","(Cogn.) Luer",done,review,DD,
-ORCHIDACEAE,"Pabstiella gracilicaulis","(Seehawer) Luer",done,review,CR,B2ab(iii)
-ORCHIDACEAE,"Pabstiella spathuliglossa","(Hoehne) Luer",done,review,DD,
+ORCHIDACEAE,"Pabstiella gracilicaulis","(Seehawer) Luer",validation,review,CR,B2ab(iii)
+ORCHIDACEAE,"Pabstiella spathuliglossa","(Hoehne) Luer",validation,review,DD,
 ORCHIDACEAE,"Pabstiella tabacina","(Barb.Rodr.) Luer",done,review,DD,
 ORCHIDACEAE,"Pelexia longibracteata",Pabst,done,review,DD,
-ORCHIDACEAE,"Pelexia luetzelburgii",Schltr.,done,review,DD,
-ORCHIDACEAE,"Pelexia mouraei",Schltr.,done,review,DD,
+ORCHIDACEAE,"Pelexia luetzelburgii",Schltr.,validation,review,DD,
+ORCHIDACEAE,"Pelexia mouraei",Schltr.,validation,review,DD,
 ORCHIDACEAE,"Phymatidium limae","Porto & Brade",done,review,DD,
 ORCHIDACEAE,"Pleurothallis jacarepaguaensis",Barb.Rodr.,done,review,DD,
 ORCHIDACEAE,"Prescottia spiranthophylla",Barb.Rodr.,done,review,EN,B1ab(iii)+2ab(iii)
@@ -740,13 +738,13 @@ ORCHIDACEAE,"Rodriguezia leucantha",Barb.Rodr.,done,review,DD,
 ORCHIDACEAE,"Rodriguezia sucrei",Braga,done,review,CR,"B2ab(i,ii,iii,iv)"
 ORCHIDACEAE,"Sarcoglottis veyretiae",Szlach.,done,review,DD,
 ORCHIDACEAE,"Sauroglossum odoratum",Robatsch,done,review,DD,
-ORCHIDACEAE,"Sauroglossum organense",Szlach.,done,review,DD,
+ORCHIDACEAE,"Sauroglossum organense",Szlach.,validation,review,DD,
 ORCHIDACEAE,"Specklinia hymenantha","(Lindl.) F.Barros & V.T.Rodrigues",done,review,DD,
-ORCHIDACEAE,"Stelis palmeiraensis",Barb.Rodr.,done,review,EN,B1ab(iii)
+ORCHIDACEAE,"Stelis palmeiraensis",Barb.Rodr.,validation,review,EN,B1ab(iii)
 ORCHIDACEAE,"Trigonidium turbinatum",Rchb.f.,done,review,DD,
 ORCHIDACEAE,"Vanilla dungsii",Pabst,done,review,DD,
-ORCHIDACEAE,"Zygostates ovatipetala","(Brade) Toscano",done,review,CR,"B2ab(i,ii,iii)"
-OROBANCHACEAE,"Magdalenaea limae",Brade,review,open,,
+ORCHIDACEAE,"Zygostates ovatipetala","(Brade) Toscano",validation,review,CR,"B2ab(i,ii,iii)"
+OROBANCHACEAE,"Magdalenaea limae",Brade,done,open,,
 PASSIFLORACEAE,"Passiflora farneyi","Pessoa & Cervi",done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 PASSIFLORACEAE,"Passiflora imbeana",Sacco,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 PHYLLANTHACEAE,"Phyllanthus itatiaiensis",Brade,done,review,CR,"B2ab(ii,iii,iv)"
@@ -759,31 +757,31 @@ PIPERACEAE,"Peperomia humifusa",Yunck.,done,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Peperomia papillispica",C.DC.,done,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Peperomia pubipeduncula",Yunck.,done,review,CR,"A2c;B1ab(i,ii,iii,iv)"
 PIPERACEAE,"Peperomia riedeliana",Regel,done,review,DD,
-PIPERACEAE,"Piper crebrinodum",C.DC.,done,review,DD,
+PIPERACEAE,"Piper crebrinodum",C.DC.,validation,review,DD,
 PIPERACEAE,"Piper emygdioi",Yunck.,done,review,DD,
 PIPERACEAE,"Piper giordanoi","E.F.Guim. & D.Monteiro",done,review,DD,
 PIPERACEAE,"Piper halesiifolium",Kunth,done,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper lundii",C.DC.,done,review,DD,
 PIPERACEAE,"Piper morisonianum",C.DC.,done,review,CR,"B2ab(i,ii,iii,iv)"
-PIPERACEAE,"Piper niteroiense",Yunck.,done,review,CR,"B2ab(i,ii,iii,iv)"
+PIPERACEAE,"Piper niteroiense",Yunck.,validation,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper rioense",Yunck.,done,open,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper rumicifolium","(Miq.) C.DC.",done,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper saldanhai",Yunck.,done,review,DD,
 PIPERACEAE,"Piper translucens",Yunck.,done,review,VU,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper trigonodrupum",Yunck.,done,review,CR,"B2ab(i,ii,iii,iv)"
 PIPERACEAE,"Piper weddellii",C.DC.,done,review,CR,"B2ab(i,ii,iii,iv)"
-PLANTAGINACEAE,"Achetaria latifolia",V.C.Souza,done,,,
-PLANTAGINACEAE,"Ildefonsia bibracteata",Gardner,done,,,
+PLANTAGINACEAE,"Achetaria latifolia",V.C.Souza,validation,,,
+PLANTAGINACEAE,"Ildefonsia bibracteata",Gardner,validation,,,
 POACEAE,"Apochloa tijucae","(Renvoize) Zuloaga & Morrone",done,review,DD,
 POACEAE,"Chusquea tenuis","Glaz. ex E.G.Camus",done,review,DD,
 POACEAE,"Chusquea wilkesii",Munro,done,review,DD,
 POACEAE,"Dichanthelium cucaense","(Zuloaga & Morrone) Zuloaga",done,review,EN,"B1ab(i,iii)"
 POACEAE,"Dichanthelium itatiaiae","(Swallen) Zuloaga",done,review,DD,
 POACEAE,"Dichanthelium petropolitanum","(Zuloaga & Morrone) Zuloaga",done,review,DD,
-POACEAE,"Renvoizea glaziovii","(Hack.) Zuloaga & Morrone",done,review,DD,
-POACEAE,"Renvoizea teretifolia","(Hack.) Zuloaga & Morrone",open,review,DD,
+POACEAE,"Renvoizea glaziovii","(Hack.) Zuloaga & Morrone",validation,review,DD,
+POACEAE,"Renvoizea teretifolia","(Hack.) Zuloaga & Morrone",validation,review,DD,
 Poaceae,"Trisetum brasiliense",Louis-Marie,done,review,DD,
-PODOSTEMACEAE,"Podostemum saldanhanum","(Warm.) C.T.Philbrick & Novelo",done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+PODOSTEMACEAE,"Podostemum saldanhanum","(Warm.) C.T.Philbrick & Novelo",validation,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 POLYGALACEAE,"Polygala revoluta",Gardner,done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 POLYGONACEAE,"Coccoloba rigida",Meisn.,done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 POLYPODIACEAE,"Moranopteris xbradei","(Labiak & F.B.Matos) R.Y. Hirai & J. Prado",done,review,DD,
@@ -795,16 +793,16 @@ PRIMULACEAE,"Stylogyne araujoana","Carrijo, M.F. Freitas A.L. Peixoto",done,revi
 PRIMULACEAE,"Stylogyne leptantha","(Miq.) Mez",done,review,EN,"B1ab(i,ii,iii,iv)+2ab(i,ii,iii,iv)"
 PRIMULACEAE,"Stylogyne sordida",Mez,done,review,CR,"B2ab(i,ii,iii,iv)"
 PROTEACEAE,"Roupala gracilis",Meisn.,done,comments,CR,"B1ab(i,ii,iii,iv)"
-PTERIDACEAE,"Doryopteris magdalenensis","(Brade) Brade",done,review,CR,"B1ab(i,iii)"
-PTERIDACEAE,"Doryopteris quinquelobata","(Fée) Diels",done,review,DD,
-PTERIDACEAE,"Doryopteris subsimplex","(Fée) Diels",done,open,EN,B2ab(iii)
+PTERIDACEAE,"Doryopteris magdalenensis","(Brade) Brade",validation,review,CR,"B1ab(i,iii)"
+PTERIDACEAE,"Doryopteris quinquelobata","(Fée) Diels",validation,review,DD,
+PTERIDACEAE,"Doryopteris subsimplex","(Fée) Diels",validation,open,EN,B2ab(iii)
 PTERIDACEAE,"Doryopteris tijucana","Brade & Rosenst.",done,review,EN,B2ab(iii)
 PTERIDACEAE,"Pteris congesta",J.Prado,done,review,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 RANUNCULACEAE,"Anemone assisbrasiliana","Kuhlm. & Porto",validation,,,
 RUBIACEAE,"Bathysa sylvestrae","Germano-Filho & M.Gomes",done,,,
 RUBIACEAE,"Chomelia monantha","(K.Schum. ex Standl.) Steyerm.",review-sig,,,
-RUBIACEAE,"Chomelia transiens",Müll.Arg.,validation,,,
-RUBIACEAE,"Coussarea biflora","(Vell.) Müll.Arg.",validation,open,,
+RUBIACEAE,"Chomelia transiens",Müll.Arg.,review,,,
+RUBIACEAE,"Coussarea biflora","(Vell.) Müll.Arg.",review,open,,
 RUBIACEAE,"Coussarea coffeoides",Müll.Arg.,validation,,,
 RUBIACEAE,"Coussarea friburgensis",M.Gomes,validation,,,
 RUBIACEAE,"Coussarea lanceolata","(Vell.) Müll.Arg.",validation,,,
@@ -834,10 +832,10 @@ RUBIACEAE,"Galianthe polygonoides","E.L.Cabral & Bacigalupo",validation,,,
 RUBIACEAE,"Hillia saldanhaei",K.Schum.,done,,,
 RUBIACEAE,"Hindsia arianeae","Di Maio",done,,,
 RUBIACEAE,"Hindsia cucullata","Di Maio",done,,,
-RUBIACEAE,"Hindsia glabra",K.Schum.,done,,,
+RUBIACEAE,"Hindsia glabra",K.Schum.,validation,,,
 RUBIACEAE,"Hindsia phyllocalyx",K.Schum.,done,,,
 RUBIACEAE,"Hindsia republicana","Di Maio",done,,,
-RUBIACEAE,"Hindsia violacea",Benth.,done,,,
+RUBIACEAE,"Hindsia violacea",Benth.,validation,,,
 RUBIACEAE,"Ixora heterophylla",Müll.Arg.,validation,,,
 RUBIACEAE,"Malanea spicata",Müll.Arg.,validation,,,
 RUBIACEAE,"Manettia fimbriata","Cham. & Schltdl.",validation,,,
@@ -854,31 +852,29 @@ RUBIACEAE,"Psychotria clavipes",Müll.Arg.,validation,,,
 RUBIACEAE,"Psychotria densicostata",Müll.Arg.,validation,,,
 RUBIACEAE,"Psychotria lindleyana",Müll.Arg.,validation,open,,
 RUBIACEAE,"Psychotria lucidifolia",Standl.,validation,,,
-RUBIACEAE,"Psychotria mandiocana",Müll.Arg.,validation,,,
-RUBIACEAE,"Psychotria mineirensis",Wernham,validation,,,
+RUBIACEAE,"Psychotria mandiocana",Müll.Arg.,review,,,
 RUBIACEAE,"Psychotria subspathacea",Müll.Arg.,validation,,,
-RUBIACEAE,"Psychotria sutericalyx",Wernham,validation,,,
-RUBIACEAE,"Psychotria tenuinervis",Müll.Arg.,validation,,,
-RUBIACEAE,"Psychotria ulei",Standl.,validation,,,
-RUBIACEAE,"Psychotria vestita",C.Presl,validation,,,
+RUBIACEAE,"Psychotria sutericalyx",Wernham,review,,,
+RUBIACEAE,"Psychotria tenuinervis",Müll.Arg.,review,,,
+RUBIACEAE,"Psychotria ulei",Standl.,review,,,
+RUBIACEAE,"Psychotria vestita",C.Presl,review,,,
 RUBIACEAE,"Psychotria wilkesiana",Standl.,validation,,,
 RUBIACEAE,"Randia itatiaiae","Silva Neto & Ávila",validation,,,
-RUBIACEAE,"Rudgea allophylla",Standl.,done,,,
 RUBIACEAE,"Rudgea discolor",Benth.,validation,,,
 RUBIACEAE,"Rudgea erythrocarpa",Müll.Arg.,validation,,,
 RUBIACEAE,"Rudgea insignis",Müll.Arg.,validation,,,
-RUBIACEAE,"Rudgea macrophylla",Benth.,done,,,
-RUBIACEAE,"Rudgea parvifolia","(Cham.) Müll.Arg.",validation,,,
+RUBIACEAE,"Rudgea macrophylla",Benth.,validation,,,
+RUBIACEAE,"Rudgea parvifolia","(Cham.) Müll.Arg.",review,,,
 RUBIACEAE,"Rustia simpsonii",Delprete,validation,,,
 RUBIACEAE,"Standleya erecta",Brade,done,,,
 RUBIACEAE,"Standleya limae",Brade,done,,,
-RUTACEAE,"Conchocarpus grandiflorus","(Engl.) Kallunki & Pirani",review,,,
+RUTACEAE,"Conchocarpus grandiflorus","(Engl.) Kallunki & Pirani",validation,,,
 RUTACEAE,"Conchocarpus ovatus","(A.St.-Hil. & Tul.) Kallunki & Pirani",review,,,
 RUTACEAE,"Conchocarpus paniculatus","(Engl.) Kallunki & Pirani",review,,,
-RUTACEAE,"Conchocarpus sordidus",Kallunki,review,,,
-SALICACEAE,"Abatia microphylla",Taub.,done,review,EN,"B2ab(i,ii,iii,iv)"
+RUTACEAE,"Conchocarpus sordidus",Kallunki,validation,,,
+SALICACEAE,"Abatia microphylla",Taub.,validation,review,EN,"B2ab(i,ii,iii,iv)"
 SAPINDACEAE,"Allophylus exappendiculatus","Somner, Frazão & Ferrucci",validation,,,
-SAPINDACEAE,"Allophylus heterophyllus","(Cambess.) Radlk.",review,,,
+SAPINDACEAE,"Allophylus heterophyllus","(Cambess.) Radlk.",validation,,,
 SAPINDACEAE,"Allophylus membranifolius",Radlk.,validation,,,
 SAPINDACEAE,"Cupania fluminensis",Acev.-Rodr.,validation,,,
 SAPINDACEAE,"Cupania schizoneura",Radlk.,validation,,,
@@ -901,13 +897,13 @@ SPHAGNACEAE,"Sphagnum luetzelburgii","H.K.G.Paul ex H.A.Crum",validation,,,
 SPHAGNACEAE,"Sphagnum scorpioides","(Hampe) H.A.Crum",validation,,,
 SPHAGNACEAE,"Sphagnum subhomophyllum",H.A.Crum,validation,,,
 SPHAGNACEAE,"Sphagnum triporosum",H.A.Crum,validation,,,
-SYMPLOCACEAE,"Symplocos altissima",Brand,done,open,DD,
-SYMPLOCACEAE,"Symplocos dasyphylla",Brand,done,open,,
+SYMPLOCACEAE,"Symplocos altissima",Brand,validation,open,DD,
+SYMPLOCACEAE,"Symplocos dasyphylla",Brand,validation,open,,
 SYMPLOCACEAE,"Symplocos glaziovii",Brand,done,open,DD,
 SYMPLOCACEAE,"Symplocos neglecta",Brand,done,open,CR,"B2ab(i,iii,iv)"
 SYMPLOCACEAE,"Symplocos occulta",Aranha,done,open,DD,
-SYMPLOCACEAE,"Symplocos organensis",Brand,done,open,EN,"B1ab(i,iii,iv)"
-THELYPTERIDACEAE,"Thelypteris refracta","(Fisch. & C.Meyer ex Kunze) C.F.Reed",done,open,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+SYMPLOCACEAE,"Symplocos organensis",Brand,validation,open,EN,"B1ab(i,iii,iv)"
+THELYPTERIDACEAE,"Thelypteris refracta","(Fisch. & C.Meyer ex Kunze) C.F.Reed",validation,open,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 THISMIACEAE,"Thismia caudata","Maas & H.Maas",done,,,
 THISMIACEAE,"Thismia fungiformis","(Taub. ex Warm.) Maas & H.Maas",done,,,
 THISMIACEAE,"Thismia macahensis","(Miers) F.Muell.",done,,,
@@ -923,7 +919,7 @@ VELLOZIACEAE,"Barbacenia foliosa","Goethart & Henrard",validation,,,
 VELLOZIACEAE,"Barbacenia gaveensis","Goethart & Henrard",validation,,,
 VELLOZIACEAE,"Barbacenia seubertiana","Goethart & Henrard",validation,,,
 VELLOZIACEAE,"Barbacenia squamata",Herb.,validation,,,
-VIOLACEAE,"Rinorea laevigata","(Sol. ex Ging.) Hekking",done,open,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
+VIOLACEAE,"Rinorea laevigata","(Sol. ex Ging.) Hekking",validation,open,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)"
 VOCHYSIACEAE,"Callisthene dryadum",Duarte,done,open,,
 XYRIDACEAE,"Xyris organensis",Malme,done,review,EN,"B2ab(ii,iii)"
 Calophyllaceae,"Kielmeyera aureovinosa","M. Gomes",done,review,EN,A4bcd;D1
@@ -943,7 +939,7 @@ MALPIGHIACEAE,"Hiraea restingae ",C.E.Anderson,done,review,EN,"B2ab(i,ii,iii,iv)
 ORCHIDACEAE,"Pabstiella purpurea","(Seehawer) Luer & Toscano",done,review,DD,
 LOASACEAE,"Aosa uleana","(Urb. & Gilg) Weigend",done,review,CR,B2ab(iii)
 BEGONIACEAE,"Begonia tomentosa",Schott,validation,,,
-MORACEAE,"Ficus nevesiae",Carauta,done,review,EN,"B2ab(i,ii,iii,iv)"
+MORACEAE,"Ficus nevesiae",Carauta,validation,review,EN,"B2ab(i,ii,iii,iv)"
 ORCHIDACEAE,"Brasiliorchis moutinhoi","(Pabst) F.Barros & L.Guimarães",done,comments,DD,
 CACTACEAE,"Schlumbergera russelliana","(Hook.) Britton & Rose",validation,,,
 ,,,open,,,
@@ -983,6 +979,7 @@ CACTACEAE,"Schlumbergera russelliana","(Hook.) Britton & Rose",validation,,,
 ,,,open,,,
 ,,,open,,,
 ,,,validation,,,
+,,,review,,,
 ,,,open,,,
 ,,,review,,,
 ,,,validation,,,
@@ -1011,6 +1008,8 @@ CACTACEAE,"Schlumbergera russelliana","(Hook.) Britton & Rose",validation,,,
 ,,,validation,,,
 ,,,open,,,
 ,,,open,,,
+,,,review,,,
+,,,review,,,
 ,,,open,,,
 ,,,open,,,
 ,,,open,,,

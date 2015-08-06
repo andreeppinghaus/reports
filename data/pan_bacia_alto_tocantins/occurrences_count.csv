@@ -1,23 +1,23 @@
 family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total
-LAURACEAE,"Cinnamomum taubertianum (Mez & Schwacke) Kosterm.",2,2,2,5,1,0,2,4,6
-POACEAE,"Axonopus hydrolithicus",8,7,3,18,0,0,8,10,18
-POACEAE,"Altoparadisium chapadense Filg. et al.",2,5,0,7,0,0,2,5,7
-LYTHRACEAE,"Diplusodon ericoides Lourteig",6,7,3,16,0,0,6,10,16
-MELASTOMATACEAE,"Lavoisiera quinquenervis Wurdack",1,9,4,8,6,0,0,14,14
-ASTERACEAE,"Calea abbreviata Pruski & Urbatsch",8,7,0,15,0,0,8,7,15
-ORCHIDACEAE,"Cyrtopodium linearifolium J.A.N.Batista & Bianchetti",4,4,2,10,0,0,4,6,10
-PODOCARPACEAE,"Podocarpus barretoi Laubenf. & Silba",0,0,3,3,0,0,0,3,3
-AMARYLLIDACEAE,"Griffinia nocturna Ravenna",10,7,2,19,0,0,10,9,19
-LAMIACEAE,"Hypenia aristulata (Epling) Harley",4,0,3,7,0,0,4,3,7
-Annonaceae,"Annona burchellii R.E.Fr.",2,3,1,5,1,0,2,4,6
-Eriocaulaceae,"Paepalanthus extremensis Silveira",4,14,2,20,0,0,4,16,20
-Fabaceae,"Eriosema platycarpon Micheli",15,15,0,30,0,0,15,15,30
-Melastomataceae,"Cambessedesia glaziovii Cogn. ex A.B.Martins",29,17,1,46,1,0,29,18,47
-Moraceae,"Ficus aripuanensis C.C.Berg & Kooy",6,4,0,8,2,0,5,5,10
-Piperaceae,"Peperomia regelii C.DC.",8,3,3,10,4,0,6,8,14
-Rubiaceae,"Borreria pulchristipula (Bremek.) Bacigalupo & E.L.Cabral",20,2,0,22,0,0,20,2,22
-Xyridaceae,"Xyris metallica Klotzsch ex Seub.",20,10,0,27,3,0,20,10,30
-Annonaceae,"Annona malmeana R.E.Fr.",18,6,0,20,4,0,16,8,24
-Lentibulariaceae,"Utricularia biovularioides (Kuhlm.) P.Taylor",2,0,0,2,0,0,2,0,2
-Eriocaulaceae,"Paepalanthus cordatus Ruhland",0,7,0,0,0,7,0,7,7
-Eriocaulaceae,"Paepalanthus macer Trovó",5,0,0,5,0,0,5,0,5
+LAURACEAE,"Cinnamomum taubertianum",2,2,2,5,1,0,2,4,6
+POACEAE,"Ophiochloa hydrolithica",8,7,3,18,0,0,8,10,18
+POACEAE,"Altoparadisium chapadense",2,5,0,7,0,0,2,5,7
+LYTHRACEAE,"Diplusodon ericoides",6,7,3,16,0,0,6,10,16
+MELASTOMATACEAE,"Lavoisiera quinquenervis",1,9,4,8,6,0,0,14,14
+ASTERACEAE,"Calea abbreviata",8,7,0,15,0,0,8,7,15
+ORCHIDACEAE,"Cyrtopodium linearifolium",4,4,2,10,0,0,4,6,10
+PODOCARPACEAE,"Podocarpus barretoi",0,0,3,3,0,0,0,3,3
+AMARYLLIDACEAE,"Griffinia nocturna",10,7,2,19,0,0,10,9,19
+LAMIACEAE,"Hypenia aristulata",4,0,3,7,0,0,4,3,7
+Annonaceae,"Annona burchellii",2,3,1,5,1,0,2,4,6
+Eriocaulaceae,"Paepalanthus extremensis",4,14,2,20,0,0,4,16,20
+Fabaceae,"Eriosema platycarpon",15,15,0,30,0,0,15,15,30
+Melastomataceae,"Cambessedesia glaziovii",29,17,1,46,1,0,29,18,47
+Moraceae,"Ficus aripuanensis",6,4,0,8,2,0,5,5,10
+Piperaceae,"Peperomia regelii",8,3,3,10,4,0,6,8,14
+Rubiaceae,"Borreria pulchristipula",20,2,0,22,0,0,20,2,22
+Xyridaceae,"Xyris metallica",20,10,0,27,3,0,20,10,30
+Annonaceae,"Annona malmeana",18,6,0,20,4,0,16,8,24
+Lentibulariaceae,"Utricularia biovularioides",2,0,0,2,0,0,2,0,2
+Eriocaulaceae,"Paepalanthus cordatus",0,7,0,0,0,7,0,7,7
+Eriocaulaceae,"Paepalanthus macer",5,0,0,5,0,0,5,0,5

@@ -1,901 +1,907 @@
 family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total
-ARACEAE,"Anthurium luschnathianum Kunth",24,13,0,36,1,0,24,13,37
-ARACEAE,"Philodendron alternans Schott",4,4,0,7,1,0,4,4,8
-ASTERACEAE,"Austrocritonia taunayana (Glaz. ex B.L.Rob.) R.M.King & H.Rob.",5,2,0,7,0,0,5,2,7
-ARACEAE,"Anthurium simonii Nadruz",11,9,0,20,0,0,11,9,20
-ASTERACEAE,"Baccharis friburgensis G.Heiden et al.",2,3,0,5,0,0,2,3,5
-ARACEAE,"Anthurium laucheanum K.Koch",7,14,0,16,5,0,7,14,21
-BROMELIACEAE,"Neoregelia martinellii W.Weber",1,5,0,4,0,2,1,5,6
-BROMELIACEAE,"Neoregelia roethii W.Weber",0,1,1,1,0,1,0,2,2
-XYRIDACEAE,"Xyris organensis Malme",4,2,0,5,1,0,4,2,6
-POACEAE,"Dichanthelium cucaense",1,0,0,1,0,0,1,0,1
-Poaceae,"Glaziophyton mirabile Franch.",8,13,0,18,3,0,8,13,21
-BROMELIACEAE,"Neoregelia macwilliamsii L.B.Sm.",2,0,1,2,0,1,2,1,3
-CACTACEAE,"Schlumbergera russelliana (Hook.) Britton & Rose",22,3,4,23,6,0,18,11,29
-GESNERIACEAE,"Besleria melancholica (Vell.) C.V.Morton",0,0,165,154,11,0,0,165,165
-APOCYNACEAE,"Gonolobus dorothyanus Fontella",2,3,0,5,0,0,2,3,5
-RUBIACEAE,"Chomelia monantha (K.Schum. ex Standl.) Steyerm.",0,7,6,8,5,0,0,13,13
-CLUSIACEAE,"Clusia fragrans Gardner",20,24,0,42,2,0,20,24,44
-FABACEAE,"Dalbergia glaziovii Harms",8,29,0,32,5,0,8,29,37
-APOCYNACEAE,"Ditassa maricaensis Fontella & E.A.Schwarz",47,2,0,49,0,0,47,2,49
-PTERIDACEAE,"Doryopteris quinquelobata (Fée) Diels",3,7,0,4,6,0,1,9,10
-GERANIACEAE,"Geranium brasiliense Progel",31,8,0,31,8,0,29,10,39
-RUBIACEAE,"Hindsia glabra K.Schum.",2,30,0,30,2,0,2,30,32
-SAPINDACEAE,"Allophylus membranifolius Radlk.",0,3,19,18,4,0,0,22,22
-MELASTOMATACEAE,"Leandra niangaeformis Cogn.",4,20,0,14,10,0,3,21,24
-ASTERACEAE,"Lepidaploa persicifolia (Desf.) H.Rob.",35,33,0,42,26,0,33,35,68
-FABACEAE,"Machaerium firmum (Vell.) Benth.",26,12,0,26,12,0,17,21,38
-FABACEAE,"Machaerium legale (Vell.) Benth.",9,26,0,28,7,0,9,26,35
-MELASTOMATACEAE,"Meriania robusta Cogn.",30,58,0,84,4,0,30,58,88
-LAURACEAE,"Mezilaurus navalium (Allemão) Taub. ex Mez",17,34,0,25,26,0,14,37,51
-MELASTOMATACEAE,"Miconia elaeodendron (DC.) Naudin",12,15,0,23,4,0,10,17,27
-MONIMIACEAE,"Mollinedia stenophylla Perkins",2,37,0,33,6,0,2,37,39
-IRIDACEAE,"Neomarica longifolia (Link & Otto) Sprague",2,40,0,39,3,0,2,40,42
-APOCYNACEAE,"Orthosia arenosa Decne.",13,15,0,17,11,0,11,17,28
-ASTERACEAE,"Lepidaploa coulonioides (H.Rob.) H.Rob.",7,6,10,23,0,0,7,16,23
-PTERIDACEAE,"Pteris congesta J.Prado",24,6,0,28,2,0,22,8,30
-GESNERIACEAE,"Sinningia lateritia (Lindl.) Chautems",0,0,22,21,1,0,0,22,22
-DICHAPETALACEAE,"Stephanopodium sessile Rizzini",3,11,0,13,1,0,3,11,14
-COMBRETACEAE,"Terminalia acuminata (Allemão) Eichler",8,27,0,27,8,0,5,30,35
-MELASTOMATACEAE,"Tibouchina elegans (Gardner) Cogn.",3,79,0,73,9,0,2,80,82
-GESNERIACEAE,"Vanhouttea bradeana Hoehne",0,0,7,7,0,0,0,7,7
-FABACEAE,"Moldenhawera polysperma (Vell.) Stellfeld",20,70,0,65,25,0,19,71,90
-ASTERACEAE,"Trichogoniopsis podocarpa (DC.) R.M.King & H.Rob.",21,29,0,38,12,0,20,30,50
-IRIDACEAE,"Neomarica northiana (Schneev.) Sprague",9,26,0,34,1,0,9,26,35
-MELASTOMATACEAE,"Behuria magdalenensis (Brade) R.Tav. & Baumgratz",10,4,0,14,0,0,10,4,14
-MALVACEAE,"Byttneria beyrichiana K.Schum.",20,3,0,19,4,0,17,6,23
-VOCHYSIACEAE,"Callisthene dryadum Duarte",3,32,0,34,1,0,3,32,35
-Poaceae,"Chusquea sclerophylla Döll",3,8,0,11,0,0,3,8,11
-ASTERACEAE,"Dasyphyllum leptacanthum (Gardner) Cabrera",18,42,0,55,5,0,18,42,60
-SAPINDACEAE,"Paullinia marginata Casar.",0,10,26,24,12,0,0,36,36
-PIPERACEAE,"Peperomia riedeliana Regel",1,1,0,2,0,0,1,1,2
-RUBIACEAE,"Faramea campanularis Müll.Arg.",26,6,0,30,2,0,26,6,32
-MALVACEAE,"Gaya gaudichaudiana A.St.-Hil.",10,48,0,38,20,0,7,51,58
-HELICONIACEAE,"Heliconia pseudoaemygdiana Emygdio & E.Santos",3,3,0,6,0,0,3,3,6
-MELASTOMATACEAE,"Leandra magdalenensis Brade",6,10,0,16,0,0,6,10,16
-CAMPANULACEAE,"Lobelia santos-limae Brade",4,2,0,6,0,0,4,2,6
-RUBIACEAE,"Manettia fimbriata Cham. & Schltdl.",9,7,27,38,5,0,8,35,43
-APOCYNACEAE,"Marsdenia glaziovii (E.Fourn.) Spellman & Morillo",1,10,0,2,9,0,0,11,11
-FABACEAE,"Mimosa ernestii Harms",4,7,0,8,3,0,4,7,11
-FABACEAE,"Mimosa glazioui Benth.",3,5,0,2,6,0,2,6,8
-BROMELIACEAE,"Neoregelia fosteriana L.B.Sm.",6,5,0,8,3,0,5,6,11
-OCHNACEAE,"Ouratea stipulata (Vell.) Engl.",11,4,40,44,11,0,3,52,55
-PASSIFLORACEAE,"Passiflora imbeana Sacco",17,4,0,21,0,0,17,4,21
-FABACEAE,"Piptadenia polyptera Benth.",2,8,0,4,6,0,1,9,10
-ARACEAE,"Anthurium augustinum K.Koch & Lauche",2,10,0,7,5,0,2,10,12
-ARACEAE,"Anthurium harrisii (Graham) G.Don",0,0,218,189,29,0,0,218,218
-ARACEAE,"Anthurium lhotzkyanum Schott",23,28,0,46,5,0,23,28,51
-GESNERIACEAE,"Sinningia bulbosa (Ker Gawl.) Wiehler",0,0,47,32,15,0,0,47,47
-BROMELIACEAE,"Vriesea altimontana E.Pereira & Martinelli",7,8,0,15,0,0,7,8,15
-BROMELIACEAE,"Vriesea leptantha Harms",4,4,0,8,0,0,4,4,8
-MALVACEAE,"Abutilon esculentum A.St.-Hil.",24,8,7,25,14,0,16,23,39
-FABACEAE,"Aeschynomene bradei Rudd",3,1,0,4,0,0,3,1,4
-APOCYNACEAE,"Aspidosperma compactinervium Kuhlm.",7,43,0,24,26,0,4,46,50
-VELLOZIACEAE,"Barbacenia brevifolia Taub.",3,0,11,13,1,0,2,12,14
-BEGONIACEAE,"Begonia acetosa Vell.",0,7,0,0,7,0,0,7,7
-BEGONIACEAE,"Begonia aconitifolia A.DC.",1,0,25,24,2,0,0,26,26
-BEGONIACEAE,"Begonia concinna Schott",5,1,16,18,4,0,3,19,22
-BEGONIACEAE,"Begonia depauperata Schott",5,1,11,13,4,0,1,16,17
-BEGONIACEAE,"Begonia edmundoi Brade",8,12,7,27,0,0,8,19,27
-BEGONIACEAE,"Begonia epipsila Brade",0,4,11,15,0,0,0,15,15
-BEGONIACEAE,"Begonia fagifolia Otto & A.Dietr.",0,4,18,15,7,0,0,22,22
-BEGONIACEAE,"Begonia jocelinoi Brade",4,8,6,17,1,0,3,15,18
-BEGONIACEAE,"Begonia lanstyakii Brade",0,1,10,11,0,0,0,11,11
-BEGONIACEAE,"Begonia olsoniae L.B.Sm. & B.G.Schub.",10,15,48,72,1,0,9,64,73
-BEGONIACEAE,"Begonia ramentacea Paxton",1,5,43,38,11,0,1,48,49
-BEGONIACEAE,"Begonia rubropilosa A.DC.",1,5,15,18,3,0,1,20,21
-BEGONIACEAE,"Begonia sanguinea Raddi",0,3,50,46,7,0,0,53,53
-BEGONIACEAE,"Begonia semidigitata Brade",0,0,15,13,2,0,0,15,15
-BEGONIACEAE,"Begonia velloziana Walp.",0,0,1,1,0,0,0,1,1
-LAURACEAE,"Beilschmiedia angustifolia Kosterm.",15,6,0,19,2,0,15,6,21
-MELASTOMATACEAE,"Bertolonia valenteana Baumgratz",2,2,0,4,0,0,2,2,4
-BIGNONIACEAE,"Fridericia elegans (Vell.) L.G.Lohmann",17,12,0,18,11,0,13,16,29
-MYRTACEAE,"Campomanesia hirsuta Gardner",19,17,0,29,7,0,18,18,36
-ORCHIDACEAE,"Campylocentrum organense (Rchb.f.) Rolfe",12,9,0,12,9,0,8,13,21
-CAPPARACEAE,"Neocalyptrocalyx eichleriana (Urb.) Iltis & Cornejo",3,3,0,6,0,0,3,3,6
-POACEAE,"Chusquea tenuis Glaz. ex E.G.Camus",1,2,0,2,1,0,1,2,3
-POACEAE,"Chusquea wilkesii Munro",1,1,0,0,2,0,0,2,2
-BROMELIACEAE,"Cryptanthus bromelioides Otto & A.Dietr.",21,13,0,27,7,0,20,14,34
-DICRANACEAE,"Dicranoloma brasiliense Herzog",2,1,0,3,0,0,2,1,3
-BROMELIACEAE,"Dyckia pseudococcinea L.B.Sm.",0,16,29,42,3,0,0,45,45
-ERYTHROXYLACEAE,"Erythroxylum occultum Plowman",7,0,0,7,0,0,7,0,7
-ERICACEAE,"Gaylussacia pruinosa Loes.",1,8,0,9,0,0,1,8,9
-GESNERIACEAE,"Nematanthus mirabilis (Handro) Chautems",0,6,2,8,0,0,0,8,8
-AQUIFOLIACEAE,"Ilex longipetiolata Loes.",7,5,0,4,8,0,2,10,12
-ASTERACEAE,"Lepidaploa araujoa (H.Rob.) H.Rob.",3,0,0,3,0,0,3,0,3
-OLACACEAE,"Dulacia singularis Vell.",0,0,32,20,12,0,0,32,32
-FABACEAE,"Lupinus dusenianus C.P.Sm.",4,0,0,4,0,0,4,0,4
-FABACEAE,"Lupinus russellianus C.P.Sm.",4,0,0,4,0,0,4,0,4
-ASTERACEAE,"Macropodina bradei R.M.King & H.Rob.",5,4,0,8,1,0,5,4,9
-EUPHORBIACEAE,"Manihot corymbiflora Pax & K.Hoffm.",6,3,0,7,2,0,6,3,9
-MELASTOMATACEAE,"Meriania excelsa (Gardner) Cogn.",10,4,0,12,2,0,10,4,14
-MELASTOMATACEAE,"Miconia eichleri Cogn.",9,46,0,43,12,0,9,46,55
-MELASTOMATACEAE,"Miconia glazioviana Cogn.",3,9,0,12,0,0,3,9,12
-MELASTOMATACEAE,"Miconia laeta Cogn.",1,4,0,5,0,0,1,4,5
-MELASTOMATACEAE,"Miconia ovalifolia Cogn.",2,8,0,10,0,0,2,8,10
-MELASTOMATACEAE,"Miconia penduliflora Cogn.",7,10,0,14,3,0,6,11,17
-MYRTACEAE,"Neomitranthes apiculata (Burret) Mattos",1,1,0,1,1,0,1,1,2
-MONIMIACEAE,"Mollinedia acutissima Perkins",5,32,0,27,10,0,1,36,37
-LAURACEAE,"Nectandra spicata Meisn.",5,2,0,5,2,0,4,3,7
-BROMELIACEAE,"Neoregelia abendrothae L.B.Sm.",5,1,0,6,0,0,5,1,6
-BROMELIACEAE,"Neoregelia kuhlmannii L.B.Sm.",1,3,0,4,0,0,1,3,4
-BROMELIACEAE,"Neoregelia uleana L.B.Sm.",1,2,0,0,3,0,0,3,3
-ERIOCAULACEAE,"Paepalanthus ovatus Körn.",10,9,0,15,4,0,8,11,19
-POACEAE,"Renvoizea glaziovii (Hack.) Zuloaga & Morrone",2,12,0,1,13,0,1,13,14
-POACEAE,"Dichanthelium itatiaiae (Swallen) Zuloaga",1,5,0,6,0,0,1,5,6
-POACEAE,"Renvoizea teretifolia (Hack.) Zuloaga & Morrone",3,27,0,6,24,0,1,29,30
-CACTACEAE,"Pilosocereus ulei (K.Schum.) Byles & G.D.Rowley",11,13,0,17,7,0,7,17,24
-BROMELIACEAE,"Pitcairnia encholirioides L.B.Sm.",0,9,8,17,0,0,0,17,17
-GENTIANACEAE,"Prepusa connata Gardner",15,14,0,21,8,0,13,16,29
-ORCHIDACEAE,"Prescottia spiranthophylla Barb.Rodr.",16,5,0,16,5,0,13,8,21
-RUBIACEAE,"Psychotria clavipes Müll.Arg.",0,12,0,5,7,0,0,12,12
-BROMELIACEAE,"Quesnelia edmundoi L.B.Sm.",1,21,31,51,2,0,1,52,53
-BROMELIACEAE,"Quesnelia seideliana L.B.Sm.",0,5,17,19,3,0,0,22,22
-CACTACEAE,"Rhipsalis pentaptera A.Dietr.",2,5,0,3,4,0,2,5,7
-LAMIACEAE,"Salvia benthamiana Gardner",9,11,0,13,7,0,9,11,20
-ACANTHACEAE,"Justicia polita (Nees) Profice",29,3,0,32,0,0,29,3,32
-SAPINDACEAE,"Serjania fluminensis Acev.-Rodr.",0,3,8,10,1,0,0,11,11
-COMMELINACEAE,"Siderasis fuscata (Lodd.) H.E.Moore",16,10,0,20,6,0,12,14,26
-ASTERACEAE,"Stevia organensis Gardner",11,17,0,26,2,0,11,17,28
-FABACEAE,"Swartzia glazioviana (Taub.) Glaz.",43,34,0,72,5,0,41,36,77
-SYMPLOCACEAE,"Symplocos dasyphylla Brand",2,9,0,2,9,0,2,9,11
-BURSERACEAE,"Tetragastris breviacuminata Swart",13,18,0,26,5,0,12,19,31
-BROMELIACEAE,"Tillandsia reclinata E.Pereira & Martinelli",6,2,0,8,0,0,6,2,8
-TRIGONIACEAE,"Trigonia rotundifolia Lleras",0,0,18,17,1,0,0,18,18
-POACEAE,"Trisetum brasiliense Louis-Marie",1,2,0,3,0,0,1,2,3
-FABACEAE,"Luetzelburgia trialata (Ducke) Ducke",15,21,0,31,5,0,13,23,36
-ASTERACEAE,"Lepidaploa obtusifolia (Less.) H.Rob.",30,36,0,40,26,0,28,38,66
-ASTERACEAE,"Calea wedelioides (Baker) S.F.Blake",4,8,0,6,6,0,4,8,12
-BROMELIACEAE,"Vriesea sucrei L.B.Sm. & Read",8,12,0,20,0,0,8,12,20
-BROMELIACEAE,"Vriesea thyrsoidea Mez",45,28,0,70,3,0,45,28,73
-BROMELIACEAE,"Alcantarea glaziouana (Leme) J.R.Grant",23,24,0,38,9,0,22,25,47
-BROMELIACEAE,"Vriesea vidalii L.B.Sm. & Handro",16,8,0,24,0,0,16,8,24
-BROMELIACEAE,"Neoregelia bragarum (E.Pereira & L.B.Sm.) Leme",5,7,0,11,1,0,4,8,12
-FABACEAE,"Zollernia glaziovii Yakovlev",7,12,0,9,10,0,6,13,19
-MELASTOMATACEAE,"Tibouchina pallida Cogn.",4,13,0,13,4,0,4,13,17
-BEGONIACEAE,"Begonia acida Vell.",0,4,0,2,2,0,0,4,4
-BEGONIACEAE,"Begonia collaris Brade",3,3,13,18,1,0,2,17,19
-BEGONIACEAE,"Begonia lunaris E.L.Jacques",4,5,6,15,0,0,4,11,15
-GESNERIACEAE,"Vanhouttea gardneri (Hook.) Fritsch",0,0,18,18,0,0,0,18,18
-BEGONIACEAE,"Begonia pseudolubbersii Brade",0,3,4,6,1,0,0,7,7
-ERYTHROXYLACEAE,"Erythroxylum ovalifolium Peyr.",146,19,0,152,13,0,140,25,165
-MYRTACEAE,"Eugenia itaguahiensis Nied.",0,0,18,15,3,0,0,18,18
-AMARYLLIDACEAE,"Griffinia rochae Morel",1,0,0,1,0,0,1,0,1
-ARECACEAE,"Lytocaryum weddellianum (H.Wendl.) Toledo",8,25,0,28,5,0,4,29,33
-FABACEAE,"Peltogyne mattosiana Rizzini",3,22,0,22,3,0,3,22,25
-GESNERIACEAE,"Sinningia cardinalis (Lehm.) H.E.Moore",0,0,16,13,3,0,0,16,16
-GESNERIACEAE,"Sinningia cochlearis (Hook.) Chautems",0,0,2,2,0,0,0,2,2
-GESNERIACEAE,"Sinningia guttata Lindl.",0,0,9,7,2,0,0,9,9
-MALVACEAE,"Callianthe senilis (K. Schum) Donnel",2,6,0,2,6,0,1,7,8
-SOLANACEAE,"Capsicum friburgense Barboza & Bianch.",4,2,0,6,0,0,4,2,6
-RUTACEAE,"Conchocarpus sordidus Kallunki",11,10,0,18,3,0,10,11,21
-CONNARACEAE,"Connarus marginatus Planch.",9,13,0,21,1,0,8,14,22
-ASTERACEAE,"Baccharis pseudovaccinioides Malag.",9,6,0,13,2,0,8,7,15
-EUPHORBIACEAE,"Euphorbia sabulicola Boiss.",5,7,0,9,3,0,5,7,12
-RUBIACEAE,"Faramea platypoda Müll.Arg.",2,7,0,4,5,0,2,7,9
-CALOPHYLLACEAE,"Kielmeyera excelsa Cambess.",16,39,0,30,25,0,13,42,55
-MELASTOMATACEAE,"Meriania glabra (DC.) Triana",76,83,0,126,33,0,69,90,159
-PASSIFLORACEAE,"Passiflora farneyi Pessoa & Cervi",11,9,0,19,1,0,11,9,20
-MYRTACEAE,"Eugenia cambucae Mattos",7,6,0,10,3,0,5,8,13
-MYRTACEAE,"Calyptranthes grandiflora O.Berg",0,3,32,25,10,0,0,35,35
-MYRTACEAE,"Psidium arboreum Vell.",0,5,0,3,2,0,0,5,5
-CACTACEAE,"Rhipsalis mesembryanthemoides Haw.",30,4,0,21,12,1,19,15,34
-ANNONACEAE,"Annona parviflora (A.St.-Hil.) H.Rainer",39,34,0,54,19,0,34,39,73
-ASTERACEAE,"Senecio malacophyllus Dusén",2,1,0,3,0,0,2,1,3
-MALPIGHIACEAE,"Stigmaphyllon affine A.Juss.",17,29,0,39,7,0,13,33,46
-SYMPLOCACEAE,"Symplocos glaziovii Brand",1,11,0,2,10,0,1,11,12
-SAPINDACEAE,"Cupania fluminensis Acev.-Rodr.",0,1,10,10,1,0,0,11,11
-OLEACEAE,"Chionanthus fluminensis (Miers) P.S.Green",11,3,9,14,9,0,5,18,23
-CANELLACEAE,"Cinnamodendron sampaioanum Occhioni",3,14,0,17,0,0,3,14,17
-OCHNACEAE,"Luxemburgia glazioviana (Engl.) Beauverd",22,9,0,25,6,0,20,11,31
-RUBIACEAE,"Coussarea strigosipes Müll.Arg.",26,10,0,33,3,0,26,10,36
-RUBIACEAE,"Coussarea viridis Müll.Arg.",6,12,0,17,1,0,6,12,18
-COMMELINACEAE,"Dichorisandra oxypetala Hook.",9,4,0,11,2,0,8,5,13
-MELASTOMATACEAE,"Tibouchina hirsutissima Cogn.",8,9,0,15,2,0,8,9,17
-LORANTHACEAE,"Struthanthus maricensis Rizzini",7,10,0,17,0,0,7,10,17
-MALVACEAE,"Abutilon anodoides A.St.-Hil. & Naudin",10,7,0,9,8,0,7,10,17
-BROMELIACEAE,"Alcantarea nevaresii (Leme) J.R.Grant",4,3,0,6,1,0,4,3,7
-SAPINDACEAE,"Allophylus heterophyllus (Cambess.) Radlk.",9,25,66,64,36,0,5,95,100
-PTERIDACEAE,"Doryopteris subsimplex (Fée) Diels",4,6,0,5,5,0,3,7,10
-ONAGRACEAE,"Fuchsia glazioviana Taub.",22,4,0,25,1,0,22,4,26
-MELASTOMATACEAE,"Leandra laxa Cogn.",7,68,0,73,2,0,7,68,75
-ASTERACEAE,"Mikania hastifolia Baker",5,1,0,3,3,0,3,3,6
-GENTIANACEAE,"Prepusa hookeriana Gardner",24,14,0,28,10,0,22,16,38
-RUBIACEAE,"Psychotria ulei Standl.",16,6,0,20,2,0,15,7,22
-BROMELIACEAE,"Quesnelia lateralis Wawra",1,23,105,122,7,0,1,128,129
-LENTIBULARIACEAE,"Utricularia geminiloba Benj.",0,0,28,25,3,0,0,28,28
-GESNERIACEAE,"Vanhouttea lanata Fritsch",0,0,7,6,1,0,0,7,7
-ANTHOCEROTACEAE,"Anthoceros lamellatus Steph.",1,1,0,2,0,0,1,1,2
-BIGNONIACEAE,"Adenocalymma bullatum Bureau & K.Schum.",1,17,0,8,10,0,1,17,18
-SALICACEAE,"Abatia microphylla Taub.",4,1,0,3,2,0,3,2,5
-MALVACEAE,"Callianthe glaziovii (K. Schum.) Donnel",1,4,0,5,0,0,1,4,5
-EUPHORBIACEAE,"Algernonia glazioui Emmerich",2,0,0,2,0,0,2,0,2
-EUPHORBIACEAE,"Algernonia paulae Emmerich",27,0,0,27,0,0,27,0,27
-APOCYNACEAE,"Matelea quinquedentata (E.Fourn.) Morillo",2,12,0,14,0,0,2,12,14
-ACANTHACEAE,"Aphelandra rigida Glaz. ex Mildbr.",3,4,0,2,5,0,1,6,7
-APOCYNACEAE,"Aspidosperma ingratum K.Schum.",0,11,0,9,2,0,0,11,11
-FABACEAE,"Bauhinia albicans Vogel",10,10,0,16,4,0,9,11,20
-MELASTOMATACEAE,"Behuria corymbosa Cogn.",4,6,0,9,1,0,3,7,10
-MELASTOMATACEAE,"Behuria glazioviana Cogn.",2,2,0,4,0,0,2,2,4
-MELASTOMATACEAE,"Behuria organensis (Saldanha & Cogn.) R.Tav. & Baumgratz",10,32,0,41,1,0,10,32,42
-OLACACEAE,"Cathedra grandiflora Loes.",1,2,0,1,2,0,1,2,3
-CLUSIACEAE,"Clusia immersa C.M.Vieira",22,6,0,28,0,0,22,6,28
-BIGNONIACEAE,"Bignonia costata (Bureau & K.Schum.) L.G.Lohmann",11,41,0,27,25,0,6,46,52
-RUBIACEAE,"Coussarea speciosa K.Schum. ex M. Gomes",3,4,0,3,4,0,3,4,7
-DILLENIACEAE,"Davilla glaziovii Eichler",6,3,0,7,2,0,6,3,9
-DIOSCOREACEAE,"Dioscorea margarethia G.M.Barroso et al.",2,18,0,20,0,0,2,18,20
-ORCHIDACEAE,"Zygostates ovatipetala (Brade) Toscano",2,0,0,1,1,0,1,1,2
-APOCYNACEAE,"Ditassa imbricata E.Fourn.",2,7,0,8,1,0,1,8,9
-PTERIDACEAE,"Doryopteris tijucana Brade & Rosenst.",13,10,0,23,0,0,13,10,23
-SAPOTACEAE,"Pradosia glaziovii (Pierre) T.D.Penn.",2,3,0,1,4,0,1,4,5
-DRYOPTERIDACEAE,"Elaphoglossum mourae Brade",1,0,0,0,1,0,0,1,1
-LAURACEAE,"Endlicheria balsamea Vattimo-Gil",0,5,4,9,0,0,0,9,9
-ERYTHROXYLACEAE,"Erythroxylum lancifolium Peyr.",15,2,0,17,0,0,15,2,17
-MYRTACEAE,"Eugenia augustana Kiaersk.",1,2,0,2,1,0,1,2,3
-MYRTACEAE,"Eugenia corcovadensis Kiaersk.",1,6,13,19,1,0,1,19,20
-MYRTACEAE,"Eugenia oxyoentophylla Kiaersk.",0,0,13,12,1,0,0,13,13
-RUBIACEAE,"Faramea aristata Müll.Arg.",1,16,0,15,2,0,1,16,17
-RUBIACEAE,"Faramea calyciflora A.Rich. ex DC.",8,65,0,63,10,0,8,65,73
-RUBIACEAE,"Faramea tinguana Müll.Arg.",4,11,0,8,7,0,4,11,15
-THYMELAEACEAE,"Funifera insulae Nevling",6,2,0,6,2,0,5,3,8
-MYRTACEAE,"Myrcia velutiflora (Mattos & D.Legrand) Mattos",6,9,0,15,0,0,6,9,15
-RUBIACEAE,"Hillia saldanhaei K.Schum.",1,5,0,6,0,0,1,5,6
-RUBIACEAE,"Hindsia arianeae Di Maio",1,1,0,2,0,0,1,1,2
-RUBIACEAE,"Hindsia cucullata Di Maio",1,2,0,1,2,0,0,3,3
-MELASTOMATACEAE,"Huberia minor Cogn.",5,8,0,13,0,0,5,8,13
-MELASTOMATACEAE,"Huberia parvifolia Cogn.",2,7,0,8,1,0,2,7,9
-AQUIFOLIACEAE,"Ilex friburgensis Loes.",1,6,0,1,6,0,1,6,7
-AQUIFOLIACEAE,"Ilex glazioviana Loes.",1,4,0,2,3,0,1,4,5
-AQUIFOLIACEAE,"Ilex schwackeana Loes.",2,5,0,4,3,0,2,5,7
-ACANTHACEAE,"Justicia nervata (Lindau) Profice",8,3,0,10,1,0,8,3,11
-MELASTOMATACEAE,"Leandra atrata Cogn.",1,3,0,4,0,0,1,3,4
-MELASTOMATACEAE,"Leandra breviflora Cogn.",37,43,0,62,18,0,36,44,80
-MELASTOMATACEAE,"Leandra dentata Cogn.",11,5,0,16,0,0,11,5,16
-MELASTOMATACEAE,"Leandra multisetosa Cogn.",6,15,0,21,0,0,6,15,21
-MELASTOMATACEAE,"Leandra rubida Cogn.",3,4,0,7,0,0,3,4,7
-MELASTOMATACEAE,"Leandra saldanhaei Cogn.",1,8,0,9,0,0,1,8,9
-MELASTOMATACEAE,"Leandra schwackei Cogn.",1,6,0,3,4,0,1,6,7
-MELASTOMATACEAE,"Leandra sphaerocarpa Cogn.",3,5,0,8,0,0,3,5,8
-MELASTOMATACEAE,"Leandra tetragona Cogn.",1,2,0,3,0,0,1,2,3
-RUBIACEAE,"Manettia parvula K.Schum. ex Wernham",2,8,0,7,3,0,2,8,10
-MYRTACEAE,"Marlierea choriophylla Kiaersk.",3,2,0,4,1,0,3,2,5
-MELASTOMATACEAE,"Miconia gilva Cogn.",1,2,0,3,0,0,1,2,3
-MELASTOMATACEAE,"Miconia oblongifolia Cogn.",1,3,0,4,0,0,1,3,4
-MELASTOMATACEAE,"Miconia subvernicosa Cogn.",13,8,0,21,0,0,13,8,21
-ASTERACEAE,"Mikania alexandreae G.M.Barroso",2,10,0,12,0,0,2,10,12
-ASTERACEAE,"Mikania cabrerae G.M.Barroso",3,1,0,4,0,0,3,1,4
-ASTERACEAE,"Mikania campos-portoana G.M.Barroso",6,5,0,11,0,0,6,5,11
-BROMELIACEAE,"Nidularium itatiaiae L.B.Sm.",21,15,1,36,1,0,21,16,37
-BROMELIACEAE,"Nidularium utriculosum Ule",4,9,0,13,0,0,4,9,13
-APOCYNACEAE,"Oxypetalum lutescens E.Fourn.",1,6,0,7,0,0,1,6,7
-PIPERACEAE,"Peperomia arbuscula Yunck.",2,1,0,3,0,0,2,1,3
-PIPERACEAE,"Peperomia humifusa Yunck.",1,1,0,2,0,0,1,1,2
-PIPERACEAE,"Peperomia pubipeduncula Yunck.",4,1,0,5,0,0,4,1,5
-PIPERACEAE,"Piper emygdioi Yunck.",1,5,0,6,0,0,1,5,6
-PIPERACEAE,"Piper rioense Yunck.",7,7,0,14,0,0,7,7,14
-PIPERACEAE,"Piper saldanhai Yunck.",1,2,0,3,0,0,1,2,3
-BROMELIACEAE,"Pitcairnia insularis Tatagiba & R.J.V.Alves",1,2,1,4,0,0,1,3,4
-BROMELIACEAE,"Pitcairnia wendtiae Tatagiba & B.R.Silva",0,9,5,14,0,0,0,14,14
-MELASTOMATACEAE,"Pleiochiton glaziovianum Cogn.",4,32,0,35,1,0,3,33,36
-MELASTOMATACEAE,"Pleiochiton parvifolium Cogn.",5,3,0,8,0,0,5,3,8
-MYRTACEAE,"Plinia sebastianopolitana G.M.Barroso",1,15,0,15,1,0,1,15,16
-POLYPODIACEAE,"Pecluma imbeana (Brade) Salino",1,3,0,4,0,0,1,3,4
-RUBIACEAE,"Psychotria ampla Müll.Arg.",0,2,0,2,0,0,0,2,2
-RUBIACEAE,"Psychotria caudata M.Gomes",7,12,0,19,0,0,7,12,19
-RUBIACEAE,"Psychotria lucidifolia Standl.",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Psychotria tenuinervis Müll.Arg.",48,15,0,60,3,0,46,17,63
-GESNERIACEAE,"Vanhouttea fruticulosa (Glaz. ex Hoehne) Chautems",0,0,11,11,0,0,0,11,11
-CYPERACEAE,"Rhynchospora sampaioana Gross",2,4,0,4,2,0,2,4,6
-RUBIACEAE,"Rudgea insignis Müll.Arg.",9,10,0,13,6,0,8,11,19
-LAMIACEAE,"Salvia longibracteolata E.P.Santos",4,6,0,10,0,0,4,6,10
-ASTERACEAE,"Senecio ramentaceus Baker",2,12,0,2,12,0,2,12,14
-MALVACEAE,"Sida sampaiana Mont.",1,4,0,5,0,0,1,4,5
-CAMPANULACEAE,"Siphocampylus viscidus E.Wimm.",1,1,0,2,0,0,1,1,2
-RUBIACEAE,"Standleya erecta Brade",1,4,0,4,1,0,1,4,5
-RUBIACEAE,"Standleya limae Brade",2,3,0,5,0,0,2,3,5
-MALPIGHIACEAE,"Stigmaphyllon carautae C.E.Anderson",1,0,0,1,0,0,1,0,1
-LOGANIACEAE,"Strychnos jacarepiensis E.A.Manoel & E.F.Guim.",4,1,0,5,0,0,4,1,5
-MELASTOMATACEAE,"Tibouchina axillaris Cogn.",10,12,0,21,1,0,9,13,22
-MELASTOMATACEAE,"Tibouchina cordifolia Cogn.",3,10,0,11,2,0,2,11,13
-MELASTOMATACEAE,"Tibouchina virgata (Gardner) Cogn.",2,15,0,8,9,0,2,15,17
-MELASTOMATACEAE,"Tibouchina schwackei Cogn.",1,7,0,8,0,0,1,7,8
-TRIGONIACEAE,"Trigonia littoralis Miguel & E.F.Guim.",9,1,0,10,0,0,9,1,10
-IRIDACEAE,"Trimezia organensis Ravenna",9,3,0,10,2,0,9,3,12
-BROMELIACEAE,"Vriesea fradensis A.F.Costa",9,5,0,13,0,1,9,5,14
-ASTERACEAE,"Wunderlichia insignis Baill.",4,26,0,6,24,0,4,26,30
-MYRTACEAE,"Calyptranthes aromatica A.St.-Hil.",0,13,42,44,11,0,0,55,55
-LECYTHIDACEAE,"Couratari pyramidata (Vell.) Kunth",28,22,0,32,18,0,26,24,50
-ASTERACEAE,"Mikania pteropoda DC.",10,6,0,14,2,0,10,6,16
-CHRYSOBALANACEAE,"Hirtella barrosoi Prance",2,12,0,13,1,0,2,12,14
-CYPERACEAE,"Hypolytrum glaziovii Boeckeler",6,15,0,12,9,0,6,15,21
-MELASTOMATACEAE,"Leandra mouraei Cogn.",10,1,0,10,1,0,10,1,11
-LAURACEAE,"Ocotea sulcata Vattimo-Gil",10,8,0,18,0,0,10,8,18
-VELLOZIACEAE,"Barbacenia seubertiana Goethart & Henrard",8,0,16,3,21,0,0,24,24
-POLYGALACEAE,"Polygala revoluta Gardner",22,11,0,31,2,0,21,12,33
-PIPERACEAE,"Piper morisonianum C.DC.",2,5,0,6,1,0,1,6,7
-BROMELIACEAE,"Aechmea fasciata (Lindl.) Baker",0,0,118,104,14,0,0,118,118
-ANNONACEAE,"Duguetia microphylla (R.E.Fr.) R.E.Fr.",8,8,0,11,5,0,8,8,16
-BEGONIACEAE,"Begonia valida Goebel",0,4,3,0,7,0,0,7,7
-MALVACEAE,"Abutilon macrophyllum A.St.-Hil. & Naudin",2,1,0,2,1,0,2,1,3
-MELASTOMATACEAE,"Tibouchina benthamiana (Gardner) Cogn.",10,20,0,16,14,0,9,21,30
-EUPHORBIACEAE,"Acalypha aspericocca Pax & K.Hoffm.",1,1,0,0,2,0,0,2,2
-EUPHORBIACEAE,"Acalypha pohliana Müll.Arg.",2,2,0,4,0,0,2,2,4
-EUPHORBIACEAE,"Acalypha radicans Müll.Arg.",1,1,0,0,2,0,0,2,2
-FABACEAE,"Senegalia mikanii (Benth.) Seigler & Ebinger",14,9,0,18,5,0,11,12,23
-BROMELIACEAE,"Aechmea cariocae L.B.Sm.",0,6,15,18,3,0,0,21,21
-ASTERACEAE,"Baccharis ciliata Gardner",8,8,0,15,1,0,8,8,16
-BEGONIACEAE,"Begonia parvifolia Schott",0,0,8,1,7,0,0,8,8
-BEGONIACEAE,"Begonia princeps A.DC.",0,0,5,0,5,0,0,5,5
-ANNONACEAE,"Hornschuchia alba",3,0,0,0,3,0,0,3,3
-MYRTACEAE,"Calyptranthes bimarginata O.Berg",0,4,3,3,4,0,0,7,7
-RUBIACEAE,"Chomelia transiens Müll.Arg.",0,7,0,1,6,0,0,7,7
-ASTERACEAE,"Dasyphyllum cryptocephalum (Baker) Cabrera",7,12,0,8,11,0,7,12,19
-RUBIACEAE,"Coussarea coffeoides Müll.Arg.",1,6,0,4,3,0,1,6,7
-EUPHORBIACEAE,"Croton tenuicaulis van Ee & P.E. Berry",0,3,0,0,3,0,0,3,3
-SAPINDACEAE,"Cupania schizoneura Radlk.",0,2,5,5,2,0,0,7,7
-RUTACEAE,"Conchocarpus ovatus (A.St.-Hil. & Tul.) Kallunki & Pirani",42,27,0,57,12,0,39,30,69
-RUTACEAE,"Conchocarpus paniculatus (Engl.) Kallunki & Pirani",3,8,0,6,5,0,2,9,11
-PRIMULACEAE,"Cybianthus gracillimus (Warm.) Mez",3,3,0,3,3,0,2,4,6
-COMMELINACEAE,"Dichorisandra gaudichaudiana Kunth",15,5,0,11,9,0,9,11,20
-DIOSCOREACEAE,"Dioscorea campanulata Uline ex R.Knuth",1,2,0,1,2,0,1,2,3
-DIOSCOREACEAE,"Dioscorea itatiaiensis R.Knuth",5,2,0,6,1,0,5,2,7
-DIOSCOREACEAE,"Dioscorea oppositiflora Griseb.",1,3,0,4,0,0,1,3,4
-DIOSCOREACEAE,"Dioscorea pumilio Griseb.",0,2,0,0,2,0,0,2,2
-ERYTHROXYLACEAE,"Erythroxylum cincinnatum Mart.",35,8,0,32,11,0,31,12,43
-ERYTHROXYLACEAE,"Erythroxylum magnoliifolium A.St.-Hil.",31,3,0,29,5,0,26,8,34
-ERYTHROXYLACEAE,"Erythroxylum gaudichaudii Peyr.",36,5,1,38,4,0,33,9,42
-ERYTHROXYLACEAE,"Erythroxylum glazioui O.E.Schulz",21,4,0,22,3,0,21,4,25
-MYRTACEAE,"Myrciaria pumila (Gardner) O.Berg",1,5,0,4,2,0,1,5,6
-MYRTACEAE,"Eugenia brachysepala Kiaersk.",1,0,0,0,1,0,0,1,1
-MYRTACEAE,"Eugenia arrabidae O.Berg",0,4,0,0,4,0,0,4,4
-MYRTACEAE,"Eugenia cinerascens Gardner",4,7,0,8,3,0,3,8,11
-MYRTACEAE,"Eugenia grandifolia O.Berg",0,1,7,2,6,0,0,8,8
-RUBIACEAE,"Faramea anisodonta Müll.Arg.",1,1,0,1,1,0,1,1,2
-RUBIACEAE,"Faramea brachyloba Müll.Arg.",12,7,0,18,1,0,11,8,19
-RUBIACEAE,"Faramea cardiophylla Standl.",0,7,0,0,7,0,0,7,7
-RUBIACEAE,"Faramea diversifolia Müll.Arg.",1,2,0,1,2,0,0,3,3
-RUBIACEAE,"Faramea filamentosa Müll.Arg.",6,11,0,17,0,0,6,11,17
-RUBIACEAE,"Faramea heteromera Müll.Arg.",2,2,0,2,2,0,2,2,4
-RUBIACEAE,"Faramea includens Müll.Arg.",2,6,0,4,4,0,2,6,8
-RUBIACEAE,"Faramea intercedens Müll.Arg.",4,3,0,5,2,0,4,3,7
-RUBIACEAE,"Faramea leucocalyx Müll.Arg.",17,6,0,20,3,0,17,6,23
-RUBIACEAE,"Faramea micrantha Müll.Arg.",2,7,0,5,4,0,1,8,9
-RUBIACEAE,"Faramea urophylla Müll.Arg.",1,2,0,3,0,0,1,2,3
-ONAGRACEAE,"Fuchsia alpestris Gardner",5,4,0,6,3,0,5,4,9
-ERICACEAE,"Gaylussacia retivenia Sleumer",8,2,0,10,0,0,8,2,10
-ARALIACEAE,"Dendropanax heterophyllus (Marchal) Frodin",3,15,0,11,7,0,3,15,18
-ARALIACEAE,"Dendropanax langsdorfii (Marchal) Frodin",23,14,0,31,6,0,20,17,37
-MYRTACEAE,"Myrcia magnifolia (O.Berg) Kiaersk.",5,6,0,8,3,0,4,7,11
-APOCYNACEAE,"Matelea fournieri Morillo",5,7,0,12,0,0,5,7,12
-RUBIACEAE,"Hindsia phyllocalyx K.Schum.",0,6,0,1,5,0,0,6,6
-RUBIACEAE,"Hindsia violacea Benth.",1,5,0,0,6,0,0,6,6
-MELASTOMATACEAE,"Huberia triplinervis Cogn.",1,1,0,2,0,0,1,1,2
-AQUIFOLIACEAE,"Ilex virgata Loes.",1,1,0,0,2,0,0,2,2
-RUBIACEAE,"Ixora heterophylla Müll.Arg.",1,4,2,7,0,0,1,6,7
-CALOPHYLLACEAE,"Kielmeyera gracilis Wawra",4,6,0,7,3,0,4,6,10
-MELASTOMATACEAE,"Leandra atroviridis Cogn.",1,2,0,3,0,0,1,2,3
-MELASTOMATACEAE,"Leandra depauperata Cogn. ex Kuntze",1,1,0,2,0,0,1,1,2
-MELASTOMATACEAE,"Leandra sessiliflora Cogn.",0,2,0,0,2,0,0,2,2
-ERICACEAE,"Agarista organensis (Gardner) Hook. ex Nied.",9,10,0,18,1,0,8,11,19
-CHRYSOBALANACEAE,"Licania glazioviana Warm.",2,10,0,5,7,0,2,10,12
-CAMPANULACEAE,"Lobelia glazioviana Zahlbr.",1,1,0,1,1,0,1,1,2
-FABACEAE,"Dahlstedtia glaziovii (Taub.) M.J. Silva & A.M.G. Azevedo",3,14,0,6,11,0,3,14,17
-RUBIACEAE,"Malanea spicata Müll.Arg.",0,7,0,6,1,0,0,7,7
-RUBIACEAE,"Manettia pedunculata (Spreng.) K.Schum.",8,13,0,8,13,0,4,17,21
-MYRTACEAE,"Marlierea langsdorffii O.Berg",2,4,0,3,3,0,2,4,6
-MYRTACEAE,"Marlierea sessiliflora O.Berg",1,2,0,0,3,0,0,3,3
-SAPINDACEAE,"Matayba talisioides Radlk.",0,4,1,1,4,0,0,5,5
-CELASTRACEAE,"Maytenus basidentata Reissek",4,4,0,3,5,0,3,5,8
-CELASTRACEAE,"Maytenus samydaeformis Reissek",4,17,0,16,5,0,3,18,21
-MELASTOMATACEAE,"Meriania longipes Triana",3,2,0,3,2,0,2,3,5
-MELASTOMATACEAE,"Miconia augusti Cogn.",1,1,0,2,0,0,1,1,2
-MELASTOMATACEAE,"Miconia dichroa Cogn.",1,2,0,3,0,0,1,2,3
-MELASTOMATACEAE,"Miconia fluminensis Ule",1,1,0,2,0,0,1,1,2
-MELASTOMATACEAE,"Miconia gigantea Cogn.",2,8,0,7,3,0,1,9,10
-MELASTOMATACEAE,"Miconia klotzschii Triana",2,2,0,3,1,0,1,3,4
-MELASTOMATACEAE,"Miconia rabenii Cogn.",3,0,0,1,2,0,1,2,3
-ASTERACEAE,"Mikania casarettoi B.L.Rob.",2,2,0,1,3,0,1,3,4
-MYRTACEAE,"Neomitranthes riedeliana (O.Berg) Mattos",4,6,0,4,6,0,3,7,10
-MONIMIACEAE,"Mollinedia corcovadensis Perkins",1,11,0,9,3,0,1,11,12
-MONIMIACEAE,"Mollinedia longicuspidata Perkins",1,6,0,1,6,0,0,7,7
-MYRTACEAE,"Myrcia stewartiana O.Berg",1,0,0,0,1,0,0,1,1
-MYRTACEAE,"Myrcia warmingiana Kiaersk.",12,10,0,19,3,0,11,11,22
-SYMPLOCACEAE,"Symplocos neglecta Brand",3,17,0,19,1,0,3,17,20
-BROMELIACEAE,"Nidularium angustifolium Ule",10,16,0,26,0,0,10,16,26
-BROMELIACEAE,"Neoregelia macahensis (Ule) L.B.Sm.",5,3,0,7,1,0,5,3,8
-BROMELIACEAE,"Nidularium rosulatum Ule",13,12,0,20,5,0,12,13,25
-LAURACEAE,"Ocotea schwackeana Mez",4,13,0,9,8,0,4,13,17
-EUPHORBIACEAE,"Ophthalmoblapton macrophyllum Allemão",24,4,0,15,13,0,12,16,28
-APOCYNACEAE,"Oxypetalum schottii E.Fourn.",5,6,0,5,6,0,4,7,11
-PIPERACEAE,"Peperomia papillispica C.DC.",1,5,0,4,2,0,0,6,6
-PHYLLANTHACEAE,"Phyllanthus itatiaiensis Brade",2,9,0,11,0,0,2,9,11
-PHYLLANTHACEAE,"Phyllanthus rosmarinifolius Müll.Arg.",8,1,0,8,1,0,7,2,9
-PICRAMNIACEAE,"Picramnia grandifolia Engl.",9,1,0,8,2,0,8,2,10
-PIPERACEAE,"Piper lundii C.DC.",2,2,0,1,3,0,0,4,4
-PIPERACEAE,"Piper weddellii C.DC.",1,2,0,0,3,0,0,3,3
-BROMELIACEAE,"Pitcairnia staminea Lodd.",10,24,36,60,10,0,6,64,70
-BROMELIACEAE,"Pitcairnia corcovadensis Wawra",0,21,51,58,14,0,0,72,72
-MELASTOMATACEAE,"Pleiochiton micranthum Cogn.",16,7,0,21,2,0,15,8,23
-RUBIACEAE,"Psychotria brachyanthema Standl.",0,1,0,0,1,0,0,1,1
-RUBIACEAE,"Psychotria mandiocana Müll.Arg.",1,5,0,2,4,0,1,5,6
-RUBIACEAE,"Psychotria subspathacea Müll.Arg.",53,24,0,62,15,0,48,29,77
-RUBIACEAE,"Psychotria wilkesiana Standl.",1,3,0,0,4,0,0,4,4
-CLUSIACEAE,"Garcinia calyptrata (Schltdl.) Bittrich",3,2,0,2,3,0,1,4,5
-ANNONACEAE,"Annona ferruginea (R.E.Fr.) H.Rainer",3,1,0,3,1,0,3,1,4
-RUBIACEAE,"Rudgea allophylla Standl.",1,3,0,4,0,0,1,3,4
-RUBIACEAE,"Rudgea discolor Benth.",2,8,0,10,0,0,2,8,10
-RUBIACEAE,"Rudgea erythrocarpa Müll.Arg.",10,17,0,20,7,0,8,19,27
-RUBIACEAE,"Rudgea macrophylla Benth.",67,27,0,86,8,0,62,32,94
-RUBIACEAE,"Rudgea parvifolia (Cham.) Müll.Arg.",4,5,0,5,4,0,2,7,9
-RUBIACEAE,"Rustia simpsonii Delprete",3,3,0,6,0,0,3,3,6
-MARCGRAVIACEAE,"Souroubea platyadenia",0,1,0,0,1,0,0,1,1
-LAMIACEAE,"Salvia rivularis Gardner",26,14,0,36,4,0,24,16,40
-FABACEAE,"Tachigali beaurepairei (Harms) L.G.Silva & H.C.Lima",15,27,0,25,17,0,13,29,42
-LAMIACEAE,"Scutellaria tubiflora Benth.",0,4,0,1,3,0,0,4,4
-EUPHORBIACEAE,"Sebastiania pteroclada (Müll.Arg.) Müll.Arg.",3,3,0,1,5,0,1,5,6
-SAPINDACEAE,"Serjania acuminata Radlk.",0,1,1,1,1,0,0,2,2
-SAPINDACEAE,"Serjania hamuligera Radlk.",0,0,3,1,2,0,0,3,3
-SAPINDACEAE,"Serjania truncata Radlk.",0,0,3,1,2,0,0,3,3
-ACANTHACEAE,"Staurogyne brachiata (Hiern) Leonard",4,3,0,4,3,0,3,4,7
-ASTERACEAE,"Stevia dubia B.L.Rob.",0,3,0,0,3,0,0,3,3
-PRIMULACEAE,"Stylogyne sordida Mez",4,2,0,4,2,0,3,3,6
-SYMPLOCACEAE,"Symplocos altissima Brand",1,4,0,1,4,0,1,4,5
-SYMPLOCACEAE,"Symplocos organensis Brand",6,11,0,11,6,0,5,12,17
-EUPHORBIACEAE,"Algernonia gibbosa (Pax & K.Hoffm.) Emmerich",2,1,0,3,0,0,2,1,3
-Thismiaceae,"Thismia glaziovii Poulsen",0,0,7,0,1,6,0,7,7
-MELASTOMATACEAE,"Tibouchina maximiliana (DC.) Baill.",6,9,0,11,4,0,6,9,15
-MELASTOMATACEAE,"Tibouchina thereminiana (DC.) Cogn.",13,28,0,37,4,0,13,28,41
-ANNONACEAE,"Trigynaea axilliflora D.M.Johnson & N.A.Murray",13,11,0,22,2,0,12,12,24
-ASTERACEAE,"Lessingianthus glaziovianus (Baker) H.Rob.",11,12,0,13,10,0,9,14,23
-BROMELIACEAE,"Vriesea botafogensis Mez",9,3,0,9,1,2,9,3,12
-BROMELIACEAE,"Vriesea pastuchoffiana Glaz.",4,8,0,6,6,0,4,8,12
-BROMELIACEAE,"Vriesea triligulata Mez",35,16,0,46,5,0,34,17,51
-EUPHORBIACEAE,"Acalypha peckoltii Müll.Arg.",2,0,0,2,0,0,2,0,2
-EUPHORBIACEAE,"Actinostemon mandiocanus (Müll.Arg.) Pax",1,1,0,0,2,0,0,2,2
-BROMELIACEAE,"Aechmea dealbata E.Morren ex Baker",0,2,12,11,3,0,0,14,14
-EUPHORBIACEAE,"Bernardia brevipes Müll.Arg.",5,0,0,5,0,0,5,0,5
-LEJEUNEACEAE,"Colura itatyana Steph.",0,0,1,0,1,0,0,1,1
-APOCYNACEAE,"Cynanchum brasiliense (Morillo) Liede",3,3,0,4,2,0,2,4,6
-APIACEAE,"Eryngium fluminense Urb.",7,6,0,7,6,0,5,8,13
-MYRTACEAE,"Myrcia dolichopetala Kiaersk.",2,2,0,3,1,0,2,2,4
-LAMIACEAE,"Hyptis cymulosa Benth.",1,1,0,2,0,0,1,1,2
-PLANTAGINACEAE,"Ildefonsia bibracteata Gardner",7,7,0,9,5,0,6,8,14
-MELASTOMATACEAE,"Miconia cinerea Cogn.",3,10,0,12,1,0,3,10,13
-PODOSTEMACEAE,"Podostemum saldanhanum (Warm.) C.T.Philbrick & Novelo",9,7,0,8,8,0,8,8,16
-RUBIACEAE,"Psychotria brachyandra Müll.Arg.",0,3,0,2,1,0,0,3,3
-RUBIACEAE,"Psychotria densicostata Müll.Arg.",1,3,0,2,2,0,1,3,4
-ARALIACEAE,"Schefflera succinea Frodin & Fiaschi",4,14,0,8,10,0,4,14,18
-MARCGRAVIACEAE,"Souroubea platyadenia (Gilg) de Roon",1,0,0,0,1,0,0,1,1
-BROMELIACEAE,"Vriesea goniorachis (Baker) Mez",21,23,0,32,12,0,20,24,44
-CLUSIACEAE,"Clusia studartiana C.M.Vieira & Gomes da Silva",33,2,0,35,0,0,33,2,35
-POLYGONACEAE,"Coccoloba rigida Meisn.",26,22,0,38,10,0,18,30,48
-BROMELIACEAE,"Cryptanthus sinuosus L.B.Sm.",10,4,0,12,2,0,10,4,14
-BROMELIACEAE,"Nidularium fulgens Lem.",48,17,4,64,5,0,48,21,69
-ANNONACEAE,"Duguetia pohliana Mart.",5,7,0,8,4,0,4,8,12
-MARANTACEAE,"Goeppertia grazielae (H.Kenn. & J.M.A.Braga) Borchs. & S.Suárez",0,3,0,3,0,0,0,3,3
-MELASTOMATACEAE,"Behuria cordifolia Cogn.",7,3,0,10,0,0,7,3,10
-GESNERIACEAE,"Sinningia hirsuta (Lindl.) G.Nicholson",0,0,5,2,3,0,0,5,5
-MELASTOMATACEAE,"Behuria huberioides Brade",5,3,0,8,0,0,5,3,8
-ANNONACEAE,"Hornschuchia alba (A.St.-Hil.) R.E.Fr.",13,8,0,19,2,0,12,9,21
-MYRTACEAE,"Plinia anonyma Sobral",0,4,0,4,0,0,0,4,4
-VIOLACEAE,"Rinorea laevigata (Sol. ex Ging.) Hekking",20,49,0,53,16,0,17,52,69
-ARACEAE,"Anthurium lucidum Kunth",8,28,0,29,7,0,8,28,36
-CONVOLVULACEAE,"Bonamia umbellata (Choisy) Hallier f.",16,0,0,5,11,0,5,11,16
-MYRTACEAE,"Calyptranthes martiusiana DC.",0,0,11,4,7,0,0,11,11
-MYRTACEAE,"Eugenia decussata (Vell.) Mattos",0,0,2,1,1,0,0,2,2
-THYMELAEACEAE,"Funifera brasiliensis (Raddi) Mansf.",0,0,83,67,16,0,0,83,83
-ASTERACEAE,"Piptocarpha verticillata (Vell.) G.Lom.Sm. ex H.Rob.",10,12,0,17,5,0,8,14,22
-GESNERIACEAE,"Sinningia helleri Nees",0,0,5,3,2,0,0,5,5
-GESNERIACEAE,"Sinningia pusilla (Mart.) Baill.",0,0,12,10,2,0,0,12,12
-ARACEAE,"Philodendron fragile Nadruz & Mayo",9,10,0,19,0,0,9,10,19
-BROMELIACEAE,"Alcantarea geniculata (Wawra) J.R.Grant",9,29,0,36,2,0,9,29,38
-ARACEAE,"Anthurium bragae Nadruz",5,5,0,10,0,0,5,5,10
-RUBIACEAE,"Bathysa sylvestrae Germano-Filho & M.Gomes",12,7,0,19,0,0,12,7,19
-MYRTACEAE,"Calyptranthes ursina Barroso & Peixoto",0,5,1,6,0,0,0,6,6
-RUBIACEAE,"Coussarea friburgensis M.Gomes",23,25,0,48,0,0,23,25,48
-ARALIACEAE,"Dendropanax trilobus (Gardner) Seem.",17,6,0,20,3,0,14,9,23
-MYRTACEAE,"Eugenia expansa Spring ex Mart.",0,5,17,21,1,0,0,22,22
-MYRTACEAE,"Myrcia neocambessedeana E.Lucas & Sobral",1,3,0,3,1,0,0,4,4
-MALPIGHIACEAE,"Heteropterys ternstroemiifolia A.Juss.",19,4,0,20,3,0,16,7,23
-CALOPHYLLACEAE,"Kielmeyera insignis Saddi",2,9,0,9,2,0,2,9,11
-ERICACEAE,"Agarista uleana (Sleumer) Judd",22,18,0,39,1,0,22,18,40
-FABACEAE,"Machaerium macaense C.V. Mendonça, A.M.G. Azevedo & H.C. Lima",37,16,0,53,0,0,37,16,53
-FABACEAE,"Machaerium obovatum Kuhlm. & Hoehne",35,19,0,46,8,0,34,20,54
-MELASTOMATACEAE,"Meriania glazioviana Cogn.",4,4,0,6,2,0,3,5,8
-ASTERACEAE,"Mikania vauthieriana Baker",11,11,0,20,2,0,10,12,22
-IRIDACEAE,"Neomarica silvestris (Vell.) Chukr",17,8,0,22,3,0,17,8,25
-OCHNACEAE,"Ouratea grandifolia (Planch.) Engl.",5,1,6,11,1,0,4,8,12
-BROMELIACEAE,"Pitcairnia albiflos Herb.",0,35,51,79,7,0,0,86,86
-FABACEAE,"Poecilanthe fluminensis J.E. Mereles & H.C. Lima",9,9,0,18,0,0,9,9,18
-GENTIANACEAE,"Prepusa alata Porto & Brade",8,4,0,12,0,0,8,4,12
-MORACEAE,"Sorocea carautana M.D.M.Vianna et al.",3,4,0,7,0,0,3,4,7
-MALVACEAE,"Callianthe sellowiana (Klotzsch) Donnel",20,6,0,23,3,0,19,7,26
-MYRTACEAE,"Myrcia badia (O.Berg) N.Silveira",1,1,0,0,2,0,0,2,2
-MYRTACEAE,"Calyptranthes anceps O.Berg",0,0,2,0,2,0,0,2,2
-MYRTACEAE,"Calyptranthes caudata Gardner",0,2,2,2,2,0,0,4,4
-MYRTACEAE,"Eugenia arvensis Vell.",0,4,0,2,2,0,0,4,4
-MYRTACEAE,"Eugenia coccifera O.Berg",1,2,0,2,1,0,1,2,3
-MYRTACEAE,"Eugenia crenata Vell.",0,2,11,9,4,0,0,13,13
-MYRTACEAE,"Eugenia grazielae Mattos & D.Legrand",0,1,13,13,1,0,0,14,14
-APOCYNACEAE,"Macroditassa laxa (Malme) Fontella & de Lamare",4,3,0,7,0,0,4,3,7
-FABACEAE,"Martiodendron fluminense Lombardi",10,2,0,12,0,0,10,2,12
-APOCYNACEAE,"Orthosia umbrosa Decne.",0,6,0,0,6,0,0,6,6
-FABACEAE,"Piptadenia laxipinna G.M.Barroso",2,4,0,6,0,0,2,4,6
-ORCHIDACEAE,"Acianthera exdrasii (Luer & Toscano) Luer",0,1,0,1,0,0,0,1,1
-MYRTACEAE,"Psidium anthomega Vell.",0,1,0,0,1,0,0,1,1
-MYRTACEAE,"Campomanesia fruticosa (Vell.) O.Berg",0,3,0,0,3,0,0,3,3
-MYRTACEAE,"Campomanesia mediterranea (Vell.) O.Berg",0,2,0,0,2,0,0,2,2
-CACTACEAE,"Rhipsalis ormindoi N.P.Taylor & Zappi",10,2,0,12,0,0,10,2,12
-FABACEAE,"Senegalia miersii (Benth.) Seigler & Ebinger",10,9,0,17,2,0,9,10,19
-BROMELIACEAE,"Aechmea caesia E.Morren ex Baker",2,4,30,32,4,0,1,35,36
-ARACEAE,"Anthurium validinervium Engl.",1,3,0,3,1,0,1,3,4
-MELASTOMATACEAE,"Bisglaziovia behurioides Cogn.",4,3,0,3,4,0,3,4,7
-ONAGRACEAE,"Fuchsia campos-portoi Pilg. & Schulze-Menz",34,7,0,41,0,0,34,7,41
-MALPIGHIACEAE,"Heteropterys occhionii Amorim",1,0,0,1,0,0,1,0,1
-MELASTOMATACEAE,"Itatiaia cleistopetala (Ule) Ule",0,0,22,22,0,0,0,22,22
-MARCGRAVIACEAE,"Marcgravia comosa C.Presl",5,1,0,6,0,0,5,1,6
-MONIMIACEAE,"Mollinedia marliae Peixoto & V. Pereira",16,5,0,21,0,0,16,5,21
-PIPERACEAE,"Piper giordanoi E.F.Guim. & D.Monteiro",5,8,0,13,0,0,5,8,13
-PIPERACEAE,"Piper translucens Yunck.",33,1,0,33,1,0,32,2,34
-MYRTACEAE,"Plinia martinellii G.M.Barroso & M.Peron",9,11,0,17,3,0,9,11,20
-RUBIACEAE,"Randia itatiaiae Silva Neto & Ávila",3,6,0,9,0,0,3,6,9
-Bromeliaceae,"Vriesea eltoniana E.Pereira",21,17,1,39,0,0,21,18,39
-MYRTACEAE,"Marlierea estrellensis O.Berg",1,3,0,4,0,0,1,3,4
-ARACEAE,"Anthurium binotii Linden",10,14,0,16,8,0,10,14,24
-BROMELIACEAE,"Aechmea squarrosa Baker",0,6,4,10,0,0,0,10,10
-ARACEAE,"Anthurium aduncum (Vell.) Schott",0,1,0,0,1,0,0,1,1
-ARACEAE,"Anthurium nitidulum Engl.",0,5,0,2,3,0,0,5,5
-ARACEAE,"Asterostigma concinnum Schott",0,5,0,4,1,0,0,5,5
-LAURACEAE,"Beilschmiedia stricta Kosterm.",1,5,0,6,0,0,1,5,6
-MARANTACEAE,"Goeppertia sphaerocephala (K.Schum.) Borchs. & S.Suárez",5,2,0,4,3,0,4,3,7
-MYRTACEAE,"Campomanesia lundiana (Kiaersk.) Mattos",1,0,0,0,1,0,0,1,1
-BROMELIACEAE,"Dyckia martinellii B.R. Silva & Forzza",4,6,0,10,0,0,4,6,10
-BIGNONIACEAE,"Jacaranda crassifolia Morawetz",6,2,0,6,2,0,5,3,8
-MELASTOMATACEAE,"Leandra organensis Cogn.",2,1,0,3,0,0,2,1,3
-MONIMIACEAE,"Macropeplus friburgensis (Perkins) I.Santos & Peixoto",9,0,0,9,0,0,9,0,9
-MELASTOMATACEAE,"Miconia ovata Cogn.",0,1,0,0,1,0,0,1,1
-MELASTOMATACEAE,"Miconia pseudoeichleri Cogn.",1,6,0,0,7,0,0,7,7
-LAURACEAE,"Ocotea abbreviata Schwacke & Mez",1,4,0,5,0,0,1,4,5
-PIPERACEAE,"Peperomia bradei Yunck.",1,11,0,10,2,0,1,11,12
-SPHAGNACEAE,"Sphagnum amoenum Warnst.",1,2,0,2,1,0,1,2,3
-SPHAGNACEAE,"Sphagnum triporosum H.A.Crum",1,1,0,2,0,0,1,1,2
-POLYPODIACEAE,"Stenogrammitis luetzelburgii (Rosenst.) Labiak",2,3,0,2,3,0,1,4,5
-THELYPTERIDACEAE,"Thelypteris refracta (Fisch. & C.Meyer ex Kunze) C.F.Reed",7,1,0,6,2,0,6,2,8
-ANNONACEAE,"Unonopsis riedeliana R.E.Fr.",4,1,0,3,2,0,3,2,5
-ORCHIDACEAE,"Cleistes liliastrum Rchb.f.",3,5,0,2,6,0,2,6,8
-EUPHORBIACEAE,"Dalechampia granadilla Baill.",1,2,0,0,3,0,0,3,3
-BROMELIACEAE,"Alcantarea heloisae J.R.Grant",6,1,0,7,0,0,6,1,7
-Acanthaceae,"Aphelandra stephanophysa Nees",3,2,0,2,3,0,2,3,5
-ASTERACEAE,"Baccharis alpestris Gardner",4,3,0,6,1,0,3,4,7
-ORCHIDACEAE,"Centroglossa greeniana (Rchb.f.) Cogn.",5,4,0,5,4,0,4,5,9
-SOLANACEAE,"Solanum friburgense Giacomin & Stehmann",2,2,0,4,0,0,2,2,4
-CUCURBITACEAE,"Wilbrandia glaziovii Cogn.",13,3,0,16,0,0,13,3,16
-BROMELIACEAE,"Aechmea flavorosea E.Pereira",0,2,6,6,2,0,0,8,8
-DIOSCOREACEAE,"Dioscorea bradei R.Knuth",8,3,0,11,0,0,8,3,11
-APOCYNACEAE,"Ditassa subumbellata Malme",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Pitcairnia suaveolens Lindl.",0,3,9,12,0,0,0,12,12
-MELIACEAE,"Trichilia luciae Barreiros",6,2,0,8,0,0,6,2,8
-DRYOPTERIDACEAE,"Ctenitis flexuosa (Fée) Copel.",5,10,0,1,14,0,1,14,15
-VELLOZIACEAE,"Barbacenia gaveensis Goethart & Henrard",1,0,9,8,2,0,0,10,10
-MELASTOMATACEAE,"Behuria mouraei Cogn.",5,2,0,7,0,0,5,2,7
-ORCHIDACEAE,"Bulbophyllum macroceras Barb.Rodr.",3,4,0,2,5,0,2,5,7
-PRIMULACEAE,"Cybianthus barrosoanus G.Agostini",1,0,0,0,1,0,0,1,1
-FABACEAE,"Dahlstedtia grandiflora (A.M.G. Azevedo) M.J. Silva & A.M.G. Azevedo",2,10,0,4,8,0,2,10,12
-ORCHIDACEAE,"Epidendrum harrisoniae Hook.",3,8,0,5,6,0,3,8,11
-THISMIACEAE,"Thismia caudata Maas & H.Maas",2,0,0,0,2,0,0,2,2
-MELASTOMATACEAE,"Leandra mollis Cogn.",10,15,0,22,3,0,8,17,25
-ORCHIDACEAE,"Octomeria rodriguesii Cogn.",8,2,0,6,4,0,5,5,10
-TRIURIDACEAE,"Peltophyllum caudatum (Poulsen) R.Schmid & M.D.Turner",1,2,0,1,2,0,1,2,3
-ORCHIDACEAE,"Specklinia hymenantha (Lindl.) F.Barros & V.T.Rodrigues",2,3,0,0,5,0,0,5,5
-THISMIACEAE,"Thismia fungiformis (Taub. ex Warm.) Maas & H.Maas",2,0,0,0,2,0,0,2,2
-BROMELIACEAE,"Tillandsia brachyphylla Baker",19,13,0,28,4,0,18,14,32
-BROMELIACEAE,"Vriesea saundersii (Carrière) E.Morren ex Mez",11,10,1,18,2,2,11,11,22
-BROMELIACEAE,"Alcantarea martinellii Versieux & Wand.",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Alcantarea tortuosa Versieux & Wand.",2,3,0,5,0,0,2,3,5
-APOCYNACEAE,"Mandevilla crassinoda (Gardner) Woodson",11,2,0,10,3,0,9,4,13
-GESNERIACEAE,"Besleria fluminensis Brade",0,4,4,8,0,0,0,8,8
-ORCHIDACEAE,"Gomesa messmeriana (Campacci) Laitano",1,0,0,1,0,0,1,0,1
-MARANTACEAE,"Goeppertia dorothyae (J.M.A. Braga & H. Kenn.) J.M.A. Braga",3,0,0,3,0,0,3,0,3
-ORCHIDACEAE,"Lankesterella spannageliana (Hoehne & Brade) Mansf.",1,0,0,1,0,0,1,0,1
-CHRYSOBALANACEAE,"Couepia parvifolia Prance",3,6,0,9,0,0,3,6,9
-ORCHIDACEAE,"Epidendrum ammophilum Barb.Rodr.",9,1,0,9,1,0,8,2,10
-BROMELIACEAE,"Neoregelia coriacea (Antoine) L.B.Sm.",3,2,0,5,0,0,3,2,5
-BROMELIACEAE,"Canistropsis pulcherrima (E.Pereira & Leme) Leme",0,3,3,6,0,0,0,6,6
-ORCHIDACEAE,"Eurystyles lobata Chiron & V.P.Castro",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Octomeria sarcophylla Barb.Rodr.",3,1,0,3,1,0,2,2,4
-FABACEAE,"Ormosia altimontana J.E. Mereles & H.C. Lima",24,18,0,42,0,0,24,18,42
-ARACEAE,"Philodendron millerianum Nadruz & Sakur.",1,3,0,4,0,0,1,3,4
-ORCHIDACEAE,"Acianthera bidentata (Lindl.) F.Barros & L.Guimarães",2,0,0,1,1,0,1,1,2
-ORCHIDACEAE,"Anathallis pubipetala (Hoehne) Pridgeon & M.W.Chase",5,2,0,6,1,0,4,3,7
-ORCHIDACEAE,"Anathallis spannageliana (Hoehne) Pridgeon & M.W.Chase",3,0,0,3,0,0,3,0,3
-ORCHIDACEAE,"Pabstiella spathuliglossa (Hoehne) Luer",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Pabstiella tabacina (Barb.Rodr.) Luer",2,0,0,0,2,0,0,2,2
-MYRTACEAE,"Plinia marqueteana G.M.Barroso",3,7,0,10,0,0,3,7,10
-BROMELIACEAE,"Tillandsia grazielae D.Sucre & R.Braga",5,5,0,9,1,0,5,5,10
-BROMELIACEAE,"Tillandsia nuptialis R.Braga & Sucre",2,3,0,5,0,0,2,3,5
-GESNERIACEAE,"Sinningia lindleyi Schauer",0,0,13,11,2,0,0,13,13
-BROMELIACEAE,"Vriesea bleherae Roth & W. Weber",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Vriesea brassicoides (Baker) Mez",12,10,0,17,2,3,12,10,22
-BROMELIACEAE,"Vriesea costae B.R. Silva & Leme",1,3,0,4,0,0,1,3,4
-MELASTOMATACEAE,"Behuria edmundoi Brade",2,2,0,4,0,0,2,2,4
-MELASTOMATACEAE,"Behuria limae Brade",2,4,0,6,0,0,2,4,6
-BROMELIACEAE,"Vriesea fluminensis E.Pereira",4,2,0,5,0,1,4,2,6
-BROMELIACEAE,"Vriesea warmingii E.Morren",5,1,0,6,0,0,5,1,6
-ARACEAE,"Wolffiella neotropica Landolt",3,5,0,8,0,0,3,5,8
-MELASTOMATACEAE,"Tibouchina cristata Brade",5,4,0,9,0,0,5,4,9
-APOCYNACEAE,"Ditassa guilleminiana Decne.",9,3,0,10,2,0,8,4,12
-PIPERACEAE,"Piper crebrinodum C.DC.",1,0,0,0,1,0,0,1,1
-PIPERACEAE,"Piper halesiifolium Kunth",2,2,0,2,2,0,1,3,4
-OCHNACEAE,"Ouratea miersii (Planch.) Engl.",9,0,4,7,6,0,3,10,13
-ORCHIDACEAE,"Catasetum globiflorum Hook.",1,2,0,1,2,0,0,3,3
-ACANTHACEAE,"Aphelandra bradeana Rizzini",2,3,0,4,1,0,2,3,5
-BEGONIACEAE,"Begonia magdalenensis Brade",1,0,3,4,0,0,1,3,4
-MYRTACEAE,"Eugenia irirensis O.Berg",0,1,2,3,0,0,0,3,3
-ISOETACEAE,"Isoetes goebelii U.Weber",3,0,0,3,0,0,3,0,3
-ISOETACEAE,"Isoetes organensis U.Weber",1,0,0,1,0,0,1,0,1
-ISOETACEAE,"Isoetes ulei U.Weber",3,0,0,3,0,0,3,0,3
-PIPERACEAE,"Piper trigonodrupum Yunck.",3,6,0,7,2,0,2,7,9
-FABACEAE,"Swartzia submontana R. B. Pinto, Torke & Mansano",4,2,0,6,0,0,4,2,6
-BROMELIACEAE,"Neoregelia eltoniana W.Weber",7,3,0,9,1,0,7,3,10
-BROMELIACEAE,"Nidularium apiculatum L.B.Sm.",4,1,0,5,0,0,4,1,5
-MYRTACEAE,"Plinia ilhensis G.M.Barroso",15,9,0,20,4,0,15,9,24
-ORCHIDACEAE,"Cyclopogon venustus (Barb.Rodr) Schltr.",6,1,0,5,2,0,5,2,7
-ASTERACEAE,"Graphistylis cuneifolia (Gardner) B.Nord.",9,2,1,12,0,0,9,3,12
-LORANTHACEAE,"Struthanthus pentamerus Rizzini",8,2,0,10,0,0,8,2,10
-MYRTACEAE,"Eugenia strigipes O.Berg",0,0,2,2,0,0,0,2,2
-ARALIACEAE,"Hydrocotyle bradei Rossberg",4,1,0,5,0,0,4,1,5
-AQUIFOLIACEAE,"Ilex organensis Loes.",2,0,0,1,1,0,1,1,2
-MELASTOMATACEAE,"Tibouchina alata Cogn.",2,1,0,3,0,0,2,1,3
-RANUNCULACEAE,"Anemone assisbrasiliana Kuhlm. & Porto",5,1,0,6,0,0,5,1,6
-PROTEACEAE,"Roupala gracilis Meisn.",12,1,0,11,2,0,11,2,13
-BEGONIACEAE,"Begonia cordata Vell.",1,0,0,1,0,0,1,0,1
-MYRTACEAE,"Eugenia kuhlmanniana Mattos & D.Legrand",0,0,5,2,3,0,0,5,5
-LORANTHACEAE,"Psittacanthus pluricotyledonarius Rizzini",8,5,0,13,0,0,8,5,13
-MALPIGHIACEAE,"Banisteriopsis magdalenensis B.Gates",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Nidularium altimontanum Leme",11,9,0,20,0,0,11,9,20
-BROMELIACEAE,"Tillandsia carminea W.Till",7,2,0,8,1,0,7,2,9
-BROMELIACEAE,"Tillandsia neglecta E.Pereira",3,3,0,6,0,0,3,3,6
-OCHNACEAE,"Ouratea campos-portoi Sleumer",3,0,1,3,1,0,2,2,4
-BROMELIACEAE,"Canistropsis marceloi (E.Pereira & Moutinho) Leme",0,5,15,20,0,0,0,20,20
-BROMELIACEAE,"Vriesea garlippiana Leme",3,2,0,5,0,0,3,2,5
-BROMELIACEAE,"Neoregelia indecora (Mez) L.B.Sm.",3,5,0,4,4,0,3,5,8
-BROMELIACEAE,"Tillandsia sucrei E.Pereira",5,6,0,6,5,0,5,6,11
-BROMELIACEAE,"Tillandsia roseiflora Ehlers & W.Weber",20,1,0,20,1,0,20,1,21
-MELASTOMATACEAE,"Clidemia raddiana Cogn.",1,0,0,0,1,0,0,1,1
-MELASTOMATACEAE,"Pleiochiton magdalenense Brade",1,1,0,1,1,0,1,1,2
-MELASTOMATACEAE,"Pleiochiton longipetiolatum Brade",2,1,0,2,1,0,2,1,3
-ARALIACEAE,"Hydrocotyle ulei H.Wolff",5,0,0,5,0,0,5,0,5
-MELASTOMATACEAE,"Leandra markgrafii Brade",1,0,0,1,0,0,1,0,1
-BEGONIACEAE,"Begonia fluminensis Brade",0,1,1,2,0,0,0,2,2
-BROMELIACEAE,"Neoregelia petropolitana Leme",4,0,0,4,0,0,4,0,4
-BROMELIACEAE,"Neoregelia coimbrae E.Pereira & Leme",4,2,0,6,0,0,4,2,6
-OLEACEAE,"Chionanthus tenuis P.S.Green",1,4,0,5,0,0,1,4,5
-SAPINDACEAE,"Serjania littoralis Somner & Ferrucci",0,0,8,8,0,0,0,8,8
-PRIMULACEAE,"Stylogyne leptantha (Miq.) Mez",8,0,0,7,1,0,7,1,8
-ORCHIDACEAE,"Pabstiella gracilicaulis (Seehawer) Luer",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Vriesea teresopolitana Leme",5,4,0,9,0,0,5,4,9
-ORCHIDACEAE,"Stelis palmeiraensis Barb.Rodr.",2,1,0,2,1,0,1,2,3
-APOCYNACEAE,"Oxypetalum costae Occhioni",2,0,0,2,0,0,2,0,2
-MARANTACEAE,"Goeppertia reginae (J.M.A.Braga) Borchs. & S.Suárez",7,0,0,7,0,0,7,0,7
-CYPERACEAE,"Trilepis tenuis Vitta",2,1,0,3,0,0,2,1,3
-BROMELIACEAE,"Neoregelia leucophoea (Baker) L.B.Sm.",4,4,0,8,0,0,4,4,8
-BROMELIACEAE,"Vriesea altomacaensis A.F.Costa",9,2,0,11,0,0,9,2,11
-ARALIACEAE,"Hydrocotyle alpestris Gardner",5,0,0,4,1,0,4,1,5
-ORCHIDACEAE,"Pabstiella dracula",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Nidularium fradense Leme",8,7,0,15,0,0,8,7,15
-BROMELIACEAE,"Billbergia brasiliensis L.B.Sm.",0,0,5,5,0,0,0,5,5
-APOCYNACEAE,"Ditassa fontellae Marquete & C.Valente",0,2,0,2,0,0,0,2,2
-BROMELIACEAE,"Alcantarea farneyi (Martinelli & A.F.Costa) J.R.Grant",6,10,0,15,1,0,6,10,16
-ACANTHACEAE,"Justicia itatiaiensis Profice",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Neoregelia sapiatibensis E.Pereira & I.A.Penna",9,3,0,12,0,0,9,3,12
-BROMELIACEAE,"Pitcairnia beycalema Beer",0,2,4,3,3,0,0,6,6
-LORANTHACEAE,"Struthanthus armandianus Rizzini",1,4,0,5,0,0,1,4,5
-BROMELIACEAE,"Vriesea rubyae E.Pereira",9,5,0,14,0,0,9,5,14
-MYRTACEAE,"Marlierea martinellii G.M.Barroso & Peixoto",5,0,0,5,0,0,5,0,5
-BROMELIACEAE,"Aechmea paratiensis Leme & Fraga",0,4,1,5,0,0,0,5,5
-BROMELIACEAE,"Neoregelia longipedicellata Leme",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Vriesea fontourae B.R. Silva",2,1,0,3,0,0,2,1,3
-POACEAE,"Dichanthelium cucaense (Zuloaga & Morrone) Zuloaga",2,0,0,2,0,0,2,0,2
-BEGONIACEAE,"Begonia friburgensis Brade",1,3,3,7,0,0,1,6,7
-BROMELIACEAE,"Canistropsis correia-araujoi (E.Pereira & Leme) Leme",0,0,2,2,0,0,0,2,2
-BEGONIACEAE,"Begonia antonietae Brade",1,2,0,3,0,0,1,2,3
-COMMELINACEAE,"Dichorisandra fluminensis Brade",1,3,0,4,0,0,1,3,4
-OPILIACEAE,"Agonandra fluminensis Rizzini & Occhioni",3,0,1,3,1,0,2,2,4
-MYRTACEAE,"Eugenia strellensis O.Berg",0,1,3,3,1,0,0,4,4
-ASTERACEAE,"Baccharis bifrons Baker",12,1,0,11,2,0,11,2,13
-SPHAGNACEAE,"Sphagnum costae H.A.Crum & D.P.Costa",1,0,2,3,0,0,1,2,3
-PRIMULACEAE,"Stylogyne araujoana Carrijo, M.F. Freitas A.L. Peixoto",1,2,0,3,0,0,1,2,3
-GESNERIACEAE,"Nematanthus pycnophyllus Chautems et al.",0,0,1,1,0,0,0,1,1
-PTERIDACEAE,"Doryopteris magdalenensis (Brade) Brade",7,0,0,7,0,0,7,0,7
-MYRTACEAE,"Marlierea occhionii D.Legrand",2,1,0,2,1,0,2,1,3
-BROMELIACEAE,"Neoregelia lactea H.Luther & Leme",2,1,0,3,0,0,2,1,3
-BROMELIACEAE,"Neoregelia watersiana Leme",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Vriesea lidicensis Reitz",1,0,0,1,0,0,1,0,1
-VELLOZIACEAE,"Barbacenia fanniae (N.L.Menezes) Mello-Silva",0,0,6,6,0,0,0,6,6
-MARANTACEAE,"Goeppertia fatimae (H.Kenn. & J.M.A.Braga) Borchs. & S.Suárez",4,1,0,5,0,0,4,1,5
-ORCHIDACEAE,"Octomeria rodeiensis Barb.Rodr.",5,0,0,3,2,0,3,2,5
-BROMELIACEAE,"Neoregelia tenebrosa Leme",4,1,0,5,0,0,4,1,5
-ORCHIDACEAE,"Octomeria cochlearis Rchb.f.",6,0,0,4,2,0,4,2,6
-BEGONIACEAE,"Begonia densifolia Irmsch.",3,0,1,4,0,0,3,1,4
-ASTERACEAE,"Gamochaeta grazielae (Rizzini) Deble",1,0,0,1,0,0,1,0,1
-OROBANCHACEAE,"Magdalenaea limae Brade",4,0,0,4,0,0,4,0,4
-ORCHIDACEAE,"Octomeria cariocana Pabst",1,1,0,2,0,0,1,1,2
-BROMELIACEAE,"Tillandsia organensis Ehlers",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Neoregelia fluminensis L.B.Sm.",2,1,0,3,0,0,2,1,3
-ORCHIDACEAE,"Rodriguezia sucrei Braga",1,2,0,3,0,0,1,2,3
-MYRTACEAE,"Eugenia marambaiensis M.C.Souza & M.P.Lima",0,1,0,1,0,0,0,1,1
-TRIURIDACEAE,"Triuris alata Brade",2,1,0,3,0,0,2,1,3
-ASTERACEAE,"Senecio arctiifolius Baker",3,2,0,5,0,0,3,2,5
-BROMELIACEAE,"Nidularium viridipetalum Leme",3,3,0,6,0,0,3,3,6
-BROMELIACEAE,"Nidularium mangaratibense Leme",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Neoregelia nevaresii Leme & H.Luther",1,2,0,3,0,0,1,2,3
-BROMELIACEAE,"Neoregelia camorimiana E.Pereira & I.A.Penna",1,1,0,1,1,0,1,1,2
-MELASTOMATACEAE,"Mouriri arenicola Morley",3,0,0,3,0,0,3,0,3
-ASTERACEAE,"Austrocritonia rosea (Gardner) R.M.King & H.Rob.",6,0,0,6,0,0,6,0,6
-MELASTOMATACEAE,"Bertolonia grazielae Baumgratz",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Vriesea croceana Leme & G.K.Br.",1,1,0,2,0,0,1,1,2
-BROMELIACEAE,"Billbergia macracantha E.Pereira",0,0,1,1,0,0,0,1,1
-BROMELIACEAE,"Neoregelia correia-araujoi E.Pereira & I.A.Penna",1,1,0,2,0,0,1,1,2
-MALVACEAE,"Abutilon hirsutum (Vell.) K.Schum.",0,1,0,0,1,0,0,1,1
-BROMELIACEAE,"Neoregelia desenganensis Leme",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Nidularium organense Leme",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Coppensia edmundoi (Pabst) Campacci",1,0,0,1,0,0,1,0,1
-LAURACEAE,"Ocotea sinaiana Vattimo-Gil",1,3,0,4,0,0,1,3,4
-DIOSCOREACEAE,"Dioscorea sphaeroidea R. Couto & J. M. A. Braga",3,0,0,3,0,0,3,0,3
-BROMELIACEAE,"Neoregelia rubrovittata Leme",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Cryptanthus delicatus Leme",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Anathallis lichenophila (Porto & Brade) Luer",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Canistropsis elata (E.Pereira & Leme) Leme",0,0,2,2,0,0,0,2,2
-ACANTHACEAE,"Staurogyne euryphylla E.Hossain",4,5,0,7,2,0,3,6,9
-BROMELIACEAE,"Aechmea grazielae Martinelli & Leme",0,1,2,3,0,0,0,3,3
-BROMELIACEAE,"Vriesea nubicola Leme",1,2,0,3,0,0,1,2,3
-ORCHIDACEAE,"Phymatidium limae Porto & Brade",1,0,0,1,0,0,1,0,1
-LORANTHACEAE,"Struthanthus involucratus Rizzini",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Pabstiella calcarata (Cogn.) Luer",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Anathallis githaginea (Pabst & Garay) Pridgeon & M.W.Chase",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Hindsia republicana Di Maio",1,0,0,1,0,0,1,0,1
-CEPHALOZIELLACEAE,"Cylindrocolea brasiliensis Costa et al.",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Neoregelia gavionensis Martinelli & Leme",1,2,0,3,0,0,1,2,3
-ORCHIDACEAE,"Pelexia longibracteata Pabst",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Vriesea punctulata E.Pereira & I.A.Penna",5,0,0,5,0,0,5,0,5
-SAPINDACEAE,"Serjania itatiaiensis Somner",0,0,1,1,0,0,0,1,1
-BROMELIACEAE,"Neoregelia carinata Leme",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Acianthera subrotundifolia (Cogn.) F.Barros & V.T.Rodrigues",1,1,0,2,0,0,1,1,2
-VELLOZIACEAE,"Barbacenia squamata Herb.",1,0,3,4,0,0,1,3,4
-POACEAE,"Dichanthelium petropolitanum (Zuloaga & Morrone) Zuloaga",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Galianthe polygonoides E.L.Cabral & Bacigalupo",4,4,0,6,2,0,3,5,8
-PLANTAGINACEAE,"Achetaria latifolia V.C.Souza",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Baptistonia pulchella (Regel) Chiron & V.P.Castro",3,3,0,3,3,0,3,3,6
-LAURACEAE,"Aniba pedicellata Kosterm.",1,1,0,2,0,0,1,1,2
-ORCHIDACEAE,"Pygmaeorchis brasiliensis Brade",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Anathallis rubrolimbata (Hoehne) F.Barros & Barberena",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Aechmea prava E.Pereira",0,0,1,1,0,0,0,1,1
-ORCHIDACEAE,"Octomeria fimbriata Porto & Peixoto",2,0,0,2,0,0,2,0,2
-SPHAGNACEAE,"Sphagnum subhomophyllum H.A.Crum",1,0,0,1,0,0,1,0,1
-ARACEAE,"Philodendron nadruzianum Sakur.",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Octomeria itatiaiae Brade & Pabst",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Vriesea fidelensis Leme",1,0,0,1,0,0,1,0,1
-FABACEAE,"Inga enterolobioides T.D.Penn.",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Vriesea serrana E.Pereira & I.A.Penna",1,0,0,1,0,0,1,0,1
-PHYLLANTHACEAE,"Phyllanthus mocotensis G.L.Webster",1,1,0,2,0,0,1,1,2
-BROMELIACEAE,"Vriesea gastiniana Leme & G.K.Br.",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Brasilaelia fidelensis (Pabst) Gutfreund",2,0,0,2,0,0,2,0,2
-BROMELIACEAE,"Nidularium atalaiaense E.Pereira & Leme",2,2,0,4,0,0,2,2,4
-ASTERACEAE,"Austroeupatorium petrophilum (B.L.Rob.) R.M.King & H.Rob.",0,1,0,1,0,0,0,1,1
-EUPHORBIACEAE,"Caperonia velloziana Müll.Arg.",1,0,0,1,0,0,1,0,1
-MORACEAE,"Dorstenia fischeri Bureau",2,0,0,2,0,0,2,0,2
-SPHAGNACEAE,"Sphagnum luetzelburgii H.K.G.Paul ex H.A.Crum",1,0,0,1,0,0,1,0,1
-ASTERACEAE,"Critoniopsis magdalenae (G.M.Barroso) H.Rob.",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Cattleya dormaniana Rchb.f.",4,3,0,4,3,0,3,4,7
-CUCURBITACEAE,"Gurania cogniauxiana Barb.Rodr.",1,0,2,3,0,0,1,2,3
-GESNERIACEAE,"Nematanthus serpens (Vell.) Chautems",0,0,2,2,0,0,0,2,2
-EUPHORBIACEAE,"Euphorbia laevigata Lam.",2,0,0,1,1,0,1,1,2
-RUBIACEAE,"Coussarea biflora (Vell.) Müll.Arg.",2,0,0,0,2,0,0,2,2
-RUBIACEAE,"Coussarea lanceolata (Vell.) Müll.Arg.",0,2,0,0,2,0,0,2,2
-RUBIACEAE,"Coussarea procumbens (Vell.) Müll.Arg.",0,2,0,2,0,0,0,2,2
-BEGONIACEAE,"Begonia lubbersii E.Morren",0,0,1,1,0,0,0,1,1
-RUTACEAE,"Conchocarpus grandiflorus (Engl.) Kallunki & Pirani",3,0,0,3,0,0,3,0,3
-ORCHIDACEAE,"Octomeria minuta Cogn.",2,0,0,0,2,0,0,2,2
-LAURACEAE,"Ocotea leucophloea (Nees et Mart.) L.C.S. Assis e Mello-Silva",3,0,0,3,0,0,3,0,3
-ORCHIDACEAE,"Epistephium portellianum Barb.Rodr.",2,0,0,0,2,0,0,2,2
-ASTERACEAE,"Barrosoa viridiflora (Baker) R.M. King & H. Rob.",0,1,0,0,1,0,0,1,1
-ORCHIDACEAE,"Habenaria gnoma Barb.Rodr.",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Rodriguezia leucantha Barb.Rodr.",2,2,0,0,4,0,0,4,4
-ASTERACEAE,"Stevia verticillata Schltdl.",2,5,0,6,1,0,2,5,7
-ORCHIDACEAE,"Encyclia viridiflora Hook.",1,1,0,0,2,0,0,2,2
-ASTERACEAE,"Ophryosporus organensis Cabrera",2,1,0,3,0,0,2,1,3
-MYRTACEAE,"Eugenia violascens O.Berg",0,0,1,1,0,0,0,1,1
-RUBIACEAE,"Faramea australis (Vell.) Müll.Arg.",1,1,0,2,0,0,1,1,2
-FABACEAE,"Inga arenicola T.D.Penn.",1,4,0,5,0,0,1,4,5
-APOCYNACEAE,"Forsteronia linearis (Vell.) Müll.Arg.",0,2,0,0,2,0,0,2,2
-ORCHIDACEAE,"Rodriguezia bifolia Barb.Rodr.",3,2,0,0,5,0,0,5,5
-MARANTACEAE,"Thalia petersiana K. Schum.",2,0,0,0,2,0,0,2,2
-AQUIFOLIACEAE,"Ilex cognata Reissek",1,0,0,0,1,0,0,1,1
-MYRTACEAE,"Marlierea capitata O.Berg",1,0,0,0,1,0,0,1,1
-MYRTACEAE,"Marlierea resupinata (Vell.) O.Berg",1,0,0,1,0,0,1,0,1
-SAPINDACEAE,"Matayba leucodyctia Radlk.",0,0,2,2,0,0,0,2,2
-ORCHIDACEAE,"Brasiliorchis heismanniana (Barb.Rodr.) R.B.Singer et al.",1,1,0,2,0,0,1,1,2
-ORCHIDACEAE,"Brasiliorchis polyantha (Barb.Rodr.) R.B.Singer et al.",1,1,0,0,2,0,0,2,2
-ORCHIDACEAE,"Maxillaria pterocarpa Barb.Rodr.",1,1,0,2,0,0,1,1,2
-ORCHIDACEAE,"Miltonia flava Lindl.",4,4,0,0,8,0,0,8,8
-ORCHIDACEAE,"Hapalorchis cymbirostris Szlach.",1,0,0,1,0,0,1,0,1
-MYRTACEAE,"Marlierea guanabarina Mattos & D.Legrand",2,0,0,2,0,0,2,0,2
-ORCHIDACEAE,"Octomeria aetheoantha Barb.Rodr.",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Octomeria helvola Barb.Rodr.",1,0,0,0,1,0,0,1,1
-MELASTOMATACEAE,"Leandra chaetocalyx (A.Gray) Cogn.",3,0,0,3,0,0,3,0,3
-ORCHIDACEAE,"Brasilidium dasytyle (Rchb.f.) F.Barros & V.T.Rodrigues",1,1,0,2,0,0,1,1,2
-OCHNACEAE,"Ouratea polita (C.Presl) Engl.",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Pabstiella crassicaulis (Barb.Rodr.) Luer",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Anathallis flammea (Barb.Rodr.) F.Barros",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Pleurothallis jacarepaguaensis Barb.Rodr.",1,0,0,0,1,0,0,1,1
-ORCHIDACEAE,"Acianthera pavimentata (Rchb.f.) Pridgeon & M.W.Chase",0,1,0,0,1,0,0,1,1
-ORCHIDACEAE,"Cleistes miersii Gardner",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Psychotria lindleyana Müll.Arg.",1,1,0,0,2,0,0,2,2
-ORCHIDACEAE,"Lankesterella pilosa (Cogn.) Hoehne",1,1,0,2,0,0,1,1,2
-EUPHORBIACEAE,"Tragia peltata Vell.",1,0,0,0,1,0,0,1,1
-ORCHIDACEAE,"Trigonidium turbinatum Rchb.f.",1,1,0,0,2,0,0,2,2
-SELIGERIACEAE,"Brachydontium notorogenes W.R.Buck & Schaf.-Verw.",1,0,0,1,0,0,1,0,1
-ASTERACEAE,"Mikania paranahybensis G.M.Barroso",0,2,0,1,1,0,0,2,2
-MELASTOMATACEAE,"Tibouchina discolor Brade",1,1,0,2,0,0,1,1,2
-COMMELINACEAE,"Dichorisandra odorata Aona & M.C.E.Amaral",3,0,0,3,0,0,3,0,3
-BEGONIACEAE,"Begonia arborescens Raddi",21,9,203,181,50,2,14,219,233
-ORCHIDACEAE,"Hoffmannseggella alvaroana (F.E.L.Miranda) V.P.Castro & Chiron",2,0,0,1,1,0,1,1,2
-ORCHIDACEAE,"Epidendrum goebelii Schltr.",1,0,0,1,0,0,1,0,1
-COMMELINACEAE,"Dichorisandra nana Aona & M.C.E.Amaral",9,1,0,10,0,0,9,1,10
-ORCHIDACEAE,"Vanilla dungsii Pabst",1,0,0,1,0,0,1,0,1
-DIOSCOREACEAE,"Dioscorea pedalis (Uline ex R. Knuth) R. Couto & J. M. A. Braga",8,2,0,10,0,0,8,2,10
-Amaryllidaceae,"Griffinia intermedia Lindl.",2,0,9,10,1,0,2,9,11
-Myrtaceae,"Myrcia innovans Kiaersk.",3,9,0,3,9,0,1,11,12
-BEGONIACEAE,"Begonia sylvestris A.DC.",0,0,12,10,2,0,0,12,12
-DIOSCOREACEAE,"Dioscorea organensis R.Knuth",1,0,0,1,0,0,1,0,1
-LORANTHACEAE,"Struthanthus harlingianus Rizzini",1,0,0,1,0,0,1,0,1
-BEGONIACEAE,"Begonia tomentosa Schott",0,0,18,11,7,0,0,18,18
-ARACEAE,"Anthurium sakuraguianum ",2,0,0,2,0,0,2,0,2
-CYPERACEAE,"Rhynchospora luetzelburgiana Kük.",0,1,0,0,1,0,0,1,1
-ANEMIACEAE,"Anemia candidoi Brade",1,1,0,2,0,0,1,1,2
-MELASTOMATACEAE,"Leandra alpestris (Gardner) Cogn.",1,0,0,1,0,0,1,0,1
-Orchidaceae,"Brasilaelia lobata (Lindl.) Gutfreund",11,5,0,9,7,0,9,7,16
-RUBIACEAE,"Manettia lutescens (Vell.) K.Schum.",1,1,0,1,1,0,0,2,2
-Ditrichaceae,"Ditrichum itatiaiae (Müll.Hal.) Paris",0,0,3,0,0,3,0,3,3
-BEGONIACEAE,"Begonia bonitoensis Brade",0,0,17,17,0,0,0,17,17
-POLYPODIACEAE,"Moranopteris xbradei (Labiak & F.B.Matos) R.Y. Hirai & J. Prado",1,0,0,1,0,0,1,0,1
-Acanthaceae,"Justicia meyeniana (Nees) Lindau",21,10,0,29,2,0,20,11,31
-RUBIACEAE,"Posoqueria laurifolia Mart.",1,1,0,2,0,0,1,1,2
-COMMELINACEAE,"Dichorisandra picta Lodd.",3,1,0,3,1,0,3,1,4
-MORACEAE,"Dorstenia brevipetiolata C.C.Berg",1,0,0,1,0,0,1,0,1
-IRIDACEAE,"Neomarica itatiaica (Ravenna) A. Gil",2,0,0,2,0,0,2,0,2
-SYMPLOCACEAE,"Symplocos occulta Aranha",1,0,0,1,0,0,1,0,1
-DIOSCOREACEAE,"Dioscorea septemnervis Vell.",0,1,0,0,1,0,0,1,1
-RUBIACEAE,"Psychotria sutericalyx Wernham",1,0,0,0,1,0,0,1,1
-LOASACEAE,"Aosa uleana (Urb. & Gilg) Weigend",8,2,0,7,3,0,6,4,10
-PIPERACEAE,"Piper rumicifolium (Miq.) C.DC.",1,0,0,1,0,0,1,0,1
-ORCHIDACEAE,"Brasiliorchis moutinhoi (Pabst) F.Barros & L.Guimarães",1,0,0,1,0,0,1,0,1
-Calophyllaceae,"Kielmeyera aureovinosa M. Gomes",7,1,0,8,0,0,7,1,8
-MELASTOMATACEAE,"Leandra altomacaensis Baumgratz & D`El Rei Souza",2,0,0,2,0,0,2,0,2
-CACTACEAE,"Rhipsalis flagelliformis N.P.Taylor & Zappi",3,0,0,3,0,0,3,0,3
-RUBIACEAE,"Psychotria vestita C.Presl",1,0,0,0,1,0,0,1,1
-Amaryllidaceae,"Worsleya procera (Lem.) Traub",0,0,60,43,17,0,0,60,60
-MORACEAE,"Ficus nevesiae Carauta",17,9,0,26,0,0,17,9,26
-Bromeliaceae,"Neoregelia paratiensis Leme",1,1,0,2,0,0,1,1,2
-BROMELIACEAE,"Neoregelia ilhana Leme",1,0,0,1,0,0,1,0,1
-LORANTHACEAE,"Struthanthus dorothyi Rizzini",1,0,0,1,0,0,1,0,1
-ARISTOLOCHIACEAE,"Aristolochia raja Mart. & Zucc.",18,0,0,18,0,0,18,0,18
-FABACEAE,"Mimosa bocainae Barneby",7,2,0,8,1,0,7,2,9
-FABACEAE,"Mimosa itatiaiensis Dusén",10,4,0,11,3,0,9,5,14
-MONIMIACEAE,"Grazielanthus arkeocarpus Peixoto & Per.-Moura",11,0,0,11,0,0,11,0,11
-CACTACEAE,"Rhipsalis triangularis Werderm.",14,0,0,13,1,0,13,1,14
-ARACEAE,"Anthurium cronembergerae ",4,0,0,3,1,0,3,1,4
-ACANTHACEAE,"Herpetacanthus delicatus Indriunas & Kameyama",1,0,0,1,0,0,1,0,1
-BROMELIACEAE,"Vriesea zildae R. Moura & A. F. Costa",2,1,0,3,0,0,2,1,3
-PIPERACEAE,"Piper niteroiense Yunck.",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Psychotria mineirensis Wernham",1,0,0,0,1,0,0,1,1
-EUPHORBIACEAE,"Croton nigricans (Mart. ex Schltdl.) Radcl.-Sm. & Govaerts",0,2,0,0,2,0,0,2,2
-EUPHORBIACEAE,"Acalypha subsana Mart. ex Colla",1,0,0,0,1,0,0,1,1
-ASPLENIACEAE,"Asplenium cariocanum Brade",7,0,0,7,0,0,7,0,7
-MALPIGHIACEAE,"Janusia diminuta R.Sebast. & Mamede",1,0,0,1,0,0,1,0,1
-LOGANIACEAE,"Strychnos dantaensis E.A. Manoel, Carrijo & E.F. Gim.",1,0,0,1,0,0,1,0,1
-ACANTHACEAE,"Herpetacanthus parvispica Indriunas & Kameyama",1,0,0,1,0,0,1,0,1
+ARACEAE,"Anthurium luschnathianum",24,13,0,36,1,0,24,13,37
+ARACEAE,"Philodendron alternans",4,4,0,7,1,0,4,4,8
+ASTERACEAE,"Austrocritonia taunayana",5,2,1,8,0,0,5,3,8
+ARACEAE,"Anthurium simonii",11,9,0,20,0,0,11,9,20
+ASTERACEAE,"Baccharis friburgensis",2,3,0,5,0,0,2,3,5
+ARACEAE,"Anthurium laucheanum",7,14,0,16,5,0,7,14,21
+RUBIACEAE,"Coussarea coffeoides",1,6,6,4,3,6,1,12,13
+LAURACEAE,"Beilschmiedia angustifolia",15,6,5,19,2,5,15,11,26
+MYRTACEAE,"Neomitranthes apiculata",2,1,0,2,1,0,2,1,3
+FABACEAE,"Tachigali beaurepairei",15,27,3,25,17,3,13,32,45
+ORCHIDACEAE,"Cleistes miersii",3,0,0,1,2,0,1,2,3
+MYRTACEAE,"Calyptranthes martiusiana",1,0,11,5,7,0,1,11,12
+BROMELIACEAE,"Neoregelia martinellii",1,5,0,4,0,2,1,5,6
+MYRTACEAE,"Calyptranthes grandiflora",13,3,34,33,16,1,7,43,50
+CYPERACEAE,"Hypolytrum glaziovii",6,15,4,15,10,0,6,19,25
+OCHNACEAE,"Luxemburgia glazioviana",27,9,0,28,8,0,23,13,36
+DIOSCOREACEAE,"Dioscorea pumilio",0,2,1,1,2,0,0,3,3
+FABACEAE,"Mimosa glazioui",3,5,1,2,6,1,2,7,9
+OCHNACEAE,"Ouratea stipulata",18,4,40,47,15,0,6,56,62
+FABACEAE,"Senegalia miersii",10,9,6,17,2,6,9,16,25
+FABACEAE,"Piptadenia polyptera",2,8,4,4,6,4,1,13,14
+ASTERACEAE,"Senecio arctiifolius",3,2,1,5,1,0,3,3,6
+RUBIACEAE,"Faramea calyciflora",8,65,12,63,10,12,8,77,85
+RUBIACEAE,"Hindsia violacea",1,5,2,0,6,2,0,8,8
+ASTERACEAE,"Austrocritonia rosea",6,0,2,8,0,0,6,2,8
+ASTERACEAE,"Lepidaploa obtusifolia",30,36,2,40,28,0,28,40,68
+BROMELIACEAE,"Neoregelia roethii",0,1,3,2,2,0,0,4,4
+MYRTACEAE,"Eugenia augustana",3,2,0,4,1,0,3,2,5
+LAURACEAE,"Mezilaurus navalium",17,34,4,25,26,4,14,41,55
+RUBIACEAE,"Coussarea friburgensis",23,25,9,48,0,9,23,34,57
+XYRIDACEAE,"Xyris organensis",4,2,0,5,1,0,4,2,6
+POACEAE,"Panicum cucaense",1,0,0,1,0,0,1,0,1
+ASTERACEAE,"Wunderlichia insignis",4,26,1,7,24,0,4,27,31
+ASTERACEAE,"Lepidaploa persicifolia",35,33,1,43,26,0,33,36,69
+Poaceae,"Glaziophyton mirabile",8,13,5,18,3,5,8,18,26
+FABACEAE,"Bauhinia albicans",11,10,0,16,5,0,9,12,21
+ASTERACEAE,"Dasyphyllum leptacanthum",18,42,3,55,8,0,18,45,63
+ASTERACEAE,"Baccharis bifrons",12,1,1,11,3,0,11,3,14
+BEGONIACEAE,"Begonia olsoniae",10,15,51,72,1,3,9,67,76
+RUBIACEAE,"Psychotria wilkesiana",1,3,1,0,4,1,0,5,5
+RUBIACEAE,"Psychotria caudata",7,12,4,19,0,4,7,16,23
+RUBIACEAE,"Rudgea macrophylla",67,27,5,86,8,5,62,37,99
+FABACEAE,"Machaerium legale",16,26,1,32,10,1,13,30,43
+FABACEAE,"Mimosa itatiaiensis",10,4,2,11,3,2,9,7,16
+MYRTACEAE,"Calyptranthes caudata",2,2,3,3,3,1,1,6,7
+BEGONIACEAE,"Begonia sanguinea",0,3,54,46,7,4,0,57,57
+BEGONIACEAE,"Begonia parvifolia",0,0,9,1,7,1,0,9,9
+RUBIACEAE,"Manettia fimbriata",9,7,29,38,5,2,8,37,45
+BROMELIACEAE,"Neoregelia macwilliamsii",2,0,1,2,0,1,2,1,3
+FABACEAE,"Moldenhawera polysperma",20,70,6,65,25,6,19,77,96
+FABACEAE,"Lupinus dusenianus",6,0,0,5,1,0,5,1,6
+CALOPHYLLACEAE,"Kielmeyera excelsa",19,39,4,37,25,0,16,46,62
+BEGONIACEAE,"Begonia ramentacea",1,5,51,38,11,8,1,56,57
+ORCHIDACEAE,"Eurystyles lobata",2,0,0,2,0,0,2,0,2
+MYRTACEAE,"Campomanesia hirsuta",23,17,0,33,7,0,22,18,40
+ARALIACEAE,"Dendropanax heterophyllus",6,15,0,13,8,0,5,16,21
+RUBIACEAE,"Manettia pedunculata",8,13,4,8,13,4,4,21,25
+RUBIACEAE,"Psychotria subspathacea",53,24,7,62,15,7,48,36,84
+MYRTACEAE,"Eugenia itaguahiensis",5,14,0,16,3,0,4,15,19
+MYRTACEAE,"Plinia martinellii",10,11,0,18,3,0,10,11,21
+ORCHIDACEAE,"Octomeria sarcophylla",4,1,0,4,1,0,3,2,5
+MONIMIACEAE,"Mollinedia marliae",16,5,1,21,0,1,16,6,22
+MYRTACEAE,"Myrcia magnifolia",7,6,0,10,3,0,6,7,13
+COMMELINACEAE,"Dichorisandra gaudichaudiana",17,5,0,13,9,0,11,11,22
+MONIMIACEAE,"Macropeplus friburgensis",9,0,5,9,0,5,9,5,14
+FABACEAE,"Martiodendron fluminense",10,2,2,14,0,0,10,4,14
+RUBIACEAE,"Faramea brachyloba",12,7,1,18,1,1,11,9,20
+SALICACEAE,"Abatia microphylla",4,1,5,6,4,0,3,7,10
+FABACEAE,"Luetzelburgia trialata",19,21,1,32,8,1,14,27,41
+ORCHIDACEAE,"Anathallis pubipetala",6,2,0,7,1,0,5,3,8
+ORCHIDACEAE,"Stelis palmeiraensis",3,1,0,3,1,0,2,2,4
+MYRTACEAE,"Calyptranthes aromatica",1,13,42,45,11,0,1,55,56
+ORCHIDACEAE,"Catasetum globiflorum",2,2,0,2,2,0,1,3,4
+BEGONIACEAE,"Begonia jocelinoi",3,11,6,17,1,2,3,17,20
+BEGONIACEAE,"Begonia aconitifolia",1,0,27,24,2,2,0,28,28
+MYRTACEAE,"Neomitranthes riedeliana",4,7,0,5,6,0,3,8,11
+RUBIACEAE,"Hindsia glabra",2,26,4,28,0,4,2,30,32
+CALOPHYLLACEAE,"Kielmeyera gracilis",4,6,4,11,3,0,4,10,14
+ARECACEAE,"Lytocaryum weddellianum",8,25,2,30,5,0,4,31,35
+ARALIACEAE,"Dendropanax trilobus",19,6,3,23,4,1,15,13,28
+ARALIACEAE,"Dendropanax langsdorfii",25,14,0,33,6,0,22,17,39
+MALPIGHIACEAE,"Bronwenia peckoltii",1,0,1,1,1,0,0,2,2
+MYRTACEAE,"Marlierea langsdorffii",2,5,1,4,3,1,2,6,8
+MYRTACEAE,"Eugenia corcovadensis",9,12,1,20,1,1,8,14,22
+MYRTACEAE,"Myrcia velutiflora",8,9,1,16,1,1,7,11,18
+Myrtaceae,"Myrcia innovans",5,10,1,6,9,1,3,13,16
+OCHNACEAE,"Ouratea miersii",11,0,4,8,7,0,4,11,15
+VELLOZIACEAE,"Barbacenia brevifolia",3,0,14,14,3,0,2,15,17
+COMMELINACEAE,"Siderasis fuscata",17,10,0,20,7,0,12,15,27
+MARCGRAVIACEAE,"Marcgravia comosa",5,1,2,6,0,2,5,3,8
+CACTACEAE,"Schlumbergera russelliana",22,3,4,23,6,0,18,11,29
+LAURACEAE,"Aniba pedicellata",1,1,1,2,0,1,1,2,3
+BEGONIACEAE,"Begonia fagifolia",6,16,3,15,7,3,6,19,25
+FABACEAE,"Zollernia glaziovii",7,12,2,9,10,2,6,15,21
+FABACEAE,"Machaerium obovatum",36,19,0,46,9,0,34,21,55
+PLANTAGINACEAE,"Achetaria latifolia",3,0,4,5,0,2,3,4,7
+VELLOZIACEAE,"Barbacenia seubertiana",8,0,18,3,23,0,0,26,26
+ORCHIDACEAE,"Sauroglossum organense",2,0,0,1,1,0,1,1,2
+LAMIACEAE,"Salvia rivularis",26,14,1,36,4,1,24,17,41
+MYRTACEAE,"Myrciaria pumila",2,5,0,4,3,0,1,6,7
+MYRTACEAE,"Myrcia stewartiana",2,0,1,0,2,1,0,3,3
+BEGONIACEAE,"Begonia edmundoi",15,12,2,27,0,2,15,14,29
+BEGONIACEAE,"Begonia lubbersii",0,0,3,1,0,2,0,3,3
+BEGONIACEAE,"Begonia fluminensis",1,1,2,2,0,2,1,3,4
+BEGONIACEAE,"Begonia collaris",15,4,2,18,1,2,15,6,21
+CYPERACEAE,"Rhynchospora luetzelburgiana",0,1,2,1,1,1,0,3,3
+ORCHIDACEAE,"Epidendrum ammophilum",10,1,1,9,2,1,8,4,12
+ORCHIDACEAE,"Pabstiella spathuliglossa",3,0,1,2,1,1,2,2,4
+ORCHIDACEAE,"Zygostates ovatipetala",3,0,3,3,1,2,2,4,6
+GESNERIACEAE,"Besleria melancholica",1,0,164,154,11,0,1,164,165
+APOCYNACEAE,"Gonolobus dorothyanus",2,3,0,5,0,0,2,3,5
+RUBIACEAE,"Chomelia monantha",0,7,6,8,5,0,0,13,13
+CLUSIACEAE,"Clusia fragrans",20,24,0,42,2,0,20,24,44
+FABACEAE,"Dalbergia glaziovii",10,29,0,33,6,0,9,30,39
+APOCYNACEAE,"Ditassa maricaensis",47,2,0,49,0,0,47,2,49
+PTERIDACEAE,"Doryopteris quinquelobata",3,7,1,4,6,1,1,10,11
+GERANIACEAE,"Geranium brasiliense",31,8,0,31,8,0,29,10,39
+SAPINDACEAE,"Allophylus membranifolius",0,3,23,18,4,4,0,26,26
+MELASTOMATACEAE,"Leandra niangaeformis",5,20,0,15,10,0,4,21,25
+FABACEAE,"Machaerium firmum",26,12,0,26,12,0,17,21,38
+MELASTOMATACEAE,"Meriania robusta",30,58,0,84,4,0,30,58,88
+MELASTOMATACEAE,"Miconia elaeodendron",12,15,0,23,4,0,10,17,27
+MONIMIACEAE,"Mollinedia stenophylla",2,37,3,33,6,3,2,40,42
+IRIDACEAE,"Neomarica longifolia",2,40,0,39,3,0,2,40,42
+APOCYNACEAE,"Orthosia arenosa",13,15,1,17,12,0,11,18,29
+ASTERACEAE,"Lepidaploa coulonioides",7,6,10,23,0,0,7,16,23
+PTERIDACEAE,"Pteris congesta",24,6,0,28,2,0,22,8,30
+GESNERIACEAE,"Sinningia lateritia",0,0,22,21,1,0,0,22,22
+DICHAPETALACEAE,"Stephanopodium sessile",3,11,0,13,1,0,3,11,14
+COMBRETACEAE,"Terminalia acuminata",8,27,0,27,8,0,5,30,35
+MELASTOMATACEAE,"Tibouchina elegans",3,79,0,73,9,0,2,80,82
+GESNERIACEAE,"Vanhouttea bradeana",0,0,7,7,0,0,0,7,7
+ASTERACEAE,"Trichogoniopsis podocarpa",21,29,0,38,12,0,20,30,50
+IRIDACEAE,"Neomarica northiana",9,26,0,34,1,0,9,26,35
+MELASTOMATACEAE,"Behuria magdalenensis",9,5,0,14,0,0,9,5,14
+MALVACEAE,"Byttneria beyrichiana",20,3,0,19,4,0,17,6,23
+VOCHYSIACEAE,"Callisthene dryadum",3,32,0,34,1,0,3,32,35
+Poaceae,"Chusquea sclerophylla",3,8,0,11,0,0,3,8,11
+SAPINDACEAE,"Paullinia marginata",0,10,26,24,12,0,0,36,36
+PIPERACEAE,"Peperomia riedeliana",1,1,0,2,0,0,1,1,2
+RUBIACEAE,"Faramea campanularis",26,6,1,30,2,1,26,7,33
+MALVACEAE,"Gaya gaudichaudiana",10,48,0,38,20,0,7,51,58
+HELICONIACEAE,"Heliconia pseudoaemygdiana",3,3,0,6,0,0,3,3,6
+MELASTOMATACEAE,"Leandra magdalenensis",6,10,0,16,0,0,6,10,16
+CAMPANULACEAE,"Lobelia santos-limae",4,2,0,6,0,0,4,2,6
+APOCYNACEAE,"Marsdenia glaziovii",1,10,0,2,9,0,0,11,11
+FABACEAE,"Mimosa ernestii",5,7,0,9,3,0,5,7,12
+BROMELIACEAE,"Neoregelia fosteriana",6,5,0,8,3,0,5,6,11
+PASSIFLORACEAE,"Passiflora imbeana",17,4,0,21,0,0,17,4,21
+ARACEAE,"Anthurium augustinum",2,10,0,7,5,0,2,10,12
+ARACEAE,"Anthurium harrisii",0,0,218,189,29,0,0,218,218
+ARACEAE,"Anthurium lhotzkyanum",23,28,0,46,5,0,23,28,51
+GESNERIACEAE,"Sinningia bulbosa",0,0,47,32,15,0,0,47,47
+BROMELIACEAE,"Vriesea altimontana",7,8,4,14,5,0,7,12,19
+BROMELIACEAE,"Vriesea leptantha",4,4,1,9,0,0,4,5,9
+MALVACEAE,"Abutilon esculentum",24,8,7,25,14,0,16,23,39
+FABACEAE,"Aeschynomene bradei",3,1,0,4,0,0,3,1,4
+APOCYNACEAE,"Aspidosperma compactinervium",7,43,7,31,26,0,4,53,57
+BEGONIACEAE,"Begonia acetosa",0,7,0,0,7,0,0,7,7
+BEGONIACEAE,"Begonia concinna",13,9,0,18,4,0,12,10,22
+BEGONIACEAE,"Begonia depauperata",13,4,0,13,4,0,11,6,17
+BEGONIACEAE,"Begonia epipsila",8,7,0,15,0,0,8,7,15
+BEGONIACEAE,"Begonia lanstyakii",9,2,0,11,0,0,9,2,11
+BEGONIACEAE,"Begonia rubropilosa",1,5,15,18,3,0,1,20,21
+BEGONIACEAE,"Begonia semidigitata",0,0,15,13,2,0,0,15,15
+BEGONIACEAE,"Begonia velloziana",0,0,1,1,0,0,0,1,1
+MELASTOMATACEAE,"Bertolonia valenteana",2,2,0,4,0,0,2,2,4
+BIGNONIACEAE,"Fridericia elegans",17,12,4,18,11,4,13,20,33
+ORCHIDACEAE,"Campylocentrum organense",12,9,0,12,9,0,8,13,21
+CAPPARACEAE,"Neocalyptrocalyx eichleriana",3,3,0,6,0,0,3,3,6
+POACEAE,"Chusquea tenuis",1,2,0,2,1,0,1,2,3
+POACEAE,"Chusquea wilkesii",1,1,0,0,2,0,0,2,2
+BROMELIACEAE,"Cryptanthus bromelioides",21,13,4,29,9,0,20,18,38
+DICRANACEAE,"Dicranoloma brasiliense",2,1,0,3,0,0,2,1,3
+BROMELIACEAE,"Dyckia pseudococcinea",0,16,29,42,3,0,0,45,45
+ERYTHROXYLACEAE,"Erythroxylum occultum",7,0,0,7,0,0,7,0,7
+ERICACEAE,"Gaylussacia pruinosa",1,8,0,9,0,0,1,8,9
+GESNERIACEAE,"Nematanthus mirabilis",0,6,2,8,0,0,0,8,8
+AQUIFOLIACEAE,"Ilex longipetiolata",7,5,0,4,8,0,2,10,12
+ASTERACEAE,"Lepidaploa araujoa",3,0,0,3,0,0,3,0,3
+OLACACEAE,"Dulacia singularis",0,0,32,20,12,0,0,32,32
+FABACEAE,"Lupinus russellianus",4,0,0,4,0,0,4,0,4
+ASTERACEAE,"Macropodina bradei",5,4,0,8,1,0,5,4,9
+EUPHORBIACEAE,"Manihot corymbiflora",6,3,0,7,2,0,6,3,9
+MELASTOMATACEAE,"Meriania excelsa",10,4,0,12,2,0,10,4,14
+MELASTOMATACEAE,"Miconia eichleri",9,46,0,43,12,0,9,46,55
+MELASTOMATACEAE,"Miconia glazioviana",3,9,0,12,0,0,3,9,12
+MELASTOMATACEAE,"Miconia laeta",1,4,0,5,0,0,1,4,5
+MELASTOMATACEAE,"Miconia ovalifolia",2,8,0,10,0,0,2,8,10
+MELASTOMATACEAE,"Miconia penduliflora",7,10,0,14,3,0,6,11,17
+MONIMIACEAE,"Mollinedia acutissima",5,32,4,27,10,4,1,40,41
+LAURACEAE,"Nectandra spicata",5,2,1,5,2,1,4,4,8
+BROMELIACEAE,"Neoregelia abendrothae",5,1,1,7,0,0,5,2,7
+BROMELIACEAE,"Neoregelia kuhlmannii",1,3,0,4,0,0,1,3,4
+BROMELIACEAE,"Neoregelia uleana",1,2,0,0,3,0,0,3,3
+ERIOCAULACEAE,"Paepalanthus ovatus",15,9,0,21,3,0,14,10,24
+POACEAE,"Renvoizea glaziovii",2,12,1,1,13,1,1,14,15
+POACEAE,"Dichanthelium itatiaiae",1,5,0,6,0,0,1,5,6
+POACEAE,"Renvoizea teretifolia",3,27,3,6,24,3,1,32,33
+CACTACEAE,"Pilosocereus ulei",11,13,0,17,7,0,7,17,24
+BROMELIACEAE,"Pitcairnia encholirioides",0,9,8,17,0,0,0,17,17
+GENTIANACEAE,"Prepusa connata",15,14,0,21,8,0,13,16,29
+ORCHIDACEAE,"Prescottia spiranthophylla",16,5,0,16,5,0,13,8,21
+RUBIACEAE,"Psychotria clavipes",0,12,0,5,7,0,0,12,12
+BROMELIACEAE,"Quesnelia edmundoi",1,21,32,51,3,0,1,53,54
+BROMELIACEAE,"Quesnelia seideliana",0,5,20,20,5,0,0,25,25
+CACTACEAE,"Rhipsalis pentaptera",2,5,0,3,4,0,2,5,7
+LAMIACEAE,"Salvia benthamiana",9,11,4,13,7,4,9,15,24
+ACANTHACEAE,"Justicia polita",29,3,4,36,0,0,29,7,36
+SAPINDACEAE,"Serjania fluminensis",0,3,8,10,1,0,0,11,11
+ASTERACEAE,"Stevia organensis",11,17,0,26,2,0,11,17,28
+FABACEAE,"Swartzia glazioviana",43,34,3,72,5,3,41,39,80
+SYMPLOCACEAE,"Symplocos dasyphylla",2,9,3,2,9,3,2,12,14
+BURSERACEAE,"Tetragastris breviacuminata",13,18,1,27,5,0,12,20,32
+BROMELIACEAE,"Tillandsia reclinata",6,2,1,8,1,0,6,3,9
+TRIGONIACEAE,"Trigonia rotundifolia",0,0,19,17,1,1,0,19,19
+POACEAE,"Trisetum brasiliense",1,2,0,3,0,0,1,2,3
+ASTERACEAE,"Calea wedelioides",4,8,0,6,6,0,4,8,12
+BROMELIACEAE,"Vriesea sucrei",8,12,1,20,1,0,8,13,21
+BROMELIACEAE,"Vriesea thyrsoidea",45,28,1,71,3,0,45,29,74
+BROMELIACEAE,"Alcantarea glaziouana",23,24,7,44,10,0,22,32,54
+BROMELIACEAE,"Vriesea vidalii",16,8,0,24,0,0,16,8,24
+BROMELIACEAE,"Neoregelia bragarum",5,7,0,11,1,0,4,8,12
+MELASTOMATACEAE,"Tibouchina pallida",4,13,0,13,4,0,4,13,17
+BEGONIACEAE,"Begonia acida",0,4,0,2,2,0,0,4,4
+BEGONIACEAE,"Begonia lunaris",4,5,6,15,0,0,4,11,15
+GESNERIACEAE,"Vanhouttea gardneri",0,0,18,18,0,0,0,18,18
+BEGONIACEAE,"Begonia pseudolubbersii",0,3,4,6,1,0,0,7,7
+ERYTHROXYLACEAE,"Erythroxylum ovalifolium",146,19,0,152,13,0,140,25,165
+AMARYLLIDACEAE,"Griffinia rochae",1,0,0,1,0,0,1,0,1
+FABACEAE,"Peltogyne mattosiana",3,22,1,22,3,1,3,23,26
+GESNERIACEAE,"Sinningia cardinalis",0,0,16,13,3,0,0,16,16
+GESNERIACEAE,"Sinningia cochlearis",0,0,2,2,0,0,0,2,2
+GESNERIACEAE,"Sinningia guttata",0,0,9,7,2,0,0,9,9
+MALVACEAE,"Callianthe senilis",2,6,0,2,6,0,1,7,8
+SOLANACEAE,"Capsicum friburgense",4,2,0,6,0,0,4,2,6
+RUTACEAE,"Conchocarpus sordidus",11,10,1,18,3,1,10,12,22
+CONNARACEAE,"Connarus marginatus",9,13,0,21,1,0,8,14,22
+ASTERACEAE,"Baccharis pseudovaccinioides",9,6,0,13,2,0,8,7,15
+EUPHORBIACEAE,"Euphorbia sabulicola",5,7,0,9,3,0,5,7,12
+RUBIACEAE,"Faramea platypoda",2,7,0,4,5,0,1,8,9
+MELASTOMATACEAE,"Meriania glabra",76,83,0,126,33,0,69,90,159
+PASSIFLORACEAE,"Passiflora farneyi",11,9,0,19,1,0,11,9,20
+MYRTACEAE,"Eugenia cambucae",7,6,0,10,3,0,5,8,13
+MYRTACEAE,"Psidium arboreum",0,5,0,3,2,0,0,5,5
+CACTACEAE,"Rhipsalis mesembryanthemoides",30,4,0,21,12,1,19,15,34
+ANNONACEAE,"Annona parviflora",40,34,0,55,19,0,35,39,74
+ASTERACEAE,"Senecio malacophyllus",2,1,0,3,0,0,2,1,3
+MALPIGHIACEAE,"Stigmaphyllon affine",17,29,1,39,8,0,13,34,47
+SYMPLOCACEAE,"Symplocos glaziovii",1,11,0,2,10,0,1,11,12
+SAPINDACEAE,"Cupania fluminensis",0,1,15,12,3,1,0,16,16
+OLEACEAE,"Chionanthus fluminensis",17,3,9,16,13,0,7,22,29
+CANELLACEAE,"Cinnamodendron sampaioanum",3,14,0,17,0,0,3,14,17
+RUBIACEAE,"Coussarea strigosipes",26,10,3,33,3,3,26,13,39
+RUBIACEAE,"Coussarea viridis",6,12,1,17,1,1,6,13,19
+COMMELINACEAE,"Dichorisandra oxypetala",9,4,0,11,2,0,8,5,13
+MELASTOMATACEAE,"Tibouchina hirsutissima",8,9,0,15,2,0,8,9,17
+LORANTHACEAE,"Struthanthus maricensis",7,10,0,17,0,0,7,10,17
+MALVACEAE,"Abutilon anodoides",10,7,0,9,8,0,7,10,17
+BROMELIACEAE,"Alcantarea nevaresii",4,3,0,6,1,0,4,3,7
+SAPINDACEAE,"Allophylus heterophyllus",16,25,60,65,36,0,12,89,101
+PTERIDACEAE,"Doryopteris subsimplex",4,6,5,5,5,5,3,12,15
+ONAGRACEAE,"Fuchsia glazioviana",22,4,0,25,1,0,22,4,26
+MELASTOMATACEAE,"Leandra laxa",8,67,2,75,2,0,8,69,77
+ASTERACEAE,"Mikania hastifolia",5,1,0,3,3,0,3,3,6
+GENTIANACEAE,"Prepusa hookeriana",24,14,0,28,10,0,22,16,38
+RUBIACEAE,"Psychotria ulei",16,6,0,20,2,0,15,7,22
+BROMELIACEAE,"Quesnelia lateralis",1,23,109,122,11,0,1,132,133
+LENTIBULARIACEAE,"Utricularia geminiloba",0,0,28,25,3,0,0,28,28
+GESNERIACEAE,"Vanhouttea lanata",0,0,7,6,1,0,0,7,7
+ANTHOCEROTACEAE,"Anthoceros lamellatus",1,1,0,2,0,0,1,1,2
+BIGNONIACEAE,"Adenocalymma bullatum",1,17,0,8,10,0,1,17,18
+MALVACEAE,"Callianthe glaziovii",1,4,0,5,0,0,1,4,5
+EUPHORBIACEAE,"Algernonia glazioui",2,0,0,2,0,0,2,0,2
+EUPHORBIACEAE,"Algernonia paulae",27,0,0,27,0,0,27,0,27
+APOCYNACEAE,"Matelea quinquedentata",2,12,1,14,1,0,2,13,15
+ACANTHACEAE,"Aphelandra rigida",3,4,0,2,5,0,1,6,7
+APOCYNACEAE,"Aspidosperma ingratum",0,11,1,9,3,0,0,12,12
+MELASTOMATACEAE,"Behuria corymbosa",4,6,0,9,1,0,3,7,10
+MELASTOMATACEAE,"Behuria glazioviana",2,2,0,4,0,0,2,2,4
+MELASTOMATACEAE,"Behuria organensis",10,32,0,41,1,0,10,32,42
+OLACACEAE,"Cathedra grandiflora",1,2,0,1,2,0,1,2,3
+CLUSIACEAE,"Clusia immersa",22,6,0,28,0,0,22,6,28
+BIGNONIACEAE,"Bignonia costata",11,41,0,27,25,0,6,46,52
+RUBIACEAE,"Coussarea speciosa",3,4,0,3,4,0,3,4,7
+DILLENIACEAE,"Davilla glaziovii",6,3,0,7,2,0,6,3,9
+DIOSCOREACEAE,"Dioscorea margarethia",2,18,0,20,0,0,2,18,20
+APOCYNACEAE,"Ditassa imbricata",2,7,0,8,1,0,1,8,9
+PTERIDACEAE,"Doryopteris tijucana",13,10,0,23,0,0,13,10,23
+SAPOTACEAE,"Pradosia glaziovii",2,3,0,1,4,0,1,4,5
+DRYOPTERIDACEAE,"Elaphoglossum mourae",1,0,0,0,1,0,0,1,1
+LAURACEAE,"Endlicheria balsamea",0,5,4,9,0,0,0,9,9
+ERYTHROXYLACEAE,"Erythroxylum lancifolium",15,2,0,17,0,0,15,2,17
+MYRTACEAE,"Eugenia oxyoentophylla",0,0,13,12,1,0,0,13,13
+RUBIACEAE,"Faramea aristata",1,16,0,15,2,0,1,16,17
+RUBIACEAE,"Faramea tinguana",6,10,0,8,7,1,5,11,16
+THYMELAEACEAE,"Funifera insulae",6,2,0,6,2,0,5,3,8
+RUBIACEAE,"Hillia saldanhaei",1,5,0,6,0,0,1,5,6
+RUBIACEAE,"Hindsia arianeae",1,0,0,1,0,0,1,0,1
+RUBIACEAE,"Hindsia cucullata",1,2,0,1,2,0,0,3,3
+MELASTOMATACEAE,"Huberia minor",5,8,0,13,0,0,5,8,13
+MELASTOMATACEAE,"Huberia parvifolia",2,7,0,8,1,0,2,7,9
+AQUIFOLIACEAE,"Ilex friburgensis",1,6,0,1,6,0,1,6,7
+AQUIFOLIACEAE,"Ilex glazioviana",1,4,0,2,3,0,1,4,5
+AQUIFOLIACEAE,"Ilex schwackeana",2,5,0,4,3,0,2,5,7
+ACANTHACEAE,"Justicia nervata",8,3,0,10,1,0,8,3,11
+MELASTOMATACEAE,"Leandra atrata",1,3,0,4,0,0,1,3,4
+MELASTOMATACEAE,"Leandra breviflora",37,43,0,62,18,0,36,44,80
+MELASTOMATACEAE,"Leandra dentata",14,5,0,19,0,0,14,5,19
+MELASTOMATACEAE,"Leandra multisetosa",6,15,2,23,0,0,6,17,23
+MELASTOMATACEAE,"Leandra rubida",3,4,0,7,0,0,3,4,7
+MELASTOMATACEAE,"Leandra saldanhaei",1,8,0,9,0,0,1,8,9
+MELASTOMATACEAE,"Leandra schwackei",1,6,0,3,4,0,1,6,7
+MELASTOMATACEAE,"Leandra sphaerocarpa",3,5,0,8,0,0,3,5,8
+MELASTOMATACEAE,"Leandra tetragona",1,2,0,3,0,0,1,2,3
+RUBIACEAE,"Manettia parvula",2,7,0,7,2,0,2,7,9
+MYRTACEAE,"Marlierea choriophylla",3,3,0,5,1,0,3,3,6
+MELASTOMATACEAE,"Miconia gilva",1,2,0,3,0,0,1,2,3
+MELASTOMATACEAE,"Miconia oblongifolia",1,3,0,4,0,0,1,3,4
+MELASTOMATACEAE,"Miconia subvernicosa",13,8,0,21,0,0,13,8,21
+ASTERACEAE,"Mikania alexandreae",2,10,0,12,0,0,2,10,12
+ASTERACEAE,"Mikania cabrerae",3,1,0,4,0,0,3,1,4
+ASTERACEAE,"Mikania campos-portoana",6,5,0,11,0,0,6,5,11
+BROMELIACEAE,"Nidularium itatiaiae",21,15,1,36,1,0,21,16,37
+BROMELIACEAE,"Nidularium utriculosum",4,9,4,16,1,0,4,13,17
+APOCYNACEAE,"Oxypetalum lutescens",1,6,3,7,3,0,1,9,10
+PIPERACEAE,"Peperomia arbuscula",2,1,0,3,0,0,2,1,3
+PIPERACEAE,"Peperomia humifusa",1,1,0,2,0,0,1,1,2
+PIPERACEAE,"Peperomia pubipeduncula",4,1,0,5,0,0,4,1,5
+PIPERACEAE,"Piper emygdioi",1,5,0,6,0,0,1,5,6
+PIPERACEAE,"Piper rioense",7,7,0,14,0,0,7,7,14
+PIPERACEAE,"Piper saldanhai",1,2,0,3,0,0,1,2,3
+BROMELIACEAE,"Pitcairnia insularis",1,2,1,4,0,0,1,3,4
+BROMELIACEAE,"Pitcairnia wendtiae",0,9,5,14,0,0,0,14,14
+MELASTOMATACEAE,"Pleiochiton glaziovianum",4,32,0,35,1,0,3,33,36
+MELASTOMATACEAE,"Pleiochiton parvifolium",5,3,0,8,0,0,5,3,8
+MYRTACEAE,"Plinia sebastianopolitana",1,15,0,15,1,0,1,15,16
+POLYPODIACEAE,"Pecluma imbeana",1,3,0,4,0,0,1,3,4
+RUBIACEAE,"Psychotria ampla",0,2,0,2,0,0,0,2,2
+RUBIACEAE,"Psychotria lucidifolia",1,0,0,1,0,0,1,0,1
+RUBIACEAE,"Psychotria tenuinervis",48,15,1,60,3,1,46,18,64
+GESNERIACEAE,"Vanhouttea fruticulosa",0,0,11,11,0,0,0,11,11
+CYPERACEAE,"Rhynchospora sampaioana",2,4,0,4,2,0,2,4,6
+RUBIACEAE,"Rudgea insignis",9,10,3,13,6,3,8,14,22
+LAMIACEAE,"Salvia longibracteolata",4,6,0,10,0,0,4,6,10
+ASTERACEAE,"Senecio ramentaceus",2,12,0,2,12,0,2,12,14
+MALVACEAE,"Sida sampaiana",1,4,0,5,0,0,1,4,5
+CAMPANULACEAE,"Siphocampylus viscidus",1,1,0,2,0,0,1,1,2
+RUBIACEAE,"Standleya erecta",1,4,0,4,1,0,1,4,5
+RUBIACEAE,"Standleya limae",2,3,0,5,0,0,2,3,5
+MALPIGHIACEAE,"Stigmaphyllon carautae",1,0,1,2,0,0,1,1,2
+LOGANIACEAE,"Strychnos jacarepiensis",4,1,0,5,0,0,4,1,5
+MELASTOMATACEAE,"Tibouchina axillaris",10,12,0,21,1,0,9,13,22
+MELASTOMATACEAE,"Tibouchina cordifolia",3,10,0,11,2,0,2,11,13
+MELASTOMATACEAE,"Tibouchina virgata",2,15,0,8,9,0,2,15,17
+MELASTOMATACEAE,"Tibouchina schwackei",1,7,0,8,0,0,1,7,8
+TRIGONIACEAE,"Trigonia littoralis",9,1,0,10,0,0,9,1,10
+IRIDACEAE,"Trimezia organensis",9,3,0,10,2,0,9,3,12
+BROMELIACEAE,"Vriesea fradensis",9,5,0,13,0,1,9,5,14
+LECYTHIDACEAE,"Couratari pyramidata",28,22,11,43,18,0,26,35,61
+ASTERACEAE,"Mikania pteropoda",10,6,0,14,2,0,10,6,16
+CHRYSOBALANACEAE,"Hirtella barrosoi",2,12,0,13,1,0,2,12,14
+MELASTOMATACEAE,"Leandra mouraei",12,1,0,12,1,0,12,1,13
+LAURACEAE,"Ocotea sulcata",10,8,0,18,0,0,10,8,18
+POLYGALACEAE,"Polygala revoluta",22,11,0,31,2,0,21,12,33
+PIPERACEAE,"Piper morisonianum",2,5,0,6,1,0,1,6,7
+BROMELIACEAE,"Aechmea fasciata",0,7,114,104,17,0,0,121,121
+ANNONACEAE,"Duguetia microphylla",8,8,0,11,5,0,8,8,16
+BEGONIACEAE,"Begonia valida",0,4,3,0,7,0,0,7,7
+MALVACEAE,"Abutilon macrophyllum",2,1,0,2,1,0,2,1,3
+MELASTOMATACEAE,"Tibouchina benthamiana",11,20,0,17,14,0,10,21,31
+EUPHORBIACEAE,"Acalypha aspericocca",1,1,0,0,2,0,0,2,2
+EUPHORBIACEAE,"Acalypha pohliana",2,2,0,4,0,0,2,2,4
+EUPHORBIACEAE,"Acalypha radicans",1,1,0,0,2,0,0,2,2
+FABACEAE,"Senegalia mikanii",14,9,1,18,5,1,11,13,24
+BROMELIACEAE,"Aechmea cariocae",0,6,15,18,3,0,0,21,21
+ASTERACEAE,"Baccharis ciliata",8,8,0,15,1,0,8,8,16
+BEGONIACEAE,"Begonia princeps",0,0,5,0,5,0,0,5,5
+ANNONACEAE,"Bocagea alba",3,0,0,0,3,0,0,3,3
+MYRTACEAE,"Calyptranthes bimarginata",0,4,3,3,4,0,0,7,7
+RUBIACEAE,"Chomelia transiens",0,7,0,1,6,0,0,7,7
+ASTERACEAE,"Dasyphyllum cryptocephalum",7,12,0,8,11,0,7,12,19
+EUPHORBIACEAE,"Croton tenuicaulis",0,3,0,0,3,0,0,3,3
+SAPINDACEAE,"Cupania schizoneura",0,2,6,5,2,1,0,8,8
+RUTACEAE,"Conchocarpus ovatus",42,27,0,57,12,0,39,30,69
+RUTACEAE,"Conchocarpus paniculatus",3,8,0,6,5,0,2,9,11
+PRIMULACEAE,"Cybianthus gracillimus",3,3,0,3,3,0,2,4,6
+DIOSCOREACEAE,"Dioscorea campanulata",1,2,0,1,2,0,1,2,3
+DIOSCOREACEAE,"Dioscorea itatiaiensis",5,2,1,6,1,1,5,3,8
+DIOSCOREACEAE,"Dioscorea oppositiflora",1,3,0,4,0,0,1,3,4
+ERYTHROXYLACEAE,"Erythroxylum cincinnatum",35,8,0,32,11,0,31,12,43
+ERYTHROXYLACEAE,"Erythroxylum magnoliifolium",31,3,0,29,5,0,26,8,34
+ERYTHROXYLACEAE,"Erythroxylum gaudichaudii",36,5,1,38,4,0,33,9,42
+ERYTHROXYLACEAE,"Erythroxylum glazioui",21,4,0,22,3,0,21,4,25
+MYRTACEAE,"Eugenia brachysepala",1,0,0,0,1,0,0,1,1
+MYRTACEAE,"Eugenia arrabidae",0,4,0,0,4,0,0,4,4
+MYRTACEAE,"Eugenia grandifolia",6,4,0,2,8,0,2,8,10
+RUBIACEAE,"Faramea anisodonta",1,1,0,1,1,0,1,1,2
+RUBIACEAE,"Faramea cardiophylla",0,7,1,0,7,1,0,8,8
+RUBIACEAE,"Faramea diversifolia",1,2,0,1,2,0,0,3,3
+RUBIACEAE,"Faramea filamentosa",8,9,0,17,0,0,8,9,17
+RUBIACEAE,"Faramea heteromera",1,3,0,2,2,0,1,3,4
+RUBIACEAE,"Faramea includens",4,4,0,4,4,0,3,5,8
+RUBIACEAE,"Faramea intercedens",4,3,0,5,2,0,4,3,7
+RUBIACEAE,"Faramea leucocalyx",22,1,0,20,3,0,20,3,23
+RUBIACEAE,"Faramea micrantha",1,8,1,5,4,1,1,9,10
+RUBIACEAE,"Faramea urophylla",1,2,0,3,0,0,1,2,3
+ONAGRACEAE,"Fuchsia alpestris",5,4,0,6,3,0,5,4,9
+ERICACEAE,"Gaylussacia retivenia",8,2,0,10,0,0,8,2,10
+APOCYNACEAE,"Matelea fournieri",5,7,1,13,0,0,5,8,13
+RUBIACEAE,"Hindsia phyllocalyx",0,5,0,5,0,0,0,5,5
+MELASTOMATACEAE,"Huberia triplinervis",1,1,0,2,0,0,1,1,2
+AQUIFOLIACEAE,"Ilex virgata",1,1,0,0,2,0,0,2,2
+RUBIACEAE,"Ixora heterophylla",1,4,2,7,0,0,1,6,7
+MELASTOMATACEAE,"Leandra atroviridis",2,1,0,3,0,0,2,1,3
+MELASTOMATACEAE,"Leandra depauperata",1,1,0,2,0,0,1,1,2
+MELASTOMATACEAE,"Leandra sessiliflora",1,2,0,0,3,0,0,3,3
+ERICACEAE,"Agarista organensis",9,10,0,18,1,0,8,11,19
+CHRYSOBALANACEAE,"Licania glazioviana",2,10,0,5,7,0,2,10,12
+CAMPANULACEAE,"Lobelia glazioviana",1,1,0,1,1,0,1,1,2
+FABACEAE,"Dahlstedtia glaziovii",3,14,0,6,11,0,3,14,17
+RUBIACEAE,"Malanea spicata",0,7,0,6,1,0,0,7,7
+MYRTACEAE,"Marlierea sessiliflora",1,2,0,0,3,0,0,3,3
+SAPINDACEAE,"Matayba talisioides",0,4,1,1,4,0,0,5,5
+CELASTRACEAE,"Maytenus basidentata",4,4,0,3,5,0,3,5,8
+CELASTRACEAE,"Maytenus samydaeformis",4,17,0,16,5,0,3,18,21
+MELASTOMATACEAE,"Meriania longipes",3,2,0,3,2,0,2,3,5
+MELASTOMATACEAE,"Miconia augusti",1,1,0,2,0,0,1,1,2
+MELASTOMATACEAE,"Miconia dichroa",1,2,0,3,0,0,1,2,3
+MELASTOMATACEAE,"Miconia fluminensis",1,1,0,2,0,0,1,1,2
+MELASTOMATACEAE,"Miconia gigantea",2,8,0,7,3,0,1,9,10
+MELASTOMATACEAE,"Miconia klotzschii",2,2,0,3,1,0,1,3,4
+MELASTOMATACEAE,"Miconia rabenii",3,0,0,1,2,0,1,2,3
+ASTERACEAE,"Mikania casarettoi",2,2,0,1,3,0,1,3,4
+MONIMIACEAE,"Mollinedia corcovadensis",1,11,1,9,3,1,1,12,13
+MONIMIACEAE,"Mollinedia longicuspidata",1,6,0,1,6,0,0,7,7
+MYRTACEAE,"Myrcia warmingiana",12,10,0,19,3,0,11,11,22
+SYMPLOCACEAE,"Symplocos neglecta",3,17,0,19,1,0,3,17,20
+BROMELIACEAE,"Nidularium angustifolium",10,16,0,26,0,0,10,16,26
+BROMELIACEAE,"Neoregelia macahensis",5,3,0,7,1,0,5,3,8
+BROMELIACEAE,"Nidularium rosulatum",13,12,2,22,5,0,12,15,27
+LAURACEAE,"Ocotea schwackeana",4,13,1,9,8,1,4,14,18
+EUPHORBIACEAE,"Ophthalmoblapton macrophyllum",24,4,0,15,13,0,12,16,28
+APOCYNACEAE,"Oxypetalum schottii",5,6,2,7,6,0,4,9,13
+PIPERACEAE,"Peperomia papillispica",1,5,0,5,1,0,1,5,6
+PHYLLANTHACEAE,"Phyllanthus itatiaiensis",2,9,0,11,0,0,2,9,11
+PHYLLANTHACEAE,"Phyllanthus rosmarinifolius",8,1,0,8,1,0,7,2,9
+PICRAMNIACEAE,"Picramnia grandifolia",9,1,0,8,2,0,8,2,10
+PIPERACEAE,"Piper lundii",2,2,0,1,3,0,0,4,4
+PIPERACEAE,"Piper weddellii",1,2,0,0,3,0,0,3,3
+BROMELIACEAE,"Pitcairnia staminea",10,24,40,62,12,0,6,68,74
+BROMELIACEAE,"Pitcairnia corcovadensis",0,21,53,59,15,0,0,74,74
+MELASTOMATACEAE,"Pleiochiton micranthum",16,7,0,21,2,0,15,8,23
+RUBIACEAE,"Psychotria brachyanthema",0,1,0,0,1,0,0,1,1
+RUBIACEAE,"Psychotria mandiocana",1,5,0,2,4,0,1,5,6
+CLUSIACEAE,"Garcinia calyptrata",3,2,0,2,3,0,1,4,5
+ANNONACEAE,"Annona ferruginea",3,1,0,3,1,0,3,1,4
+RUBIACEAE,"Rudgea discolor",2,7,1,9,0,1,2,8,10
+RUBIACEAE,"Rudgea erythrocarpa",10,17,3,20,7,3,8,22,30
+RUBIACEAE,"Rudgea parvifolia",4,5,0,5,4,0,2,7,9
+RUBIACEAE,"Rustia simpsonii",3,3,0,6,0,0,3,3,6
+MARCGRAVIACEAE,"Ruyschia platyadenia",0,1,0,0,1,0,0,1,1
+LAMIACEAE,"Scutellaria tubiflora",0,4,0,1,3,0,0,4,4
+EUPHORBIACEAE,"Sebastiania pteroclada",3,3,0,1,5,0,1,5,6
+SAPINDACEAE,"Serjania acuminata",0,1,1,1,1,0,0,2,2
+SAPINDACEAE,"Serjania hamuligera",0,0,3,1,2,0,0,3,3
+SAPINDACEAE,"Serjania truncata",0,0,3,1,2,0,0,3,3
+ACANTHACEAE,"Staurogyne brachiata",4,3,1,5,3,0,3,5,8
+ASTERACEAE,"Stevia dubia",0,3,0,0,3,0,0,3,3
+PRIMULACEAE,"Stylogyne sordida",4,2,0,4,2,0,3,3,6
+SYMPLOCACEAE,"Symplocos altissima",1,4,2,1,4,2,1,6,7
+SYMPLOCACEAE,"Symplocos organensis",6,11,7,11,6,7,5,19,24
+EUPHORBIACEAE,"Algernonia gibbosa",2,1,0,3,0,0,2,1,3
+Thismiaceae,"Thismia glaziovii",0,0,7,0,1,6,0,7,7
+MELASTOMATACEAE,"Tibouchina maximiliana",6,9,2,11,4,2,6,11,17
+MELASTOMATACEAE,"Tibouchina thereminiana",13,28,0,37,4,0,13,28,41
+ANNONACEAE,"Trigynaea axilliflora",13,11,0,22,2,0,12,12,24
+ASTERACEAE,"Lessingianthus glaziovianus",11,12,0,13,10,0,9,14,23
+BROMELIACEAE,"Vriesea botafogensis",9,3,1,11,2,0,9,4,13
+BROMELIACEAE,"Vriesea pastuchoffiana",4,8,0,6,6,0,4,8,12
+BROMELIACEAE,"Vriesea triligulata",35,16,0,46,5,0,34,17,51
+EUPHORBIACEAE,"Acalypha peckoltii",2,0,0,2,0,0,2,0,2
+EUPHORBIACEAE,"Actinostemon mandiocanus",1,1,0,0,2,0,0,2,2
+BROMELIACEAE,"Aechmea dealbata",0,2,12,11,3,0,0,14,14
+EUPHORBIACEAE,"Bernardia brevipes",5,0,0,5,0,0,5,0,5
+LEJEUNEACEAE,"Colura itatyana",0,0,1,0,1,0,0,1,1
+APOCYNACEAE,"Cynanchum brasiliense",3,3,0,4,2,0,2,4,6
+APIACEAE,"Eryngium fluminense",7,6,0,7,6,0,5,8,13
+MYRTACEAE,"Myrcia dolichopetala",2,2,0,3,1,0,2,2,4
+LAMIACEAE,"Hyptis cymulosa",1,1,0,2,0,0,1,1,2
+PLANTAGINACEAE,"Ildefonsia bibracteata",10,7,0,10,7,0,7,10,17
+MELASTOMATACEAE,"Miconia cinerea",3,10,0,12,1,0,3,10,13
+PODOSTEMACEAE,"Podostemum saldanhanum",9,7,2,8,8,2,8,10,18
+RUBIACEAE,"Psychotria brachyandra",0,3,0,2,1,0,0,3,3
+RUBIACEAE,"Psychotria densicostata",1,3,0,2,2,0,1,3,4
+ARALIACEAE,"Schefflera succinea",4,14,0,8,10,0,4,14,18
+MARCGRAVIACEAE,"Souroubea platyadenia",1,0,0,0,1,0,0,1,1
+BROMELIACEAE,"Vriesea goniorachis",21,23,2,34,12,0,20,26,46
+CLUSIACEAE,"Clusia studartiana",33,2,0,35,0,0,33,2,35
+POLYGONACEAE,"Coccoloba rigida",26,22,0,38,10,0,18,30,48
+BROMELIACEAE,"Cryptanthus sinuosus",10,4,1,13,2,0,10,5,15
+BROMELIACEAE,"Nidularium fulgens",48,17,6,64,7,0,48,23,71
+ANNONACEAE,"Duguetia pohliana",5,7,0,8,4,0,4,8,12
+MARANTACEAE,"Goeppertia grazielae",0,3,0,3,0,0,0,3,3
+MELASTOMATACEAE,"Behuria cordifolia",7,3,0,10,0,0,7,3,10
+GESNERIACEAE,"Sinningia hirsuta",0,0,5,2,3,0,0,5,5
+MELASTOMATACEAE,"Behuria huberioides",5,3,0,8,0,0,5,3,8
+ANNONACEAE,"Hornschuchia alba",13,8,0,19,2,0,12,9,21
+MYRTACEAE,"Plinia anonyma",0,4,0,4,0,0,0,4,4
+VIOLACEAE,"Rinorea laevigata",22,49,0,55,16,0,19,52,71
+ARACEAE,"Anthurium lucidum",8,28,0,29,7,0,8,28,36
+CONVOLVULACEAE,"Bonamia umbellata",16,0,0,5,11,0,5,11,16
+MYRTACEAE,"Eugenia decussata",3,1,0,3,1,0,2,2,4
+THYMELAEACEAE,"Funifera brasiliensis",0,0,83,67,16,0,0,83,83
+ASTERACEAE,"Piptocarpha verticillata",10,12,0,17,5,0,8,14,22
+GESNERIACEAE,"Sinningia helleri",0,0,5,3,2,0,0,5,5
+GESNERIACEAE,"Sinningia pusilla",0,0,12,10,2,0,0,12,12
+ARACEAE,"Philodendron fragile",9,10,0,19,0,0,9,10,19
+BROMELIACEAE,"Alcantarea geniculata",9,29,1,37,2,0,9,30,39
+ARACEAE,"Anthurium bragae",5,5,0,10,0,0,5,5,10
+RUBIACEAE,"Bathysa sylvestrae",12,7,0,19,0,0,12,7,19
+MYRTACEAE,"Calyptranthes ursina",0,5,1,6,0,0,0,6,6
+MYRTACEAE,"Eugenia expansa",6,16,0,21,1,0,6,16,22
+MYRTACEAE,"Myrcia neocambessedeana",1,3,0,3,1,0,0,4,4
+MALPIGHIACEAE,"Heteropterys ternstroemiifolia",19,4,1,22,2,0,17,7,24
+CALOPHYLLACEAE,"Kielmeyera insignis",2,9,0,9,2,0,2,9,11
+ERICACEAE,"Agarista uleana",22,18,0,39,1,0,22,18,40
+FABACEAE,"Machaerium macaense",37,16,0,53,0,0,37,16,53
+MELASTOMATACEAE,"Meriania glazioviana",4,4,0,6,2,0,3,5,8
+ASTERACEAE,"Mikania vauthieriana",11,11,0,20,2,0,10,12,22
+IRIDACEAE,"Neomarica silvestris",17,8,0,22,3,0,17,8,25
+OCHNACEAE,"Ouratea grandifolia",10,1,9,18,1,1,9,11,20
+BROMELIACEAE,"Pitcairnia albiflos",0,35,52,80,7,0,0,87,87
+FABACEAE,"Poecilanthe fluminensis",9,9,0,18,0,0,9,9,18
+GENTIANACEAE,"Prepusa alata",8,4,0,12,0,0,8,4,12
+MORACEAE,"Sorocea carautana",3,4,0,7,0,0,3,4,7
+MALVACEAE,"Callianthe sellowiana",20,6,0,23,3,0,19,7,26
+MYRTACEAE,"Myrcia badia",1,1,0,0,2,0,0,2,2
+MYRTACEAE,"Calyptranthes anceps",0,0,2,0,2,0,0,2,2
+MYRTACEAE,"Eugenia arvensis",0,4,0,2,2,0,0,4,4
+MYRTACEAE,"Eugenia coccifera",1,2,0,2,1,0,1,2,3
+MYRTACEAE,"Eugenia crenata",0,13,0,9,4,0,0,13,13
+MYRTACEAE,"Eugenia grazielae",9,5,0,13,1,0,9,5,14
+APOCYNACEAE,"Macroditassa laxa",4,3,0,7,0,0,4,3,7
+APOCYNACEAE,"Orthosia umbrosa",0,6,0,0,6,0,0,6,6
+FABACEAE,"Piptadenia laxipinna",2,4,0,6,0,0,2,4,6
+ORCHIDACEAE,"Acianthera exdrasii",0,1,0,1,0,0,0,1,1
+MYRTACEAE,"Psidium anthomega",0,1,0,0,1,0,0,1,1
+MYRTACEAE,"Campomanesia fruticosa",0,3,0,0,3,0,0,3,3
+MYRTACEAE,"Campomanesia mediterranea",0,2,0,0,2,0,0,2,2
+CACTACEAE,"Rhipsalis ormindoi",10,2,0,12,0,0,10,2,12
+BROMELIACEAE,"Aechmea caesia",2,4,30,32,4,0,1,35,36
+ARACEAE,"Anthurium validinervium",1,3,0,3,1,0,1,3,4
+MELASTOMATACEAE,"Bisglaziovia behurioides",5,3,0,4,4,0,4,4,8
+ONAGRACEAE,"Fuchsia campos-portoi",34,7,0,41,0,0,34,7,41
+MALPIGHIACEAE,"Heteropterys occhionii",1,0,0,1,0,0,1,0,1
+MELASTOMATACEAE,"Itatiaia cleistopetala",1,0,22,23,0,0,1,22,23
+PIPERACEAE,"Piper giordanoi",5,8,0,13,0,0,5,8,13
+PIPERACEAE,"Piper translucens",33,1,0,34,0,0,33,1,34
+RUBIACEAE,"Randia itatiaiae",3,6,0,9,0,0,3,6,9
+Bromeliaceae,"Vriesea eltoniana",21,17,1,39,0,0,21,18,39
+MYRTACEAE,"Marlierea estrellensis",1,3,0,4,0,0,1,3,4
+ARACEAE,"Anthurium binotii",10,14,0,16,8,0,10,14,24
+BROMELIACEAE,"Aechmea squarrosa",0,9,1,10,0,0,0,10,10
+ARACEAE,"Anthurium aduncum",0,1,0,0,1,0,0,1,1
+ARACEAE,"Anthurium nitidulum",0,5,0,2,3,0,0,5,5
+ARACEAE,"Asterostigma concinnum",0,5,0,4,1,0,0,5,5
+LAURACEAE,"Beilschmiedia stricta",1,5,0,6,0,0,1,5,6
+MARANTACEAE,"Goeppertia sphaerocephala",5,2,0,4,3,0,4,3,7
+MYRTACEAE,"Campomanesia lundiana",1,0,0,0,1,0,0,1,1
+BROMELIACEAE,"Dyckia martinellii",4,6,0,10,0,0,4,6,10
+BIGNONIACEAE,"Jacaranda crassifolia",6,2,0,6,2,0,5,3,8
+MELASTOMATACEAE,"Leandra organensis",2,1,0,3,0,0,2,1,3
+MELASTOMATACEAE,"Miconia ovata",0,1,0,0,1,0,0,1,1
+MELASTOMATACEAE,"Miconia pseudoeichleri",1,6,0,0,7,0,0,7,7
+LAURACEAE,"Ocotea abbreviata",1,4,0,5,0,0,1,4,5
+PIPERACEAE,"Peperomia bradei",1,11,0,10,2,0,1,11,12
+SPHAGNACEAE,"Sphagnum amoenum",1,2,0,2,1,0,1,2,3
+SPHAGNACEAE,"Sphagnum triporosum",1,1,0,2,0,0,1,1,2
+POLYPODIACEAE,"Stenogrammitis luetzelburgii",2,3,0,2,3,0,1,4,5
+THELYPTERIDACEAE,"Thelypteris refracta",7,1,2,6,2,2,6,4,10
+ANNONACEAE,"Unonopsis riedeliana",5,1,0,3,3,0,3,3,6
+ORCHIDACEAE,"Cleistes liliastrum",3,5,0,2,6,0,2,6,8
+EUPHORBIACEAE,"Dalechampia granadilla",1,2,0,0,3,0,0,3,3
+BROMELIACEAE,"Alcantarea heloisae",6,1,0,7,0,0,6,1,7
+Acanthaceae,"Aphelandra stephanophysa",3,2,1,3,3,0,2,4,6
+ASTERACEAE,"Baccharis alpestris",4,3,0,6,1,0,3,4,7
+ORCHIDACEAE,"Centroglossa greeniana",5,4,0,5,4,0,4,5,9
+SOLANACEAE,"Solanum friburgense",2,2,0,4,0,0,2,2,4
+CUCURBITACEAE,"Wilbrandia glaziovii",13,3,0,16,0,0,13,3,16
+DIOSCOREACEAE,"Dioscorea bradei",8,4,1,12,0,1,8,5,13
+APOCYNACEAE,"Ditassa subumbellata",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Pitcairnia suaveolens",0,3,9,12,0,0,0,12,12
+MELIACEAE,"Trichilia luciae",6,2,0,8,0,0,6,2,8
+DRYOPTERIDACEAE,"Ctenitis flexuosa",5,10,0,1,14,0,1,14,15
+VELLOZIACEAE,"Barbacenia gaveensis",1,0,9,8,2,0,0,10,10
+MELASTOMATACEAE,"Behuria mouraei",5,2,0,7,0,0,5,2,7
+ORCHIDACEAE,"Bulbophyllum macroceras",3,4,0,2,5,0,2,5,7
+PRIMULACEAE,"Cybianthus barrosoanus",1,0,0,0,1,0,0,1,1
+FABACEAE,"Dahlstedtia grandiflora",2,10,0,4,8,0,2,10,12
+ORCHIDACEAE,"Epidendrum harrisoniae",3,8,0,5,6,0,3,8,11
+THISMIACEAE,"Thismia caudata",2,0,0,0,2,0,0,2,2
+MELASTOMATACEAE,"Leandra mollis",11,15,1,24,3,0,9,18,27
+ORCHIDACEAE,"Octomeria rodriguesii",8,2,0,6,4,0,5,5,10
+TRIURIDACEAE,"Peltophyllum caudatum",1,2,0,1,2,0,1,2,3
+ORCHIDACEAE,"Specklinia hymenantha",2,3,0,0,5,0,0,5,5
+THISMIACEAE,"Thismia fungiformis",2,0,0,0,2,0,0,2,2
+BROMELIACEAE,"Tillandsia brachyphylla",19,13,0,28,4,0,18,14,32
+BROMELIACEAE,"Vriesea saundersii",11,10,3,21,3,0,11,13,24
+BROMELIACEAE,"Alcantarea martinellii",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Alcantarea tortuosa",2,3,0,5,0,0,2,3,5
+APOCYNACEAE,"Mandevilla crassinoda",11,2,3,12,4,0,9,7,16
+GESNERIACEAE,"Besleria fluminensis",2,6,0,8,0,0,2,6,8
+ORCHIDACEAE,"Gomesa messmeriana",1,0,0,1,0,0,1,0,1
+MARANTACEAE,"Goeppertia dorothyae",3,0,0,3,0,0,3,0,3
+ORCHIDACEAE,"Lankesterella spannageliana",3,0,0,3,0,0,3,0,3
+CHRYSOBALANACEAE,"Couepia parvifolia",3,6,0,9,0,0,3,6,9
+BROMELIACEAE,"Neoregelia coriacea",3,2,0,5,0,0,3,2,5
+BROMELIACEAE,"Canistropsis pulcherrima",0,3,3,6,0,0,0,6,6
+FABACEAE,"Ormosia altimontana",24,18,0,42,0,0,24,18,42
+ARACEAE,"Philodendron millerianum",1,3,0,4,0,0,1,3,4
+ORCHIDACEAE,"Acianthera bidentata",2,0,0,1,1,0,1,1,2
+ORCHIDACEAE,"Anathallis spannageliana",3,0,0,3,0,0,3,0,3
+ORCHIDACEAE,"Pabstiella tabacina",2,0,0,0,2,0,0,2,2
+MYRTACEAE,"Plinia marqueteana",3,8,0,11,0,0,3,8,11
+BROMELIACEAE,"Tillandsia grazielae",5,5,0,9,1,0,5,5,10
+BROMELIACEAE,"Tillandsia nuptialis",2,3,0,5,0,0,2,3,5
+GESNERIACEAE,"Sinningia lindleyi",0,0,13,11,2,0,0,13,13
+BROMELIACEAE,"Vriesea bleherae",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Vriesea brassicoides",12,10,0,17,2,3,12,10,22
+BROMELIACEAE,"Vriesea costae",1,3,0,4,0,0,1,3,4
+MELASTOMATACEAE,"Behuria edmundoi",2,2,0,4,0,0,2,2,4
+MELASTOMATACEAE,"Behuria limae",2,4,0,6,0,0,2,4,6
+BROMELIACEAE,"Vriesea fluminensis",4,2,0,5,0,1,4,2,6
+BROMELIACEAE,"Vriesea warmingii",5,1,1,7,0,0,5,2,7
+ARACEAE,"Wolffiella neotropica",3,5,0,8,0,0,3,5,8
+MELASTOMATACEAE,"Tibouchina cristata",5,4,0,9,0,0,5,4,9
+APOCYNACEAE,"Ditassa guilleminiana",9,3,2,10,4,0,8,6,14
+PIPERACEAE,"Piper crebrinodum",2,0,0,1,1,0,1,1,2
+PIPERACEAE,"Piper halesiifolium",2,2,0,2,2,0,1,3,4
+ACANTHACEAE,"Aphelandra bradeana",2,3,0,4,1,0,2,3,5
+BEGONIACEAE,"Begonia magdalenensis",1,0,3,4,0,0,1,3,4
+MYRTACEAE,"Eugenia irirensis",1,2,0,3,0,0,1,2,3
+ISOETACEAE,"Isoetes goebelii",3,0,0,3,0,0,3,0,3
+ISOETACEAE,"Isoetes organensis",2,0,0,1,1,0,1,1,2
+ISOETACEAE,"Isoetes ulei",3,0,0,3,0,0,3,0,3
+PIPERACEAE,"Piper trigonodrupum",3,6,0,7,2,0,2,7,9
+FABACEAE,"Swartzia submontana",4,2,0,6,0,0,4,2,6
+BROMELIACEAE,"Neoregelia eltoniana",7,3,1,10,1,0,7,4,11
+BROMELIACEAE,"Nidularium apiculatum",4,1,2,7,0,0,4,3,7
+MYRTACEAE,"Plinia ilhensis",16,9,0,21,4,0,16,9,25
+ORCHIDACEAE,"Cyclopogon venustus",6,1,0,5,2,0,5,2,7
+ASTERACEAE,"Graphistylis cuneifolia",9,2,1,12,0,0,9,3,12
+LORANTHACEAE,"Struthanthus pentamerus",8,2,0,10,0,0,8,2,10
+MYRTACEAE,"Eugenia strigipes",0,2,0,2,0,0,0,2,2
+ARALIACEAE,"Hydrocotyle bradei",4,1,0,5,0,0,4,1,5
+AQUIFOLIACEAE,"Ilex organensis",2,0,0,1,1,0,1,1,2
+MELASTOMATACEAE,"Tibouchina alata",2,1,0,3,0,0,2,1,3
+RANUNCULACEAE,"Anemone assisbrasiliana",5,1,0,6,0,0,5,1,6
+PROTEACEAE,"Roupala gracilis",12,1,0,11,2,0,11,2,13
+BEGONIACEAE,"Begonia cordata",1,0,0,1,0,0,1,0,1
+MYRTACEAE,"Eugenia kuhlmanniana",0,5,0,2,3,0,0,5,5
+LORANTHACEAE,"Psittacanthus pluricotyledonarius",8,5,0,13,0,0,8,5,13
+MALPIGHIACEAE,"Banisteriopsis magdalenensis",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Nidularium altimontanum",11,9,0,20,0,0,11,9,20
+BROMELIACEAE,"Tillandsia carminea",7,2,2,10,1,0,7,4,11
+BROMELIACEAE,"Tillandsia neglecta",3,3,2,8,0,0,3,5,8
+OCHNACEAE,"Ouratea campos-portoi",3,0,1,3,1,0,2,2,4
+BROMELIACEAE,"Canistropsis marceloi",0,5,15,20,0,0,0,20,20
+BROMELIACEAE,"Vriesea garlippiana",3,2,0,5,0,0,3,2,5
+BROMELIACEAE,"Neoregelia indecora",3,5,0,4,4,0,3,5,8
+BROMELIACEAE,"Tillandsia sucrei",5,6,0,6,5,0,5,6,11
+BROMELIACEAE,"Tillandsia roseiflora",20,1,3,23,1,0,20,4,24
+MELASTOMATACEAE,"Clidemia raddiana",1,0,0,0,1,0,0,1,1
+MELASTOMATACEAE,"Pleiochiton magdalenense",1,1,0,1,1,0,1,1,2
+MELASTOMATACEAE,"Pleiochiton longipetiolatum",2,1,0,2,1,0,2,1,3
+ARALIACEAE,"Hydrocotyle ulei",5,0,0,5,0,0,5,0,5
+MELASTOMATACEAE,"Leandra markgrafii",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Neoregelia petropolitana",4,0,0,4,0,0,4,0,4
+BROMELIACEAE,"Neoregelia coimbrae",4,2,0,6,0,0,4,2,6
+OLEACEAE,"Chionanthus tenuis",1,4,0,5,0,0,1,4,5
+SAPINDACEAE,"Serjania littoralis",0,0,8,8,0,0,0,8,8
+PRIMULACEAE,"Stylogyne leptantha",8,0,0,7,1,0,7,1,8
+ORCHIDACEAE,"Pabstiella gracilicaulis",3,0,0,1,2,0,1,2,3
+BROMELIACEAE,"Vriesea teresopolitana",5,4,0,9,0,0,5,4,9
+APOCYNACEAE,"Oxypetalum costae",2,0,0,2,0,0,2,0,2
+MARANTACEAE,"Goeppertia reginae",7,0,0,7,0,0,7,0,7
+CYPERACEAE,"Trilepis tenuis",2,1,0,3,0,0,2,1,3
+BROMELIACEAE,"Neoregelia leucophoea",4,4,0,8,0,0,4,4,8
+BROMELIACEAE,"Vriesea altomacaensis",9,2,2,13,0,0,9,4,13
+ARALIACEAE,"Hydrocotyle alpestris",5,0,0,4,1,0,4,1,5
+ORCHIDACEAE,"Pleurothallis dracula",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Nidularium fradense",8,7,0,15,0,0,8,7,15
+BROMELIACEAE,"Billbergia brasiliensis",0,0,5,5,0,0,0,5,5
+APOCYNACEAE,"Ditassa fontellae",0,2,0,2,0,0,0,2,2
+BROMELIACEAE,"Alcantarea farneyi",6,10,0,15,1,0,6,10,16
+ACANTHACEAE,"Justicia itatiaiensis",2,0,0,2,0,0,2,0,2
+BROMELIACEAE,"Neoregelia sapiatibensis",9,3,0,12,0,0,9,3,12
+BROMELIACEAE,"Pitcairnia beycalema",0,2,4,3,3,0,0,6,6
+LORANTHACEAE,"Struthanthus armandianus",1,4,0,5,0,0,1,4,5
+BROMELIACEAE,"Vriesea rubyae",9,5,0,14,0,0,9,5,14
+MYRTACEAE,"Marlierea martinellii",5,0,0,5,0,0,5,0,5
+BROMELIACEAE,"Aechmea paratiensis",0,4,1,5,0,0,0,5,5
+BROMELIACEAE,"Neoregelia longipedicellata",2,0,0,2,0,0,2,0,2
+BROMELIACEAE,"Vriesea fontourae",2,1,0,3,0,0,2,1,3
+POACEAE,"Dichanthelium cucaense",2,0,0,2,0,0,2,0,2
+BEGONIACEAE,"Begonia friburgensis",4,3,0,7,0,0,4,3,7
+BROMELIACEAE,"Canistropsis correia-araujoi",0,0,3,3,0,0,0,3,3
+BEGONIACEAE,"Begonia antonietae",1,2,0,3,0,0,1,2,3
+COMMELINACEAE,"Dichorisandra fluminensis",1,3,0,4,0,0,1,3,4
+OPILIACEAE,"Agonandra fluminensis",3,0,1,3,1,0,2,2,4
+MYRTACEAE,"Eugenia strellensis",1,3,0,3,1,0,0,4,4
+SPHAGNACEAE,"Sphagnum costae",1,0,2,3,0,0,1,2,3
+PRIMULACEAE,"Stylogyne araujoana",1,2,0,3,0,0,1,2,3
+GESNERIACEAE,"Nematanthus pycnophyllus",0,0,1,1,0,0,0,1,1
+PTERIDACEAE,"Doryopteris magdalenensis",7,0,1,7,0,1,7,1,8
+MYRTACEAE,"Marlierea occhionii",2,1,0,2,1,0,2,1,3
+BROMELIACEAE,"Neoregelia lactea",2,1,0,3,0,0,2,1,3
+BROMELIACEAE,"Neoregelia watersiana",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Vriesea lidicensis",1,0,1,2,0,0,1,1,2
+VELLOZIACEAE,"Barbacenia fanniae",0,0,6,6,0,0,0,6,6
+MARANTACEAE,"Goeppertia fatimae",4,1,0,5,0,0,4,1,5
+ORCHIDACEAE,"Octomeria rodeiensis",5,0,0,3,2,0,3,2,5
+BROMELIACEAE,"Neoregelia tenebrosa",4,1,0,5,0,0,4,1,5
+ORCHIDACEAE,"Octomeria cochlearis",6,0,0,4,2,0,4,2,6
+BEGONIACEAE,"Begonia densifolia",4,0,1,4,0,1,4,1,5
+ASTERACEAE,"Gamochaeta grazielae",1,0,0,1,0,0,1,0,1
+OROBANCHACEAE,"Magdalenaea limae",4,0,0,4,0,0,4,0,4
+ORCHIDACEAE,"Octomeria cariocana",1,1,0,2,0,0,1,1,2
+BROMELIACEAE,"Tillandsia organensis",2,0,1,3,0,0,2,1,3
+BROMELIACEAE,"Neoregelia fluminensis",2,1,0,3,0,0,2,1,3
+ORCHIDACEAE,"Rodriguezia sucrei",1,2,0,3,0,0,1,2,3
+MYRTACEAE,"Eugenia marambaiensis",0,1,0,1,0,0,0,1,1
+TRIURIDACEAE,"Triuris alata",2,1,0,3,0,0,2,1,3
+BROMELIACEAE,"Nidularium viridipetalum",3,3,0,6,0,0,3,3,6
+BROMELIACEAE,"Nidularium mangaratibense",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Neoregelia nevaresii",1,2,0,3,0,0,1,2,3
+BROMELIACEAE,"Neoregelia camorimiana",1,1,0,1,1,0,1,1,2
+MELASTOMATACEAE,"Mouriri arenicola",3,0,0,3,0,0,3,0,3
+MELASTOMATACEAE,"Bertolonia grazielae",2,0,0,2,0,0,2,0,2
+BROMELIACEAE,"Vriesea croceana",1,1,0,2,0,0,1,1,2
+BROMELIACEAE,"Billbergia macracantha",0,0,1,1,0,0,0,1,1
+BROMELIACEAE,"Neoregelia correia-araujoi",1,1,0,2,0,0,1,1,2
+MALVACEAE,"Abutilon hirsutum",0,1,0,0,1,0,0,1,1
+BROMELIACEAE,"Neoregelia desenganensis",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Nidularium organense",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Coppensia edmundoi",1,0,0,1,0,0,1,0,1
+LAURACEAE,"Ocotea sinaiana",1,3,0,4,0,0,1,3,4
+DIOSCOREACEAE,"Dioscorea sphaeroidea",3,0,0,3,0,0,3,0,3
+BROMELIACEAE,"Neoregelia rubrovittata",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Cryptanthus delicatus",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Anathallis lichenophila",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Canistropsis elata",0,0,2,2,0,0,0,2,2
+ACANTHACEAE,"Staurogyne euryphylla",4,5,0,7,2,0,3,6,9
+BROMELIACEAE,"Aechmea grazielae",0,1,2,3,0,0,0,3,3
+BROMELIACEAE,"Vriesea nubicola",1,2,0,3,0,0,1,2,3
+ORCHIDACEAE,"Phymatidium limae",1,0,0,1,0,0,1,0,1
+LORANTHACEAE,"Struthanthus involucratus",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Pabstiella calcarata",2,0,0,2,0,0,2,0,2
+ORCHIDACEAE,"Anathallis githaginea",1,0,0,1,0,0,1,0,1
+RUBIACEAE,"Hindsia republicana",1,0,0,1,0,0,1,0,1
+CEPHALOZIELLACEAE,"Cylindrocolea brasiliensis",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Neoregelia gavionensis",1,2,0,3,0,0,1,2,3
+ORCHIDACEAE,"Pelexia longibracteata",2,0,0,2,0,0,2,0,2
+BROMELIACEAE,"Vriesea punctulata",5,0,0,5,0,0,5,0,5
+SAPINDACEAE,"Serjania itatiaiensis",0,0,1,1,0,0,0,1,1
+BROMELIACEAE,"Neoregelia carinata",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Acianthera subrotundifolia",1,1,0,2,0,0,1,1,2
+VELLOZIACEAE,"Barbacenia squamata",1,0,3,4,0,0,1,3,4
+POACEAE,"Dichanthelium petropolitanum",1,0,0,1,0,0,1,0,1
+RUBIACEAE,"Galianthe polygonoides",4,4,0,6,2,0,3,5,8
+ORCHIDACEAE,"Baptistonia pulchella",3,3,0,3,3,0,3,3,6
+ORCHIDACEAE,"Pygmaeorchis brasiliensis",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Anathallis rubrolimbata",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Aechmea prava",0,0,1,1,0,0,0,1,1
+ORCHIDACEAE,"Octomeria fimbriata",2,0,0,2,0,0,2,0,2
+SPHAGNACEAE,"Sphagnum subhomophyllum",1,0,0,1,0,0,1,0,1
+ARACEAE,"Philodendron nadruzianum",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Octomeria itatiaiae",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Vriesea fidelensis",1,0,0,1,0,0,1,0,1
+FABACEAE,"Inga enterolobioides",1,0,0,1,0,0,1,0,1
+BROMELIACEAE,"Vriesea serrana",1,0,0,1,0,0,1,0,1
+PHYLLANTHACEAE,"Phyllanthus mocotensis",1,1,0,2,0,0,1,1,2
+BROMELIACEAE,"Vriesea gastiniana",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Brasilaelia fidelensis",2,0,0,2,0,0,2,0,2
+BROMELIACEAE,"Nidularium atalaiaense",2,2,0,4,0,0,2,2,4
+ASTERACEAE,"Austroeupatorium petrophilum",0,1,0,1,0,0,0,1,1
+EUPHORBIACEAE,"Caperonia velloziana",1,0,0,1,0,0,1,0,1
+MORACEAE,"Dorstenia fischeri",2,0,0,2,0,0,2,0,2
+SPHAGNACEAE,"Sphagnum luetzelburgii",1,0,0,1,0,0,1,0,1
+ASTERACEAE,"Critoniopsis magdalenae",2,0,0,2,0,0,2,0,2
+ORCHIDACEAE,"Cattleya dormaniana",4,3,0,4,3,0,3,4,7
+CUCURBITACEAE,"Gurania cogniauxiana",1,0,2,3,0,0,1,2,3
+GESNERIACEAE,"Nematanthus serpens",0,0,2,2,0,0,0,2,2
+EUPHORBIACEAE,"Euphorbia laevigata",2,0,0,1,1,0,1,1,2
+RUBIACEAE,"Coussarea biflora",2,0,0,0,2,0,0,2,2
+RUBIACEAE,"Coussarea lanceolata",0,2,0,0,2,0,0,2,2
+RUBIACEAE,"Coussarea procumbens",0,2,0,2,0,0,0,2,2
+RUTACEAE,"Conchocarpus grandiflorus",3,0,1,3,0,1,3,1,4
+ORCHIDACEAE,"Octomeria minuta",2,0,0,0,2,0,0,2,2
+LAURACEAE,"Ocotea leucophloea",3,0,0,3,0,0,3,0,3
+ORCHIDACEAE,"Epistephium portellianum",2,0,0,0,2,0,0,2,2
+ASTERACEAE,"Barrosoa viridiflora",0,1,0,0,1,0,0,1,1
+ORCHIDACEAE,"Habenaria gnoma",2,0,0,2,0,0,2,0,2
+ORCHIDACEAE,"Rodriguezia leucantha",2,2,0,0,4,0,0,4,4
+ASTERACEAE,"Stevia verticillata",2,5,0,6,1,0,2,5,7
+ORCHIDACEAE,"Encyclia viridiflora",1,1,0,0,2,0,0,2,2
+ASTERACEAE,"Ophryosporus organensis",2,1,0,3,0,0,2,1,3
+MYRTACEAE,"Eugenia violascens",1,0,0,1,0,0,1,0,1
+RUBIACEAE,"Faramea australis",1,1,0,2,0,0,1,1,2
+FABACEAE,"Inga arenicola",1,4,0,5,0,0,1,4,5
+APOCYNACEAE,"Forsteronia linearis",0,2,0,0,2,0,0,2,2
+ORCHIDACEAE,"Rodriguezia bifolia",3,2,0,0,5,0,0,5,5
+MARANTACEAE,"Thalia petersiana",2,0,0,0,2,0,0,2,2
+AQUIFOLIACEAE,"Ilex cognata",1,0,0,0,1,0,0,1,1
+MYRTACEAE,"Marlierea capitata",1,0,0,0,1,0,0,1,1
+MYRTACEAE,"Marlierea resupinata",1,0,0,1,0,0,1,0,1
+SAPINDACEAE,"Matayba leucodyctia",0,0,2,2,0,0,0,2,2
+ORCHIDACEAE,"Brasiliorchis heismanniana",1,1,0,2,0,0,1,1,2
+ORCHIDACEAE,"Brasiliorchis polyantha",1,1,0,0,2,0,0,2,2
+ORCHIDACEAE,"Maxillaria pterocarpa",1,1,0,2,0,0,1,1,2
+ORCHIDACEAE,"Miltonia flava",4,4,0,0,8,0,0,8,8
+ORCHIDACEAE,"Hapalorchis cymbirostris",6,0,0,4,2,0,4,2,6
+MYRTACEAE,"Marlierea guanabarina",2,0,0,2,0,0,2,0,2
+ORCHIDACEAE,"Octomeria aetheoantha",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Octomeria helvola",1,0,0,0,1,0,0,1,1
+MELASTOMATACEAE,"Leandra chaetocalyx",3,0,0,3,0,0,3,0,3
+ORCHIDACEAE,"Brasilidium dasytyle",1,1,0,2,0,0,1,1,2
+OCHNACEAE,"Ouratea polita",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Pabstiella crassicaulis",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Anathallis flammea",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Pleurothallis jacarepaguaensis",1,0,0,0,1,0,0,1,1
+ORCHIDACEAE,"Acianthera pavimentata",0,1,0,0,1,0,0,1,1
+RUBIACEAE,"Psychotria lindleyana",1,1,1,0,2,1,0,3,3
+ORCHIDACEAE,"Lankesterella pilosa",1,1,0,2,0,0,1,1,2
+EUPHORBIACEAE,"Tragia peltata",1,0,0,0,1,0,0,1,1
+ORCHIDACEAE,"Trigonidium turbinatum",1,1,0,0,2,0,0,2,2
+SELIGERIACEAE,"Brachydontium notorogenes",1,0,0,1,0,0,1,0,1
+ASTERACEAE,"Mikania paranahybensis",0,2,0,1,1,0,0,2,2
+MELASTOMATACEAE,"Tibouchina discolor",1,1,0,2,0,0,1,1,2
+COMMELINACEAE,"Dichorisandra odorata",3,0,0,3,0,0,3,0,3
+BEGONIACEAE,"Begonia arborescens",100,19,114,181,50,2,93,140,233
+ORCHIDACEAE,"Hoffmannseggella alvaroana",2,0,0,1,1,0,1,1,2
+ORCHIDACEAE,"Epidendrum goebelii",1,0,0,1,0,0,1,0,1
+COMMELINACEAE,"Dichorisandra nana",9,1,0,10,0,0,9,1,10
+ORCHIDACEAE,"Vanilla dungsii",1,0,0,1,0,0,1,0,1
+DIOSCOREACEAE,"Dioscorea pedalis",8,2,0,10,0,0,8,2,10
+Amaryllidaceae,"Griffinia intermedia",2,0,9,10,1,0,2,9,11
+BEGONIACEAE,"Begonia sylvestris",0,0,12,10,2,0,0,12,12
+DIOSCOREACEAE,"Dioscorea organensis",1,0,2,2,0,1,1,2,3
+LORANTHACEAE,"Struthanthus harlingianus",1,0,0,1,0,0,1,0,1
+BEGONIACEAE,"Begonia tomentosa",0,0,18,11,7,0,0,18,18
+ARACEAE,"Anthurium sakuraguianum",2,0,0,2,0,0,2,0,2
+ANEMIACEAE,"Anemia candidoi",1,1,0,2,0,0,1,1,2
+MELASTOMATACEAE,"Leandra alpestris",3,0,0,2,1,0,2,1,3
+Orchidaceae,"Laelia lobata",0,1,0,0,1,0,0,1,1
+RUBIACEAE,"Manettia lutescens",1,1,0,1,1,0,0,2,2
+Ditrichaceae,"Ditrichum itatiaiae",0,0,3,0,0,3,0,3,3
+BEGONIACEAE,"Begonia bonitoensis",16,1,0,17,0,0,16,1,17
+POLYPODIACEAE,"Moranopteris xbradei",1,0,0,1,0,0,1,0,1
+Acanthaceae,"Justicia meyeniana",21,10,3,32,2,0,20,14,34
+RUBIACEAE,"Posoqueria laurifolia",1,1,0,2,0,0,1,1,2
+COMMELINACEAE,"Dichorisandra picta",3,1,0,3,1,0,3,1,4
+MORACEAE,"Dorstenia brevipetiolata",1,0,0,1,0,0,1,0,1
+IRIDACEAE,"Neomarica itatiaica",2,0,0,2,0,0,2,0,2
+SYMPLOCACEAE,"Symplocos occulta",1,0,0,1,0,0,1,0,1
+DIOSCOREACEAE,"Dioscorea septemnervis",0,1,0,0,1,0,0,1,1
+RUBIACEAE,"Psychotria sutericalyx",1,0,0,0,1,0,0,1,1
+LOASACEAE,"Aosa uleana",8,2,0,7,3,0,6,4,10
+PIPERACEAE,"Piper rumicifolium",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Brasiliorchis moutinhoi",1,0,0,1,0,0,1,0,1
+Calophyllaceae,"Kielmeyera aureovinosa",7,1,0,8,0,0,7,1,8
+MELASTOMATACEAE,"Leandra altomacaensis",2,0,0,2,0,0,2,0,2
+CACTACEAE,"Rhipsalis flagelliformis",3,0,0,3,0,0,3,0,3
+RUBIACEAE,"Psychotria vestita",1,0,0,0,1,0,0,1,1
+Amaryllidaceae,"Worsleya procera",0,0,60,43,17,0,0,60,60
+MORACEAE,"Ficus nevesiae",17,9,6,30,2,0,17,15,32
+Orchidaceae,"Hadrolaelia lobata",2,3,0,0,5,0,0,5,5
+Bromeliaceae,"Neoregelia paratiensis",1,1,0,2,0,0,1,1,2
+BROMELIACEAE,"Neoregelia ilhana",1,0,0,1,0,0,1,0,1
+LORANTHACEAE,"Struthanthus dorothyi",1,0,0,1,0,0,1,0,1
+ARISTOLOCHIACEAE,"Aristolochia raja",18,0,0,18,0,0,18,0,18
+FABACEAE,"Mimosa bocainae",7,2,0,8,1,0,7,2,9
+Orchidaceae,"Cattleya lobata",9,1,0,9,1,0,9,1,10
+MONIMIACEAE,"Grazielanthus arkeocarpus",11,0,0,11,0,0,11,0,11
+CACTACEAE,"Rhipsalis triangularis",14,0,0,13,1,0,13,1,14
+ARACEAE,"Anthurium cronembergerae",4,0,0,3,1,0,3,1,4
+ACANTHACEAE,"Herpetacanthus delicatus",1,0,1,1,1,0,1,1,2
+BROMELIACEAE,"Pitcairnia flammea var. corcovadensis",0,0,5,5,0,0,0,5,5
+BROMELIACEAE,"Vriesea zildae",2,1,0,3,0,0,2,1,3
+PIPERACEAE,"Piper niteroiense",1,0,0,1,0,0,1,0,1
+EUPHORBIACEAE,"Croton nigricans",0,2,0,0,2,0,0,2,2
+EUPHORBIACEAE,"Acalypha subsana",1,0,0,0,1,0,0,1,1
+ASPLENIACEAE,"Asplenium cariocanum",7,0,0,7,0,0,7,0,7
+MALPIGHIACEAE,"Janusia diminuta",1,0,0,1,0,0,1,0,1
+MELASTOMATACEAE,"Leandra freyreissii",1,0,0,1,0,0,1,0,1
+ORCHIDACEAE,"Eurystyles rutkowskiana",1,0,0,0,1,0,0,1,1
+ORCHIDACEAE,"Pelexia luetzelburgii",1,0,2,2,1,0,0,3,3
+ORCHIDACEAE,"Pelexia mouraei",1,0,0,0,1,0,0,1,1
+ORCHIDACEAE,"Cyclopogon proboscideus",3,0,0,1,2,0,1,2,3
+RUBIACEAE,"Palicourea brasiliensis",0,2,1,0,2,1,0,3,3
+BROMELIACEAE,"Tillandsia thiekenii",0,0,2,0,2,0,0,2,2
+LOGANIACEAE,"Strychnos dantaensis",1,0,0,1,0,0,1,0,1
+ACANTHACEAE,"Herpetacanthus parvispica",1,0,0,1,0,0,1,0,1
 ARACEAE,"Philodendron luisae",1,0,0,1,0,0,1,0,1
-RUBIACEAE,"Faramea cordifolia Glaz.",0,1,0,0,1,0,0,1,1
-RUBIACEAE,"Palicourea brasiliensis Wawra",0,2,0,0,2,0,0,2,2
-MALPIGHIACEAE,"Bronwenia peckoltii W.R.Anderson & C.C.Davis",1,0,0,0,1,0,0,1,1
+RUBIACEAE,"Faramea cordifolia",0,1,0,0,1,0,0,1,1
