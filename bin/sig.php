@@ -3,7 +3,8 @@
 include 'base.php';
 
 #$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
-$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
+//$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
+$fields = ["occurrenceID","family", "familyAccepted", "acceptedNameUsage", "acceptedNameUsageWithoutAuthorship", "decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
 
 fputcsv($csv,$fields);
 
@@ -29,8 +30,17 @@ foreach($all->rows as $row) {
           $got=true;
           if($taxon->taxonomicStatus == 'accepted') {
             $doc->acceptedNameUsage = $taxon->scientificName;
+            $doc->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
+            $doc->familyAccepted = $taxon->family;
           } else if($taxon->taxonomicStatus == 'synonym') {
-            $doc->acceptedNameUsage = $taxon->acceptedNameUsage;
+                foreach($taxons as $taxon2){
+                    if (($taxon2->scientificNameWithoutAuthorship == $taxon->acceptedNameUsage)
+                        || ($taxon2->scientificName == $taxon->acceptedNameUsage)) {
+                        $doc->acceptedNameUsage = $taxon2->scientificName;
+                        $doc->familyAccepted = $taxon2->family;
+                        $doc->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
+                    }
+                }
           }
           break;
         }
@@ -70,25 +80,25 @@ foreach($all->rows as $row) {
                     || $doc->validation->georeference == null
                     || $doc->validation->georeference == 'valid'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->native)
                     || $doc->validation->native == null
                     || $doc->validation->native != 'non-native'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->presence)
                     || $doc->validation->presence == null
                     || $doc->validation->presence != 'absent'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->cultivated)
                     || $doc->validation->cultivated == null
                     || $doc->validation->cultivated != 'yes'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->duplicated)
                     || $doc->validation->duplicated == null
