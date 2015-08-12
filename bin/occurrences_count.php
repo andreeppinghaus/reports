@@ -48,6 +48,7 @@ foreach($all->rows as $row) {
     }
     if(!$got) {
       echo "Missing ".$doc->_id."\n";
+      continue;
     } else {
       echo "Got ".$doc->_id."\n";
 
