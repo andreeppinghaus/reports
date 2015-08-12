@@ -1,12 +1,14 @@
-family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total
-ERIOCAULACEAE,"Paepalanthus capixabensis",5,2,0,7,0,0,5,2,7
-Asteraceae,"Eremanthus ovatifolius",3,0,0,3,0,0,3,0,3
-ERIOCAULACEAE,"Paepalanthus echinoides",6,6,0,12,0,0,6,6,12
-BROMELIACEAE,"Encholirium fragae",0,0,1,1,0,0,0,1,1
-Asteraceae,"Eremanthus praetermissus",12,0,0,12,0,0,12,0,12
-BROMELIACEAE,"Encholirium kranzianum",0,0,2,2,0,0,0,2,2
-BROMELIACEAE,"Encholirium splendidum",1,0,6,7,0,0,1,6,7
-RUBIACEAE,"Bradea borrerioides",8,0,0,8,0,0,8,0,8
-ERIOCAULACEAE,"Paepalanthus velutiphyllus",0,0,6,6,0,0,0,6,6
-ERIOCAULACEAE,"Paepalanthus farinaceus",0,0,2,0,0,2,0,2,2
-ERIOCAULACEAE,"Paepalanthus argyrotrychus",0,0,2,0,0,2,0,2,2
+family,acceptedNameUsage,valid,invalid,not_validated,sig_ok,sig_nok,no_sig,used,unused,total,eoo,aoo
+ERIOCAULACEAE,"Paepalanthus capixabensis",5,2,0,7,0,0,5,2,7,,
+Asteraceae,"Eremanthus ovatifolius",3,0,0,3,0,0,3,0,3,,
+ERIOCAULACEAE,"Paepalanthus echinoides",6,6,0,12,0,0,6,6,12,,
+BROMELIACEAE,"Encholirium fragae",0,0,1,1,0,0,0,1,1,,
+Asteraceae,"Eremanthus praetermissus",12,0,0,12,0,0,12,0,12,,
+BROMELIACEAE,"Encholirium kranzianum",0,0,2,2,0,0,0,2,2,,
+Lentibulariaceae,"Genlisea nebulicola",0,0,2,0,0,2,0,2,2,,
+BROMELIACEAE,"Encholirium splendidum",1,0,6,7,0,0,1,6,7,,
+MAGNOLIACEAE,"Magnolia paranaensis",1,0,1,1,0,1,1,1,2,,
+RUBIACEAE,"Bradea borrerioides",8,0,0,8,0,0,8,0,8,,
+ERIOCAULACEAE,"Paepalanthus velutiphyllus",6,0,0,6,0,0,6,0,6,,
+ERIOCAULACEAE,"Paepalanthus farinaceus",2,0,0,2,0,0,2,0,2,,
+ERIOCAULACEAE,"Paepalanthus argyrotrychus",2,0,0,2,0,0,2,0,2,,

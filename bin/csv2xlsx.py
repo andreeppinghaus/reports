@@ -7,7 +7,7 @@ for fol in os.listdir("./data/"):
 
         book = xlwt.Workbook(encoding="UTF-8")
         for fil in os.listdir(csv_folder):
-            if fil.endswith(".csv") and fil != "occurrences.csv":
+            if fil.endswith(".csv") and fil != "occurrences.csv" and fil != "occurrences_misses.csv":
                 print fil
                 sheet = book.add_sheet(fil[:-4])
                 with open(csv_folder + fil) as filname:
