@@ -30,7 +30,13 @@ $all->rows = array();
 $af = fopen("all.json",'r');
 fgets($af);
 while($l = fgets($af)){
-  $all->rows[] = json_decode(substr($l,0,-3));
+  $obj = json_decode(substr($l,0,-3));
+  $obj2 = json_decode(substr($l,0,-2));//last obj
+  if(is_object($obj)) {
+    $all->rows[]=$obj ;
+  } else if(is_object($obj2)) {
+    $all->rows[]=$obj2 ;
+  }
 }
 #$all = json_decode(file_get_contents("all.json"));
 $file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
