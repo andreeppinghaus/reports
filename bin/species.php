@@ -5,12 +5,15 @@ include 'base.php';
 $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
 fputcsv($csv,$fields);
 
+$got=[];
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='taxon') {
         if($doc->taxonomicStatus == 'accepted') {
+            if(isset($got[strtolower( $doc->scientificNameWithoutAuthorship)] )) continue;
+              $got[strtoloweR($doc->scientificNameWithoutAuthorship)]=true;
             $data=[
-               $doc->family
+               strtoupper($doc->family)
               ,$doc->scientificNameWithoutAuthorship
               ,$doc->scientificNameAuthorship
             ];
