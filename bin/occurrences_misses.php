@@ -20,8 +20,10 @@ foreach($all->rows as $row) {
 foreach($taxons as $taxon) {
   if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
-      if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage) {
-        $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
+      if($taxon2->taxonomicStatus == 'accepted') {
+        if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
+          $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
+        }
       }
     }
   }

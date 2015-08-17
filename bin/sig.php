@@ -34,12 +34,14 @@ foreach($all->rows as $row) {
             $doc->familyAccepted = $taxon->family;
           } else if($taxon->taxonomicStatus == 'synonym') {
                 foreach($taxons as $taxon2){
+                  if($taxon2->taxonomicStatus=='accepted') {
                     if (($taxon2->scientificNameWithoutAuthorship == $taxon->acceptedNameUsage)
                         || ($taxon2->scientificName == $taxon->acceptedNameUsage)) {
                         $doc->acceptedNameUsage = $taxon2->scientificName;
                         $doc->familyAccepted = $taxon2->family;
                         $doc->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
                     }
+                  }
                 }
           }
           break;

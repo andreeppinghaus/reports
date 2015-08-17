@@ -2,7 +2,7 @@
 
 include 'base.php';
 
-$fields = ["family","acceptedNameUsage","valid","invalid","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
+$fields = ["family","acceptedNameUsage","valid","invalid","validated","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
 
 fputcsv($csv,$fields);
 
@@ -26,6 +26,7 @@ foreach($taxons as $taxon) {
         $data[$taxon->scientificNameWithoutAuthorship]->total = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->valid = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->invalid = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->validated = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->not_validated = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->sig_ok = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->sig_nok = 0;
@@ -35,10 +36,12 @@ foreach($taxons as $taxon) {
         $data[$taxon->scientificNameWithoutAuthorship]->eoo = "n/a";
         $data[$taxon->scientificNameWithoutAuthorship]->aoo = "n/a";
       }
-  }else if($taxon->taxonomicStatus == 'synonym') {
+  } else if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
-      if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
-        $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
+      if($taxon2->taxonomicStatus=='accepted') {
+        if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
+          $taxon->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
+        }
       }
     }
   }
@@ -52,7 +55,7 @@ foreach($all->rows as $row) {
       $m1 = "/.*".$taxon->scientificNameWithoutAuthorship.".*/";
       if(  (isset($doc->scientificName) && preg_match($m1,$doc->scientificName) )
         || (isset($doc->scientificNameWithoutAuthorship) && preg_match($m1,$doc->scientificNameWithoutAuthorship) )
-        || (isset($doc->acceptedNameUsage) && preg_match($m1,$doc->acceptedNameUsage) )) {
+        || (isset($doc->acceptedNameUsage) && preg_match($m1,$doc->acceptedNameUsage))) {
         $got=true;
         if($taxon->taxonomicStatus == 'accepted') {
           $doc->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
@@ -70,6 +73,10 @@ foreach($all->rows as $row) {
       echo "Got ".$doc->_id."\n";
 
       $d = $data[$doc->acceptedNameUsage];
+      if(!isset($d)) {
+        var_dump($doc);
+        exit;
+      }
       $d->total++;
 
       if(isset($doc->georeferenceVerificationStatus)) {
@@ -146,8 +153,10 @@ foreach($all->rows as $row) {
 
       if($doc->valid == 'true') {
         $d->valid++;
+        $d->validated++;
       } else if($doc->valid == 'false') {
         $d->invalid++;
+        $d->validated++;
       } else {
         $d->not_validated++;
       }
@@ -166,7 +175,7 @@ $i=0;
 foreach($data as $d) {
   $i++;
   if($i==100) {
-    sleep ( 2 );
+    //sleep(2);
     $i=0;
   }
 
