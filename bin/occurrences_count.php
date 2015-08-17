@@ -16,8 +16,26 @@ foreach($all->rows as $row) {
     }
 }
 
+$data  = [];
 foreach($taxons as $taxon) {
-  if($taxon->taxonomicStatus == 'synonym') {
+  if($taxon->taxonomicStatus == 'accepted') {
+      if(!isset($data[$taxon->scientificNameWithoutAuthorship])) {
+        $data[$taxon->scientificNameWithoutAuthorship]= new StdClass;
+        $data[$taxon->scientificNameWithoutAuthorship]->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
+        $data[$taxon->scientificNameWithoutAuthorship]->family = $taxon->family;
+        $data[$taxon->scientificNameWithoutAuthorship]->total = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->valid = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->invalid = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->not_validated = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->sig_ok = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->sig_nok = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->no_sig = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->used = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->unused = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->eoo = "n/a";
+        $data[$taxon->scientificNameWithoutAuthorship]->aoo = "n/a";
+      }
+  }else if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
       if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
         $taxon->acceptedNameUsageWithoutAuthorship = $taxon->scientificNameWithoutAuthorship;
@@ -26,7 +44,6 @@ foreach($taxons as $taxon) {
   }
 }
 
-$data  = [];
 foreach($all->rows as $row) {
   $doc = $row->doc;
   if($doc->metadata->type=='occurrence') {
@@ -51,21 +68,6 @@ foreach($all->rows as $row) {
       continue;
     } else {
       echo "Got ".$doc->_id."\n";
-
-      if(!isset($data[$doc->acceptedNameUsage])) {
-        $data[$doc->acceptedNameUsage]= new StdClass;
-        $data[$doc->acceptedNameUsage]->acceptedNameUsage = $doc->acceptedNameUsage;
-        $data[$doc->acceptedNameUsage]->family = $doc->family;
-        $data[$doc->acceptedNameUsage]->total = 0;
-        $data[$doc->acceptedNameUsage]->valid = 0;
-        $data[$doc->acceptedNameUsage]->invalid = 0;
-        $data[$doc->acceptedNameUsage]->not_validated = 0;
-        $data[$doc->acceptedNameUsage]->sig_ok = 0;
-        $data[$doc->acceptedNameUsage]->sig_nok = 0;
-        $data[$doc->acceptedNameUsage]->no_sig = 0;
-        $data[$doc->acceptedNameUsage]->used = 0;
-        $data[$doc->acceptedNameUsage]->unused = 0;
-      }
 
       $d = $data[$doc->acceptedNameUsage];
       $d->total++;
@@ -169,7 +171,7 @@ foreach($data as $d) {
   }
 
   $url = 'http://jb049/occurrences/'.$base.'/specie/'.urlencode($d->acceptedNameUsage).'?json=true';
-  $sess='1b71063e4887a009fd6742376c6f92a52036817eb443ac8479750dac81233d42';
+  $sess='af2b646a99f0347f511827ceb414e3cd10c45cd6592284987976f1fb875527c4';
   shell_exec("curl '".$url."' -L -H 'Cookie: rack.session=".$sess."' > tmp_occs.json");
   $resp = file_get_contents('tmp_occs.json');
   $json = json_decode($resp);
