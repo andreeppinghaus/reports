@@ -39,7 +39,7 @@ foreach($taxons as $taxon) {
   } else if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
       if($taxon2->taxonomicStatus=='accepted') {
-        if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) { 
+        if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) {
           $taxon->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
         }
       }
@@ -97,58 +97,62 @@ foreach($all->rows as $row) {
             if($doc->validation->status == "valid") {
               $doc->valid="true";
             } else if($doc->validation->status == "invalid") {
-              $doc->valid="false";
+                $doc->valid="false";
             } else {
-              $doc->valid="";
+                $doc->valid="";
             }
           } else {
-            if(
-              (
-                   !isset($doc->validation->taxonomy)
-                || $doc->validation->taxonomy == null
-                || $doc->validation->taxonomy == 'valid'
-              )
-              &&
-              (
-                   !isset($doc->validation->georeference)
-                || $doc->validation->georeference == null
-                || $doc->validation->georeference == 'valid'
-              )
-              && 
-              (
-                   !isset($doc->validation->native)
-                || $doc->validation->native == null
-                || $doc->validation->native != 'non-native'
-              )
-              && 
-              (
-                   !isset($doc->validation->presence)
-                || $doc->validation->presence == null
-                || $doc->validation->presence != 'absent'
-              )
-              && 
-              (
-                   !isset($doc->validation->cultivated)
-                || $doc->validation->cultivated == null
-                || $doc->validation->cultivated != 'yes'
-              )
-              && 
-              (
-                   !isset($doc->validation->duplicated)
-                || $doc->validation->duplicated == null
-                || $doc->validation->duplicated != 'yes'
-              )
-            ) {
-              $doc->valid="true";
-            } else {
-              $doc->valid="false";
-            }
+              if (array_key_exists("taxonomy", $doc->validation)){
+                  if(
+                      (
+                          //!isset($doc->validation->taxonomy)
+                          //||
+                          $doc->validation->taxonomy == null
+                          || $doc->validation->taxonomy == 'valid'
+                      )
+                      &&
+                      (
+                          //!isset($doc->validation->georeference)
+                          //||
+                          $doc->validation->georeference == null
+                          || $doc->validation->georeference == 'valid'
+                      )
+                      &&
+                      (
+                          !isset($doc->validation->native)
+                          //|| $doc->validation->native == null
+                          || $doc->validation->native != 'non-native'
+                      )
+                      &&
+                      (
+                          !isset($doc->validation->presence)
+                          //|| $doc->validation->presence == null
+                          || $doc->validation->presence != 'absent'
+                      )
+                      &&
+                      (
+                          !isset($doc->validation->cultivated)
+                          //|| $doc->validation->cultivated == null
+                          || $doc->validation->cultivated != 'yes'
+                      )
+                      &&
+                      (
+                          !isset($doc->validation->duplicated)
+                          //|| $doc->validation->duplicated == null
+                          || $doc->validation->duplicated != 'yes'
+                      )
+                  ) {
+                      $doc->valid="true";
+                  } else {
+                      $doc->valid="false";
+                  }
+              } else { $doc->valid = ""; }
           }
         } else {
-          $doc->valid = "";
+            $doc->valid = "";
         }
       } else {
-        $doc->valid = "";
+          $doc->valid = "";
       }
 
       if($doc->valid == 'true') {
