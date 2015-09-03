@@ -1,7 +1,7 @@
 FROM cncflora/apache
 
 RUN apt-get update && \
-    apt-get install supervisor python-xlwt -y && \
+    apt-get install supervisor python-xlwt zip -y && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ADD default.conf /etc/apache2/sites-available/000-default.conf
