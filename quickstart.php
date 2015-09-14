@@ -67,6 +67,26 @@ function expandHomeDirectory($path) {
   }
   return str_replace('~', realpath($homeDirectory), $path);
 }
+function retrieveAllFiles($service, $parameters) {
+  $result = array();
+  $pageToken = NULL;
+
+  do {
+    try {
+      if ($pageToken) {
+        $parameters['pageToken'] = $pageToken;
+      }
+      $files = $service->files->listFiles($parameters);
+
+      $result = array_merge($result, $files->getItems());
+      $pageToken = $files->getNextPageToken();
+    } catch (Exception $e) {
+      print "An error occurred: " . $e->getMessage();
+      $pageToken = NULL;
+    }
+  } while ($pageToken);
+  return $result;
+}
 
 // Get the API client and construct the service object.
 $client = getClient();
@@ -81,19 +101,35 @@ $results = $service->files->listFiles($optParams);
 if (count($results->getItems()) == 0) {
   print "No files found.\n";
 } else {
-  print "Files:\n";
-  foreach ($results->getItems() as $file) {
-    printf("%s (%s)\n", $file->getTitle(), $file->getId());
-  }
+  //print "Files:\n";
+  //foreach ($results->getItems() as $file) {
+    //printf("%s (%s)\n", $file->getTitle(), $file->getId());
+  //}
 /************************************************
   If we're signed in then lets try to upload our
   file.
  ************************************************/
 if ($client->getAccessToken()) {
-$file = new Google_Service_Drive_DriveFile();
-$file->setTitle( 'Hello world!' );
-$file->setMimeType( 'application/vnd.google-apps.spreadsheet' );
+//$file = new Google_Service_Drive_DriveFile();
+//$file->setTitle( 'Hello world!' );
+//$file->setMimeType( 'application/vnd.google-apps.spreadsheet' );
 //$file = $service->files->insert( $file );
+
+//$newProperty = new Google_Service_Drive_Property();
+//$key = 'cncflora_id';
+//$value = '12345';
+//$visibility = 'PUBLIC';
+  //$newProperty->setKey($key);
+  //$newProperty->setValue($value);
+  //$newProperty->setVisibility($visibility);
+  //try {
+      //return $service->properties->insert($file->id, $newProperty);
+  //} catch (Exception $e) {
+    //print "An error occurred: " . $e->getMessage();
+  //}
+  $parameters = array('q' => "properties has { key='cncflora_id' and value='12345' and visibility='PUBLIC' }");
+  $result = retrieveAllFiles($service,$parameters);
+  //print_r($result);
 
 $all_token = $client->getAccessToken();
 $access_token = json_decode($all_token);
@@ -101,10 +137,24 @@ $serviceRequest = new DefaultServiceRequest($access_token->access_token, $access
 ServiceRequestFactory::setInstance($serviceRequest);
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
+$spreadsheet = $spreadsheetFeed->getById($result[0]->id);
+$spreadsheet->addWorksheet('Temp worsheet', 50, 20);
+$worksheetFeed = $spreadsheet->getWorksheets();
+$worksheet = $worksheetFeed->getByTitle('Pagina1');
+$worksheet->delete();
+$spreadsheet->addWorksheet('Pagina1', 50, 20);
+$worksheet = $worksheetFeed->getByTitle('Temp worsheet');
+$worksheet->delete();
+$worksheetFeed = $spreadsheet->getWorksheets();
+$worksheet = $worksheetFeed->getByTitle('Pagina1');
+$cellFeed = $worksheet->getCellFeed();
 
-foreach ($spreadsheetFeed as $entry) {
-    print_r($entry->getTitle());
-}
+$cellFeed->editCell(1,1, "name");
+$cellFeed->editCell(1,2, "age");
+
+$listFeed = $worksheet->getListFeed();
+$row = array('name'=>'John', 'age'=>26);
+$listFeed->insert($row);
 }
 }
 

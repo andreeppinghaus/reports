@@ -1,15 +1,29 @@
-family,scientificNameWithoutAuthorship,scientificNameAuthorship
-Isoetaceae,"Isoetes luetzelburgii",U.Weber
-Fabaceae,"Mimosa bracteolaris",Benth.
-Erythroxylaceae,"Erythroxylum substriatum",O.E.Schulz
-Scrophulariaceae,"Buddleja speciosissima",Taub.
-Acanthaceae,"Aphelandra aurantiaca","(Scheidw.) Lindl."
-Ephedraceae,"Ephedra tweediana",C.A.Mey.
-Acanthaceae,"Aphelandra espirito-santensis","Profice & Wassh."
-Acanthaceae,"Aphelandra longiflora","(Lindl.) Profice"
+family,name,nameAuthorship
+ISOETACEAE,"Isoetes luetzelburgii",U.Weber
+FABACEAE,"Mimosa bracteolaris",Benth.
+ERYTHROXYLACEAE,"Erythroxylum substriatum",O.E.Schulz
+SCROPHULARIACEAE,"Buddleja speciosissima",Taub.
+GESNERIACEAE,"Besleria macahensis",Brade
+ACANTHACEAE,"Aphelandra aurantiaca","(Scheidw.) Lindl."
+POACEAE,"Paspalum biaristatum","Filg. & Davidse"
+EPHEDRACEAE,"Ephedra tweediana",C.A.Mey.
+ACANTHACEAE,"Aphelandra espirito-santensis","Profice & Wassh."
+ACANTHACEAE,"Aphelandra longiflora","(Lindl.) Profice"
+AMARYLLIDACEAE,"Griffinia intermedia",Lindl.
+POACEAE,"Paspalum longiaristatum","Davidse & Filg."
+ANEMIACEAE,"Anemia candidoi",Brade
+BROMELIACEAE,"Vriesea atrococcinea",Rauh
+LAURACEAE,"Ocotea sulcata",Vattimo-Gil
+MYRTACEAE,"Eugenia cambucae",Mattos
 MYRTACEAE,"Eugenia chlorocarpa",O.Berg
 MYRTACEAE,"Eugenia martiana","(O.Berg) Mattos"
-Lamiaceae,"Hesperozygis ringens","(Benth.) Epling"
+ORCHIDACEAE,"Cyclopogon proboscideus",Szlach.
+ORCHIDACEAE,"Eurystyles lobata","Chiron & V.P.Castro"
+ORCHIDACEAE,"Hapalorchis cymbirostris",Szlach.
+ORCHIDACEAE,"Sauroglossum organense",Szlach.
+POLYPODIACEAE,"Moranopteris xbradei","(Labiak & F.B.Matos) R.Y. Hirai & J. Prado"
+RUBIACEAE,"Coussarea friburgensis",M.Gomes
+SAPINDACEAE,"Paullinia marginata",Casar.
 LAMIACEAE,"Hesperozygis ringens","(Benth.) Epling"
-LAMIACEAE,"Hesperozygis ringens","(Benth.) Epling"
-Poaceae,"Paspalum niquelandiae",Filg.
+MAGNOLIACEAE,"Magnolia paranaensis","A. Vázquez"
+POACEAE,"Paspalum niquelandiae",Filg.
