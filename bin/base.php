@@ -41,7 +41,7 @@ while($l = fgets($af)){
 #$all = json_decode(file_get_contents("all.json"));
 $file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
 $csv  = fopen($file,'w');
-echo "Runing $base",PHP_EOL;
+echo "Running $base",PHP_EOL;
 
 register_shutdown_function(function() use ($pwd,$base,$script,$csv) {
   fclose($csv);

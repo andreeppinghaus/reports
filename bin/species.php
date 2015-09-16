@@ -3,8 +3,7 @@
 include 'base.php';
 include 'utils/gdrive.php';
 
-//$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
-$fields = ["family", "name","nameAuthorship"];
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
 fputcsv($csv,$fields);
 $data_gdrive = array();
 
@@ -19,12 +18,11 @@ foreach($all->rows as $row) {
                strtoupper($doc->family)
               ,$doc->scientificNameWithoutAuthorship
               ,$doc->scientificNameAuthorship
-            ];
+          ];
+            //All keys have to be the header name but lowercase
             $row_gdrive = array("family" => $doc->family,
-                                //"scientificNameWithoutAuthorship" => $doc->scientificNameWithoutAuthorship,
-                                "name" => $doc->scientificNameWithoutAuthorship,
-                                //"scientificNameAuthorship" => $doc->scientificNameAuthorship);
-                                "nameAuthorship" => $doc->scientificNameAuthorship);
+                                "scientificnamewithoutauthorship" => $doc->scientificNameWithoutAuthorship,
+                                "scientificnameauthorship" => $doc->scientificNameAuthorship);
             fputcsv($csv,$data);
             $data_gdrive[] = $row_gdrive;
         }
@@ -32,5 +30,6 @@ foreach($all->rows as $row) {
 }
 
 $file_id = "species_$base";
-update_gdrive($file_id, "Species", $fields, $data_gdrive);
+$folder_id = get_folder_id($base);
+update_gdrive($file_id, "Species", $fields, $data_gdrive, $folder_id);
 ?>
