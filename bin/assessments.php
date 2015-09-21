@@ -50,7 +50,22 @@ foreach($all->rows as $row) {
 foreach($taxons as $taxon) {
   $data=[
     $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"]
-  ];
+];
+  //All keys have to be the header name but lowercase
+  $row_gdrive = array(
+      "family" => $taxon["family"],
+      "scientificnamewithoutauthorship" => $taxon["name"],
+      "scientificnameauthorship" => $taxon["author"],
+      "assessment" => $taxon["assessment"],
+      "category" => $taxon["category"],
+      "criteria" => $taxon["criteria"],
+      "assessor" => $taxon["assessor"],
+      "evaluator" => $taxon["evaluator"],
+      "rationale" => $taxon["rationale"]);
   fputcsv($csv,$data);
+  $data_gdrive[] = $row_gdrive;
 }
 
+$file_id = "assessments_$base";
+$folder_id = get_folder_id($base);
+update_gdrive($file_id, "Assessments", $fields, $data_gdrive, $folder_id);
