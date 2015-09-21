@@ -11,6 +11,7 @@ foreach($all->rows as $row) {
     if(isset($d->actions) && is_array($d->actions)) {
       foreach($d->actions as $t) {
         if(isset($t->action)) {
+            print_r($t->action);
           $data=[
             $d->taxon->family
             ,$d->taxon->scientificNameWithoutAuthorship
