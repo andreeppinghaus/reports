@@ -26,7 +26,7 @@ function get_folder_id($base) {
     return $gdrive_id;
 }
 
-function update_gdrive($file_id, $title, $headers, $data, $folder_id) {
+function update_gdrive($file_id, $title, $folder_id, $filename) {
     // Get the API client and construct the service object.
     $client = getClient();
     $service = new Google_Service_Drive($client);
@@ -47,8 +47,9 @@ function update_gdrive($file_id, $title, $headers, $data, $folder_id) {
                 delete_spreadsheet($service, $gdrive_id);
             }
         }
-        $gdrive_id = create_spreadsheet($service, $title, $file_id, $folder_id);
-        create_worksheet($client, $gdrive_id, $headers, $data);
+        $gdrive_id = create_spreadsheet($client, $service, $title, $file_id,
+                                        $filename, $folder_id);
+        //create_worksheet($client, $gdrive_id, $headers, $data);
     }
 }
 ?>

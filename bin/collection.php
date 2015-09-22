@@ -72,25 +72,25 @@ foreach($all->rows as $row) {
                     || $doc->validation->georeference == null
                     || $doc->validation->georeference == 'valid'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->native)
                     || $doc->validation->native == null
                     || $doc->validation->native != 'non-native'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->presence)
                     || $doc->validation->presence == null
                     || $doc->validation->presence != 'absent'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->cultivated)
                     || $doc->validation->cultivated == null
                     || $doc->validation->cultivated != 'yes'
                   )
-                  && 
+                  &&
                   (
                        !isset($doc->validation->duplicated)
                     || $doc->validation->duplicated == null
@@ -137,7 +137,7 @@ foreach($all->rows as $row) {
         $data = [];
         foreach($fields as $f) {
           if(isset($doc->$f)) {
-            $data[] = $doc->$f;
+              $data[] = $doc->$f;
           } else {
             $data[] = "";
           }
@@ -146,4 +146,3 @@ foreach($all->rows as $row) {
       }
     }
 }
-

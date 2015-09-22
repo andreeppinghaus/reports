@@ -6,6 +6,7 @@ $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"
 fputcsv($csv,$fields);
 
 $taxons = [];
+
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='taxon') {
@@ -28,44 +29,30 @@ foreach($all->rows as $row) {
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='assessment') {
-        $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment'] = $doc->metadata->status;
-        if(isset($doc->category)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
-        }
-        if(isset($doc->criteria)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
-        }
-        if(isset($doc->assessor)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessor'] = $doc->assessor;
-        }
-        if(isset($doc->evaluator)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['evaluator'] = $doc->evaluator;
-        }
-        if(isset($doc->rationale)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = $doc->rationale;
+        //Make sure specie still exists in the "recorte"
+        if (array_key_exists($doc->taxon->scientificNameWithoutAuthorship, $taxons)){
+            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment'] = $doc->metadata->status;
+            if(isset($doc->category)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
+            }
+            if(isset($doc->criteria)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
+            }
+            if(isset($doc->assessor)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessor'] = $doc->assessor;
+            }
+            if(isset($doc->evaluator)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['evaluator'] = $doc->evaluator;
+            }
+            if(isset($doc->rationale)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = $doc->rationale;
+            }
         }
     }
 }
-
 foreach($taxons as $taxon) {
   $data=[
     $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"]
 ];
-  //All keys have to be the header name but lowercase
-  $row_gdrive = array(
-      "family" => $taxon["family"],
-      "scientificnamewithoutauthorship" => $taxon["name"],
-      "scientificnameauthorship" => $taxon["author"],
-      "assessment" => $taxon["assessment"],
-      "category" => $taxon["category"],
-      "criteria" => $taxon["criteria"],
-      "assessor" => $taxon["assessor"],
-      "evaluator" => $taxon["evaluator"],
-      "rationale" => $taxon["rationale"]);
   fputcsv($csv,$data);
-  $data_gdrive[] = $row_gdrive;
 }
-
-$file_id = "assessments_$base";
-$folder_id = get_folder_id($base);
-update_gdrive($file_id, "Assessments", $fields, $data_gdrive, $folder_id);

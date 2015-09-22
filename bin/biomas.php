@@ -16,4 +16,3 @@ foreach($all->rows as $row) {
     }
   }
 }
-

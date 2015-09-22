@@ -1,7 +1,7 @@
 <?php
 require '../../vendor/autoload.php';
-use Google\Spreadsheet\DefaultServiceRequest;
-use Google\Spreadsheet\ServiceRequestFactory;
+//use Google\Spreadsheet\DefaultServiceRequest;
+//use Google\Spreadsheet\ServiceRequestFactory;
 
 /**
  * Expands the home directory alias '~' to the full path.
@@ -50,25 +50,64 @@ function create_folder($service, $base) {
     $newProperty->setValue($value);
     $newProperty->setVisibility($visibility);
     try {
-        $service->properties->insert($file->id, $newProperty);
+        $service->properties->insert($file->getId(), $newProperty);
     } catch (Exception $e) {
         print "An error occurred: " . $e->getMessage();
     }
 
-    return $file->id;
+    $permission = new Google_Service_Drive_Permission();
+    $permission->setValue('cncflora.net');
+    $permission->setType('domain');
+    $permission->setRole('reader');
+
+    $service->permissions->insert(
+        $file->getId(), $permission);
+
+    return $file->getId();
 }
 
-function create_spreadsheet($service, $title, $file_id, $parent_id) {
+function create_spreadsheet($client, $service, $title, $file_id, $filename,
+                            $parent_id) {
     $file = new Google_Service_Drive_DriveFile();
     $file->setTitle($title);
-    $file->setMimeType( 'application/vnd.google-apps.spreadsheet' );
+    $client->setDefer(true);
 
     // To set parent folder
     $parent = new Google_Service_Drive_ParentReference();
     $parent->setId($parent_id);
     $file->setParents(array($parent));
 
-    $file = $service->files->insert( $file );
+    $request = $service->files->insert( $file, array("convert"=> true));
+
+    $chunkSizeBytes = 1 * 1024 * 1024;
+    // Create a media file upload to represent our upload process.
+    $media = new Google_Http_MediaFileUpload(
+        $client,
+        $request,
+        'text/csv',
+        null,
+        true,
+        $chunkSizeBytes
+    );
+    $media->setFileSize(filesize($filename));
+
+    // Upload the various chunks. $status will be false until the process is
+    // complete.
+    $status = false;
+    $handle = fopen($filename, "rb");
+    while (!$status && !feof($handle)) {
+        $chunk = fread($handle, $chunkSizeBytes);
+        $status = $media->nextChunk($chunk);
+    }
+
+    // The final value of $status will be the data from the API for the object
+    // that has been uploaded.
+    $result = false;
+    if ($status != false) {
+        $result = $status;
+    }
+
+    fclose($handle);
 
     //Add property
     $newProperty = new Google_Service_Drive_Property();
@@ -79,13 +118,13 @@ function create_spreadsheet($service, $title, $file_id, $parent_id) {
     $newProperty->setValue($value);
     $newProperty->setVisibility($visibility);
     try {
-        $service->properties->insert($file->id, $newProperty);
+        $service->properties->insert($result->getId(), $newProperty);
     } catch (Exception $e) {
         print "An error occurred: " . $e->getMessage();
     }
 
 
-    return $file->id;
+    return $result->getId();
 }
 
 function delete_spreadsheet($service, $gdrive_id) {
@@ -97,29 +136,29 @@ function delete_spreadsheet($service, $gdrive_id) {
     }
 }
 
-function create_worksheet($client, $gdrive_id, $headers, $data) {
-    $all_token = $client->getAccessToken();
-    $access_token = json_decode($all_token);
-    $serviceRequest = new DefaultServiceRequest($access_token->access_token, $access_token->token_type);
-    ServiceRequestFactory::setInstance($serviceRequest);
-    $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
-    $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-    $spreadsheet = $spreadsheetFeed->getById($gdrive_id);
-    $worksheetFeed = $spreadsheet->getWorksheets();
-    $worksheet = $worksheetFeed[0];
+//function create_worksheet($client, $gdrive_id, $headers, $data) {
+    //$all_token = $client->getAccessToken();
+    //$access_token = json_decode($all_token);
+    //$serviceRequest = new DefaultServiceRequest($access_token->access_token, $access_token->token_type);
+    //ServiceRequestFactory::setInstance($serviceRequest);
+    //$spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
+    //$spreadsheetFeed = $spreadsheetService->getSpreadsheets();
+    //$spreadsheet = $spreadsheetFeed->getById($gdrive_id);
+    //$worksheetFeed = $spreadsheet->getWorksheets();
+    //$worksheet = $worksheetFeed[0];
 
-    $cellFeed = $worksheet->getCellFeed();
+    //$cellFeed = $worksheet->getCellFeed();
 
-    $cell_index = 1;
-    foreach ($headers as $cell_header) {
-        $cellFeed->editCell(1, $cell_index, $cell_header);
-        $cell_index += 1;
-    }
+    //$cell_index = 1;
+    //foreach ($headers as $cell_header) {
+        //$cellFeed->editCell(1, $cell_index, $cell_header);
+        //$cell_index += 1;
+    //}
 
-    $listFeed = $worksheet->getListFeed();
-    foreach($data as $row) {
-        $listFeed->insert($row);
+    //$listFeed = $worksheet->getListFeed();
+    //foreach($data as $row) {
+        //$listFeed->insert($row);
 
-    }
-}
+    //}
+//}
 ?>
