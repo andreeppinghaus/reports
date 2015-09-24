@@ -13,14 +13,15 @@ define('SCOPES', implode(' ', array(
  * @return Google_Client the authorized client object
  */
 function getClient() {
+  $env = getenv("PHP_ENV");
   $client = new Google_Client();
   $client->setApplicationName(APPLICATION_NAME);
   $client->setScopes(SCOPES);
-  $client->setAuthConfigFile(CLIENT_SECRET_PATH);
+  $client->setAuthConfigFile(CLIENT_SECRET_PATH."client_secret_$env.json");
   $client->setAccessType('offline');
 
   // Load previously authorized credentials from a file.
-  $credentialsPath = expandHomeDirectory(CREDENTIALS_PATH."/cncflora.json");
+  $credentialsPath = expandHomeDirectory(CREDENTIALS_PATH."/cncflora_$env.json");
   if (file_exists($credentialsPath)) {
     $accessToken = file_get_contents($credentialsPath);
   } else {

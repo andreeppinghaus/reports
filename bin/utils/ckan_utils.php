@@ -3,7 +3,8 @@ require '../../vendor/autoload.php';
 
 function purge_datasets()
 {
-    $handle = fopen(CREDENTIALS_PATH."/cncflora_admin.txt", "r");
+    $env = getenv("PHP_ENV");
+    $handle = fopen(CREDENTIALS_PATH."/cncflora_admin_$env.txt", "r");
     $token = fgets($handle);
     $token = str_replace(array("\n", "\t", "\r"), '', $token);
     $url = CKAN_URL."/ckan-admin/trash";

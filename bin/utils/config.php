@@ -19,6 +19,7 @@ class Utils {
         if($env == null) {
             $env = 'development';
         }
+        putenv("PHP_ENV=$env");
 
         $array = $raw[$env];
 
