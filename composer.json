@@ -1,6 +1,12 @@
 {
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/GSA/ckan-php-client.git"
+        }
+    ],
     "require": {
         "google/apiclient": "1.0.*@beta",
-         "asimlqt/php-google-spreadsheet-client": "2.3.*"
+        "gsa/ckan-php-client": "0.*"
     }
 }
