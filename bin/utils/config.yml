@@ -1,0 +1,20 @@
+development:
+  org_id: 'c4e9e8d4-0ec4-4a92-99f2-ac0898a88cf6'
+  group_id: 'dafd26d2-3744-4023-b300-7f121b6e6192'
+  ckan_url: 'http://localhost:5000'
+  ckan_api: '/api/3/'
+  credentials_path: '../../.credentials/'
+  author: "CNCFlora"
+  author_email: "cncflora@cncflora.net"
+  license_id: "cc-by"
+  client_secret_path: "../../client_secret.json"
+production:
+  org_id: 'ddfceda3-c0b3-4e73-be95-15bebdc643d8'
+  group_id: '9d684fe9-f69a-438b-994f-b827deb8e0aa'
+  ckan_url: 'http://ckan.jbrj.gov.br'
+  ckan_api: '/api/3/'
+  credentials_path: '../../.credentials/'
+  author: "CNCFlora"
+  author_email: "contato@cncflora.net"
+  license_id: "cc-by"
+  client_secret_path: "../../client_secret.json"

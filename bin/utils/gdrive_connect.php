@@ -2,8 +2,6 @@
 require '../../vendor/autoload.php';
 
 define('APPLICATION_NAME', 'Relatórios CNCFlora');
-define('CREDENTIALS_PATH', '~/.credentials/cncflora.json');
-define('CLIENT_SECRET_PATH', '../../client_secret.json');
 define('SCOPES', implode(' ', array(
     Google_Service_Drive::DRIVE,
     'https://spreadsheets.google.com/feeds',
@@ -22,7 +20,7 @@ function getClient() {
   $client->setAccessType('offline');
 
   // Load previously authorized credentials from a file.
-  $credentialsPath = expandHomeDirectory(CREDENTIALS_PATH);
+  $credentialsPath = expandHomeDirectory(CREDENTIALS_PATH."/cncflora.json");
   if (file_exists($credentialsPath)) {
     $accessToken = file_get_contents($credentialsPath);
   } else {

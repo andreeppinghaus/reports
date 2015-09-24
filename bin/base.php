@@ -19,7 +19,9 @@ echo "Start $script",PHP_EOL;
 $pwd = __DIR__;
 chdir(__DIR__.'/../data/'.$base);
 
+include_once 'utils/config.php';
 include 'utils/gdrive.php';
+include 'utils/ckan.php';
 echo "Using $base",PHP_EOL;
 if(!file_exists("all.json")) {
   echo "Downloading $base",PHP_EOL;
@@ -48,7 +50,9 @@ register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file) {
   fclose($csv);
   $file_id = $script."_".$base;
   $folder_id = get_folder_id($base);
-  update_gdrive($file_id, ucwords($script), $folder_id, $file);
+  $gdrive_export = update_gdrive($file_id, ucwords($script), $folder_id, $file);
+  publish($file_id, $gdrive_export, $file_id, ucwords(str_replace("_", " ", $file_id)), $base);
+
   echo "Done $base",PHP_EOL;
 });
 

@@ -47,9 +47,10 @@ function update_gdrive($file_id, $title, $folder_id, $filename) {
                 delete_spreadsheet($service, $gdrive_id);
             }
         }
-        $gdrive_id = create_spreadsheet($client, $service, $title, $file_id,
+        $gdrive_export = create_spreadsheet($client, $service, $title, $file_id,
                                         $filename, $folder_id);
         //create_worksheet($client, $gdrive_id, $headers, $data);
     }
+    return $gdrive_export;
 }
 ?>
