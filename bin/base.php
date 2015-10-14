@@ -46,12 +46,17 @@ $file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php",
 $csv  = fopen($file,'w');
 echo "Running $base",PHP_EOL;
 
-register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file) {
+register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file,
+                                           $title, $is_private) {
   fclose($csv);
   $file_id = $script."_".$base;
   $folder_id = get_folder_id($base);
-  $gdrive_export = update_gdrive($file_id, ucwords($script), $folder_id, $file);
-  publish($file_id, $gdrive_export, $file_id, ucwords(str_replace("_", " ", $file_id)), $base);
+  $gdrive_export = update_gdrive($file_id, $title, $folder_id, $file);
+  publish($file_id, $gdrive_export, $file_id,
+      "$title do recorte ".ucwords(str_replace("_", " ", $base)), $base,
+      true);
+  // Make all reports private for the moment
+      //$is_private);
 
   echo "Done $base",PHP_EOL;
 });

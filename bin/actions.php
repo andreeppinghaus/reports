@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Ações";
+$is_private = true;
 include 'base.php';
 
 $fields = ["family","scientificName","action","situation",'details','references'];

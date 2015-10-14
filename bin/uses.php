@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Uso";
+$is_private = false;
 include 'base.php';
 
 $fields=['family','scientificName','use','resource','details','references'];
@@ -15,7 +18,7 @@ foreach($all->rows as $row) {
              $d->taxon->family
             ,$d->taxon->scientificNameWithoutAuthorship
             ,$t->use
-            ,$t->resource 
+            ,$t->resource
             ,$t->details
             ,implode(";",$t->references)
            ] ;

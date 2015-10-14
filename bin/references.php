@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Referências";
+$is_private = false;
 include 'base.php';
 
 $fields = ["family","scientificName","document","field","reference"];

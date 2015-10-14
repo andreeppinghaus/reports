@@ -3,7 +3,8 @@ require '../../vendor/autoload.php';
 include_once 'ckan_connect.php';
 include_once 'ckan_utils.php';
 
-function publish($dataset_id, $gdrive_export, $name, $title, $base)
+function publish($dataset_id, $gdrive_export, $name, $title, $base,
+                 $private_dataset)
 {
     // Get CKAN client
     $client = get_ckan_client();
@@ -16,6 +17,16 @@ function publish($dataset_id, $gdrive_export, $name, $title, $base)
     if ($ckanResults['result']['count'] > 0){
         foreach($ckanResults['result']['results'] as $item){
             $ckanResults = $client->package_delete($item['id']);
+        }
+        purge_datasets();
+    }
+    else {
+        // Dataset could be private. Check if it is the case.
+        $package_id = private_package_search($client, $dataset_id);
+        //If it is, delete dataset. Otherwise, don't do anything. The dataset
+        //will be created.
+        if ($package_id) {
+            $client->package_delete($package_id);
         }
         purge_datasets();
     }
@@ -35,14 +46,17 @@ function publish($dataset_id, $gdrive_export, $name, $title, $base)
         $resources[] = $resource_array;
     }
     // Post new dataset
-    $data = array("name"=> $name, "title"=> ucwords($title),
+    $data = array("name"=> $name, "title"=> $title,
         "author"=>AUTHOR, "author_email"=>AUTHOR_EMAIL,
         "license_id"=>LICENSE_ID, "groups"=>array(array("id"=>GROUP_ID)),
         "tags"=>array(array("name"=>str_replace("_"," ",$base),
         "vocabulary_id"=>null)), "owner_org"=> ORG_ID,
         "extras"=>array(array("key"=>"cncflora_id", "value"=>$dataset_id)),
-        "resources"=>$resources
+        "resources"=>$resources,
+        "private"=>$private_dataset
     );
-    $client->package_create(json_encode($data));
+    $ckanResults = $client->package_create(json_encode($data));
+    $ckanResults = json_decode($ckanResults, true);
+    return $ckanResults['result']['id'];
 }
 ?>

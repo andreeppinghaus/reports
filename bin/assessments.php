@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Avaliações";
+$is_private = false;
 include 'base.php';
 
 $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","assessment","category","criteria","assessor","evaluator","rationale"];

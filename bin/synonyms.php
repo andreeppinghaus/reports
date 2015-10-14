@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Sinônimos";
+$is_private = false;
 include 'base.php';
 
 $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","acceptedNameUsage"];

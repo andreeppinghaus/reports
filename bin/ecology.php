@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Ecologia";
+$is_private = false;
 include 'base.php';
 
 $fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];

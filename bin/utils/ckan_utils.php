@@ -1,6 +1,22 @@
 <?php
 require '../../vendor/autoload.php';
 
+function private_package_search($client, $package_id)
+{
+    $ckanResults = $client->organization_show("cncflora", true);
+    $ckanResults = json_decode($ckanResults, true);
+    foreach($ckanResults['result']['packages'] as $package) {
+        $package_item = $client->package_show($package['id']);
+        $package_item = json_decode($package_item, true);
+        foreach($package_item['result']['extras'] as $metadata){
+            if ($metadata['key'] == 'cncflora_id' && $metadata['value'] == $package_id){
+                return $package_item['result']['id'];
+            }
+        }
+    }
+    return false;
+}
+
 function purge_datasets()
 {
     $env = getenv("PHP_ENV");

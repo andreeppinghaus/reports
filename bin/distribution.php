@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Distribuição";
+$is_private = false;
 include 'base.php';
 
 #$fields = ['family','scientificName','endemic','altitude','eoo','aoo'];

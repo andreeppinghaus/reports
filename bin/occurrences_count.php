@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Contagem de Occorrências";
+$is_private = true;
 include 'base.php';
 
 $fields = ["family","acceptedNameUsage","valid","invalid","validated","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
