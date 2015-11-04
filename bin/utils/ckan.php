@@ -4,7 +4,7 @@ include_once 'ckan_connect.php';
 include_once 'ckan_utils.php';
 
 function publish($dataset_id, $gdrive_export, $name, $title, $base,
-                 $private_dataset)
+                 $description, $fields, $private_dataset)
 {
     // Get CKAN client
     $client = get_ckan_client();
@@ -51,9 +51,10 @@ function publish($dataset_id, $gdrive_export, $name, $title, $base,
         "license_id"=>LICENSE_ID, "groups"=>array(array("id"=>GROUP_ID)),
         "tags"=>array(array("name"=>str_replace("_"," ",$base),
         "vocabulary_id"=>null)), "owner_org"=> ORG_ID,
-        "extras"=>array(array("key"=>"cncflora_id", "value"=>$dataset_id)),
-        "resources"=>$resources,
-        "private"=>$private_dataset
+        "extras"=>array(array("key"=>"cncflora_id", "value"=>$dataset_id),
+        array("key"=>"Atributos oferecidos", "value"=>implode(", ", $fields))),
+        "resources"=>$resources, "private"=>$private_dataset,
+        "notes"=>$description
     );
     $ckanResults = $client->package_create(json_encode($data));
     $ckanResults = json_decode($ckanResults, true);

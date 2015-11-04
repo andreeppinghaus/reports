@@ -47,14 +47,14 @@ $csv  = fopen($file,'w');
 echo "Running $base",PHP_EOL;
 
 register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file,
-                                           $title, $is_private) {
+    $title, $description, $fields, $is_private) {
   fclose($csv);
   $file_id = $script."_".$base;
   $folder_id = get_folder_id($base);
   $gdrive_export = update_gdrive($file_id, $title, $folder_id, $file);
   publish($file_id, $gdrive_export, $file_id,
       "$title do recorte ".ucwords(str_replace("_", " ", $base)), $base,
-      true);
+      $description, $fields, true);
   // Make all reports private for the moment
       //$is_private);
 

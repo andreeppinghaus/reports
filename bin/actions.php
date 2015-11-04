@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Ações";
+$description = "Lista de ações de conservação necessárias ou em andamento.";
 $is_private = true;
+$fields = ["family","scientificName","action","situation",'details','references'];
 include 'base.php';
 
-$fields = ["family","scientificName","action","situation",'details','references'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {
