@@ -2,11 +2,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/GSA/ckan-php-client.git"
+            "url": "https://github.com/CNCFlora/ckan-php-client-cncflora.git"
         }
     ],
     "require": {
         "google/apiclient": "1.0.*@beta",
-        "gsa/ckan-php-client": "0.*"
+        "cncflora/ckan-php-client-cncflora": "0.*"
     }
 }
