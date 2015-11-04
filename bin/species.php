@@ -1,9 +1,13 @@
 <?php
 
+global $title, $is_private;
+$title = "Especies";
+$is_private = false;
 include 'base.php';
 
 $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
 fputcsv($csv,$fields);
+$data_gdrive = array();
 
 $got=[];
 foreach($all->rows as $row) {
@@ -16,9 +20,10 @@ foreach($all->rows as $row) {
                strtoupper($doc->family)
               ,$doc->scientificNameWithoutAuthorship
               ,$doc->scientificNameAuthorship
-            ];
+          ];
             fputcsv($csv,$data);
         }
     }
 }
 
+?>

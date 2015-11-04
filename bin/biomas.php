@@ -1,5 +1,8 @@
 <?php
 
+global $title, $is_private;
+$title = "Biomas";
+$is_private = false;
 include 'base.php';
 
 $fields = ["family","scientificName","bioma"];
@@ -16,4 +19,3 @@ foreach($all->rows as $row) {
     }
   }
 }
-

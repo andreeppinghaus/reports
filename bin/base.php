@@ -19,6 +19,9 @@ echo "Start $script",PHP_EOL;
 $pwd = __DIR__;
 chdir(__DIR__.'/../data/'.$base);
 
+include_once 'utils/config.php';
+include 'utils/gdrive.php';
+include 'utils/ckan.php';
 echo "Using $base",PHP_EOL;
 if(!file_exists("all.json")) {
   echo "Downloading $base",PHP_EOL;
@@ -41,10 +44,20 @@ while($l = fgets($af)){
 #$all = json_decode(file_get_contents("all.json"));
 $file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
 $csv  = fopen($file,'w');
-echo "Runing $base",PHP_EOL;
+echo "Running $base",PHP_EOL;
 
-register_shutdown_function(function() use ($pwd,$base,$script,$csv) {
+register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file,
+                                           $title, $is_private) {
   fclose($csv);
+  $file_id = $script."_".$base;
+  $folder_id = get_folder_id($base);
+  $gdrive_export = update_gdrive($file_id, $title, $folder_id, $file);
+  publish($file_id, $gdrive_export, $file_id,
+      "$title do recorte ".ucwords(str_replace("_", " ", $base)), $base,
+      true);
+  // Make all reports private for the moment
+      //$is_private);
+
   echo "Done $base",PHP_EOL;
 });
 
