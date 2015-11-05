@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Avaliações";
+$description = "Lista com as avaliações de risco de extensão de cada espécie.";
 $is_private = false;
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","assessment","category","criteria","assessor","evaluator","rationale"];
 include 'base.php';
 
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","assessment","category","criteria","assessor","evaluator","rationale"];
 fputcsv($csv,$fields);
 
 $taxons = [];
