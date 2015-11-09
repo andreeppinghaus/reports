@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Ecologia";
+$description = "Lista com as características da ecologia por espécie.";
 $is_private = false;
+$fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];
 include 'base.php';
 
-$fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

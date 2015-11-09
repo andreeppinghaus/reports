@@ -1,12 +1,13 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Distribuição";
+$description = "Lista com endemismo e altitude por espécie.";
 $is_private = false;
+$fields = ['family','scientificName','endemic','altitude'];
 include 'base.php';
 
 #$fields = ['family','scientificName','endemic','altitude','eoo','aoo'];
-$fields = ['family','scientificName','endemic','altitude'];
 fputcsv($csv,$fields);
 
 $taxons = [];

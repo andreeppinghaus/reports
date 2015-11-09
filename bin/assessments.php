@@ -4,7 +4,8 @@ global $title, $description, $is_private, $fields;
 $title = "Avaliações";
 $description = "Lista com as avaliações de risco de extensão de cada espécie.";
 $is_private = false;
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","assessment","category","criteria","assessor","evaluator","rationale"];
+//$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao", "link"];
+$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao"];
 include 'base.php';
 
 fputcsv($csv,$fields);
@@ -24,7 +25,10 @@ foreach($all->rows as $row) {
                     "evaluator"=>"",
                     "category"=>"",
                     "rationale"=>"",
-                    "criteria"=>""
+                    "criteria"=>"",
+                    "assessment_date"=>""
+                    //"assessment_date"=>"",
+                    //"link"=>""
                 );
         }
     }
@@ -51,12 +55,15 @@ foreach($all->rows as $row) {
             if(isset($doc->rationale)) {
                 $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = $doc->rationale;
             }
+            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment_date'] = date('Y-m-d', $doc->metadata->modified);
+            //$taxons[$doc->taxon->scientificNameWithoutAuthorship]['link'] = 'http://cncflora.jbrj.gov.br/portal/pt-br/profile/'.$doc->taxon->scientificNameWithoutAuthorship;
         }
     }
 }
 foreach($taxons as $taxon) {
   $data=[
-    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"]
+    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"]
+    //$taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"], $taxon["link"]
 ];
   fputcsv($csv,$data);
 }
