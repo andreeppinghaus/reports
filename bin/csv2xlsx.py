@@ -1,6 +1,8 @@
 import xlwt, csv, os
 
 for fol in os.listdir("../data/"):
+    if fol == "livro_vermelho_2013_revisao_2015":
+        continue
     csv_folder = "../data/"+fol+"/"
     if os.path.isdir(csv_folder):
         print fol

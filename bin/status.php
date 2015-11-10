@@ -29,15 +29,24 @@ foreach($all->rows as $row) {
 
 foreach($all->rows as $row) {
     $doc = $row->doc;
-    if($doc->metadata->type=='profile') {
-        $taxons[$doc->taxon->scientificNameWithoutAuthorship]['analysis'] = $doc->metadata->status;
-    } else if($doc->metadata->type=='assessment') {
-        $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment'] = $doc->metadata->status;
-        if(isset($doc->category)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
-        }
-        if(isset($doc->criteria)) {
-            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
+    //Skip taxon and occurrence
+    if (($doc->metadata->type=='taxon') || ($doc->metadata->type=='occurrence')){
+        continue;
+    }
+    //Make sure specie still exists in the "recorte"
+    if (array_key_exists($doc->taxon->scientificNameWithoutAuthorship, $taxons)){
+        if($doc->metadata->type=='profile') {
+            $taxons[$doc->taxon->scientificNameWithoutAuthorship]['analysis'] = $doc->metadata->status;
+        } else if($doc->metadata->type=='assessment') {
+            if(isset($doc->metadata->status)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment'] = $doc->metadata->status;
+            }
+            if(isset($doc->category)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
+            }
+            if(isset($doc->criteria)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
+            }
         }
     }
 }
