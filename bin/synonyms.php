@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Sinônimos";
+$description = "Lista com os sinônimos de todas as espécies e os respectivos nomes aceitos.";
 $is_private = false;
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","acceptedNameUsage"];
 include 'base.php';
 
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","acceptedNameUsage"];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

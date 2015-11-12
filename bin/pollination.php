@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
-$title = "Polinação";
+global $title, $description, $is_private, $fields;
+$title = "Síndromes de Polinização";
+$description = "Lista com as síndromes de polinização por espécie.";
 $is_private = false;
+$fields = ['family','scientificName','pollination'];
 include 'base.php';
 
-$fields = ['family','scientificName','pollination'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

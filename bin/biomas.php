@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Biomas";
 $description = "Lista de biomas por espécie.";
 $is_private = false;
-$fields = ["family","scientificName","bioma"];
+//$fields = ["family","scientificName","bioma"];
+// Field translation
+$fields = ["familia","nome aceito","bioma"];
 include 'base.php';
 
 fputcsv($csv,$fields);

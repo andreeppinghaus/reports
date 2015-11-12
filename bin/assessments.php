@@ -5,7 +5,8 @@ $title = "Avaliações";
 $description = "Lista com as avaliações de risco de extensão de cada espécie.";
 $is_private = false;
 //$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao", "link"];
-$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao"];
+// Field translation
+$fields = ["familia","nome aceito","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao"];
 include 'base.php';
 
 fputcsv($csv,$fields);

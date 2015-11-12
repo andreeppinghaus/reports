@@ -1,14 +1,15 @@
 <?php
 
-global $title, $is_private;
-$title = "Occorrências";
+global $title, $description, $is_private, $fields;
+$title = "Ocorrências";
+$description = "Lista com todas as ocorrências do recorte por espécie.";
 $is_private = true;
+// Field translation. If changing the field in here, also change it in the 2nd definition
+$fields = ["id da ocorrência","literatura","código da instituição","código da coleção","número de catálogo/código de barras","número do coletor","coletor","observações","ano da coleta","mês da coleta","dia da coleta","identificado por","estado","município","localidade","latitude","longitude","familia","genus","epíteto específico","variedade","espécie (nome aceito ou sinônimo)","obs. de SIG","geo protocolo","status SIG","analista SIG","georeferencePrecision","coordinateUncertaintyInMeters","nome aceito","válido","taxonomia válida","cultivada ex-situ","registro de duplicata","nativa na localidade","georeferência válida","colaboradores","data da última modificação","remarks","commentários"];
 include 'base.php';
 
-$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
-##$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
-
 fputcsv($csv,$fields);
+$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
 
 $taxons = [];
 foreach($all->rows as $row) {
@@ -129,7 +130,8 @@ foreach($all->rows as $row) {
         $data = [];
         foreach($fields as $f) {
           if(isset($doc->$f)) {
-            $data[] = $doc->$f;
+            //Substitute ; with , to not destroy CSV format
+            $data[] = str_replace(";", ",", $doc->$f);
           } else {
             $data[] = "";
           }

@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
-$title = "Uso";
+global $title, $description, $is_private, $fields;
+$title = "Utilização das espécies";
+$description = "Lista contendo as utilizações dadas a cada espécie do recorte.";
 $is_private = false;
+$fields=['family','scientificName','use','resource','details','references'];
 include 'base.php';
 
-$fields=['family','scientificName','use','resource','details','references'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

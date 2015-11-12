@@ -1,12 +1,13 @@
 <?php
 
-global $title, $is_private;
-$title = "Occorrências sem correspondência";
+global $title, $description, $is_private, $fields;
+$title = "Ocorrências sem correspondência";
+$description = "Lista com todas as ocorrências encontradas no recorte sem espécie correspondente.";
 $is_private = true;
-include 'base.php';
-
 $fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
 ##$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
+include 'base.php';
+
 
 fputcsv($csv,$fields);
 

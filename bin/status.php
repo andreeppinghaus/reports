@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
-$title = "Workflow";
+global $title, $description, $is_private, $fields;
+$title = "Status do Workflow";
+$description = "Lista com o status do workflow dos perfis de espécies e as respectivas avaliações.";
 $is_private = false;
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","analysis","assessment","category","criteria"];
 include 'base.php';
 
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","analysis","assessment","category","criteria"];
 fputcsv($csv,$fields);
 
 $taxons = [];

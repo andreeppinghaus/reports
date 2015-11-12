@@ -1,11 +1,14 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Habitates";
+$description = "Lista com habitates por espécie.";
 $is_private = false;
+//$fields = ['family','scientificName','habitat'];
+// Field translation
+$fields = ['familia','nome aceito','habitat'];
 include 'base.php';
 
-$fields = ['family','scientificName','habitat'];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

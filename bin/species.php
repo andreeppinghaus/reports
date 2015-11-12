@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
-$title = "Especies";
+global $title, $description, $is_private, $fields;
+$title = "Espécies";
+$description = "Lista com todas as espécies do recorte.";
 $is_private = false;
+$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
 include 'base.php';
 
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
 fputcsv($csv,$fields);
 $data_gdrive = array();
 

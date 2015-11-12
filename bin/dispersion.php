@@ -1,10 +1,12 @@
 <?php
 
 global $title, $description, $is_private, $fields;
-$title = "Dispersão";
+$title = "Síndromes de Dispersão";
 $description = "Lista com as síndromes de dispersão por espécie.";
 $is_private = false;
-$fields = ['family','scientificName','dispersion'];
+//$fields = ['family','scientificName','dispersion'];
+// Field translation
+$fields = ['familia','nome aceito','síndrome de dispersão'];
 include 'base.php';
 
 fputcsv($csv,$fields);

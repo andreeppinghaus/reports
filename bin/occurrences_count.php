@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
-$title = "Contagem de Occorrências";
+global $title, $description, $is_private, $fields;
+$title = "Contagem de Ocorrências";
+$description = "Lista contabilizando as ocorrências por espécie em relação à validação, às informações SIG e aos cálculos de EOO e AOO.";
 $is_private = true;
+$fields = ["family","acceptedNameUsage","valid","invalid","validated","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
 include 'base.php';
 
-$fields = ["family","acceptedNameUsage","valid","invalid","validated","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
 
 fputcsv($csv,$fields);
 

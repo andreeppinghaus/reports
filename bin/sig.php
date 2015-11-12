@@ -1,13 +1,14 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Informações SIG";
+$description = "Lista com as informações SIG por espécie.";
 $is_private = true;
-include 'base.php';
-
 #$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
 //$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
 $fields = ["occurrenceID","family", "familyAccepted", "acceptedNameUsage", "acceptedNameUsageWithoutAuthorship", "decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference", "year", "contributor","remarks"];
+include 'base.php';
+
 
 fputcsv($csv,$fields);
 

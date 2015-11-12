@@ -1,11 +1,12 @@
 <?php
 
-global $title, $is_private;
+global $title, $description, $is_private, $fields;
 $title = "Referências";
+$description = "Lista com todas as referências utilizadas no recorte, separadas por espécie e indicação de onde são utilizadas.";
 $is_private = false;
+$fields = ["family","scientificName","document","field","reference"];
 include 'base.php';
 
-$fields = ["family","scientificName","document","field","reference"];
 fputcsv($csv,$fields);
 
 foreach($all->rows as $row) {

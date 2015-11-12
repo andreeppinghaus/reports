@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Ecologia";
 $description = "Lista com as características da ecologia por espécie.";
 $is_private = false;
-$fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];
+//$fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];
+// Field translation
+$fields = ['familia','nome aceito','habito','fenologia','luminosidade','substrato','longevidade','rebroto'];
 include 'base.php';
 
 fputcsv($csv,$fields);
