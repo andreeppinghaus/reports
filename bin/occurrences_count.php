@@ -4,11 +4,16 @@ global $title, $description, $is_private, $fields;
 $title = "Contagem de Ocorrências";
 $description = "Lista contabilizando as ocorrências por espécie em relação à validação, às informações SIG e aos cálculos de EOO e AOO.";
 $is_private = true;
-$fields = ["family","acceptedNameUsage","valid","invalid","validated","not_validated","sig_ok","sig_nok","no_sig","used","unused","total",'eoo','aoo'];
+include 'occurrences_count_fields.php';
+$fields = array();
+foreach ($fields_array as $f){
+    array_push($fields, $f);
+}
 include 'base.php';
 
 
 fputcsv($csv,$fields);
+$fields = array_keys($fields_array);
 
 $taxons = [];
 foreach($all->rows as $row) {
@@ -34,6 +39,7 @@ foreach($taxons as $taxon) {
         $data[$taxon->scientificNameWithoutAuthorship]->not_validated = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->sig_ok = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->sig_nok = 0;
+        $data[$taxon->scientificNameWithoutAuthorship]->sig = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->no_sig = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->used = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->unused = 0;
@@ -90,6 +96,7 @@ foreach($all->rows as $row) {
         } else {
           $d->sig_nok++;
         }
+        $d->sig++;
       } else {
         $d->no_sig++;
         $doc->georeferenceVerificationStatus = '';

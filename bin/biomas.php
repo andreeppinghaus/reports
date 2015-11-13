@@ -6,7 +6,7 @@ $description = "Lista de biomas por espécie.";
 $is_private = false;
 //$fields = ["family","scientificName","bioma"];
 // Field translation
-$fields = ["familia","nome aceito","bioma"];
+$fields = ["familia","nome científico","bioma"];
 include 'base.php';
 
 fputcsv($csv,$fields);

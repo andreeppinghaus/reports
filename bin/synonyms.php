@@ -5,6 +5,8 @@ $title = "Sinônimos";
 $description = "Lista com os sinônimos de todas as espécies e os respectivos nomes aceitos.";
 $is_private = false;
 $fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","acceptedNameUsage"];
+// Field translation
+$fields = ["família","nome científico","autor","nome aceito"];
 include 'base.php';
 
 fputcsv($csv,$fields);

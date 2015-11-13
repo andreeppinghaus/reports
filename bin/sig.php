@@ -4,13 +4,15 @@ global $title, $description, $is_private, $fields;
 $title = "Informações SIG";
 $description = "Lista com as informações SIG por espécie.";
 $is_private = true;
-#$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","yearIdentified","monthIdentified","dayIdentified","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
-//$fields = ["occurrenceID","family","acceptedNameUsage","decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","remarks"];
-$fields = ["occurrenceID","family", "familyAccepted", "acceptedNameUsage", "acceptedNameUsageWithoutAuthorship", "decimalLatitude","decimalLongitude","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencedDate","georeferencePrecision","coordinateUncertaintyInMeters","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference", "year", "contributor","remarks"];
+include 'sig_fields.php';
+$fields = array();
+foreach ($fields_array as $f){
+    array_push($fields, $f);
+}
 include 'base.php';
 
-
 fputcsv($csv,$fields);
+$fields = array_keys($fields_array);
 
 $taxons = [];
 foreach($all->rows as $row) {
@@ -133,6 +135,21 @@ foreach($all->rows as $row) {
 
         $data = [];
         foreach($fields as $f) {
+            // Join coordinateUncertaintyInMeters and georeferencePrecision fields
+            if ($f == 'coordinateUncertaintyInMeters') {
+                if(!isset($doc->$f) && isset($doc->georeferencePrecision)) {
+                    $doc->$f = $doc->georeferencePrecision;
+                }
+            }
+            // Join remarks and occurrenceRemarks
+            if ($f == 'remarks') {
+                if(!isset($doc->$f) && isset($doc->occurrenceRemarks)) {
+                    $doc->$f = $doc->occurrenceRemarks;
+                }
+                elseif (isset($doc->occurrenceRemarks)){
+                     $doc->$f = $doc->$f." ".$doc->occurrenceRemarks;
+                }
+            }
             if(isset($doc->$f)) {
                 $data[] = $doc->$f;
             } else {

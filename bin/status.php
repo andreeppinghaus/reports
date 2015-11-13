@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Status do Workflow";
 $description = "Lista com o status do workflow dos perfis de espécies e as respectivas avaliações.";
 $is_private = false;
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","analysis","assessment","category","criteria"];
+//$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","analysis","assessment","category","criteria"];
+// Field translation
+$fields = ["família","nome científico","autor","status na análise","status na avaliação","categoria","critério"];
 include 'base.php';
 
 fputcsv($csv,$fields);

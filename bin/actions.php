@@ -6,7 +6,7 @@ $description = "Lista de ações de conservação necessárias ou em andamento."
 $is_private = true;
 //$fields = ["family","scientificName","action","situation",'details','references'];
 // Field translation
-$fields = ["familia","nome aceito","ação de conservação","situação",'detalhes','referencias'];
+$fields = ["familia","nome científico","ação de conservação","situação",'detalhes','referencias'];
 include 'base.php';
 
 fputcsv($csv,$fields);

@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Síndromes de Polinização";
 $description = "Lista com as síndromes de polinização por espécie.";
 $is_private = false;
-$fields = ['family','scientificName','pollination'];
+//$fields = ['family','scientificName','pollination'];
+// Field translation
+$fields = ["familia","nome científico","síndrome de polinização"];
 include 'base.php';
 
 fputcsv($csv,$fields);

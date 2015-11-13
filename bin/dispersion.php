@@ -6,7 +6,7 @@ $description = "Lista com as síndromes de dispersão por espécie.";
 $is_private = false;
 //$fields = ['family','scientificName','dispersion'];
 // Field translation
-$fields = ['familia','nome aceito','síndrome de dispersão'];
+$fields = ['familia','nome científico','síndrome de dispersão'];
 include 'base.php';
 
 fputcsv($csv,$fields);

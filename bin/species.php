@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Espécies";
 $description = "Lista com todas as espécies do recorte.";
 $is_private = false;
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
+//$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
+// Field translation
+$fields = ["família","nome científico","autor"];
 include 'base.php';
 
 fputcsv($csv,$fields);

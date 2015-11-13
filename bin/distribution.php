@@ -6,7 +6,7 @@ $description = "Lista com endemismo e altitude por espécie.";
 $is_private = false;
 //$fields = ['family','scientificName','endemic','altitude'];
 // Field translation
-$fields = ['familia','nome aceito','endemismo','altitude'];
+$fields = ['familia','nome científico','endemismo','altitude'];
 include 'base.php';
 
 #$fields = ['family','scientificName','endemic','altitude','eoo','aoo'];

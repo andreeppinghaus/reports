@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Referências";
 $description = "Lista com todas as referências utilizadas no recorte, separadas por espécie e indicação de onde são utilizadas.";
 $is_private = false;
-$fields = ["family","scientificName","document","field","reference"];
+//$fields = ["family","scientificName","document","field","reference"];
+// Field translation
+$fields = ["familia","nome científico","tipo de documento", "campo no documento", "referências"];
 include 'base.php';
 
 fputcsv($csv,$fields);
@@ -15,7 +17,7 @@ foreach($all->rows as $row) {
     if(isset($d->references) && is_array($d->references)) {
       foreach($d->references as $r) {
         if(is_string($r) && strlen(trim($r)) >= 2) {
-          $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"assessment","",$r];
+            $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"avaliação","",$r];
           fputcsv($csv,$data);
         }
       }
@@ -26,7 +28,7 @@ foreach($all->rows as $row) {
         if(isset($value->references) && is_array($value->references)) {
           foreach($value->references as $r) {
             if(is_string($r) && strlen(trim($r)) >= 2) {
-              $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"profile",$field,$r];
+                $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"perfil de espécie",$field,$r];
               fputcsv($csv,$data);
             }
           }

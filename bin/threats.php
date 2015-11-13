@@ -4,7 +4,9 @@ global $title, $description, $is_private, $fields;
 $title = "Ameaças";
 $description = "Lista com as ameaças por espécie.";
 $is_private = false;
-$fields = ["family","scientificName","threat","incidence","timing","decline","details","references"];
+//$fields = ["family","scientificName","threat","incidence","timing","decline","details","references"];
+// Field translation
+$fields = ["família","nome científico","ameaça","incidência","período","declínio","detalhes","referências"];
 include 'base.php';
 
 fputcsv($csv,$fields);

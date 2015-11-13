@@ -4,12 +4,15 @@ global $title, $description, $is_private, $fields;
 $title = "Ocorrências";
 $description = "Lista com todas as ocorrências do recorte por espécie.";
 $is_private = true;
-// Field translation. If changing the field in here, also change it in the 2nd definition
-$fields = ["id da ocorrência","literatura","código da instituição","código da coleção","número de catálogo/código de barras","número do coletor","coletor","observações","ano da coleta","mês da coleta","dia da coleta","identificado por","estado","município","localidade","latitude","longitude","familia","genus","epíteto específico","variedade","espécie (nome aceito ou sinônimo)","obs. de SIG","geo protocolo","status SIG","analista SIG","georeferencePrecision","coordinateUncertaintyInMeters","nome aceito","válido","taxonomia válida","cultivada ex-situ","registro de duplicata","nativa na localidade","georeferência válida","colaboradores","data da última modificação","remarks","commentários"];
+include 'occurrences_fields.php';
+$fields = array();
+foreach ($fields_array as $f){
+    array_push($fields, $f);
+}
 include 'base.php';
 
 fputcsv($csv,$fields);
-$fields = ["occurrenceID","bibliographicCitation","institutionCode","collectionCode","catalogNumber","recordNumber","recordedBy","occurrenceRemarks","year","month","day","identifiedBy","stateProvince","municipality","locality","decimalLatitude","decimalLongitude","family","genus","specificEpithet","infraspecificEpithet","scientificName","georeferenceRemarks","georeferenceProtocol","georeferenceVerificationStatus","georeferencedBy","georeferencePrecision","coordinateUncertaintyInMeters","acceptedNameUsage","valid","validation_taxonomy","validation_cultivated","validation_duplicated","validation_native","validation_georeference","contributor","dateLastModified","remarks","comments"];
+$fields = array_keys($fields_array);
 
 $taxons = [];
 foreach($all->rows as $row) {
@@ -129,6 +132,21 @@ foreach($all->rows as $row) {
 
         $data = [];
         foreach($fields as $f) {
+            // Join coordinateUncertaintyInMeters and georeferencePrecision fields
+            if ($f == 'coordinateUncertaintyInMeters') {
+                if(!isset($doc->$f) && isset($doc->georeferencePrecision)) {
+                    $doc->$f = $doc->georeferencePrecision;
+                }
+            }
+            // Join remarks and occurrenceRemarks
+            if ($f == 'remarks') {
+                if(!isset($doc->$f) && isset($doc->occurrenceRemarks)) {
+                    $doc->$f = $doc->occurrenceRemarks;
+                }
+                elseif (isset($doc->occurrenceRemarks)){
+                     $doc->$f = $doc->$f." ".$doc->occurrenceRemarks;
+                }
+            }
           if(isset($doc->$f)) {
             //Substitute ; with , to not destroy CSV format
             $data[] = str_replace(";", ",", $doc->$f);

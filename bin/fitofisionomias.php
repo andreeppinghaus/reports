@@ -6,7 +6,7 @@ $description = "Lista com fitofisionomias por espécie.";
 $is_private = false;
 //$fields=['family','scientificName','fitofisionomie'];
 // Field translation
-$fields=['familia','nome aceito','fitofisionomia'];
+$fields=['familia','nome científico','fitofisionomia'];
 include 'base.php';
 
 fputcsv($csv,$fields);

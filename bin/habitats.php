@@ -6,7 +6,7 @@ $description = "Lista com habitates por espécie.";
 $is_private = false;
 //$fields = ['family','scientificName','habitat'];
 // Field translation
-$fields = ['familia','nome aceito','habitat'];
+$fields = ['familia','nome científico','habitat'];
 include 'base.php';
 
 fputcsv($csv,$fields);
