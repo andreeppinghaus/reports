@@ -52,7 +52,8 @@ function publish($dataset_id, $gdrive_export, $name, $title, $base,
         "tags"=>array(array("name"=>str_replace("_"," ",$base),
         "vocabulary_id"=>null)), "owner_org"=> ORG_ID,
         "extras"=>array(array("key"=>"cncflora_id", "value"=>$dataset_id),
-        array("key"=>"Atributos oferecidos", "value"=>implode(", ", $fields))),
+        array("key"=>"Atributos oferecidos", "value"=>implode(", ", $fields)),
+        array("key"=>"Status", "value"=>"Em andamento")),
         "resources"=>$resources, "private"=>$private_dataset,
         "notes"=>$description
     );

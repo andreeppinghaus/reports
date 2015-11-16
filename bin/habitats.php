@@ -1,8 +1,8 @@
 <?php
 
 global $title, $description, $is_private, $fields;
-$title = "Habitates";
-$description = "Lista com habitates por espécie.";
+$title = "Habitats";
+$description = "Lista com habitats por espécie.";
 $is_private = false;
 //$fields = ['family','scientificName','habitat'];
 // Field translation
