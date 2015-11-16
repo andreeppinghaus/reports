@@ -7,7 +7,7 @@ if(php_sapi_name() !== 'cli' || !isset($argv) || count($argv) < 2 ) {
 
 $base = $argv[1];
 
-if($base == 'livro_vermelho_2013') return;
+if(($base == 'livro_vermelho_2013') || ($base == 'livro_vermelho_2013_revisao_2015')) return;
 
 preg_match('/([a-zA-Z0-9_]+)\.php$/',$argv[0],$reg);
 $script = $reg[1];
@@ -48,16 +48,33 @@ echo "Running $base",PHP_EOL;
 
 register_shutdown_function(function() use ($pwd,$base,$script,$csv, $file,
     $title, $description, $fields, $is_private) {
-  fclose($csv);
-  $file_id = $script."_".$base;
-  $folder_id = get_folder_id($base);
-  $gdrive_export = update_gdrive($file_id, $title, $folder_id, $file);
-  publish($file_id, $gdrive_export, $file_id,
-      "$title do recorte ".ucwords(str_replace("_", " ", $base)), $base,
-      $description, $fields, true);
-  // Make all reports private for the moment
-      //$is_private);
+        fclose($csv);
+        // Check if CSV has more than just the header. Otherwise, doesn't add
+        // it to CKAN.
+        $rows =0;
+        $save_doc = false;
+        $csv = fopen($file, "r");
+        if($csv){
+            while(!feof($csv)){
+                $content = fgets($csv);
+                if($content)   $rows++;
+                if($rows > 1){
+                    $save_doc = true;
+                    break;
+                }
+            }
+        }
+        fclose($csv);
+        if ($save_doc) {
+            $file_id = $script."_".$base;
+            $folder_id = get_folder_id($base);
+            $gdrive_export = update_gdrive($file_id, $title, $folder_id, $file);
+            publish($file_id, $gdrive_export, $file_id,
+                "$title do recorte ".ucwords(str_replace("_", " ", $base)), $base,
+                $description, $fields, true);
+            // Make all reports private for the moment
+            //$is_private);
+        }
 
-  echo "Done $base",PHP_EOL;
-});
-
+        echo "Done $base",PHP_EOL;
+    });

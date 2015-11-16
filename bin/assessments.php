@@ -6,7 +6,8 @@ $description = "Lista com as avaliações de risco de extensão de cada espécie
 $is_private = false;
 //$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao", "link"];
 // Field translation
-$fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao"];
+$fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "bioma"];
+//$fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "link", "bioma"];
 include 'base.php';
 
 fputcsv($csv,$fields);
@@ -27,9 +28,9 @@ foreach($all->rows as $row) {
                     "category"=>"",
                     "rationale"=>"",
                     "criteria"=>"",
-                    "assessment_date"=>""
-                    //"assessment_date"=>"",
-                    //"link"=>""
+                    "assessment_date"=>"",
+                    "link"=>"",
+                    "bioma" =>""
                 );
         }
     }
@@ -45,7 +46,7 @@ foreach($all->rows as $row) {
                 $taxons[$doc->taxon->scientificNameWithoutAuthorship]['category'] = $doc->category;
             }
             if(isset($doc->criteria)) {
-                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = $doc->criteria;
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['criteria'] = str_replace(";", ",", $doc->criteria);
             }
             if(isset($doc->assessor)) {
                 $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessor'] = $doc->assessor;
@@ -54,17 +55,28 @@ foreach($all->rows as $row) {
                 $taxons[$doc->taxon->scientificNameWithoutAuthorship]['evaluator'] = $doc->evaluator;
             }
             if(isset($doc->rationale)) {
-                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = $doc->rationale;
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['rationale'] = strip_tags(ltrim($doc->rationale, " ?"));
             }
             $taxons[$doc->taxon->scientificNameWithoutAuthorship]['assessment_date'] = date('Y-m-d', $doc->metadata->modified);
             //$taxons[$doc->taxon->scientificNameWithoutAuthorship]['link'] = 'http://cncflora.jbrj.gov.br/portal/pt-br/profile/'.$doc->taxon->scientificNameWithoutAuthorship;
         }
     }
+    if($doc->metadata->type=='profile') {
+        if (array_key_exists($doc->taxon->scientificNameWithoutAuthorship, $taxons)){
+            if(isset($doc->ecology) && isset($doc->ecology->biomas) && is_array($doc->ecology->biomas)) {
+                $taxons[$doc->taxon->scientificNameWithoutAuthorship]['bioma'] = implode(", ", $doc->ecology->biomas);
+            }
+        }
+    }
 }
+
 foreach($taxons as $taxon) {
+    if ($taxon["assessment"] == ""){
+         continue;
+    }
   $data=[
-    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"]
-    //$taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"], $taxon["link"]
+    $taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"],$taxon["bioma"]
+    //$taxon["family"],$taxon["name"],$taxon["author"],$taxon["assessment"],$taxon["category"],$taxon["criteria"],$taxon["assessor"],$taxon["evaluator"],$taxon["rationale"], $taxon["assessment_date"],$taxon["link"],$taxon["bioma"]
 ];
   fputcsv($csv,$data);
 }
