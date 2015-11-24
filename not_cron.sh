@@ -3,6 +3,6 @@
 #cd /var/www
 while :
 do
-  sleep 172800
   php bin/all.php
+  sleep 43200
 done
