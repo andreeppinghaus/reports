@@ -35,5 +35,4 @@ function purge_datasets()
 
     curl_exec($curl);
 }
-
 ?>
