@@ -29,10 +29,11 @@ $data  = [];
 foreach($taxons as $taxon) {
   if($taxon->taxonomicStatus == 'accepted') {
       if(!isset($data[$taxon->scientificNameWithoutAuthorship])) {
-        $data[$taxon->scientificNameWithoutAuthorship]= new StdClass;
         // Data clean-up
         $taxon->scientificNameWithoutAuthorship = trim($taxon->scientificNameWithoutAuthorship);
         $taxon->family = trim($taxon->family);
+
+        $data[$taxon->scientificNameWithoutAuthorship]= new StdClass;
 
         $data[$taxon->scientificNameWithoutAuthorship]->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
         $data[$taxon->scientificNameWithoutAuthorship]->family = $taxon->family;
@@ -69,6 +70,7 @@ foreach($all->rows as $row) {
       $m1 = "/.*".$taxon->scientificNameWithoutAuthorship.".*/";
       if(  (isset($doc->scientificName) && preg_match($m1,$doc->scientificName) )
         || (isset($doc->scientificNameWithoutAuthorship) && preg_match($m1,$doc->scientificNameWithoutAuthorship) )
+        || (isset($doc->genus) && isset($doc->specificEpithet) && preg_match($m1,$doc->genus." ".$doc->specificEpithet) )
         || (isset($doc->acceptedNameUsage) && preg_match($m1,$doc->acceptedNameUsage))) {
         $got=true;
         if($taxon->taxonomicStatus == 'accepted') {
@@ -81,10 +83,10 @@ foreach($all->rows as $row) {
       }
     }
     if(!$got) {
-      echo "Missing ".$doc->_id."\n";
+      //echo "Missing ".$doc->_id."\n";
       continue;
     } else {
-      echo "Got ".$doc->_id."\n";
+      //echo "Got ".$doc->_id."\n";
 
       $d = $data[$doc->acceptedNameUsage];
       if(!isset($d)) {
