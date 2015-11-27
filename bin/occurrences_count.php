@@ -30,6 +30,10 @@ foreach($taxons as $taxon) {
   if($taxon->taxonomicStatus == 'accepted') {
       if(!isset($data[$taxon->scientificNameWithoutAuthorship])) {
         $data[$taxon->scientificNameWithoutAuthorship]= new StdClass;
+        // Data clean-up
+        $taxon->scientificNameWithoutAuthorship = trim($taxon->scientificNameWithoutAuthorship);
+        $taxon->family = trim($taxon->family);
+
         $data[$taxon->scientificNameWithoutAuthorship]->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
         $data[$taxon->scientificNameWithoutAuthorship]->family = $taxon->family;
         $data[$taxon->scientificNameWithoutAuthorship]->total = 0;
@@ -43,14 +47,14 @@ foreach($taxons as $taxon) {
         $data[$taxon->scientificNameWithoutAuthorship]->no_sig = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->used = 0;
         $data[$taxon->scientificNameWithoutAuthorship]->unused = 0;
-        $data[$taxon->scientificNameWithoutAuthorship]->eoo = "n/a";
-        $data[$taxon->scientificNameWithoutAuthorship]->aoo = "n/a";
+        //$data[$taxon->scientificNameWithoutAuthorship]->eoo = "n/a";
+        //$data[$taxon->scientificNameWithoutAuthorship]->aoo = "n/a";
       }
   } else if($taxon->taxonomicStatus == 'synonym') {
     foreach($taxons as $taxon2) {
       if($taxon2->taxonomicStatus=='accepted') {
         if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) {
-          $taxon->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
+            $taxon->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
         }
       }
     }
@@ -188,20 +192,20 @@ foreach($all->rows as $row) {
 
 $i=0;
 foreach($data as $d) {
-  $i++;
-  if($i==100) {
-    //sleep(2);
-    $i=0;
-  }
+  //$i++;
+  //if($i==100) {
+    ////sleep(2);
+    //$i=0;
+  //}
 
-  $url = 'http://jb049/occurrences/'.$base.'/specie/'.urlencode($d->acceptedNameUsage).'?json=true';
-  $sess='af2b646a99f0347f511827ceb414e3cd10c45cd6592284987976f1fb875527c4';
-  shell_exec("curl '".$url."' -L -H 'Cookie: rack.session=".$sess."' > tmp_occs.json");
-  $resp = file_get_contents('tmp_occs.json');
-  $json = json_decode($resp);
+  //$url = 'http://jb049/occurrences/'.$base.'/specie/'.urlencode($d->acceptedNameUsage).'?json=true';
+  //$sess='af2b646a99f0347f511827ceb414e3cd10c45cd6592284987976f1fb875527c4';
+  //shell_exec("curl '".$url."' -L -H 'Cookie: rack.session=".$sess."' > tmp_occs.json");
+  //$resp = file_get_contents('tmp_occs.json');
+  //$json = json_decode($resp);
 
-  $d->aoo = $json->stats->aoo;
-  $d->eoo = $json->stats->eoo;
+  //$d->aoo = $json->stats->aoo;
+  //$d->eoo = $json->stats->eoo;
 
   $row = array();
   foreach($fields as $f) {
