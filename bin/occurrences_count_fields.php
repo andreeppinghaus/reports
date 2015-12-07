@@ -12,7 +12,8 @@ $fields_array = array("family" => "família",
     "no_sig" => "SIG não revisado",
     "used" => "usados nos cálculos",
     "unused" => "não usados nos cálculos",
-    "total" => "total",
-    "eoo" => "eoo",
-    "aoo" => "aoo");
+    "total" => "total"
+    //"eoo" => "eoo",
+    //"aoo" => "aoo"
+    );
 ?>

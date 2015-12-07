@@ -1,9 +1,9 @@
 import xlwt, csv, os
 
-for fol in os.listdir("../data/"):
+for fol in os.listdir("data/"):
     if fol == "livro_vermelho_2013_revisao_2015":
         continue
-    csv_folder = "../data/"+fol+"/"
+    csv_folder = "data/"+fol+"/"
     if os.path.isdir(csv_folder):
         print fol
 
@@ -20,4 +20,4 @@ for fol in os.listdir("../data/"):
                             sheet.write(i, j, each)
                         i += 1
 
-        book.save("../data/"+fol+"/all.xls")
+        book.save("data/"+fol+"/all.xls")

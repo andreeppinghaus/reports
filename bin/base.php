@@ -23,10 +23,11 @@ include_once 'utils/config.php';
 include 'utils/gdrive.php';
 include 'utils/ckan.php';
 echo "Using $base",PHP_EOL;
-if(!file_exists("all.json")) {
-  echo "Downloading $base",PHP_EOL;
-  passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
-}
+//if(!file_exists("all.json")) {
+// Always download database to get real time results
+echo "Downloading $base",PHP_EOL;
+passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
+//}
 
 $all = new StdClass;
 $all->rows = array();
