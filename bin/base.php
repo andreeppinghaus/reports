@@ -26,8 +26,21 @@ echo "Using $base",PHP_EOL;
 //if(!file_exists("all.json")) {
 // Always download database to get real time results
 echo "Downloading $base",PHP_EOL;
-passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
+//passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
 //}
+
+function retrim($obj){
+  if(is_object($obj)) {
+    foreach($obj as $k=>$v) {
+      if(is_string($v)){
+        $obj->$k = trim($v);
+      } else if(is_object($v)) {
+        $obj->$k = retrim($v);
+      }
+    }
+  }
+  return $obj;
+}
 
 $all = new StdClass;
 $all->rows = array();
@@ -37,9 +50,9 @@ while($l = fgets($af)){
   $obj = json_decode(substr($l,0,-3));
   $obj2 = json_decode(substr($l,0,-2));//last obj
   if(is_object($obj)) {
-    $all->rows[]=$obj ;
+    $all->rows[]=retrim($obj) ;
   } else if(is_object($obj2)) {
-    $all->rows[]=$obj2 ;
+    $all->rows[]=retrim($obj2) ;
   }
 }
 #$all = json_decode(file_get_contents("all.json"));

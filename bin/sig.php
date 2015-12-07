@@ -19,11 +19,6 @@ foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='taxon') {
       if(isset($doc->scientificNameWithoutAuthorship) && strlen($doc->scientificNameWithoutAuthorship) > 1) {
-        foreach($doc as $k=>$v) {
-          if(is_string($v)) {
-            $doc->$k = trim($v);
-          }
-        }
         $taxons[]=$doc;
       }
     }
@@ -32,11 +27,6 @@ foreach($all->rows as $row) {
 foreach($all->rows as $row) {
     $doc = $row->doc;
     if($doc->metadata->type=='occurrence') {
-      foreach($doc as $k=>$v) {
-        if(is_string($v)) {
-          $doc->$k = trim($v);
-        }
-      }
       $got =false;
       foreach($taxons as $k=>$taxon) {
         $m1 = "/.*".$taxon->scientificNameWithoutAuthorship.".*/";
