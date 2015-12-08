@@ -26,7 +26,7 @@ echo "Using $base",PHP_EOL;
 //if(!file_exists("all.json")) {
 // Always download database to get real time results
 echo "Downloading $base",PHP_EOL;
-//passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
+passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
 //}
 
 function retrim($obj){
