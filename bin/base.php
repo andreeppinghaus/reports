@@ -30,11 +30,12 @@ include_once 'utils/config.php';
 include 'utils/gdrive.php';
 include 'utils/ckan.php';
 echo "Using $base",PHP_EOL;
-//if(!file_exists("all.json")) {
-// Always download database to get real time results
-echo "Downloading $base",PHP_EOL;
-passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
-//}
+if(!file_exists("all.json") || (time() - filemtime("all.json")) > (10 * 60))  {
+  // Always download database to get real time results
+  // actually only if older tham 10 minutes
+  echo "Downloading $base",PHP_EOL;
+  passthru("curl 'http://cncflora.jbrj.gov.br/couchdb/".$base."/_all_docs?include_docs=true' -o '".__DIR__."/../data/".$base."/all.json'");
+}
 
 function retrim($obj){
   if(is_object($obj)) {
