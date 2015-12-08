@@ -1,4 +1,5 @@
 .git
 .vagrant
-data/*/
+data/*/*
+data/all.zip
 .credentials

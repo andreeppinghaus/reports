@@ -7,8 +7,6 @@ if(php_sapi_name() !== 'cli' || !isset($argv) || count($argv) < 2 ) {
 
 $base = $argv[1];
 
-if(($base == 'livro_vermelho_2013') || ($base == 'livro_vermelho_2013_revisao_2015')) return;
-
 preg_match('/([a-zA-Z0-9_]+)\.php$/',$argv[0],$reg);
 $script = $reg[1];
 
@@ -18,6 +16,15 @@ echo "Start $script",PHP_EOL;
 
 $pwd = __DIR__;
 chdir(__DIR__.'/../data/'.$base);
+
+$file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
+
+if(
+  ($base == 'livro_vermelho_2013' && file_exists($file)) 
+  ||
+  ($base == 'livro_vermelho_2013_revisao_2015' && file_exists($file))
+) return;
+
 
 include_once 'utils/config.php';
 include 'utils/gdrive.php';
@@ -56,7 +63,7 @@ while($l = fgets($af)){
   }
 }
 #$all = json_decode(file_get_contents("all.json"));
-$file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php","",$script)).".csv";
+
 $csv  = fopen($file,'w');
 echo "Running $base",PHP_EOL;
 

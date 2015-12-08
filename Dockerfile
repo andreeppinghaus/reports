@@ -14,6 +14,7 @@ RUN mkdir /var/log/supervisord
 ADD supervisor.conf /etc/supervisor/conf.d/base.conf
 CMD ["supervisord"]
 
-ADD . /var/www/
+COPY . /var/www/
+COPY data/index.php /var/www/data/index.php
 RUN chown www-data.www-data /var/www/ -Rf
 
