@@ -8,4 +8,6 @@ sig.csv
 *.swp
 *~
 *.zip
-
+/data/*/
+/vendor
+composer.lock
