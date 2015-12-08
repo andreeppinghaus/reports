@@ -22,7 +22,7 @@ $file = __DIR__."/../data/".$base."/".str_replace("bin/","", str_replace(".php",
 if(
   ($base == 'livro_vermelho_2013' && file_exists($file)) 
   ||
-  ($base == 'livro_vermelho_2013_revisao_2015' && file_exists($file))
+  ($base == 'livro_vermelho_2013_revisao_2015')
 ) return;
 
 
