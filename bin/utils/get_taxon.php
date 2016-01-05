@@ -17,11 +17,14 @@ function get_taxon_accepted($es, $db) {
 }
 function get_taxon_synonyms($es, $db, $spp) {
 
-    $q = "acceptedNameUsage:\"$spp*\" OR scientificName:\"$spp*\" OR scientificNameWithoutAuthorship: \"$spp*\"";
+    $q = "taxonomicStatus:\"synonym\" AND (acceptedNameUsage:\"$spp*\" OR scientificName:\"$spp*\" OR scientificNameWithoutAuthorship: \"$spp*\")";
     $docs = [];
 
     $hits = search_post(ELASTICSEARCH,$db,'taxon',$q);
     foreach($hits as $hit){
+        if ($hit->scientificNameWithoutAuthorship == $spp) {
+            continue;
+        }
         unset($hit->_rev);
         $docs[]=$hit;
     }

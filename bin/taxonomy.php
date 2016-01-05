@@ -18,9 +18,9 @@ $taxons = get_taxon_accepted(ELASTICSEARCH, $base);
 foreach($taxons as $taxon){
     $synonyms_db = [];
     $synonyms_flora = [];
-    $synoyms = get_taxon_synonyms(ELASTICSEARCH, $base, $taxon->acceptedNameUsage);
-    foreach($synoyms as $synoym){
-        array_push($synonyms_db, strtolower($synoym->scientificNameWithoutAuthorship));
+    $synonyms = get_taxon_synonyms(ELASTICSEARCH, $base, $taxon->scientificNameWithoutAuthorship);
+    foreach($synonyms as $synonym){
+        array_push($synonyms_db, strtolower($synonym->scientificNameWithoutAuthorship));
     }
     $url = $url_base.urlencode($taxon->acceptedNameUsage);
     curl_setopt($curl, CURLOPT_URL, $url);
@@ -39,18 +39,18 @@ foreach($taxons as $taxon){
         }
 
         foreach($result->result->synonyms as $synonym) {
-            if ($result->result->taxonomicStatus == 'synonym') {
-                 array_push($synonyms_flora, strtolower($synoym->scientificNameWithoutAuthorship));
+            if ($synonym->taxonomicStatus == 'synonym') {
+                 array_push($synonyms_flora, strtolower($synonym->scientificNameWithoutAuthorship));
             }
         }
         $syn_extra = array_diff($synonyms_flora, $synonyms_db);
         foreach($syn_extra as $synonym) {
-            $data = [strtoupper($taxon->family), $taxon->acceptedNameUsage, $synonym, "synonym", "synonym_removed"];
+            $data = [strtoupper($taxon->family), $taxon->acceptedNameUsage, $synonym, "synonym", "synonym_added"];
             fputcsv($csv,$data);
         }
         $syn_extra = array_diff($synonyms_db, $synonyms_flora);
         foreach($syn_extra as $synonym) {
-            $data = [strtoupper($taxon->family), $taxon->acceptedNameUsage, $synonym, "synonym", "synonym_added"];
+            $data = [strtoupper($taxon->family), $taxon->acceptedNameUsage, $synonym, "synonym", "synonym_removed"];
             fputcsv($csv,$data);
         }
     }
