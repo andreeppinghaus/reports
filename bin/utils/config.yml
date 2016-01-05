@@ -8,6 +8,7 @@ development:
   author_email: "cncflora@cncflora.net"
   license_id: "cc-by"
   client_secret_path: "../../.credentials/"
+  elasticsearch: 'http://cncflora.jbrj.gov.br/elasticsearch'
 production:
   org_id: 'ddfceda3-c0b3-4e73-be95-15bebdc643d8'
   group_id: '9d684fe9-f69a-438b-994f-b827deb8e0aa'
@@ -18,3 +19,4 @@ production:
   author_email: "contato@cncflora.net"
   license_id: "cc-by"
   client_secret_path: "../../.credentials/"
+  elasticsearch: 'http://cncflora.jbrj.gov.br/elasticsearch'
