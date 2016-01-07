@@ -1,0 +1,9 @@
+development:
+    couchdb: "http://couchdb:5984"
+    elasticsearch: "http://elasticsearch:9200"
+test:
+    couchdb: "http://couchdb:5984"
+    elasticsearch: "http://elasticsearch:9200"
+production:
+    couchdb: 'http://couchdb:5984'
+    elasticsearch: 'http://elasticsearch:9200'

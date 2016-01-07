@@ -1,8 +1,5 @@
 .git
 .vagrant
 data
-!data/index.php
-!data/livro_vermelho_2013/*.csv
-!data/livro_vermelho_2013/*.xlsx
-!data/livro_vermelho_2013/*.zip
+!data/placeholder
 .credentials

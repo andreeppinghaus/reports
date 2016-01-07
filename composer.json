@@ -1,4 +1,9 @@
 {
+    "autoload": {
+        "psr-0": {
+            "cncflora":"src"
+        }
+    },
     "repositories": [
         {
             "type": "git",
@@ -6,6 +11,11 @@
         }
     ],
     "require": {
+        "symfony/yaml": "2.5.*@dev",
+        "guzzlehttp/guzzle": "6.1.1",
+        "elasticsearch/elasticsearch": "~2.0",
+        "doctrine/couchdb": "@dev",
+        "alexbilbie/proton": "~1.4",
         "google/apiclient": "1.0.*@beta",
         "gsa/ckan-php-client": "dev-master"
     },
