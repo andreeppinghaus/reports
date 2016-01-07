@@ -10,7 +10,6 @@ $fields = ["família","nome científico","autor"];
 include 'base.php';
 
 fputcsv($csv,$fields);
-$data_gdrive = array();
 
 $got=[];
 foreach($all->rows as $row) {

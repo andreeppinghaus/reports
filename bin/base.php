@@ -30,6 +30,7 @@ include_once 'utils/config.php';
 include 'utils/gdrive.php';
 include 'utils/ckan.php';
 echo "Using $base",PHP_EOL;
+
 if(!file_exists("all.json") || (time() - filemtime("all.json")) > (10 * 60))  {
   // Always download database to get real time results
   // actually only if older tham 10 minutes
