@@ -17,7 +17,8 @@ function get_taxon_accepted($es, $db) {
 }
 function get_taxon_synonyms($es, $db, $spp) {
 
-    $q = "taxonomicStatus:\"synonym\" AND (acceptedNameUsage:\"$spp*\" OR scientificName:\"$spp*\" OR scientificNameWithoutAuthorship: \"$spp*\")";
+    //$q = "taxonomicStatus:\"synonym\" AND (acceptedNameUsage:\"$spp*\" OR scientificName:\"$spp*\" OR scientificNameWithoutAuthorship: \"$spp*\")";
+    $q = "taxonomicStatus:\"synonym\" AND acceptedNameUsage:\"$spp*\"";
     $docs = [];
 
     $hits = search_post(ELASTICSEARCH,$db,'taxon',$q);
