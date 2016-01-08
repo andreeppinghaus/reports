@@ -1,34 +1,45 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Utilização das espécies";
-$description = "Lista contendo as utilizações dadas a cada espécie do recorte.";
-$is_private = false;
-//$fields=['family','scientificName','use','resource','details','references'];
-// Field translation
-$fields=['família','nome científico','uso','recurso','detalhes','referências'];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Uses {
+  public $title = "Utilização das espécies";
+  public $description = "Lista contendo as utilizações dadas a cada espécie do recorte.";
+  public $is_private = false;
+  public $fields=['família','nome científico','uso','recurso','detalhes','referências'];
+  public $filters =['checklist','family'];
 
-foreach($all->rows as $row) {
-  $d = $row->doc;
-  if($d->metadata->type=='profile') {
-    if(isset($d->uses) && is_array($d->uses)) {
-      foreach($d->uses as $t) {
-        if(isset($t->use)) {
-          $data=[
-             $d->taxon->family
-            ,$d->taxon->scientificNameWithoutAuthorship
-            ,$t->use
-            ,$t->resource
-            ,$t->details
-            ,implode(";",$t->references)
-           ] ;
-          fputcsv($csv,$data);
+  function run($csv,$checklist,$family=null) {
+    fputcsv($csv,$this->fields);
+
+    $repo=new \cncflora\repository\Profiles($checklist);
+
+    if($family!=null) {
+      $profiles=$repo->listFamily($family);
+    } else {
+      $profiles=$repo->listAll();
+    }
+
+    foreach($profiles as $d) {
+      if(isset($d["uses"]) && is_array($d["uses"])) {
+        foreach($d["uses"] as $t) {
+          if(isset($t["use"])) {
+            if(!isset($t['resource'])) $t['resource']='';
+            if(!isset($t['details'])) $t['details']='';
+            if(!isset($t['references'])) $t['references']=[];
+            $data=[
+               $d["taxon"]["family"]
+              ,$d["taxon"]["scientificNameWithoutAuthorship"]
+              ,$t["use"]
+              ,$t["resource"]
+              ,$t["details"]
+              ,implode(";",$t["references"])
+             ] ;
+            fputcsv($csv,$data);
+          }
         }
       }
     }
   }
-}
 
+}

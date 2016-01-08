@@ -1,25 +1,34 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Fitofisionomias";
-$description = "Lista com fitofisionomias por espécie.";
-$is_private = false;
-//$fields=['family','scientificName','fitofisionomie'];
-// Field translation
-$fields=['familia','nome científico','fitofisionomia'];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Fitofisionomias {
 
-foreach($all->rows as $row) {
-  $d = $row->doc;
-  if($d->metadata->type=='profile') {
-    if(isset($d->ecology) && isset($d->ecology->fitofisionomies) && is_array($d->ecology->fitofisionomies)) {
-      foreach($d->ecology->fitofisionomies as $t) {
-        $data = [ $d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,$t];
-        fputcsv($csv,$data);
+  public $title = "Fitofisionomias";
+  public $description = "Lista com fitofisionomias por espécie.";
+  public $is_private = false;
+  public $fields=['familia','nome científico','fitofisionomia'];
+  public $filters=["checklist","family"];
+
+  function run($csv,$checklist,$family=null) {
+    fputcsv($csv,$this->fields);
+
+    $repo=new \cncflora\repository\Profiles($checklist);
+
+    if($family!=null) {
+      $profiles=$repo->listFamily($family);
+    } else {
+      $profiles=$repo->listAll();
+    }
+
+    foreach($profiles as $d) {
+      if(isset($d["ecology"]) && isset($d["ecology"]["fitofisionomies"]) && is_array($d["ecology"]["fitofisionomies"])) {
+        foreach($d["ecology"]["fitofisionomies"] as $t) {
+          $data = [ $d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],$t];
+          fputcsv($csv,$data);
+        }
       }
     }
   }
-}
 
+}

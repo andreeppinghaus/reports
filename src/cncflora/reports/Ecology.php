@@ -1,37 +1,45 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Ecologia";
-$description = "Lista com as características da ecologia por espécie.";
-$is_private = false;
-//$fields = ['family','scientificName','lifeForm','fenology','luminosity','substratum','longevity','resprout'];
-// Field translation
-$fields = ['familia','nome científico','habito','fenologia','luminosidade','substrato','longevidade','rebroto'];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Ecology {
+  public $title = "Ecologia";
+  public $description = "Lista com as características da ecologia por espécie.";
+  public $is_private = false;
+  public $fields = ['familia','nome científico','habito','fenologia','luminosidade','substrato','longevidade','rebroto'];
+  public $filters = ['checklist','family'];
 
-foreach($all->rows as $row) {
-  $d = $row->doc;
-  if($d->metadata->type=='profile') {
-    if(isset($d->ecology) && is_object($d->ecology)) {
-      foreach($d->ecology as $k=>$v) {
-        if(is_array($v)) {
-          $d->ecology->$k = implode(' ; ',$v);
+  function run($csv,$checklist,$family=null){
+    fputcsv($csv,$this->fields);
+
+    $repo=new \cncflora\repository\Profiles($checklist);
+
+    if($family!=null) {
+      $profiles=$repo->listFamily($family);
+    } else {
+      $profiles=$repo->listAll();
+    }
+
+    foreach($profiles as $d) {
+      if(isset($d["ecology"]) && is_object($d["ecology"])) {
+        foreach($d["ecology"] as $k=>$v) {
+          if(is_array($v)) {
+            $d["ecology"]->$k = implode(' ; ',$v);
+          }
         }
+        $data =[
+          $d["taxon"]["family"]
+          , $d["taxon"]["scientificNameWithoutAuthorship"]
+          , $d["ecology"]["lifeForm"]
+          , $d["ecology"]["fenology"]
+          , $d["ecology"]["luminosity"]
+          , $d["ecology"]["substratum"]
+          , $d["ecology"]["longevity"]
+          , $d["ecology"]["resprout"]
+          ];
+        fputcsv($csv,$data);
       }
-      $data =[
-        $d->taxon->family
-        , $d->taxon->scientificNameWithoutAuthorship
-        , $d->ecology->lifeForm
-        , $d->ecology->fenology
-        , $d->ecology->luminosity
-        , $d->ecology->substratum
-        , $d->ecology->longevity
-        , $d->ecology->resprout
-        ];
-      fputcsv($csv,$data);
     }
   }
-}
 
+}

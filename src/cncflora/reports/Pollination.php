@@ -1,25 +1,34 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Síndromes de Polinização";
-$description = "Lista com as síndromes de polinização por espécie.";
-$is_private = false;
-//$fields = ['family','scientificName','pollination'];
-// Field translation
-$fields = ["familia","nome científico","síndrome de polinização"];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Pollination {
 
-foreach($all->rows as $row) {
-  $d = $row->doc;
-  if($d->metadata->type=='profile') {
-    if(isset($d->reproduction) && isset($d->reproduction->pollinationSyndrome) && is_array($d->reproduction->pollinationSyndrome)) {
-      foreach($d->reproduction->pollinationSyndrome as $t) {
-        $data=[ $d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,$t ];
-        fputcsv($csv,$data);
+  public $title = "Síndromes de Polinização";
+  public $description = "Lista com as síndromes de polinização por espécie.";
+  public $is_private = false;
+  public $fields = ["familia","nome científico","síndrome de polinização"];
+  public $filters = ['checklist','family'];
+
+  function run($csv,$checklist,$family=null) {
+    fputcsv($csv,$this->fields);
+
+    $repo=new \cncflora\repository\Profiles($checklist);
+
+    if($family!=null) {
+      $profiles=$repo->listFamily($family);
+    } else {
+      $profiles=$repo->listAll();
+    }
+
+    foreach($profiles as $d) {
+      if(isset($d["reproduction"]) && isset($d["reproduction"]["pollinationSyndrome"]) && is_array($d["reproduction"]["pollinationSyndrome"])) {
+        foreach($d["reproduction"]["pollinationSyndrome"] as $t) {
+          $data=[ $d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],$t ];
+          fputcsv($csv,$data);
+        }
       }
     }
   }
-}
 
+}

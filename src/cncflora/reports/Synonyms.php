@@ -1,29 +1,44 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Sinônimos";
-$description = "Lista com os sinônimos de todas as espécies e os respectivos nomes aceitos.";
-$is_private = false;
-$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship","acceptedNameUsage"];
-// Field translation
-$fields = ["família","nome científico","autor","nome aceito"];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Synonyms {
+public $title = "Sinônimos";
+public $description = "Lista com os sinônimos de todas as espécies e os respectivos nomes aceitos.";
+public $is_private = false;
+public $fields = ["família","nome científico","autor","nome aceito"];
+public $filters = ["checklist","family","species"];
 
-foreach($all->rows as $row) {
-    $doc = $row->doc;
-    if($doc->metadata->type=='taxon') {
-        if($doc->taxonomicStatus == 'synonym') {
-            $data=[
-               $doc->family
-              ,$doc->scientificNameWithoutAuthorship
-              ,$doc->scientificNameAuthorship
-              ,$doc->acceptedNameUsage
-            ];
-            fputcsv($csv,$data);
-        }
+  function run($csv,$checklist,$family=null,$specie=null) {
+    fputcsv($csv,$this->fields);
+
+    $repo = new \cncflora\repository\Taxon($checklist);
+
+    if($family != null) {
+      $families = [$family];
+    } else {
+      $families = $repo->listFamilies();
     }
+
+    foreach($families as $f) {
+      if($specie ==null) {
+        $spps = $repo->listFamily($f);
+      } else {
+        $spps = [$repo->getSpecie($specie)];
+      }
+      foreach($spps as $spp) {
+        $syns = $repo->listSynonyms($spp['scientificNameWithoutAuthorship']);
+        foreach($syns as $s) {
+          $data=[
+             $s["family"]
+            ,$s["scientificNameWithoutAuthorship"]
+            ,$s["scientificNameAuthorship"]
+            ,$s["acceptedNameUsage"]
+          ];
+          fputcsv($csv,$data);
+        }
+      }
+    }
+  }
+
 }
-
-

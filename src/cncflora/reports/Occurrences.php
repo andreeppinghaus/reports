@@ -1,161 +1,90 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Ocorrências";
-$description = "Lista com todas as ocorrências do recorte por espécie.";
-$is_private = true;
-include 'occurrences_fields.php';
-$fields = array();
-foreach ($fields_array as $f){
-    array_push($fields, $f);
-}
-include 'base.php';
+namespace cncflora\reports ;
 
-fputcsv($csv,$fields);
-$fields = array_keys($fields_array);
+class Occurrences {
 
-$taxons = [];
-foreach($all->rows as $row) {
-    $doc = $row->doc;
-    if($doc->metadata->type=='taxon') {
-      if(isset($doc->scientificNameWithoutAuthorship) && strlen($doc->scientificNameWithoutAuthorship) > 1) {
-        $taxons[]=$doc;
-      }
-    }
-}
+  public $title = "Ocorrências";
+  public $description = "Lista com todas as ocorrências do recorte por espécie.";
+  public $is_private = true;
+  public $filters = ["checklist","family","species"];
+  public $fields = ['familia aceita','nome aceito'];
+  public $fields_array = array(
+    "occurrenceID" => "id da ocorrência",
+    "bibliographicCitation" => "literatura",
+    "institutionCode" => "código da instituição",
+    "collectionCode" => "código da coleção",
+    "catalogNumber" => "número de catálogo/código de barras",
+    "recordNumber" => "número do coletor",
+    "recordedBy" => "coletor",
+    "year" => "ano da coleta",
+    "month" => "mês da coleta",
+    "day" => "dia da coleta",
+    "identifiedBy" => "identificado por",
+    "stateProvince" => "estado",
+    "municipality" => "município",
+    "locality" => "localidade",
+    "decimalLatitude" => "latitude",
+    "decimalLongitude" => "longitude",
+    "family" => "família",
+    "genus" => "gênero",
+    "specificEpithet" => "epíteto específico",
+    "infraspecificEpithet" => "variedade",
+    "scientificName" => "nome científico",
+    "georeferenceRemarks" => "obs. de SIG",
+    "georeferenceProtocol" => "geo protocolo",
+    "georeferenceVerificationStatus" => "status SIG",
+    "georeferencedBy" => "analista SIG",
+    "coordinateUncertaintyInMeters" => "geo precisão",
+    "valid" => "válido",
+    "validation_taxonomy" => "taxonomia válida",
+    "validation_cultivated" => "cultivada ex-situ",
+    "validation_duplicated" => "registro de duplicata",
+    "validation_native" => "nativa na localidade",
+    "validation_georeference" => "georeferência válida",
+    "metadata_contributor" => "colaboradores",
+    "metadata_modified" => "data da última modificação",
+    "remarks" => "observações",
+    "comments" => "comentários"
+  );
 
-foreach($taxons as $taxon) {
-  if($taxon->taxonomicStatus == 'synonym') {
-    foreach($taxons as $taxon2) {
-      if($taxon2->taxonomicStatus=='accepted') {
-        if($taxon2->acceptedNameUsage==$taxon->acceptedNameUsage || $taxon2->scientificName==$taxon->acceptedNameUsage || $taxon2->scientificNameWithoutAuthorship==$taxon->acceptedNameUsage) {
-          $taxon->acceptedNameUsageWithoutAuthorship = $taxon2->scientificNameWithoutAuthorship;
-        }
-      }
-    }
+
+  public function __construct() {
+    $this->fields = array_merge($this->fields, array_values($this->fields_array) );
   }
-}
 
-foreach($all->rows as $row) {
-    $doc = $row->doc;
-    if($doc->metadata->type=='occurrence') {
-      $got =false;
-      foreach($taxons as $k=>$taxon) {
-        $m1 = "/.*".$taxon->scientificNameWithoutAuthorship.".*/";
-        if(  (isset($doc->scientificName) && preg_match($m1,$doc->scientificName) )
-          || (isset($doc->scientificNameWithoutAuthorship) && preg_match($m1,$doc->scientificNameWithoutAuthorship) )
-          || (isset($doc->acceptedNameUsage) && preg_match($m1,$doc->acceptedNameUsage) )) {
-          $got=true;
-          if($taxon->taxonomicStatus == 'accepted') {
-            $doc->acceptedNameUsage = $taxon->scientificNameWithoutAuthorship;
-          } else if($taxon->taxonomicStatus == 'synonym') {
-            $doc->acceptedNameUsage = $taxon->acceptedNameUsageWithoutAuthorship;
-          }
-          break;
-        }
-      }
-      if(!$got) {
-        echo "Missing ".$doc->_id."\n";
+  function run($csv,$checklist,$family=null,$specie=null) {
+    fputcsv($csv,$this->fields);
+
+    $repoOcc = new \cncflora\repository\Occurrences($checklist);
+    $repoTaxon = new \cncflora\repository\Taxon($checklist);
+
+    if($family==null) {
+      $families = $repoTaxon->listFamilies();
+    } else {
+      $families = [$family];
+    }
+
+    foreach($families as $f) {
+      if($specie==null) {
+        $spps = $repoTaxon->listFamily($f);
       } else {
-        echo "Got ".$doc->_id."\n";
-        if(isset($doc->georeferenceVerificationStatus)) {
-          if($doc->georeferenceVerificationStatus == "1" || $doc->georeferenceVerificationStatus == "ok") {
-            $doc->georeferenceVerificationStatus = "ok";
+        $spps = [$repoTaxon->getSpecie($specie)];
+      }
+      foreach($spps as $spp) {
+        $names = $repoTaxon->listNames($spp['scientificNameWithoutAuthorship']);
+        $occs  = $repoOcc->flatten($repoOcc->listOccurrences($names,false));
+        foreach($occs as $occ) {
+          $data  = [$f,$spp['scientificNameWithoutAuthorship']];
+          foreach($this->fields_array as $k=>$n) {
+            if(!isset($occ[$k])) $occ[$k]='';
+            $data[] = $occ[$k];
           }
-          if(isset($doc->validation)) {
-            if(is_object($doc->validation)) {
-              foreach($doc->validation as $k=>$v) {
-                $kk = 'validation_'.$k;
-                $doc->$kk=$v;
-              }
-              if(isset($doc->validation->status)) {
-                if($doc->validation->status == "valid") {
-                  $doc->valid="true";
-                } else if($doc->validation->status == "invalid") {
-                  $doc->valid="false";
-                } else {
-                  $doc->valid="";
-                }
-              } else {
-                if(
-                  (
-                       !isset($doc->validation->taxonomy)
-                    || $doc->validation->taxonomy == null
-                    || $doc->validation->taxonomy == 'valid'
-                  )
-                  &&
-                  (
-                       !isset($doc->validation->georeference)
-                    || $doc->validation->georeference == null
-                    || $doc->validation->georeference == 'valid'
-                  )
-                  &&
-                  (
-                       !isset($doc->validation->native)
-                    || $doc->validation->native == null
-                    || $doc->validation->native != 'non-native'
-                  )
-                  &&
-                  (
-                       !isset($doc->validation->presence)
-                    || $doc->validation->presence == null
-                    || $doc->validation->presence != 'absent'
-                  )
-                  &&
-                  (
-                       !isset($doc->validation->cultivated)
-                    || $doc->validation->cultivated == null
-                    || $doc->validation->cultivated != 'yes'
-                  )
-                  &&
-                  (
-                       !isset($doc->validation->duplicated)
-                    || $doc->validation->duplicated == null
-                    || $doc->validation->duplicated != 'yes'
-                  )
-                ) {
-                  $doc->valid="true";
-                } else {
-                  $doc->valid="false";
-                }
-              }
-            } else {
-              $doc->valid = "";
-            }
-          } else {
-            $doc->valid = "";
-          }
+          fputcsv($csv,$data);
         }
-
-        $doc->contributor = $doc->metadata->contributor ;
-        $doc->dateLastModified = date("Y-m-d H:i:s" ,$doc->metadata->modified );
-
-        $data = [];
-        foreach($fields as $f) {
-            // Join coordinateUncertaintyInMeters and georeferencePrecision fields
-            if ($f == 'coordinateUncertaintyInMeters') {
-                if(!isset($doc->$f) && isset($doc->georeferencePrecision)) {
-                    $doc->$f = $doc->georeferencePrecision;
-                }
-            }
-            // Join remarks and occurrenceRemarks
-            if ($f == 'remarks') {
-                if(!isset($doc->$f) && isset($doc->occurrenceRemarks)) {
-                    $doc->$f = $doc->occurrenceRemarks;
-                }
-                elseif (isset($doc->occurrenceRemarks)){
-                     $doc->$f = $doc->$f." ".$doc->occurrenceRemarks;
-                }
-            }
-          if(isset($doc->$f)) {
-            //Substitute ; with , to not destroy CSV format
-            $data[] = str_replace(";", ",", $doc->$f);
-          } else {
-            $data[] = "";
-          }
-        }
-        fputcsv($csv,$data);
       }
     }
-}
 
+  }
+
+}

@@ -109,6 +109,46 @@ class Taxon {
     return $names;
   }
 
+  public function listSynonyms($spp) {
+    $syns=[];
+
+    $params=[
+      'index'=>$this->db,
+      'type'=>'taxon',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'bool'=>[
+            'must'=>[
+              [
+                'match'=>[
+                  'taxonomicStatus'=>'synonym'
+                ]
+              ],
+              [
+                'match'=>[
+                  'acceptedNameUsage'=>[
+                    'query'=>$spp ,'operator'=>'and'
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ];
+    $result = $this->elasticsearch->search($params);
+    foreach($result['hits']['hits'] as $hit) {
+      $syns[]=$hit['_source'];
+    }
+
+    usort($syns,function($a,$b){
+      return strcmp($a['scientificName'],$b['scientificName']);
+    });
+
+    return $syns;
+  }
+
   public function getSpecie($name) {
     $params=[
       'index'=>$this->db,
@@ -126,7 +166,8 @@ class Taxon {
               [
                 'match'=>[
                 'acceptedNameUsage'=>[
-                    'query'=>$name ,'operator'=>'and'
+                    'query'=>$name 
+                    ,'operator'=>'and'
                   ]
                 ]
               ]

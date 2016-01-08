@@ -1,5 +1,7 @@
 <?php
 
+// TODO: DO!
+
 namespace cncflora\reports;
 
 class Assessments{
@@ -10,8 +12,8 @@ class Assessments{
   public $fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "bioma"];
   public $filters=["checklist",'family'];
 
-  function run($csv) {
-    fputcsv($csv,$fields);
+  function run($csv,$checklist,$family="") {
+    fputcsv($csv,$this->fields);
 
     $taxons = [];
 

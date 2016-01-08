@@ -29,7 +29,9 @@ $r->get("/reports",function($req,$res){
     $reports[]=$report;
   }
 
-  sort($reports);
+  usort($reports,function($a,$b) {
+    return strcmp($a->title,$b->title);
+  });
   $res->setContent(json_encode($reports));
   return $res;
 });
@@ -103,6 +105,14 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$
   $name = $args['checklist']."_".$args['family']."_".str_replace(" ","_",trim( urldecode( $args['species'] ) ))."_".$args['report'].'_'.date('Y-m-d-Hm').".csv";
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
+
+  $class ='\\cncflora\\reports\\'.$args['report'];
+  $report = new $class;
+
+  $csv=fopen($file,'w');
+  $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
+  fclose($csv);
+
   $res->setContent($url);
   return $res;
 });

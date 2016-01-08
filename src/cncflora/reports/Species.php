@@ -1,31 +1,33 @@
 <?php
 
-global $title, $description, $is_private, $fields;
-$title = "Espécies";
-$description = "Lista com todas as espécies do recorte.";
-$is_private = false;
-//$fields = ["family","scientificNameWithoutAuthorship","scientificNameAuthorship"];
-// Field translation
-$fields = ["família","nome científico","autor"];
-include 'base.php';
+namespace cncflora\reports;
 
-fputcsv($csv,$fields);
+class Species {
 
-$got=[];
-foreach($all->rows as $row) {
-    $doc = $row->doc;
-    if($doc->metadata->type=='taxon') {
-        if($doc->taxonomicStatus == 'accepted') {
-            if(isset($got[strtolower( $doc->scientificNameWithoutAuthorship)] )) continue;
-              $got[strtoloweR($doc->scientificNameWithoutAuthorship)]=true;
-            $data=[
-               strtoupper($doc->family)
-              ,$doc->scientificNameWithoutAuthorship
-              ,$doc->scientificNameAuthorship
-          ];
-            fputcsv($csv,$data);
-        }
+  public $title = "Espécies";
+  public $description = "Lista com todas as espécies do recorte.";
+  public $is_private = false;
+  public $fields = ["família","nome científico","autor"];
+  public $filters = ['checklist','family'];
+
+  function run($csv,$checklist,$family=null) {
+    fputcsv($csv,$this->fields);
+
+    $repo = new \cncflora\repository\Taxon($checklist);
+
+    if($family != null) {
+      $families = [$family];
+    } else {
+      $families = $repo->listFamilies();
     }
-}
 
-?>
+    foreach($families as $family) {
+      $spps = $repo->listFamily($family);
+      foreach($spps as $doc) {
+        $data=[ strtoupper($doc["family"]) ,$doc["scientificNameWithoutAuthorship"] ,$doc["scientificNameAuthorship"] ];
+        fputcsv($csv,$data);
+      }
+    }
+  }
+
+}
