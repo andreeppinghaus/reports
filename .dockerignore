@@ -1,5 +1,5 @@
 .git
 .vagrant
-data
-!data/placeholder
+html/data
+!html/data/placeholder
 .credentials

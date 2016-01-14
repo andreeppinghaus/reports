@@ -1,48 +1,48 @@
 <?php
 
-// TODO: do!
+namespace cncflora\reports;
 
-global $title, $description, $is_private, $fields;
-$title = "Referências";
-$description = "Lista com todas as referências utilizadas no recorte, separadas por espécie e indicação de onde são utilizadas.";
-$is_private = false;
-//$fields = ["family","scientificName","document","field","reference"];
-// Field translation
-$fields = ["familia","nome científico","tipo de documento", "campo no documento", "referências"];
-include 'base.php';
+class References {
+  public $title = "Referências";
+  public $description = "Lista com todas as referências utilizadas no recorte, separadas por espécie e indicação de onde são utilizadas.";
+  public $is_private = false;
+  public $fields = ["familia","nome científico","tipo de documento", "campo no documento", "referências"];
+  public $filters = ['checklist','family','species'];
 
-fputcsv($csv,$fields);
+  function run($csv,$checklist,$family=null) {
+    fputcsv($csv,$this->fields);
 
-foreach($all->rows as $row) {
-  $d = $row->doc;
-  if($d->metadata->type=='assessment') {
-    if(isset($d->references) && is_array($d->references)) {
-      foreach($d->references as $r) {
-        if(is_string($r) && strlen(trim($r)) >= 2) {
-            $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"avaliação","",$r];
-          fputcsv($csv,$data);
-        }
-      }
+    $repo0=new \cncflora\repository\Profiles($checklist);
+    $repo1=new \cncflora\repository\Assessment($checklist);
+
+    if($family!=null) {
+      $profiles=$repo0->listFamily($family);
+      $assessments=$repo1->listFamily($family);
+    } else {
+      $profiles=$repo0->listAll();
+      $assessments=$repo1->listAll();
     }
-  }else if($d->metadata->type=='profile') {
-    foreach($d as $field=>$value) {
-      if(is_object($value)) {
-        if(isset($value->references) && is_array($value->references)) {
-          foreach($value->references as $r) {
-            if(is_string($r) && strlen(trim($r)) >= 2) {
-                $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"perfil de espécie",$field,$r];
-              fputcsv($csv,$data);
+
+    foreach($profiles as $d) {
+      foreach($d as $field=>$value) {
+        if(is_object($value)) {
+          if(isset($value["references"]) && is_array($value["references"])) {
+            foreach($value["references"] as $r) {
+              if(is_string($r) && strlen(trim($r)) >= 2) {
+                  $data = [$d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],"perfil de espécie",$field,$r];
+                fputcsv($csv,$data);
+              }
             }
           }
-        }
-      } else if(is_Array($value)) {
-        foreach($value as $value2) {
-          if(is_object($value2)) {
-            if(isset($value2->references) && is_array($value2->references)) {
-              foreach($value2->references as $r) {
-                if(is_string($r) && strlen(trim($r)) >= 2) {
-                  $data = [$d->taxon->family,$d->taxon->scientificNameWithoutAuthorship,"profile",$field,$r];
-                  fputcsv($csv,$data);
+        } else if(is_array($value)) {
+          foreach($value as $value2) {
+            if(is_object($value2)) {
+              if(isset($value2["references"]) && is_array($value2["references"])) {
+                foreach($value2["references"] as $r) {
+                  if(is_string($r) && strlen(trim($r)) >= 2) {
+                    $data = [$d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],"perfil de espécie",$field,$r];
+                    fputcsv($csv,$data);
+                  }
                 }
               }
             }
@@ -50,6 +50,15 @@ foreach($all->rows as $row) {
         }
       }
     }
+    foreach($assessments as $d) {
+      if(isset($d["references"]) && is_array($d["references"])) {
+        foreach($d["references"] as $r) {
+          if(is_string($r) && strlen(trim($r)) >= 2) {
+            $data = [$d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],"avaliação","",$r];
+            fputcsv($csv,$data);
+          }
+        }
+      }
+    }
   }
 }
-

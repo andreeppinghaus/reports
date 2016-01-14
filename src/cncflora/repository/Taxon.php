@@ -14,6 +14,20 @@ class Taxon {
     $this->elasticsearch = \cncflora\Config::elasticsearch();
   }
 
+  public function listAll() {
+    $families = $this->listFamilies();
+    $taxa=[];
+
+    foreach($families as $f) {
+      $spps=$this->listFamily($f);
+      foreach($spps as $s) {
+        $taxa[] = $s;
+      }
+    }
+
+    return $taxa;
+
+  }
   public function listFamilies(){
     $families=[];
 
