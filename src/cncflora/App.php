@@ -18,7 +18,7 @@ $r->get("/reports",function($req,$res){
 
   $dir = opendir(__DIR__.'/reports');
   while($file = readdir($dir)) {
-    if(!preg_match('/[A-Z][a-z_]+\.php/',$file)) continue;
+    if(!preg_match('/^[A-Z][a-z_]+\.php$/',$file)) continue;
 
     $class_name = str_replace(".php","",$file);
     $content = file_get_contents(__DIR__."/reports/".$file);
