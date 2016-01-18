@@ -2,9 +2,9 @@
 
 namespace cncflora\reports ;
 
-class OffTaxonomyChanges {
+class TaxonomyChanges {
   public $title = "Mudanças taxonômicas";
-  public $description = "Lista com todas as mudanças taxonômicas.";
+  public $description = "Lista com todas as mudanças taxonômicas. Demora bastante para gerar.";
   public $is_private = false;
   public $fields = ["família", "espécie", "mudança"];
   public $filters = ['checklist'];
