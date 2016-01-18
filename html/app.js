@@ -146,8 +146,13 @@ function app() {
 
     $('.result').show();
     $(".result").html("Gerando...");
-    $.get(url,function(url){
-        $(".result").html('<a href="'+url+'" class="pure-button">Download</a>');
+    $.get(url,function(data){
+        var r = JSON.parse(data);
+        if(r.ok) {
+          $(".result").html('<a href="'+r.url+'" class="pure-button">Download</a>');
+        } else {
+          $(".result").html('<span class="error"><strong>Erro</strong>: '+r.error+'</span>');
+        }
     });
     return false;
   }

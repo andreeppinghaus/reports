@@ -1,4 +1,5 @@
 <?php
+
 namespace cncflora;
 
 Config::config();
@@ -76,12 +77,21 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
 
   $class ='\\cncflora\\reports\\'.$args['report'];
   $report = new $class;
+  $r = new \StdClass;
 
   $csv=fopen($file,'w');
-  $report->run($csv,$args['checklist']);
+  try {
+    $report->run($csv,$args['checklist']);
+    $r->ok=true;
+    $r->file = $file;
+    $r->url = $url;
+  } catch(\Exception $e) {
+    $r->ok=false;
+    $r->error = $e->getMessage();
+  }
   fclose($csv);
 
-  $res->setContent($url);
+  $res->setContent(json_encode($r));
   return $res;
 });
 
@@ -92,12 +102,21 @@ $r->get('/generate/{report}/{checklist}/{family}',function($req,$res,$args){
 
   $class ='\\cncflora\\reports\\'.$args['report'];
   $report = new $class;
+  $r = new \StdClass;
 
   $csv=fopen($file,'w');
-  $report->run($csv,$args['checklist'],$args['family']);
+  try {
+    $report->run($csv,$args['checklist'],$args['family']);
+    $r->ok=true;
+    $r->file = $file;
+    $r->url = $url;
+  } catch(\Exception $e) {
+    $r->ok=false;
+    $r->error = $e->getMessage();
+  }
   fclose($csv);
 
-  $res->setContent($url);
+  $res->setContent(json_encode($r));
   return $res;
 });
 
@@ -108,12 +127,21 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$
 
   $class ='\\cncflora\\reports\\'.$args['report'];
   $report = new $class;
+  $r = new \StdClass;
 
   $csv=fopen($file,'w');
-  $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
+  try {
+    $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
+    $r->ok=true;
+    $r->file = $file;
+    $r->url = $url;
+  } catch(\Exception $e) {
+    $r->ok=false;
+    $r->error = $e->getMessage();
+  }
   fclose($csv);
 
-  $res->setContent($url);
+  $res->setContent(json_encode($r));
   return $res;
 });
 
