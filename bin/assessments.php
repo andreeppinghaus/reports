@@ -2,7 +2,7 @@
 
 global $title, $description, $is_private, $fields;
 $title = "Avaliações";
-$description = "Lista com as avaliações de risco de extensão de cada espécie.";
+$description = "Lista com as avaliações de risco de extinção de cada espécie.";
 $is_private = false;
 //$fields = ["familia","especie","especie com autor","assessment","categoria","criteria", "avaliador", "revisor", "rationale", "data da avaliacao", "link"];
 // Field translation
