@@ -1,9 +1,12 @@
 development:
     couchdb: "http://couchdb:5984"
     elasticsearch: "http://elasticsearch:9200"
+    base: ''
 test:
     couchdb: "http://couchdb:5984"
     elasticsearch: "http://elasticsearch:9200"
+    base: ''
 production:
     couchdb: 'http://couchdb:5984'
     elasticsearch: 'http://elasticsearch:9200'
+    base: '/reports2'

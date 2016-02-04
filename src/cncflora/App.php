@@ -145,4 +145,65 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$
   return $res;
 });
 
+$r->get('/book',function($req,$res) {
+  $repo = new \cncflora\repository\Checklist;
+  $dbs = $repo->getChecklists();
+  ob_start();
+  include __DIR__.'/../../html/book.php';
+  $c = ob_get_contents();
+  ob_end_clean();
+  $res->setContent($c);
+  return $res;
+});
+
+$r->get('/book/{db}',function($req,$res,$args) {
+  $db = $args['db'];
+  $repo = new \cncflora\repository\Taxon($db);
+  $families = $repo->listFamilies();
+  ob_start();
+  include __DIR__.'/../../html/book_families.php';
+  $c = ob_get_contents();
+  ob_end_clean();
+  $res->setContent($c);
+  return $res;
+});
+
+$r->get('/book/{db}/{family}',function($req,$res,$args) {
+  $db = $args['db'];
+  $family = $args['family'];
+
+  $refs=[];
+  $repo=new \cncflora\repository\Assessment($db);
+  $asses=$repo->listFamily($family);
+
+  $repo2=new \cncflora\repository\Profiles($db);
+  $profs=$repo2->listFamily($family);
+
+  $assessments=[];
+  foreach($asses as $a) {
+    if(!($a['metadata']['status'] == 'published' || $a['metadata']['status'] == 'comments')) continue;
+
+    foreach($profs as $p) {
+      if($p['taxon']['scientificNameWithoutAuthorship'] == $a['taxon']['scientificNameWithoutAuthorship']) {
+        $a['profile'] = $p;
+      }
+    }
+
+    $assessments[] = $a;
+    if(isset($a['references']) && is_array($a['references']))  {
+      $refs = array_merge($refs,$a['references']);
+    }
+  }
+  $references = array_unique($refs);
+  sort($references);
+
+
+  ob_start();
+  include __DIR__.'/../../html/book_family.php';
+  $c = ob_get_contents();
+  ob_end_clean();
+  $res->setContent($c);
+  return $res;
+});
+
 $r->run();
