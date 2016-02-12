@@ -24,7 +24,7 @@ color: #bb3238;
 strong {
 color: #bb3238;
 }
-p {
+p, .refs li {
 text-align:justify;
 }
 .spp {
@@ -44,7 +44,7 @@ border-bottom: 1px #a79137 solid;
 <p class="print pure-u-1"><a href='javascript:window.print()'>Imprimir</a></p>
 
 <?php foreach($assessments as $a): ?>
-  <div class="spp pure-u-3-5">
+  <div class="spp pure-u-1">
     <h2><i><?php echo $a["taxon"]["scientificNameWithoutAuthorship"] ?></i> <?php echo $a["taxon"]["scientificNameAuthorship"] ?></h2>
     <h3>Risco de extinção: <?php echo $a["category"]?> <?php if(isset($a['criteria'])) echo $a["criteria"] ; ?></h3>
     <p class='info'>
@@ -62,7 +62,7 @@ border-bottom: 1px #a79137 solid;
   </div>
 <?php endforeach; ?>
 
-<div class="refs pure-u-3-5">
+<div class="refs pure-u-1">
   <h2>Referências Bibliográficas</h2>
   <ul>
   <?php foreach($references as $r): ?>
