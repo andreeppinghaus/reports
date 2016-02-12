@@ -24,10 +24,14 @@ color: #bb3238;
 strong {
 color: #bb3238;
 }
+p.rationale {
+  padding-right: 10px;
+}
 p, .refs li {
 text-align:justify;
 }
 .spp {
+padding-bottom: 15px;
 border-bottom: 1px #a79137 solid;
 }
 .refs li {
@@ -45,20 +49,23 @@ border-bottom: 1px #a79137 solid;
 
 <?php foreach($assessments as $a): ?>
   <div class="spp pure-u-1">
-    <h2><i><?php echo $a["taxon"]["scientificNameWithoutAuthorship"] ?></i> <?php echo $a["taxon"]["scientificNameAuthorship"] ?></h2>
-    <h3>Risco de extinção: <?php echo $a["category"]?> <?php if(isset($a['criteria'])) echo $a["criteria"] ; ?></h3>
-    <p class='info'>
-      Avaliador: <?php echo $a["assessor"] ?><br />
-      Revisor: <?php echo $a["evaluator"] ?><br />
-      Colaboradores: <?php echo $a["metadata"]["contributor"] ?><br />
-      Data: <?php echo date('d-m-Y', $a["metadata"]["modified"] ) ?><br />
-      <!-- Distribuição: TODO <br /> -->
-      Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br />
-    </p>
-    <p><img 
-    src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/<?php echo ( $a['taxon']['scientificNameWithoutAuthorship'] ).".jpg" ?>"
-   class='pure-u-4-5' /></p>
-    <p><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
+    <div class="pure-u-1">
+      <h2><i><?php echo $a["taxon"]["scientificNameWithoutAuthorship"] ?></i> <?php echo $a["taxon"]["scientificNameAuthorship"] ?></h2>
+      <h3>Risco de extinção: <?php echo $a["category"]?> <?php if(isset($a['criteria'])) echo $a["criteria"] ; ?></h3>
+    </div>
+    <div class="pure-u-3-5">
+      <p class='info'>
+        Avaliador: <?php echo $a["assessor"] ?><br />
+        Revisor: <?php echo $a["evaluator"] ?><br />
+        Colaboradores: <?php echo $a["metadata"]["contributor"] ?><br />
+        Data: <?php echo date('d-m-Y', $a["metadata"]["modified"] ) ?><br />
+        <!-- Distribuição: TODO <br /> -->
+        Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br />
+      </p>
+      <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
+    </div><img 
+      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
+      class='pure-u-2-5' />
   </div>
 <?php endforeach; ?>
 
