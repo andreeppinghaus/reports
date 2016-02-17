@@ -57,10 +57,10 @@ border-bottom: 1px #a79137 solid;
       <p class='info'>
         Avaliador: <?php echo $a["assessor"] ?><br />
         Revisor: <?php echo $a["evaluator"] ?><br />
-        Colaboradores: <?php echo $a["metadata"]["contributor"] ?><br />
+        Colaboradores: <?php echo $a["profile"]["metadata"]["contributor"] ?><br />
         Data: <?php echo date('d-m-Y', $a["metadata"]["modified"] ) ?><br />
         <!-- Distribuição: TODO <br /> -->
-        Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br />
+        <!-- Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br /> -->
       </p>
       <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
     </div><img 
