@@ -12,15 +12,29 @@ class TaxonomyChanges {
   function run($csv,$checklist) {
     fputcsv($csv,$this->fields);
 
-    $url_base = 'http://cncflora.jbrj.gov.br:80/floradata/api/v1/specie?scientificName=';
-    // TODO: use query by family
+    $url_base = 'http://cncflora.jbrj.gov.br:80/floradata/api/v1/species?family=';
+    $field = 'scientificNameWithoutAuthorship';
+
 
     $repo = new \cncflora\repository\Taxon($checklist);
     $families = $repo->listFamilies();
     foreach($families as $family){
+      $floras = json_decode(file_get_contents($url_base.rawurlencode($family)));
+      $found = [];
+      foreach($floras->result as $f) {
+        $found[$f->$field] = $f;
+      }
+
       $species = $repo->listFamily($family);
       foreach($species as $specie) {
-        $flora = json_decode(file_get_Contents($url_base.rawurlencode($specie['scientificNameWithoutAuthorship'])));
+        #$flora = json_decode(file_get_Contents($url_base.rawurlencode($specie['scientificNameWithoutAuthorship'])));
+        $flora = new \StdClass;
+        $flora->result=[];
+
+        if(isset($found[$specie[ $field ]])) {
+          $flora->result = $found[$specie[$field]];
+        }
+
         $synonyms = $repo->listSynonyms($specie['scientificNameWithoutAuthorship']);
         if(empty($flora->result)) {
           $data = [$family,$specie["scientificNameWithoutAuthorship"],'not_found'];
