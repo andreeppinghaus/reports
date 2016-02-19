@@ -82,9 +82,9 @@ window.onload=function(){
         <!-- Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br /> -->
       </p>
       <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
-    </div><img 
+      </div><?php if ( $a['category'] != "DD" ) :  ?><img 
       src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
-      class='pure-u-2-5' />
+      class='pure-u-2-5' /><?php endif; ?>
   </div>
 <?php endforeach; ?>
 
