@@ -39,8 +39,27 @@ border-bottom: 1px #a79137 solid;
 }
 @media print {
   .print {display: none;}
+  .content {
+    display: block;
+    position: relative;
+  }
+  .spp {
+    page-break-inside: avoid;
+    display: block;
+    position: relative;
+  }
 }
   </style>
+<script type="text/javascript">
+window.onload=function(){
+  var imgs = document.querySelectorAll('img');
+  for(var i=0;i<imgs.length;i++){
+    if(imgs[i].naturalWidth==0) {
+       imgs[i].remove();
+    }
+  }
+}
+</script>
 </head>
 <body>
 <div class="content pure-g">
