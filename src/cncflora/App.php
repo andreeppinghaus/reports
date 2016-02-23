@@ -197,6 +197,10 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
   $references = array_unique($refs);
   sort($references);
 
+  usort($assessments,function($a,$b){
+    return strcmp($a['taxon']['scientificNameWithoutAuthorship'],$b['taxon']['scientificNameWithoutAuthorship']);
+  });
+
 
   ob_start();
   include __DIR__.'/../../html/book_family.php';
