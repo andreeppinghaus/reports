@@ -92,7 +92,7 @@ window.onload=function(){
   <h2>Referências Bibliográficas</h2>
   <ul>
   <?php foreach($references as $r): ?>
-    <li><?php echo $r ?></li>
+    <li><?php echo htmlentities($r) ?></li>
   <?php endforeach; ?>
   </ul>
 </div>

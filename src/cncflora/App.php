@@ -194,7 +194,15 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
       $refs = array_merge($refs,$a['references']);
     }
   }
-  $references = array_unique($refs);
+  $references=[];
+  $got=[];
+  foreach($refs as $r) {
+    $letters =preg_replace('/[^a-zA-Z0-9]/','',$r);
+    if(array_Search($letters,$got) === false) {
+      $references[] = $r;
+      $got[]=$letters;
+    }
+  }
   sort($references);
 
   usort($assessments,function($a,$b){
