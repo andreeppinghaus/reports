@@ -72,7 +72,6 @@ class Sigcheck {
         $occs  = $repoOcc->listOccurrences($names,false);
         foreach($occs as $occ) {
           if(!$repoOcc->isValidated($occ)) {
-            var_dump($occ);exit;
             throw new \Exception('Espécie '.$spp['scientificNameWithoutAuthorship'].' possui pontos não validados.');
           }
           $field='coordinateUncertaintyInMeters';
