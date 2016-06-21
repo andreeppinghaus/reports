@@ -1,0 +1,14 @@
+<Files *>
+  AuthType Basic
+  AuthName "Occurrences"
+  AuthUserFile /var/www/html/.htpasswd
+  Require valid-user
+</Files>
+
+IndexOptions ShowForbidden
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ api.php [QSA]
+

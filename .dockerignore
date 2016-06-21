@@ -1,4 +1,5 @@
 .git
 .vagrant
-data/*/all.json
+html/data
+!html/data/placeholder
 .credentials

@@ -1,11 +1,5 @@
-tmp_occs.json
-all.json
-occurrences.csv
-occurrences_misses.csv
-sig.csv
-*.sql
-*.sqlite
 *.swp
 *~
-*.zip
-
+*.csv
+/vendor
+composer.lock
