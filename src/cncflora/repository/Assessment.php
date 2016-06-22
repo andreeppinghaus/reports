@@ -21,7 +21,9 @@ class Assessment {
     $names= [];
     foreach($families as $f) {
       $spps = $taxonRepo->listFamily($f);
-      array_merge($names,$spps);
+      foreach($spps as $spp) {
+        $names[] = $spp['scientificNameWithoutAuthorship'];
+      }
     }
 
     $params=[
@@ -42,22 +44,20 @@ class Assessment {
         = ['match'=>['scientificNameWithoutAuthorship'=>['query'=>$name,'operator'=>'and']]];
     }
 
+    $got=[];
     $assessments=[];
     $result = $this->elasticsearch->search($params);
     foreach($result['hits']['hits'] as $hit) {
-      $assessments[]=$hit['_source'];
+      $p = $hit['_source'];
+      $name = $p['taxon']['scientificNameWithoutAuthorship'];
+      if(isset($got[$name])) continue;
+      $got[$name]=true;
+      $assessments[]=$p;
     }
 
     usort($assessments,function($a0,$a1){
       return $a0["metadata"]["modified"] > $a1["metadata"]["modified"];
     });
-
-    $got=[];
-    foreach($assessments as $p) {
-      $name = $p['taxon']['scientificNameWithoutAuthorship'];
-      if(isset($got[$name])) continue;
-      else $got[$name]=true;
-    }
 
     usort($assessments,function($a,$b) { 
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']
@@ -94,22 +94,21 @@ class Assessment {
         = ['match'=>['scientificNameWithoutAuthorship'=>['query'=>$name,'operator'=>'and']]];
     }
 
+    $got=[];
     $assessments=[];
     $result = $this->elasticsearch->search($params);
     foreach($result['hits']['hits'] as $hit) {
+      $p = $hit['_source'];
+      $name = $p['taxon']['scientificNameWithoutAuthorship'];
+      if(isset($got[$name])) continue;
+      $got[$name]=true;
+
       $assessments[]=$hit['_source'];
     }
 
     usort($assessments,function($a0,$a1){
       return $a0["metadata"]["modified"] > $a1["metadata"]["modified"];
     });
-
-    $got=[];
-    foreach($assessments as $p) {
-      $name = $p['taxon']['scientificNameWithoutAuthorship'];
-      if(isset($got[$name])) continue;
-      else $got[$name]=true;
-    }
 
     usort($assessments,function($a,$b) { 
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']

@@ -1,4 +1,4 @@
-project = reports
+project = reports2
 
 all: build
 
@@ -19,8 +19,8 @@ stop:
 	docker-compose -p $(project) -f config/docker-compose.yml rm
 
 build:
-	docker build -t cncflora/$(project):v2 -f config/Dockerfile .
+	docker build -t cncflora/$(project) -f config/Dockerfile .
 
 push:
-	docker push cncflora/$(project):v2
+	docker push cncflora/$(project)
 

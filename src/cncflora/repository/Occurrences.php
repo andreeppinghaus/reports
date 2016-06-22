@@ -138,7 +138,14 @@ class Occurrences {
   }
 
   public function canUse($occ) {
-    return (!$this->isValidated($occ) || $this->isValid($occ)) && $this->isSigOk($occ);
+    return 
+      (!$this->isValidated($occ) || $this->isValid($occ))
+      && $this->isSigOk($occ) 
+      && isset($occ["decimalLatitude"])
+      && isset($occ["decimalLongitude"]) 
+      && !is_null($occ["decimalLatitude"]) 
+      && !is_null($occ["decimalLongitude"])
+      ;
   }
 
   public function isValid($occ) {
@@ -146,7 +153,7 @@ class Occurrences {
   }
 
   public function isValidated($occ) {
-    return isseT($occ['validation']) && isset($occ['validation']['done']) && $occ['validation']['done']===true;
+    return (isset($occ['validation']) && isset($occ['validation']['done']) && $occ['validation']['done']===true);
   }
 
   public function hasSig($occ) {
@@ -243,10 +250,10 @@ class Occurrences {
     $doc['metadata']['type']='occurrence';
 
     if(isset($doc['metadata']['modified'])) {
-      $doc['metadata']['modified_date'] = date('Y-m-d',$doc['metadata']['modified']);
+      $doc['metadata']['modified_date'] = date('Y-m-d',(int)$doc['metadata']['modified']);
     }
     if(isset($doc['metadata']['created'])) {
-      $doc['metadata']['created_date'] = date('Y-m-d',$doc['metadata']['created']);
+      $doc['metadata']['created_date'] = date('Y-m-d',(int)$doc['metadata']['created']);
     }
 
     if(isset($doc["georeferenceVerificationStatus"])) {
@@ -270,22 +277,80 @@ class Occurrences {
         $doc['sig-status-ok']=false;
         $doc['sig-status-nok']=false;
         $doc['sig-status-uncertain-locality']=true;
+      } else {
+        $doc['georeferenceVerificationStatus']="ok";
+        return $this->prepare($doc);
       }
     } else {
       $doc['sig-ok']=null;
     }
 
+    $verbatim = null;
+    if(isset($doc["verbatimValidation"])) {
+      $vvv = $doc["verbatimValidation"];
+      if($vvv != null && is_array($vvv) && isset($vvv["status"]) && $vvv["status"] != null) {
+        $status = $vvv["status"];
+        if($status === "valid" || $status === '1' || $status === 1 || $status === true) {
+          $verbatim=true;
+        } else {
+          $verbatim=false;
+        }
+      }
+    }
+
     if(isset($doc["validation"])) {
       if(is_array($doc["validation"])) {
+        if(isset($doc["validation"]["status"])) {
+          if($doc["validation"]["status"] == "" || $doc["validation"]["status"] == null) {
+            unset($doc['validation']['status']);
+          }
+        }
+        if(isset($doc["validation"]["remarks"])) {
+          if($doc["validation"]["remarks"] == "" || $doc["validation"]["remarks"] == null) {
+            unset($doc['validation']['remarks']);
+          }
+        }
+        if(isset($doc["validation"]["by"])) {
+          if($doc["validation"]["by"] == "" || $doc["validation"]["by"] == null) {
+            unset($doc['validation']['by']);
+          }
+        }
+      }
+      if($doc["validation"]==[]) {
+        unset($doc["validation"]);
+      }
+    }
+
+    if(!isset($doc['validation']) && $verbatim != null){
+      $doc['validation']=['done'=>true,'valid'=>$verbatim,'status'=>($verbatim?'valid':'invalid')];
+      $doc['valid']=$verbatim;
+    } else if(!isset($doc['validation'])){
+      $doc['validation']=['done'=>false,'valid'=>null,'status'=>''];
+      $doc["valid"]=null;
+    } else if(isset($doc["validation"])) {
+      if(!is_array($doc['validation'])) {
+        $doc['validation']=['done'=>false,'valid'=>null,'status'=>''];
+        $doc["valid"]=null;
+      } else if(is_array($doc["validation"])) {
         foreach($doc["validation"] as $k=>$v) {
           if(is_string($v)) {
             $kk = $k."-".$v;
             $doc['validation'][$kk]=$v;
           }
         }
+        if(   isset($doc["validation"]["taxonomy"])
+           || isset($doc["validation"]["georeference"])
+           || isset($doc["validation"]["native"])
+           || isset($doc["validation"]["presence"])
+           || isset($doc["validation"]["cultivated"])
+           || isset($doc["validation"]["duplicated"])) {
+           unset($doc["validation"]["status"]);
+        }
 
-        if(isset($doc["validation"]["status"])) {
-          if($doc["validation"]["status"] == "valid") {
+        if(isset($doc["validation"]["status"])
+          && $doc["validation"]["status"] != ""
+          && $doc["validation"]["status"] != null) {
+          if($doc["validation"]["status"] === "valid") {
             $doc["valid"]=true;
             $doc['validation']['done']=true;
           } else if($doc["validation"]["status"] == "invalid") {
@@ -297,112 +362,85 @@ class Occurrences {
           }
         } else {
           if(
+            !isset($doc["validation"]["taxonomy"])
+           && !isset($doc["validation"]["georeference"])
+           && !isset($doc["validation"]["native"])
+           && !isset($doc["validation"]["presence"])
+           && !isset($doc["validation"]["cultivated"])
+           && !isset($doc["validation"]["duplicated"])
+          ) {
+            $doc["valid"]=null;
+            $doc['validation']['status']=null;
+            $doc['validation']['done']=false;
+          } else if(
             (
                  !isset($doc["validation"]["taxonomy"])
-              || $doc["validation"]["taxonomy"] == null
+              || $doc["validation"]["taxonomy"] === null
               || $doc["validation"]["taxonomy"] == 'valid'
             )
             &&
             (
                  !isset($doc["validation"]["georeference"])
-              || $doc["validation"]["georeference"] == null
+              || $doc["validation"]["georeference"] === null
               || $doc["validation"]["georeference"] == 'valid'
             )
             && 
             (
                  !isset($doc["validation"]["native"])
-              || $doc["validation"]["native"] == null
+              || $doc["validation"]["native"] === null
               || $doc["validation"]["native"] != 'non-native'
             )
             && 
             (
                  !isset($doc["validation"]["presence"])
-              || $doc["validation"]["presence"] == null
+              || $doc["validation"]["presence"] === null
               || $doc["validation"]["presence"] != 'absent'
             )
             && 
             (
                  !isset($doc["validation"]["cultivated"])
-              || $doc["validation"]["cultivated"] == null
+              || $doc["validation"]["cultivated"] === null
               || $doc["validation"]["cultivated"] != 'yes'
             )
             && 
             (
                  !isset($doc["validation"]["duplicated"])
-              || $doc["validation"]["duplicated"] == null
+              || $doc["validation"]["duplicated"] === null
               || $doc["validation"]["duplicated"] != 'yes'
             )
           ) {
             $doc["valid"]=true;
-          } else {
-            $doc["valid"]=false;
-          }
-          if(   isset($doc["validation"]["taxonomy"])
-             || isset($doc["validation"]["georeference"])
-             || isset($doc["validation"]["native"])
-             || isset($doc["validation"]["presence"])
-             || isset($doc["validation"]["cultivated"])
-             || isset($doc["validation"]["duplicated"])
-          ) {
+            $doc['validation']['status']=true;
             $doc['validation']['done']=true;
           } else {
-            $doc['validation']['done']=false;
+            $doc["valid"]=false;
+            $doc['validation']['status']=false;
+            $doc['validation']['done']=true;
           }
         }
       } else {
         $doc["valid"] = null;
+        $doc['validation']['status']=null;
         $doc['validation']['done']=false;
       }
     } else {
       $doc["valid"] = null;
+      $doc['validation']['status']=null;
       $doc['validation']['done']=false;
+    }
+
+    if($doc['valid'] === null && $verbatim != null) {
+      $set=['done'=>true,'valid'=>$verbatim,'status'=>($verbatim?'valid':'invalid')];
+      foreach($set as $k=>$v) {
+        $doc['validation'][$k]=$v;
+      }
+      $doc['valid']=$verbatim;
     }
 
     $doc['metadata']['status'] = $this->canUse($doc)?"valid":"invalid";
 
     return $doc;
   }
-
-  public function metalog($occurrence) {
-    $metadata = $occurrence['metadata'];
-
-    if(!isset($metadata['concat'])) {
-      $metadata['contact']='';
-    }
-    if(!isset($metadata['concat'])) {
-      $metadata['contributor']='';
-    }
-
-    if($this->user != null) {
-      if(strpos($metadata['contact'],$this->user->email) === false) {
-        $metadata['contributor'] = $this->user->name ." ; ".$metadata['contributor'];
-        $metadata['contact'] = $this->user->email ." ; ".$metadata['contact'];
-      }
-    }
-
-    $contributors = explode(" ; ",$metadata['contributor']);
-    $contributorsFinal = array();
-    foreach($contributors as $contributor) {
-      if($contributor != null && strlen($contributor) >= 3) {
-        $contributorsFinal[] = $contributor;
-      }
-    }
-    $metadata['contributor'] = implode(" ; ",$contributorsFinal);
-
-    $contacts = explode(" ; ",$metadata['contact']);
-    $contactsFinal = array();
-    foreach($contacts as $contact) {
-      if($contact != null && strlen($contact) >= 3) {
-        $contactsFinal[] = $contact;
-      }
-    }
-    $metadata['contact'] = implode(" ; ",$contactsFinal);
-
-    $metadata['modified'] = time();
-    $occurrence[ 'metadata' ] = $metadata;
-    return $occurrence;
-  }
-
 
   public function fixSpecie($occ) {
 
