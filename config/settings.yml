@@ -1,12 +1,15 @@
 development:
     couchdb: "http://couchdb:5984"
     elasticsearch: "http://elasticsearch:9200"
+    dwc_services: "http://dwc_services:80"
     base: ''
 test:
     couchdb: "http://couchdb:5984"
     elasticsearch: "http://elasticsearch:9200"
+    dwc_services: "http://dwc_services:80"
     base: ''
 production:
     couchdb: 'http://couchdb:5984'
     elasticsearch: 'http://elasticsearch:9200'
+    dwc_services: "http://dwc_services:80"
     base: '/reports2'
