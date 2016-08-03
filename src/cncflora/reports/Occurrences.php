@@ -65,6 +65,7 @@ class Occurrences {
       $families = [$family];
     }
 
+    $got=[];
     foreach($families as $f) {
       if($specie==null) {
         $spps = $repoTaxon->listFamily($f);
@@ -75,6 +76,11 @@ class Occurrences {
         $names = $repoTaxon->listNames($spp['scientificNameWithoutAuthorship']);
         $occs  = $repoOcc->flatten($repoOcc->listOccurrences($names,false));
         foreach($occs as $occ) {
+          $id = $occ['occurrenceID'];
+          if(isset($got[$id])) {
+            continue;
+          }
+          $got[$id]=true;
           $data  = [$f,$spp['scientificNameWithoutAuthorship']];
           foreach($this->fields_array as $k=>$n) {
             if(!isset($occ[$k])) $occ[$k]='';
