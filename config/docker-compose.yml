@@ -1,4 +1,4 @@
-reports:
+reports2:
     image: cncflora/apache
     ports:
         - 8081:80
@@ -7,9 +7,12 @@ reports:
     links:
         - elasticsearch
         - couchdb
+        - dwc_services
         - floradata
     environment:
         - PHP_ENV=development
+dwc_services:
+  image: cncflora/dwc-services
 elasticsearch:
     image: cncflora/elasticsearch
     ports:
