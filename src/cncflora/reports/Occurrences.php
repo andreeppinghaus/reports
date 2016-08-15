@@ -54,7 +54,7 @@ class Occurrences {
   }
 
   function run($csv,$checklist,$family=null,$specie=null) {
-    fputcsv($csv,$this->fields);
+    fputcsv($csv,$this->fields, "\t");
 
     $repoOcc = new \cncflora\repository\Occurrences($checklist);
     $repoTaxon = new \cncflora\repository\Taxon($checklist);
@@ -80,7 +80,7 @@ class Occurrences {
             if(!isset($occ[$k])) $occ[$k]='';
             $data[] = $occ[$k];
           }
-          fputcsv($csv,$data);
+          fputcsv($csv,$data, "\t");
         }
       }
     }
