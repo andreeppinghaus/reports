@@ -24,6 +24,7 @@ $r->get("/done",function($req,$res){
 
   $html .= "</ul>";
 
+  $r->ok=true;
   $res->setContent($html);
   return $res;
 });
@@ -95,8 +96,8 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
   $r = new \StdClass;
 
   $csv=fopen($file.".partial",'w');
-  try {
-    $report->run($csv,$args['checklist']);
+  try{
+    $report->run("teste",$args['checklist']);
     $r->ok=true;
     $r->file = $file;
     $r->url = $url;

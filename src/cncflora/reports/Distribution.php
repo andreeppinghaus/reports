@@ -26,7 +26,8 @@ class Distribution {
       $data = [$d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],"",""];
 
       if(isset($d["distribution"])) {
-        $data[2] =$d["distribution"]["brasilianEndemic"];
+        if(isset($d["distribution"]["brasilianEndemic"]))
+          $data[2] = $d["distribution"]["brasilianEndemic"];
 
         if(isset($d["distribution"]["altitude"])) {
           $a = $d["distribution"]["altitude"];
