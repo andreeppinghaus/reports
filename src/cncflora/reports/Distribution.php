@@ -21,10 +21,11 @@ class Distribution {
     } else {
       $profiles=$repo->listAll();
     }
+
     foreach($profiles as $d) {
       $data = [$d["taxon"]["family"],$d["taxon"]["scientificNameWithoutAuthorship"],"",""];
 
-      if(isset($d["distribution"]) && is_object($d["distribution"])) {
+      if(isset($d["distribution"])) {
         $data[2] =$d["distribution"]["brasilianEndemic"];
 
         if(isset($d["distribution"]["altitude"])) {
