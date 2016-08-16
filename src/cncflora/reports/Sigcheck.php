@@ -86,7 +86,7 @@ class Sigcheck {
             $occ['specieID'] = $spp["id"];
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
-              if($checklist=='livro_vermelho_2013') {
+              if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
                 $data[] = utf8_decode($occ[$k]);
               } else {
                 $data[] = $occ[$k];
