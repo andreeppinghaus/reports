@@ -83,7 +83,8 @@ class Sigcheck {
             $data  = [];
             foreach($this->fields_array as $k=>$n) {
               $occ=$repoOcc->flatten([$occ])[0];
-              $occ['specieID'] = strtoupper($f)."_".str_replace(" ","_",str_replace("-","_",$spp['scientificNameWithoutAuthorship']));
+              $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
+              $occ['specieID'] = $spp["id"];
               if(!isset($occ[$k])) $occ[$k]='';
               $data[] = $occ[$k];
             }

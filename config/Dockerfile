@@ -1,4 +1,4 @@
-FROM cncflora/apache
+FROM diogok/php7
 
 COPY vendor /var/www/vendor
 COPY config /var/www/config

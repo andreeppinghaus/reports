@@ -13,6 +13,21 @@ $r->get("/",function($req){
   exit;
 });
 
+$r->get("/done",function($req,$res){
+  $html = '<ul>';
+
+  $dir = opendir(__DIR__.'/../../html/data');
+  while($file = readdir($dir)) {
+    if(!preg_match('/\.csv$/',$file)) continue;
+    $html .= '<li><a href="data/'.$file.'">'.$file.'</a></li>';
+  }
+
+  $html .= "</ul>";
+
+  $res->setContent($html);
+  return $res;
+});
+
 $r->get("/reports",function($req,$res){
   $reports=[];
 
@@ -79,7 +94,7 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
   $report = new $class;
   $r = new \StdClass;
 
-  $csv=fopen($file,'w');
+  $csv=fopen($file.".partial",'w');
   try {
     $report->run($csv,$args['checklist']);
     $r->ok=true;
@@ -90,6 +105,8 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
     $r->error = $e->getMessage();
   }
   fclose($csv);
+
+  rename($file.".partial",$file);
 
   $res->setContent(json_encode($r));
   return $res;
@@ -104,7 +121,7 @@ $r->get('/generate/{report}/{checklist}/{family}',function($req,$res,$args){
   $report = new $class;
   $r = new \StdClass;
 
-  $csv=fopen($file,'w');
+  $csv=fopen($file.".partial",'w');
   try {
     $report->run($csv,$args['checklist'],$args['family']);
     $r->ok=true;
@@ -115,6 +132,7 @@ $r->get('/generate/{report}/{checklist}/{family}',function($req,$res,$args){
     $r->error = $e->getMessage();
   }
   fclose($csv);
+  rename($file.".partial",$file);
 
   $res->setContent(json_encode($r));
   return $res;
@@ -129,7 +147,7 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$
   $report = new $class;
   $r = new \StdClass;
 
-  $csv=fopen($file,'w');
+  $csv=fopen($file.".partial",'w');
   try {
     $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
     $r->ok=true;
@@ -140,6 +158,7 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$
     $r->error = $e->getMessage();
   }
   fclose($csv);
+  rename($file.".partial",$file);
 
   $res->setContent(json_encode($r));
   return $res;

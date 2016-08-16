@@ -1,5 +1,5 @@
 reports2:
-    image: cncflora/apache
+    image: diogok/php7
     ports:
         - 8081:80
     volumes:
