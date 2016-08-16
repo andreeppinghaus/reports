@@ -81,12 +81,16 @@ class Sigcheck {
           if($repoOcc->canUse($occ)) {
             $used++;
             $data  = [];
+            $occ=$repoOcc->flatten([$occ])[0];
+            $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
+            $occ['specieID'] = $spp["id"];
             foreach($this->fields_array as $k=>$n) {
-              $occ=$repoOcc->flatten([$occ])[0];
-              $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
-              $occ['specieID'] = $spp["id"];
               if(!isset($occ[$k])) $occ[$k]='';
-              $data[] = $occ[$k];
+              if($checklist=='livro_vermelho_2013') {
+                $data[] = utf8_decode($occ[$k]);
+              } else {
+                $data[] = $occ[$k];
+              }
             }
             fputcsv($csv,$data);
           }

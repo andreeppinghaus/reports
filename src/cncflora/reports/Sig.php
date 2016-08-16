@@ -66,7 +66,11 @@ class Sig {
           $data  = [$f,$spp['scientificNameWithoutAuthorship']];
           foreach($this->fields_array as $k=>$n) {
             if(!isset($occ[$k])) $occ[$k]='';
-            $data[] = $occ[$k];
+              if($checklist=='livro_vermelho_2013') {
+                $data[] = utf8_decode($occ[$k]);
+              } else {
+                $data[] = $occ[$k];
+              }
           }
           fputcsv($csv,$data);
         }
