@@ -97,7 +97,7 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
 
   $csv=fopen($file.".partial",'w');
   try{
-    $report->run("teste",$args['checklist']);
+    $report->run($csv,$args['checklist']);
     $r->ok=true;
     $r->file = $file;
     $r->url = $url;
