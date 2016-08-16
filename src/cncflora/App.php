@@ -24,7 +24,7 @@ $r->get("/done",function($req,$res){
 
   $html .= "</ul>";
 
-  $r->ok=true;
+  $res->ok=true;
   $res->setContent($html);
   return $res;
 });
