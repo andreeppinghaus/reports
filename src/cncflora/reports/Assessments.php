@@ -11,7 +11,7 @@ class Assessments{
   public $filters=["checklist",'family'];
 
   function run($csv,$checklist,$family="") {
-    fputcsv($csv,$this->fields);
+    fputcsv($csv,$this->fields, "\t");
 
     $repo=new \cncflora\repository\Assessment($checklist);
 
@@ -76,7 +76,7 @@ class Assessments{
         $data["assessment_date"],
         $data["bioma"]
       ];
-      fputcsv($csv,$data);
+      fputcsv($csv,$data, "\t");
     }
   }
 }

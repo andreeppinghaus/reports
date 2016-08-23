@@ -10,7 +10,7 @@ class Actions {
   public $filters=["checklist","family"];
 
   function run($dest,$checklist,$family=null) {
-    fputcsv($dest,$this->fields);
+    fputcsv($dest,$this->fields, "\t");
 
     $repo=new \cncflora\repository\Profiles($checklist);
 
@@ -41,7 +41,7 @@ class Actions {
                 ,$t["details"]
                 ,implode(";",$t["references"])
               ];
-              fputcsv($dest,$data);
+              fputcsv($dest,$data, "\t");
           }
         }
       }
