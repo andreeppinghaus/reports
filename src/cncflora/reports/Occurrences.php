@@ -45,12 +45,20 @@ class Occurrences {
     "metadata_contributor" => "colaboradores",
     "metadata_modified" => "data da última modificação",
     "remarks" => "observações",
-    "comments" => "comentários"
+    "ecology.biomas" => "Bioma",
+    "taxonID" => "id do taxon",
+    "taxonomicStatus" => "status taxonômico",
+    "concatCollectionCode_CatalogNumber" => "número de tombo + acrônimo da coleção",
+    "comments" => "comentários",
+    "occurrenceRemarks" => "observações da ocorrência"
   );
 
 
   public function __construct() {
-    $this->fields = array_merge($this->fields, array_values($this->fields_array) );
+    //fields_array values for reports
+    //fields_array keys for IPT
+    //$this->fields = array_merge($this->fields, array_values($this->fields_array));
+    $this->fields = array_merge($this->fields, array_keys($this->fields_array));
   }
 
   function run($csv,$checklist,$family=null,$specie=null) {
@@ -84,6 +92,8 @@ class Occurrences {
           $data  = [$f,$spp['scientificNameWithoutAuthorship']];
           foreach($this->fields_array as $k=>$n) {
             if(!isset($occ[$k])) $occ[$k]='';
+            if($k == "concatCollectionCode_CatalogNumber")
+                $occ[$k] = $occ['collectionCode'] . $occ['catalogNumber'];
             if($checklist=='livro_vermelho_2013') {
               $data[] = utf8_decode($occ[$k]);
             } else {
