@@ -55,14 +55,11 @@ class Occurrences {
 
 
   public function __construct() {
-    //fields_array values for reports
-    //fields_array keys for IPT
-    //$this->fields = array_merge($this->fields, array_values($this->fields_array));
     $this->fields = array_merge($this->fields, array_keys($this->fields_array));
   }
 
   function run($csv,$checklist,$family=null,$specie=null) {
-    fputcsv($csv,$this->fields, "\t");
+    fputcsv($csv,$this->fields, ';');
 
     $repoOcc = new \cncflora\repository\Occurrences($checklist);
     $repoTaxon = new \cncflora\repository\Taxon($checklist);
@@ -100,7 +97,7 @@ class Occurrences {
               $data[] = $occ[$k];
             }
           }
-          fputcsv($csv,$data, "\t");
+          fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
         }
       }
     }
