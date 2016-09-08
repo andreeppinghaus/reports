@@ -138,12 +138,12 @@ class Occurrences {
   }
 
   public function canUse($occ) {
-    return 
+    return
       (!$this->isValidated($occ) || $this->isValid($occ))
-      && $this->isSigOk($occ) 
+      && $this->isSigOk($occ)
       && isset($occ["decimalLatitude"])
-      && isset($occ["decimalLongitude"]) 
-      && !is_null($occ["decimalLatitude"]) 
+      && isset($occ["decimalLongitude"])
+      && !is_null($occ["decimalLatitude"])
       && !is_null($occ["decimalLongitude"])
       ;
   }
@@ -394,25 +394,25 @@ class Occurrences {
               || $doc["validation"]["georeference"] === null
               || $doc["validation"]["georeference"] == 'valid'
             )
-            && 
+            &&
             (
                  !isset($doc["validation"]["native"])
               || $doc["validation"]["native"] === null
               || $doc["validation"]["native"] != 'non-native'
             )
-            && 
+            &&
             (
                  !isset($doc["validation"]["presence"])
               || $doc["validation"]["presence"] === null
               || $doc["validation"]["presence"] != 'absent'
             )
-            && 
+            &&
             (
                  !isset($doc["validation"]["cultivated"])
               || $doc["validation"]["cultivated"] === null
               || $doc["validation"]["cultivated"] != 'yes'
             )
-            && 
+            &&
             (
                  !isset($doc["validation"]["duplicated"])
               || $doc["validation"]["duplicated"] === null
@@ -454,7 +454,7 @@ class Occurrences {
 
   public function fixSpecie($occ) {
 
-    $name = null; 
+    $name = null;
     if(isset( $occ["acceptedNameUsage"] ) && strlen(trim( $occ["acceptedNameUsage"]) ) >= 5){
       $name=trim($occ["acceptedNameUsage"]);
     } else if(isset( $occ["scientificNameWithoutAuthorship"] ) && strlen(trim( $occ["scientificNameWithoutAuthorship"] )) >= 3) {
@@ -533,7 +533,7 @@ class Occurrences {
             $occ['specie']=$spp;
           }
         }
-      } 
+      }
     }
 
     return $occ;
@@ -561,5 +561,36 @@ class Occurrences {
       }
     }
     return $occurrences;
+  }
+
+  public function listByFamily($family) {
+    $names=[];
+
+    $params=[
+      'index'=>$this->db,
+      'type'=>'occurrence',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'match'=>[
+          'family'=>[
+              'query'=>$family
+              ,'operator'=>'and'
+            ]
+          ]
+        ]
+      ]
+    ];
+    $result = $this->elasticsearch->search($params);
+    foreach($result['hits']['hits'] as $hit) {
+      if(isset($hit['_source']['validation']['by']))
+        $names['validation']['by'] = trim($hit['_source']['validation']['by']);
+      if(isset($hit['_source']['georeferencedBy']))
+        $names['georeferencedBy'] = trim($hit['_source']['georeferencedBy']);
+    }
+    sort($names);
+    $names=array_unique($names);
+
+    return $names;
   }
 }
