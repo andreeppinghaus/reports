@@ -59,7 +59,7 @@ class Assessment {
       return $a0["metadata"]["modified"] > $a1["metadata"]["modified"];
     });
 
-    usort($assessments,function($a,$b) { 
+    usort($assessments,function($a,$b) {
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']
                    ,$b['taxon']['family']." ".$b['taxon']['scientificNameWithoutAuthorship']);
     });
@@ -110,7 +110,7 @@ class Assessment {
       return $a0["metadata"]["modified"] > $a1["metadata"]["modified"];
     });
 
-    usort($assessments,function($a,$b) { 
+    usort($assessments,function($a,$b) {
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']
                    ,$b['taxon']['family']." ".$b['taxon']['scientificNameWithoutAuthorship']);
     });
@@ -118,6 +118,33 @@ class Assessment {
     return $assessments;
   }
 
+  public function listByFamily($family) {
+    $names=[];
+
+    $params=[
+      'index'=>$this->db,
+      'type'=>'assessment',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'match'=>[
+          'family'=>[
+              'query'=>$family
+              ,'operator'=>'and'
+            ]
+          ]
+        ]
+      ]
+    ];
+    $result = $this->elasticsearch->search($params);
+    foreach($result['hits']['hits'] as $k=>$hit) {
+      if(isset($hit['_source']['assessor']))
+        $names[$k]['assessor'] = trim($hit['_source']['assessor']);
+      if(isset($hit['_source']['evaluator']))
+        $names[$k]['evaluator'] = trim($hit['_source']['evaluator']);
+    }
+
+    return $names;
+  }
+
 }
-
-

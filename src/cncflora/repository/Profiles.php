@@ -59,7 +59,7 @@ class Profiles {
       else $got[$name]=true;
     }
 
-    usort($profiles,function($a,$b) { 
+    usort($profiles,function($a,$b) {
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']
                    ,$b['taxon']['family']." ".$b['taxon']['scientificNameWithoutAuthorship']);
     });
@@ -111,7 +111,7 @@ class Profiles {
       else $got[$name]=true;
     }
 
-    usort($profiles,function($a,$b) { 
+    usort($profiles,function($a,$b) {
       return strcmp($a['taxon']['family']." ".$a['taxon']['scientificNameWithoutAuthorship']
                    ,$b['taxon']['family']." ".$b['taxon']['scientificNameWithoutAuthorship']);
     });
@@ -119,5 +119,33 @@ class Profiles {
     return $profiles;
   }
 
-}
+  public function listByFamily($family) {
+    $names=[];
 
+    $params=[
+      'index'=>$this->db,
+      'type'=>'profile',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'match'=>[
+          'family'=>[
+              'query'=>$family
+              ,'operator'=>'and'
+            ]
+          ]
+        ]
+      ]
+    ];
+    $result = $this->elasticsearch->search($params);
+    foreach($result['hits']['hits'] as $k=>$hit) {
+      if(isset($hit['_source']['metadata']['creator']))
+        $names[$k]['creator'] = trim($hit['_source']['metadata']['creator']);
+      if(isset($hit['_source']['metadata']['contributor']))
+        $names[$k]['contributor'] = trim($hit['_source']['metadata']['contributor']);
+    }
+
+    return $names;
+  }
+
+}

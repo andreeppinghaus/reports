@@ -7,72 +7,85 @@ class FamiliesContributors {
   public $title = "Contribuidores das Famílias";
   public $description = "Lista com os colaboradores por família.";
   public $is_private = true;
-  public $filters = ["checklist","family","species"];
-  public $fields = ['familia aceita','nome aceito'];
+  public $filters = ["checklist","family"];
   public $fields_array = array(
     "family" => "Família",
     "profile.metadata.creator" => "Analistas do perfil (ANALYST)",
-    "assessment.evaluator" => "Validadores (VALIDATOR)",
+    "profile.metadata.contributor" => "Validadores (VALIDATOR)",
     "occurrence.validation.by" => "Validadores das ocorrências",
     "georeferencedBy" => "Analistas SIG",
-    "assessment.assessor" => "Avaliadores (ASSESSOR)"
+    "assessment.assessor" => "Avaliadores (ASSESSOR)",
+    "assessment.evaluator" => "Revisores (EVALUATOR)"
   );
 
-
-  public function __construct() {
-    $this->fields = array_merge($this->fields, array_keys($this->fields_array));
-  }
-
   function run($csv,$checklist,$family=null,$specie=null) {
-    fputcsv($csv,$this->fields, ';');
+    fputcsv($csv,$this->fields_array, ';');
 
     $repoOcc = new \cncflora\repository\Occurrences($checklist);
     $repoTaxon = new \cncflora\repository\Taxon($checklist);
+    $repoProf = new \cncflora\repository\Profiles($checklist);
+    $repo = new \cncflora\repository\Assessment($checklist);
 
-    $repo=new \cncflora\repository\Assessment($checklist);
-    
     if($family==null) {
       $families = $repoTaxon->listFamilies();
     } else {
       $families = [$family];
     }
 
-    $got=[];
     foreach($families as $f) {
-      if($specie==null) {
-        $spps = $repoTaxon->listFamily($f);
-      } else {
-        $spps = [$repoTaxon->getSpecie($specie)];
+      $profiles = $repoProf->listByFamily($f);
+      $assessments = $repo->listByFamily($f);
+      $occs  = $repoOcc->listByFamily($f);
+      $aux=[];
+      $data=[];
+      $georeferencedBy = "";
+      $validationBy = "";
+      $assessor = "";
+      $evaluator = "";
+      $creator = "";
+      $contributor = "";
+      foreach ($occs as $occ) {
+        if(isset($occ['georeferencedBy']) && !empty($occ['georeferencedBy']) && strpos($georeferencedBy, $occ['georeferencedBy']) === false)
+          $georeferencedBy .= $occ['georeferencedBy'] . ", ";
+        if(isset($occ['validator']) && !empty($occ['validator']) && strpos($validationBy, $occ['validator']) === false)
+          $validationBy .= $occ['validator'] . ", ";
       }
-      $assessments=$repo->listFamily($family);
-      error_log(print_r($assessments, TRUE));
-      $occs  = $repoOcc->listByFamily($f,false);
-      //error_log(print_r($occs, TRUE));
-      foreach($spps as $spp) {
-        $names = $repoTaxon->listNames($spp['scientificNameWithoutAuthorship']);
 
-        foreach($occs as $occ) {
-          $id = $occ['occurrenceID'];
-          if(isset($got[$id])) {
-            continue;
-          }
-          $got[$id]=true;
-          $data  = [$f,$spp['scientificNameWithoutAuthorship']];
-          foreach($this->fields_array as $k=>$n) {
-            if(!isset($occ[$k])) $occ[$k]='';
-            if($k == "concatCollectionCode_CatalogNumber")
-                $occ[$k] = $occ['collectionCode'] . $occ['catalogNumber'];
-            if($checklist=='livro_vermelho_2013') {
-              $data[] = utf8_decode($occ[$k]);
-            } else {
-              $data[] = $occ[$k];
-            }
-          }
-          fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
-        }
+      foreach ($assessments as $asst) {
+        if(isset($asst['assessor']) && !empty($asst['assessor']) && strpos($assessor, $asst['assessor']) === false)
+          $assessor .= $asst['assessor'] . ", ";
+        if(isset($asst['evaluator']) && !empty($asst['evaluator']) && strpos($evaluator, $asst['evaluator']) === false)
+          $evaluator .= $asst['evaluator'] . ", ";
       }
+      foreach ($profiles as $profs) {
+        if(isset($profs['creator']) && !empty($profs['creator']) && strpos($creator, $profs['creator']) === false)
+          $creator .= $profs['creator'] . ", ";
+        if(isset($profs['contributor']) && !empty($profs['contributor']) && strpos($contributor, $profs['contributor']) === false)
+          $contributor .= $profs['contributor'] . ", ";
+      }
+
+      $data[]=$f;
+      $data[]=$this->prepareField($creator);
+      $data[]=$this->prepareField($contributor);
+      $data[]=$this->prepareField($validationBy);
+      $data[]=$this->prepareField($georeferencedBy);
+      $data[]=$this->prepareField($assessor);
+      $data[]=$this->prepareField($evaluator);
+
+      fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
+    }
+  }
+
+  public function prepareField($string) {
+    if(!is_null($string)){
+      $str = str_replace(";", ",", $string);
+      $str = substr_replace($str, "", strlen($str)-2, strlen($str));
+      $aux = explode(",", $str);
+      foreach ($aux as $value)
+        $aux2[] = trim($value);
+
+      return implode(", ", array_unique($aux2));
     }
 
   }
-
 }

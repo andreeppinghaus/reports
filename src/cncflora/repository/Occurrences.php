@@ -582,14 +582,12 @@ class Occurrences {
       ]
     ];
     $result = $this->elasticsearch->search($params);
-    foreach($result['hits']['hits'] as $hit) {
+    foreach($result['hits']['hits'] as $k=>$hit) {
       if(isset($hit['_source']['validation']['by']))
-        $names['validation']['by'] = trim($hit['_source']['validation']['by']);
+        $names[$k]['validator'] = trim($hit['_source']['validation']['by']);
       if(isset($hit['_source']['georeferencedBy']))
-        $names['georeferencedBy'] = trim($hit['_source']['georeferencedBy']);
+        $names[$k]['georeferencedBy'] = trim($hit['_source']['georeferencedBy']);
     }
-    sort($names);
-    $names=array_unique($names);
 
     return $names;
   }
