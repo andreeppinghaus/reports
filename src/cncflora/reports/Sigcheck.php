@@ -49,7 +49,7 @@ class Sigcheck {
   }
 
   function run($csv,$checklist,$family=null,$specie=null) {
-    fputcsv($csv,$this->fields);
+    fputcsv($csv,$this->fields, ';');
 
     $repoOcc = new \cncflora\repository\Occurrences($checklist);
     $repoTaxon = new \cncflora\repository\Taxon($checklist);
@@ -92,7 +92,7 @@ class Sigcheck {
                 $data[] = $occ[$k];
               }
             }
-            fputcsv($csv,$data);
+            fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
           }
         }
       }
