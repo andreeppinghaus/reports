@@ -83,7 +83,7 @@ class Sigcheck {
             $data  = [];
             $occ=$repoOcc->flatten([$occ])[0];
             $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
-            $occ['specieID'] = $spp["id"];
+            $occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
