@@ -78,16 +78,16 @@ $r->get('/checklist/{checklist}/family/{family}/species',function($req,$res,$arg
     return $res;
 });
 
-$r->get('/generate/{report}',function($req,$res,$args){
-  $name = $args['report'].'_'.date('Y-m-d H:m').".csv";
+$r->get('/generate/{report}/{extensao}',function($req,$res,$args){
+  $name = $args['report'].'_'.date('Y-m-d H:m').'.'.$args['extensao'];
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
   $res->setContent($url);
   return $res;
 });
 
-$r->get('/generate/{report}/{checklist}',function($req,$res,$args){
-  $name = $args['checklist']."_".$args['report'].'_'.date('Y-m-d-Hm').".csv";
+$r->get('/generate/{report}/{checklist}/{extensao}',function($req,$res,$args){
+  $name = $args['checklist']."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
 
@@ -113,8 +113,8 @@ $r->get('/generate/{report}/{checklist}',function($req,$res,$args){
   return $res;
 });
 
-$r->get('/generate/{report}/{checklist}/{family}',function($req,$res,$args){
-  $name = $args['checklist']."_".$args['family']."_".$args['report'].'_'.date('Y-m-d-Hm').".csv";
+$r->get('/generate/{report}/{checklist}/{family}/{extensao}',function($req,$res,$args){
+  $name = $args['checklist']."_".$args['family']."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
 
@@ -139,8 +139,8 @@ $r->get('/generate/{report}/{checklist}/{family}',function($req,$res,$args){
   return $res;
 });
 
-$r->get('/generate/{report}/{checklist}/{family}/{species}',function($req,$res,$args){
-  $name = $args['checklist']."_".$args['family']."_".str_replace(" ","_",trim( urldecode( $args['species'] ) ))."_".$args['report'].'_'.date('Y-m-d-Hm').".csv";
+$r->get('/generate/{report}/{checklist}/{family}/{species}/{extensao}',function($req,$res,$args){
+  $name = $args['checklist']."_".$args['family']."_".str_replace(" ","_",trim( urldecode( $args['species'] ) ))."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
 

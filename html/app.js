@@ -6,6 +6,7 @@ function app() {
   var family="";
   var checklist="";
   var species="";
+  var extensao="";
 
   function get_checklists(){
     $.get('checklists',function(data){
@@ -143,6 +144,10 @@ function app() {
     if(species.length>=1){
       url += '/'+species;
     }
+    if(document.getElementsByName('extensao1')[0].checked)
+      url += '/'+document.getElementsByName('extensao1')[0].value;
+    else
+      url += '/'+document.getElementsByName('extensao1')[1].value;
 
     $('.result').show();
     $(".result").html("Gerando...");
