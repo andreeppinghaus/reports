@@ -1,12 +1,14 @@
 
 function app() {
-  $(".details,.result").hide();
+  $(".details,.result,.occurrence_date").hide();
+  document.getElementById('occurrence_date').value = "";
 
   var report="";
   var family="";
   var checklist="";
   var species="";
   var extensao="";
+  var occurrence_date="";
 
   function get_checklists(){
     $.get('checklists',function(data){
@@ -66,6 +68,13 @@ function app() {
     get_checklists();
     $(".family select").html("<option value=''>Todos</option>");
     $(".species select").html("<option value=''>Todos</option>");
+
+    if(name == "SpeciesModified"){
+      $(".occurrence_date").show();
+    }
+    else{
+      $(".occurrence_date").hide();
+    }
 
     $(".details").show();
 
@@ -132,6 +141,10 @@ function app() {
 
   document.querySelector('form').onsubmit=function(){
     var url = 'generate/'+report.name;
+    var occurrence_date = '';
+    var hoje = new Date();
+    var verify_date = (document.getElementById('occurrence_date').value != "");
+
     if(checklist.length>=1){
       url += '/'+checklist;
     } else {
@@ -151,6 +164,20 @@ function app() {
 
     $('.result').show();
     $(".result").html("Gerando...");
+
+    if(verify_date){
+      var ano = document.getElementById('occurrence_date').value.split("/")[2];
+      var mes = document.getElementById('occurrence_date').value.split("/")[1];
+      var dia = document.getElementById('occurrence_date').value.split("/")[0];
+
+      if(ano > hoje.getFullYear() || ano < 0 || mes > 12 || mes < 0 || dia > 31 || dia < 0){
+        alert('Data inválida');
+        return false;
+      } else {
+        url += '/'+dia+'-'+mes+'-'+ano;
+      }
+    }
+
     $.get(url,function(data){
         var r = JSON.parse(data);
         if(r.ok) {
@@ -159,6 +186,7 @@ function app() {
           $(".result").html('<span class="error"><strong>Erro</strong>: '+r.error+'</span>');
         }
     });
+
     return false;
   }
 }

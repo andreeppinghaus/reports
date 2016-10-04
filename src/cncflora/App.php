@@ -114,7 +114,17 @@ $r->get('/generate/{report}/{checklist}/{extensao}',function($req,$res,$args){
 });
 
 $r->get('/generate/{report}/{checklist}/{family}/{extensao}',function($req,$res,$args){
-  $name = $args['checklist']."_".$args['family']."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+  if($args['family'] == "csv" || $args['family'] == "xls"){
+    $date_occ = $args['extensao'];
+    $args['extensao'] = $args['family'];
+    $name = $args['checklist']."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+    $flag_modified = true;
+  }
+  else{
+    $name = $args['checklist']."_".$args['family']."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+    $flag_modified = false;
+  }
+
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
 
@@ -124,7 +134,10 @@ $r->get('/generate/{report}/{checklist}/{family}/{extensao}',function($req,$res,
 
   $csv=fopen($file.".partial",'w');
   try {
-    $report->run($csv,$args['checklist'],$args['family']);
+    if($flag_modified)
+      $report->run($csv,$args['checklist'],null,$date_occ);
+    else
+      $report->run($csv,$args['checklist'],$args['family']);
     $r->ok=true;
     $r->file = $file;
     $r->url = $url;
@@ -140,7 +153,17 @@ $r->get('/generate/{report}/{checklist}/{family}/{extensao}',function($req,$res,
 });
 
 $r->get('/generate/{report}/{checklist}/{family}/{species}/{extensao}',function($req,$res,$args){
-  $name = $args['checklist']."_".$args['family']."_".str_replace(" ","_",trim( urldecode( $args['species'] ) ))."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+  if($args['species'] == "csv" || $args['species'] == "xls"){
+    $date_occ = $args['extensao'];
+    $args['extensao'] = $args['species'];
+    $name = $args['checklist']."_".$args['report']."_".$args['family'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+    $flag_modified = true;
+  }
+  else{
+    $name = $args['checklist']."_".$args['family']."_".str_replace(" ","_",trim( urldecode( $args['species'] ) ))."_".$args['report'].'_'.date('Y-m-d-Hm').'.'.$args['extensao'];
+    $flag_modified=false;
+  }
+
   $file = __DIR__."/../../html/data/".$name;
   $url  = 'data/'.$name;
 
@@ -150,7 +173,10 @@ $r->get('/generate/{report}/{checklist}/{family}/{species}/{extensao}',function(
 
   $csv=fopen($file.".partial",'w');
   try {
-    $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
+    if($flag_modified)
+      $report->run($csv,$args['checklist'],$args['family'],$date_occ);
+    else
+      $report->run($csv,$args['checklist'],$args['family'],urldecode( $args['species']) );
     $r->ok=true;
     $r->file = $file;
     $r->url = $url;
