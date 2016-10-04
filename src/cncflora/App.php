@@ -257,7 +257,11 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
 
 
   ob_start();
-  include __DIR__.'/../../html/book_family.php';
+  if(isset($_GET["simple"])) {
+    include __DIR__.'/../../html/book_family_simple.php';
+  } else {
+    include __DIR__.'/../../html/book_family.php';
+  }
   $c = ob_get_contents();
   ob_end_clean();
   $res->setContent($c);
