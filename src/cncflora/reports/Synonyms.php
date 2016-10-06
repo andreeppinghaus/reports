@@ -39,6 +39,7 @@ public $filters = ["checklist","family","species"];
               ,$s["acceptedNameUsage"].", ".$s["scientificNameWithoutAuthorship"]
               ,$s["scientificNameAuthorship"]
               ,$flora->scientificNameWithoutAuthorship
+              ,$flora->scientificNameAuthorship
               ,'alterado'
             ];
           }else{
