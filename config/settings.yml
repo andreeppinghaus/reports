@@ -3,13 +3,16 @@ development:
     elasticsearch: "http://elasticsearch:9200"
     dwc_services: "http://dwc_services:80"
     base: ''
+    floradata: "http://floradata:80"
 test:
     couchdb: "http://couchdb:5984"
     elasticsearch: "http://elasticsearch:9200"
     dwc_services: "http://dwc_services:80"
     base: ''
+    floradata: "http://floradata:80"
 production:
     couchdb: 'http://couchdb:5984'
     elasticsearch: 'http://elasticsearch:9200'
     dwc_services: "http://dwc_services:80"
     base: '/reports2'
+    floradata: "http://floradata:80"

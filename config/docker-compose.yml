@@ -27,6 +27,8 @@ couchdb:
         - /var/data/couchdb:/var/lib/couchdb:rw
 floradata:
     image: cncflora/floradata
+    environment:
+      SERVICE_80_CHECK_HTTP: /api/v1/families
     ports:
         - 8181:80
         - 9005:9001
