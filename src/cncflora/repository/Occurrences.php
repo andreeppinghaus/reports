@@ -373,7 +373,7 @@ class Occurrences {
               $doc["valid"]=$verbatim;
               $doc['validation']['status']=$verbatim;
               $doc['validation']['done']=true;
-            } else if(isset($doc['validation']['by']) && $doc['validation']['by'] !== null && strlen(trim($doc['validation']['by'])) > 3) {
+            } else if(isset($doc['validation']['by']) && $doc['validation']['by'] !== null && strlen(trim($doc['validation']['by'])) > 3 && isset($doc['validation']['status']) && ($doc['validation']['status'] != "") && $doc['validation']['status'] !== null) {
               $doc["valid"]=true;
               $doc['validation']['status']=true;
               $doc['validation']['done']=true;
@@ -384,9 +384,9 @@ class Occurrences {
             }
           } else if(
             (
-                 !isset($doc["validation"]["taxonomy"])
-              || $doc["validation"]["taxonomy"] === null
-              || $doc["validation"]["taxonomy"] == 'valid'
+                isset($doc["validation"]["taxonomy"])
+              && $doc["validation"]["taxonomy"] !== null
+              && $doc["validation"]["taxonomy"] == 'valid'
             )
             &&
             (
