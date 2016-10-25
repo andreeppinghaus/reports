@@ -72,11 +72,13 @@ class Sigcheck {
         $occs  = $repoOcc->listOccurrences($names,false);
         foreach($occs as $occ) {
           if(!$repoOcc->isValidated($occ)) {
-            throw new \Exception('Espécie '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui pontos não validados (ex.: '.$occ['_id'].').');
+            continue;
+            //throw new \Exception('Espécie '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui pontos não validados (ex.: '.$occ['_id'].').');
           }
           $field='coordinateUncertaintyInMeters';
           if(isset($occ[$field]) && !is_null($occ[$field]) && !in_array($occ[$field],$this->precisions_allowed)) {
-            throw new \Exception('Espécie  '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui precisões inválidas (ex.:'.$occ['_id'].' -> '.$occ[$field].').');
+            continue;
+            //throw new \Exception('Espécie  '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui precisões inválidas (ex.:'.$occ['_id'].' -> '.$occ[$field].').');
           }
           if($repoOcc->canUse($occ)) {
             $used++;
