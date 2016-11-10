@@ -12,7 +12,7 @@ class Ecology {
   function run($csv,$checklist,$family=null){
     if($checklist=='livro_vermelho_2013')
       $this->fields = ['familia','nome científico','habito','bioma', 'fitofisionomia', 'referências', 'resumo'];
-    fputcsv($csv,$this->fields);
+    fputcsv($csv,$this->fields, ';');
 
     $repo=new \cncflora\repository\Profiles($checklist);
 
@@ -76,8 +76,7 @@ class Ecology {
             , $d["ecology"]["resprout"]
             ];
         }
-
-        fputcsv($csv,$data);
+        fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
       }
     }
   }
