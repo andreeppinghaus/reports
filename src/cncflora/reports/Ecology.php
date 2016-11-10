@@ -21,12 +21,24 @@ class Ecology {
     }
 
     foreach($profiles as $d) {
-      if(isset($d["ecology"]) && is_object($d["ecology"])) {
+      if(isset($d["ecology"])) {
         foreach($d["ecology"] as $k=>$v) {
           if(is_array($v)) {
-            $d["ecology"]->$k = implode(' ; ',$v);
+            $d["ecology"][$k] = implode(' ; ',$v);
           }
         }
+        if(!isset($d["ecology"]["lifeForm"]))
+          $d["ecology"]["lifeForm"] = "";
+        if(!isset($d["ecology"]["fenology"]))
+          $d["ecology"]["fenology"] = "";
+        if(!isset($d["ecology"]["luminosity"]))
+          $d["ecology"]["luminosity"] = "";
+        if(!isset($d["ecology"]["longevity"]))
+          $d["ecology"]["longevity"] = "";
+        if(!isset($d["ecology"]["resprout"]))
+          $d["ecology"]["resprout"] = "";
+        if(!isset($d["ecology"]["substratum"]))
+          $d["ecology"]["substratum"] = "";
         $data =[
           $d["taxon"]["family"]
           , $d["taxon"]["scientificNameWithoutAuthorship"]
