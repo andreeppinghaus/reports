@@ -88,6 +88,8 @@ class Sigcheck {
             $occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
+              if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && !is_null($occ['georeferencePrecision']))
+                $occ[$k] = $occ['georeferencePrecision'];
               if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
                 $data[] = utf8_decode($occ[$k]);
               } else {
