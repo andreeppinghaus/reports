@@ -21,6 +21,9 @@
 <div class="content">
   <h1><?php echo $db ?></h1>
   <ul>
+    <li>
+      <a href="<?php echo BASE ?>/book/<?php echo $db; ?>/TODAS">TODAS</a>
+    </li>
     <?php foreach($families as $family): ?>
     <li>
       <a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>"><?php echo $family ?></a>
@@ -31,6 +34,6 @@
     <?php endforeach; ?>
 </ul>
 </div>
-  
+
 </body>
 </html>
