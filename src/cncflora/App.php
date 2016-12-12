@@ -214,6 +214,64 @@ $r->get('/book/{db}',function($req,$res,$args) {
   return $res;
 });
 
+$r->get('/book/{db}/TODAS',function($req,$res,$args) {
+  $db = $args['db'];
+  $taxonRepo = new \cncflora\repository\Taxon($db);
+  $families = $taxonRepo->listFamilies();
+  $assessments2 = [];
+  $references2 = [];
+  foreach($families as $f) {
+    $refs=[];
+    $repo=new \cncflora\repository\Assessment($db);
+    $asses=$repo->listFamily($f);
+
+    $repo2=new \cncflora\repository\Profiles($db);
+    $profs=$repo2->listFamily($f);
+
+    $assessments=[];
+    foreach($asses as $a) {
+      if(!($a['metadata']['status'] == 'published' || $a['metadata']['status'] == 'comments')) continue;
+
+      foreach($profs as $p) {
+        if($p['taxon']['scientificNameWithoutAuthorship'] == $a['taxon']['scientificNameWithoutAuthorship']) {
+          $a['profile'] = $p;
+        }
+      }
+
+      $assessments[] = $a;
+      if(isset($a['references']) && is_array($a['references']))  {
+        $refs = array_merge($refs,$a['references']);
+      }
+    }
+    $references=[];
+    $got=[];
+    foreach($refs as $r) {
+      $letters =preg_replace('/[^a-zA-Z0-9]/','',$r);
+      if(array_Search($letters,$got) === false) {
+        $references[] = $r;
+        $got[]=$letters;
+      }
+    }
+    sort($references);
+
+    usort($assessments,function($a,$b){
+      return strcmp($a['taxon']['scientificNameWithoutAuthorship'],$b['taxon']['scientificNameWithoutAuthorship']);
+    });
+    $assessments2[$f] = $assessments;
+    $references2[$f] = $references;
+  }
+
+  //tentando entender o porque de com log funcionar, e sem log retornar 502 Bad Gateway
+  error_log(print_r($references2, TRUE));
+
+  ob_start();
+  include __DIR__.'/../../html/book_all.php';
+  $c = ob_get_contents();
+  ob_end_clean();
+  $res->setContent($c);
+  return $res;
+});
+
 $r->get('/book/{db}/{family}',function($req,$res,$args) {
   $db = $args['db'];
   $family = $args['family'];
@@ -262,58 +320,6 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
   } else {
     include __DIR__.'/../../html/book_family.php';
   }
-  $c = ob_get_contents();
-  ob_end_clean();
-  $res->setContent($c);
-  return $res;
-});
-
-$r->get('/book/{db}/TODAS',function($req,$res,$args) {
-  $db = $args['db'];
-  $taxonRepo = new Taxon($this->db);
-  $families = $taxonRepo->listFamilies();
-
-  foreach($families as $f) {
-    $refs=[];
-    $repo=new \cncflora\repository\Assessment($db);
-    $asses=$repo->listFamily($f);
-
-    $repo2=new \cncflora\repository\Profiles($db);
-    $profs=$repo2->listFamily($f);
-
-    $assessments=[];
-    foreach($asses as $a) {
-      if(!($a['metadata']['status'] == 'published' || $a['metadata']['status'] == 'comments')) continue;
-
-      foreach($profs as $p) {
-        if($p['taxon']['scientificNameWithoutAuthorship'] == $a['taxon']['scientificNameWithoutAuthorship']) {
-          $a['profile'] = $p;
-        }
-      }
-
-      $assessments[] = $a;
-      if(isset($a['references']) && is_array($a['references']))  {
-        $refs = array_merge($refs,$a['references']);
-      }
-    }
-    $references=[];
-    $got=[];
-    foreach($refs as $r) {
-      $letters =preg_replace('/[^a-zA-Z0-9]/','',$r);
-      if(array_Search($letters,$got) === false) {
-        $references[] = $r;
-        $got[]=$letters;
-      }
-    }
-    sort($references);
-
-    usort($assessments,function($a,$b){
-      return strcmp($a['taxon']['scientificNameWithoutAuthorship'],$b['taxon']['scientificNameWithoutAuthorship']);
-    });
-  }
-
-  ob_start();
-  include __DIR__.'/../../html/book_all.php';
   $c = ob_get_contents();
   ob_end_clean();
   $res->setContent($c);

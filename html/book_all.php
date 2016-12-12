@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prova gráfica - <?php echo $family ?></title>
+  <title>Prova gráfica - Completa</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <style type="text/css">
     ul {
@@ -63,10 +63,11 @@ window.onload=function(){
 </head>
 <body>
 <div class="content pure-g">
-  <h1 class='pure-u-1'><?php echo $family ?></h1>
-<p class="print pure-u-1"><a href='javascript:window.print()'>Imprimir</a></p>
 
-<?php foreach($assessments as $a): ?>
+<p class="print pure-u-1"><a href='javascript:window.print()'>Imprimir</a></p>
+<?php foreach($assessments2 as $ab): ?>
+  <h1 class='pure-u-1'><?php echo key($assessments2) ?></h1>
+  <?php foreach($ab as $a): ?>
   <div class="spp pure-u-1">
     <div class="pure-u-1">
       <h2><i><?php echo $a["taxon"]["scientificNameWithoutAuthorship"] ?></i> <?php echo $a["taxon"]["scientificNameAuthorship"] ?></h2>
@@ -83,16 +84,20 @@ window.onload=function(){
       </p>
       <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
       </div><?php if ( $a['category'] != "DD" ) :  ?><img
-      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
+      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_jpg_atualizado/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
       class='pure-u-2-5' /><?php endif; ?>
   </div>
+<?php endforeach; ?>
+<?php next($assessments2) ?>
 <?php endforeach; ?>
 
 <div class="refs pure-u-1">
   <h2>Referências Bibliográficas</h2>
   <ul>
+  <?php foreach($references2 as $references): ?>
   <?php foreach($references as $r): ?>
     <li><?php echo htmlentities($r) ?></li>
+  <?php endforeach; ?>
   <?php endforeach; ?>
   </ul>
 </div>
