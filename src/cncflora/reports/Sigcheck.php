@@ -30,6 +30,10 @@ class Sigcheck {
     ,"decimalLatitude"=>'latitude'
     ,"coordinateUncertaintyInMeters"=>'precision'
     ,"georeferenceProtocol"=>'protocol'
+    ,"georeferenceRemarks" => "obs. de SIG"
+    ,"metadata_created" => "data da criação"
+    ,"metadata_modified" => "data da última modificação"
+    ,"category" => "categoria"
     ];
 
   public $precisions_allowed=[
@@ -53,6 +57,7 @@ class Sigcheck {
 
     $repoOcc = new \cncflora\repository\Occurrences($checklist);
     $repoTaxon = new \cncflora\repository\Taxon($checklist);
+    $repoAsm=new \cncflora\repository\Assessment($checklist);
 
     if($family==null) {
       $families = $repoTaxon->listFamilies();
@@ -70,6 +75,7 @@ class Sigcheck {
       foreach($spps as $spp) {
         $names = $repoTaxon->listNames($spp['scientificNameWithoutAuthorship']);
         $occs  = $repoOcc->listOccurrences($names,false);
+        $category = $repoAsm->listCategoryByName($spp['scientificNameWithoutAuthorship']);
         foreach($occs as $occ) {
           if(!$repoOcc->isValidated($occ)) {
             continue;
@@ -90,6 +96,10 @@ class Sigcheck {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
                 $occ[$k] = $occ['georeferencePrecision'];
+              if($k == "metadata_created" || $k == "metadata_modified")
+                $occ[$k] = date('d/m/Y', $occ[$k]);
+              if($k == "category" && isset($category[0]))
+                $occ[$k] = $category[0];
               if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
                 $data[] = utf8_decode($occ[$k]);
               } else {

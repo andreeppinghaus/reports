@@ -147,4 +147,31 @@ class Assessment {
     return $names;
   }
 
+  public function listCategoryByName($specieName) {
+    $names=[];
+
+    $params=[
+      'index'=>$this->db,
+      'type'=>'assessment',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'bool'=>[
+            'should'=>[
+                'match'=>[
+                  'scientificNameWithoutAuthorship'=>['query'=>$specieName,'operator'=>'and']
+                ]
+             ]
+          ]
+        ]
+      ]
+    ];
+    $result = $this->elasticsearch->search($params);
+    foreach($result['hits']['hits'] as $k=>$hit) {
+      if(isset($hit['_source']['category']))
+        $names[$k] = trim($hit['_source']['category']);
+    }
+    return $names;
+  }
+
 }
