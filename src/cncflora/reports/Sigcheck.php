@@ -96,8 +96,10 @@ class Sigcheck {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
                 $occ[$k] = $occ['georeferencePrecision'];
-              if($k == "metadata_created" || $k == "metadata_modified")
-                $occ[$k] = date('d/m/Y', $occ[$k]);
+              if($k == "metadata_created" || $k == "metadata_modified"){
+                $occ[$k] = date('d/m/Y', intval($occ[$k]));
+              }
+
               if($k == "category" && isset($category[0]))
                 $occ[$k] = $category[0];
               if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
