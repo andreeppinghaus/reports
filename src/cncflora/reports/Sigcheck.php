@@ -88,7 +88,7 @@ class Sigcheck {
           }
           if($repoOcc->canUse($occ)) {
             $used++;
-            $data  = [];
+            $data  = [$f,$spp['scientificNameWithoutAuthorship']];
             $occ=$repoOcc->flatten([$occ])[0];
             $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
             $occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
