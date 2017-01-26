@@ -81,7 +81,7 @@ window.onload=function(){
         <!-- Distribuição: TODO <br /> -->
         <!-- Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br /> -->
       </p>
-      <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
+      <p class='rationale'><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
       </div><?php if ( $a['category'] != "DD" ) :  ?><img
       src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_jpg_atualizado/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
       class='pure-u-2-5' /><?php endif; ?>
