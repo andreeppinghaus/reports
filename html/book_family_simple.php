@@ -23,11 +23,11 @@
         <!-- Distribuição: TODO <br /> -->
         <!-- Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br /> -->
       </p>
-      <p class='rationale'><strong>Justificatica</strong>: <?php echo $a['rationale'] ?></p>
+      <p class='rationale'><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
       </div>
       <?php if ( $a['category'] != "DD" ) :  ?>
       <!--
-      <img 
+      <img
             src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
             class='pure-u-2-5' />
       -->
@@ -43,8 +43,8 @@
   <?php endforeach; ?>
   </ul>
 </div>
-  
+
 </div>
-  
+
 </body>
 </html>
