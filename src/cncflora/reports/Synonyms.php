@@ -30,7 +30,6 @@ public $filters = ["checklist","family","species"];
       foreach($spps as $spp) {
         $syns = $repo->listSynonyms($spp['scientificNameWithoutAuthorship']);
         $currentTaxon = $repoSpp->getCurrentTaxon($spp['scientificNameWithoutAuthorship'], $checklist);
-        //error_log(print_r($currentTaxon, TRUE));
         $taxonomia_diferente = false;
         if($currentTaxon != null && isset($currentTaxon->scientificNameWithoutAuthorship))
           $taxonomia_diferente = ($currentTaxon->scientificNameWithoutAuthorship != $spp['scientificNameWithoutAuthorship']);

@@ -17,10 +17,8 @@ class Species{
         //$repo->listSynonyms($spp['scientificNameWithoutAuthorship']);
         $syns = $repo->listSynonyms($name);
         $floraSyns = $flora->synonyms;
-        error_log(print_r($syns, TRUE));
         $synsNames = [];
         foreach($syns as $syn) {
-          error_log(print_r($syn, TRUE));
           if(isset($syn->scientificNameWithoutAuthorship))
             $synsNames[] = $syn->scientificNameWithoutAuthorship;
         }
