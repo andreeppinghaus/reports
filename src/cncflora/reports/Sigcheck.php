@@ -8,13 +8,10 @@ class Sigcheck {
   public $description = "Lista com as occorrencias para SIG com checagem se estão todas ok.";
   public $is_private = true;
   public $filters = ['checklist','family','species'];
-  public $fields = [];
+  public $fields = ["family", "specieID"];
 
   public $fields_array = [
     "occurrenceID"=>'id'
-    ,"specieID"=>'specieID'
-    ,"family"=>'family'
-    ,"acceptedNameUsage"=>'specie'
     ,"institutionCode"=>'inst_code'
     ,"collectionCode"=>'col_code'
     ,"catalogNumber"=>'catalog_n'
@@ -88,10 +85,10 @@ class Sigcheck {
           }
           if($repoOcc->canUse($occ)) {
             $used++;
-            $data  = [$f,$spp['scientificNameWithoutAuthorship']];
+            $data  = [$f,str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"])];
             $occ=$repoOcc->flatten([$occ])[0];
-            $occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
-            $occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
+            //$occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
+            //$occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
@@ -99,13 +96,14 @@ class Sigcheck {
               if($k == "metadata_created" || $k == "metadata_modified"){
                 $occ[$k] = date('d/m/Y', intval($occ[$k]));
               }
-
               if($k == "category" && isset($category[0]))
                 $occ[$k] = $category[0];
               if($checklist=='livro_vermelho_2013' && !mb_check_encoding($occ[$k], 'UTF-8')) {
                 $data[] = utf8_decode($occ[$k]);
               } else {
                 $data[] = $occ[$k];
+                error_log(print_r($data, TRUE));
+                error_log(print_r($k, TRUE));
               }
             }
             fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
