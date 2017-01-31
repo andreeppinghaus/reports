@@ -7,7 +7,7 @@ class Assessments{
   public $title = "Avaliações";
   public $description = "Lista com as avaliações de risco de extensão de cada espécie.";
   public $is_private = false;
-  public $fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "bioma"];
+  public $fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "bioma", "eoo(km²)", "aoo(km²)"];
   public $filters=["checklist",'family'];
 
   function run($csv,$checklist,$family="") {
