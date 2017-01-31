@@ -13,7 +13,8 @@ class Assessments{
   function run($csv,$checklist,$family="") {
     fputcsv($csv,$this->fields, ';');
 
-    $repo=new \cncflora\repository\Assessment($checklist);
+    $repo = new \cncflora\repository\Assessment($checklist);
+    $repoOcc = new \cncflora\repository\Occurrences($checklist);
 
     if($family!=null) {
       $assessments=$repo->listFamily($family);
@@ -25,6 +26,12 @@ class Assessments{
       $data=[];
       $data["family"] = $doc["taxon"]["family"];
       $data["name"]   = $doc["taxon"]["scientificNameWithoutAuthorship"];
+
+      $occs  = $repoOcc->listOccurrences($data["name"],false);
+      $stats = $repoOcc->getStats($occs);
+      error_log(print_r($stats, TRUE));
+      error_log(print_r($data["name"], TRUE));
+
       $data["author"] = $doc["taxon"]["scientificNameAuthorship"];
       $data['assessment'] = $doc["metadata"]["status"];
       if(isset($doc["category"])) {
@@ -55,6 +62,9 @@ class Assessments{
       $data['assessment_date'] = date('Y-m-d', $doc["metadata"]["modified"]);
       $data["bioma"] = "";
 
+      $data["eoo"] = round($stats["eoo"], 2);
+      $data["aoo"] = $stats["aoo"];
+
       /*
       if (array_key_exists($doc->taxon->scientificNameWithoutAuthorship, $taxons)){
         if(isset($doc->ecology) && isset($doc->ecology->biomas) && is_array($doc->ecology->biomas)) {
@@ -74,7 +84,9 @@ class Assessments{
         $data["evaluator"],
         $data["rationale"],
         $data["assessment_date"],
-        $data["bioma"]
+        $data["bioma"],
+        $data["eoo"],
+        $data["aoo"]
       ];
       fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
     }
