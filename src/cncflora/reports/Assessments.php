@@ -29,8 +29,6 @@ class Assessments{
 
       $occs  = $repoOcc->listOccurrences($data["name"],false);
       $stats = $repoOcc->getStats($occs);
-      error_log(print_r($stats, TRUE));
-      error_log(print_r($data["name"], TRUE));
 
       $data["author"] = $doc["taxon"]["scientificNameAuthorship"];
       $data['assessment'] = $doc["metadata"]["status"];
