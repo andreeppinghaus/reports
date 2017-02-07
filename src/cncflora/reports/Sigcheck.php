@@ -12,6 +12,7 @@ class Sigcheck {
 
   public $fields_array = [
     "occurrenceID"=>'id'
+    ,"specie"=>'specie'
     ,"institutionCode"=>'inst_code'
     ,"collectionCode"=>'col_code'
     ,"catalogNumber"=>'catalog_n'
@@ -88,7 +89,7 @@ class Sigcheck {
             $data  = [$f,str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"])];
             $occ=$repoOcc->flatten([$occ])[0];
             //$occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
-            //$occ['specieID'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
+            $occ['specie'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
@@ -102,8 +103,6 @@ class Sigcheck {
                 $data[] = utf8_decode($occ[$k]);
               } else {
                 $data[] = $occ[$k];
-                error_log(print_r($data, TRUE));
-                error_log(print_r($k, TRUE));
               }
             }
             fputcsv($csv,str_replace(array("\n", "\r"), ' ', str_replace(";", ",", $data)), ';');
