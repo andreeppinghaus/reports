@@ -89,7 +89,7 @@ class Sigcheck {
             $data  = [$f,str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"])];
             $occ=$repoOcc->flatten([$occ])[0];
             //$occ["acceptedNameUsage"] = $spp["scientificNameWithoutAuthorship"];
-            $occ['specie'] = str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"]);
+            $occ['specie'] = $spp["scientificNameWithoutAuthorship"];
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
               if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
