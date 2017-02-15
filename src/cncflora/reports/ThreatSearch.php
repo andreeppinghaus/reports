@@ -64,9 +64,7 @@ class ThreatSearch{
       }
       $data["URL"] = "http://cncflora.jbrj.gov.br/assessments/".$checklist."/assessment/".$doc["id"];
 
-      $data["Comment"] = "";
-      if(isset($doc["review"]) && isset($doc["review"]["comment"]))
-        $data["Comment"] = $doc["review"]["comment"];
+      $data["Comment"] = $doc["rationale"];
       $data["EXCLUDE"] = "";
       $data["TPL_ID"] = "";
       $data["TPL_Family"] = "";
