@@ -33,19 +33,24 @@ class ThreatSearch{
       $data["Genus"] = $nomes[0];
       $data["Species"] = $nomes[1];
 
-      if(strpos($doc["taxon"]["scientificNameAuthorship"], "&")){
-        $authors = explode("&", $doc["taxon"]["scientificNameAuthorship"]);
-        $data["Author1"] = trim($authors[0]);
-        $data["InfraSpecRank"] = "";
-        $data["InfraSpecName"] = "";
-        $data["Author2"] = trim($authors[1]);
-      }
-      else{
-        $data["Author1"] = $doc["taxon"]["scientificNameAuthorship"];
-        $data["InfraSpecRank"] = "";
-        $data["InfraSpecName"] = "";
-        $data["Author2"] = "";
-      }
+      $data["Author1"] = $doc["taxon"]["scientificNameAuthorship"];
+      $data["InfraSpecRank"] = "";
+      $data["InfraSpecName"] = "";
+      $data["Author2"] = "";
+
+      // if(strpos($doc["taxon"]["scientificNameAuthorship"], "&")){
+      //   $authors = explode("&", $doc["taxon"]["scientificNameAuthorship"]);
+      //   $data["Author1"] = trim($authors[0]);
+      //   $data["InfraSpecRank"] = "";
+      //   $data["InfraSpecName"] = "";
+      //   $data["Author2"] = trim($authors[1]);
+      // }
+      // else{
+      //   $data["Author1"] = $doc["taxon"]["scientificNameAuthorship"];
+      //   $data["InfraSpecRank"] = "";
+      //   $data["InfraSpecName"] = "";
+      //   $data["Author2"] = "";
+      // }
 
       $data["Scope"] = "";
       $data["AssessmentYear"] = date('Y', $doc["metadata"]["modified"]);//converter a data
