@@ -84,7 +84,7 @@ window.onload=function(){
       </p>
       <p class='rationale'><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
       </div><?php if ( $a['category'] != "DD" ) :  ?><img
-      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_jpg_atualizado/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
+      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
       class='pure-u-2-5' /><?php endif; ?>
   </div>
 <?php endforeach; ?>
