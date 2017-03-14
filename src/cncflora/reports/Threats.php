@@ -6,7 +6,7 @@ class Threats {
   public $title = "Ameaças";
   public $description = "Lista com as ameaças por espécie.";
   public $is_private = false;
-  public $fields = ["família","nome científico","ameaça", "categoria da avaliação","incidência","período","declínio","detalhes","referências"];
+  public $fields = ["família","nome científico","categoria da avaliação","ameaça","incidência","período","declínio","detalhes","referências"];
   public $filters = ['checklist','family'];
 
   function run($csv,$checklist,$family=null) {
@@ -30,10 +30,13 @@ class Threats {
             if(!isset($t["references"])) $t['references'] = [];
             if(!isset($t["incidence"])) $t['incidence'] = "";
             if(!isset($t["details"])) $t['details'] = "";
+            $category = "";
+            if(isset($repoAsm->listCategoryByName($d["taxon"]["scientificNameWithoutAuthorship"])[0]))
+              $category = $repoAsm->listCategoryByName($d["taxon"]["scientificNameWithoutAuthorship"])[0];
             $data = [
                $d["taxon"]["family"]
               ,$d["taxon"]["scientificNameWithoutAuthorship"]
-              ,$repoAsm->listCategoryByName($d["taxon"]["scientificNameWithoutAuthorship"])
+              ,$category
               ,$t["threat"]
               ,$t["incidence"]
               ,implode(";",$t["timing"])
