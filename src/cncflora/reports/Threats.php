@@ -6,13 +6,14 @@ class Threats {
   public $title = "Ameaças";
   public $description = "Lista com as ameaças por espécie.";
   public $is_private = false;
-  public $fields = ["família","nome científico","ameaça","incidência","período","declínio","detalhes","referências"];
+  public $fields = ["família","nome científico","ameaça", "categoria da avaliação","incidência","período","declínio","detalhes","referências"];
   public $filters = ['checklist','family'];
 
   function run($csv,$checklist,$family=null) {
     fputcsv($csv,$this->fields, "\t");
 
     $repo=new \cncflora\repository\Profiles($checklist);
+    $repoAsm=new \cncflora\repository\Assessment($checklist);
 
     if($family!=null) {
       $profiles=$repo->listFamily($family);
@@ -32,6 +33,7 @@ class Threats {
             $data = [
                $d["taxon"]["family"]
               ,$d["taxon"]["scientificNameWithoutAuthorship"]
+              ,$repoAsm->listCategoryByName($d["taxon"]["scientificNameWithoutAuthorship"])
               ,$t["threat"]
               ,$t["incidence"]
               ,implode(";",$t["timing"])
