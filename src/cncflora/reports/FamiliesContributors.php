@@ -65,8 +65,13 @@ class FamiliesContributors {
         if(isset($profs['contributor']) && !empty($profs['contributor']) && strpos($contributor, $profs['contributor']) === false)
           $contributor .= $profs['contributor'] . ", ";
         if(isset($profs['metadata']['contact']) && !empty($profs['metadata']['contact']))
+        {
           $contact .= $profs['metadata']['contact'] . ", ";
+          error_log(print_r($profs['metadata']));
+        }
       }
+
+      error_log($contact);
 
       $data[]=$f;
       $data[]=$this->prepareField($creator);
