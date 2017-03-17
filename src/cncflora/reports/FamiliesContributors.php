@@ -13,6 +13,7 @@ class FamiliesContributors {
     "profile.metadata.creator" => "Analistas do perfil (ANALYST)",
     "profile.metadata.contributor" => "Validadores (VALIDATOR)",
     "occurrence.validation.by" => "Validadores das ocorrências",
+    "profile.metada.contact" => "Email dos contribuidores",
     "georeferencedBy" => "Analistas SIG",
     "assessment.assessor" => "Avaliadores (ASSESSOR)",
     "assessment.evaluator" => "Revisores (EVALUATOR)"
@@ -44,6 +45,7 @@ class FamiliesContributors {
       $evaluator = "";
       $creator = "";
       $contributor = "";
+      $contact = "";
       foreach ($occs as $occ) {
         if(isset($occ['georeferencedBy']) && !empty($occ['georeferencedBy']) && strpos($georeferencedBy, $occ['georeferencedBy']) === false)
           $georeferencedBy .= $occ['georeferencedBy'] . ", ";
@@ -62,12 +64,15 @@ class FamiliesContributors {
           $creator .= $profs['creator'] . ", ";
         if(isset($profs['contributor']) && !empty($profs['contributor']) && strpos($contributor, $profs['contributor']) === false)
           $contributor .= $profs['contributor'] . ", ";
+        if(isset($profs['metadata']['contact']) && !empty($profs['metadata']['contact']))
+          $contact .= $profs['metadata']['contact'] . ", ";
       }
 
       $data[]=$f;
       $data[]=$this->prepareField($creator);
       $data[]=$this->prepareField($contributor);
       $data[]=$this->prepareField($validationBy);
+      $data[]=$this->prepareField($contact);
       $data[]=$this->prepareField($georeferencedBy);
       $data[]=$this->prepareField($assessor);
       $data[]=$this->prepareField($evaluator);
