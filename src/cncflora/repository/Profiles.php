@@ -143,6 +143,8 @@ class Profiles {
         $names[$k]['creator'] = trim($hit['_source']['metadata']['creator']);
       if(isset($hit['_source']['metadata']['contributor']))
         $names[$k]['contributor'] = trim($hit['_source']['metadata']['contributor']);
+      if(isset($hit['_source']['metadata']['contact']))
+        $names[$k]['contact'] = trim($hit['_source']['metadata']['contact']);
     }
 
     return $names;
