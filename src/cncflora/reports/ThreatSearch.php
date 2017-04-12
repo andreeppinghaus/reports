@@ -67,7 +67,7 @@ class ThreatSearch{
           $data["Reference"] .= "- " . $reference . " ";
         }
       }
-      $data["URL"] = "http://cncflora.jbrj.gov.br/assessments/".$checklist."/assessment/".$doc["id"];
+      $data["URL"] = "http://cncflora.jbrj.gov.br/portal/pt-br/profile/".$doc["taxon"]["scientificNameWithoutAuthorship"];
 
       $data["Comment"] = $doc["rationale"];
       $data["EXCLUDE"] = "";
