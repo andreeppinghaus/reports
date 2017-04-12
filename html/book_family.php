@@ -82,9 +82,8 @@ window.onload=function(){
         <!-- Bioma(s): <?php echo implode(";",$a['profile']['ecology']['biomas']) ?><br /> -->
       </p>
       <p class='rationale'><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
-      </div><?php if ( $a['category'] != "DD" ) :  ?><img
-      src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>"
-      class='pure-u-2-5' /><?php endif; ?>
+      <!-- Teve que ficar na mesma linha para não colocar a imagem depois da Justificativa -->
+      </div><?php if ( $a['category'] != "DD" ) :  ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
   </div>
 <?php endforeach; ?>
 
