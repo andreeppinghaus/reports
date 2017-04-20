@@ -17,6 +17,7 @@ class ThreatSearch{
     fputcsv($csv,$this->fields, ';');
 
     $repo = new \cncflora\repository\Assessment($checklist);
+    $repoProf = new \cncflora\repository\Profiles($checklist);
 
     if($family!=null) {
       $assessments=$repo->listFamily($family);
@@ -52,7 +53,8 @@ class ThreatSearch{
       //   $data["Author2"] = "";
       // }
 
-      $data["Scope"] = "";
+      $prof = $repoProf->getProfileByName($doc["taxon"]["scientificNameWithoutAuthorship"]);
+      $data["Scope"] = (isset($prof["distribution"]) && isset($prof["distribution"]["brasilianEndemic"]) && $prof["distribution"]["brasilianEndemic"] == "yes") ? "Global" : "Not Global";
       $data["AssessmentYear"] = date('Y', $doc["metadata"]["modified"]);//converter a data
       if($doc["category"] != null && isset($doc["category"]))
       $data["ConsAssCategory"] = $doc["category"];
@@ -61,12 +63,13 @@ class ThreatSearch{
       if(isset($doc["criteria"]))
         $data["ConsAssCriteria"] = $doc["criteria"];
 
-      $data["Reference"] = "";
-      if(isset($doc["references"]) && !empty($doc["references"])){
-        foreach ($doc["references"] as $reference) {
-          $data["Reference"] .= "- " . $reference . " ";
-        }
-      }
+      setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+      $data["Reference"] = "CNCFlora. " . str_replace(" ", "%20", $doc["taxon"]["scientificNameAuthorship"]) . " in Lista Vermelha da flora brasileira versão 2012.2 Centro Nacional de Conservação da Flora. Disponível em http://cncflora.jbrj.gov.br/portal/pt-br/profile/" . str_replace(" ", "%20", $doc["taxon"]["scientificNameAuthorship"]) . ". Acesso em " . date("j F Y") . "." ;
+      // if(isset($doc["references"]) && !empty($doc["references"])){
+      //   foreach ($doc["references"] as $reference) {
+      //     $data["Reference"] .= "- " . $reference . " ";
+      //   }
+      // }
       $data["URL"] = "http://cncflora.jbrj.gov.br/portal/pt-br/profile/".$doc["taxon"]["scientificNameWithoutAuthorship"];
 
       $data["Comment"] = $doc["rationale"];

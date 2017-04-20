@@ -150,4 +150,26 @@ class Profiles {
     return $names;
   }
 
+  public function getProfileByName($name){
+
+    $params=[
+      'index'=>$this->db,
+      'type'=>'profile',
+      'body'=>[
+        'size'=> 9999,
+        'query'=>[
+          'bool'=>[
+            'should'=>[ ]
+          ]
+        ]
+      ]
+    ];
+
+    $params['body']['query']['bool']['should'][]
+      = ['match'=>['scientificNameWithoutAuthorship'=>['query'=>$name,'operator'=>'and']]];
+
+    $result = $this->elasticsearch->search($params);
+    return $result['hits']['hits'][0]['_source'];
+  }
+
 }
