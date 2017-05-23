@@ -7,7 +7,7 @@ class Assessments{
   public $title = "Avaliações";
   public $description = "Lista com as avaliações de risco de extensão de cada espécie.";
   public $is_private = false;
-  public $fields = ["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa", "data da avaliacao", "bioma", "eoo(km²)", "aoo(km²)", "avaliada no LV-2013"];
+  public $fields=["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa","data da avaliacao", "bioma", "eoo(km²)", "aoo(km²)", "mais informações","avaliada no LV-2013"];
   public $filters=["checklist",'family'];
 
   function run($csv,$checklist,$family="") {
@@ -57,6 +57,11 @@ class Assessments{
       } else {
         $data['rationale'] = "";
       }
+      if(isset($doc["information"])) {
+        $data['information'] = json_encode($doc["information"]);
+      } else {
+        $data['information'] = "";
+      }
       $data['assessment_date'] = date('Y-m-d', $doc["metadata"]["modified"]);
       $data["bioma"] = "";
 
@@ -81,6 +86,7 @@ class Assessments{
         $data["assessor"],
         $data["evaluator"],
         $data["rationale"],
+        $data["information"],
         $data["assessment_date"],
         $data["bioma"],
         $data["eoo"],
