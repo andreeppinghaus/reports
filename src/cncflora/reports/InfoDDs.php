@@ -24,7 +24,7 @@ class InfoDDs {
 
     foreach($profiles as $d) {
       $categoria = $repAs->listCategoryByName($d["taxon"]["scientificNameWithoutAuthorship"]);
-      if(!(isset($categoria[0]) && $categoria[0] == "DD")){
+      if(isset($categoria[0]) && $categoria[0] == "DD"){
         $occs  = $repoOcc->listOccurrences($d["taxon"]["scientificNameWithoutAuthorship"],false);
         $estados = "";
         foreach ($occs as $occ) {
