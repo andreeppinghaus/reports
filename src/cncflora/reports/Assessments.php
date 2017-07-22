@@ -7,7 +7,7 @@ class Assessments{
   public $title = "Avaliações";
   public $description = "Lista com as avaliações de risco de extensão de cada espécie.";
   public $is_private = false;
-  public $fields=["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa","mais informações","data da avaliacao", "bioma", "eoo(km²)", "aoo(km²)","avaliada no LV-2013"];
+  public $fields=["familia","nome científico","autor","status no workflow","categoria","critério", "avaliador", "revisor", "justificativa","mais informações","data da avaliacao", "bioma", "eoo(km²)", "aoo(km²)","endemismo","avaliada no LV-2013"];
   public $filters=["checklist",'family'];
 
   function run($csv,$checklist,$family="") {
@@ -68,6 +68,14 @@ class Assessments{
       $data["eoo"] = round($stats["eoo"], 2);
       $data["aoo"] = $stats["aoo"];
 
+      $endemic = json_decode(file_get_contents("http://servicos.jbrj.gov.br/flora/endemism/".rawurlencode($doc["taxon"]["scientificNameWithoutAuthorship"])))->result;
+      //error_log(print_r($endemic[0]->{"endemism"}, TRUE));
+      if(!isset($endemic[0]) || $endemic[0]->{"endemism"} != "Endemic")
+        $data["endemic"] = "";
+      else {
+        $data["endemic"] = "Endêmica do Brasil";
+      }
+
       /*
       if (array_key_exists($doc->taxon->scientificNameWithoutAuthorship, $taxons)){
         if(isset($doc->ecology) && isset($doc->ecology->biomas) && is_array($doc->ecology->biomas)) {
@@ -90,7 +98,8 @@ class Assessments{
         $data["assessment_date"],
         $data["bioma"],
         $data["eoo"],
-        $data["aoo"]
+        $data["aoo"],
+        $data["endemic"]
       ];
       if(isset($doc["reasonsForReAssessment"]["reason"]))
         $data[] = "S";
