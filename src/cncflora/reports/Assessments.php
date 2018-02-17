@@ -71,7 +71,7 @@ class Assessments{
       $endemic = json_decode(file_get_contents("http://servicos.jbrj.gov.br/flora/endemism/".rawurlencode($doc["taxon"]["scientificNameWithoutAuthorship"])))->result;
       //error_log(print_r($endemic[0]->{"endemism"}, TRUE));
       if(!isset($endemic[0]) || $endemic[0]->{"endemism"} != "Endemic")
-        $data["endemic"] = "";
+        $data["endemic"] = $endemic[0]->{"endemism"};
       else {
         $data["endemic"] = "Endêmica do Brasil";
       }
