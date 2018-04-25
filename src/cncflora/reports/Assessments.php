@@ -68,11 +68,14 @@ class Assessments{
       $data["eoo"] = round($stats["eoo"], 2);
       $data["aoo"] = $stats["aoo"];
 
-      $endemic = json_decode(file_get_contents("http://servicos.jbrj.gov.br/flora/endemism/".rawurlencode($doc["taxon"]["scientificNameWithoutAuthorship"])))->result;
+      //$endemic = json_decode(file_get_contents("http://servicos.jbrj.gov.br/flora/endemism/".rawurlencode($doc["taxon"]["scientificNameWithoutAuthorship"])))->result;
       //error_log(print_r($endemic[0]->{"endemism"}, TRUE));
-      if(!isset($endemic[0]) || $endemic[0]->{"endemism"} != "Endemic")
+      if(!isset($endemic[0])){
+        $data["endemic"] = "";
+      }
+      elseif( $endemic[0]->{"endemism"} != "Endemic"){
         $data["endemic"] = $endemic[0]->{"endemism"};
-      else {
+      } else {
         $data["endemic"] = "Endêmica do Brasil";
       }
 
