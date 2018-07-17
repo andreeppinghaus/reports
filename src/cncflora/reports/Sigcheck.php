@@ -27,6 +27,7 @@ class Sigcheck {
     ,"decimalLongitude"=>'longitude'
     ,"decimalLatitude"=>'latitude'
     ,"coordinateUncertaintyInMeters"=>'precision'
+    ,"georeferencePrecision"=>'geo_precision'
     ,"georeferenceProtocol"=>'protocol'
     ,"georeferenceRemarks" => "obs. de SIG"
     ,"metadata_created" => "data da criação"
