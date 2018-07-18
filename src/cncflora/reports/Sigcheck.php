@@ -27,7 +27,7 @@ class Sigcheck {
     ,"decimalLongitude"=>'longitude'
     ,"decimalLatitude"=>'latitude'
     ,"coordinateUncertaintyInMeters"=>'precision'
-    ,"georeferencePrecision"=>'geo_precision'
+    // ,"georeferencePrecision"=>'geo_precision'
     ,"georeferenceProtocol"=>'protocol'
     ,"georeferenceRemarks" => "obs. de SIG"
     ,"metadata_created" => "data da criação"
@@ -93,7 +93,9 @@ class Sigcheck {
             $occ['specie'] = $spp["scientificNameWithoutAuthorship"];
             foreach($this->fields_array as $k=>$n) {
               if(!isset($occ[$k])) $occ[$k]='';
-              if($checklist=='endemicas_rio_de_janeiro' && $k=="coordinateUncertaintyInMeters" && isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
+              if($k=="coordinateUncertaintyInMeters" &&
+              (!isset($occ['coordinateUncertaintyInMeters']) || $occ['coordinateUncertaintyInMeters'] != "") &&
+               isset($occ['georeferencePrecision']) && $occ['georeferencePrecision'] != "")
                 $occ[$k] = $occ['georeferencePrecision'];
               if($k == "metadata_created" || $k == "metadata_modified"){
                 $occ[$k] = date('d/m/Y', intval($occ[$k]));
