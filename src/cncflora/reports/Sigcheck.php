@@ -26,8 +26,8 @@ class Sigcheck {
     ,"locality"=>'locality'
     ,"decimalLongitude"=>'longitude'
     ,"decimalLatitude"=>'latitude'
-    ,"coordinateUncertaintyInMeters"=>'precision'
-    // ,"georeferencePrecision"=>'geo_precision'
+    ,"coordinateUncertaintyInMeters"=>'uncertainty_precision'
+    ,"georeferencePrecision"=>'geo_precision'
     ,"georeferenceProtocol"=>'protocol'
     ,"georeferenceRemarks" => "obs. de SIG"
     ,"metadata_created" => "data da criação"
@@ -80,11 +80,11 @@ class Sigcheck {
             continue;
             //throw new \Exception('Espécie '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui pontos não validados (ex.: '.$occ['_id'].').');
           }
-          $field='coordinateUncertaintyInMeters';
-          if(isset($occ[$field]) && !is_null($occ[$field]) && !in_array($occ[$field],$this->precisions_allowed)) {
-            continue;
-            //throw new \Exception('Espécie  '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui precisões inválidas (ex.:'.$occ['_id'].' -> '.$occ[$field].').');
-          }
+          // $field='coordinateUncertaintyInMeters';
+          // if(isset($occ[$field]) && !is_null($occ[$field]) && !in_array($occ[$field],$this->precisions_allowed)) {
+          //   continue;
+          //   //throw new \Exception('Espécie  '.$spp['family'].' '.$spp['scientificNameWithoutAuthorship'].' possui precisões inválidas (ex.:'.$occ['_id'].' -> '.$occ[$field].').');
+          // }
           if($repoOcc->canUse($occ)) {
             $used++;
             $data  = [$f,str_replace(" ", "_", $spp["scientificNameWithoutAuthorship"])];
