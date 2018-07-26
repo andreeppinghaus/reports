@@ -29,6 +29,7 @@
       <a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>"><?php echo $family ?></a>
       <small>
         (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?simple">simplificado</a>)
+        (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profile">com perfil</a>)
       </small>
     </li>
     <?php endforeach; ?>

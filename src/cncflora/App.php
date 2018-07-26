@@ -229,6 +229,7 @@ $r->get('/book/{db}/TODAS',function($req,$res,$args) {
     $profs=$repo2->listFamily($f);
 
     $assessments=[];
+    $profiles=[];
     foreach($asses as $a) {
       if(!($a['metadata']['status'] == 'published' || $a['metadata']['status'] == 'comments')) continue;
 
