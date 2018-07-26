@@ -229,7 +229,6 @@ $r->get('/book/{db}/TODAS',function($req,$res,$args) {
     $profs=$repo2->listFamily($f);
 
     $assessments=[];
-    $profiles=[];
     foreach($asses as $a) {
       if(!($a['metadata']['status'] == 'published' || $a['metadata']['status'] == 'comments')) continue;
 
@@ -318,7 +317,9 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
   ob_start();
   if(isset($_GET["simple"])) {
     include __DIR__.'/../../html/book_family_simple.php';
-  } else {
+  } elseif (isset($_GET["profile"])) {
+    include __DIR__.'/../../html/book_family_profile.php';
+  } {
     include __DIR__.'/../../html/book_family.php';
   }
   $c = ob_get_contents();
