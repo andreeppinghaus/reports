@@ -83,7 +83,8 @@ window.onload=function(){
       </p>
       <p class='rationale'><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
       <!-- Teve que ficar na mesma linha para não colocar a imagem depois da Justificativa -->
-      </div><?php if ( $a['category'] != "DD" ) :  ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
+      <?php $img_uri = ($db == 'arvores_endemicas') ? "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_arvores_endemicas_2018/" : "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos" ?>
+    </div><?php if ( $a['category'] != "DD" ) :  ?><img src="<?php echo $img_uri.$a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
         <hr>
       <div class="pure-u-1">
         <p class='rationale'>
