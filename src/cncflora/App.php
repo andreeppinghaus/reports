@@ -242,6 +242,11 @@ $r->get('/book/{db}/TODAS',function($req,$res,$args) {
       if(isset($a['references']) && is_array($a['references']))  {
         $refs = array_merge($refs,$a['references']);
       }
+
+      if(isset($a['profile']['references']) && is_array($a['references'])) {
+        $refs = array_merge($refs,$a['profile']['references']);
+      }
+
     }
     $references=[];
     $got=[];
@@ -319,7 +324,7 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
     include __DIR__.'/../../html/book_family_simple.php';
   } elseif (isset($_GET["profile"])) {
     include __DIR__.'/../../html/book_family_profile.php';
-  } {
+  } else {
     include __DIR__.'/../../html/book_family.php';
   }
   $c = ob_get_contents();
