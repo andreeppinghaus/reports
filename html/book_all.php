@@ -107,7 +107,7 @@ window.onload=function(){
             População:
             <br />
             <?php if (isset($a["profile"]["population"]["resume"]) && $a["profile"]["population"]["resume"] != "" ) :
-              echo nl2br(["population"]["resume"]."\n"); endif ?>
+              echo nl2br($a["profile"]["population"]["resume"]."\n"); endif ?>
               <?php if (isset($a["profile"]["population"]["references"])) :
               foreach($a["profile"]["population"]["references"] as $reference) echo nl2br($reference."\n"); endif?>
               <br />
