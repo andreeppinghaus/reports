@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Prova gráfica - <?php echo $family ?></title>
+  
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <style type="text/css">
     ul {
@@ -63,6 +64,7 @@ window.onload=function(){
 </head>
 <body>
 <div class="content pure-g">
+<!-- <div class="container content pure-g"> -->
   <h1 class='pure-u-1'><?php echo $family ?></h1>
 <p class="print pure-u-1"><a href='javascript:window.print()'>Imprimir</a></p>
 
@@ -83,10 +85,19 @@ window.onload=function(){
       </p>
       <!-- Teve que ficar na mesma linha para não colocar a imagem depois da Justificativa -->
     </div>
-    <p ><strong>Justificativa</strong>: <?php echo $a['rationale'] ?></p>
     <?php $img_uri = ($db == 'arvores_endemicas') ? "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/tt/mapas_arvores_endemicas_2018/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" : "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>
     <?php $img_uri2 = ($db == 'arvores_endemicas') ? "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/tt2/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" : "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>
-    <?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
+    <?php 
+    if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) {
+        echo '<p>';
+    }else {
+        echo '<p class="pure-u-2-5">';
+        
+    }
+     echo '<strong>Justificativa</strong>:';
+     echo $a['rationale'].'</p>';
+    ?>
+        
     <?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><img src="<?php echo $img_uri2 ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
         <hr>
       <div class="pure-u-1">
@@ -154,6 +165,7 @@ window.onload=function(){
           echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."\n");
           endif ?>
 
+		<?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
           <br />
 
           Ecologia:
