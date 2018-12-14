@@ -102,70 +102,102 @@ window.onload=function(){
         <hr>
       <div class="pure-u-1">
         <p class='rationale'>
-          <h3>Perfil da Espécie</h3>
-          Notas: <?php if (isset($a["profile"]["taxonomicNotes"]["notes"])): echo $a["profile"]["taxonomicNotes"]["notes"]; endif ?>
-            <br />
-            <br />
-            <!-- <?php if (isset($a["profile"]["taxonomicNotes"]["references"])): foreach($a["profile"]["taxonomicNotes"]["references"] as $notesReferences) echo $notesReferences; endif ?> -->
+     		<h3><strong>Perfil da Espécie</strong></h3>
+          		 
+      		<?php 
+      		if (isset($a["profile"]["taxonomicNotes"]["notes"])) {
+      		    echo 'Notas: '.$a["profile"]["taxonomicNotes"]["notes"];
+      		    echo "<br /><br />";
+      		}
+             //<?php if (isset($a["profile"]["taxonomicNotes"]["references"])): foreach($a["profile"]["taxonomicNotes"]["references"] as $notesReferences) echo $notesReferences; endif ?
 
-          Economia: <?php if (isset($a["profile"]["economicValue"]["potentialEconomicValue"]) && $a["profile"]["economicValue"]["potentialEconomicValue"] != "no" && isset($a["profile"]["economicValue"]["details"])) :
-            echo nl2br("Espécie possui potencial valor econômico\nResume: ".$a["profile"]["economicValue"]["details"]."\n"); endif ?>
+      		if ( isset($a["profile"]["economicValue"]["potentialEconomicValue"]) 
+      				&& $a["profile"]["economicValue"]["potentialEconomicValue"] != "no" 
+      				&& isset($a["profile"]["economicValue"]["details"])
+      			) {
+      			echo 'Economia: ';
+       			echo nl2br("Espécie possui potencial valor econômico\nResume: ".$a["profile"]["economicValue"]["details"]."\n"); 
+            } 
+            ?>
             <?php if (isset($a["profile"]["economicValue"]["references"])) :
             foreach($a["profile"]["economicValue"]["references"] as $reference) echo nl2br($reference."\n"); endif?>
-            <br />
+            
 
-          População:
-          <br />
-          <?php if (isset($a["profile"]["population"]["resume"]) && $a["profile"]["population"]["resume"] != "" ) :
-            echo nl2br($a["profile"]["population"]["resume"]."\n"); endif ?>
-            <?php if (isset($a["profile"]["population"]["references"])) :
-            foreach($a["profile"]["population"]["references"] as $reference) echo nl2br($reference."\n"); endif?>
-            <br />
-          <?php if (isset($a["profile"]["population"]["size"])):
-          echo nl2br("Tamanho estimado => Tipo de Valor: ".$a["profile"]["population"]["size"]["type"]." Absoluto: ".$a["profile"]["population"]["size"]["absolute"]."\n");
-          endif ?>
+          <?php 
+          $html='';
+          
+          if (isset($a["profile"]["population"]["resume"]) && $a["profile"]["population"]["resume"] != "" ) {
+              $html .= nl2br($a["profile"]["population"]["resume"]."\n"); 
+          }
+            
+          if (isset($a["profile"]["population"]["references"])) {
+              foreach($a["profile"]["population"]["references"] as $reference) {
+                $html .= nl2br($reference."\n"); 
+              }
+          }
+            
+            
+          if (isset($a["profile"]["population"]["size"])){
+              $html .="<br />".nl2br("Tamanho estimado => Tipo de Valor: ".
+                  $a["profile"]["population"]["size"]["type"]." Absoluto: ".
+                  $a["profile"]["population"]["size"]["absolute"]."\n");
+          }
 
-          <?php if (isset($a["profile"]["population"]["numberOfSubpopulations"])):
-          echo nl2br("Número de subpopulações => Tipo de Valor: ".$a["profile"]["population"]["numberOfSubpopulations"]["type"]." Absoluto: ".$a["profile"]["population"]["numberOfSubpopulations"]["absolute"]."\n");
-          endif ?>
+          if (isset($a["profile"]["population"]["numberOfSubpopulations"])) {
+              $html .=nl2br("Número de subpopulações => Tipo de Valor: ".
+                  $a["profile"]["population"]["numberOfSubpopulations"]["type"]." Absoluto: ".
+                  $a["profile"]["population"]["numberOfSubpopulations"]["absolute"]."\n");
+          }
 
-          <?php if (isset($a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"])):
-          echo nl2br("Número de individuos na maior subpopulação => Tipo de Valor: ".$a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["type"]." Absoluto: ".$a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["absolute"]."\n");
-          endif ?>
+          if (isset($a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"])) {
+              $html .=nl2br("Número de individuos na maior subpopulação => Tipo de Valor: ".
+                  $a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["type"].
+                  " Absoluto: ".
+                  $a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["absolute"]."\n");
+          }
 
-          <?php if (isset($a["profile"]["population"]["extremeFluctuation"])):
-          echo nl2br("Flutuação extrema: ".$a["profile"]["population"]["extremeFluctuation"]["extremeFluctuation"]."\n");
-          endif ?>
-          <br />
+          if (isset($a["profile"]["population"]["extremeFluctuation"])) {
+              $html .= nl2br("Flutuação extrema: ".
+                        $a["profile"]["population"]["extremeFluctuation"]["extremeFluctuation"]."\n");
+          }
+          
+          if (!empty($html)) {
+              echo "<br /><strong>População</strong>: <br />";
+              echo $html;
+          }
+          
+          $html ='';
+          
+          if (isset($a["profile"]["distribution"]["fragmented"])) {
+              $html .= nl2br("Fragmentada: ".$a["profile"]["distribution"]["fragmented"]."\n");
+          }
 
+         if (isset($a["profile"]["distribution"]["altitude"]) &&
+             isset($a["profile"]["distribution"]["altitude"]["type"]) && 
+             isset($a["profile"]["distribution"]["altitude"]["absolute"])) {
+                 $html .= nl2br("Altitude => Tipo de Valor: ".$a["profile"]["distribution"]["altitude"]["type"].
+                     " Absoluto: ".$a["profile"]["distribution"]["altitude"]["absolute"]."\n");
+             }
 
-          Distribuição:
-          <br />
-          <?php if (isset($a["profile"]["distribution"]["fragmented"])):
-          echo nl2br("Fragmentada: ".$a["profile"]["distribution"]["fragmented"]."\n");
-          endif ?>
+          if (isset($a["profile"]["distribution"]["brasilianEndemic"]) && 
+              $a["profile"]["distribution"]["brasilianEndemic"] == 'yes') {
+                  $html .=nl2br("Endêmica do Brasil"."\n");
+              }
 
-          <?php if (isset($a["profile"]["distribution"]["altitude"]) && isset($a["profile"]["distribution"]["altitude"]["type"]) && isset($a["profile"]["distribution"]["altitude"]["absolute"])):
-          echo nl2br("Altitude => Tipo de Valor: ".$a["profile"]["distribution"]["altitude"]["type"]." Absoluto: ".$a["profile"]["distribution"]["altitude"]["absolute"]."\n");
-          endif ?>
+          if (isset($a["profile"]["distribution"]["resume"])) {
+              $html .= nl2br("Resume: ".$a["profile"]["distribution"]["resume"]."\n");
+          }
 
-          <?php if (isset($a["profile"]["distribution"]["brasilianEndemic"]) && $a["profile"]["distribution"]["brasilianEndemic"] == 'yes'):
-          echo nl2br("Endêmica do Brasil"."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["distribution"]["resume"])):
-          echo nl2br("Resume: ".$a["profile"]["distribution"]["resume"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["distribution"]["aoo"])):
-          echo nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."km²"."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["distribution"]["eoo"])):
-          echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."km²"."\n");
-          endif ?>
-
-		<?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
+          if (isset($a["profile"]["distribution"]["aoo"])) {
+              $html .=nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."km²"."\n");
+          }
+		
+          if (!empty($html)){ 
+              echo "<br /> <strong>Distribuição:</strong> <br />"; //só exibe se existir registros abaixo da distribuição 
+              echo $html;
+          }
+        ?>
+		<?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><center><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /></center><?php else: ?><center><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /></center> <?php endif; ?>
           <br />
 
           Ecologia:
