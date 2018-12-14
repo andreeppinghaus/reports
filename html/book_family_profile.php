@@ -158,11 +158,11 @@ window.onload=function(){
           endif ?>
 
           <?php if (isset($a["profile"]["distribution"]["aoo"])):
-          echo nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."\n");
+          echo nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."km²"."\n");
           endif ?>
 
           <?php if (isset($a["profile"]["distribution"]["eoo"])):
-          echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."\n");
+          echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."km²"."\n");
           endif ?>
 
 		<?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /><?php else: ?><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /> <?php endif; ?>
