@@ -94,7 +94,7 @@ window.onload=function(){
     //    echo '<p class="pure-u-2-5">';
         
     //}
-     echo '<strong>Justificativa</strong>:';
+     echo '<strong>Justificativa</strong>: ';
      echo $a['rationale'].'</p>';
     ?>
         
@@ -193,150 +193,233 @@ window.onload=function(){
           }
 		
           if (!empty($html)){ 
-              echo "<br /> <strong>Distribuição:</strong> <br />"; //só exibe se existir registros abaixo da distribuição 
+              echo "<br /> <strong>Distribuição:</strong> <br /><br />"; //só exibe se existir registros abaixo da distribuição 
               echo $html;
           }
+          
+          if (isset($a["profile"]["distribution"]["eoo"])){
+              echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."km²"."\n");
+              echo "</div>";//col
+          } 
+          
         ?>
 		<?php if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) :  ?><center><img src="<?php echo $img_uri ?>" class='pure-u-2-5' /></center><?php else: ?><center><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/<?php echo $a['taxon']['scientificNameWithoutAuthorship'].".jpg" ?>" class='pure-u-2-5' /></center> <?php endif; ?>
           <br />
+		<?php 
+          $html='';
+           
+           if (isset($a["profile"]["ecology"]["lifeForm"])) {
+               $html.="<br /> Hábito: ";
+               foreach($a["profile"]["ecology"]["lifeForm"] as $lifeForm) {
+                   
+                   $html.= nl2br($lifeForm."\n"); 
+               }
+              // $html .="<br />";
+           }
+            
+           if (isset($a["profile"]["ecology"]["substratum"])) {
+               $html .="Substrato: ";
+               foreach($a["profile"]["ecology"]["substratum"] as $substratum) {
+                   $html.= nl2br($substratum."\n"); 
+               }
+             //  $html .="<br />";
+           }
 
-          Ecologia:
-          <br />
-          Hábito:
-          <?php if (isset($a["profile"]["ecology"]["lifeForm"])): foreach($a["profile"]["ecology"]["lifeForm"] as $lifeForm) echo nl2br($lifeForm."\n"); endif ?>
-          <br />
+           if (isset($a["profile"]["ecology"]["luminosity"])){
+                $html .="Luminosidade: ";
+                
+               foreach($a["profile"]["ecology"]["luminosity"] as $luminosity){
+                   $html.= nl2br($luminosity."\n"); 
+               }
+              // $html .="<br />";
+           }
+           
+           if (isset($a["profile"]["ecology"]["longevity"])) {
+               $html.= nl2br("Longevidade: ".$a["profile"]["ecology"]["longevity"]."\n");
+           }
 
-          Substrato:
-          <?php if (isset($a["profile"]["ecology"]["substratum"])): foreach($a["profile"]["ecology"]["substratum"] as $substratum) echo nl2br($substratum."\n"); endif ?>
-          <br />
-
-          Luminosidade:
-          <?php if (isset($a["profile"]["ecology"]["luminosity"])): foreach($a["profile"]["ecology"]["luminosity"] as $luminosity) echo nl2br($luminosity."\n"); endif ?>
-          <br />
-
-          <?php if (isset($a["profile"]["ecology"]["longevity"])):
-          echo nl2br("Longevidade: ".$a["profile"]["ecology"]["longevity"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["ecology"]["fenology"])):
-          echo nl2br("Fenologia: ".$a["profile"]["ecology"]["fenology"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["ecology"]["clonal"])):
-          echo nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["ecology"]["resprout"])):
-          echo nl2br("Rebroto: ".$a["profile"]["ecology"]["resprout"]."\n");
-          endif ?>
-
-          Habitat:
-          <?php if (isset($a["profile"]["ecology"]["habitats"])): foreach($a["profile"]["ecology"]["habitats"] as $habitats) echo nl2br($habitats."\n"); endif ?>
-          <br />
-
-          Biomas:
-          <?php if (isset($a["profile"]["ecology"]["biomas"])): foreach($a["profile"]["ecology"]["biomas"] as $biomas) echo nl2br($biomas."\n"); endif ?>
-          <br />
-
-          Fitofisionomias:
-          <?php if (isset($a["profile"]["ecology"]["fitofisionomies"])): foreach($a["profile"]["ecology"]["fitofisionomies"] as $fitofisionomies) echo nl2br($fitofisionomies."\n"); endif ?>
-          <br />
-
-          Tipo de Vegetação:
-          <?php if (isset($a["profile"]["ecology"]["vegetation"])): foreach($a["profile"]["ecology"]["vegetation"] as $vegetation) echo nl2br($vegetation."\n"); endif ?>
-
-          <?php if (isset($a["profile"]["ecology"]["resume"])):
-          echo "Resume: ".$a["profile"]["ecology"]["resume"];
-          endif ?>
-          <br />
-          <br />
-
-          Reprodução: <br />
-
-          <?php if (isset($a["profile"]["reproduction"]["sexualSystem"])):
-          echo nl2br("Sistema Sexual: ".$a["profile"]["reproduction"]["sexualSystem"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["reproduction"]["system"])):
-          echo nl2br("Sistema reprodutor: ".$a["profile"]["reproduction"]["system"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["reproduction"]["strategy"])):
-          echo nl2br("Estratégia de dispersão: ".$a["profile"]["reproduction"]["strategy"]."\n");
-          endif ?>
-
-          Fenologia:
-          <br/>
-          <?php if (isset($a["profile"]["reproduction"]["fenology"])):
-            foreach($a["profile"]["reproduction"]["fenology"] as $fenology) echo nl2br($fenology["fenology"]." ".$fenology["start"]." to ".$fenology["end"]."\n");
-          endif ?>
-
-          Sindrome de polinização:
-          <?php if (isset($a["profile"]["reproduction"]["polinationSyndrome"])): foreach($a["profile"]["reproduction"]["polinationSyndrome"] as $polinationSyndrome) echo nl2br($polinationSyndrome."\n"); endif ?>
-
-          Sindrome de dispersão:
-          <?php if (isset($a["profile"]["reproduction"]["dispersionSyndrome"])): foreach($a["profile"]["reproduction"]["dispersionSyndrome"] as $dispersionSyndrome) echo nl2br($dispersionSyndrome."\n"); endif ?>
-
-          <?php if (isset($a["profile"]["reproduction"]["dispersorInformation"])):
-          echo nl2br("Informações sobre o dispersor: ".$a["profile"]["reproduction"]["dispersorInformation"]."\n");
-          endif ?>
-
-          <?php if (isset($a["profile"]["reproduction"]["resume"])):
-          echo nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
-          endif ?>
-          <br />
-          <br />
-
-          Ameaças:
-          <br />
-
-          <?php if (isset($a["profile"]["threats"]) && is_array($a["profile"]["threats"])):
-            foreach ($a["profile"]["threats"] as $threat):
-              if (isset($threat["threat"])):
-                echo nl2br("Ameaça: ".$threat["threat"]."\n");
-              endif;
-
-              if (isset($threat["stress"])):
-                echo nl2br("Incidência: ".$threat["stress"]."\n");
-              endif;
-
-              if (isset($threat["incidence"])):
-                echo nl2br("Stress: ".$threat["incidence"]."\n");
-              endif;
-
-              if (isset($threat["severity"])):
-                echo nl2br("Severidade: ".$threat["severity"]."\n");
-              endif;
-
-              if (isset($threat["reversible"])):
-                echo nl2br("Reversibilidade: ".$threat["reversible"]."\n");
-              endif;
-              echo nl2br("Período:\n");
-              if (isset($threat["timing"])): foreach($threat["timing"] as $timing) echo nl2br($timing."\n"); endif;
-              echo nl2br("Declínio:\n");
-              if (isset($threat["decline"])): foreach($threat["decline"] as $decline) echo nl2br($decline."\n"); endif;
-              if (isset($threat["details"])):
-                echo nl2br("Detalhes: ".$threat["details"]."\n");
-              endif;
-            endforeach;
-          endif ?>
-
-
-          Ações de Conservação: <br />
-
-          <?php if (isset($a["profile"]["actions"])):
-            foreach($a["profile"]["actions"] as $actions):
-              if(isset($actions["action"]) && isset($actions["situation"]) && isset($actions["details"])):
-                echo nl2br("Ação: ".$actions["action"]."\nSituação: ".$actions["situation"]."\n".$actions["details"]."\n\n");
-              endif;
-            endforeach;
-          endif ?>
-
-          Usos: <br/>
-          <?php if (isset($a["profile"]["uses"])):
-            foreach($a["profile"]["uses"] as $uses) echo nl2br("Uso: ".(isset($uses["use"]) ? $uses["use"] : "")."\nRecurso: ".(isset($uses["resource"]) ? $uses["resource"] : "")."\nProveniência: ".(isset($uses["provenance"]) ? $uses["provenance"] : "")."\nDetalhes: ".(isset($uses["detaills"]) ? $uses["details"] : "")."\n\n");
-          endif ?>
-          <br />
+           if (isset($a["profile"]["ecology"]["fenology"])) {
+               $html .= nl2br("Fenologia: ".$a["profile"]["ecology"]["fenology"]."\n");
+           }
+            
+           if (isset($a["profile"]["ecology"]["clonal"])) {
+                $html = nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
+           }
+           
+           if (isset($a["profile"]["ecology"]["resprout"])) {
+           $html .= nl2br("Rebroto: ".$a["profile"]["ecology"]["resprout"]."\n");
+           }
+           
+           if (isset($a["profile"]["ecology"]["habitats"])) {
+               $html .= "Habitat: ";
+               foreach($a["profile"]["ecology"]["habitats"] as $habitats)  {
+                   $html .= nl2br($habitats."\n");
+               }
+              // $html .="<br />";
+           }
+           
+           if (isset($a["profile"]["ecology"]["biomas"])) {
+               $html .= "Biomas: ";
+               foreach($a["profile"]["ecology"]["biomas"] as $biomas) {
+                   $html.=nl2br($biomas."\n");
+               }
+             //  $html .="<br />";
+           }
+           
+           if (isset($a["profile"]["ecology"]["fitofisionomies"])) {
+               $html .= "Fitofisionomias: ";
+               foreach($a["profile"]["ecology"]["fitofisionomies"] as $fitofisionomies){
+                   $html .= nl2br($fitofisionomies."\n");
+               }
+              // $html .="<br />";
+           }
+           
+           if (isset($a["profile"]["ecology"]["vegetation"])) {
+               $html .="Tipo de Vegetação: ";
+               foreach($a["profile"]["ecology"]["vegetation"] as $vegetation){
+                $html .= nl2br($vegetation."\n");
+               }
+           }    
+           
+           if (isset($a["profile"]["ecology"]["resume"])) {
+               $html .="Resume: ".$a["profile"]["ecology"]["resume"];
+           }
+           
+           if (!empty($html)) {
+               echo " <br /><strong>Ecologia: </strong><br /><br />";//só exibe se existir registros abaixo da Ecologia
+               echo $html;
+           }
+           
+           $html='';
+           if (isset($a["profile"]["reproduction"]["sexualSystem"])){
+               $html.=nl2br("Sistema Sexual: ".$a["profile"]["reproduction"]["sexualSystem"]."\n");
+           }
+           
+           if (isset($a["profile"]["reproduction"]["system"])) {
+               $html.=nl2br("Sistema reprodutor: ".$a["profile"]["reproduction"]["system"]."\n");
+           }
+           
+           if (isset($a["profile"]["reproduction"]["strategy"])) {
+               $html.=nl2br("Estratégia de dispersão: ".$a["profile"]["reproduction"]["strategy"]."\n");
+           }
+           
+           if (isset($a["profile"]["reproduction"]["fenology"])) {
+               $html .= "Fenologia: <br/>";
+               foreach($a["profile"]["reproduction"]["fenology"] as $fenology) {
+                   $html .= nl2br($fenology["fenology"]." ".$fenology["start"]." to ".$fenology["end"]."\n");
+               }
+           }
+           
+           if (isset($a["profile"]["reproduction"]["polinationSyndrome"])) {
+               $html .="Sindrome de polinização:";
+               foreach($a["profile"]["reproduction"]["polinationSyndrome"] as $polinationSyndrome){
+                   $html .= nl2br($polinationSyndrome."\n");
+               }
+           }
+           
+           $html .="Sindrome de dispersão:";
+           if (isset($a["profile"]["reproduction"]["dispersionSyndrome"])){
+               foreach($a["profile"]["reproduction"]["dispersionSyndrome"] as $dispersionSyndrome) {
+                   $html .= nl2br($dispersionSyndrome."\n");
+               }
+           }
+           
+           if (isset($a["profile"]["reproduction"]["dispersorInformation"])) {
+               $html .= nl2br("Informações sobre o dispersor: ".$a["profile"]["reproduction"]["dispersorInformation"]."\n");
+           }
+           
+           if (isset($a["profile"]["reproduction"]["resume"])) {
+               $html .= nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
+           }
+           if (!empty($html)) {
+               echo "<br /><br /><strong>Reprodução:</strong> <br /><br />";
+               echo $html;
+           }
+           
+           
+           $html='';
+           
+           if (isset($a["profile"]["threats"]) && is_array($a["profile"]["threats"])){
+               
+               foreach ($a["profile"]["threats"] as $threat) {
+                   $html .= "<br>";//novo
+                   if (isset($threat["threat"])) {
+                       $html .=nl2br("Ameaça: ".$threat["threat"]."\n");
+                   }
+                   
+                   if (isset($threat["stress"])) {
+                       $html .=nl2br("Incidência: ".$threat["stress"]."\n");
+                   }
+                   
+                   if (isset($threat["incidence"])) {
+                       $html .= nl2br("Stress: ".$threat["incidence"]."\n");
+                   }
+                   
+                   if (isset($threat["severity"])) {
+                       $html .= nl2br("Severidade: ".$threat["severity"]."\n");
+                   }
+                   
+                   if (isset($threat["reversible"])) {
+                       $html .= nl2br("Reversibilidade: ".$threat["reversible"]."\n");
+                   }
+                   
+                   $html .= nl2br("Período:\n");
+                   if (isset($threat["timing"])) {
+                       foreach($threat["timing"] as $timing) {
+                           $html .= nl2br($timing."\n");
+                       }
+                   }
+                   
+                   $html .= nl2br("Declínio:\n");
+                   if (isset($threat["decline"])) {
+                       foreach($threat["decline"] as $decline) {
+                           $html.= nl2br($decline."\n");
+                       }
+                   }
+                   
+                   if (isset($threat["details"])) {
+                       $html.=nl2br("Detalhes: ".$threat["details"]."\n");
+                   }
+                   
+               }//fim foreach
+               
+           }//fim if
+           
+           if (!empty($html)){
+               echo "<br /><br /><strong>Ameaças:</strong><br />";
+               echo $html;
+               
+           }
+           
+           $html ='';
+           
+           if (isset($a["profile"]["actions"])){
+               foreach($a["profile"]["actions"] as $actions) {
+                   if(isset($actions["action"]) && isset($actions["situation"]) && isset($actions["details"])) {
+                       $html .=nl2br("Ação: ".$actions["action"]."\nSituação: ".$actions["situation"]."\n".$actions["details"]."\n\n");
+                   }//fim if
+               }//fim foreach
+           }//fim if
+           
+           if (!empty($html)){
+               echo "<br /><strong> Ações de Conservação:</strong> <br />";
+               echo $html;
+           }
+           
+           $html='';
+           if (isset($a["profile"]["uses"])) {
+               foreach($a["profile"]["uses"] as $uses) {
+                   $html .= nl2br("Uso: ".(isset($uses["use"]) ? $uses["use"] : "").
+                       "\nRecurso: ".(isset($uses["resource"]) ? $uses["resource"] : "").
+                       "\nProveniência: ".(isset($uses["provenance"]) ? $uses["provenance"] : "").
+                       "\nDetalhes: ".(isset($uses["detaills"]) ? $uses["details"] : "")."\n\n");
+               }
+           }
+           if (! empty($html)) {
+               echo " Usos: <br/>";
+               echo $html;
+           }
+           ?>
 
         </p>
       </div>

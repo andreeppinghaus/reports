@@ -15,8 +15,8 @@ $r->get("/",function($req){
 
 $r->get("/done",function($req,$res){
   $html = '<ul>';
-
   $dir = opendir(__DIR__.'/../../html/data');
+ 
   while($file = readdir($dir)) {
     if(!preg_match('/\.csv$/',$file)) continue;
     $html .= '<li><a href="data/'.$file.'">'.$file.'</a></li>';
