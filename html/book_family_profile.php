@@ -197,7 +197,7 @@ foreach($assessments as $a) {
           }
           
           if (!empty($html2)) {
-              $html .= $html2 ."<br /><strong>População</strong>: <br /><br />";
+              $html .= $html2 ."<br /><strong>População</strong>: <br/>";
               $html2='';
           }
           
@@ -228,7 +228,7 @@ foreach($assessments as $a) {
           }
 		
           if (!empty($html2)){ 
-              $html .= $html2."<br /> <strong>Distribuição:</strong> <br /><br />"; //só exibe se existir registros abaixo da distribuição
+              $html .= $html2."<br /> <strong>Distribuição:</strong> <br />"; //só exibe se existir registros abaixo da distribuição
               $html2='';
           }
           
@@ -318,7 +318,7 @@ foreach($assessments as $a) {
            }
            
            if (!empty($html2)) {
-               $html .= $html2." <br /><strong>Ecologia: </strong><br /><br />";//só exibe se existir registros abaixo da Ecologia
+               $html .= $html2." <br /><strong>Ecologia: </strong><br />";//só exibe se existir registros abaixo da Ecologia
                $html2='';
            }
            
@@ -365,7 +365,7 @@ foreach($assessments as $a) {
                $html2 .= nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
            }
            if (!empty($html2)) {
-               $html .=$html2. "<br /><br /><strong>Reprodução:</strong> <br /><br />";
+               $html .=$html2. "<br /><br /><strong>Reprodução:</strong> <br />";
                $html2='';
            }
            
@@ -430,7 +430,7 @@ foreach($assessments as $a) {
            }//fim if
            
            if (!empty($html2)){
-               $html .= $html2."<br /><strong> Ações de Conservação:</strong> <br /><br />";
+               $html .= $html2."<br /><strong> Ações de Conservação:</strong> <br />";
                $html2='';
            }
            
