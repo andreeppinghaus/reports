@@ -77,7 +77,13 @@ window.onload=function(){
     <div class="pure-u-3-5">
       <p class='info'>
         Avaliador: <?php echo $a["assessor"] ?><br />
-        Revisor: <?php if (isset($a["evaluator"])): echo $a["evaluator"]; endif ?><br />
+        Revisor: <?php 
+        if (isset($a["evaluator"])){
+            echo $a["evaluator"]; 
+        } else {
+            echo "Patrícia da Rosa";  
+        }
+        ?><br />
         Colaboradores: <?php echo str_replace(" ;",";",$a["profile"]["metadata"]["contributor"]); ?><br />
         Data: <?php echo date('d-m-Y', $a["metadata"]["modified"] ) ?><br />
         <!-- Distribuição: TODO <br /> -->
@@ -162,7 +168,7 @@ window.onload=function(){
           }
           
           if (!empty($html)) {
-              echo "<br /><strong>População</strong>: <br />";
+              echo "<br /><strong>População</strong>: <br /><br />";
               echo $html;
           }
           
@@ -199,7 +205,6 @@ window.onload=function(){
           
           if (isset($a["profile"]["distribution"]["eoo"])){
               echo nl2br("EOO: ".$a["profile"]["distribution"]["eoo"]."km²"."\n");
-              echo "</div>";//col
           } 
           
         ?>
@@ -402,7 +407,7 @@ window.onload=function(){
            }//fim if
            
            if (!empty($html)){
-               echo "<br /><strong> Ações de Conservação:</strong> <br />";
+               echo "<br /><strong> Ações de Conservação:</strong> <br /><br />";
                echo $html;
            }
            
@@ -422,7 +427,7 @@ window.onload=function(){
            ?>
 
         </p>
-      </div>
+        </div>
   </div>
 <?php endforeach; ?>
 

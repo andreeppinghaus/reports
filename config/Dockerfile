@@ -9,5 +9,3 @@ RUN chown www-data.www-data /var/www/html -R
 RUN usermod -a -G www-data www-data
 RUN chgrp -R www-data /var/www/html
 RUN chmod -R g+w /var/www/html
-RUN mkdir /var/www/html/data
-RUN chmod 777 /var/www/html/data
