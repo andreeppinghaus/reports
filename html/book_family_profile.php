@@ -250,7 +250,7 @@ window.onload=function(){
            }
             
            if (isset($a["profile"]["ecology"]["clonal"])) {
-                $html = nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
+                $html .= nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
            }
            
            if (isset($a["profile"]["ecology"]["resprout"])) {
