@@ -73,8 +73,6 @@ window.onload=function(){
 <!-- <div class="container content pure-g"> -->
   
 <p class="print pure-u-1"><a href="javascript:window.print()">Imprimir</a></p>
- <h1>'.$family.'</h1>
-
 ';
 
 
@@ -84,10 +82,11 @@ $mpdf->Output();
 
 die();
 */
+$html2='';
 foreach($assessments as $a) {
     $html .='
   <div class="spp pure-u-1">
-  <h1>'.$family.'</h1>
+  <h1 class="pure-u-1">'.$family.'</h1>
     <div class="pure-u-1">
       <h2><i>'.$a["taxon"]["scientificNameWithoutAuthorship"].
       '</i>'.$a["taxon"]["scientificNameAuthorship"].'</h2>
@@ -95,7 +94,7 @@ foreach($assessments as $a) {
 
     if(isset($a['criteria'])) {
         $html .= $a["criteria"] ; 
-    }
+    } 
     
     $html .='</h3>
     </div>
@@ -132,6 +131,8 @@ foreach($assessments as $a) {
            $a['taxon']['scientificNameWithoutAuthorship'].'.jpg" class="pure-u-2-5" /></center>';
     }
     
+    
+    
     $html .= '<hr>
       <div class="pure-u-1">
         <p class="rationale">
@@ -159,72 +160,76 @@ foreach($assessments as $a) {
                 }
             }
 
+          $html2='';
           if (isset($a["profile"]["population"]["resume"]) && $a["profile"]["population"]["resume"] != "" ) {
-              $html .= nl2br($a["profile"]["population"]["resume"]."\n"); 
+              $html2 .= nl2br($a["profile"]["population"]["resume"]."\n"); 
           }
             
           if (isset($a["profile"]["population"]["references"])) {
               foreach($a["profile"]["population"]["references"] as $reference) {
-                $html .= nl2br($reference."\n"); 
+                $html2 .= nl2br($reference."\n"); 
               }
           }
             
             
           if (isset($a["profile"]["population"]["size"])){
-              $html .="<br />".nl2br("Tamanho estimado => Tipo de Valor: ".
+              $html2 .="<br />".nl2br("Tamanho estimado => Tipo de Valor: ".
                   $a["profile"]["population"]["size"]["type"]." Absoluto: ".
                   $a["profile"]["population"]["size"]["absolute"]."\n");
           }
 
           if (isset($a["profile"]["population"]["numberOfSubpopulations"])) {
-              $html .=nl2br("Número de subpopulações => Tipo de Valor: ".
+              $html2 .=nl2br("Número de subpopulações => Tipo de Valor: ".
                   $a["profile"]["population"]["numberOfSubpopulations"]["type"]." Absoluto: ".
                   $a["profile"]["population"]["numberOfSubpopulations"]["absolute"]."\n");
           }
 
           if (isset($a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"])) {
-              $html .=nl2br("Número de individuos na maior subpopulação => Tipo de Valor: ".
+              $html2 .=nl2br("Número de individuos na maior subpopulação => Tipo de Valor: ".
                   $a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["type"].
                   " Absoluto: ".
                   $a["profile"]["population"]["numberOfIndividualsInBiggestSubpopulation"]["absolute"]."\n");
           }
 
           if (isset($a["profile"]["population"]["extremeFluctuation"])) {
-              $html .= nl2br("Flutuação extrema: ".
+              $html2 .= nl2br("Flutuação extrema: ".
                         $a["profile"]["population"]["extremeFluctuation"]["extremeFluctuation"]."\n");
           }
           
-          if (!empty($html)) {
-              $html .= "<br /><strong>População</strong>: <br /><br />";
+          if (!empty($html2)) {
+              $html .= $html2 ."<br /><strong>População</strong>: <br /><br />";
+              $html2='';
           }
           
+          $html2='';
           
           if (isset($a["profile"]["distribution"]["fragmented"])) {
-              $html .= nl2br("Fragmentada: ".$a["profile"]["distribution"]["fragmented"]."\n");
+              $html2 .= nl2br("Fragmentada: ".$a["profile"]["distribution"]["fragmented"]."\n");
           }
 
          if (isset($a["profile"]["distribution"]["altitude"]) &&
              isset($a["profile"]["distribution"]["altitude"]["type"]) && 
              isset($a["profile"]["distribution"]["altitude"]["absolute"])) {
-                 $html .= nl2br("Altitude => Tipo de Valor: ".$a["profile"]["distribution"]["altitude"]["type"].
+                 $html2 .= nl2br("Altitude => Tipo de Valor: ".$a["profile"]["distribution"]["altitude"]["type"].
                      " Absoluto: ".$a["profile"]["distribution"]["altitude"]["absolute"]."\n");
              }
 
           if (isset($a["profile"]["distribution"]["brasilianEndemic"]) && 
               $a["profile"]["distribution"]["brasilianEndemic"] == 'yes') {
-                  $html .=nl2br("Endêmica do Brasil"."\n");
+                  $html2 .=nl2br("Endêmica do Brasil"."\n");
               }
 
           if (isset($a["profile"]["distribution"]["resume"])) {
-              $html .= nl2br("Resume: ".$a["profile"]["distribution"]["resume"]."\n");
+              $html2 .= nl2br("Resume: ".$a["profile"]["distribution"]["resume"]."\n");
           }
 
           if (isset($a["profile"]["distribution"]["aoo"])) {
-              $html .=nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."km²"."\n");
+              $html2 .=nl2br("AOO: ".$a["profile"]["distribution"]["aoo"]."km²"."\n");
           }
 		
-          if (!empty($html)){ 
-              $html .= "<br /> <strong>Distribuição:</strong> <br /><br />"; //só exibe se existir registros abaixo da distribuição 
+          if (!empty($html2)){ 
+              $html .= $html2."<br /> <strong>Distribuição:</strong> <br /><br />"; //só exibe se existir registros abaixo da distribuição
+              $html2='';
           }
           
           if (isset($a["profile"]["distribution"]["eoo"])){
@@ -241,187 +246,192 @@ foreach($assessments as $a) {
           $html .='<br />';
            
            if (isset($a["profile"]["ecology"]["lifeForm"])) {
-               $html.="<br /> Hábito: ";
+               $html2 .="<br /> Hábito: ";
                foreach($a["profile"]["ecology"]["lifeForm"] as $lifeForm) {
-                   $html.= nl2br($lifeForm."\n"); 
+                   $html2 .= nl2br($lifeForm."\n"); 
                }
            }
             
            if (isset($a["profile"]["ecology"]["substratum"])) {
-               $html .="Substrato: ";
+               $html2 .="Substrato: ";
                foreach($a["profile"]["ecology"]["substratum"] as $substratum) {
-                   $html.= nl2br($substratum."\n"); 
+                   $html2 .= nl2br($substratum."\n"); 
                }
            }
 
            if (isset($a["profile"]["ecology"]["luminosity"])){
-                $html .="Luminosidade: ";
+                $html2 .="Luminosidade: ";
                foreach($a["profile"]["ecology"]["luminosity"] as $luminosity){
-                   $html.= nl2br($luminosity."\n"); 
+                   $html2.= nl2br($luminosity."\n"); 
                }
            }
            
            if (isset($a["profile"]["ecology"]["longevity"])) {
-               $html.= nl2br("Longevidade: ".$a["profile"]["ecology"]["longevity"]."\n");
+               $html2 .= nl2br("Longevidade: ".$a["profile"]["ecology"]["longevity"]."\n");
            }
 
            if (isset($a["profile"]["ecology"]["fenology"])) {
-               $html .= nl2br("Fenologia: ".$a["profile"]["ecology"]["fenology"]."\n");
+               $html2 .= nl2br("Fenologia: ".$a["profile"]["ecology"]["fenology"]."\n");
            }
             
            if (isset($a["profile"]["ecology"]["clonal"])) {
-                $html .= nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
+                $html2 .= nl2br("Crescimento Clonal: ".$a["profile"]["ecology"]["clonal"]."\n");
            }
            
            if (isset($a["profile"]["ecology"]["resprout"])) {
-           $html .= nl2br("Rebroto: ".$a["profile"]["ecology"]["resprout"]."\n");
+           $html2 .= nl2br("Rebroto: ".$a["profile"]["ecology"]["resprout"]."\n");
            }
            
            if (isset($a["profile"]["ecology"]["habitats"])) {
-               $html .= "Habitat: ";
+               $html2 .= "Habitat: ";
                foreach($a["profile"]["ecology"]["habitats"] as $habitats)  {
-                   $html .= nl2br($habitats."\n");
+                   $html2 .= nl2br($habitats."\n");
                }
               // $html .="<br />";
            }
            
            if (isset($a["profile"]["ecology"]["biomas"])) {
-               $html .= "Biomas: ";
+               $html2 .= "Biomas: ";
                foreach($a["profile"]["ecology"]["biomas"] as $biomas) {
-                   $html.=nl2br($biomas."\n");
+                   $html2.=nl2br($biomas."\n");
                }
              //  $html .="<br />";
            }
            
            if (isset($a["profile"]["ecology"]["fitofisionomies"])) {
-               $html .= "Fitofisionomias: ";
+               $html2 .= "Fitofisionomias: ";
                foreach($a["profile"]["ecology"]["fitofisionomies"] as $fitofisionomies){
-                   $html .= nl2br($fitofisionomies."\n");
+                   $html2 .= nl2br($fitofisionomies."\n");
                }
               // $html .="<br />";
            }
            
            if (isset($a["profile"]["ecology"]["vegetation"])) {
-               $html .="Tipo de Vegetação: ";
+               $html2 .="Tipo de Vegetação: ";
                foreach($a["profile"]["ecology"]["vegetation"] as $vegetation){
-                $html .= nl2br($vegetation."\n");
+                $html2 .= nl2br($vegetation."\n");
                }
            }    
            
            if (isset($a["profile"]["ecology"]["resume"])) {
-               $html .="Resume: ".$a["profile"]["ecology"]["resume"];
+               $html2 .="Resume: ".$a["profile"]["ecology"]["resume"];
            }
            
-           if (!empty($html)) {
-               $html .= " <br /><strong>Ecologia: </strong><br /><br />";//só exibe se existir registros abaixo da Ecologia
+           if (!empty($html2)) {
+               $html .= $html2." <br /><strong>Ecologia: </strong><br /><br />";//só exibe se existir registros abaixo da Ecologia
+               $html2='';
            }
+           
+           
            
            if (isset($a["profile"]["reproduction"]["sexualSystem"])){
-               $html.=nl2br("Sistema Sexual: ".$a["profile"]["reproduction"]["sexualSystem"]."\n");
+               $html2 .=nl2br("Sistema Sexual: ".$a["profile"]["reproduction"]["sexualSystem"]."\n");
            }
            
            if (isset($a["profile"]["reproduction"]["system"])) {
-               $html.=nl2br("Sistema reprodutor: ".$a["profile"]["reproduction"]["system"]."\n");
+               $html2 .=nl2br("Sistema reprodutor: ".$a["profile"]["reproduction"]["system"]."\n");
            }
            
            if (isset($a["profile"]["reproduction"]["strategy"])) {
-               $html.=nl2br("Estratégia de dispersão: ".$a["profile"]["reproduction"]["strategy"]."\n");
+               $html2 .=nl2br("Estratégia de dispersão: ".$a["profile"]["reproduction"]["strategy"]."\n");
            }
            
            if (isset($a["profile"]["reproduction"]["fenology"])) {
-               $html .= "Fenologia: <br/>";
+               $html2 .= "Fenologia: <br/>";
                foreach($a["profile"]["reproduction"]["fenology"] as $fenology) {
-                   $html .= nl2br($fenology["fenology"]." ".$fenology["start"]." to ".$fenology["end"]."\n");
+                   $html2 .= nl2br($fenology["fenology"]." ".$fenology["start"]." to ".$fenology["end"]."\n");
                }
            }
            
            if (isset($a["profile"]["reproduction"]["polinationSyndrome"])) {
-               $html .="Sindrome de polinização:";
+               $html2 .="Sindrome de polinização:";
                foreach($a["profile"]["reproduction"]["polinationSyndrome"] as $polinationSyndrome){
-                   $html .= nl2br($polinationSyndrome."\n");
+                   $html2 .= nl2br($polinationSyndrome."\n");
                }
            }
            
-           $html .="Sindrome de dispersão:";
+           $html2 .="Sindrome de dispersão:";
            if (isset($a["profile"]["reproduction"]["dispersionSyndrome"])){
                foreach($a["profile"]["reproduction"]["dispersionSyndrome"] as $dispersionSyndrome) {
-                   $html .= nl2br($dispersionSyndrome."\n");
+                   $html2 .= nl2br($dispersionSyndrome."\n");
                }
            }
            
            if (isset($a["profile"]["reproduction"]["dispersorInformation"])) {
-               $html .= nl2br("Informações sobre o dispersor: ".$a["profile"]["reproduction"]["dispersorInformation"]."\n");
+               $html2 .= nl2br("Informações sobre o dispersor: ".$a["profile"]["reproduction"]["dispersorInformation"]."\n");
            }
            
            if (isset($a["profile"]["reproduction"]["resume"])) {
-               $html .= nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
+               $html2 .= nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
            }
-           if (!empty($html)) {
-               $html .= "<br /><br /><strong>Reprodução:</strong> <br /><br />";
+           if (!empty($html2)) {
+               $html .=$html2. "<br /><br /><strong>Reprodução:</strong> <br /><br />";
+               $html2='';
            }
            
            if (isset($a["profile"]["threats"]) && is_array($a["profile"]["threats"])){
                
                foreach ($a["profile"]["threats"] as $threat) {
-                   $html .= "<br>";//novo
+                   $html2 .= "<br>";//novo
                    if (isset($threat["threat"])) {
-                       $html .=nl2br("Ameaça: ".$threat["threat"]."\n");
+                       $html2 .=nl2br("Ameaça: ".$threat["threat"]."\n");
                    }
                    
                    if (isset($threat["stress"])) {
-                       $html .=nl2br("Incidência: ".$threat["stress"]."\n");
+                       $html2 .=nl2br("Incidência: ".$threat["stress"]."\n");
                    }
                    
                    if (isset($threat["incidence"])) {
-                       $html .= nl2br("Stress: ".$threat["incidence"]."\n");
+                       $html2 .= nl2br("Stress: ".$threat["incidence"]."\n");
                    }
                    
                    if (isset($threat["severity"])) {
-                       $html .= nl2br("Severidade: ".$threat["severity"]."\n");
+                       $html2 .= nl2br("Severidade: ".$threat["severity"]."\n");
                    }
                    
                    if (isset($threat["reversible"])) {
-                       $html .= nl2br("Reversibilidade: ".$threat["reversible"]."\n");
+                       $html2 .= nl2br("Reversibilidade: ".$threat["reversible"]."\n");
                    }
                    
-                   $html .= nl2br("Período:\n");
                    if (isset($threat["timing"])) {
+                       $html2 .= nl2br("Período:\n");
                        foreach($threat["timing"] as $timing) {
-                           $html .= nl2br($timing."\n");
+                           $html2 .= nl2br($timing."\n");
                        }
                    }
                    
-                   $html .= nl2br("Declínio:\n");
+                   
                    if (isset($threat["decline"])) {
+                       $html2 .= nl2br("Declínio:\n");
                        foreach($threat["decline"] as $decline) {
-                           $html.= nl2br($decline."\n");
+                           $html2 .= nl2br($decline."\n");
                        }
                    }
                    
                    if (isset($threat["details"])) {
-                       $html.=nl2br("Detalhes: ".$threat["details"]."\n");
+                       $html2.=nl2br("Detalhes: ".$threat["details"]."\n");
                    }
                    
                }//fim foreach
                
            }//fim if
            
-           if (!empty($html)){
-               $html .= "<br /><br /><strong>Ameaças:</strong><br />";
-               
+           if (!empty($html2)){
+               $html .= $html2."<br /><br /><strong>Ameaças:</strong><br />";
+               $html2='';
            }
            
            if (isset($a["profile"]["actions"])){
                foreach($a["profile"]["actions"] as $actions) {
                    if(isset($actions["action"]) && isset($actions["situation"]) && isset($actions["details"])) {
-                       $html .=nl2br("Ação: ".$actions["action"]."\nSituação: ".$actions["situation"]."\n".$actions["details"]."\n\n");
+                       $html2 .=nl2br("Ação: ".$actions["action"]."\nSituação: ".$actions["situation"]."\n".$actions["details"]."\n\n");
                    }//fim if
                }//fim foreach
            }//fim if
            
-           if (!empty($html)){
-               $html .= "<br /><strong> Ações de Conservação:</strong> <br /><br />";
-               $html .= $html;
+           if (!empty($html2)){
+               $html .= $html2."<br /><strong> Ações de Conservação:</strong> <br /><br />";
+               $html2='';
            }
            
            if (isset($a["profile"]["uses"])) {
@@ -434,7 +444,6 @@ foreach($assessments as $a) {
            }
            if (! empty($html)) {
                $html .= " Usos: <br/>";
-               $html .= $html;
            }
 
            $html .='        </p>
@@ -443,19 +452,29 @@ foreach($assessments as $a) {
 
 }//fim foreach
 
-echo $html;
-?>
+// Create an instance of the class:
 
+
+$html.='
 <div class="refs pure-u-1">
   <h2>Referências Bibliográficas</h2>
-  <ul>
-  <?php foreach($references as $r): ?>
-    <li><?php echo htmlentities($r) ?></li>
-  <?php endforeach; ?>
-  </ul>
+  <ul>';
+foreach($references as $r) {
+   $html .='<li>'.htmlentities($r).'</li>';
+}
+$html .='</ul>
 </div>
 
-</div>
+';
 
-</body>
-</html>
+$mpdf = new \Mpdf\Mpdf();
+
+// Write some HTML code:
+$mpdf->WriteHTML($html);
+
+// Output a PDF file directly to the browser
+$mpdf->Output();
+
+die();
+
+//echo $html;
