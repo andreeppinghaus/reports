@@ -65,11 +65,13 @@ window.onload=function(){
 <body>
 <div class="content pure-g">
 <!-- <div class="container content pure-g"> -->
-  <h1 class='pure-u-1'><?php echo $family ?></h1>
+  
 <p class="print pure-u-1"><a href='javascript:window.print()'>Imprimir</a></p>
 
 <?php foreach($assessments as $a): ?>
+
   <div class="spp pure-u-1">
+  <h1><?php echo $family ?></h1>
     <div class="pure-u-1">
       <h2><i><?php echo $a["taxon"]["scientificNameWithoutAuthorship"] ?></i> <?php echo $a["taxon"]["scientificNameAuthorship"] ?></h2>
       <h3>Risco de extinção: <?php echo $a["category"]?> <?php if(isset($a['criteria'])) echo $a["criteria"] ; ?></h3>
