@@ -9,3 +9,6 @@ RUN chown www-data.www-data /var/www/html -R
 RUN usermod -a -G www-data www-data
 RUN chgrp -R www-data /var/www/html
 RUN chmod -R g+w /var/www/html
+#RUN  echo "#Alteracao do rc.local para criacao de pasta para exportacao de csv" > /etc/rc.local \
+#    && echo "mkdir /var/www/html/data" >> /etc/rc.local \
+#    && echo "chmod 775 /var/www/html/data" >> /etc/rc.local
