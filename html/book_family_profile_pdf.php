@@ -154,9 +154,9 @@ foreach($assessments as $a) {
        $html .='<center><img src="'.$img_uri2.'" class="pure-u-2-5" />
                 </center>';
     }else {
-        $html .= '<center>
+        $html .= '<div style="text-align:center;">
 
-              <div>
+              <span>
               <img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
            $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"                
 
@@ -168,8 +168,8 @@ margin:0 auto;
          "
                  />
          
-              </div> 
-             </center>';
+              </span> 
+             </div>';
     }
     
     
