@@ -151,8 +151,13 @@ foreach($assessments as $a) {
 
     if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) {
         
-       $html .='<center><img src="'.$img_uri2.'" class="pure-u-2-5" />
-                </center>';
+       $html .='
+            <div style="text-align:center;">
+
+              <span>
+             <img src="'.$img_uri2.'" class="pure-u-2-5" />
+                </span> 
+             </div>';
     }else {
         $html .= '<div style="text-align:center;">
 
@@ -277,10 +282,36 @@ margin:0 auto;
           } 
           
           if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) {
-              $html .='<center><img src="'.$img_uri.'" class="pure-u-2-5" /></center>';
+              $html .='
+              <div style="text-align:center;">
+              
+              <span>
+              <img src="'.$img_uri.'" class="pure-u-2-5" />
+              </span>
+              </div>';
+
+              
           } else {
-              $html .='<center><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
-                $a['taxon']['scientificNameWithoutAuthorship'].'.jpg" class="pure-u-2-5" /></center>';
+              
+              $html .= '<div style="text-align:center;">
+                  
+              <span>
+              <img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
+              $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"
+                  
+                style="
+                 height: auto ;
+                 width:410px;
+                 display:block;
+                 margin:0 auto;
+                 "
+                 />
+                  
+              </span>
+             </div>';
+              
+//               $html .='<center><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
+//                 $a['taxon']['scientificNameWithoutAuthorship'].'.jpg" class="pure-u-2-5" /></center>';
           }
           
           $html .='<br />';
