@@ -6,6 +6,7 @@ COPY config /var/www/config
 COPY html /var/www/html
 COPY src /var/www/src
 COPY install_pdf.sh /var/www/
+COPY cria_data.sh /var/www/
 RUN chown www-data.www-data /var/www/html -R
 RUN usermod -a -G www-data www-data
 RUN chgrp -R www-data /var/www/html

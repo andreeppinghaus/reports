@@ -11,7 +11,16 @@
 //             display:inline-block;
 //             width:40%;
     //      }
-    
+
+// .img {
+//     height: 300px;
+//     width:260px;
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color: green;
+// }
+
 require_once  '../vendor/autoload.php';
 
 $html ='
@@ -30,6 +39,7 @@ $html ='
     }
     li {
       list-style: none;
+      font-family: sans-serif;
     }
     .content {
       width: 1024px;
@@ -58,15 +68,9 @@ border-bottom: 1px #a79137 solid;
   margin-bottom: 8px;
 }
 
-.img {
-         height: 410px;
-         width:260px;
-         background-position: 50% 50%;
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-color: green;
-      }
-
+body {
+    font-family: sans-serif;
+}
 @media print {
   .print {display: none;}
   .content {
@@ -116,7 +120,7 @@ foreach($assessments as $a) {
   <h1 class="pure-u-1">'.$family.'</h1>
     <div class="pure-u-1">
       <h2><i>'.$a["taxon"]["scientificNameWithoutAuthorship"].
-      '</i>'.$a["taxon"]["scientificNameAuthorship"].'</h2>
+      '</i> '.$a["taxon"]["scientificNameAuthorship"].'</h2>
       <h3>Risco de extinção: '.$a["category"];
 
     if(isset($a['criteria'])) {
@@ -150,35 +154,37 @@ foreach($assessments as $a) {
     $html.= $a['rationale'].'</p>';
 
     if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) {
-        
+        //imagens novas arvores_endemicas 12/2018
        $html .='
             <div style="text-align:center;">
 
               <span>
-             <img src="'.$img_uri2.'" class="pure-u-2-5" />
+                 <img src="'.$img_uri2.'"  
+                     style="
+                     height: auto ;
+                     width:400px;
+                     " 
+                  />
                 </span> 
              </div>';
-    }else {
-        $html .= '<div style="text-align:center;">
+    }else { //imagens antigas
+        $html .= '
+            <div style="text-align:center;">
 
-              <span>
               <img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
            $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"                
 
         style="
          height: auto ;
-         width:410px;
-display:block;
-margin:0 auto;
+         width:400px;
          "
                  />
          
-              </span> 
              </div>';
     }
     
     
-    $html .= '<hr>
+    $html .= '
       <div class="pure-u-1">
         <p class="rationale">
      		<h3><strong>Perfil da Espécie</strong></h3>
@@ -194,14 +200,15 @@ margin:0 auto;
       				&& $a["profile"]["economicValue"]["potentialEconomicValue"] != "no" 
       				&& isset($a["profile"]["economicValue"]["details"])
       			) {
-      			    $html .= 'Economia: ';
-      			    $html .= nl2br("Espécie possui potencial valor econômico\nResume: ".$a["profile"]["economicValue"]["details"]."\n"); 
+      			    $html .= '<strong>Economia: </strong>';
+      			    $html .= nl2br("Espécie possui potencial valor econômico\nResume: ".
+      			          $a["profile"]["economicValue"]["details"]."\n"); 
             } 
             
             if (isset($a["profile"]["economicValue"]["references"])) {
-                
+                $html.="<br />Reference:";
                 foreach($a["profile"]["economicValue"]["references"] as $reference){
-                    $html .= nl2br($reference."\n"); 
+                    $html .= nl2br("<br />".$reference."\n"); 
                 }
             }
 
@@ -211,8 +218,9 @@ margin:0 auto;
           }
             
           if (isset($a["profile"]["population"]["references"])) {
+              $html2.="<br />Reference:";
               foreach($a["profile"]["population"]["references"] as $reference) {
-                $html2 .= nl2br($reference."\n"); 
+                $html2 .= nl2br("<br />".$reference."\n"); 
               }
           }
             
@@ -242,7 +250,7 @@ margin:0 auto;
           }
           
           if (!empty($html2)) {
-              $html .= $html2 ."<br /><strong>População</strong>: <br/>";
+              $html .= "<br /><strong>População:</strong> <br/>".$html2;
               $html2='';
           }
           
@@ -273,7 +281,7 @@ margin:0 auto;
           }
 		
           if (!empty($html2)){ 
-              $html .= $html2."<br /> <strong>Distribuição:</strong> <br />"; //só exibe se existir registros abaixo da distribuição
+              $html .= "<br /> <strong>Distribuição:</strong> <br />".$html2; //só exibe se existir registros abaixo da distribuição
               $html2='';
           }
           
@@ -282,28 +290,31 @@ margin:0 auto;
           } 
           
           if ( $a['category'] != "DD" || $db == 'arvores_endemicas' ) {
+              //novas imagens arvores_endemicas 12/2018
               $html .='
               <div style="text-align:center;">
               
               <span>
-              <img src="'.$img_uri.'" class="pure-u-2-5" />
+                <img src="'.$img_uri.'" 
+                 style="
+                         height: auto ;
+                         width:600px;
+                         "
+                 />
               </span>
               </div>';
 
               
           } else {
-              
+              //imagens antigas
               $html .= '<div style="text-align:center;">
-                  
               <span>
               <img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
               $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"
                   
                 style="
                  height: auto ;
-                 width:410px;
-                 display:block;
-                 margin:0 auto;
+                 width: 400px;
                  "
                  />
                   
@@ -317,7 +328,7 @@ margin:0 auto;
           $html .='<br />';
            
            if (isset($a["profile"]["ecology"]["lifeForm"])) {
-               $html2 .="<br /> Hábito: ";
+               $html2 .="Hábito: ";
                foreach($a["profile"]["ecology"]["lifeForm"] as $lifeForm) {
                    $html2 .= nl2br($lifeForm."\n"); 
                }
@@ -385,14 +396,13 @@ margin:0 auto;
            }    
            
            if (isset($a["profile"]["ecology"]["resume"])) {
-               $html2 .="Resume: ".$a["profile"]["ecology"]["resume"];
+               $html2 .="Resume: ".$a["profile"]["ecology"]["resume"]."<br />";
            }
            
            if (!empty($html2)) {
-               $html .= $html2." <br /><strong>Ecologia: </strong><br />";//só exibe se existir registros abaixo da Ecologia
+               $html .= " <br /><strong>Ecologia: </strong><br />".$html2;//só exibe se existir registros abaixo da Ecologia
                $html2='';
            }
-           
            
            
            if (isset($a["profile"]["reproduction"]["sexualSystem"])){
@@ -421,8 +431,9 @@ margin:0 auto;
                }
            }
            
-           $html2 .="Sindrome de dispersão:";
+           
            if (isset($a["profile"]["reproduction"]["dispersionSyndrome"])){
+               $html2 .="Sindrome de dispersão:";
                foreach($a["profile"]["reproduction"]["dispersionSyndrome"] as $dispersionSyndrome) {
                    $html2 .= nl2br($dispersionSyndrome."\n");
                }
@@ -435,8 +446,9 @@ margin:0 auto;
            if (isset($a["profile"]["reproduction"]["resume"])) {
                $html2 .= nl2br("Resume: ".$a["profile"]["reproduction"]["resume"]."\n");
            }
+           
            if (!empty($html2)) {
-               $html .=$html2. "<br /><br /><strong>Reprodução:</strong> <br />";
+               $html .="<br /><strong>Reprodução:</strong><br />".$html2;
                $html2='';
            }
            
@@ -488,7 +500,7 @@ margin:0 auto;
            }//fim if
            
            if (!empty($html2)){
-               $html .= $html2."<br /><br /><strong>Ameaças:</strong><br />";
+               $html .= "<br /><strong>Ameaças:</strong>".$html2;
                $html2='';
            }
            
@@ -501,25 +513,26 @@ margin:0 auto;
            }//fim if
            
            if (!empty($html2)){
-               $html .= $html2."<br /><strong> Ações de Conservação:</strong> <br />";
+               $html .= "<br /><strong> Ações de Conservação:</strong> <br />".$html2;
                $html2='';
            }
            
            if (isset($a["profile"]["uses"])) {
                foreach($a["profile"]["uses"] as $uses) {
-                   $html .= nl2br("Uso: ".(isset($uses["use"]) ? $uses["use"] : "").
+                   $html2 .= nl2br("Uso: ".(isset($uses["use"]) ? $uses["use"] : "").
                        "\nRecurso: ".(isset($uses["resource"]) ? $uses["resource"] : "").
                        "\nProveniência: ".(isset($uses["provenance"]) ? $uses["provenance"] : "").
                        "\nDetalhes: ".(isset($uses["detaills"]) ? $uses["details"] : "")."\n\n");
                }
            }
-           if (! empty($html)) {
-               $html .= " Usos: <br/>";
+           if (!empty($html2)) {
+               $html .= " Usos: <br/>".$html2;
+               $html2='';
            }
 
            $html .='        </p>
         </div>
-  </div>';
+  </div><hr />';
 
 }//fim foreach
 
