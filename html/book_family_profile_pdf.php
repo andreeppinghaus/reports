@@ -59,7 +59,7 @@ border-bottom: 1px #a79137 solid;
 }
 
 .img {
-         height: 409px;
+         height: 410px;
          width:260px;
          background-position: 50% 50%;
          background-repeat: no-repeat;
@@ -161,10 +161,10 @@ foreach($assessments as $a) {
            $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"                
 
         style="
-         height: 80%;
-         width:40%;
-         background-color: green;
-object-fit: contain;
+         height: auto ;
+         width:410px;
+display:block;
+margin:0 auto;
          "
                  />
          
