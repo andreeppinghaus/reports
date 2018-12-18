@@ -467,14 +467,14 @@ $html .='</ul>
 
 ';
 
-$mpdf = new \Mpdf\Mpdf();
+// $mpdf = new \Mpdf\Mpdf();
 
-// Write some HTML code:
-$mpdf->WriteHTML($html);
+// // Write some HTML code:
+// $mpdf->WriteHTML($html);
 
-// Output a PDF file directly to the browser
-$mpdf->Output();
+// // Output a PDF file directly to the browser
+// $mpdf->Output();
 
-die();
+// die();
 
-//echo $html;
+echo $html;
