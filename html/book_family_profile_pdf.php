@@ -1,5 +1,5 @@
 <?php
-
+ini_set("pcre.backtrack_limit", "100000000");
 // img {
 //             border-bottom-style: none;
 //             border-bottom-width:0px;
