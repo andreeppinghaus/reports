@@ -324,6 +324,8 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
     include __DIR__.'/../../html/book_family_simple.php';
   } elseif (isset($_GET["profile"])) {
     include __DIR__.'/../../html/book_family_profile.php';
+  } elseif (isset($_GET["profilepdf"])) {
+      include __DIR__.'/../../html/book_family_profile_pdf.php';
   } else {
     include __DIR__.'/../../html/book_family.php';
   }

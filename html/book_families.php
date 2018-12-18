@@ -30,6 +30,7 @@
       <small>
         (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?simple">simplificado</a>)
         (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profile">com perfil</a>)
+        (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profilepdf">com perfil PDF</a>)
       </small>
     </li>
     <?php endforeach; ?>
