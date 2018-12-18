@@ -1,5 +1,17 @@
 <?php
 
+// img {
+//             border-bottom-style: none;
+//             border-bottom-width:0px;
+//             border-image-outset:0;
+//             border-image-repeat:stretch;
+//             border-image-slice:100%;
+//             border-image-source:none;
+//             border-image-width: 1;
+//             display:inline-block;
+//             width:40%;
+    //      }
+    
 require_once  '../vendor/autoload.php';
 
 $html ='
@@ -11,6 +23,8 @@ $html ='
   
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <style type="text/css">
+
+//     
     ul {
       padding:0;
     }
@@ -43,11 +57,24 @@ border-bottom: 1px #a79137 solid;
 .refs li {
   margin-bottom: 8px;
 }
+
+.img {
+         height: 409px;
+         width:260px;
+         background-position: 50% 50%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: green;
+      }
+
 @media print {
   .print {display: none;}
   .content {
     display: block;
     position: relative;
+
+    
+
   }
   .spp {
     page-break-inside: avoid;
@@ -127,10 +154,23 @@ foreach($assessments as $a) {
        $html .='<center><img src="'.$img_uri2.'" class="pure-u-2-5" />
                 </center>';
     }else {
-        $html .= '<center><img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
-           $a['taxon']['scientificNameWithoutAuthorship'].'.jpg" class="pure-u-2-5" /></center>';
+        $html .= '<center>
+
+              <div>
+              <img src="http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_dd_abril_17/'.
+           $a['taxon']['scientificNameWithoutAuthorship'].'.jpg"                
+
+        style="
+         height: 80%;
+         width:40%;
+         background-color: green;
+object-fit: contain;
+         "
+                 />
+         
+              </div> 
+             </center>';
     }
-    
     
     
     $html .= '<hr>
@@ -477,4 +517,4 @@ $mpdf->Output();
 
 die();
 
-//echo $html;
+// echo $html;
