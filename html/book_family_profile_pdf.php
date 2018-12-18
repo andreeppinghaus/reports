@@ -1,27 +1,20 @@
 <?php
 ini_set("pcre.backtrack_limit", "100000000");
-// img {
-//             border-bottom-style: none;
-//             border-bottom-width:0px;
-//             border-image-outset:0;
-//             border-image-repeat:stretch;
-//             border-image-slice:100%;
-//             border-image-source:none;
-//             border-image-width: 1;
-//             display:inline-block;
-//             width:40%;
-    //      }
-
-// .img {
-//     height: 300px;
-//     width:260px;
-//     background-position: 50% 50%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-color: green;
-// }
 
 require_once  '../vendor/autoload.php';
+
+$html2='';
+$contador=0;
+$flag=0;
+
+if (! isset($inicio)) {
+    $inicio=-1;
+}
+
+if (! isset($fim)) {
+    $fim=-1;
+}
+
 
 $html ='
 <!DOCTYPE HTML>
@@ -107,14 +100,13 @@ window.onload=function(){
 ';
 
 
-/*$mpdf = new \Mpdf\Mpdf();
-$mpdf->WriteHTML($html);
-$mpdf->Output();
 
-die();
-*/
-$html2='';
-foreach($assessments as $a) {
+foreach($assessments as $key => $a) {
+    
+    if ($key>= $inicio && $key <=$fim || $inicio == -1 ) {
+        
+    $html .= "<br>contador de array-->$key <br/>";
+    $html .= "inicio= $inicio - fim=$fim";
     $html .='
   <div class="spp pure-u-1">
   <h1 class="pure-u-1">'.$family.'</h1>
@@ -533,7 +525,8 @@ foreach($assessments as $a) {
            $html .='        </p>
         </div>
   </div><hr />';
-
+    }//fim if contador
+           
 }//fim foreach
 
 // Create an instance of the class:
@@ -556,8 +549,9 @@ $mpdf = new \Mpdf\Mpdf();
 // Write some HTML code:
 $mpdf->WriteHTML($html);
 
-// Output a PDF file directly to the browser
+    // Output a PDF file directly to the browser
 $mpdf->Output();
+
 
 die();
 
