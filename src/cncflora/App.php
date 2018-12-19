@@ -325,6 +325,16 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
       $fim=$_GET["fim"];
   }
   
+  if (isset($_GET["notreferences"]) ) {
+      $desligareferencia=1;
+  }else {
+      $desligareferencia=0;
+  }
+  if (isset($_GET["yesreferences"]) ) {
+      $somentereferencia=1;
+  }else {
+      $somentereferencia=0;
+  }
   ob_start();
   if(isset($_GET["simple"])) {
     include __DIR__.'/../../html/book_family_simple.php';
