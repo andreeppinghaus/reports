@@ -280,7 +280,7 @@ $r->get('/book/{db}/TODAS',function($req,$res,$args) {
 $r->get('/book/{db}/{family}',function($req,$res,$args) {
   $db = $args['db'];
   $family = $args['family'];
-
+  
   $refs=[];
   $repo=new \cncflora\repository\Assessment($db);
   $asses=$repo->listFamily($family);
@@ -318,12 +318,30 @@ $r->get('/book/{db}/{family}',function($req,$res,$args) {
     return strcmp($a['taxon']['scientificNameWithoutAuthorship'],$b['taxon']['scientificNameWithoutAuthorship']);
   });
 
-
+  if (isset($_GET["inicio"]) ) {
+      $inicio=$_GET["inicio"];
+  }
+  if (isset($_GET["fim"]) ) {
+      $fim=$_GET["fim"];
+  }
+  
+  if (isset($_GET["notreferences"]) ) {
+      $desligareferencia=1;
+  }else {
+      $desligareferencia=0;
+  }
+  if (isset($_GET["yesreferences"]) ) {
+      $somentereferencia=1;
+  }else {
+      $somentereferencia=0;
+  }
   ob_start();
   if(isset($_GET["simple"])) {
     include __DIR__.'/../../html/book_family_simple.php';
   } elseif (isset($_GET["profile"])) {
     include __DIR__.'/../../html/book_family_profile.php';
+  } elseif (isset($_GET["profilepdf"])) {
+      include __DIR__.'/../../html/book_family_profile_pdf.php';
   } else {
     include __DIR__.'/../../html/book_family.php';
   }

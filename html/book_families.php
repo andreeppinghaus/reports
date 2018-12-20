@@ -25,12 +25,16 @@
       <a href="<?php echo BASE ?>/book/<?php echo $db; ?>/TODAS">TODAS</a>
     </li>
     <?php foreach($families as $family): ?>
+    <br>
     <li>
       <a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>"><?php echo $family ?></a>
       <small>
         (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?simple">simplificado</a>)
         (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profile">com perfil</a>)
-      </small>
+        (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profilepdf">com perfil PDF Normal</a>)
+        (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profilepdf&notreferences=1">com perfil PDF sem referencias</a>)
+        (<a href="<?php echo BASE ?>/book/<?php echo $db; ?>/<?php echo $family?>?profilepdf&yesreferences=1">com perfil PDF somente as referencias</a>)
+    </small>
     </li>
     <?php endforeach; ?>
 </ul>

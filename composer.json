@@ -17,7 +17,8 @@
         "doctrine/couchdb": "@dev",
         "alexbilbie/proton": "~1.4",
         "google/apiclient": "1.0.*@beta",
-        "gsa/ckan-php-client": "dev-master"
+        "gsa/ckan-php-client": "dev-master",
+        "mpdf/mpdf": "dev-master"
     },
     "minimum-stability": "dev"
 }
