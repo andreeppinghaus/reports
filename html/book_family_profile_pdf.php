@@ -1,6 +1,6 @@
 <?php
 ini_set("pcre.backtrack_limit", "100000000");
-
+//https://stackoverflow.com/questions/1363925/check-whether-image-exists-on-remote-url
 require_once  '../vendor/autoload.php';
 
 $html2='';
@@ -142,6 +142,15 @@ if ($desligareferencia == 1 || $inicio == -1 ) {
         $img_uri = ($db == 'arvores_endemicas') ? "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/tt/mapas_arvores_endemicas_2018/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" : "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos".$a['taxon']['scientificNameWithoutAuthorship'].".jpg"; 
         $img_uri2 = ($db == 'arvores_endemicas') ? "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos/tt2/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" : "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas_fevereiro_2017/Novos".$a['taxon']['scientificNameWithoutAuthorship'].".jpg" ;
     
+        if ($db == 'livro_vermelho_2013' || $db == 'public') {
+            $img_uri2 =  "http://cncflora.jbrj.gov.br/arquivos/arquivos/mapas/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg";
+        }
+        
+        if ($db == 'especies_indicadas') {
+            $img_uri2 =  "http://cncflora.jbrj.gov.br/arquivos/arquivos/especies_indicadas_2019/tt2/".$a['taxon']['scientificNameWithoutAuthorship'].".jpg";
+        }
+        
+        
         $html.= '<p>';
         $html.= '<strong>Justificativa</strong>: ';
         $html.= $a['rationale'].'</p>';
